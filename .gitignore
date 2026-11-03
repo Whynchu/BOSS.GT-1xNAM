@@ -5,3 +5,12 @@
 /firmware/work/reconstructed/
 /firmware/work/ghidra-projects/
 /firmware/work/reference/
+# Local tool installs and third-party checkouts (keep project scripts under tools/ghidra_scripts).
+/tools/archive/
+/tools/ghidra/
+/tools/jdk25/
+/tools/local/
+/tools/rea/
+/.directory
+__pycache__/
+*.py[cod]

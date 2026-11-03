@@ -40,8 +40,8 @@
     "NAM_A2LITE_SAMPLE_RATE_header": "48000.0f",
     "engine_process_API": "caller supplies input/output buffers and num_frames; no resampling API documented",
     "header_derived_state_float_count_at_block48": 25617,
-    "header_derived_state_bytes_at_block48": 102468,
-    "header_derived_state_KiB_at_block48": 100.06640625,
+    "header_derived_state_bytes_at_block48": 102472,
+    "header_derived_state_KiB_at_block48": 100.0703125,
     "prewarm_samples_after_init_or_reset": 6347,
     "prewarm_duration_ms_at_engine_rate": 132.22916666666666,
     "prewarm_calls_at_block48": 133,
@@ -53,22 +53,22 @@
     "gt1_documented_external_sdram_mib": 24.0,
     "gt1_free_or_realtime_usable_ram_known": false,
     "single_a2lite_instance_at_block48": {
-      "state_ring_buffers_bytes_header_derived": 102468,
+      "state_ring_buffers_bytes_header_derived": 102472,
       "weights_plus_instance_kib_upstream_rounded": 9.2,
-      "estimated_dynamic_working_bytes": 111889,
-      "estimated_dynamic_working_kib": 109.2666015625,
+      "estimated_dynamic_working_bytes": 111893,
+      "estimated_dynamic_working_kib": 109.2705078125,
       "engine_code_kib_separate": 12.4,
       "capture_file_bytes_separate": 7980,
-      "working_ram_fraction_of_gt1_nominal_external_sdram": 0.004446069399515788
+      "working_ram_fraction_of_gt1_nominal_external_sdram": 0.0044462283452351885
     },
     "two_distinct_a2lite_instances_for_overlap_or_crossfade_at_block48": {
-      "state_ring_buffers_bytes_header_derived": 204936,
+      "state_ring_buffers_bytes_header_derived": 204944,
       "two_weights_plus_instances_kib_upstream_rounded": 18.4,
-      "estimated_dynamic_working_bytes": 223778,
-      "estimated_dynamic_working_kib": 218.533203125,
+      "estimated_dynamic_working_bytes": 223786,
+      "estimated_dynamic_working_kib": 218.541015625,
       "engine_code_kib_shared_not_doubled": 12.4,
       "two_capture_files_bytes_if_both_retained_separately": 15960,
-      "working_ram_fraction_of_gt1_nominal_external_sdram": 0.008892138799031576
+      "working_ram_fraction_of_gt1_nominal_external_sdram": 0.008892456690470377
     },
     "interpretation_limit": "Capacity ratios compare estimated NAM working data with nominal external SDRAM only; they do not establish free space, memory mapping, bus contention, bandwidth, latency, or acceptable audio-deadline performance."
   },

@@ -48,8 +48,9 @@ assert state_array_lengths
 state_float_count = sum(
     eval(expr, {"NAM_A2LITE_MAX_BUFFER_SIZE": BLOCK}) for expr in state_array_lengths
 )
-state_bytes_from_header = state_float_count * 4
-assert state_bytes_from_header == 102468
+# Include the trailing int _unused (32-bit target int), not just float arrays.
+state_bytes_from_header = state_float_count * 4 + 4
+assert state_bytes_from_header == 102472
 
 def per_rate(cycles_per_sample: int, rate: int, block_frames: int = 48) -> dict:
     cps = cycles_per_sample * rate
