@@ -1,0 +1,311 @@
+{
+  "read_only": true,
+  "scope": "Official Katana v2.01/v4.00 package and same-file-offset comparison only.",
+  "sources": {
+    "v2.01": {
+      "archive_path": "firmware/work/reference/esc2-comparators/katana_v201/original/katana_sys_v201.zip",
+      "archive_size": 1205373,
+      "archive_sha256": "0c28a11afdf38a49498030ca39b0052583150d924ca78ad74743c318100c0273",
+      "image_path": "firmware/work/reference/esc2-comparators/katana_v201/extracted/katana_sys_v201/KATANARM.BIN",
+      "image_size": 4194304,
+      "image_sha256": "73b63f48050818e6e1cc0738d741e50ce8dcc6f644109cf8ec346a44dff1bdac",
+      "rominfo_path": "firmware/work/reference/esc2-comparators/katana_v201/extracted/katana_sys_v201/ROMINFO.TXT",
+      "rominfo_exact_hex": "30 30 36 34 2c 30 35 30 37 2c 34 30 39 36 0d 0a",
+      "rominfo_ascii": "0064,0507,4096\r\n"
+    },
+    "v4.00": {
+      "archive_path": "firmware/work/reference/esc2-comparators/katana_v400/original/katana_sys_v400.zip",
+      "archive_size": 1202280,
+      "archive_sha256": "f24b9c5276e1ed77c6396a61ba031293a11cccfdf7b516cca8f775ee7b55a4a2",
+      "image_path": "firmware/work/reference/esc2-comparators/katana_v400/extracted/katana_sys_v400/KATANARM.BIN",
+      "image_size": 4194304,
+      "image_sha256": "3e17ba95e21ed10a3cb5c60af8da0a375db613cc8409eb33b6d80e4248c9b493",
+      "rominfo_path": "firmware/work/reference/esc2-comparators/katana_v400/extracted/katana_sys_v400/ROMINFO.TXT",
+      "rominfo_exact_hex": "30 30 36 34 2c 30 35 30 37 2c 34 30 39 36 0d 0a",
+      "rominfo_ascii": "0064,0507,4096\r\n"
+    }
+  },
+  "esc91_bootstrap": {
+    "range": "0x000000\u20130x001FFF",
+    "v201_marker": "ESC91.000",
+    "v400_marker": "ESC91.000",
+    "v201_sha256": "1f3a16c850ae5d907543272e0d2a6584db1ffcb27f74d59a966f105fa8add0b5",
+    "v400_sha256": "e554969f3128d4cff6d2ca15023af634130251e4d5f907ce6884574705a946b4",
+    "same_offset_equal_bytes": 7884,
+    "same_offset_equal_fraction": 0.96240234,
+    "same_offset_identical_run_count": 48,
+    "longest_same_offset_equal_runs": [
+      {
+        "file_start": "0x000C50",
+        "file_end_exclusive": "0x002000",
+        "length": 5040,
+        "sha256": "5f1ea5c3cf90792e04eb37cbaf0abe60297dd6e0a4fed077a9effb0f3e42f462"
+      },
+      {
+        "file_start": "0x00000D",
+        "file_end_exclusive": "0x0002F6",
+        "length": 745,
+        "sha256": "e66d4800d9755cffb86b19b6ccf7288583fcd0dac21868383b53f343b02146be"
+      },
+      {
+        "file_start": "0x000346",
+        "file_end_exclusive": "0x00055A",
+        "length": 532,
+        "sha256": "0894b20d9520e3df1e56fb6ac93223c861b0a8e57b4bab16e9c74e6fd116fefb"
+      },
+      {
+        "file_start": "0x0008C6",
+        "file_end_exclusive": "0x000ACC",
+        "length": 518,
+        "sha256": "11a43352cc52f53dd70687abcb68684b1944ff85a69bbd3b6e283bbc168e31cb"
+      },
+      {
+        "file_start": "0x000591",
+        "file_end_exclusive": "0x00073C",
+        "length": 427,
+        "sha256": "35bb1f5f5de4d33fd0ad792583ffafc7ecd6f4c3ccba4e834072efb71870d8de"
+      },
+      {
+        "file_start": "0x00073D",
+        "file_end_exclusive": "0x000844",
+        "length": 263,
+        "sha256": "ce35813b72887313f0bad09f9e0fa17e66f5f952e634a68079519cfa441ab865"
+      },
+      {
+        "file_start": "0x000845",
+        "file_end_exclusive": "0x0008AC",
+        "length": 103,
+        "sha256": "92d96cd30ad4214fc054c457460d913b5bf08eff2c1c8b4b21cac2457cb7d362"
+      },
+      {
+        "file_start": "0x0002F7",
+        "file_end_exclusive": "0x000340",
+        "length": 73,
+        "sha256": "8d1764017b2c550833f3b1d5fd57d37160fb83dc02c29fa4b9e92553c32f9f16"
+      },
+      {
+        "file_start": "0x000AF3",
+        "file_end_exclusive": "0x000B1C",
+        "length": 41,
+        "sha256": "c74091a09c79dd646f8b785ebac18a834d29e50b5267dd4366455781cfe5f62d"
+      },
+      {
+        "file_start": "0x000573",
+        "file_end_exclusive": "0x000590",
+        "length": 29,
+        "sha256": "60992f8d80845b90fd61db93d45783be00da50307659f4b7080668ac50c5ba30"
+      }
+    ]
+  },
+  "sections": {
+    "updater": {
+      "versions": {
+        "v2.01": {
+          "header_offset": "0x002000",
+          "label": "AP068 Updater",
+          "version_or_build_text": "14-0117_11:14:451.000003",
+          "stored_length_offset": "0x002030",
+          "stored_length": "0x1EE74",
+          "payload_start": "0x002040",
+          "payload_end_exclusive": "0x020EB4",
+          "payload_sha256": "34ac79e7d60177c53a0f5e075aee10e49356d9765031cee8480132977ce0ce98",
+          "checksum_field_offset": "0x002034",
+          "checksum_field": "0x00EDDBB3",
+          "payload_byte_sum_mod32": "0x00EDDBB3",
+          "checksum_equals_direct_byte_sum": true,
+          "expanded_length_candidate_offset": "0x00203C",
+          "expanded_length_candidate": "0x26630"
+        },
+        "v4.00": {
+          "header_offset": "0x002000",
+          "label": "AP068 Updater",
+          "version_or_build_text": "14-0117_11:14:451.000003",
+          "stored_length_offset": "0x002030",
+          "stored_length": "0x1EEFD",
+          "payload_start": "0x002040",
+          "payload_end_exclusive": "0x020F3D",
+          "payload_sha256": "7be6bfaaa96f5357bf84dc53675d92828cd151d109505ad2255e681e74ad42ff",
+          "checksum_field_offset": "0x002034",
+          "checksum_field": "0x00EE30F5",
+          "payload_byte_sum_mod32": "0x00EE30F5",
+          "checksum_equals_direct_byte_sum": true,
+          "expanded_length_candidate_offset": "0x00203C",
+          "expanded_length_candidate": "0x2680C"
+        }
+      },
+      "compared_min_payload_bytes": 126580,
+      "same_offset_equal_bytes": 1542,
+      "same_offset_equal_fraction": 0.01218202,
+      "common_prefix_bytes": 194,
+      "common_prefix_sha256": "9a86daad33fe1795cdf8da940372481d19f52942ddf785109c17d3b5163c5d48",
+      "same_offset_identical_run_count": 1270,
+      "longest_same_offset_equal_runs": [
+        {
+          "file_start": "0x002040",
+          "file_end_exclusive": "0x002102",
+          "length": 194,
+          "sha256": "9a86daad33fe1795cdf8da940372481d19f52942ddf785109c17d3b5163c5d48"
+        },
+        {
+          "file_start": "0x00211A",
+          "file_end_exclusive": "0x002125",
+          "length": 11,
+          "sha256": "82fc1a44780cf067870237902f893c486904c679244f8973f1f53cb556d93e70"
+        },
+        {
+          "file_start": "0x00210C",
+          "file_end_exclusive": "0x002115",
+          "length": 9,
+          "sha256": "cf172b976cd09eabdb79f9bcc43b37085e392317cde6c2b72aa990b5a816a1b2"
+        },
+        {
+          "file_start": "0x00882D",
+          "file_end_exclusive": "0x008832",
+          "length": 5,
+          "sha256": "8b47c1040721dc1d6fdec30f24325dd5bfea3bb1abd830401df97ef8bd80f921"
+        },
+        {
+          "file_start": "0x002103",
+          "file_end_exclusive": "0x002107",
+          "length": 4,
+          "sha256": "79244571cec5fcc309a1d8ac44c03a8931827009c76b9c9f5ffcf1dd89dc5584"
+        },
+        {
+          "file_start": "0x0087BC",
+          "file_end_exclusive": "0x0087C0",
+          "length": 4,
+          "sha256": "c337512dfd833e15756ad239840b6edb2ab4ed30f3a4bd9fd3c62eb7a69ae690"
+        },
+        {
+          "file_start": "0x0087C7",
+          "file_end_exclusive": "0x0087CB",
+          "length": 4,
+          "sha256": "5d166c85eba0628deeb0c884c3fd9dfac18e31f2b42689a2fd148019e2046860"
+        },
+        {
+          "file_start": "0x0087DA",
+          "file_end_exclusive": "0x0087DE",
+          "length": 4,
+          "sha256": "25036884fd417cafb1cfd5dc8a85c914e3301b6949c8b4d054728a42ede2284d"
+        },
+        {
+          "file_start": "0x0087FC",
+          "file_end_exclusive": "0x008800",
+          "length": 4,
+          "sha256": "cebf5a5e840efabd62eba9ba5a73006585ecf49dc06e62d5581cb274e99e0187"
+        },
+        {
+          "file_start": "0x008837",
+          "file_end_exclusive": "0x00883B",
+          "length": 4,
+          "sha256": "5ddb151df741952ce0dba33f89f32054446bc7039d9ab08d2ad29f42c63d2024"
+        }
+      ]
+    },
+    "application": {
+      "versions": {
+        "v2.01": {
+          "header_offset": "0x040000",
+          "label": "AP068 Appli",
+          "version_or_build_text": "170911123402    2.011020",
+          "stored_length_offset": "0x040030",
+          "stored_length": "0x121F9C",
+          "payload_start": "0x040040",
+          "payload_end_exclusive": "0x161FDC",
+          "payload_sha256": "917deff9bce8c9ce7c635797f0dc2aebbdd8409ed60128b577c9b2c7912040ed",
+          "checksum_field_offset": "0x040034",
+          "checksum_field": "0x0890785B",
+          "payload_byte_sum_mod32": "0x0890785B",
+          "checksum_equals_direct_byte_sum": true,
+          "expanded_length_candidate_offset": "0x04003C",
+          "expanded_length_candidate": "0x29D1E8"
+        },
+        "v4.00": {
+          "header_offset": "0x040000",
+          "label": "AP068 Appli",
+          "version_or_build_text": "191217094315    4.000079",
+          "stored_length_offset": "0x040030",
+          "stored_length": "0x121617",
+          "payload_start": "0x040040",
+          "payload_end_exclusive": "0x161657",
+          "payload_sha256": "2eb17526312d3b35579d17b35bc7cba489fd165d167dcd3a9044f160931ce640",
+          "checksum_field_offset": "0x040034",
+          "checksum_field": "0x08A07F9D",
+          "payload_byte_sum_mod32": "0x08A07F9D",
+          "checksum_equals_direct_byte_sum": true,
+          "expanded_length_candidate_offset": "0x04003C",
+          "expanded_length_candidate": "0x29C49C"
+        }
+      },
+      "compared_min_payload_bytes": 1185303,
+      "same_offset_equal_bytes": 10491,
+      "same_offset_equal_fraction": 0.0088509,
+      "common_prefix_bytes": 194,
+      "common_prefix_sha256": "9a86daad33fe1795cdf8da940372481d19f52942ddf785109c17d3b5163c5d48",
+      "same_offset_identical_run_count": 10122,
+      "longest_same_offset_equal_runs": [
+        {
+          "file_start": "0x040040",
+          "file_end_exclusive": "0x040102",
+          "length": 194,
+          "sha256": "9a86daad33fe1795cdf8da940372481d19f52942ddf785109c17d3b5163c5d48"
+        },
+        {
+          "file_start": "0x04012C",
+          "file_end_exclusive": "0x040147",
+          "length": 27,
+          "sha256": "317027a87b18428948f8ebf4b19474876b684894cd57e15f4e783bd3afbebb75"
+        },
+        {
+          "file_start": "0x040149",
+          "file_end_exclusive": "0x040157",
+          "length": 14,
+          "sha256": "53db1ff5d24e82ad8671779627478c439cfbb2910ee587fd9ce6d17c4ff87333"
+        },
+        {
+          "file_start": "0x04011F",
+          "file_end_exclusive": "0x04012A",
+          "length": 11,
+          "sha256": "e0f1326ae2178f49650547533897148956476e90558f9e65ab468234de912f1d"
+        },
+        {
+          "file_start": "0x04010D",
+          "file_end_exclusive": "0x040115",
+          "length": 8,
+          "sha256": "cd214bd4b5d80d2151a8ad3be9af33fd837848144e160ddc811dfb9bb060081a"
+        },
+        {
+          "file_start": "0x040116",
+          "file_end_exclusive": "0x04011A",
+          "length": 4,
+          "sha256": "70257df3f279c794c7b8463775707863115fd9046696b0c1d5b8e5066a48faa1"
+        },
+        {
+          "file_start": "0x04015C",
+          "file_end_exclusive": "0x040160",
+          "length": 4,
+          "sha256": "e7ff27a51e1a603b8f0993d75edb091f73da3e77e6a9e02ec9278665c9b57e47"
+        },
+        {
+          "file_start": "0x087818",
+          "file_end_exclusive": "0x08781C",
+          "length": 4,
+          "sha256": "535156b5846d1480fa54fac60aabae7c94e019b7ceadbb9097ad1eae433da99e"
+        },
+        {
+          "file_start": "0x040104",
+          "file_end_exclusive": "0x040107",
+          "length": 3,
+          "sha256": "b7ae7729555ec6829c579c2602edc6cb94b4ed3d820ddda0a45ac54030f8a53d"
+        },
+        {
+          "file_start": "0x040109",
+          "file_end_exclusive": "0x04010B",
+          "length": 2,
+          "sha256": "efec01a4d3a9bd2e0533dc79a10933708662f61437efbf0e0c3ed31743d23e8a"
+        }
+      ]
+    }
+  },
+  "interpretation": "The first 8 KiB ESC91.000 region is highly stable at same file offsets across KATANA v2.01 and v4.00, while the bounded updater/application payloads are highly version-dependent apart from their 194-byte common prefix. These are byte comparisons, not code/data classification or runtime relocation evidence."
+}

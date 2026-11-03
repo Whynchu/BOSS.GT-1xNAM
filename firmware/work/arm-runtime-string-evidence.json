@@ -1,0 +1,48 @@
+{
+  "analysis": "Interleaved ARM runtime diagnostic string clue",
+  "read_only": true,
+  "projection_limit": "The supplementary whole-image search removes every non-printable byte before searching, so offsets are the first mapped raw offset and matches are leads only. The bounded exact phrase windows above are the reproducible normalization evidence.",
+  "interpretation_limit": "The text matches an ARM Compiler C++ runtime diagnostic, but this alone does not prove the application ISA or that the referenced routine is reachable/executed.",
+  "images": {
+    "v108": {
+      "path": "firmware/extracted/v108/gt1_sys_v108/GT1ROM.BIN",
+      "image_sha256": "7219679a87e985316264544423c9940ccbcbadeb2df0b2f13711ae57194cb612",
+      "offset_start": "0x09786C",
+      "offset_end_exclusive": "0x09788E",
+      "raw_hex": "53 49 47 50 56 46 4e ff 3a 20 50 75 72 65 20 76 ff 69 72 74 75 61 6c 20 66 ff 6e 20 63 61 6c 6c 65 64",
+      "raw_sha256": "502f38bf7ffcb718d3c2b4e2944ab60f02c3a970f6aea195da15abfb807d817c",
+      "normalization": "Remove interspersed bytes 0xFF and 0xDF from this exact bounded span.",
+      "reconstructed_ascii": "SIGPVFN: Pure virtual fn called",
+      "naive_printable_projection_runtime_token_hits": [
+        {
+          "token": "SIGPVFN",
+          "offset": "0x09786C"
+        },
+        {
+          "token": "Pure virtual fn called",
+          "offset": "0x097876"
+        }
+      ]
+    },
+    "v109": {
+      "path": "firmware/extracted/v109/gt1_sys_v109/GT1ROM.BIN",
+      "image_sha256": "412ebf5ffdc48554454c27df47f61428f046ea0a7d93f5c77b7f0302861abdbf",
+      "offset_start": "0x098899",
+      "offset_end_exclusive": "0x0988BC",
+      "raw_hex": "53 49 ff 47 50 56 46 4e 3a 20 50 ff 75 72 65 20 76 69 72 74 ff 75 61 6c 20 66 6e 20 63 df 61 6c 6c 65 64",
+      "raw_sha256": "62c9ce80d7721de98ac1e05bbf8013d842da03eac7924c709f3de0f3452d7601",
+      "normalization": "Remove interspersed bytes 0xFF and 0xDF from this exact bounded span.",
+      "reconstructed_ascii": "SIGPVFN: Pure virtual fn called",
+      "naive_printable_projection_runtime_token_hits": [
+        {
+          "token": "SIGPVFN",
+          "offset": "0x098899"
+        },
+        {
+          "token": "Pure virtual fn called",
+          "offset": "0x0988A3"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,8 @@
+language=ARM:LE:32:Cortex
+input_scope=shared section prefix file bytes 0x0-0xC1 (194 bytes)
+candidate_offsets=0x5E and 0x60; exploratory only, no entry-point evidence
+instructions_from_0000005e:
+0000005e  bx  r0
+instructions_from_00000060:
+00000060  cmp  r1, #0x28
+00000062  ittt  cs

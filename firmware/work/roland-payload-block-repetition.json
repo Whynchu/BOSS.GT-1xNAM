@@ -1,0 +1,1795 @@
+{
+  "question": "Do bounded GT-1 payloads show the high repeated-block rate reported for a different Roland platform?",
+  "read_only": true,
+  "method": {
+    "block_sizes": [
+      8,
+      16
+    ],
+    "payload_relative_start_offsets": [
+      0,
+      194,
+      199
+    ],
+    "measure": "Count exact fixed-size blocks; report all blocks participating in repeat groups and excess copies after first.",
+    "limits": [
+      "Repeated blocks can arise from padding, initialized data, tables, or encryption modes; this statistic alone identifies no cipher.",
+      "Lack of repeats does not rule out encryption in non-ECB modes.",
+      "The TR-6S comparator is a different product/platform and supplies only a motivation for this probe."
+    ]
+  },
+  "images": {
+    "v105": {
+      "path": "firmware/extracted/v105/gt1_sys_v105/GT1ROM.BIN",
+      "image_size": 4194304,
+      "image_sha256": "b1bde0410795230b4a89ee3dfbbd357700bba7020624c0ff832ae3d8539d8bb4",
+      "sections": {
+        "updater": {
+          "header_offset": "0x2000",
+          "payload_start": "0x2040",
+          "payload_length": 136551,
+          "payload_sha256": "864cebee6e15be9da8e9dca9c756bf720f35d4454f91b8fc466eaf4c23f9966a",
+          "alignments": {
+            "0": {
+              "absolute_file_offset": "0x2040",
+              "region_length": 136551,
+              "region_sha256": "864cebee6e15be9da8e9dca9c756bf720f35d4454f91b8fc466eaf4c23f9966a",
+              "block_statistics": [
+                {
+                  "block_size": 8,
+                  "complete_blocks": 17068,
+                  "unique_blocks": 17068,
+                  "blocks_in_repeated_groups": 0,
+                  "blocks_in_repeated_groups_fraction": 0.0,
+                  "excess_copies_after_first": 0,
+                  "excess_copy_fraction": 0.0,
+                  "largest_repeat_count": 1,
+                  "top_repeated_values": []
+                },
+                {
+                  "block_size": 16,
+                  "complete_blocks": 8534,
+                  "unique_blocks": 8534,
+                  "blocks_in_repeated_groups": 0,
+                  "blocks_in_repeated_groups_fraction": 0.0,
+                  "excess_copies_after_first": 0,
+                  "excess_copy_fraction": 0.0,
+                  "largest_repeat_count": 1,
+                  "top_repeated_values": []
+                }
+              ]
+            },
+            "194": {
+              "absolute_file_offset": "0x2102",
+              "region_length": 136357,
+              "region_sha256": "fa0a057289879d4ce283667bc0b1f3b135f15b600001fab7bf212e4a078205ca",
+              "block_statistics": [
+                {
+                  "block_size": 8,
+                  "complete_blocks": 17044,
+                  "unique_blocks": 17044,
+                  "blocks_in_repeated_groups": 0,
+                  "blocks_in_repeated_groups_fraction": 0.0,
+                  "excess_copies_after_first": 0,
+                  "excess_copy_fraction": 0.0,
+                  "largest_repeat_count": 1,
+                  "top_repeated_values": []
+                },
+                {
+                  "block_size": 16,
+                  "complete_blocks": 8522,
+                  "unique_blocks": 8522,
+                  "blocks_in_repeated_groups": 0,
+                  "blocks_in_repeated_groups_fraction": 0.0,
+                  "excess_copies_after_first": 0,
+                  "excess_copy_fraction": 0.0,
+                  "largest_repeat_count": 1,
+                  "top_repeated_values": []
+                }
+              ]
+            },
+            "199": {
+              "absolute_file_offset": "0x2107",
+              "region_length": 136352,
+              "region_sha256": "4d44e27953c3496cde290d99c618c53ab79c11f180bb3c4d41c3996ea6ab0f81",
+              "block_statistics": [
+                {
+                  "block_size": 8,
+                  "complete_blocks": 17044,
+                  "unique_blocks": 17044,
+                  "blocks_in_repeated_groups": 0,
+                  "blocks_in_repeated_groups_fraction": 0.0,
+                  "excess_copies_after_first": 0,
+                  "excess_copy_fraction": 0.0,
+                  "largest_repeat_count": 1,
+                  "top_repeated_values": []
+                },
+                {
+                  "block_size": 16,
+                  "complete_blocks": 8522,
+                  "unique_blocks": 8522,
+                  "blocks_in_repeated_groups": 0,
+                  "blocks_in_repeated_groups_fraction": 0.0,
+                  "excess_copies_after_first": 0,
+                  "excess_copy_fraction": 0.0,
+                  "largest_repeat_count": 1,
+                  "top_repeated_values": []
+                }
+              ]
+            }
+          }
+        },
+        "application": {
+          "header_offset": "0x40000",
+          "payload_start": "0x40040",
+          "payload_length": 1171544,
+          "payload_sha256": "4081604fc89c772960a4d9a5582a8a11b2fe8f8b360922dbb94f4df7b27baccf",
+          "alignments": {
+            "0": {
+              "absolute_file_offset": "0x40040",
+              "region_length": 1171544,
+              "region_sha256": "4081604fc89c772960a4d9a5582a8a11b2fe8f8b360922dbb94f4df7b27baccf",
+              "block_statistics": [
+                {
+                  "block_size": 8,
+                  "complete_blocks": 146443,
+                  "unique_blocks": 144763,
+                  "blocks_in_repeated_groups": 3036,
+                  "blocks_in_repeated_groups_fraction": 0.020731615713963796,
+                  "excess_copies_after_first": 1680,
+                  "excess_copy_fraction": 0.011472040316027396,
+                  "largest_repeat_count": 6,
+                  "top_repeated_values": [
+                    {
+                      "count": 6,
+                      "bytes_hex": "e1 ef f3 ef 05 ff 17 ff"
+                    },
+                    {
+                      "count": 6,
+                      "bytes_hex": "7d 0f 8f 0f a1 0f b3 0f"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "fd 3f 0f 4f 21 4f 33 4f"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "eb 9f fd 9f 0f af 21 af"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "d3 df e5 df f7 df 09 ef"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "d3 1f e5 1f f7 1f 09 2f"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "af c3 af d5 af e7 af f9"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "9c ef ae ef c0 ef d2 ef"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "7d cf 8f cf a1 cf b3 cf"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "33 af 45 af 57 af 69 af"
+                    }
+                  ]
+                },
+                {
+                  "block_size": 16,
+                  "complete_blocks": 73221,
+                  "unique_blocks": 73152,
+                  "blocks_in_repeated_groups": 137,
+                  "blocks_in_repeated_groups_fraction": 0.0018710479234099507,
+                  "excess_copies_after_first": 69,
+                  "excess_copy_fraction": 0.0009423526037612161,
+                  "largest_repeat_count": 3,
+                  "top_repeated_values": [
+                    {
+                      "count": 3,
+                      "bytes_hex": "00 98 2f aa 2f bc 2f ce 2f e0 2f f2 2f 04 3f 16"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ff 45 ff 57 ff 69 ff 7b ff 8d ff 00 9f ff b1 ff"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "fe 2f 10 3f 22 3f 34 3f 46 3f 58 3f 6a 3f 00 7c"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "fa 9f 0c af 1e af 30 af 42 af 54 af 66 af 00 78"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "f9 5f 0b 6f 1d 6f 00 2f 6f 41 6f 53 6f 65 6f 77"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ee 5f 00 6f 12 6f 24 6f 36 6f 48 6f 5a 6f 6c 6f"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "eb 9f fd 9f 0f af 21 af 33 af 45 af 57 af 69 af"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "e4 9f f6 9f 00 08 af 1a af 2c af 3e af 50 af 62"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "e3 4f 00 f5 4f 07 5f 19 5f 2b 5f 3d 5f 4f 5f 61"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "dd 8f ef 8f 01 9f 13 9f 25 9f 37 9f 49 9f 00 5b"
+                    }
+                  ]
+                }
+              ]
+            },
+            "194": {
+              "absolute_file_offset": "0x40102",
+              "region_length": 1171350,
+              "region_sha256": "06530b083d376c4532de3886b6a9a9d7d614b8cd9d0fc39ec01b1bbb2e6aa157",
+              "block_statistics": [
+                {
+                  "block_size": 8,
+                  "complete_blocks": 146418,
+                  "unique_blocks": 144752,
+                  "blocks_in_repeated_groups": 3030,
+                  "blocks_in_repeated_groups_fraction": 0.020694176945457526,
+                  "excess_copies_after_first": 1666,
+                  "excess_copy_fraction": 0.01137838243931757,
+                  "largest_repeat_count": 5,
+                  "top_repeated_values": [
+                    {
+                      "count": 5,
+                      "bytes_hex": "fd 9f 0f af 21 af 33 af"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "e5 1f f7 1f 09 2f 1b 2f"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "df 1f df 31 df 43 df 55"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "af 8d af 9f af b1 af c3"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "ae ef c0 ef d2 ef e4 ef"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "ab af bd af cf af e1 af"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "7f 03 8f 15 8f 27 8f 39"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "2b af 3d af 4f af 61 af"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "1d 5f 2f 5f 41 5f 53 5f"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "0f 91 0f a3 0f b5 0f c7"
+                    }
+                  ]
+                },
+                {
+                  "block_size": 16,
+                  "complete_blocks": 73209,
+                  "unique_blocks": 73140,
+                  "blocks_in_repeated_groups": 137,
+                  "blocks_in_repeated_groups_fraction": 0.0018713546148697564,
+                  "excess_copies_after_first": 69,
+                  "excess_copy_fraction": 0.000942507068803016,
+                  "largest_repeat_count": 3,
+                  "top_repeated_values": [
+                    {
+                      "count": 3,
+                      "bytes_hex": "2f aa 2f bc 2f ce 2f e0 2f f2 2f 04 3f 16 3f 00"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ff 81 92 0a 0c 08 74 06 11 ff 12 00 14 64 00 42"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ff 57 ff 69 ff 7b ff 8d ff 00 9f ff b1 ff c3 ff"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "fd 9f 0f af 21 af 33 af 45 af 57 af 69 af 00 7b"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "f6 9f 00 08 af 1a af 2c af 3e af 50 af 62 af 74"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "f1 2f 03 3f 15 3f 27 3f 39 3f 4b 3f 5d 3f 00 6f"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ef 8f 01 9f 13 9f 25 9f 37 9f 49 9f 00 5b 9f 6d"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "e5 1f f7 1f 09 2f 1b 2f 2d 2f 00 3f 2f 51 2f 63"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "e3 1f f5 1f 07 2f 19 2f 2b 2f 3d 2f 00 4f 2f 61"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "e3 0f f5 0f 07 1f 19 1f 2b 1f 3d 1f 00 4f 1f 61"
+                    }
+                  ]
+                }
+              ]
+            },
+            "199": {
+              "absolute_file_offset": "0x40107",
+              "region_length": 1171345,
+              "region_sha256": "fdff73bbf816727fbce17a4c9e037d750938aaf671ffd1f7315e3df1b60080a5",
+              "block_statistics": [
+                {
+                  "block_size": 8,
+                  "complete_blocks": 146418,
+                  "unique_blocks": 144767,
+                  "blocks_in_repeated_groups": 3001,
+                  "blocks_in_repeated_groups_fraction": 0.02049611386578153,
+                  "excess_copies_after_first": 1651,
+                  "excess_copy_fraction": 0.011275936018795504,
+                  "largest_repeat_count": 5,
+                  "top_repeated_values": [
+                    {
+                      "count": 5,
+                      "bytes_hex": "ef e1 ef f3 ef 05 ff 17"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "d1 9f e3 9f f5 9f 07 af"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "ce 2f e0 2f f2 2f 04 3f"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "c3 1f d5 1f e7 1f f9 1f"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "af 33 af 45 af 57 af 69"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "7b 9f 8d 9f 9f 9f b1 9f"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "5b 9f 6d 9f 7f 9f 91 9f"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "43 df 55 df 67 df 79 df"
+                    },
+                    {
+                      "count": 4,
+                      "bytes_hex": "fb 8f 0d 9f 1f 9f 31 9f"
+                    },
+                    {
+                      "count": 4,
+                      "bytes_hex": "e6 6f f8 6f 0a 7f 1c 7f"
+                    }
+                  ]
+                },
+                {
+                  "block_size": 16,
+                  "complete_blocks": 73209,
+                  "unique_blocks": 73141,
+                  "blocks_in_repeated_groups": 136,
+                  "blocks_in_repeated_groups_fraction": 0.0018576950921334809,
+                  "excess_copies_after_first": 68,
+                  "excess_copy_fraction": 0.0009288475460667404,
+                  "largest_repeat_count": 2,
+                  "top_repeated_values": [
+                    {
+                      "count": 2,
+                      "bytes_hex": "ff ef ff 01 0f 13 0f 25 0f 37 0f 49 0f 5b 0f 00"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ff 0b 0f 1d 0f 00 2f 0f 41 0f 53 0f 65 0f 77 0f"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "f8 5f 00 0a 6f 1c 6f 2e 6f 40 6f 52 6f 64 6f 76"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "f5 cf 00 07 df 19 df 2b df 3d df 4f df 61 df 73"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "f3 5f 05 6f 00 17 6f 29 6f 3b 6f 4d 6f 5f 6f 71"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ec 3f fe 3f 10 4f 22 4f 34 4f 46 4f 58 4f 00 6a"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "df b0 df 00 c2 df d4 df e6 df f8 df 0a ef 1c ef"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "de 3f f0 3f 02 4f 14 4f 00 26 4f 38 4f 4a 4f 5c"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "d2 4f e4 4f f6 4f 08 5f 1a 5f 00 2c 5f 3e 5f 50"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "cf 00 a2 cf b4 cf c6 cf d8 cf ea cf fc cf 0e df"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "v107": {
+      "path": "firmware/extracted/v107/gt1_sys_v107/GT1ROM.BIN",
+      "image_size": 4194304,
+      "image_sha256": "6a3110cd42c4b129494a93bc88d4f218e2e0b9377868ca051018b28696d6c22f",
+      "sections": {
+        "updater": {
+          "header_offset": "0x2000",
+          "payload_start": "0x2040",
+          "payload_length": 136551,
+          "payload_sha256": "864cebee6e15be9da8e9dca9c756bf720f35d4454f91b8fc466eaf4c23f9966a",
+          "alignments": {
+            "0": {
+              "absolute_file_offset": "0x2040",
+              "region_length": 136551,
+              "region_sha256": "864cebee6e15be9da8e9dca9c756bf720f35d4454f91b8fc466eaf4c23f9966a",
+              "block_statistics": [
+                {
+                  "block_size": 8,
+                  "complete_blocks": 17068,
+                  "unique_blocks": 17068,
+                  "blocks_in_repeated_groups": 0,
+                  "blocks_in_repeated_groups_fraction": 0.0,
+                  "excess_copies_after_first": 0,
+                  "excess_copy_fraction": 0.0,
+                  "largest_repeat_count": 1,
+                  "top_repeated_values": []
+                },
+                {
+                  "block_size": 16,
+                  "complete_blocks": 8534,
+                  "unique_blocks": 8534,
+                  "blocks_in_repeated_groups": 0,
+                  "blocks_in_repeated_groups_fraction": 0.0,
+                  "excess_copies_after_first": 0,
+                  "excess_copy_fraction": 0.0,
+                  "largest_repeat_count": 1,
+                  "top_repeated_values": []
+                }
+              ]
+            },
+            "194": {
+              "absolute_file_offset": "0x2102",
+              "region_length": 136357,
+              "region_sha256": "fa0a057289879d4ce283667bc0b1f3b135f15b600001fab7bf212e4a078205ca",
+              "block_statistics": [
+                {
+                  "block_size": 8,
+                  "complete_blocks": 17044,
+                  "unique_blocks": 17044,
+                  "blocks_in_repeated_groups": 0,
+                  "blocks_in_repeated_groups_fraction": 0.0,
+                  "excess_copies_after_first": 0,
+                  "excess_copy_fraction": 0.0,
+                  "largest_repeat_count": 1,
+                  "top_repeated_values": []
+                },
+                {
+                  "block_size": 16,
+                  "complete_blocks": 8522,
+                  "unique_blocks": 8522,
+                  "blocks_in_repeated_groups": 0,
+                  "blocks_in_repeated_groups_fraction": 0.0,
+                  "excess_copies_after_first": 0,
+                  "excess_copy_fraction": 0.0,
+                  "largest_repeat_count": 1,
+                  "top_repeated_values": []
+                }
+              ]
+            },
+            "199": {
+              "absolute_file_offset": "0x2107",
+              "region_length": 136352,
+              "region_sha256": "4d44e27953c3496cde290d99c618c53ab79c11f180bb3c4d41c3996ea6ab0f81",
+              "block_statistics": [
+                {
+                  "block_size": 8,
+                  "complete_blocks": 17044,
+                  "unique_blocks": 17044,
+                  "blocks_in_repeated_groups": 0,
+                  "blocks_in_repeated_groups_fraction": 0.0,
+                  "excess_copies_after_first": 0,
+                  "excess_copy_fraction": 0.0,
+                  "largest_repeat_count": 1,
+                  "top_repeated_values": []
+                },
+                {
+                  "block_size": 16,
+                  "complete_blocks": 8522,
+                  "unique_blocks": 8522,
+                  "blocks_in_repeated_groups": 0,
+                  "blocks_in_repeated_groups_fraction": 0.0,
+                  "excess_copies_after_first": 0,
+                  "excess_copy_fraction": 0.0,
+                  "largest_repeat_count": 1,
+                  "top_repeated_values": []
+                }
+              ]
+            }
+          }
+        },
+        "application": {
+          "header_offset": "0x40000",
+          "payload_start": "0x40040",
+          "payload_length": 1173349,
+          "payload_sha256": "78858382a3b1f3b7055b34e81499b7dd4c3b183c4070e8c7f387948c54b18bb2",
+          "alignments": {
+            "0": {
+              "absolute_file_offset": "0x40040",
+              "region_length": 1173349,
+              "region_sha256": "78858382a3b1f3b7055b34e81499b7dd4c3b183c4070e8c7f387948c54b18bb2",
+              "block_statistics": [
+                {
+                  "block_size": 8,
+                  "complete_blocks": 146668,
+                  "unique_blocks": 144968,
+                  "blocks_in_repeated_groups": 3075,
+                  "blocks_in_repeated_groups_fraction": 0.02096571849346824,
+                  "excess_copies_after_first": 1700,
+                  "excess_copy_fraction": 0.011590803719966182,
+                  "largest_repeat_count": 6,
+                  "top_repeated_values": [
+                    {
+                      "count": 6,
+                      "bytes_hex": "63 3f 75 3f 87 3f 99 3f"
+                    },
+                    {
+                      "count": 6,
+                      "bytes_hex": "3f f3 3f 05 4f 17 4f 29"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "71 4f 83 4f 95 4f a7 4f"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "63 7f 75 7f 87 7f 99 7f"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "55 4f 67 4f 79 4f 8b 4f"
+                    },
+                    {
+                      "count": 4,
+                      "bytes_hex": "fb cf 0d df 1f df 31 df"
+                    },
+                    {
+                      "count": 4,
+                      "bytes_hex": "f6 0f 08 1f 1a 1f 2c 1f"
+                    },
+                    {
+                      "count": 4,
+                      "bytes_hex": "ef 6a ef 7c ef 8e ef a0"
+                    },
+                    {
+                      "count": 4,
+                      "bytes_hex": "ee 9f 00 af 12 af 24 af"
+                    },
+                    {
+                      "count": 4,
+                      "bytes_hex": "e8 ff fa ff 0c 0f 1e 0f"
+                    }
+                  ]
+                },
+                {
+                  "block_size": 16,
+                  "complete_blocks": 73334,
+                  "unique_blocks": 73238,
+                  "blocks_in_repeated_groups": 191,
+                  "blocks_in_repeated_groups_fraction": 0.0026045217770747538,
+                  "excess_copies_after_first": 96,
+                  "excess_copy_fraction": 0.0013090790083726512,
+                  "largest_repeat_count": 3,
+                  "top_repeated_values": [
+                    {
+                      "count": 3,
+                      "bytes_hex": "2f db 2f 00 ed 2f ff 2f 11 3f 23 3f 35 3f 47 3f"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ff bf 00 11 cf 23 cf 35 cf 47 cf 59 cf 6b cf 7d"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ff 9f ff 00 b1 ff c3 ff d5 ff e7 ff f9 ff 0b 0f"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ff 4f 11 5f 23 5f 35 5f 47 5f 59 5f 6b 5f 7d 5f"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "fb bf 0d cf 1f cf 00 31 cf 43 cf 55 cf 67 cf 79"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "f7 3f 09 4f 1b 4f 2d 4f 3f 4f 51 4f 63 4f 00 75"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "f6 0f 08 1f 1a 1f 2c 1f 3e 1f 50 1f 00 62 1f 74"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "f1 3f 03 4f 15 4f 27 4f 39 4f 4b 4f 5d 4f 00 6f"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ef 00 02 ff 14 ff 26 ff 38 ff 4a ff 5c ff 6e ff"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ed cf ff cf 11 df 00 23 df 35 df 47 df 59 df 6b"
+                    }
+                  ]
+                }
+              ]
+            },
+            "194": {
+              "absolute_file_offset": "0x40102",
+              "region_length": 1173155,
+              "region_sha256": "be542e7d532399d36d1a23ee0e492eef12fe116a6163a12a69f0de4b566067fa",
+              "block_statistics": [
+                {
+                  "block_size": 8,
+                  "complete_blocks": 146644,
+                  "unique_blocks": 144937,
+                  "blocks_in_repeated_groups": 3103,
+                  "blocks_in_repeated_groups_fraction": 0.02116008837729467,
+                  "excess_copies_after_first": 1707,
+                  "excess_copy_fraction": 0.011640435340007091,
+                  "largest_repeat_count": 5,
+                  "top_repeated_values": [
+                    {
+                      "count": 5,
+                      "bytes_hex": "f5 2f 07 3f 19 3f 2b 3f"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "e7 3f f9 3f 0b 4f 1d 4f"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "b4 af c6 af d8 af ea af"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "83 6f 95 6f a7 6f b9 6f"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "83 4f 95 4f a7 4f b9 4f"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "75 7f 87 7f 99 7f ab 7f"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "5f 05 6f 17 6f 29 6f 3b"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "3f 05 4f 17 4f 29 4f 3b"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "0e bf 20 bf 32 bf 44 bf"
+                    },
+                    {
+                      "count": 4,
+                      "bytes_hex": "f6 4f 08 5f 1a 5f 2c 5f"
+                    }
+                  ]
+                },
+                {
+                  "block_size": 16,
+                  "complete_blocks": 73322,
+                  "unique_blocks": 73225,
+                  "blocks_in_repeated_groups": 193,
+                  "blocks_in_repeated_groups_fraction": 0.0026322249802242163,
+                  "excess_copies_after_first": 97,
+                  "excess_copy_fraction": 0.001322931725812171,
+                  "largest_repeat_count": 3,
+                  "top_repeated_values": [
+                    {
+                      "count": 3,
+                      "bytes_hex": "2f 00 ed 2f ff 2f 11 3f 23 3f 35 3f 47 3f 59 3f"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ff cf 11 df 00 23 df 35 df 47 df 59 df 6b df 7d"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ff af 00 11 bf 23 bf 35 bf 47 bf 59 bf 6b bf 7d"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ff 7c ff 8e ff a0 ff 00 b2 ff c4 ff d6 ff e8 ff"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ff 00 b1 ff c3 ff d5 ff e7 ff f9 ff 0b 0f 1d 0f"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "fa ff 0c 0f 1e 0f 30 0f 00 42 0f 54 0f 66 0f 78"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ef 91 ef a3 ef b5 ef c7 ef d9 ef 00 eb ef fd ef"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ef 84 ef 96 ef a8 ef ba ef cc ef de ef f0 ef 00"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ef 13 ef 25 ef 37 ef 49 ef 5b ef 6d ef 7f ef 00"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "df db df ed df ff df 11 ef 00 23 ef 35 ef 47 ef"
+                    }
+                  ]
+                }
+              ]
+            },
+            "199": {
+              "absolute_file_offset": "0x40107",
+              "region_length": 1173150,
+              "region_sha256": "f411c33c416b2ab8e83a95e03bc6937f18bb4f164795f631c2e3a85a15bb479a",
+              "block_statistics": [
+                {
+                  "block_size": 8,
+                  "complete_blocks": 146643,
+                  "unique_blocks": 144930,
+                  "blocks_in_repeated_groups": 3103,
+                  "blocks_in_repeated_groups_fraction": 0.021160232673908746,
+                  "excess_copies_after_first": 1713,
+                  "excess_copy_fraction": 0.011681430412634766,
+                  "largest_repeat_count": 6,
+                  "top_repeated_values": [
+                    {
+                      "count": 6,
+                      "bytes_hex": "e1 3f f3 3f 05 4f 17 4f"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "d3 bf e5 bf f7 bf 09 cf"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "d3 2f e5 2f f7 2f 09 3f"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "c5 af d7 af e9 af fb af"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "b7 df c9 df db df ed df"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "61 1f 73 1f 85 1f 97 1f"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "3f 63 3f 75 3f 87 3f 99"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "21 df 33 df 45 df 57 df"
+                    },
+                    {
+                      "count": 4,
+                      "bytes_hex": "ff e8 ff fa ff 0c 0f 1e"
+                    },
+                    {
+                      "count": 4,
+                      "bytes_hex": "ff d5 ff e7 ff f9 ff 0b"
+                    }
+                  ]
+                },
+                {
+                  "block_size": 16,
+                  "complete_blocks": 73321,
+                  "unique_blocks": 73222,
+                  "blocks_in_repeated_groups": 195,
+                  "blocks_in_repeated_groups_fraction": 0.0026595381950600783,
+                  "excess_copies_after_first": 99,
+                  "excess_copy_fraction": 0.0013502270836458859,
+                  "largest_repeat_count": 3,
+                  "top_repeated_values": [
+                    {
+                      "count": 3,
+                      "bytes_hex": "5f ab 5f bd 5f cf 5f e1 5f 00 f3 5f 05 6f 17 6f"
+                    },
+                    {
+                      "count": 3,
+                      "bytes_hex": "2f 11 3f 23 3f 35 3f 47 3f 59 3f 6b 3f 00 7d 3f"
+                    },
+                    {
+                      "count": 3,
+                      "bytes_hex": "00 25 af 37 af 49 af 5b af 6d af 7f af 91 af a3"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ff d8 ff 00 ea ff fc ff 0e 0f 20 0f 32 0f 44 0f"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ff bf 11 cf 00 23 cf 35 cf 47 cf 59 cf 6b cf 7d"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ff 38 ff 4a ff 5c ff 6e ff 80 ff 00 92 ff a4 ff"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ff 04 0f 00 16 0f 28 0f 3a 0f 4c 0f 5e 0f 70 0f"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "fa 4f 0c 5f 1e 5f 30 5f 42 5f 54 5f 66 5f 78 5f"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "f8 0f 0a 1f 1c 1f 2e 1f 40 1f 00 52 1f 64 1f 76"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "f3 5f 05 6f 17 6f 29 6f 3b 6f 00 4d 6f 5f 6f 71"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "v108": {
+      "path": "firmware/extracted/v108/gt1_sys_v108/GT1ROM.BIN",
+      "image_size": 4194304,
+      "image_sha256": "7219679a87e985316264544423c9940ccbcbadeb2df0b2f13711ae57194cb612",
+      "sections": {
+        "updater": {
+          "header_offset": "0x2000",
+          "payload_start": "0x2040",
+          "payload_length": 136551,
+          "payload_sha256": "864cebee6e15be9da8e9dca9c756bf720f35d4454f91b8fc466eaf4c23f9966a",
+          "alignments": {
+            "0": {
+              "absolute_file_offset": "0x2040",
+              "region_length": 136551,
+              "region_sha256": "864cebee6e15be9da8e9dca9c756bf720f35d4454f91b8fc466eaf4c23f9966a",
+              "block_statistics": [
+                {
+                  "block_size": 8,
+                  "complete_blocks": 17068,
+                  "unique_blocks": 17068,
+                  "blocks_in_repeated_groups": 0,
+                  "blocks_in_repeated_groups_fraction": 0.0,
+                  "excess_copies_after_first": 0,
+                  "excess_copy_fraction": 0.0,
+                  "largest_repeat_count": 1,
+                  "top_repeated_values": []
+                },
+                {
+                  "block_size": 16,
+                  "complete_blocks": 8534,
+                  "unique_blocks": 8534,
+                  "blocks_in_repeated_groups": 0,
+                  "blocks_in_repeated_groups_fraction": 0.0,
+                  "excess_copies_after_first": 0,
+                  "excess_copy_fraction": 0.0,
+                  "largest_repeat_count": 1,
+                  "top_repeated_values": []
+                }
+              ]
+            },
+            "194": {
+              "absolute_file_offset": "0x2102",
+              "region_length": 136357,
+              "region_sha256": "fa0a057289879d4ce283667bc0b1f3b135f15b600001fab7bf212e4a078205ca",
+              "block_statistics": [
+                {
+                  "block_size": 8,
+                  "complete_blocks": 17044,
+                  "unique_blocks": 17044,
+                  "blocks_in_repeated_groups": 0,
+                  "blocks_in_repeated_groups_fraction": 0.0,
+                  "excess_copies_after_first": 0,
+                  "excess_copy_fraction": 0.0,
+                  "largest_repeat_count": 1,
+                  "top_repeated_values": []
+                },
+                {
+                  "block_size": 16,
+                  "complete_blocks": 8522,
+                  "unique_blocks": 8522,
+                  "blocks_in_repeated_groups": 0,
+                  "blocks_in_repeated_groups_fraction": 0.0,
+                  "excess_copies_after_first": 0,
+                  "excess_copy_fraction": 0.0,
+                  "largest_repeat_count": 1,
+                  "top_repeated_values": []
+                }
+              ]
+            },
+            "199": {
+              "absolute_file_offset": "0x2107",
+              "region_length": 136352,
+              "region_sha256": "4d44e27953c3496cde290d99c618c53ab79c11f180bb3c4d41c3996ea6ab0f81",
+              "block_statistics": [
+                {
+                  "block_size": 8,
+                  "complete_blocks": 17044,
+                  "unique_blocks": 17044,
+                  "blocks_in_repeated_groups": 0,
+                  "blocks_in_repeated_groups_fraction": 0.0,
+                  "excess_copies_after_first": 0,
+                  "excess_copy_fraction": 0.0,
+                  "largest_repeat_count": 1,
+                  "top_repeated_values": []
+                },
+                {
+                  "block_size": 16,
+                  "complete_blocks": 8522,
+                  "unique_blocks": 8522,
+                  "blocks_in_repeated_groups": 0,
+                  "blocks_in_repeated_groups_fraction": 0.0,
+                  "excess_copies_after_first": 0,
+                  "excess_copy_fraction": 0.0,
+                  "largest_repeat_count": 1,
+                  "top_repeated_values": []
+                }
+              ]
+            }
+          }
+        },
+        "application": {
+          "header_offset": "0x40000",
+          "payload_start": "0x40040",
+          "payload_length": 1173445,
+          "payload_sha256": "ef236d8bb3ce79cb5f6a836e4ddbaa325f4ad04cde546e7cb70d6d7ecba8f2b0",
+          "alignments": {
+            "0": {
+              "absolute_file_offset": "0x40040",
+              "region_length": 1173445,
+              "region_sha256": "ef236d8bb3ce79cb5f6a836e4ddbaa325f4ad04cde546e7cb70d6d7ecba8f2b0",
+              "block_statistics": [
+                {
+                  "block_size": 8,
+                  "complete_blocks": 146680,
+                  "unique_blocks": 144956,
+                  "blocks_in_repeated_groups": 3159,
+                  "blocks_in_repeated_groups_fraction": 0.0215366784837742,
+                  "excess_copies_after_first": 1724,
+                  "excess_copy_fraction": 0.011753476956640306,
+                  "largest_repeat_count": 7,
+                  "top_repeated_values": [
+                    {
+                      "count": 7,
+                      "bytes_hex": "af 3f c1 3f d3 3f e5 3f"
+                    },
+                    {
+                      "count": 6,
+                      "bytes_hex": "55 1f 67 1f 79 1f 8b 1f"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "dc af ee af 00 bf 12 bf"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "cb 0f dd 0f ef 0f 01 1f"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "bd 4f cf 4f e1 4f f3 4f"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "94 af a6 af b8 af ca af"
+                    },
+                    {
+                      "count": 4,
+                      "bytes_hex": "ff 8f 11 9f 23 9f 35 9f"
+                    },
+                    {
+                      "count": 4,
+                      "bytes_hex": "ed ef ff ef 11 ff 23 ff"
+                    },
+                    {
+                      "count": 4,
+                      "bytes_hex": "e4 2f f6 2f 08 3f 1a 3f"
+                    },
+                    {
+                      "count": 4,
+                      "bytes_hex": "d5 5f e7 5f f9 5f 0b 6f"
+                    }
+                  ]
+                },
+                {
+                  "block_size": 16,
+                  "complete_blocks": 73340,
+                  "unique_blocks": 73249,
+                  "blocks_in_repeated_groups": 180,
+                  "blocks_in_repeated_groups_fraction": 0.0024543223343332426,
+                  "excess_copies_after_first": 91,
+                  "excess_copy_fraction": 0.0012407962912462504,
+                  "largest_repeat_count": 3,
+                  "top_repeated_values": [
+                    {
+                      "count": 3,
+                      "bytes_hex": "67 3f 79 3f 8b 3f 9d 3f af 3f c1 3f d3 3f e5 3f"
+                    },
+                    {
+                      "count": 3,
+                      "bytes_hex": "1f db 1f ed 1f ff 1f 11 2f 23 2f 35 2f 00 47 2f"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ff f5 3e 3f 4c e5 3e 72 84 ff d6 3e 96 b1 c8 3e"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ff bf ff d1 ff e3 ff f5 ff 00 07 0f 19 0f 2b 0f"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ff 3e ff 50 ff 62 ff 74 ff 00 86 ff 98 ff aa ff"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ff 34 ff 46 ff 58 ff 6a ff 7c ff 8e ff a0 ff 00"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "f7 af 09 bf 00 1b bf 2d bf 3f bf 51 bf 63 bf 75"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "f2 04 5f 3e f3 ca ff 3c 3e e1 fe 37 3f 2e 5c ff"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ef b1 ef c3 ef d5 ef 00 e7 ef f9 ef 0b ff 1d ff"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ef 00 a1 ef b3 ef c5 ef d7 ef e9 ef fb ef 0d ff"
+                    }
+                  ]
+                }
+              ]
+            },
+            "194": {
+              "absolute_file_offset": "0x40102",
+              "region_length": 1173251,
+              "region_sha256": "3f73615d073f62d662ff8a797ac3c573e8b741ccfa577ef7be7ea074f385a9d8",
+              "block_statistics": [
+                {
+                  "block_size": 8,
+                  "complete_blocks": 146656,
+                  "unique_blocks": 144916,
+                  "blocks_in_repeated_groups": 3176,
+                  "blocks_in_repeated_groups_fraction": 0.021656120445123283,
+                  "excess_copies_after_first": 1740,
+                  "excess_copy_fraction": 0.011864499236308095,
+                  "largest_repeat_count": 5,
+                  "top_repeated_values": [
+                    {
+                      "count": 5,
+                      "bytes_hex": "ee ff 00 0f 12 0f 24 0f"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "cf 4f e1 4f f3 4f 05 5f"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "b7 ef c9 ef db ef ed ef"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "b4 bf c6 bf d8 bf ea bf"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "75 2f 87 2f 99 2f ab 2f"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "6b 0f 7d 0f 8f 0f a1 0f"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "53 2f 65 2f 77 2f 89 2f"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "1f ed 1f ff 1f 11 2f 23"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "1f 6d 1f 7f 1f 91 1f a3"
+                    },
+                    {
+                      "count": 4,
+                      "bytes_hex": "ff ed ff ff ff 11 0f 23"
+                    }
+                  ]
+                },
+                {
+                  "block_size": 16,
+                  "complete_blocks": 73328,
+                  "unique_blocks": 73240,
+                  "blocks_in_repeated_groups": 173,
+                  "blocks_in_repeated_groups_fraction": 0.0023592624918175866,
+                  "excess_copies_after_first": 88,
+                  "excess_copy_fraction": 0.0012000872790748419,
+                  "largest_repeat_count": 3,
+                  "top_repeated_values": [
+                    {
+                      "count": 3,
+                      "bytes_hex": "79 3f 8b 3f 9d 3f af 3f c1 3f d3 3f e5 3f 00 f7"
+                    },
+                    {
+                      "count": 3,
+                      "bytes_hex": "2f fb 2f 0d 3f 1f 3f 31 3f 43 3f 55 3f 00 67 3f"
+                    },
+                    {
+                      "count": 3,
+                      "bytes_hex": "1f ed 1f ff 1f 11 2f 23 2f 35 2f 00 47 2f 59 2f"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ff ed ff ff ff 11 0f 23 0f 35 0f 47 0f 59 0f 00"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ff d1 ff e3 ff f5 ff 00 07 0f 19 0f 2b 0f 3d 0f"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ff bb 3e 63 a9 af 3e 0c 58 ff a4 3e 56 c1 99 3e"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ff ae 3e 02 e4 a2 3e 50 65 ff 98 3e ac 93 8e 3e"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ff 50 ff 62 ff 74 ff 00 86 ff 98 ff aa ff bc ff"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ff 46 ff 58 ff 6a ff 7c ff 8e ff a0 ff 00 b2 ff"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "fc bf 0e cf 20 cf 32 cf 00 44 cf 56 cf 68 cf 7a"
+                    }
+                  ]
+                }
+              ]
+            },
+            "199": {
+              "absolute_file_offset": "0x40107",
+              "region_length": 1173246,
+              "region_sha256": "64ccf572120e62dbe24db649fddae68f377cd3d12fcb9466fe03a102c6590771",
+              "block_statistics": [
+                {
+                  "block_size": 8,
+                  "complete_blocks": 146655,
+                  "unique_blocks": 144928,
+                  "blocks_in_repeated_groups": 3145,
+                  "blocks_in_repeated_groups_fraction": 0.02144488766151853,
+                  "excess_copies_after_first": 1727,
+                  "excess_copy_fraction": 0.011775936722239269,
+                  "largest_repeat_count": 7,
+                  "top_repeated_values": [
+                    {
+                      "count": 7,
+                      "bytes_hex": "3f af 3f c1 3f d3 3f e5"
+                    },
+                    {
+                      "count": 6,
+                      "bytes_hex": "7d 3f 8f 3f a1 3f b3 3f"
+                    },
+                    {
+                      "count": 6,
+                      "bytes_hex": "1f 3f 31 3f 43 3f 55 3f"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "e5 7f f7 7f 09 8f 1b 8f"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "4f bd 4f cf 4f e1 4f f3"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "1f 55 1f 67 1f 79 1f 8b"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "04 af 16 af 28 af 3a af"
+                    },
+                    {
+                      "count": 4,
+                      "bytes_hex": "ff bd ff cf ff e1 ff f3"
+                    },
+                    {
+                      "count": 4,
+                      "bytes_hex": "fe bf 10 cf 22 cf 34 cf"
+                    },
+                    {
+                      "count": 4,
+                      "bytes_hex": "f9 5f 0b 6f 1d 6f 2f 6f"
+                    }
+                  ]
+                },
+                {
+                  "block_size": 16,
+                  "complete_blocks": 73327,
+                  "unique_blocks": 73236,
+                  "blocks_in_repeated_groups": 181,
+                  "blocks_in_repeated_groups_fraction": 0.0024683949977498056,
+                  "excess_copies_after_first": 91,
+                  "excess_copy_fraction": 0.001241016269586919,
+                  "largest_repeat_count": 3,
+                  "top_repeated_values": [
+                    {
+                      "count": 3,
+                      "bytes_hex": "1f 3f 31 3f 43 3f 55 3f 00 67 3f 79 3f 8b 3f 9d"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ff fa ff 0c 0f 1e 0f 30 0f 00 42 0f 54 0f 66 0f"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ff 93 ff a5 ff b7 ff c9 ff 00 db ff ed ff ff ff"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ff 14 3f 36 1b 05 3f fa 4e ff f5 3e 3f 4c e5 3e"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ff 05 0f 17 0f 29 0f 00 3b 0f 4d 0f 5f 0f 71 0f"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ff 04 0f 00 16 0f 28 0f 3a 0f 4c 0f 5e 0f 70 0f"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "fe 75 79 3e 81 54 ff 66 3e 28 ce 4e 3e 2d 11 ff"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "fe 4f 10 5f 22 5f 34 5f 46 5f 58 5f 6a 5f 7c 5f"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "fb 5f 0d 6f 1f 6f 31 6f 43 6f 00 55 6f 67 6f 79"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "f5 ff 00 07 0f 19 0f 2b 0f 3d 0f 4f 0f 61 0f 73"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "v109": {
+      "path": "firmware/extracted/v109/gt1_sys_v109/GT1ROM.BIN",
+      "image_size": 4194304,
+      "image_sha256": "412ebf5ffdc48554454c27df47f61428f046ea0a7d93f5c77b7f0302861abdbf",
+      "sections": {
+        "updater": {
+          "header_offset": "0x2000",
+          "payload_start": "0x2040",
+          "payload_length": 136551,
+          "payload_sha256": "864cebee6e15be9da8e9dca9c756bf720f35d4454f91b8fc466eaf4c23f9966a",
+          "alignments": {
+            "0": {
+              "absolute_file_offset": "0x2040",
+              "region_length": 136551,
+              "region_sha256": "864cebee6e15be9da8e9dca9c756bf720f35d4454f91b8fc466eaf4c23f9966a",
+              "block_statistics": [
+                {
+                  "block_size": 8,
+                  "complete_blocks": 17068,
+                  "unique_blocks": 17068,
+                  "blocks_in_repeated_groups": 0,
+                  "blocks_in_repeated_groups_fraction": 0.0,
+                  "excess_copies_after_first": 0,
+                  "excess_copy_fraction": 0.0,
+                  "largest_repeat_count": 1,
+                  "top_repeated_values": []
+                },
+                {
+                  "block_size": 16,
+                  "complete_blocks": 8534,
+                  "unique_blocks": 8534,
+                  "blocks_in_repeated_groups": 0,
+                  "blocks_in_repeated_groups_fraction": 0.0,
+                  "excess_copies_after_first": 0,
+                  "excess_copy_fraction": 0.0,
+                  "largest_repeat_count": 1,
+                  "top_repeated_values": []
+                }
+              ]
+            },
+            "194": {
+              "absolute_file_offset": "0x2102",
+              "region_length": 136357,
+              "region_sha256": "fa0a057289879d4ce283667bc0b1f3b135f15b600001fab7bf212e4a078205ca",
+              "block_statistics": [
+                {
+                  "block_size": 8,
+                  "complete_blocks": 17044,
+                  "unique_blocks": 17044,
+                  "blocks_in_repeated_groups": 0,
+                  "blocks_in_repeated_groups_fraction": 0.0,
+                  "excess_copies_after_first": 0,
+                  "excess_copy_fraction": 0.0,
+                  "largest_repeat_count": 1,
+                  "top_repeated_values": []
+                },
+                {
+                  "block_size": 16,
+                  "complete_blocks": 8522,
+                  "unique_blocks": 8522,
+                  "blocks_in_repeated_groups": 0,
+                  "blocks_in_repeated_groups_fraction": 0.0,
+                  "excess_copies_after_first": 0,
+                  "excess_copy_fraction": 0.0,
+                  "largest_repeat_count": 1,
+                  "top_repeated_values": []
+                }
+              ]
+            },
+            "199": {
+              "absolute_file_offset": "0x2107",
+              "region_length": 136352,
+              "region_sha256": "4d44e27953c3496cde290d99c618c53ab79c11f180bb3c4d41c3996ea6ab0f81",
+              "block_statistics": [
+                {
+                  "block_size": 8,
+                  "complete_blocks": 17044,
+                  "unique_blocks": 17044,
+                  "blocks_in_repeated_groups": 0,
+                  "blocks_in_repeated_groups_fraction": 0.0,
+                  "excess_copies_after_first": 0,
+                  "excess_copy_fraction": 0.0,
+                  "largest_repeat_count": 1,
+                  "top_repeated_values": []
+                },
+                {
+                  "block_size": 16,
+                  "complete_blocks": 8522,
+                  "unique_blocks": 8522,
+                  "blocks_in_repeated_groups": 0,
+                  "blocks_in_repeated_groups_fraction": 0.0,
+                  "excess_copies_after_first": 0,
+                  "excess_copy_fraction": 0.0,
+                  "largest_repeat_count": 1,
+                  "top_repeated_values": []
+                }
+              ]
+            }
+          }
+        },
+        "application": {
+          "header_offset": "0x40000",
+          "payload_start": "0x40040",
+          "payload_length": 1178362,
+          "payload_sha256": "2945b15fe45aede58d10fb78e7475d72373fd1d202f5e07839566d80663c1f34",
+          "alignments": {
+            "0": {
+              "absolute_file_offset": "0x40040",
+              "region_length": 1178362,
+              "region_sha256": "2945b15fe45aede58d10fb78e7475d72373fd1d202f5e07839566d80663c1f34",
+              "block_statistics": [
+                {
+                  "block_size": 8,
+                  "complete_blocks": 147295,
+                  "unique_blocks": 145671,
+                  "blocks_in_repeated_groups": 2982,
+                  "blocks_in_repeated_groups_fraction": 0.020245086391255645,
+                  "excess_copies_after_first": 1624,
+                  "excess_copy_fraction": 0.011025493058148613,
+                  "largest_repeat_count": 5,
+                  "top_repeated_values": [
+                    {
+                      "count": 5,
+                      "bytes_hex": "e9 0f fb 0f 0d 1f 1f 1f"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "d6 1f e8 1f fa 1f 0c 2f"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "ab 0f bd 0f cf 0f e1 0f"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "77 ff 89 ff 9b ff ad ff"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "6f eb 6f fd 6f 0f 7f 21"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "54 bf 66 bf 78 bf 8a bf"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "2f 87 2f 99 2f ab 2f bd"
+                    },
+                    {
+                      "count": 4,
+                      "bytes_hex": "fb ff 0d 0f 1f 0f 31 0f"
+                    },
+                    {
+                      "count": 4,
+                      "bytes_hex": "f7 df 09 ef 1b ef 2d ef"
+                    },
+                    {
+                      "count": 4,
+                      "bytes_hex": "f7 3f 09 4f 1b 4f 2d 4f"
+                    }
+                  ]
+                },
+                {
+                  "block_size": 16,
+                  "complete_blocks": 73647,
+                  "unique_blocks": 73576,
+                  "blocks_in_repeated_groups": 142,
+                  "blocks_in_repeated_groups_fraction": 0.001928116556003639,
+                  "excess_copies_after_first": 71,
+                  "excess_copy_fraction": 0.0009640582780018195,
+                  "largest_repeat_count": 2,
+                  "top_repeated_values": [
+                    {
+                      "count": 2,
+                      "bytes_hex": "ff 84 4e 14 3f 3b a9 08 3f ff ab 7b ff 3e c4 03"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ff 79 ff 8b ff 9d ff af ff 00 c1 ff d3 ff e5 ff"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "f7 1f 09 2f 1b 2f 2d 2f 3f 2f 51 2f 63 2f 00 75"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ef ed ef ff ef 00 11 ff 23 ff 35 ff 47 ff 59 ff"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ef 3e ff c8 9c df 3e 84 34 d1 3e ff c7 b8 c3 3e"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ed c9 3e ff 23 ea bc 3e 35 be b0 3e ff fb 5a a5"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "e9 9f fb 9f 0d af 1f af 31 af 43 af 00 55 af 67"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "e9 0f fb 0f 0d 1f 1f 1f 31 1f 43 1f 00 55 1f 67"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "e3 af f5 af 07 bf 19 bf 2b bf 3d bf 4f bf 61 bf"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "df 00 25 df 37 df 49 df 5b df 6d df 7f df 91 df"
+                    }
+                  ]
+                }
+              ]
+            },
+            "194": {
+              "absolute_file_offset": "0x40102",
+              "region_length": 1178168,
+              "region_sha256": "f657004d2194bd0c3427445c416b0b99b701d94dc7957d73b013c4ec5609d21b",
+              "block_statistics": [
+                {
+                  "block_size": 8,
+                  "complete_blocks": 147271,
+                  "unique_blocks": 145607,
+                  "blocks_in_repeated_groups": 3016,
+                  "blocks_in_repeated_groups_fraction": 0.020479252534443305,
+                  "excess_copies_after_first": 1664,
+                  "excess_copy_fraction": 0.011298897950037686,
+                  "largest_repeat_count": 6,
+                  "top_repeated_values": [
+                    {
+                      "count": 6,
+                      "bytes_hex": "e8 1f fa 1f 0c 2f 1e 2f"
+                    },
+                    {
+                      "count": 6,
+                      "bytes_hex": "bf bf d1 bf e3 bf f5 bf"
+                    },
+                    {
+                      "count": 6,
+                      "bytes_hex": "09 2f 1b 2f 2d 2f 3f 2f"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "89 ff 9b ff ad ff bf ff"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "89 bf 9b bf ad bf bf bf"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "7f 0b 8f 1d 8f 2f 8f 41"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "6d 6f 7f 6f 91 6f a3 6f"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "66 bf 78 bf 8a bf 9c bf"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "5f a7 5f b9 5f cb 5f dd"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "30 5f 42 5f 54 5f 66 5f"
+                    }
+                  ]
+                },
+                {
+                  "block_size": 16,
+                  "complete_blocks": 73635,
+                  "unique_blocks": 73569,
+                  "blocks_in_repeated_groups": 132,
+                  "blocks_in_repeated_groups_fraction": 0.0017926257893664697,
+                  "excess_copies_after_first": 66,
+                  "excess_copy_fraction": 0.0008963128946832349,
+                  "largest_repeat_count": 2,
+                  "top_repeated_values": [
+                    {
+                      "count": 2,
+                      "bytes_hex": "ff c8 9c df 3e 84 34 d1 3e ff c7 b8 c3 3e 92 1c"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "fb 9f 0d af 1f af 31 af 43 af 00 55 af 67 af 79"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "f5 af 07 bf 19 bf 2b bf 3d bf 4f bf 61 bf 00 73"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ef ff ef 00 11 ff 23 ff 35 ff 47 ff 59 ff 6b ff"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ef 98 f6 3e a9 b3 e6 3e ff d0 d5 d7 3e d3 ed c9"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ef 00 45 ef 57 ef 69 ef 7b ef 8d ef 9f ef b1 ef"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ed 1f ff 1f 11 2f 23 2f 00 35 2f 47 2f 59 2f 6b"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "d1 6f e3 6f 00 f5 6f 07 7f 19 7f 2b 7f 3d 7f 4f"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "cf 04 df 16 df 28 df 3a df 4c df 5e df 00 70 df"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "cf 00 d3 cf e5 cf f7 cf 09 df 1b df 2d df 3f df"
+                    }
+                  ]
+                }
+              ]
+            },
+            "199": {
+              "absolute_file_offset": "0x40107",
+              "region_length": 1178163,
+              "region_sha256": "b82e4190d3b368f63b7b41f949671ef3d2d0f85b3dd54e446447dbb3da67a7b4",
+              "block_statistics": [
+                {
+                  "block_size": 8,
+                  "complete_blocks": 147270,
+                  "unique_blocks": 145671,
+                  "blocks_in_repeated_groups": 2925,
+                  "blocks_in_repeated_groups_fraction": 0.019861478916276227,
+                  "excess_copies_after_first": 1599,
+                  "excess_copy_fraction": 0.010857608474231005,
+                  "largest_repeat_count": 6,
+                  "top_repeated_values": [
+                    {
+                      "count": 6,
+                      "bytes_hex": "75 2f 87 2f 99 2f ab 2f"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "d9 6f eb 6f fd 6f 0f 7f"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "8e 1f a0 1f b2 1f c4 1f"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "60 df 72 df 84 df 96 df"
+                    },
+                    {
+                      "count": 5,
+                      "bytes_hex": "0f e9 0f fb 0f 0d 1f 1f"
+                    },
+                    {
+                      "count": 4,
+                      "bytes_hex": "ff fb ff 0d 0f 1f 0f 31"
+                    },
+                    {
+                      "count": 4,
+                      "bytes_hex": "ff 77 ff 89 ff 9b ff ad"
+                    },
+                    {
+                      "count": 4,
+                      "bytes_hex": "e7 ef f9 ef 0b ff 1d ff"
+                    },
+                    {
+                      "count": 4,
+                      "bytes_hex": "e7 7f f9 7f 0b 8f 1d 8f"
+                    },
+                    {
+                      "count": 4,
+                      "bytes_hex": "df f7 df 09 ef 1b ef 2d"
+                    }
+                  ]
+                },
+                {
+                  "block_size": 16,
+                  "complete_blocks": 73635,
+                  "unique_blocks": 73559,
+                  "blocks_in_repeated_groups": 152,
+                  "blocks_in_repeated_groups_fraction": 0.0020642357574522986,
+                  "excess_copies_after_first": 76,
+                  "excess_copy_fraction": 0.0010321178787261493,
+                  "largest_repeat_count": 2,
+                  "top_repeated_values": [
+                    {
+                      "count": 2,
+                      "bytes_hex": "ff d4 9e 45 3f 56 ca 25 3f ff 84 4e 14 3f 3b a9"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ff 00 31 ff 43 ff 55 ff 67 ff 79 ff 8b ff 9d ff"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "f8 2f 0a 3f 1c 3f 2e 3f 40 3f 52 3f 64 3f 00 76"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "f5 ff 07 0f 19 0f 2b 0f 3d 0f 4f 0f 61 0f 73 0f"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "f5 6f 07 7f 19 7f 2b 7f 3d 7f 4f 7f 61 7f 73 7f"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "f2 4f 04 5f 16 5f 00 28 5f 3a 5f 4c 5f 5e 5f 70"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "ef 69 ef 7b ef 8d ef 9f ef b1 ef c3 ef 00 d5 ef"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "e7 ef f9 ef 0b ff 1d ff 2f ff 41 ff 53 ff 00 65"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "e7 7f f9 7f 0b 8f 1d 8f 2f 8f 41 8f 53 8f 00 65"
+                    },
+                    {
+                      "count": 2,
+                      "bytes_hex": "df 5b df 6d df 7f df 91 df a3 df 00 b5 df c7 df"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

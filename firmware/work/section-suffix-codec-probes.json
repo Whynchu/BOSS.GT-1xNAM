@@ -1,0 +1,2132 @@
+{
+  "analysis": "Common codec probes on complete stored payloads and suffixes after common prefixes",
+  "read_only": true,
+  "codec_names": [
+    "zlib",
+    "raw_deflate",
+    "gzip",
+    "bzip2",
+    "lzma_auto",
+    "xz",
+    "lzma_alone",
+    "lz4_frame",
+    "zstd_frame",
+    "brotli"
+  ],
+  "codec_versions": {
+    "brotli_version": "1.2.0"
+  },
+  "interpretation_limit": "A decoder failure at these starts does not rule out proprietary compression, encryption, another framing layer, or non-compressed payloads. It does not prove encryption.",
+  "images": {
+    "GT-1 v1.05": {
+      "path": "firmware/extracted/v105/gt1_sys_v105/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "b1bde0410795230b4a89ee3dfbbd357700bba7020624c0ff832ae3d8539d8bb4",
+      "sections": {
+        "updater": {
+          "header_offset": "0x002000",
+          "payload_start": "0x002040",
+          "stored_length": 136551,
+          "expanded_length_candidate": 173176,
+          "payload_sha256": "864cebee6e15be9da8e9dca9c756bf720f35d4454f91b8fc466eaf4c23f9966a",
+          "candidate_prefix_cut_length": 199,
+          "probes": [
+            {
+              "cut": 0,
+              "start_offset": "0x002040",
+              "suffix_size": 136551,
+              "suffix_sha256": "864cebee6e15be9da8e9dca9c756bf720f35d4454f91b8fc466eaf4c23f9966a",
+              "first_16_bytes": "ff 4f f0 08 00 80 f3 11 88 ff 36 48 37 49 37 4a",
+              "expected_output_sizes": {
+                "full_expanded_length": 173176,
+                "expanded_minus_cut_if_prefix_is_literal": 173176
+              },
+              "codecs": {
+                "zlib": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: incorrect header check"
+                },
+                "raw_deflate": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: invalid block type"
+                },
+                "gzip": {
+                  "valid": false,
+                  "error_type": "BadGzipFile",
+                  "error": "Not a gzipped file (b'\\xffO')"
+                },
+                "bzip2": {
+                  "valid": false,
+                  "error_type": "OSError",
+                  "error": "Invalid data stream"
+                },
+                "lzma_auto": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "xz": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lzma_alone": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lz4_frame": {
+                  "valid": false,
+                  "error_type": "RuntimeError",
+                  "error": "LZ4F_getFrameInfo failed with code: ERROR_frameType_unknown"
+                },
+                "zstd_frame": {
+                  "valid": false,
+                  "error_type": "ZstdError",
+                  "error": "error determining content size from frame header"
+                },
+                "brotli": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "brotli: decoder failed"
+                }
+              },
+              "raw_block_candidates": {
+                "expected_output_size_if_header_is_expanded_length": 173176,
+                "lz4_block": {
+                  "available": true,
+                  "valid": false,
+                  "error_type": "LZ4BlockError",
+                  "error": "Decompression failed: corrupt input or insufficient space in destination buffer. Error code: 100"
+                },
+                "lzo1x_decompress_safe": {
+                  "available": true,
+                  "library": "liblzo2.so.2",
+                  "return_code": -6,
+                  "valid": false,
+                  "output_size": null
+                }
+              }
+            },
+            {
+              "cut": 194,
+              "start_offset": "0x002102",
+              "suffix_size": 136357,
+              "suffix_sha256": "fa0a057289879d4ce283667bc0b1f3b135f15b600001fab7bf212e4a078205ca",
+              "first_16_bytes": "cc 3f 00 00 ff 9c 64 02 60 cc 42 00 01 de e9 f2",
+              "expected_output_sizes": {
+                "full_expanded_length": 173176,
+                "expanded_minus_cut_if_prefix_is_literal": 172982
+              },
+              "codecs": {
+                "zlib": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: incorrect header check"
+                },
+                "raw_deflate": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: too many length or distance symbols"
+                },
+                "gzip": {
+                  "valid": false,
+                  "error_type": "BadGzipFile",
+                  "error": "Not a gzipped file (b'\\xcc?')"
+                },
+                "bzip2": {
+                  "valid": false,
+                  "error_type": "OSError",
+                  "error": "Invalid data stream"
+                },
+                "lzma_auto": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "xz": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lzma_alone": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lz4_frame": {
+                  "valid": false,
+                  "error_type": "RuntimeError",
+                  "error": "LZ4F_getFrameInfo failed with code: ERROR_frameType_unknown"
+                },
+                "zstd_frame": {
+                  "valid": false,
+                  "error_type": "ZstdError",
+                  "error": "error determining content size from frame header"
+                },
+                "brotli": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "brotli: decoder failed"
+                }
+              },
+              "raw_block_candidates": {
+                "expected_output_size_if_header_is_expanded_length": 172982,
+                "lz4_block": {
+                  "available": true,
+                  "valid": false,
+                  "error_type": "LZ4BlockError",
+                  "error": "Decompression failed: corrupt input or insufficient space in destination buffer. Error code: 16"
+                },
+                "lzo1x_decompress_safe": {
+                  "available": true,
+                  "library": "liblzo2.so.2",
+                  "return_code": -6,
+                  "valid": false,
+                  "output_size": null
+                }
+              }
+            },
+            {
+              "cut": 199,
+              "start_offset": "0x002107",
+              "suffix_size": 136352,
+              "suffix_sha256": "4d44e27953c3496cde290d99c618c53ab79c11f180bb3c4d41c3996ea6ab0f81",
+              "first_16_bytes": "9c 64 02 60 cc 42 00 01 de e9 f2 60 00 01 0e eb",
+              "expected_output_sizes": {
+                "full_expanded_length": 173176,
+                "expanded_minus_cut_if_prefix_is_literal": 172977
+              },
+              "codecs": {
+                "zlib": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: incorrect header check"
+                },
+                "raw_deflate": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: invalid code lengths set"
+                },
+                "gzip": {
+                  "valid": false,
+                  "error_type": "BadGzipFile",
+                  "error": "Not a gzipped file (b'\\x9cd')"
+                },
+                "bzip2": {
+                  "valid": false,
+                  "error_type": "OSError",
+                  "error": "Invalid data stream"
+                },
+                "lzma_auto": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "xz": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lzma_alone": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lz4_frame": {
+                  "valid": false,
+                  "error_type": "RuntimeError",
+                  "error": "LZ4F_getFrameInfo failed with code: ERROR_frameType_unknown"
+                },
+                "zstd_frame": {
+                  "valid": false,
+                  "error_type": "ZstdError",
+                  "error": "error determining content size from frame header"
+                },
+                "brotli": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "brotli: decoder failed"
+                }
+              },
+              "raw_block_candidates": {
+                "expected_output_size_if_header_is_expanded_length": 172977,
+                "lz4_block": {
+                  "available": true,
+                  "valid": false,
+                  "error_type": "LZ4BlockError",
+                  "error": "Decompression failed: corrupt input or insufficient space in destination buffer. Error code: 13"
+                },
+                "lzo1x_decompress_safe": {
+                  "available": true,
+                  "library": "liblzo2.so.2",
+                  "return_code": -6,
+                  "valid": false,
+                  "output_size": null
+                }
+              }
+            }
+          ]
+        },
+        "application": {
+          "header_offset": "0x040000",
+          "payload_start": "0x040040",
+          "stored_length": 1171544,
+          "expanded_length_candidate": 2928600,
+          "payload_sha256": "4081604fc89c772960a4d9a5582a8a11b2fe8f8b360922dbb94f4df7b27baccf",
+          "candidate_prefix_cut_length": 194,
+          "probes": [
+            {
+              "cut": 0,
+              "start_offset": "0x040040",
+              "suffix_size": 1171544,
+              "suffix_sha256": "4081604fc89c772960a4d9a5582a8a11b2fe8f8b360922dbb94f4df7b27baccf",
+              "first_16_bytes": "ff 4f f0 08 00 80 f3 11 88 ff 36 48 37 49 37 4a",
+              "expected_output_sizes": {
+                "full_expanded_length": 2928600,
+                "expanded_minus_cut_if_prefix_is_literal": 2928600
+              },
+              "codecs": {
+                "zlib": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: incorrect header check"
+                },
+                "raw_deflate": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: invalid block type"
+                },
+                "gzip": {
+                  "valid": false,
+                  "error_type": "BadGzipFile",
+                  "error": "Not a gzipped file (b'\\xffO')"
+                },
+                "bzip2": {
+                  "valid": false,
+                  "error_type": "OSError",
+                  "error": "Invalid data stream"
+                },
+                "lzma_auto": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "xz": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lzma_alone": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lz4_frame": {
+                  "valid": false,
+                  "error_type": "RuntimeError",
+                  "error": "LZ4F_getFrameInfo failed with code: ERROR_frameType_unknown"
+                },
+                "zstd_frame": {
+                  "valid": false,
+                  "error_type": "ZstdError",
+                  "error": "error determining content size from frame header"
+                },
+                "brotli": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "brotli: decoder failed"
+                }
+              },
+              "raw_block_candidates": {
+                "expected_output_size_if_header_is_expanded_length": 2928600,
+                "lz4_block": {
+                  "available": true,
+                  "valid": false,
+                  "error_type": "LZ4BlockError",
+                  "error": "Decompression failed: corrupt input or insufficient space in destination buffer. Error code: 100"
+                },
+                "lzo1x_decompress_safe": {
+                  "available": true,
+                  "library": "liblzo2.so.2",
+                  "return_code": -6,
+                  "valid": false,
+                  "output_size": null
+                }
+              }
+            },
+            {
+              "cut": 194,
+              "start_offset": "0x040102",
+              "suffix_size": 1171350,
+              "suffix_sha256": "06530b083d376c4532de3886b6a9a9d7d614b8cd9d0fc39ec01b1bbb2e6aa157",
+              "first_16_bytes": "16 0f 01 00 ff ac 8b 2b 60 18 12 01 01 fe e9 f2",
+              "expected_output_sizes": {
+                "full_expanded_length": 2928600,
+                "expanded_minus_cut_if_prefix_is_literal": 2928406
+              },
+              "codecs": {
+                "zlib": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: incorrect header check"
+                },
+                "raw_deflate": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: invalid block type"
+                },
+                "gzip": {
+                  "valid": false,
+                  "error_type": "BadGzipFile",
+                  "error": "Not a gzipped file (b'\\x16\\x0f')"
+                },
+                "bzip2": {
+                  "valid": false,
+                  "error_type": "OSError",
+                  "error": "Invalid data stream"
+                },
+                "lzma_auto": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "xz": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lzma_alone": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lz4_frame": {
+                  "valid": false,
+                  "error_type": "RuntimeError",
+                  "error": "LZ4F_getFrameInfo failed with code: ERROR_frameType_unknown"
+                },
+                "zstd_frame": {
+                  "valid": false,
+                  "error_type": "ZstdError",
+                  "error": "error determining content size from frame header"
+                },
+                "brotli": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "brotli: decoder failed"
+                }
+              },
+              "raw_block_candidates": {
+                "expected_output_size_if_header_is_expanded_length": 2928406,
+                "lz4_block": {
+                  "available": true,
+                  "valid": false,
+                  "error_type": "LZ4BlockError",
+                  "error": "Decompression failed: corrupt input or insufficient space in destination buffer. Error code: 197"
+                },
+                "lzo1x_decompress_safe": {
+                  "available": true,
+                  "library": "liblzo2.so.2",
+                  "return_code": -6,
+                  "valid": false,
+                  "output_size": null
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "GT-1 v1.07": {
+      "path": "firmware/extracted/v107/gt1_sys_v107/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "6a3110cd42c4b129494a93bc88d4f218e2e0b9377868ca051018b28696d6c22f",
+      "sections": {
+        "updater": {
+          "header_offset": "0x002000",
+          "payload_start": "0x002040",
+          "stored_length": 136551,
+          "expanded_length_candidate": 173176,
+          "payload_sha256": "864cebee6e15be9da8e9dca9c756bf720f35d4454f91b8fc466eaf4c23f9966a",
+          "candidate_prefix_cut_length": 199,
+          "probes": [
+            {
+              "cut": 0,
+              "start_offset": "0x002040",
+              "suffix_size": 136551,
+              "suffix_sha256": "864cebee6e15be9da8e9dca9c756bf720f35d4454f91b8fc466eaf4c23f9966a",
+              "first_16_bytes": "ff 4f f0 08 00 80 f3 11 88 ff 36 48 37 49 37 4a",
+              "expected_output_sizes": {
+                "full_expanded_length": 173176,
+                "expanded_minus_cut_if_prefix_is_literal": 173176
+              },
+              "codecs": {
+                "zlib": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: incorrect header check"
+                },
+                "raw_deflate": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: invalid block type"
+                },
+                "gzip": {
+                  "valid": false,
+                  "error_type": "BadGzipFile",
+                  "error": "Not a gzipped file (b'\\xffO')"
+                },
+                "bzip2": {
+                  "valid": false,
+                  "error_type": "OSError",
+                  "error": "Invalid data stream"
+                },
+                "lzma_auto": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "xz": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lzma_alone": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lz4_frame": {
+                  "valid": false,
+                  "error_type": "RuntimeError",
+                  "error": "LZ4F_getFrameInfo failed with code: ERROR_frameType_unknown"
+                },
+                "zstd_frame": {
+                  "valid": false,
+                  "error_type": "ZstdError",
+                  "error": "error determining content size from frame header"
+                },
+                "brotli": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "brotli: decoder failed"
+                }
+              },
+              "raw_block_candidates": {
+                "expected_output_size_if_header_is_expanded_length": 173176,
+                "lz4_block": {
+                  "available": true,
+                  "valid": false,
+                  "error_type": "LZ4BlockError",
+                  "error": "Decompression failed: corrupt input or insufficient space in destination buffer. Error code: 100"
+                },
+                "lzo1x_decompress_safe": {
+                  "available": true,
+                  "library": "liblzo2.so.2",
+                  "return_code": -6,
+                  "valid": false,
+                  "output_size": null
+                }
+              }
+            },
+            {
+              "cut": 194,
+              "start_offset": "0x002102",
+              "suffix_size": 136357,
+              "suffix_sha256": "fa0a057289879d4ce283667bc0b1f3b135f15b600001fab7bf212e4a078205ca",
+              "first_16_bytes": "cc 3f 00 00 ff 9c 64 02 60 cc 42 00 01 de e9 f2",
+              "expected_output_sizes": {
+                "full_expanded_length": 173176,
+                "expanded_minus_cut_if_prefix_is_literal": 172982
+              },
+              "codecs": {
+                "zlib": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: incorrect header check"
+                },
+                "raw_deflate": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: too many length or distance symbols"
+                },
+                "gzip": {
+                  "valid": false,
+                  "error_type": "BadGzipFile",
+                  "error": "Not a gzipped file (b'\\xcc?')"
+                },
+                "bzip2": {
+                  "valid": false,
+                  "error_type": "OSError",
+                  "error": "Invalid data stream"
+                },
+                "lzma_auto": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "xz": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lzma_alone": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lz4_frame": {
+                  "valid": false,
+                  "error_type": "RuntimeError",
+                  "error": "LZ4F_getFrameInfo failed with code: ERROR_frameType_unknown"
+                },
+                "zstd_frame": {
+                  "valid": false,
+                  "error_type": "ZstdError",
+                  "error": "error determining content size from frame header"
+                },
+                "brotli": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "brotli: decoder failed"
+                }
+              },
+              "raw_block_candidates": {
+                "expected_output_size_if_header_is_expanded_length": 172982,
+                "lz4_block": {
+                  "available": true,
+                  "valid": false,
+                  "error_type": "LZ4BlockError",
+                  "error": "Decompression failed: corrupt input or insufficient space in destination buffer. Error code: 16"
+                },
+                "lzo1x_decompress_safe": {
+                  "available": true,
+                  "library": "liblzo2.so.2",
+                  "return_code": -6,
+                  "valid": false,
+                  "output_size": null
+                }
+              }
+            },
+            {
+              "cut": 199,
+              "start_offset": "0x002107",
+              "suffix_size": 136352,
+              "suffix_sha256": "4d44e27953c3496cde290d99c618c53ab79c11f180bb3c4d41c3996ea6ab0f81",
+              "first_16_bytes": "9c 64 02 60 cc 42 00 01 de e9 f2 60 00 01 0e eb",
+              "expected_output_sizes": {
+                "full_expanded_length": 173176,
+                "expanded_minus_cut_if_prefix_is_literal": 172977
+              },
+              "codecs": {
+                "zlib": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: incorrect header check"
+                },
+                "raw_deflate": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: invalid code lengths set"
+                },
+                "gzip": {
+                  "valid": false,
+                  "error_type": "BadGzipFile",
+                  "error": "Not a gzipped file (b'\\x9cd')"
+                },
+                "bzip2": {
+                  "valid": false,
+                  "error_type": "OSError",
+                  "error": "Invalid data stream"
+                },
+                "lzma_auto": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "xz": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lzma_alone": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lz4_frame": {
+                  "valid": false,
+                  "error_type": "RuntimeError",
+                  "error": "LZ4F_getFrameInfo failed with code: ERROR_frameType_unknown"
+                },
+                "zstd_frame": {
+                  "valid": false,
+                  "error_type": "ZstdError",
+                  "error": "error determining content size from frame header"
+                },
+                "brotli": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "brotli: decoder failed"
+                }
+              },
+              "raw_block_candidates": {
+                "expected_output_size_if_header_is_expanded_length": 172977,
+                "lz4_block": {
+                  "available": true,
+                  "valid": false,
+                  "error_type": "LZ4BlockError",
+                  "error": "Decompression failed: corrupt input or insufficient space in destination buffer. Error code: 13"
+                },
+                "lzo1x_decompress_safe": {
+                  "available": true,
+                  "library": "liblzo2.so.2",
+                  "return_code": -6,
+                  "valid": false,
+                  "output_size": null
+                }
+              }
+            }
+          ]
+        },
+        "application": {
+          "header_offset": "0x040000",
+          "payload_start": "0x040040",
+          "stored_length": 1173349,
+          "expanded_length_candidate": 2931344,
+          "payload_sha256": "78858382a3b1f3b7055b34e81499b7dd4c3b183c4070e8c7f387948c54b18bb2",
+          "candidate_prefix_cut_length": 194,
+          "probes": [
+            {
+              "cut": 0,
+              "start_offset": "0x040040",
+              "suffix_size": 1173349,
+              "suffix_sha256": "78858382a3b1f3b7055b34e81499b7dd4c3b183c4070e8c7f387948c54b18bb2",
+              "first_16_bytes": "ff 4f f0 08 00 80 f3 11 88 ff 36 48 37 49 37 4a",
+              "expected_output_sizes": {
+                "full_expanded_length": 2931344,
+                "expanded_minus_cut_if_prefix_is_literal": 2931344
+              },
+              "codecs": {
+                "zlib": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: incorrect header check"
+                },
+                "raw_deflate": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: invalid block type"
+                },
+                "gzip": {
+                  "valid": false,
+                  "error_type": "BadGzipFile",
+                  "error": "Not a gzipped file (b'\\xffO')"
+                },
+                "bzip2": {
+                  "valid": false,
+                  "error_type": "OSError",
+                  "error": "Invalid data stream"
+                },
+                "lzma_auto": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "xz": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lzma_alone": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lz4_frame": {
+                  "valid": false,
+                  "error_type": "RuntimeError",
+                  "error": "LZ4F_getFrameInfo failed with code: ERROR_frameType_unknown"
+                },
+                "zstd_frame": {
+                  "valid": false,
+                  "error_type": "ZstdError",
+                  "error": "error determining content size from frame header"
+                },
+                "brotli": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "brotli: decoder failed"
+                }
+              },
+              "raw_block_candidates": {
+                "expected_output_size_if_header_is_expanded_length": 2931344,
+                "lz4_block": {
+                  "available": true,
+                  "valid": false,
+                  "error_type": "LZ4BlockError",
+                  "error": "Decompression failed: corrupt input or insufficient space in destination buffer. Error code: 100"
+                },
+                "lzo1x_decompress_safe": {
+                  "available": true,
+                  "library": "liblzo2.so.2",
+                  "return_code": -6,
+                  "valid": false,
+                  "output_size": null
+                }
+              }
+            },
+            {
+              "cut": 194,
+              "start_offset": "0x040102",
+              "suffix_size": 1173155,
+              "suffix_sha256": "be542e7d532399d36d1a23ee0e492eef12fe116a6163a12a69f0de4b566067fa",
+              "first_16_bytes": "16 0f 01 00 ff 64 96 2b 60 18 12 01 01 fe e9 f2",
+              "expected_output_sizes": {
+                "full_expanded_length": 2931344,
+                "expanded_minus_cut_if_prefix_is_literal": 2931150
+              },
+              "codecs": {
+                "zlib": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: incorrect header check"
+                },
+                "raw_deflate": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: invalid block type"
+                },
+                "gzip": {
+                  "valid": false,
+                  "error_type": "BadGzipFile",
+                  "error": "Not a gzipped file (b'\\x16\\x0f')"
+                },
+                "bzip2": {
+                  "valid": false,
+                  "error_type": "OSError",
+                  "error": "Invalid data stream"
+                },
+                "lzma_auto": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "xz": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lzma_alone": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lz4_frame": {
+                  "valid": false,
+                  "error_type": "RuntimeError",
+                  "error": "LZ4F_getFrameInfo failed with code: ERROR_frameType_unknown"
+                },
+                "zstd_frame": {
+                  "valid": false,
+                  "error_type": "ZstdError",
+                  "error": "error determining content size from frame header"
+                },
+                "brotli": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "brotli: decoder failed"
+                }
+              },
+              "raw_block_candidates": {
+                "expected_output_size_if_header_is_expanded_length": 2931150,
+                "lz4_block": {
+                  "available": true,
+                  "valid": false,
+                  "error_type": "LZ4BlockError",
+                  "error": "Decompression failed: corrupt input or insufficient space in destination buffer. Error code: 125"
+                },
+                "lzo1x_decompress_safe": {
+                  "available": true,
+                  "library": "liblzo2.so.2",
+                  "return_code": -6,
+                  "valid": false,
+                  "output_size": null
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "GT-1 v1.08": {
+      "path": "firmware/extracted/v108/gt1_sys_v108/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "7219679a87e985316264544423c9940ccbcbadeb2df0b2f13711ae57194cb612",
+      "sections": {
+        "updater": {
+          "header_offset": "0x002000",
+          "payload_start": "0x002040",
+          "stored_length": 136551,
+          "expanded_length_candidate": 173176,
+          "payload_sha256": "864cebee6e15be9da8e9dca9c756bf720f35d4454f91b8fc466eaf4c23f9966a",
+          "candidate_prefix_cut_length": 199,
+          "probes": [
+            {
+              "cut": 0,
+              "start_offset": "0x002040",
+              "suffix_size": 136551,
+              "suffix_sha256": "864cebee6e15be9da8e9dca9c756bf720f35d4454f91b8fc466eaf4c23f9966a",
+              "first_16_bytes": "ff 4f f0 08 00 80 f3 11 88 ff 36 48 37 49 37 4a",
+              "expected_output_sizes": {
+                "full_expanded_length": 173176,
+                "expanded_minus_cut_if_prefix_is_literal": 173176
+              },
+              "codecs": {
+                "zlib": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: incorrect header check"
+                },
+                "raw_deflate": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: invalid block type"
+                },
+                "gzip": {
+                  "valid": false,
+                  "error_type": "BadGzipFile",
+                  "error": "Not a gzipped file (b'\\xffO')"
+                },
+                "bzip2": {
+                  "valid": false,
+                  "error_type": "OSError",
+                  "error": "Invalid data stream"
+                },
+                "lzma_auto": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "xz": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lzma_alone": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lz4_frame": {
+                  "valid": false,
+                  "error_type": "RuntimeError",
+                  "error": "LZ4F_getFrameInfo failed with code: ERROR_frameType_unknown"
+                },
+                "zstd_frame": {
+                  "valid": false,
+                  "error_type": "ZstdError",
+                  "error": "error determining content size from frame header"
+                },
+                "brotli": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "brotli: decoder failed"
+                }
+              },
+              "raw_block_candidates": {
+                "expected_output_size_if_header_is_expanded_length": 173176,
+                "lz4_block": {
+                  "available": true,
+                  "valid": false,
+                  "error_type": "LZ4BlockError",
+                  "error": "Decompression failed: corrupt input or insufficient space in destination buffer. Error code: 100"
+                },
+                "lzo1x_decompress_safe": {
+                  "available": true,
+                  "library": "liblzo2.so.2",
+                  "return_code": -6,
+                  "valid": false,
+                  "output_size": null
+                }
+              }
+            },
+            {
+              "cut": 194,
+              "start_offset": "0x002102",
+              "suffix_size": 136357,
+              "suffix_sha256": "fa0a057289879d4ce283667bc0b1f3b135f15b600001fab7bf212e4a078205ca",
+              "first_16_bytes": "cc 3f 00 00 ff 9c 64 02 60 cc 42 00 01 de e9 f2",
+              "expected_output_sizes": {
+                "full_expanded_length": 173176,
+                "expanded_minus_cut_if_prefix_is_literal": 172982
+              },
+              "codecs": {
+                "zlib": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: incorrect header check"
+                },
+                "raw_deflate": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: too many length or distance symbols"
+                },
+                "gzip": {
+                  "valid": false,
+                  "error_type": "BadGzipFile",
+                  "error": "Not a gzipped file (b'\\xcc?')"
+                },
+                "bzip2": {
+                  "valid": false,
+                  "error_type": "OSError",
+                  "error": "Invalid data stream"
+                },
+                "lzma_auto": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "xz": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lzma_alone": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lz4_frame": {
+                  "valid": false,
+                  "error_type": "RuntimeError",
+                  "error": "LZ4F_getFrameInfo failed with code: ERROR_frameType_unknown"
+                },
+                "zstd_frame": {
+                  "valid": false,
+                  "error_type": "ZstdError",
+                  "error": "error determining content size from frame header"
+                },
+                "brotli": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "brotli: decoder failed"
+                }
+              },
+              "raw_block_candidates": {
+                "expected_output_size_if_header_is_expanded_length": 172982,
+                "lz4_block": {
+                  "available": true,
+                  "valid": false,
+                  "error_type": "LZ4BlockError",
+                  "error": "Decompression failed: corrupt input or insufficient space in destination buffer. Error code: 16"
+                },
+                "lzo1x_decompress_safe": {
+                  "available": true,
+                  "library": "liblzo2.so.2",
+                  "return_code": -6,
+                  "valid": false,
+                  "output_size": null
+                }
+              }
+            },
+            {
+              "cut": 199,
+              "start_offset": "0x002107",
+              "suffix_size": 136352,
+              "suffix_sha256": "4d44e27953c3496cde290d99c618c53ab79c11f180bb3c4d41c3996ea6ab0f81",
+              "first_16_bytes": "9c 64 02 60 cc 42 00 01 de e9 f2 60 00 01 0e eb",
+              "expected_output_sizes": {
+                "full_expanded_length": 173176,
+                "expanded_minus_cut_if_prefix_is_literal": 172977
+              },
+              "codecs": {
+                "zlib": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: incorrect header check"
+                },
+                "raw_deflate": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: invalid code lengths set"
+                },
+                "gzip": {
+                  "valid": false,
+                  "error_type": "BadGzipFile",
+                  "error": "Not a gzipped file (b'\\x9cd')"
+                },
+                "bzip2": {
+                  "valid": false,
+                  "error_type": "OSError",
+                  "error": "Invalid data stream"
+                },
+                "lzma_auto": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "xz": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lzma_alone": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lz4_frame": {
+                  "valid": false,
+                  "error_type": "RuntimeError",
+                  "error": "LZ4F_getFrameInfo failed with code: ERROR_frameType_unknown"
+                },
+                "zstd_frame": {
+                  "valid": false,
+                  "error_type": "ZstdError",
+                  "error": "error determining content size from frame header"
+                },
+                "brotli": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "brotli: decoder failed"
+                }
+              },
+              "raw_block_candidates": {
+                "expected_output_size_if_header_is_expanded_length": 172977,
+                "lz4_block": {
+                  "available": true,
+                  "valid": false,
+                  "error_type": "LZ4BlockError",
+                  "error": "Decompression failed: corrupt input or insufficient space in destination buffer. Error code: 13"
+                },
+                "lzo1x_decompress_safe": {
+                  "available": true,
+                  "library": "liblzo2.so.2",
+                  "return_code": -6,
+                  "valid": false,
+                  "output_size": null
+                }
+              }
+            }
+          ]
+        },
+        "application": {
+          "header_offset": "0x040000",
+          "payload_start": "0x040040",
+          "stored_length": 1173445,
+          "expanded_length_candidate": 2931480,
+          "payload_sha256": "ef236d8bb3ce79cb5f6a836e4ddbaa325f4ad04cde546e7cb70d6d7ecba8f2b0",
+          "candidate_prefix_cut_length": 194,
+          "probes": [
+            {
+              "cut": 0,
+              "start_offset": "0x040040",
+              "suffix_size": 1173445,
+              "suffix_sha256": "ef236d8bb3ce79cb5f6a836e4ddbaa325f4ad04cde546e7cb70d6d7ecba8f2b0",
+              "first_16_bytes": "ff 4f f0 08 00 80 f3 11 88 ff 36 48 37 49 37 4a",
+              "expected_output_sizes": {
+                "full_expanded_length": 2931480,
+                "expanded_minus_cut_if_prefix_is_literal": 2931480
+              },
+              "codecs": {
+                "zlib": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: incorrect header check"
+                },
+                "raw_deflate": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: invalid block type"
+                },
+                "gzip": {
+                  "valid": false,
+                  "error_type": "BadGzipFile",
+                  "error": "Not a gzipped file (b'\\xffO')"
+                },
+                "bzip2": {
+                  "valid": false,
+                  "error_type": "OSError",
+                  "error": "Invalid data stream"
+                },
+                "lzma_auto": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "xz": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lzma_alone": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lz4_frame": {
+                  "valid": false,
+                  "error_type": "RuntimeError",
+                  "error": "LZ4F_getFrameInfo failed with code: ERROR_frameType_unknown"
+                },
+                "zstd_frame": {
+                  "valid": false,
+                  "error_type": "ZstdError",
+                  "error": "error determining content size from frame header"
+                },
+                "brotli": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "brotli: decoder failed"
+                }
+              },
+              "raw_block_candidates": {
+                "expected_output_size_if_header_is_expanded_length": 2931480,
+                "lz4_block": {
+                  "available": true,
+                  "valid": false,
+                  "error_type": "LZ4BlockError",
+                  "error": "Decompression failed: corrupt input or insufficient space in destination buffer. Error code: 100"
+                },
+                "lzo1x_decompress_safe": {
+                  "available": true,
+                  "library": "liblzo2.so.2",
+                  "return_code": -6,
+                  "valid": false,
+                  "output_size": null
+                }
+              }
+            },
+            {
+              "cut": 194,
+              "start_offset": "0x040102",
+              "suffix_size": 1173251,
+              "suffix_sha256": "3f73615d073f62d662ff8a797ac3c573e8b741ccfa577ef7be7ea074f385a9d8",
+              "first_16_bytes": "16 0f 01 00 ff ec 96 2b 60 18 12 01 01 fe e9 f2",
+              "expected_output_sizes": {
+                "full_expanded_length": 2931480,
+                "expanded_minus_cut_if_prefix_is_literal": 2931286
+              },
+              "codecs": {
+                "zlib": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: incorrect header check"
+                },
+                "raw_deflate": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: invalid block type"
+                },
+                "gzip": {
+                  "valid": false,
+                  "error_type": "BadGzipFile",
+                  "error": "Not a gzipped file (b'\\x16\\x0f')"
+                },
+                "bzip2": {
+                  "valid": false,
+                  "error_type": "OSError",
+                  "error": "Invalid data stream"
+                },
+                "lzma_auto": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "xz": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lzma_alone": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lz4_frame": {
+                  "valid": false,
+                  "error_type": "RuntimeError",
+                  "error": "LZ4F_getFrameInfo failed with code: ERROR_frameType_unknown"
+                },
+                "zstd_frame": {
+                  "valid": false,
+                  "error_type": "ZstdError",
+                  "error": "error determining content size from frame header"
+                },
+                "brotli": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "brotli: decoder failed"
+                }
+              },
+              "raw_block_candidates": {
+                "expected_output_size_if_header_is_expanded_length": 2931286,
+                "lz4_block": {
+                  "available": true,
+                  "valid": false,
+                  "error_type": "LZ4BlockError",
+                  "error": "Decompression failed: corrupt input or insufficient space in destination buffer. Error code: 261"
+                },
+                "lzo1x_decompress_safe": {
+                  "available": true,
+                  "library": "liblzo2.so.2",
+                  "return_code": -6,
+                  "valid": false,
+                  "output_size": null
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "GT-1 v1.09": {
+      "path": "firmware/extracted/v109/gt1_sys_v109/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "412ebf5ffdc48554454c27df47f61428f046ea0a7d93f5c77b7f0302861abdbf",
+      "sections": {
+        "updater": {
+          "header_offset": "0x002000",
+          "payload_start": "0x002040",
+          "stored_length": 136551,
+          "expanded_length_candidate": 173176,
+          "payload_sha256": "864cebee6e15be9da8e9dca9c756bf720f35d4454f91b8fc466eaf4c23f9966a",
+          "candidate_prefix_cut_length": 199,
+          "probes": [
+            {
+              "cut": 0,
+              "start_offset": "0x002040",
+              "suffix_size": 136551,
+              "suffix_sha256": "864cebee6e15be9da8e9dca9c756bf720f35d4454f91b8fc466eaf4c23f9966a",
+              "first_16_bytes": "ff 4f f0 08 00 80 f3 11 88 ff 36 48 37 49 37 4a",
+              "expected_output_sizes": {
+                "full_expanded_length": 173176,
+                "expanded_minus_cut_if_prefix_is_literal": 173176
+              },
+              "codecs": {
+                "zlib": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: incorrect header check"
+                },
+                "raw_deflate": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: invalid block type"
+                },
+                "gzip": {
+                  "valid": false,
+                  "error_type": "BadGzipFile",
+                  "error": "Not a gzipped file (b'\\xffO')"
+                },
+                "bzip2": {
+                  "valid": false,
+                  "error_type": "OSError",
+                  "error": "Invalid data stream"
+                },
+                "lzma_auto": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "xz": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lzma_alone": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lz4_frame": {
+                  "valid": false,
+                  "error_type": "RuntimeError",
+                  "error": "LZ4F_getFrameInfo failed with code: ERROR_frameType_unknown"
+                },
+                "zstd_frame": {
+                  "valid": false,
+                  "error_type": "ZstdError",
+                  "error": "error determining content size from frame header"
+                },
+                "brotli": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "brotli: decoder failed"
+                }
+              },
+              "raw_block_candidates": {
+                "expected_output_size_if_header_is_expanded_length": 173176,
+                "lz4_block": {
+                  "available": true,
+                  "valid": false,
+                  "error_type": "LZ4BlockError",
+                  "error": "Decompression failed: corrupt input or insufficient space in destination buffer. Error code: 100"
+                },
+                "lzo1x_decompress_safe": {
+                  "available": true,
+                  "library": "liblzo2.so.2",
+                  "return_code": -6,
+                  "valid": false,
+                  "output_size": null
+                }
+              }
+            },
+            {
+              "cut": 194,
+              "start_offset": "0x002102",
+              "suffix_size": 136357,
+              "suffix_sha256": "fa0a057289879d4ce283667bc0b1f3b135f15b600001fab7bf212e4a078205ca",
+              "first_16_bytes": "cc 3f 00 00 ff 9c 64 02 60 cc 42 00 01 de e9 f2",
+              "expected_output_sizes": {
+                "full_expanded_length": 173176,
+                "expanded_minus_cut_if_prefix_is_literal": 172982
+              },
+              "codecs": {
+                "zlib": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: incorrect header check"
+                },
+                "raw_deflate": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: too many length or distance symbols"
+                },
+                "gzip": {
+                  "valid": false,
+                  "error_type": "BadGzipFile",
+                  "error": "Not a gzipped file (b'\\xcc?')"
+                },
+                "bzip2": {
+                  "valid": false,
+                  "error_type": "OSError",
+                  "error": "Invalid data stream"
+                },
+                "lzma_auto": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "xz": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lzma_alone": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lz4_frame": {
+                  "valid": false,
+                  "error_type": "RuntimeError",
+                  "error": "LZ4F_getFrameInfo failed with code: ERROR_frameType_unknown"
+                },
+                "zstd_frame": {
+                  "valid": false,
+                  "error_type": "ZstdError",
+                  "error": "error determining content size from frame header"
+                },
+                "brotli": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "brotli: decoder failed"
+                }
+              },
+              "raw_block_candidates": {
+                "expected_output_size_if_header_is_expanded_length": 172982,
+                "lz4_block": {
+                  "available": true,
+                  "valid": false,
+                  "error_type": "LZ4BlockError",
+                  "error": "Decompression failed: corrupt input or insufficient space in destination buffer. Error code: 16"
+                },
+                "lzo1x_decompress_safe": {
+                  "available": true,
+                  "library": "liblzo2.so.2",
+                  "return_code": -6,
+                  "valid": false,
+                  "output_size": null
+                }
+              }
+            },
+            {
+              "cut": 199,
+              "start_offset": "0x002107",
+              "suffix_size": 136352,
+              "suffix_sha256": "4d44e27953c3496cde290d99c618c53ab79c11f180bb3c4d41c3996ea6ab0f81",
+              "first_16_bytes": "9c 64 02 60 cc 42 00 01 de e9 f2 60 00 01 0e eb",
+              "expected_output_sizes": {
+                "full_expanded_length": 173176,
+                "expanded_minus_cut_if_prefix_is_literal": 172977
+              },
+              "codecs": {
+                "zlib": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: incorrect header check"
+                },
+                "raw_deflate": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: invalid code lengths set"
+                },
+                "gzip": {
+                  "valid": false,
+                  "error_type": "BadGzipFile",
+                  "error": "Not a gzipped file (b'\\x9cd')"
+                },
+                "bzip2": {
+                  "valid": false,
+                  "error_type": "OSError",
+                  "error": "Invalid data stream"
+                },
+                "lzma_auto": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "xz": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lzma_alone": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lz4_frame": {
+                  "valid": false,
+                  "error_type": "RuntimeError",
+                  "error": "LZ4F_getFrameInfo failed with code: ERROR_frameType_unknown"
+                },
+                "zstd_frame": {
+                  "valid": false,
+                  "error_type": "ZstdError",
+                  "error": "error determining content size from frame header"
+                },
+                "brotli": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "brotli: decoder failed"
+                }
+              },
+              "raw_block_candidates": {
+                "expected_output_size_if_header_is_expanded_length": 172977,
+                "lz4_block": {
+                  "available": true,
+                  "valid": false,
+                  "error_type": "LZ4BlockError",
+                  "error": "Decompression failed: corrupt input or insufficient space in destination buffer. Error code: 13"
+                },
+                "lzo1x_decompress_safe": {
+                  "available": true,
+                  "library": "liblzo2.so.2",
+                  "return_code": -6,
+                  "valid": false,
+                  "output_size": null
+                }
+              }
+            }
+          ]
+        },
+        "application": {
+          "header_offset": "0x040000",
+          "payload_start": "0x040040",
+          "stored_length": 1178362,
+          "expanded_length_candidate": 2937524,
+          "payload_sha256": "2945b15fe45aede58d10fb78e7475d72373fd1d202f5e07839566d80663c1f34",
+          "candidate_prefix_cut_length": 194,
+          "probes": [
+            {
+              "cut": 0,
+              "start_offset": "0x040040",
+              "suffix_size": 1178362,
+              "suffix_sha256": "2945b15fe45aede58d10fb78e7475d72373fd1d202f5e07839566d80663c1f34",
+              "first_16_bytes": "ff 4f f0 08 00 80 f3 11 88 ff 36 48 37 49 37 4a",
+              "expected_output_sizes": {
+                "full_expanded_length": 2937524,
+                "expanded_minus_cut_if_prefix_is_literal": 2937524
+              },
+              "codecs": {
+                "zlib": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: incorrect header check"
+                },
+                "raw_deflate": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: invalid block type"
+                },
+                "gzip": {
+                  "valid": false,
+                  "error_type": "BadGzipFile",
+                  "error": "Not a gzipped file (b'\\xffO')"
+                },
+                "bzip2": {
+                  "valid": false,
+                  "error_type": "OSError",
+                  "error": "Invalid data stream"
+                },
+                "lzma_auto": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "xz": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lzma_alone": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lz4_frame": {
+                  "valid": false,
+                  "error_type": "RuntimeError",
+                  "error": "LZ4F_getFrameInfo failed with code: ERROR_frameType_unknown"
+                },
+                "zstd_frame": {
+                  "valid": false,
+                  "error_type": "ZstdError",
+                  "error": "error determining content size from frame header"
+                },
+                "brotli": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "brotli: decoder failed"
+                }
+              },
+              "raw_block_candidates": {
+                "expected_output_size_if_header_is_expanded_length": 2937524,
+                "lz4_block": {
+                  "available": true,
+                  "valid": false,
+                  "error_type": "LZ4BlockError",
+                  "error": "Decompression failed: corrupt input or insufficient space in destination buffer. Error code: 100"
+                },
+                "lzo1x_decompress_safe": {
+                  "available": true,
+                  "library": "liblzo2.so.2",
+                  "return_code": -6,
+                  "valid": false,
+                  "output_size": null
+                }
+              }
+            },
+            {
+              "cut": 194,
+              "start_offset": "0x040102",
+              "suffix_size": 1178168,
+              "suffix_sha256": "f657004d2194bd0c3427445c416b0b99b701d94dc7957d73b013c4ec5609d21b",
+              "first_16_bytes": "b2 0f 01 00 ff ec ad 2b 60 b4 12 01 01 fe e9 f2",
+              "expected_output_sizes": {
+                "full_expanded_length": 2937524,
+                "expanded_minus_cut_if_prefix_is_literal": 2937330
+              },
+              "codecs": {
+                "zlib": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: incorrect header check"
+                },
+                "raw_deflate": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: invalid stored block lengths"
+                },
+                "gzip": {
+                  "valid": false,
+                  "error_type": "BadGzipFile",
+                  "error": "Not a gzipped file (b'\\xb2\\x0f')"
+                },
+                "bzip2": {
+                  "valid": false,
+                  "error_type": "OSError",
+                  "error": "Invalid data stream"
+                },
+                "lzma_auto": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "xz": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lzma_alone": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lz4_frame": {
+                  "valid": false,
+                  "error_type": "RuntimeError",
+                  "error": "LZ4F_getFrameInfo failed with code: ERROR_frameType_unknown"
+                },
+                "zstd_frame": {
+                  "valid": false,
+                  "error_type": "ZstdError",
+                  "error": "error determining content size from frame header"
+                },
+                "brotli": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "brotli: decoder failed"
+                }
+              },
+              "raw_block_candidates": {
+                "expected_output_size_if_header_is_expanded_length": 2937330,
+                "lz4_block": {
+                  "available": true,
+                  "valid": false,
+                  "error_type": "LZ4BlockError",
+                  "error": "Decompression failed: corrupt input or insufficient space in destination buffer. Error code: 15"
+                },
+                "lzo1x_decompress_safe": {
+                  "available": true,
+                  "library": "liblzo2.so.2",
+                  "return_code": -6,
+                  "valid": false,
+                  "output_size": null
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "GT-100 v2.12": {
+      "path": "firmware/work/reference/esc2-comparators/gt100_v212/extracted/gt100_sys_v212/GT100ROM.BIN",
+      "size": 4194304,
+      "sha256": "0c44ab01ac310927bf8dcc95f4ab5fcc487ed106dfcc6fc067832a35a4e32d34",
+      "sections": {
+        "updater": {
+          "header_offset": "0x002000",
+          "payload_start": "0x002040",
+          "stored_length": 137053,
+          "expanded_length_candidate": 174272,
+          "payload_sha256": "9c6c518ee8825aef56a51b1583005627981f02bc49bf6f1746c77251931c3403",
+          "candidate_prefix_cut_length": 199,
+          "probes": [
+            {
+              "cut": 0,
+              "start_offset": "0x002040",
+              "suffix_size": 137053,
+              "suffix_sha256": "9c6c518ee8825aef56a51b1583005627981f02bc49bf6f1746c77251931c3403",
+              "first_16_bytes": "ff 4f f0 08 00 80 f3 11 88 ff 36 48 37 49 37 4a",
+              "expected_output_sizes": {
+                "full_expanded_length": 174272,
+                "expanded_minus_cut_if_prefix_is_literal": 174272
+              },
+              "codecs": {
+                "zlib": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: incorrect header check"
+                },
+                "raw_deflate": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: invalid block type"
+                },
+                "gzip": {
+                  "valid": false,
+                  "error_type": "BadGzipFile",
+                  "error": "Not a gzipped file (b'\\xffO')"
+                },
+                "bzip2": {
+                  "valid": false,
+                  "error_type": "OSError",
+                  "error": "Invalid data stream"
+                },
+                "lzma_auto": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "xz": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lzma_alone": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lz4_frame": {
+                  "valid": false,
+                  "error_type": "RuntimeError",
+                  "error": "LZ4F_getFrameInfo failed with code: ERROR_frameType_unknown"
+                },
+                "zstd_frame": {
+                  "valid": false,
+                  "error_type": "ZstdError",
+                  "error": "error determining content size from frame header"
+                },
+                "brotli": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "brotli: decoder failed"
+                }
+              },
+              "raw_block_candidates": {
+                "expected_output_size_if_header_is_expanded_length": 174272,
+                "lz4_block": {
+                  "available": true,
+                  "valid": false,
+                  "error_type": "LZ4BlockError",
+                  "error": "Decompression failed: corrupt input or insufficient space in destination buffer. Error code: 100"
+                },
+                "lzo1x_decompress_safe": {
+                  "available": true,
+                  "library": "liblzo2.so.2",
+                  "return_code": -6,
+                  "valid": false,
+                  "output_size": null
+                }
+              }
+            },
+            {
+              "cut": 194,
+              "start_offset": "0x002102",
+              "suffix_size": 136859,
+              "suffix_sha256": "2f4e1c4d6b9de6bbd0dbe60cf3e72ad3794cf13f5dc039188b3b1ea90d9088c3",
+              "first_16_bytes": "cc 3f 00 00 ff e4 68 02 60 cc 42 00 01 de e9 f2",
+              "expected_output_sizes": {
+                "full_expanded_length": 174272,
+                "expanded_minus_cut_if_prefix_is_literal": 174078
+              },
+              "codecs": {
+                "zlib": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: incorrect header check"
+                },
+                "raw_deflate": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: too many length or distance symbols"
+                },
+                "gzip": {
+                  "valid": false,
+                  "error_type": "BadGzipFile",
+                  "error": "Not a gzipped file (b'\\xcc?')"
+                },
+                "bzip2": {
+                  "valid": false,
+                  "error_type": "OSError",
+                  "error": "Invalid data stream"
+                },
+                "lzma_auto": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "xz": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lzma_alone": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lz4_frame": {
+                  "valid": false,
+                  "error_type": "RuntimeError",
+                  "error": "LZ4F_getFrameInfo failed with code: ERROR_frameType_unknown"
+                },
+                "zstd_frame": {
+                  "valid": false,
+                  "error_type": "ZstdError",
+                  "error": "error determining content size from frame header"
+                },
+                "brotli": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "brotli: decoder failed"
+                }
+              },
+              "raw_block_candidates": {
+                "expected_output_size_if_header_is_expanded_length": 174078,
+                "lz4_block": {
+                  "available": true,
+                  "valid": false,
+                  "error_type": "LZ4BlockError",
+                  "error": "Decompression failed: corrupt input or insufficient space in destination buffer. Error code: 16"
+                },
+                "lzo1x_decompress_safe": {
+                  "available": true,
+                  "library": "liblzo2.so.2",
+                  "return_code": -6,
+                  "valid": false,
+                  "output_size": null
+                }
+              }
+            },
+            {
+              "cut": 199,
+              "start_offset": "0x002107",
+              "suffix_size": 136854,
+              "suffix_sha256": "7b36da3c06e7dbb5a8fcdc6da99eb2c090086c24230507d785afbebf6f01919b",
+              "first_16_bytes": "e4 68 02 60 cc 42 00 01 de e9 f2 60 00 01 0e eb",
+              "expected_output_sizes": {
+                "full_expanded_length": 174272,
+                "expanded_minus_cut_if_prefix_is_literal": 174073
+              },
+              "codecs": {
+                "zlib": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: incorrect header check"
+                },
+                "raw_deflate": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: invalid code lengths set"
+                },
+                "gzip": {
+                  "valid": false,
+                  "error_type": "BadGzipFile",
+                  "error": "Not a gzipped file (b'\\xe4h')"
+                },
+                "bzip2": {
+                  "valid": false,
+                  "error_type": "OSError",
+                  "error": "Invalid data stream"
+                },
+                "lzma_auto": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "xz": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lzma_alone": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lz4_frame": {
+                  "valid": false,
+                  "error_type": "RuntimeError",
+                  "error": "LZ4F_getFrameInfo failed with code: ERROR_frameType_unknown"
+                },
+                "zstd_frame": {
+                  "valid": false,
+                  "error_type": "ZstdError",
+                  "error": "error determining content size from frame header"
+                },
+                "brotli": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "brotli: decoder failed"
+                }
+              },
+              "raw_block_candidates": {
+                "expected_output_size_if_header_is_expanded_length": 174073,
+                "lz4_block": {
+                  "available": true,
+                  "valid": false,
+                  "error_type": "LZ4BlockError",
+                  "error": "Decompression failed: corrupt input or insufficient space in destination buffer. Error code: 18"
+                },
+                "lzo1x_decompress_safe": {
+                  "available": true,
+                  "library": "liblzo2.so.2",
+                  "return_code": -6,
+                  "valid": false,
+                  "output_size": null
+                }
+              }
+            }
+          ]
+        },
+        "application": {
+          "header_offset": "0x040000",
+          "payload_start": "0x040040",
+          "stored_length": 1271900,
+          "expanded_length_candidate": 3113276,
+          "payload_sha256": "adfbf71a09ff0dece90f77047a95f489e26952c2c1ee2a3a482bfe4a2952722e",
+          "candidate_prefix_cut_length": 194,
+          "probes": [
+            {
+              "cut": 0,
+              "start_offset": "0x040040",
+              "suffix_size": 1271900,
+              "suffix_sha256": "adfbf71a09ff0dece90f77047a95f489e26952c2c1ee2a3a482bfe4a2952722e",
+              "first_16_bytes": "ff 4f f0 08 00 80 f3 11 88 ff 36 48 37 49 37 4a",
+              "expected_output_sizes": {
+                "full_expanded_length": 3113276,
+                "expanded_minus_cut_if_prefix_is_literal": 3113276
+              },
+              "codecs": {
+                "zlib": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: incorrect header check"
+                },
+                "raw_deflate": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: invalid block type"
+                },
+                "gzip": {
+                  "valid": false,
+                  "error_type": "BadGzipFile",
+                  "error": "Not a gzipped file (b'\\xffO')"
+                },
+                "bzip2": {
+                  "valid": false,
+                  "error_type": "OSError",
+                  "error": "Invalid data stream"
+                },
+                "lzma_auto": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "xz": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lzma_alone": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lz4_frame": {
+                  "valid": false,
+                  "error_type": "RuntimeError",
+                  "error": "LZ4F_getFrameInfo failed with code: ERROR_frameType_unknown"
+                },
+                "zstd_frame": {
+                  "valid": false,
+                  "error_type": "ZstdError",
+                  "error": "error determining content size from frame header"
+                },
+                "brotli": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "brotli: decoder failed"
+                }
+              },
+              "raw_block_candidates": {
+                "expected_output_size_if_header_is_expanded_length": 3113276,
+                "lz4_block": {
+                  "available": true,
+                  "valid": false,
+                  "error_type": "LZ4BlockError",
+                  "error": "Decompression failed: corrupt input or insufficient space in destination buffer. Error code: 100"
+                },
+                "lzo1x_decompress_safe": {
+                  "available": true,
+                  "library": "liblzo2.so.2",
+                  "return_code": -6,
+                  "valid": false,
+                  "output_size": null
+                }
+              }
+            },
+            {
+              "cut": 194,
+              "start_offset": "0x040102",
+              "suffix_size": 1271706,
+              "suffix_sha256": "4c597a5f9d663fd98c2d1db8c763bc6ce469fa5f44fc16d558a545bd86a93937",
+              "first_16_bytes": "52 03 01 00 ff 08 69 2e 60 54 06 01 01 fe e9 f2",
+              "expected_output_sizes": {
+                "full_expanded_length": 3113276,
+                "expanded_minus_cut_if_prefix_is_literal": 3113082
+              },
+              "codecs": {
+                "zlib": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: incorrect header check"
+                },
+                "raw_deflate": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "Error -3 while decompressing data: too many length or distance symbols"
+                },
+                "gzip": {
+                  "valid": false,
+                  "error_type": "BadGzipFile",
+                  "error": "Not a gzipped file (b'R\\x03')"
+                },
+                "bzip2": {
+                  "valid": false,
+                  "error_type": "OSError",
+                  "error": "Invalid data stream"
+                },
+                "lzma_auto": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "xz": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lzma_alone": {
+                  "valid": false,
+                  "error_type": "LZMAError",
+                  "error": "Input format not supported by decoder"
+                },
+                "lz4_frame": {
+                  "valid": false,
+                  "error_type": "RuntimeError",
+                  "error": "LZ4F_getFrameInfo failed with code: ERROR_frameType_unknown"
+                },
+                "zstd_frame": {
+                  "valid": false,
+                  "error_type": "ZstdError",
+                  "error": "error determining content size from frame header"
+                },
+                "brotli": {
+                  "valid": false,
+                  "error_type": "error",
+                  "error": "brotli: decoder failed"
+                }
+              },
+              "raw_block_candidates": {
+                "expected_output_size_if_header_is_expanded_length": 3113082,
+                "lz4_block": {
+                  "available": true,
+                  "valid": false,
+                  "error_type": "LZ4BlockError",
+                  "error": "Decompression failed: corrupt input or insufficient space in destination buffer. Error code: 9"
+                },
+                "lzo1x_decompress_safe": {
+                  "available": true,
+                  "library": "liblzo2.so.2",
+                  "return_code": -6,
+                  "valid": false,
+                  "output_size": null
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

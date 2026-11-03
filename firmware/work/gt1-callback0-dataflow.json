@@ -1,0 +1,77 @@
+{
+  "read_only": true,
+  "image": "firmware/extracted/v109/gt1_sys_v109/GT1ROM.BIN (decoded/reconstructed app segment only)",
+  "segment": "firmware/work/reconstructed/v109-GT1Appli-seg0.bin",
+  "segment_sha256": "019adcf28e4a12444d48699b0b2a386a1a5feb2e43b59d465c696ee42540b9f9",
+  "callback_entry": "0x01002308",
+  "literal_values": [
+    {
+      "literal_runtime_address": "0x010023bc",
+      "segment_file_offset": "0x020bc",
+      "literal_value": "0x010109ac",
+      "target_in_startup_copy": "0x01000300-0x010112b2",
+      "target_in_startup_zero_range": null,
+      "target_initialization_class": "copied initialized bytes",
+      "target_ascii_string": null
+    },
+    {
+      "literal_runtime_address": "0x010023c0",
+      "segment_file_offset": "0x020c0",
+      "literal_value": "0x01017b8c",
+      "target_in_startup_copy": null,
+      "target_in_startup_zero_range": "0x01011fb8-0x01017ee2",
+      "target_initialization_class": "startup zero-filled storage",
+      "target_ascii_string": null
+    },
+    {
+      "literal_runtime_address": "0x010023c4",
+      "segment_file_offset": "0x020c4",
+      "literal_value": "0x01011804",
+      "target_in_startup_copy": "0x01011800-0x01011fb8",
+      "target_in_startup_zero_range": null,
+      "target_initialization_class": "copied initialized bytes",
+      "target_ascii_string": null
+    },
+    {
+      "literal_runtime_address": "0x010023c8",
+      "segment_file_offset": "0x020c8",
+      "literal_value": "0x010153b8",
+      "target_in_startup_copy": null,
+      "target_in_startup_zero_range": "0x01011fb8-0x01017ee2",
+      "target_initialization_class": "startup zero-filled storage",
+      "target_ascii_string": null
+    },
+    {
+      "literal_runtime_address": "0x010023cc",
+      "segment_file_offset": "0x020cc",
+      "literal_value": "0x010109b0",
+      "target_in_startup_copy": "0x01000300-0x010112b2",
+      "target_in_startup_zero_range": null,
+      "target_initialization_class": "copied initialized bytes",
+      "target_ascii_string": null
+    },
+    {
+      "literal_runtime_address": "0x010023d0",
+      "segment_file_offset": "0x020d0",
+      "literal_value": "0x010109b4",
+      "target_in_startup_copy": "0x01000300-0x010112b2",
+      "target_in_startup_zero_range": null,
+      "target_initialization_class": "copied initialized bytes",
+      "target_ascii_string": null
+    },
+    {
+      "literal_runtime_address": "0x010023d4",
+      "segment_file_offset": "0x020d4",
+      "literal_value": "0x01010ab5",
+      "target_in_startup_copy": "0x01000300-0x010112b2",
+      "target_in_startup_zero_range": null,
+      "target_initialization_class": "copied initialized bytes",
+      "target_ascii_string": "initial task"
+    }
+  ],
+  "interpretation_limits": [
+    "Targets are classified only against recovered nonempty application startup copy and zero destination ranges.",
+    "A target outside those ranges is not thereby proven unused, uninitialized, or hardware memory.",
+    "The literal's semantic role is not inferred from its numeric value alone."
+  ]
+}

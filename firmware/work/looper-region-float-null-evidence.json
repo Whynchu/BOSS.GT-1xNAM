@@ -1,0 +1,2176 @@
+{
+  "question": "Is an 8+1 little-endian float-pair interpretation near 0x0BEBE4 more compelling than shuffled-byte nulls?",
+  "read_only": true,
+  "input": {
+    "path": "firmware/extracted/v109/gt1_sys_v109/GT1ROM.BIN",
+    "image_sha256": "412ebf5ffdc48554454c27df47f61428f046ea0a7d93f5c77b7f0302861abdbf",
+    "window_start": "0xbeb54",
+    "window_end_exclusive": "0xbec74",
+    "window_sha256": "0b52d2a2254f2ef05df74245b3942f145ff779d5ded56b21b6b8871a27e6b7cb",
+    "window_hex": "55 26 e1 e0 24 e1 e0 22 e1 e0 1e e1 e0 55 1c e1 e0 1a e1 e0 18 e1 e0 14 e1 e0 55 12 e1 e0 10 e1 e0 0c e1 e0 0a e1 e0 55 08 e1 e0 06 e1 e0 02 e1 e0 00 b1 f1 50 23 41 c1 b4 28 c1 44 a1 90 55 a0 a0 cd fc 55 b0 dd f8 c0 e9 f8 d0 f5 f8 e0 01 08 00 80 41 80 42 99 41 99 40 cc 70 1f 02 b0 70 27 02 44 b0 41 b0 41 20 35 04 88 70 3f 02 30 45 04 11 38 99 40 70 70 53 02 48 99 40 f8 41 f8 41 55 58 99 40 60 99 40 68 99 40 70 71 04 95 78 99 40 80 99 40 84 99 40 40 51 8c aa 99 40 90 99 40 94 99 40 98 99 40 9c aa 99 40 a0 99 40 a4 99 40 a8 99 40 b0 ac 99 40 0c 70 00 b8 99 40 bc 99 40 c4 aa 99 40 c8 99 40 cc 99 40 d4 99 40 d8 aa 99 40 e0 99 40 e4 99 40 ec 99 40 f4 12 99 40 f8 99 41 e1 e0 04 a5 f4 a0 f1 9c f1 a8 94 f1 90 f1 88 f1 20 79 f4 2a 69 f4 32 12 59 f4 3c 49 f4 44 f1 4e 31 f4 2c f1 20 f1 b4 14 f1 0c f1 72 f1 e4 7e 41 d6 81 68 55 b3 dc 83 74 4f 14 80 4f 14 8c 4f 14",
+    "target_offset_relative": "0x90"
+  },
+  "method": {
+    "candidate_record": "one skipped marker byte plus two little-endian float32 values; 9-byte cadence",
+    "phases_tested": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "plausibility_filter": "both floats finite and absolute value <= 100",
+    "minimum_records": 12,
+    "null": "uniform random permutation of the same 288 bytes; phase search repeated",
+    "null_repetitions": 256,
+    "null_rng_seed": 722262
+  },
+  "observed": {
+    "best_phase": {
+      "phase": 5,
+      "records": 31,
+      "finite_abs_le_100_pairs": 16,
+      "nonzero_plausible_pairs": 5,
+      "valid_fraction": 0.5161290322580645,
+      "nonzero_fraction_of_plausible": 0.3125
+    },
+    "all_phases": [
+      {
+        "phase": 0,
+        "records": 32,
+        "finite_abs_le_100_pairs": 12,
+        "nonzero_plausible_pairs": 5,
+        "valid_fraction": 0.375,
+        "nonzero_fraction_of_plausible": 0.4166666666666667
+      },
+      {
+        "phase": 1,
+        "records": 31,
+        "finite_abs_le_100_pairs": 13,
+        "nonzero_plausible_pairs": 9,
+        "valid_fraction": 0.41935483870967744,
+        "nonzero_fraction_of_plausible": 0.6923076923076923
+      },
+      {
+        "phase": 2,
+        "records": 31,
+        "finite_abs_le_100_pairs": 13,
+        "nonzero_plausible_pairs": 6,
+        "valid_fraction": 0.41935483870967744,
+        "nonzero_fraction_of_plausible": 0.46153846153846156
+      },
+      {
+        "phase": 3,
+        "records": 31,
+        "finite_abs_le_100_pairs": 10,
+        "nonzero_plausible_pairs": 6,
+        "valid_fraction": 0.3225806451612903,
+        "nonzero_fraction_of_plausible": 0.6
+      },
+      {
+        "phase": 4,
+        "records": 31,
+        "finite_abs_le_100_pairs": 12,
+        "nonzero_plausible_pairs": 7,
+        "valid_fraction": 0.3870967741935484,
+        "nonzero_fraction_of_plausible": 0.5833333333333334
+      },
+      {
+        "phase": 5,
+        "records": 31,
+        "finite_abs_le_100_pairs": 16,
+        "nonzero_plausible_pairs": 5,
+        "valid_fraction": 0.5161290322580645,
+        "nonzero_fraction_of_plausible": 0.3125
+      },
+      {
+        "phase": 6,
+        "records": 31,
+        "finite_abs_le_100_pairs": 15,
+        "nonzero_plausible_pairs": 8,
+        "valid_fraction": 0.4838709677419355,
+        "nonzero_fraction_of_plausible": 0.5333333333333333
+      },
+      {
+        "phase": 7,
+        "records": 31,
+        "finite_abs_le_100_pairs": 14,
+        "nonzero_plausible_pairs": 6,
+        "valid_fraction": 0.45161290322580644,
+        "nonzero_fraction_of_plausible": 0.42857142857142855
+      },
+      {
+        "phase": 8,
+        "records": 31,
+        "finite_abs_le_100_pairs": 10,
+        "nonzero_plausible_pairs": 6,
+        "valid_fraction": 0.3225806451612903,
+        "nonzero_fraction_of_plausible": 0.6
+      }
+    ]
+  },
+  "null_best_phase_score_summary": {
+    "valid_fraction_min": 0.3870967741935484,
+    "valid_fraction_median": 0.46875,
+    "valid_fraction_max": 0.6451612903225806,
+    "nonzero_fraction_min": 0.13333333333333333,
+    "nonzero_fraction_median": 0.5,
+    "nonzero_fraction_max": 0.8666666666666667,
+    "observed_score_beaten_or_tied": 65
+  },
+  "null_replicates": [
+    {
+      "phase": 1,
+      "records": 31,
+      "finite_abs_le_100_pairs": 20,
+      "nonzero_plausible_pairs": 8,
+      "valid_fraction": 0.6451612903225806,
+      "nonzero_fraction_of_plausible": 0.4
+    },
+    {
+      "phase": 0,
+      "records": 32,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.4375,
+      "nonzero_fraction_of_plausible": 0.5
+    },
+    {
+      "phase": 4,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.5
+    },
+    {
+      "phase": 7,
+      "records": 31,
+      "finite_abs_le_100_pairs": 18,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.5806451612903226,
+      "nonzero_fraction_of_plausible": 0.5
+    },
+    {
+      "phase": 7,
+      "records": 31,
+      "finite_abs_le_100_pairs": 16,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.5161290322580645,
+      "nonzero_fraction_of_plausible": 0.5625
+    },
+    {
+      "phase": 4,
+      "records": 31,
+      "finite_abs_le_100_pairs": 13,
+      "nonzero_plausible_pairs": 5,
+      "valid_fraction": 0.41935483870967744,
+      "nonzero_fraction_of_plausible": 0.38461538461538464
+    },
+    {
+      "phase": 6,
+      "records": 31,
+      "finite_abs_le_100_pairs": 17,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.5483870967741935,
+      "nonzero_fraction_of_plausible": 0.4117647058823529
+    },
+    {
+      "phase": 6,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 10,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.6666666666666666
+    },
+    {
+      "phase": 7,
+      "records": 31,
+      "finite_abs_le_100_pairs": 16,
+      "nonzero_plausible_pairs": 5,
+      "valid_fraction": 0.5161290322580645,
+      "nonzero_fraction_of_plausible": 0.3125
+    },
+    {
+      "phase": 1,
+      "records": 31,
+      "finite_abs_le_100_pairs": 18,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.5806451612903226,
+      "nonzero_fraction_of_plausible": 0.3888888888888889
+    },
+    {
+      "phase": 2,
+      "records": 31,
+      "finite_abs_le_100_pairs": 16,
+      "nonzero_plausible_pairs": 6,
+      "valid_fraction": 0.5161290322580645,
+      "nonzero_fraction_of_plausible": 0.375
+    },
+    {
+      "phase": 8,
+      "records": 31,
+      "finite_abs_le_100_pairs": 17,
+      "nonzero_plausible_pairs": 8,
+      "valid_fraction": 0.5483870967741935,
+      "nonzero_fraction_of_plausible": 0.47058823529411764
+    },
+    {
+      "phase": 5,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.5
+    },
+    {
+      "phase": 7,
+      "records": 31,
+      "finite_abs_le_100_pairs": 16,
+      "nonzero_plausible_pairs": 10,
+      "valid_fraction": 0.5161290322580645,
+      "nonzero_fraction_of_plausible": 0.625
+    },
+    {
+      "phase": 1,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 6,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.42857142857142855
+    },
+    {
+      "phase": 2,
+      "records": 31,
+      "finite_abs_le_100_pairs": 16,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.5161290322580645,
+      "nonzero_fraction_of_plausible": 0.4375
+    },
+    {
+      "phase": 5,
+      "records": 31,
+      "finite_abs_le_100_pairs": 13,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.41935483870967744,
+      "nonzero_fraction_of_plausible": 0.6923076923076923
+    },
+    {
+      "phase": 2,
+      "records": 31,
+      "finite_abs_le_100_pairs": 16,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.5161290322580645,
+      "nonzero_fraction_of_plausible": 0.4375
+    },
+    {
+      "phase": 7,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.5
+    },
+    {
+      "phase": 2,
+      "records": 31,
+      "finite_abs_le_100_pairs": 13,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.41935483870967744,
+      "nonzero_fraction_of_plausible": 0.5384615384615384
+    },
+    {
+      "phase": 4,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.6
+    },
+    {
+      "phase": 3,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 8,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.5714285714285714
+    },
+    {
+      "phase": 5,
+      "records": 31,
+      "finite_abs_le_100_pairs": 16,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.5161290322580645,
+      "nonzero_fraction_of_plausible": 0.5625
+    },
+    {
+      "phase": 1,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.6
+    },
+    {
+      "phase": 0,
+      "records": 32,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 5,
+      "valid_fraction": 0.4375,
+      "nonzero_fraction_of_plausible": 0.35714285714285715
+    },
+    {
+      "phase": 4,
+      "records": 31,
+      "finite_abs_le_100_pairs": 13,
+      "nonzero_plausible_pairs": 8,
+      "valid_fraction": 0.41935483870967744,
+      "nonzero_fraction_of_plausible": 0.6153846153846154
+    },
+    {
+      "phase": 5,
+      "records": 31,
+      "finite_abs_le_100_pairs": 16,
+      "nonzero_plausible_pairs": 6,
+      "valid_fraction": 0.5161290322580645,
+      "nonzero_fraction_of_plausible": 0.375
+    },
+    {
+      "phase": 4,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.5
+    },
+    {
+      "phase": 5,
+      "records": 31,
+      "finite_abs_le_100_pairs": 16,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.5161290322580645,
+      "nonzero_fraction_of_plausible": 0.5625
+    },
+    {
+      "phase": 4,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 5,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.3333333333333333
+    },
+    {
+      "phase": 2,
+      "records": 31,
+      "finite_abs_le_100_pairs": 13,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.41935483870967744,
+      "nonzero_fraction_of_plausible": 0.5384615384615384
+    },
+    {
+      "phase": 7,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 4,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.2857142857142857
+    },
+    {
+      "phase": 2,
+      "records": 31,
+      "finite_abs_le_100_pairs": 16,
+      "nonzero_plausible_pairs": 5,
+      "valid_fraction": 0.5161290322580645,
+      "nonzero_fraction_of_plausible": 0.3125
+    },
+    {
+      "phase": 0,
+      "records": 32,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 10,
+      "valid_fraction": 0.4375,
+      "nonzero_fraction_of_plausible": 0.7142857142857143
+    },
+    {
+      "phase": 1,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.5
+    },
+    {
+      "phase": 4,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.5
+    },
+    {
+      "phase": 1,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.6
+    },
+    {
+      "phase": 4,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 11,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.7857142857142857
+    },
+    {
+      "phase": 2,
+      "records": 31,
+      "finite_abs_le_100_pairs": 13,
+      "nonzero_plausible_pairs": 10,
+      "valid_fraction": 0.41935483870967744,
+      "nonzero_fraction_of_plausible": 0.7692307692307693
+    },
+    {
+      "phase": 6,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.6428571428571429
+    },
+    {
+      "phase": 5,
+      "records": 31,
+      "finite_abs_le_100_pairs": 18,
+      "nonzero_plausible_pairs": 11,
+      "valid_fraction": 0.5806451612903226,
+      "nonzero_fraction_of_plausible": 0.6111111111111112
+    },
+    {
+      "phase": 0,
+      "records": 32,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 6,
+      "valid_fraction": 0.46875,
+      "nonzero_fraction_of_plausible": 0.4
+    },
+    {
+      "phase": 1,
+      "records": 31,
+      "finite_abs_le_100_pairs": 13,
+      "nonzero_plausible_pairs": 5,
+      "valid_fraction": 0.41935483870967744,
+      "nonzero_fraction_of_plausible": 0.38461538461538464
+    },
+    {
+      "phase": 4,
+      "records": 31,
+      "finite_abs_le_100_pairs": 13,
+      "nonzero_plausible_pairs": 8,
+      "valid_fraction": 0.41935483870967744,
+      "nonzero_fraction_of_plausible": 0.6153846153846154
+    },
+    {
+      "phase": 7,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.4666666666666667
+    },
+    {
+      "phase": 5,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 4,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.2857142857142857
+    },
+    {
+      "phase": 7,
+      "records": 31,
+      "finite_abs_le_100_pairs": 17,
+      "nonzero_plausible_pairs": 6,
+      "valid_fraction": 0.5483870967741935,
+      "nonzero_fraction_of_plausible": 0.35294117647058826
+    },
+    {
+      "phase": 8,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.6
+    },
+    {
+      "phase": 6,
+      "records": 31,
+      "finite_abs_le_100_pairs": 13,
+      "nonzero_plausible_pairs": 8,
+      "valid_fraction": 0.41935483870967744,
+      "nonzero_fraction_of_plausible": 0.6153846153846154
+    },
+    {
+      "phase": 0,
+      "records": 32,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 5,
+      "valid_fraction": 0.4375,
+      "nonzero_fraction_of_plausible": 0.35714285714285715
+    },
+    {
+      "phase": 3,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.6
+    },
+    {
+      "phase": 5,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 5,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.3333333333333333
+    },
+    {
+      "phase": 2,
+      "records": 31,
+      "finite_abs_le_100_pairs": 18,
+      "nonzero_plausible_pairs": 8,
+      "valid_fraction": 0.5806451612903226,
+      "nonzero_fraction_of_plausible": 0.4444444444444444
+    },
+    {
+      "phase": 6,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 10,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.7142857142857143
+    },
+    {
+      "phase": 1,
+      "records": 31,
+      "finite_abs_le_100_pairs": 13,
+      "nonzero_plausible_pairs": 3,
+      "valid_fraction": 0.41935483870967744,
+      "nonzero_fraction_of_plausible": 0.23076923076923078
+    },
+    {
+      "phase": 8,
+      "records": 31,
+      "finite_abs_le_100_pairs": 13,
+      "nonzero_plausible_pairs": 8,
+      "valid_fraction": 0.41935483870967744,
+      "nonzero_fraction_of_plausible": 0.6153846153846154
+    },
+    {
+      "phase": 1,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 6,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.42857142857142855
+    },
+    {
+      "phase": 1,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 8,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.5714285714285714
+    },
+    {
+      "phase": 5,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 8,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.5714285714285714
+    },
+    {
+      "phase": 5,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 10,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.6666666666666666
+    },
+    {
+      "phase": 8,
+      "records": 31,
+      "finite_abs_le_100_pairs": 16,
+      "nonzero_plausible_pairs": 10,
+      "valid_fraction": 0.5161290322580645,
+      "nonzero_fraction_of_plausible": 0.625
+    },
+    {
+      "phase": 0,
+      "records": 32,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.46875,
+      "nonzero_fraction_of_plausible": 0.6
+    },
+    {
+      "phase": 5,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.5
+    },
+    {
+      "phase": 1,
+      "records": 31,
+      "finite_abs_le_100_pairs": 13,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.41935483870967744,
+      "nonzero_fraction_of_plausible": 0.5384615384615384
+    },
+    {
+      "phase": 1,
+      "records": 31,
+      "finite_abs_le_100_pairs": 16,
+      "nonzero_plausible_pairs": 10,
+      "valid_fraction": 0.5161290322580645,
+      "nonzero_fraction_of_plausible": 0.625
+    },
+    {
+      "phase": 1,
+      "records": 31,
+      "finite_abs_le_100_pairs": 13,
+      "nonzero_plausible_pairs": 5,
+      "valid_fraction": 0.41935483870967744,
+      "nonzero_fraction_of_plausible": 0.38461538461538464
+    },
+    {
+      "phase": 3,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 6,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.42857142857142855
+    },
+    {
+      "phase": 6,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.6
+    },
+    {
+      "phase": 8,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.6
+    },
+    {
+      "phase": 8,
+      "records": 31,
+      "finite_abs_le_100_pairs": 17,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.5483870967741935,
+      "nonzero_fraction_of_plausible": 0.4117647058823529
+    },
+    {
+      "phase": 2,
+      "records": 31,
+      "finite_abs_le_100_pairs": 17,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.5483870967741935,
+      "nonzero_fraction_of_plausible": 0.5294117647058824
+    },
+    {
+      "phase": 5,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 6,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.42857142857142855
+    },
+    {
+      "phase": 8,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 11,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.7333333333333333
+    },
+    {
+      "phase": 4,
+      "records": 31,
+      "finite_abs_le_100_pairs": 13,
+      "nonzero_plausible_pairs": 5,
+      "valid_fraction": 0.41935483870967744,
+      "nonzero_fraction_of_plausible": 0.38461538461538464
+    },
+    {
+      "phase": 6,
+      "records": 31,
+      "finite_abs_le_100_pairs": 17,
+      "nonzero_plausible_pairs": 8,
+      "valid_fraction": 0.5483870967741935,
+      "nonzero_fraction_of_plausible": 0.47058823529411764
+    },
+    {
+      "phase": 3,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 10,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.7142857142857143
+    },
+    {
+      "phase": 3,
+      "records": 31,
+      "finite_abs_le_100_pairs": 17,
+      "nonzero_plausible_pairs": 11,
+      "valid_fraction": 0.5483870967741935,
+      "nonzero_fraction_of_plausible": 0.6470588235294118
+    },
+    {
+      "phase": 5,
+      "records": 31,
+      "finite_abs_le_100_pairs": 13,
+      "nonzero_plausible_pairs": 8,
+      "valid_fraction": 0.41935483870967744,
+      "nonzero_fraction_of_plausible": 0.6153846153846154
+    },
+    {
+      "phase": 4,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.4666666666666667
+    },
+    {
+      "phase": 8,
+      "records": 31,
+      "finite_abs_le_100_pairs": 13,
+      "nonzero_plausible_pairs": 3,
+      "valid_fraction": 0.41935483870967744,
+      "nonzero_fraction_of_plausible": 0.23076923076923078
+    },
+    {
+      "phase": 4,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 10,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.6666666666666666
+    },
+    {
+      "phase": 4,
+      "records": 31,
+      "finite_abs_le_100_pairs": 16,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.5161290322580645,
+      "nonzero_fraction_of_plausible": 0.4375
+    },
+    {
+      "phase": 2,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 6,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.4
+    },
+    {
+      "phase": 4,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.4666666666666667
+    },
+    {
+      "phase": 8,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 8,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.5714285714285714
+    },
+    {
+      "phase": 1,
+      "records": 31,
+      "finite_abs_le_100_pairs": 17,
+      "nonzero_plausible_pairs": 5,
+      "valid_fraction": 0.5483870967741935,
+      "nonzero_fraction_of_plausible": 0.29411764705882354
+    },
+    {
+      "phase": 3,
+      "records": 31,
+      "finite_abs_le_100_pairs": 13,
+      "nonzero_plausible_pairs": 6,
+      "valid_fraction": 0.41935483870967744,
+      "nonzero_fraction_of_plausible": 0.46153846153846156
+    },
+    {
+      "phase": 2,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 6,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.42857142857142855
+    },
+    {
+      "phase": 0,
+      "records": 32,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.46875,
+      "nonzero_fraction_of_plausible": 0.4666666666666667
+    },
+    {
+      "phase": 5,
+      "records": 31,
+      "finite_abs_le_100_pairs": 17,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.5483870967741935,
+      "nonzero_fraction_of_plausible": 0.4117647058823529
+    },
+    {
+      "phase": 0,
+      "records": 32,
+      "finite_abs_le_100_pairs": 16,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.5,
+      "nonzero_fraction_of_plausible": 0.4375
+    },
+    {
+      "phase": 7,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 6,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.4
+    },
+    {
+      "phase": 2,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.4666666666666667
+    },
+    {
+      "phase": 8,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 8,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.5714285714285714
+    },
+    {
+      "phase": 6,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.4666666666666667
+    },
+    {
+      "phase": 2,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.6
+    },
+    {
+      "phase": 4,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 6,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.4
+    },
+    {
+      "phase": 7,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 10,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.6666666666666666
+    },
+    {
+      "phase": 5,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 5,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.35714285714285715
+    },
+    {
+      "phase": 4,
+      "records": 31,
+      "finite_abs_le_100_pairs": 17,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.5483870967741935,
+      "nonzero_fraction_of_plausible": 0.5294117647058824
+    },
+    {
+      "phase": 8,
+      "records": 31,
+      "finite_abs_le_100_pairs": 13,
+      "nonzero_plausible_pairs": 10,
+      "valid_fraction": 0.41935483870967744,
+      "nonzero_fraction_of_plausible": 0.7692307692307693
+    },
+    {
+      "phase": 0,
+      "records": 32,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.4375,
+      "nonzero_fraction_of_plausible": 0.5
+    },
+    {
+      "phase": 2,
+      "records": 31,
+      "finite_abs_le_100_pairs": 13,
+      "nonzero_plausible_pairs": 11,
+      "valid_fraction": 0.41935483870967744,
+      "nonzero_fraction_of_plausible": 0.8461538461538461
+    },
+    {
+      "phase": 4,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 5,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.3333333333333333
+    },
+    {
+      "phase": 7,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 11,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.7857142857142857
+    },
+    {
+      "phase": 6,
+      "records": 31,
+      "finite_abs_le_100_pairs": 16,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.5161290322580645,
+      "nonzero_fraction_of_plausible": 0.5625
+    },
+    {
+      "phase": 0,
+      "records": 32,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 11,
+      "valid_fraction": 0.46875,
+      "nonzero_fraction_of_plausible": 0.7333333333333333
+    },
+    {
+      "phase": 6,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 2,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.14285714285714285
+    },
+    {
+      "phase": 7,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.5
+    },
+    {
+      "phase": 6,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.6
+    },
+    {
+      "phase": 4,
+      "records": 31,
+      "finite_abs_le_100_pairs": 18,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.5806451612903226,
+      "nonzero_fraction_of_plausible": 0.3888888888888889
+    },
+    {
+      "phase": 6,
+      "records": 31,
+      "finite_abs_le_100_pairs": 16,
+      "nonzero_plausible_pairs": 8,
+      "valid_fraction": 0.5161290322580645,
+      "nonzero_fraction_of_plausible": 0.5
+    },
+    {
+      "phase": 7,
+      "records": 31,
+      "finite_abs_le_100_pairs": 13,
+      "nonzero_plausible_pairs": 6,
+      "valid_fraction": 0.41935483870967744,
+      "nonzero_fraction_of_plausible": 0.46153846153846156
+    },
+    {
+      "phase": 5,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 4,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.26666666666666666
+    },
+    {
+      "phase": 3,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.5
+    },
+    {
+      "phase": 7,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.4666666666666667
+    },
+    {
+      "phase": 3,
+      "records": 31,
+      "finite_abs_le_100_pairs": 13,
+      "nonzero_plausible_pairs": 6,
+      "valid_fraction": 0.41935483870967744,
+      "nonzero_fraction_of_plausible": 0.46153846153846156
+    },
+    {
+      "phase": 4,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 6,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.42857142857142855
+    },
+    {
+      "phase": 7,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.6
+    },
+    {
+      "phase": 5,
+      "records": 31,
+      "finite_abs_le_100_pairs": 16,
+      "nonzero_plausible_pairs": 6,
+      "valid_fraction": 0.5161290322580645,
+      "nonzero_fraction_of_plausible": 0.375
+    },
+    {
+      "phase": 5,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 5,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.35714285714285715
+    },
+    {
+      "phase": 8,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.4666666666666667
+    },
+    {
+      "phase": 1,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 5,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.35714285714285715
+    },
+    {
+      "phase": 5,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 8,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.5714285714285714
+    },
+    {
+      "phase": 7,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 5,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.35714285714285715
+    },
+    {
+      "phase": 3,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 8,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.5333333333333333
+    },
+    {
+      "phase": 6,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 8,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.5714285714285714
+    },
+    {
+      "phase": 6,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 8,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.5714285714285714
+    },
+    {
+      "phase": 1,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.6428571428571429
+    },
+    {
+      "phase": 8,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 8,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.5714285714285714
+    },
+    {
+      "phase": 5,
+      "records": 31,
+      "finite_abs_le_100_pairs": 17,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.5483870967741935,
+      "nonzero_fraction_of_plausible": 0.5294117647058824
+    },
+    {
+      "phase": 0,
+      "records": 32,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 10,
+      "valid_fraction": 0.46875,
+      "nonzero_fraction_of_plausible": 0.6666666666666666
+    },
+    {
+      "phase": 3,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.5
+    },
+    {
+      "phase": 5,
+      "records": 31,
+      "finite_abs_le_100_pairs": 13,
+      "nonzero_plausible_pairs": 5,
+      "valid_fraction": 0.41935483870967744,
+      "nonzero_fraction_of_plausible": 0.38461538461538464
+    },
+    {
+      "phase": 2,
+      "records": 31,
+      "finite_abs_le_100_pairs": 17,
+      "nonzero_plausible_pairs": 10,
+      "valid_fraction": 0.5483870967741935,
+      "nonzero_fraction_of_plausible": 0.5882352941176471
+    },
+    {
+      "phase": 7,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 5,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.3333333333333333
+    },
+    {
+      "phase": 7,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 3,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.21428571428571427
+    },
+    {
+      "phase": 0,
+      "records": 32,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.4375,
+      "nonzero_fraction_of_plausible": 0.5
+    },
+    {
+      "phase": 0,
+      "records": 32,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 4,
+      "valid_fraction": 0.46875,
+      "nonzero_fraction_of_plausible": 0.26666666666666666
+    },
+    {
+      "phase": 4,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.5
+    },
+    {
+      "phase": 3,
+      "records": 31,
+      "finite_abs_le_100_pairs": 20,
+      "nonzero_plausible_pairs": 11,
+      "valid_fraction": 0.6451612903225806,
+      "nonzero_fraction_of_plausible": 0.55
+    },
+    {
+      "phase": 3,
+      "records": 31,
+      "finite_abs_le_100_pairs": 16,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.5161290322580645,
+      "nonzero_fraction_of_plausible": 0.5625
+    },
+    {
+      "phase": 4,
+      "records": 31,
+      "finite_abs_le_100_pairs": 17,
+      "nonzero_plausible_pairs": 10,
+      "valid_fraction": 0.5483870967741935,
+      "nonzero_fraction_of_plausible": 0.5882352941176471
+    },
+    {
+      "phase": 4,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.5
+    },
+    {
+      "phase": 3,
+      "records": 31,
+      "finite_abs_le_100_pairs": 16,
+      "nonzero_plausible_pairs": 4,
+      "valid_fraction": 0.5161290322580645,
+      "nonzero_fraction_of_plausible": 0.25
+    },
+    {
+      "phase": 6,
+      "records": 31,
+      "finite_abs_le_100_pairs": 16,
+      "nonzero_plausible_pairs": 5,
+      "valid_fraction": 0.5161290322580645,
+      "nonzero_fraction_of_plausible": 0.3125
+    },
+    {
+      "phase": 6,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 6,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.42857142857142855
+    },
+    {
+      "phase": 2,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.5
+    },
+    {
+      "phase": 6,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.6
+    },
+    {
+      "phase": 3,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 8,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.5714285714285714
+    },
+    {
+      "phase": 3,
+      "records": 31,
+      "finite_abs_le_100_pairs": 16,
+      "nonzero_plausible_pairs": 10,
+      "valid_fraction": 0.5161290322580645,
+      "nonzero_fraction_of_plausible": 0.625
+    },
+    {
+      "phase": 1,
+      "records": 31,
+      "finite_abs_le_100_pairs": 16,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.5161290322580645,
+      "nonzero_fraction_of_plausible": 0.5625
+    },
+    {
+      "phase": 7,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 13,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.8666666666666667
+    },
+    {
+      "phase": 6,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 10,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.7142857142857143
+    },
+    {
+      "phase": 4,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 3,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.21428571428571427
+    },
+    {
+      "phase": 5,
+      "records": 31,
+      "finite_abs_le_100_pairs": 16,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.5161290322580645,
+      "nonzero_fraction_of_plausible": 0.5625
+    },
+    {
+      "phase": 8,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 10,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.6666666666666666
+    },
+    {
+      "phase": 0,
+      "records": 32,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.46875,
+      "nonzero_fraction_of_plausible": 0.6
+    },
+    {
+      "phase": 6,
+      "records": 31,
+      "finite_abs_le_100_pairs": 13,
+      "nonzero_plausible_pairs": 8,
+      "valid_fraction": 0.41935483870967744,
+      "nonzero_fraction_of_plausible": 0.6153846153846154
+    },
+    {
+      "phase": 7,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.6
+    },
+    {
+      "phase": 7,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.5
+    },
+    {
+      "phase": 2,
+      "records": 31,
+      "finite_abs_le_100_pairs": 16,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.5161290322580645,
+      "nonzero_fraction_of_plausible": 0.5625
+    },
+    {
+      "phase": 2,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.5
+    },
+    {
+      "phase": 1,
+      "records": 31,
+      "finite_abs_le_100_pairs": 16,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.5161290322580645,
+      "nonzero_fraction_of_plausible": 0.4375
+    },
+    {
+      "phase": 0,
+      "records": 32,
+      "finite_abs_le_100_pairs": 16,
+      "nonzero_plausible_pairs": 5,
+      "valid_fraction": 0.5,
+      "nonzero_fraction_of_plausible": 0.3125
+    },
+    {
+      "phase": 4,
+      "records": 31,
+      "finite_abs_le_100_pairs": 16,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.5161290322580645,
+      "nonzero_fraction_of_plausible": 0.5625
+    },
+    {
+      "phase": 4,
+      "records": 31,
+      "finite_abs_le_100_pairs": 13,
+      "nonzero_plausible_pairs": 5,
+      "valid_fraction": 0.41935483870967744,
+      "nonzero_fraction_of_plausible": 0.38461538461538464
+    },
+    {
+      "phase": 1,
+      "records": 31,
+      "finite_abs_le_100_pairs": 13,
+      "nonzero_plausible_pairs": 6,
+      "valid_fraction": 0.41935483870967744,
+      "nonzero_fraction_of_plausible": 0.46153846153846156
+    },
+    {
+      "phase": 4,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 8,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.5333333333333333
+    },
+    {
+      "phase": 1,
+      "records": 31,
+      "finite_abs_le_100_pairs": 16,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.5161290322580645,
+      "nonzero_fraction_of_plausible": 0.4375
+    },
+    {
+      "phase": 0,
+      "records": 32,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 6,
+      "valid_fraction": 0.46875,
+      "nonzero_fraction_of_plausible": 0.4
+    },
+    {
+      "phase": 7,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 5,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.35714285714285715
+    },
+    {
+      "phase": 2,
+      "records": 31,
+      "finite_abs_le_100_pairs": 13,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.41935483870967744,
+      "nonzero_fraction_of_plausible": 0.6923076923076923
+    },
+    {
+      "phase": 0,
+      "records": 32,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 8,
+      "valid_fraction": 0.4375,
+      "nonzero_fraction_of_plausible": 0.5714285714285714
+    },
+    {
+      "phase": 5,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 8,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.5714285714285714
+    },
+    {
+      "phase": 4,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 5,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.35714285714285715
+    },
+    {
+      "phase": 7,
+      "records": 31,
+      "finite_abs_le_100_pairs": 16,
+      "nonzero_plausible_pairs": 6,
+      "valid_fraction": 0.5161290322580645,
+      "nonzero_fraction_of_plausible": 0.375
+    },
+    {
+      "phase": 7,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.4666666666666667
+    },
+    {
+      "phase": 1,
+      "records": 31,
+      "finite_abs_le_100_pairs": 17,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.5483870967741935,
+      "nonzero_fraction_of_plausible": 0.4117647058823529
+    },
+    {
+      "phase": 8,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.6428571428571429
+    },
+    {
+      "phase": 2,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 4,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.26666666666666666
+    },
+    {
+      "phase": 8,
+      "records": 31,
+      "finite_abs_le_100_pairs": 18,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.5806451612903226,
+      "nonzero_fraction_of_plausible": 0.5
+    },
+    {
+      "phase": 0,
+      "records": 32,
+      "finite_abs_le_100_pairs": 16,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.5,
+      "nonzero_fraction_of_plausible": 0.4375
+    },
+    {
+      "phase": 6,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 6,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.42857142857142855
+    },
+    {
+      "phase": 1,
+      "records": 31,
+      "finite_abs_le_100_pairs": 13,
+      "nonzero_plausible_pairs": 4,
+      "valid_fraction": 0.41935483870967744,
+      "nonzero_fraction_of_plausible": 0.3076923076923077
+    },
+    {
+      "phase": 6,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 8,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.5714285714285714
+    },
+    {
+      "phase": 5,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.5
+    },
+    {
+      "phase": 5,
+      "records": 31,
+      "finite_abs_le_100_pairs": 16,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.5161290322580645,
+      "nonzero_fraction_of_plausible": 0.4375
+    },
+    {
+      "phase": 0,
+      "records": 32,
+      "finite_abs_le_100_pairs": 17,
+      "nonzero_plausible_pairs": 11,
+      "valid_fraction": 0.53125,
+      "nonzero_fraction_of_plausible": 0.6470588235294118
+    },
+    {
+      "phase": 7,
+      "records": 31,
+      "finite_abs_le_100_pairs": 16,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.5161290322580645,
+      "nonzero_fraction_of_plausible": 0.5625
+    },
+    {
+      "phase": 0,
+      "records": 32,
+      "finite_abs_le_100_pairs": 17,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.53125,
+      "nonzero_fraction_of_plausible": 0.4117647058823529
+    },
+    {
+      "phase": 5,
+      "records": 31,
+      "finite_abs_le_100_pairs": 13,
+      "nonzero_plausible_pairs": 6,
+      "valid_fraction": 0.41935483870967744,
+      "nonzero_fraction_of_plausible": 0.46153846153846156
+    },
+    {
+      "phase": 7,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 5,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.35714285714285715
+    },
+    {
+      "phase": 6,
+      "records": 31,
+      "finite_abs_le_100_pairs": 16,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.5161290322580645,
+      "nonzero_fraction_of_plausible": 0.5625
+    },
+    {
+      "phase": 2,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 5,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.35714285714285715
+    },
+    {
+      "phase": 8,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.6428571428571429
+    },
+    {
+      "phase": 3,
+      "records": 31,
+      "finite_abs_le_100_pairs": 12,
+      "nonzero_plausible_pairs": 5,
+      "valid_fraction": 0.3870967741935484,
+      "nonzero_fraction_of_plausible": 0.4166666666666667
+    },
+    {
+      "phase": 6,
+      "records": 31,
+      "finite_abs_le_100_pairs": 13,
+      "nonzero_plausible_pairs": 8,
+      "valid_fraction": 0.41935483870967744,
+      "nonzero_fraction_of_plausible": 0.6153846153846154
+    },
+    {
+      "phase": 8,
+      "records": 31,
+      "finite_abs_le_100_pairs": 17,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.5483870967741935,
+      "nonzero_fraction_of_plausible": 0.4117647058823529
+    },
+    {
+      "phase": 2,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 8,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.5714285714285714
+    },
+    {
+      "phase": 1,
+      "records": 31,
+      "finite_abs_le_100_pairs": 13,
+      "nonzero_plausible_pairs": 6,
+      "valid_fraction": 0.41935483870967744,
+      "nonzero_fraction_of_plausible": 0.46153846153846156
+    },
+    {
+      "phase": 6,
+      "records": 31,
+      "finite_abs_le_100_pairs": 16,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.5161290322580645,
+      "nonzero_fraction_of_plausible": 0.5625
+    },
+    {
+      "phase": 8,
+      "records": 31,
+      "finite_abs_le_100_pairs": 16,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.5161290322580645,
+      "nonzero_fraction_of_plausible": 0.5625
+    },
+    {
+      "phase": 3,
+      "records": 31,
+      "finite_abs_le_100_pairs": 17,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.5483870967741935,
+      "nonzero_fraction_of_plausible": 0.4117647058823529
+    },
+    {
+      "phase": 0,
+      "records": 32,
+      "finite_abs_le_100_pairs": 17,
+      "nonzero_plausible_pairs": 6,
+      "valid_fraction": 0.53125,
+      "nonzero_fraction_of_plausible": 0.35294117647058826
+    },
+    {
+      "phase": 3,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 6,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.4
+    },
+    {
+      "phase": 2,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 8,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.5333333333333333
+    },
+    {
+      "phase": 2,
+      "records": 31,
+      "finite_abs_le_100_pairs": 13,
+      "nonzero_plausible_pairs": 8,
+      "valid_fraction": 0.41935483870967744,
+      "nonzero_fraction_of_plausible": 0.6153846153846154
+    },
+    {
+      "phase": 3,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 8,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.5333333333333333
+    },
+    {
+      "phase": 3,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 6,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.4
+    },
+    {
+      "phase": 2,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.6428571428571429
+    },
+    {
+      "phase": 1,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.6428571428571429
+    },
+    {
+      "phase": 7,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.5
+    },
+    {
+      "phase": 2,
+      "records": 31,
+      "finite_abs_le_100_pairs": 13,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.41935483870967744,
+      "nonzero_fraction_of_plausible": 0.5384615384615384
+    },
+    {
+      "phase": 7,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.6
+    },
+    {
+      "phase": 5,
+      "records": 31,
+      "finite_abs_le_100_pairs": 13,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.41935483870967744,
+      "nonzero_fraction_of_plausible": 0.5384615384615384
+    },
+    {
+      "phase": 3,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.6
+    },
+    {
+      "phase": 8,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 8,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.5714285714285714
+    },
+    {
+      "phase": 0,
+      "records": 32,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 4,
+      "valid_fraction": 0.4375,
+      "nonzero_fraction_of_plausible": 0.2857142857142857
+    },
+    {
+      "phase": 4,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 2,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.13333333333333333
+    },
+    {
+      "phase": 2,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 8,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.5333333333333333
+    },
+    {
+      "phase": 1,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.6428571428571429
+    },
+    {
+      "phase": 1,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 10,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.6666666666666666
+    },
+    {
+      "phase": 0,
+      "records": 32,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.46875,
+      "nonzero_fraction_of_plausible": 0.4666666666666667
+    },
+    {
+      "phase": 2,
+      "records": 31,
+      "finite_abs_le_100_pairs": 13,
+      "nonzero_plausible_pairs": 6,
+      "valid_fraction": 0.41935483870967744,
+      "nonzero_fraction_of_plausible": 0.46153846153846156
+    },
+    {
+      "phase": 7,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.6428571428571429
+    },
+    {
+      "phase": 1,
+      "records": 31,
+      "finite_abs_le_100_pairs": 16,
+      "nonzero_plausible_pairs": 8,
+      "valid_fraction": 0.5161290322580645,
+      "nonzero_fraction_of_plausible": 0.5
+    },
+    {
+      "phase": 8,
+      "records": 31,
+      "finite_abs_le_100_pairs": 16,
+      "nonzero_plausible_pairs": 8,
+      "valid_fraction": 0.5161290322580645,
+      "nonzero_fraction_of_plausible": 0.5
+    },
+    {
+      "phase": 4,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.5
+    },
+    {
+      "phase": 0,
+      "records": 32,
+      "finite_abs_le_100_pairs": 13,
+      "nonzero_plausible_pairs": 5,
+      "valid_fraction": 0.40625,
+      "nonzero_fraction_of_plausible": 0.38461538461538464
+    },
+    {
+      "phase": 7,
+      "records": 31,
+      "finite_abs_le_100_pairs": 13,
+      "nonzero_plausible_pairs": 6,
+      "valid_fraction": 0.41935483870967744,
+      "nonzero_fraction_of_plausible": 0.46153846153846156
+    },
+    {
+      "phase": 0,
+      "records": 32,
+      "finite_abs_le_100_pairs": 16,
+      "nonzero_plausible_pairs": 8,
+      "valid_fraction": 0.5,
+      "nonzero_fraction_of_plausible": 0.5
+    },
+    {
+      "phase": 3,
+      "records": 31,
+      "finite_abs_le_100_pairs": 16,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.5161290322580645,
+      "nonzero_fraction_of_plausible": 0.5625
+    },
+    {
+      "phase": 6,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 10,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.7142857142857143
+    },
+    {
+      "phase": 0,
+      "records": 32,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 8,
+      "valid_fraction": 0.4375,
+      "nonzero_fraction_of_plausible": 0.5714285714285714
+    },
+    {
+      "phase": 7,
+      "records": 31,
+      "finite_abs_le_100_pairs": 12,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.3870967741935484,
+      "nonzero_fraction_of_plausible": 0.5833333333333334
+    },
+    {
+      "phase": 1,
+      "records": 31,
+      "finite_abs_le_100_pairs": 13,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.41935483870967744,
+      "nonzero_fraction_of_plausible": 0.5384615384615384
+    },
+    {
+      "phase": 8,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 5,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.35714285714285715
+    },
+    {
+      "phase": 7,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.5
+    },
+    {
+      "phase": 2,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.4666666666666667
+    },
+    {
+      "phase": 5,
+      "records": 31,
+      "finite_abs_le_100_pairs": 13,
+      "nonzero_plausible_pairs": 9,
+      "valid_fraction": 0.41935483870967744,
+      "nonzero_fraction_of_plausible": 0.6923076923076923
+    },
+    {
+      "phase": 5,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 8,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.5333333333333333
+    },
+    {
+      "phase": 6,
+      "records": 31,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.45161290322580644,
+      "nonzero_fraction_of_plausible": 0.5
+    },
+    {
+      "phase": 5,
+      "records": 31,
+      "finite_abs_le_100_pairs": 17,
+      "nonzero_plausible_pairs": 6,
+      "valid_fraction": 0.5483870967741935,
+      "nonzero_fraction_of_plausible": 0.35294117647058826
+    },
+    {
+      "phase": 2,
+      "records": 31,
+      "finite_abs_le_100_pairs": 13,
+      "nonzero_plausible_pairs": 5,
+      "valid_fraction": 0.41935483870967744,
+      "nonzero_fraction_of_plausible": 0.38461538461538464
+    },
+    {
+      "phase": 0,
+      "records": 32,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 6,
+      "valid_fraction": 0.4375,
+      "nonzero_fraction_of_plausible": 0.42857142857142855
+    },
+    {
+      "phase": 2,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.4666666666666667
+    },
+    {
+      "phase": 5,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.4666666666666667
+    },
+    {
+      "phase": 4,
+      "records": 31,
+      "finite_abs_le_100_pairs": 16,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.5161290322580645,
+      "nonzero_fraction_of_plausible": 0.4375
+    },
+    {
+      "phase": 2,
+      "records": 31,
+      "finite_abs_le_100_pairs": 13,
+      "nonzero_plausible_pairs": 8,
+      "valid_fraction": 0.41935483870967744,
+      "nonzero_fraction_of_plausible": 0.6153846153846154
+    },
+    {
+      "phase": 3,
+      "records": 31,
+      "finite_abs_le_100_pairs": 16,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.5161290322580645,
+      "nonzero_fraction_of_plausible": 0.4375
+    },
+    {
+      "phase": 0,
+      "records": 32,
+      "finite_abs_le_100_pairs": 17,
+      "nonzero_plausible_pairs": 12,
+      "valid_fraction": 0.53125,
+      "nonzero_fraction_of_plausible": 0.7058823529411765
+    },
+    {
+      "phase": 0,
+      "records": 32,
+      "finite_abs_le_100_pairs": 14,
+      "nonzero_plausible_pairs": 8,
+      "valid_fraction": 0.4375,
+      "nonzero_fraction_of_plausible": 0.5714285714285714
+    },
+    {
+      "phase": 1,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 10,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.6666666666666666
+    },
+    {
+      "phase": 4,
+      "records": 31,
+      "finite_abs_le_100_pairs": 15,
+      "nonzero_plausible_pairs": 7,
+      "valid_fraction": 0.4838709677419355,
+      "nonzero_fraction_of_plausible": 0.4666666666666667
+    },
+    {
+      "phase": 2,
+      "records": 31,
+      "finite_abs_le_100_pairs": 13,
+      "nonzero_plausible_pairs": 3,
+      "valid_fraction": 0.41935483870967744,
+      "nonzero_fraction_of_plausible": 0.23076923076923078
+    }
+  ],
+  "interpretation_limit": "Byte shuffling is a crude null that destroys local structure; candidate thresholds and phase search are exploratory. Even an unusual score would not prove float storage, record boundaries, or looper semantics."
+}

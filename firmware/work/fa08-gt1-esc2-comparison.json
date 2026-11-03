@@ -1,0 +1,78 @@
+{
+  "read_only": true,
+  "sources": {
+    "official_FA_package_archive": {
+      "path": "firmware/work/reference/esc2-comparators/fa08_v203/fa060708_sys_v203.zip",
+      "size": 11464942,
+      "sha256": "69e26d7f54cd397d45a37d3dbe2c168ec77fd30427b7d7d718e0d25f2147e330"
+    },
+    "FA_UPA_tar": {
+      "path": "firmware/work/reference/esc2-comparators/fa08_v203/extracted/fa060708_sys_v203/FA_UPA.BIN",
+      "size": 12953600,
+      "sha256": "4e4182a334455b02f7935b0f6cca00b2a16b9b53f533b4d650b17939694bec96"
+    },
+    "GT1_v109_image": {
+      "path": "firmware/extracted/v109/gt1_sys_v109/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "412ebf5ffdc48554454c27df47f61428f046ea0a7d93f5c77b7f0302861abdbf"
+    }
+  },
+  "tar_members": [
+    {
+      "name": "./_tmp/fantom_c_up.bin",
+      "size": 6603120,
+      "sha256": "025e8b89028947ab85a4a193e6a1bcac5c36b94582ac90c0a2d797b93e93e784"
+    },
+    {
+      "name": "./_tmp/fantom_s_up.bin",
+      "size": 5529568,
+      "sha256": "4b0e839a4646d77e4720590c1bef181ef756e7645dbab91bd43b5599a0016a3f"
+    },
+    {
+      "name": "./_tmp/fantom_e_up.bin",
+      "size": 814304,
+      "sha256": "900028695b7ec1b63631737d1bd0eaf4707514264a7b325914d951cb59731d23"
+    }
+  ],
+  "fa_esc2_member": {
+    "path": "firmware/work/reference/esc2-comparators/fa08_v203/extracted/_tmp/fantom_e_up.bin",
+    "size": 814304,
+    "sha256": "900028695b7ec1b63631737d1bd0eaf4707514264a7b325914d951cb59731d23",
+    "marker_offsets": {
+      "ESC90.000": "0x4",
+      "ESC2 Firmware": "0x2004"
+    },
+    "string_evidence": {
+      "ESC90.000": {
+        "offset": "0x4",
+        "bytes_before_20": "00 0c 6c b0",
+        "bytes_after_64": "00 00 00 78 0a 00 00 00 00 01 00 09 68 aa 0a 00 00 00 00 10 43 22 34 01 44 00 00 58 02 00 00 51 11 63 01 ff ff ff ff 20 12 01 01 1d 03 00 01 21 03 00 01 23 03 00 01 25 03 00 01 27 03 00 01 29"
+      },
+      "ESC2 Firmware": {
+        "offset": "0x2004",
+        "bytes_before_20": "ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff",
+        "bytes_after_64": "20 50 72 31 39 2d 30 31 31 38 20 31 33 3a 35 38 3a 30 33 30 2e 31 32 33 34 35 36 00 00 00 60 40 00 00 00 6a 4c 0c 00 40 9c c6 05 00 00 00 60 84 61 1d 00 ff 4f f0 08 00 80 f3 11 88 ff 36 48 37"
+      }
+    }
+  },
+  "comparisons": {
+    "GT1Upd payload": {
+      "FA_file_offset": "0x002044",
+      "GT1_file_offset": "0x002040",
+      "common_prefix_bytes": 194,
+      "FA_bytes_sha256": "9a86daad33fe1795cdf8da940372481d19f52942ddf785109c17d3b5163c5d48",
+      "GT1_bytes_sha256": "9a86daad33fe1795cdf8da940372481d19f52942ddf785109c17d3b5163c5d48",
+      "equal": true
+    },
+    "GT1Appli payload": {
+      "FA_file_offset": "0x002044",
+      "GT1_file_offset": "0x040040",
+      "common_prefix_bytes": 194,
+      "FA_bytes_sha256": "9a86daad33fe1795cdf8da940372481d19f52942ddf785109c17d3b5163c5d48",
+      "GT1_bytes_sha256": "9a86daad33fe1795cdf8da940372481d19f52942ddf785109c17d3b5163c5d48",
+      "equal": true
+    },
+    "cross_section_note": "GT-1 updater and application begin with identical stored payload bytes; the FA shared run is not evidence of executable status or decompression."
+  },
+  "interpretation": "The FA ESC2 member contains a bounded byte-identical run with the GT-1 stored update sections immediately after the FA wrapper/header word. This is a static format/sequence correspondence only; transform, instruction set, code/data status, processor mapping and runtime address are unclassified."
+}

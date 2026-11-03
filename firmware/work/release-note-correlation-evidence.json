@@ -1,0 +1,105 @@
+{
+  "classification": "positional byte-diff and official release-note correlation; no semantics inferred",
+  "sources": {
+    "v1.05": "https://tw.boss.info/support/by_product/gt-1/updates_drivers/352151",
+    "v1.07_v1.08_v1.09": "https://www.boss.info/us/support/by_product/gt-1/updates_drivers/076a30a8-a319-4891-94e4-ef0bb08451e5/"
+  },
+  "images": {
+    "v1.05": {
+      "path": "firmware/extracted/v105/gt1_sys_v105/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "b1bde0410795230b4a89ee3dfbbd357700bba7020624c0ff832ae3d8539d8bb4",
+      "declared_payload_length_candidate": 1171544
+    },
+    "v1.07": {
+      "path": "firmware/extracted/v107/gt1_sys_v107/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "6a3110cd42c4b129494a93bc88d4f218e2e0b9377868ca051018b28696d6c22f",
+      "declared_payload_length_candidate": 1173349
+    },
+    "v1.08": {
+      "path": "firmware/extracted/v108/gt1_sys_v108/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "7219679a87e985316264544423c9940ccbcbadeb2df0b2f13711ae57194cb612",
+      "declared_payload_length_candidate": 1173445
+    },
+    "v1.09": {
+      "path": "firmware/extracted/v109/gt1_sys_v109/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "412ebf5ffdc48554454c27df47f61428f046ea0a7d93f5c77b7f0302861abdbf",
+      "declared_payload_length_candidate": 1178362
+    }
+  },
+  "adjacent_payload_comparisons": [
+    {
+      "earlier": "v1.05",
+      "later": "v1.07",
+      "note_categories": {
+        "v1.05": "Bug fixes and functionality improvements, including output selection, effects, patch switching, and UI behavior.",
+        "v1.07": "Fix for delayed pitch-shifted audio after patch switching."
+      },
+      "comparison": "same file offsets from 0x40040 over the shorter declared payload length",
+      "overlap_bytes": 1171544,
+      "changed_bytes": 1157691,
+      "unchanged_bytes": 13853,
+      "changed_fraction": 0.98817543,
+      "earlier_payload": {
+        "start": "0x40040",
+        "end_exclusive": "0x15E098",
+        "length": 1171544
+      },
+      "later_payload": {
+        "start": "0x40040",
+        "end_exclusive": "0x15E7A5",
+        "length": 1173349
+      }
+    },
+    {
+      "earlier": "v1.07",
+      "later": "v1.08",
+      "note_categories": {
+        "v1.07": "Fix for delayed pitch-shifted audio after patch switching.",
+        "v1.08": "Bug fixes for switch combinations, FX type list display, and Tone Studio assignment clearing."
+      },
+      "comparison": "same file offsets from 0x40040 over the shorter declared payload length",
+      "overlap_bytes": 1173349,
+      "changed_bytes": 1152223,
+      "unchanged_bytes": 21126,
+      "changed_fraction": 0.98199513,
+      "earlier_payload": {
+        "start": "0x40040",
+        "end_exclusive": "0x15E7A5",
+        "length": 1173349
+      },
+      "later_payload": {
+        "start": "0x40040",
+        "end_exclusive": "0x15E805",
+        "length": 1173445
+      }
+    },
+    {
+      "earlier": "v1.08",
+      "later": "v1.09",
+      "note_categories": {
+        "v1.08": "Bug fixes for switch combinations, FX type list display, and Tone Studio assignment clearing.",
+        "v1.09": "Version number changed for management-related circumstances; specifications unaffected."
+      },
+      "comparison": "same file offsets from 0x40040 over the shorter declared payload length",
+      "overlap_bytes": 1173445,
+      "changed_bytes": 1162613,
+      "unchanged_bytes": 10832,
+      "changed_fraction": 0.99076906,
+      "earlier_payload": {
+        "start": "0x40040",
+        "end_exclusive": "0x15E805",
+        "length": 1173445
+      },
+      "later_payload": {
+        "start": "0x40040",
+        "end_exclusive": "0x15FB3A",
+        "length": 1178362
+      }
+    }
+  ],
+  "interpretation_limit": "Large position-wise differences do not establish functional change, code/data boundaries, encryption, compression, or a particular normalization/rebuild transform; shifts and different encodings can reduce byte equality."
+}

@@ -1,0 +1,143 @@
+{
+  "read_only": true,
+  "method": "verify pinned decoded application hashes; disassemble stable state-machine callsites in Thumb mode; check common relative targets, command-discriminator instructions, and exact response-header construction bytes",
+  "result": "The bounded protocol path is structurally stable across v1.05/v1.07/v1.08/v1.09. This does not prove checksum validation, device-side address semantics, physical memory mapping, or a connection to realtime audio.",
+  "versions": {
+    "v105": {
+      "decoded_app": "firmware/work/decoded/v105-GT1Appli.bin",
+      "decoded_app_sha256": "8297887084af48b04189955bbd8bdb4e0e6ff6a0e0fbcac7f85a175792775e29",
+      "state_machine_candidate": "0x6007d3fe",
+      "parser_candidate": "0x6007cb5a",
+      "read_payload_parser_call": {
+        "address": "0x6007d52e",
+        "target": "0x6007cb5a"
+      },
+      "read_response_builder_call": {
+        "address": "0x6007d5dc",
+        "target": "0x6007d09a"
+      },
+      "response_builder_candidate": "0x6007d09a",
+      "response_header_build_offset": "0x6007d11a",
+      "response_header_build_bytes": "f0218df8001041218df8011010218df802103c218df8031012218df80410",
+      "incoming_command_discriminator_instructions": [
+        {
+          "address": "0x6007d446",
+          "bytes": "a0f57010",
+          "instruction": "sub.w r0, r0, #0x3c0000"
+        },
+        {
+          "address": "0x6007d44a",
+          "bytes": "b0f58850",
+          "instruction": "subs.w r0, r0, #0x1100"
+        },
+        {
+          "address": "0x6007d450",
+          "bytes": "b0f5807f",
+          "instruction": "cmp.w r0, #0x100"
+        }
+      ]
+    },
+    "v107": {
+      "decoded_app": "firmware/work/decoded/v107-GT1Appli.bin",
+      "decoded_app_sha256": "304b88a2c628cf47bb5091ecbc6da4fab4924f88cdea8897b44e5f474b9fb001",
+      "state_machine_candidate": "0x6007d632",
+      "parser_candidate": "0x6007cd8e",
+      "read_payload_parser_call": {
+        "address": "0x6007d762",
+        "target": "0x6007cd8e"
+      },
+      "read_response_builder_call": {
+        "address": "0x6007d810",
+        "target": "0x6007d2ce"
+      },
+      "response_builder_candidate": "0x6007d2ce",
+      "response_header_build_offset": "0x6007d34e",
+      "response_header_build_bytes": "f0218df8001041218df8011010218df802103c218df8031012218df80410",
+      "incoming_command_discriminator_instructions": [
+        {
+          "address": "0x6007d67a",
+          "bytes": "a0f57010",
+          "instruction": "sub.w r0, r0, #0x3c0000"
+        },
+        {
+          "address": "0x6007d67e",
+          "bytes": "b0f58850",
+          "instruction": "subs.w r0, r0, #0x1100"
+        },
+        {
+          "address": "0x6007d684",
+          "bytes": "b0f5807f",
+          "instruction": "cmp.w r0, #0x100"
+        }
+      ]
+    },
+    "v108": {
+      "decoded_app": "firmware/work/decoded/v108-GT1Appli.bin",
+      "decoded_app_sha256": "c41319e5f5a1facd5e55fe2c8e56d37069e31b98e5034d6d54d932fa7713e8c1",
+      "state_machine_candidate": "0x6007d686",
+      "parser_candidate": "0x6007cde2",
+      "read_payload_parser_call": {
+        "address": "0x6007d7b6",
+        "target": "0x6007cde2"
+      },
+      "read_response_builder_call": {
+        "address": "0x6007d864",
+        "target": "0x6007d322"
+      },
+      "response_builder_candidate": "0x6007d322",
+      "response_header_build_offset": "0x6007d3a2",
+      "response_header_build_bytes": "f0218df8001041218df8011010218df802103c218df8031012218df80410",
+      "incoming_command_discriminator_instructions": [
+        {
+          "address": "0x6007d6ce",
+          "bytes": "a0f57010",
+          "instruction": "sub.w r0, r0, #0x3c0000"
+        },
+        {
+          "address": "0x6007d6d2",
+          "bytes": "b0f58850",
+          "instruction": "subs.w r0, r0, #0x1100"
+        },
+        {
+          "address": "0x6007d6d8",
+          "bytes": "b0f5807f",
+          "instruction": "cmp.w r0, #0x100"
+        }
+      ]
+    },
+    "v109": {
+      "decoded_app": "firmware/work/decoded/v109-GT1Appli.bin",
+      "decoded_app_sha256": "2028d7e1f8a72e54b23a80427f53ba27629a7039a72712504a612c877556aa29",
+      "state_machine_candidate": "0x6007ea96",
+      "parser_candidate": "0x6007e1f2",
+      "read_payload_parser_call": {
+        "address": "0x6007ebc6",
+        "target": "0x6007e1f2"
+      },
+      "read_response_builder_call": {
+        "address": "0x6007ec74",
+        "target": "0x6007e732"
+      },
+      "response_builder_candidate": "0x6007e732",
+      "response_header_build_offset": "0x6007e7b2",
+      "response_header_build_bytes": "f0218df8001041218df8011010218df802103c218df8031012218df80410",
+      "incoming_command_discriminator_instructions": [
+        {
+          "address": "0x6007eade",
+          "bytes": "a0f57010",
+          "instruction": "sub.w r0, r0, #0x3c0000"
+        },
+        {
+          "address": "0x6007eae2",
+          "bytes": "b0f58850",
+          "instruction": "subs.w r0, r0, #0x1100"
+        },
+        {
+          "address": "0x6007eae8",
+          "bytes": "b0f5807f",
+          "instruction": "cmp.w r0, #0x100"
+        }
+      ]
+    }
+  }
+}

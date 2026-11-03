@@ -1,0 +1,48 @@
+program=v109-GT1Appli-seg0.bin
+method=Ghidra xrefs to copied-segment LDR literals whose words point into startup-zeroed registry storage or pool/task strings
+callbacks=0x01002308 0x01001de8 0x010015fc 0x01002c78 0x0100302c 0x01003250 0x01002fb0 0x010032c8 0x010030a8 0x01001ce8 0x010014a4 0x010013ae 0x01002f60 0x01002cf0 
+literal=0x01000e7c word=0x01017b8c
+  xrefs=none
+literal=0x010023c0 word=0x01017b8c
+  xref from=01002310 type=READ instruction=ldr r0, [0x010023c0]
+  xref from=0100231a type=READ instruction=ldr r0, [0x010023c0]
+  xref from=01002340 type=READ instruction=ldr r3, [0x010023c0]
+literal=0x01003894 word=0x01017b8c
+  xref from=01003840 type=READ instruction=ldr r1, [0x01003894]
+literal=0x01004010 word=0x01017b8c
+  xrefs=none
+literal=0x01000f1c word=0x010153b8
+  xrefs=none
+literal=0x010010a8 word=0x010153b8
+  xrefs=none
+literal=0x01001358 word=0x010153b8
+  xrefs=none
+literal=0x0100222c word=0x010153b8
+  xrefs=none
+literal=0x010023c8 word=0x010153b8
+  xref from=0100232c type=READ instruction=ldr r6, [0x010023c8]
+literal=0x010024c4 word=0x010153b8
+  xrefs=none
+literal=0x010026a0 word=0x010153b8
+  xrefs=none
+literal=0x01002788 word=0x010153b8
+  xrefs=none
+literal=0x0100359c word=0x010153b8
+  xrefs=none
+literal=0x01003804 word=0x010153b8
+  xrefs=none
+literal=0x01001d94 word=0x01010a90
+  xref from=01001d4e type=READ instruction=ldr r1, [0x01001d94]
+  xref from=01001d64 type=READ instruction=ldr r1, [0x01001d94]
+literal=0x01002234 word=0x01010ab4
+  xrefs=none
+literal=0x010026a8 word=0x01010ab4
+  xrefs=none
+literal=0x01002790 word=0x01010ab4
+  xrefs=none
+literal=0x010035a4 word=0x01010ab4
+  xrefs=none
+literal=0x01003810 word=0x01010ab4
+  xrefs=none
+literal=0x01003fe8 word=0x01010ab4
+  xrefs=none

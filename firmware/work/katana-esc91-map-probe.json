@@ -1,0 +1,449 @@
+{
+  "read_only": true,
+  "capstone_version": "5.0.7",
+  "scope": "Candidate Thumb mapping probe of Katana ESC91.000 blocks only; does not apply to later updater/application sections.",
+  "candidate_mapping": "runtime_address = 0x00FFFFD0 + file_offset",
+  "images": {
+    "KATANA v2.01": {
+      "path": "firmware/work/reference/esc2-comparators/katana_v201/extracted/katana_sys_v201/KATANARM.BIN",
+      "size": 4194304,
+      "image_sha256": "73b63f48050818e6e1cc0738d741e50ce8dcc6f644109cf8ec346a44dff1bdac",
+      "bootstrap_sha256": "1f3a16c850ae5d907543272e0d2a6584db1ffcb27f74d59a966f105fa8add0b5",
+      "marker": "ESC91.000",
+      "candidate_runtime_base": "0x00FFFFD0",
+      "vector_table_file_offset": "0x000030",
+      "vector_table_runtime_address": "0x01000000",
+      "initial_stack_word": "0x01011238",
+      "reset_vector_word": "0x01000A1D",
+      "reset_vector_target_file_offset": "0x000A4C",
+      "reset_vector_target_disassembly": [
+        {
+          "file_offset": "0x000A4C",
+          "runtime_address": "0x01000A1C",
+          "bytes": "05 48",
+          "mnemonic": "ldr",
+          "operands": "r0, [pc, #0x14]"
+        },
+        {
+          "file_offset": "0x000A4E",
+          "runtime_address": "0x01000A1E",
+          "bytes": "00 47",
+          "mnemonic": "bx",
+          "operands": "r0"
+        },
+        {
+          "file_offset": "0x000A50",
+          "runtime_address": "0x01000A20",
+          "bytes": "fe e7",
+          "mnemonic": "b",
+          "operands": "#0x1000a20"
+        },
+        {
+          "file_offset": "0x000A52",
+          "runtime_address": "0x01000A22",
+          "bytes": "fe e7",
+          "mnemonic": "b",
+          "operands": "#0x1000a22"
+        },
+        {
+          "file_offset": "0x000A54",
+          "runtime_address": "0x01000A24",
+          "bytes": "fe e7",
+          "mnemonic": "b",
+          "operands": "#0x1000a24"
+        },
+        {
+          "file_offset": "0x000A56",
+          "runtime_address": "0x01000A26",
+          "bytes": "fe e7",
+          "mnemonic": "b",
+          "operands": "#0x1000a26"
+        },
+        {
+          "file_offset": "0x000A58",
+          "runtime_address": "0x01000A28",
+          "bytes": "fe e7",
+          "mnemonic": "b",
+          "operands": "#0x1000a28"
+        },
+        {
+          "file_offset": "0x000A5A",
+          "runtime_address": "0x01000A2A",
+          "bytes": "fe e7",
+          "mnemonic": "b",
+          "operands": "#0x1000a2a"
+        },
+        {
+          "file_offset": "0x000A5C",
+          "runtime_address": "0x01000A2C",
+          "bytes": "fe e7",
+          "mnemonic": "b",
+          "operands": "#0x1000a2c"
+        },
+        {
+          "file_offset": "0x000A5E",
+          "runtime_address": "0x01000A2E",
+          "bytes": "fe e7",
+          "mnemonic": "b",
+          "operands": "#0x1000a2e"
+        },
+        {
+          "file_offset": "0x000A60",
+          "runtime_address": "0x01000A30",
+          "bytes": "fe e7",
+          "mnemonic": "b",
+          "operands": "#0x1000a30"
+        },
+        {
+          "file_offset": "0x000A62",
+          "runtime_address": "0x01000A32",
+          "bytes": "fe e7",
+          "mnemonic": "b",
+          "operands": "#0x1000a32"
+        },
+        {
+          "file_offset": "0x000A64",
+          "runtime_address": "0x01000A34",
+          "bytes": "c1 02",
+          "mnemonic": "lsls",
+          "operands": "r1, r0, #0xb"
+        },
+        {
+          "file_offset": "0x000A66",
+          "runtime_address": "0x01000A36",
+          "bytes": "00 01",
+          "mnemonic": "lsls",
+          "operands": "r0, r0, #4"
+        },
+        {
+          "file_offset": "0x000A68",
+          "runtime_address": "0x01000A38",
+          "bytes": "10 b5",
+          "mnemonic": "push",
+          "operands": "{r4, lr}"
+        },
+        {
+          "file_offset": "0x000A6A",
+          "runtime_address": "0x01000A3A",
+          "bytes": "03 20",
+          "mnemonic": "movs",
+          "operands": "r0, #3"
+        }
+      ],
+      "trampoline_literal_file_offset": "0x000A64",
+      "trampoline_literal_value": "0x010002C1",
+      "literal_target_file_offset": "0x0002F0",
+      "startup_disassembly_at_0x2f0": [
+        {
+          "file_offset": "0x0002F0",
+          "runtime_address": "0x010002C0",
+          "bytes": "df f8 0c d0",
+          "mnemonic": "ldr.w",
+          "operands": "sp, [pc, #0xc]"
+        },
+        {
+          "file_offset": "0x0002F4",
+          "runtime_address": "0x010002C4",
+          "bytes": "00 f0 34 fc",
+          "mnemonic": "bl",
+          "operands": "#0x1000b30"
+        },
+        {
+          "file_offset": "0x0002F8",
+          "runtime_address": "0x010002C8",
+          "bytes": "00 48",
+          "mnemonic": "ldr",
+          "operands": "r0, [pc, #0]"
+        },
+        {
+          "file_offset": "0x0002FA",
+          "runtime_address": "0x010002CA",
+          "bytes": "00 47",
+          "mnemonic": "bx",
+          "operands": "r0"
+        },
+        {
+          "file_offset": "0x0002FC",
+          "runtime_address": "0x010002CC",
+          "bytes": "3d 09",
+          "mnemonic": "lsrs",
+          "operands": "r5, r7, #4"
+        },
+        {
+          "file_offset": "0x0002FE",
+          "runtime_address": "0x010002CE",
+          "bytes": "00 01",
+          "mnemonic": "lsls",
+          "operands": "r0, r0, #4"
+        },
+        {
+          "file_offset": "0x000300",
+          "runtime_address": "0x010002D0",
+          "bytes": "00 80",
+          "mnemonic": "strh",
+          "operands": "r0, [r0]"
+        },
+        {
+          "file_offset": "0x000302",
+          "runtime_address": "0x010002D2",
+          "bytes": "02 01",
+          "mnemonic": "lsls",
+          "operands": "r2, r0, #4"
+        },
+        {
+          "file_offset": "0x000304",
+          "runtime_address": "0x010002D4",
+          "bytes": "40 f0 01 00",
+          "mnemonic": "orr",
+          "operands": "r0, r0, #1"
+        },
+        {
+          "file_offset": "0x000308",
+          "runtime_address": "0x010002D8",
+          "bytes": "00 47",
+          "mnemonic": "bx",
+          "operands": "r0"
+        },
+        {
+          "file_offset": "0x00030A",
+          "runtime_address": "0x010002DA",
+          "bytes": "00 00",
+          "mnemonic": "movs",
+          "operands": "r0, r0"
+        },
+        {
+          "file_offset": "0x00030C",
+          "runtime_address": "0x010002DC",
+          "bytes": "01 b5",
+          "mnemonic": "push",
+          "operands": "{r0, lr}"
+        }
+      ]
+    },
+    "KATANA v4.00": {
+      "path": "firmware/work/reference/esc2-comparators/katana_v400/extracted/katana_sys_v400/KATANARM.BIN",
+      "size": 4194304,
+      "image_sha256": "3e17ba95e21ed10a3cb5c60af8da0a375db613cc8409eb33b6d80e4248c9b493",
+      "bootstrap_sha256": "e554969f3128d4cff6d2ca15023af634130251e4d5f907ce6884574705a946b4",
+      "marker": "ESC91.000",
+      "candidate_runtime_base": "0x00FFFFD0",
+      "vector_table_file_offset": "0x000030",
+      "vector_table_runtime_address": "0x01000000",
+      "initial_stack_word": "0x01011238",
+      "reset_vector_word": "0x01000A1D",
+      "reset_vector_target_file_offset": "0x000A4C",
+      "reset_vector_target_disassembly": [
+        {
+          "file_offset": "0x000A4C",
+          "runtime_address": "0x01000A1C",
+          "bytes": "05 48",
+          "mnemonic": "ldr",
+          "operands": "r0, [pc, #0x14]"
+        },
+        {
+          "file_offset": "0x000A4E",
+          "runtime_address": "0x01000A1E",
+          "bytes": "00 47",
+          "mnemonic": "bx",
+          "operands": "r0"
+        },
+        {
+          "file_offset": "0x000A50",
+          "runtime_address": "0x01000A20",
+          "bytes": "fe e7",
+          "mnemonic": "b",
+          "operands": "#0x1000a20"
+        },
+        {
+          "file_offset": "0x000A52",
+          "runtime_address": "0x01000A22",
+          "bytes": "fe e7",
+          "mnemonic": "b",
+          "operands": "#0x1000a22"
+        },
+        {
+          "file_offset": "0x000A54",
+          "runtime_address": "0x01000A24",
+          "bytes": "fe e7",
+          "mnemonic": "b",
+          "operands": "#0x1000a24"
+        },
+        {
+          "file_offset": "0x000A56",
+          "runtime_address": "0x01000A26",
+          "bytes": "fe e7",
+          "mnemonic": "b",
+          "operands": "#0x1000a26"
+        },
+        {
+          "file_offset": "0x000A58",
+          "runtime_address": "0x01000A28",
+          "bytes": "fe e7",
+          "mnemonic": "b",
+          "operands": "#0x1000a28"
+        },
+        {
+          "file_offset": "0x000A5A",
+          "runtime_address": "0x01000A2A",
+          "bytes": "fe e7",
+          "mnemonic": "b",
+          "operands": "#0x1000a2a"
+        },
+        {
+          "file_offset": "0x000A5C",
+          "runtime_address": "0x01000A2C",
+          "bytes": "fe e7",
+          "mnemonic": "b",
+          "operands": "#0x1000a2c"
+        },
+        {
+          "file_offset": "0x000A5E",
+          "runtime_address": "0x01000A2E",
+          "bytes": "fe e7",
+          "mnemonic": "b",
+          "operands": "#0x1000a2e"
+        },
+        {
+          "file_offset": "0x000A60",
+          "runtime_address": "0x01000A30",
+          "bytes": "fe e7",
+          "mnemonic": "b",
+          "operands": "#0x1000a30"
+        },
+        {
+          "file_offset": "0x000A62",
+          "runtime_address": "0x01000A32",
+          "bytes": "fe e7",
+          "mnemonic": "b",
+          "operands": "#0x1000a32"
+        },
+        {
+          "file_offset": "0x000A64",
+          "runtime_address": "0x01000A34",
+          "bytes": "c1 02",
+          "mnemonic": "lsls",
+          "operands": "r1, r0, #0xb"
+        },
+        {
+          "file_offset": "0x000A66",
+          "runtime_address": "0x01000A36",
+          "bytes": "00 01",
+          "mnemonic": "lsls",
+          "operands": "r0, r0, #4"
+        },
+        {
+          "file_offset": "0x000A68",
+          "runtime_address": "0x01000A38",
+          "bytes": "10 b5",
+          "mnemonic": "push",
+          "operands": "{r4, lr}"
+        },
+        {
+          "file_offset": "0x000A6A",
+          "runtime_address": "0x01000A3A",
+          "bytes": "03 20",
+          "mnemonic": "movs",
+          "operands": "r0, #3"
+        }
+      ],
+      "trampoline_literal_file_offset": "0x000A64",
+      "trampoline_literal_value": "0x010002C1",
+      "literal_target_file_offset": "0x0002F0",
+      "startup_disassembly_at_0x2f0": [
+        {
+          "file_offset": "0x0002F0",
+          "runtime_address": "0x010002C0",
+          "bytes": "df f8 0c d0",
+          "mnemonic": "ldr.w",
+          "operands": "sp, [pc, #0xc]"
+        },
+        {
+          "file_offset": "0x0002F4",
+          "runtime_address": "0x010002C4",
+          "bytes": "00 f0 2e fc",
+          "mnemonic": "bl",
+          "operands": "#0x1000b24"
+        },
+        {
+          "file_offset": "0x0002F8",
+          "runtime_address": "0x010002C8",
+          "bytes": "00 48",
+          "mnemonic": "ldr",
+          "operands": "r0, [pc, #0]"
+        },
+        {
+          "file_offset": "0x0002FA",
+          "runtime_address": "0x010002CA",
+          "bytes": "00 47",
+          "mnemonic": "bx",
+          "operands": "r0"
+        },
+        {
+          "file_offset": "0x0002FC",
+          "runtime_address": "0x010002CC",
+          "bytes": "3d 09",
+          "mnemonic": "lsrs",
+          "operands": "r5, r7, #4"
+        },
+        {
+          "file_offset": "0x0002FE",
+          "runtime_address": "0x010002CE",
+          "bytes": "00 01",
+          "mnemonic": "lsls",
+          "operands": "r0, r0, #4"
+        },
+        {
+          "file_offset": "0x000300",
+          "runtime_address": "0x010002D0",
+          "bytes": "00 80",
+          "mnemonic": "strh",
+          "operands": "r0, [r0]"
+        },
+        {
+          "file_offset": "0x000302",
+          "runtime_address": "0x010002D2",
+          "bytes": "02 01",
+          "mnemonic": "lsls",
+          "operands": "r2, r0, #4"
+        },
+        {
+          "file_offset": "0x000304",
+          "runtime_address": "0x010002D4",
+          "bytes": "40 f0 01 00",
+          "mnemonic": "orr",
+          "operands": "r0, r0, #1"
+        },
+        {
+          "file_offset": "0x000308",
+          "runtime_address": "0x010002D8",
+          "bytes": "00 47",
+          "mnemonic": "bx",
+          "operands": "r0"
+        },
+        {
+          "file_offset": "0x00030A",
+          "runtime_address": "0x010002DA",
+          "bytes": "00 00",
+          "mnemonic": "movs",
+          "operands": "r0, r0"
+        },
+        {
+          "file_offset": "0x00030C",
+          "runtime_address": "0x010002DC",
+          "bytes": "01 b5",
+          "mnemonic": "push",
+          "operands": "{r0, lr}"
+        }
+      ]
+    }
+  },
+  "version_comparison": {
+    "range": "0x000000\u20130x001FFF",
+    "same_offset_equal_bytes": 7884,
+    "range_bytes": 8192,
+    "equal_fraction": 0.96240234,
+    "longest_identical_run_file_range": "0x000C50\u20130x001FFF",
+    "longest_identical_run_bytes": 5040
+  },
+  "interpretation": "The vector word, Thumb-state reset target, literal-loaded startup address, and decoded branch at startup are internally consistent under the candidate base in both Katana releases. This supports Thumb code in the ESC91.000 block only. It does not identify the MB8AA4181 core ISA or the later application payload ISA."
+}

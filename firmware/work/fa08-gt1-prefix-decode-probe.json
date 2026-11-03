@@ -1,0 +1,595 @@
+{
+  "read_only": true,
+  "scope": "Bounded 194-byte cross-product payload-prefix probe; not an ISA detector.",
+  "capstone_version": "5.0.7",
+  "samples": {
+    "FA ESC2 image": {
+      "path": "firmware/work/reference/esc2-comparators/fa08_v203/extracted/_tmp/fantom_e_up.bin",
+      "file_offset": "0x002044",
+      "window_bytes": 194,
+      "window_sha256": "9a86daad33fe1795cdf8da940372481d19f52942ddf785109c17d3b5163c5d48"
+    },
+    "GT-1 v1.09 updater": {
+      "path": "firmware/extracted/v109/gt1_sys_v109/GT1ROM.BIN",
+      "file_offset": "0x002040",
+      "window_bytes": 194,
+      "window_sha256": "9a86daad33fe1795cdf8da940372481d19f52942ddf785109c17d3b5163c5d48"
+    },
+    "GT-1 v1.09 application": {
+      "path": "firmware/extracted/v109/gt1_sys_v109/GT1ROM.BIN",
+      "file_offset": "0x040040",
+      "window_bytes": 194,
+      "window_sha256": "9a86daad33fe1795cdf8da940372481d19f52942ddf785109c17d3b5163c5d48"
+    },
+    "KATANA v4.00 updater": {
+      "path": "firmware/work/reference/esc2-comparators/katana_v400/extracted/katana_sys_v400/KATANARM.BIN",
+      "file_offset": "0x002040",
+      "window_bytes": 194,
+      "window_sha256": "9a86daad33fe1795cdf8da940372481d19f52942ddf785109c17d3b5163c5d48"
+    },
+    "KATANA v4.00 application": {
+      "path": "firmware/work/reference/esc2-comparators/katana_v400/extracted/katana_sys_v400/KATANARM.BIN",
+      "file_offset": "0x040040",
+      "window_bytes": 194,
+      "window_sha256": "9a86daad33fe1795cdf8da940372481d19f52942ddf785109c17d3b5163c5d48"
+    }
+  },
+  "all_samples_byte_identical": true,
+  "raw_common_prefix_sha256": "9a86daad33fe1795cdf8da940372481d19f52942ddf785109c17d3b5163c5d48",
+  "normalization_rationale": "The separate bounded runtime-string probe observed 0xFF/0xDF interleaving in one exact diagnostic. Removing these bytes here is only a falsification probe; it is not an established firmware transform.",
+  "probes": [
+    {
+      "transform": "raw",
+      "transform_definition": "delete listed byte values only; no other decoding or reordering",
+      "decoder": "ARM Thumb",
+      "input_bytes": 194,
+      "input_sha256": "9a86daad33fe1795cdf8da940372481d19f52942ddf785109c17d3b5163c5d48",
+      "deleted_byte_count": 0,
+      "decoded_instruction_count": 10,
+      "decoded_bytes_before_stop": 26,
+      "coverage_fraction": 0.134021,
+      "stop_stream_offset": "0x1A",
+      "instructions": [
+        {
+          "transformed_stream_offset": "0x0",
+          "bytes": "ff 4f",
+          "mnemonic": "ldr",
+          "operands": "r7, [pc, #0x3fc]"
+        },
+        {
+          "transformed_stream_offset": "0x2",
+          "bytes": "f0 08",
+          "mnemonic": "lsrs",
+          "operands": "r0, r6, #3"
+        },
+        {
+          "transformed_stream_offset": "0x4",
+          "bytes": "00 80",
+          "mnemonic": "strh",
+          "operands": "r0, [r0]"
+        },
+        {
+          "transformed_stream_offset": "0x6",
+          "bytes": "f3 11",
+          "mnemonic": "asrs",
+          "operands": "r3, r6, #7"
+        },
+        {
+          "transformed_stream_offset": "0x8",
+          "bytes": "88 ff 36 48",
+          "mnemonic": "vqshrun.s16",
+          "operands": "d4, q11, #8"
+        },
+        {
+          "transformed_stream_offset": "0xC",
+          "bytes": "37 49",
+          "mnemonic": "ldr",
+          "operands": "r1, [pc, #0xdc]"
+        },
+        {
+          "transformed_stream_offset": "0xE",
+          "bytes": "37 4a",
+          "mnemonic": "ldr",
+          "operands": "r2, [pc, #0xdc]"
+        },
+        {
+          "transformed_stream_offset": "0x10",
+          "bytes": "00 f0 77 37",
+          "mnemonic": "and",
+          "operands": "r7, r0, #0x77777777"
+        },
+        {
+          "transformed_stream_offset": "0x14",
+          "bytes": "f8 37",
+          "mnemonic": "adds",
+          "operands": "r7, #0xf8"
+        },
+        {
+          "transformed_stream_offset": "0x16",
+          "bytes": "f7 f0 00 f0",
+          "mnemonic": "bl",
+          "operands": "#0x104f701a"
+        }
+      ]
+    },
+    {
+      "transform": "raw",
+      "transform_definition": "delete listed byte values only; no other decoding or reordering",
+      "decoder": "ARM Thumb M-class",
+      "input_bytes": 194,
+      "input_sha256": "9a86daad33fe1795cdf8da940372481d19f52942ddf785109c17d3b5163c5d48",
+      "deleted_byte_count": 0,
+      "decoded_instruction_count": 10,
+      "decoded_bytes_before_stop": 26,
+      "coverage_fraction": 0.134021,
+      "stop_stream_offset": "0x1A",
+      "instructions": [
+        {
+          "transformed_stream_offset": "0x0",
+          "bytes": "ff 4f",
+          "mnemonic": "ldr",
+          "operands": "r7, [pc, #0x3fc]"
+        },
+        {
+          "transformed_stream_offset": "0x2",
+          "bytes": "f0 08",
+          "mnemonic": "lsrs",
+          "operands": "r0, r6, #3"
+        },
+        {
+          "transformed_stream_offset": "0x4",
+          "bytes": "00 80",
+          "mnemonic": "strh",
+          "operands": "r0, [r0]"
+        },
+        {
+          "transformed_stream_offset": "0x6",
+          "bytes": "f3 11",
+          "mnemonic": "asrs",
+          "operands": "r3, r6, #7"
+        },
+        {
+          "transformed_stream_offset": "0x8",
+          "bytes": "88 ff 36 48",
+          "mnemonic": "vqshrun.s16",
+          "operands": "d4, q11, #8"
+        },
+        {
+          "transformed_stream_offset": "0xC",
+          "bytes": "37 49",
+          "mnemonic": "ldr",
+          "operands": "r1, [pc, #0xdc]"
+        },
+        {
+          "transformed_stream_offset": "0xE",
+          "bytes": "37 4a",
+          "mnemonic": "ldr",
+          "operands": "r2, [pc, #0xdc]"
+        },
+        {
+          "transformed_stream_offset": "0x10",
+          "bytes": "00 f0 77 37",
+          "mnemonic": "and",
+          "operands": "r7, r0, #0x77777777"
+        },
+        {
+          "transformed_stream_offset": "0x14",
+          "bytes": "f8 37",
+          "mnemonic": "adds",
+          "operands": "r7, #0xf8"
+        },
+        {
+          "transformed_stream_offset": "0x16",
+          "bytes": "f7 f0 00 f0",
+          "mnemonic": "bl",
+          "operands": "#0x104f701a"
+        }
+      ]
+    },
+    {
+      "transform": "raw",
+      "transform_definition": "delete listed byte values only; no other decoding or reordering",
+      "decoder": "ARM state",
+      "input_bytes": 194,
+      "input_sha256": "9a86daad33fe1795cdf8da940372481d19f52942ddf785109c17d3b5163c5d48",
+      "deleted_byte_count": 0,
+      "decoded_instruction_count": 5,
+      "decoded_bytes_before_stop": 20,
+      "coverage_fraction": 0.103093,
+      "stop_stream_offset": "0x14",
+      "instructions": [
+        {
+          "transformed_stream_offset": "0x0",
+          "bytes": "ff 4f f0 08",
+          "mnemonic": "ldmeq",
+          "operands": "r0!, {r0, r1, r2, r3, r4, r5, r6, r7, r8, sb, sl, fp, lr} ^"
+        },
+        {
+          "transformed_stream_offset": "0x4",
+          "bytes": "00 80 f3 11",
+          "mnemonic": "mvnsne",
+          "operands": "r8, r0"
+        },
+        {
+          "transformed_stream_offset": "0x8",
+          "bytes": "88 ff 36 48",
+          "mnemonic": "ldmdami",
+          "operands": "r6!, {r3, r7, r8, sb, sl, fp, ip, sp, lr, pc}"
+        },
+        {
+          "transformed_stream_offset": "0xC",
+          "bytes": "37 49 37 4a",
+          "mnemonic": "bmi",
+          "operands": "#0x10dd24f0"
+        },
+        {
+          "transformed_stream_offset": "0x10",
+          "bytes": "00 f0 77 37",
+          "mnemonic": "ldrblo",
+          "operands": "pc, [r7, -r0]!"
+        }
+      ]
+    },
+    {
+      "transform": "delete_0xFF",
+      "transform_definition": "delete listed byte values only; no other decoding or reordering",
+      "decoder": "ARM Thumb",
+      "input_bytes": 186,
+      "input_sha256": "8891184acdd23e64fd53990ce78e9c6436275f1b382b8257a8417c8b74e0dfda",
+      "deleted_byte_count": 8,
+      "decoded_instruction_count": 1,
+      "decoded_bytes_before_stop": 4,
+      "coverage_fraction": 0.021505,
+      "stop_stream_offset": "0x4",
+      "instructions": [
+        {
+          "transformed_stream_offset": "0x0",
+          "bytes": "4f f0 08 00",
+          "mnemonic": "mov.w",
+          "operands": "r0, #8"
+        }
+      ]
+    },
+    {
+      "transform": "delete_0xFF",
+      "transform_definition": "delete listed byte values only; no other decoding or reordering",
+      "decoder": "ARM Thumb M-class",
+      "input_bytes": 186,
+      "input_sha256": "8891184acdd23e64fd53990ce78e9c6436275f1b382b8257a8417c8b74e0dfda",
+      "deleted_byte_count": 8,
+      "decoded_instruction_count": 19,
+      "decoded_bytes_before_stop": 50,
+      "coverage_fraction": 0.268817,
+      "stop_stream_offset": "0x32",
+      "instructions": [
+        {
+          "transformed_stream_offset": "0x0",
+          "bytes": "4f f0 08 00",
+          "mnemonic": "mov.w",
+          "operands": "r0, #8"
+        },
+        {
+          "transformed_stream_offset": "0x4",
+          "bytes": "80 f3 11 88",
+          "mnemonic": "msr",
+          "operands": "basepri, r0"
+        },
+        {
+          "transformed_stream_offset": "0x8",
+          "bytes": "36 48",
+          "mnemonic": "ldr",
+          "operands": "r0, [pc, #0xd8]"
+        },
+        {
+          "transformed_stream_offset": "0xA",
+          "bytes": "37 49",
+          "mnemonic": "ldr",
+          "operands": "r1, [pc, #0xdc]"
+        },
+        {
+          "transformed_stream_offset": "0xC",
+          "bytes": "37 4a",
+          "mnemonic": "ldr",
+          "operands": "r2, [pc, #0xdc]"
+        },
+        {
+          "transformed_stream_offset": "0xE",
+          "bytes": "00 f0 77 37",
+          "mnemonic": "and",
+          "operands": "r7, r0, #0x77777777"
+        },
+        {
+          "transformed_stream_offset": "0x12",
+          "bytes": "f8 37",
+          "mnemonic": "adds",
+          "operands": "r7, #0xf8"
+        },
+        {
+          "transformed_stream_offset": "0x14",
+          "bytes": "f7 f0 00 f0",
+          "mnemonic": "bl",
+          "operands": "#0x104f7018"
+        },
+        {
+          "transformed_stream_offset": "0x18",
+          "bytes": "42 f2 55 38",
+          "mnemonic": "movw",
+          "operands": "r8, #0x2355"
+        },
+        {
+          "transformed_stream_offset": "0x1C",
+          "bytes": "fb f0 2e f0",
+          "mnemonic": "bl",
+          "operands": "#0x104fb07c"
+        },
+        {
+          "transformed_stream_offset": "0x20",
+          "bytes": "38 03",
+          "mnemonic": "lsls",
+          "operands": "r0, r7, #0xc"
+        },
+        {
+          "transformed_stream_offset": "0x22",
+          "bytes": "00 39",
+          "mnemonic": "subs",
+          "operands": "r1, #0"
+        },
+        {
+          "transformed_stream_offset": "0x24",
+          "bytes": "11 02",
+          "mnemonic": "lsls",
+          "operands": "r1, r2, #8"
+        },
+        {
+          "transformed_stream_offset": "0x26",
+          "bytes": "ae 0c",
+          "mnemonic": "lsrs",
+          "operands": "r6, r5, #0x12"
+        },
+        {
+          "transformed_stream_offset": "0x28",
+          "bytes": "01 25",
+          "mnemonic": "movs",
+          "operands": "r5, #1"
+        },
+        {
+          "transformed_stream_offset": "0x2A",
+          "bytes": "f8 38",
+          "mnemonic": "subs",
+          "operands": "r0, #0xf8"
+        },
+        {
+          "transformed_stream_offset": "0x2C",
+          "bytes": "13 02",
+          "mnemonic": "lsls",
+          "operands": "r3, r2, #8"
+        },
+        {
+          "transformed_stream_offset": "0x2E",
+          "bytes": "30 23",
+          "mnemonic": "movs",
+          "operands": "r3, #0x30"
+        },
+        {
+          "transformed_stream_offset": "0x30",
+          "bytes": "02 39",
+          "mnemonic": "subs",
+          "operands": "r1, #2"
+        }
+      ]
+    },
+    {
+      "transform": "delete_0xFF",
+      "transform_definition": "delete listed byte values only; no other decoding or reordering",
+      "decoder": "ARM state",
+      "input_bytes": 186,
+      "input_sha256": "8891184acdd23e64fd53990ce78e9c6436275f1b382b8257a8417c8b74e0dfda",
+      "deleted_byte_count": 8,
+      "decoded_instruction_count": 3,
+      "decoded_bytes_before_stop": 12,
+      "coverage_fraction": 0.064516,
+      "stop_stream_offset": "0xC",
+      "instructions": [
+        {
+          "transformed_stream_offset": "0x0",
+          "bytes": "4f f0 08 00",
+          "mnemonic": "andeq",
+          "operands": "pc, r8, pc, asr #32"
+        },
+        {
+          "transformed_stream_offset": "0x4",
+          "bytes": "80 f3 11 88",
+          "mnemonic": "ldmdahi",
+          "operands": "r1, {r7, r8, sb, ip, sp, lr, pc}"
+        },
+        {
+          "transformed_stream_offset": "0x8",
+          "bytes": "36 48 37 49",
+          "mnemonic": "ldmdbmi",
+          "operands": "r7!, {r1, r2, r4, r5, fp, lr}"
+        }
+      ]
+    },
+    {
+      "transform": "delete_0xFF_and_0xDF",
+      "transform_definition": "delete listed byte values only; no other decoding or reordering",
+      "decoder": "ARM Thumb",
+      "input_bytes": 186,
+      "input_sha256": "8891184acdd23e64fd53990ce78e9c6436275f1b382b8257a8417c8b74e0dfda",
+      "deleted_byte_count": 8,
+      "decoded_instruction_count": 1,
+      "decoded_bytes_before_stop": 4,
+      "coverage_fraction": 0.021505,
+      "stop_stream_offset": "0x4",
+      "instructions": [
+        {
+          "transformed_stream_offset": "0x0",
+          "bytes": "4f f0 08 00",
+          "mnemonic": "mov.w",
+          "operands": "r0, #8"
+        }
+      ]
+    },
+    {
+      "transform": "delete_0xFF_and_0xDF",
+      "transform_definition": "delete listed byte values only; no other decoding or reordering",
+      "decoder": "ARM Thumb M-class",
+      "input_bytes": 186,
+      "input_sha256": "8891184acdd23e64fd53990ce78e9c6436275f1b382b8257a8417c8b74e0dfda",
+      "deleted_byte_count": 8,
+      "decoded_instruction_count": 19,
+      "decoded_bytes_before_stop": 50,
+      "coverage_fraction": 0.268817,
+      "stop_stream_offset": "0x32",
+      "instructions": [
+        {
+          "transformed_stream_offset": "0x0",
+          "bytes": "4f f0 08 00",
+          "mnemonic": "mov.w",
+          "operands": "r0, #8"
+        },
+        {
+          "transformed_stream_offset": "0x4",
+          "bytes": "80 f3 11 88",
+          "mnemonic": "msr",
+          "operands": "basepri, r0"
+        },
+        {
+          "transformed_stream_offset": "0x8",
+          "bytes": "36 48",
+          "mnemonic": "ldr",
+          "operands": "r0, [pc, #0xd8]"
+        },
+        {
+          "transformed_stream_offset": "0xA",
+          "bytes": "37 49",
+          "mnemonic": "ldr",
+          "operands": "r1, [pc, #0xdc]"
+        },
+        {
+          "transformed_stream_offset": "0xC",
+          "bytes": "37 4a",
+          "mnemonic": "ldr",
+          "operands": "r2, [pc, #0xdc]"
+        },
+        {
+          "transformed_stream_offset": "0xE",
+          "bytes": "00 f0 77 37",
+          "mnemonic": "and",
+          "operands": "r7, r0, #0x77777777"
+        },
+        {
+          "transformed_stream_offset": "0x12",
+          "bytes": "f8 37",
+          "mnemonic": "adds",
+          "operands": "r7, #0xf8"
+        },
+        {
+          "transformed_stream_offset": "0x14",
+          "bytes": "f7 f0 00 f0",
+          "mnemonic": "bl",
+          "operands": "#0x104f7018"
+        },
+        {
+          "transformed_stream_offset": "0x18",
+          "bytes": "42 f2 55 38",
+          "mnemonic": "movw",
+          "operands": "r8, #0x2355"
+        },
+        {
+          "transformed_stream_offset": "0x1C",
+          "bytes": "fb f0 2e f0",
+          "mnemonic": "bl",
+          "operands": "#0x104fb07c"
+        },
+        {
+          "transformed_stream_offset": "0x20",
+          "bytes": "38 03",
+          "mnemonic": "lsls",
+          "operands": "r0, r7, #0xc"
+        },
+        {
+          "transformed_stream_offset": "0x22",
+          "bytes": "00 39",
+          "mnemonic": "subs",
+          "operands": "r1, #0"
+        },
+        {
+          "transformed_stream_offset": "0x24",
+          "bytes": "11 02",
+          "mnemonic": "lsls",
+          "operands": "r1, r2, #8"
+        },
+        {
+          "transformed_stream_offset": "0x26",
+          "bytes": "ae 0c",
+          "mnemonic": "lsrs",
+          "operands": "r6, r5, #0x12"
+        },
+        {
+          "transformed_stream_offset": "0x28",
+          "bytes": "01 25",
+          "mnemonic": "movs",
+          "operands": "r5, #1"
+        },
+        {
+          "transformed_stream_offset": "0x2A",
+          "bytes": "f8 38",
+          "mnemonic": "subs",
+          "operands": "r0, #0xf8"
+        },
+        {
+          "transformed_stream_offset": "0x2C",
+          "bytes": "13 02",
+          "mnemonic": "lsls",
+          "operands": "r3, r2, #8"
+        },
+        {
+          "transformed_stream_offset": "0x2E",
+          "bytes": "30 23",
+          "mnemonic": "movs",
+          "operands": "r3, #0x30"
+        },
+        {
+          "transformed_stream_offset": "0x30",
+          "bytes": "02 39",
+          "mnemonic": "subs",
+          "operands": "r1, #2"
+        }
+      ]
+    },
+    {
+      "transform": "delete_0xFF_and_0xDF",
+      "transform_definition": "delete listed byte values only; no other decoding or reordering",
+      "decoder": "ARM state",
+      "input_bytes": 186,
+      "input_sha256": "8891184acdd23e64fd53990ce78e9c6436275f1b382b8257a8417c8b74e0dfda",
+      "deleted_byte_count": 8,
+      "decoded_instruction_count": 3,
+      "decoded_bytes_before_stop": 12,
+      "coverage_fraction": 0.064516,
+      "stop_stream_offset": "0xC",
+      "instructions": [
+        {
+          "transformed_stream_offset": "0x0",
+          "bytes": "4f f0 08 00",
+          "mnemonic": "andeq",
+          "operands": "pc, r8, pc, asr #32"
+        },
+        {
+          "transformed_stream_offset": "0x4",
+          "bytes": "80 f3 11 88",
+          "mnemonic": "ldmdahi",
+          "operands": "r1, {r7, r8, sb, ip, sp, lr, pc}"
+        },
+        {
+          "transformed_stream_offset": "0x8",
+          "bytes": "36 48 37 49",
+          "mnemonic": "ldmdbmi",
+          "operands": "r7!, {r1, r2, r4, r5, fp, lr}"
+        }
+      ]
+    }
+  ],
+  "interpretation": "The raw data stops early under ARM/Thumb decoding. Deleting 0xFF permits a somewhat longer Thumb-M decode, but the decoder still stops before half the transformed window and deletion destroys the original offset map. The snippets do not establish coherent code, the application ISA, or that the prefix executes on ESC2."
+}

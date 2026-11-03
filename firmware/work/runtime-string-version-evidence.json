@@ -1,0 +1,769 @@
+{
+  "classification": "bounded exact phrase search for an ARM Compiler C++ runtime diagnostic; clue only",
+  "phrase": "SIGPVFN: Pure virtual fn called",
+  "marker_cadence_observation": "The exact phrase is recovered in all four GT-1 releases by skipping nonprintable bytes at one of nine possible modulo-9 phases; recovered raw spans contain skipped bytes at 9-byte intervals. This resembles a separate 8-data-bytes-plus-marker candidate record cadence, but is not proof of a common encoding or executable code.",
+  "versions": {
+    "105": {
+      "image_sha256": "b1bde0410795230b4a89ee3dfbbd357700bba7020624c0ff832ae3d8539d8bb4",
+      "image_size": 4194304,
+      "candidate_app_payload_range": [
+        "0x40040",
+        "0x15E098"
+      ],
+      "raw_SIGPVFN_hits": [],
+      "raw_Pure_virtual_fn_called_hits": [],
+      "bounded_deinterleave_hits": [],
+      "periodic_nonprintable_skip_hits": [
+        {
+          "start": "0x09765C",
+          "end_exclusive": "0x09767F",
+          "raw_hex": "53 49 47 50 ff 56 46 4e 3a 20 50 75 72 ff 65 20 76 69 72 74 75 61 ff 6c 20 66 6e 20 63 61 6c f7 6c 65 64",
+          "raw_sha256": "c7a0531b2b23936c09c72ba551e70b69bfdf744bf5cbc6f87cb48cd4642cc337",
+          "normalized_ascii": "SIGPVFN: Pure virtual fn called",
+          "skipped_nonprintable_bytes": [
+            "0xFF",
+            "0xFF",
+            "0xFF",
+            "0xF7"
+          ],
+          "skipped_positions_relative": [
+            4,
+            13,
+            22,
+            31
+          ],
+          "skip_stride_bytes": [
+            9,
+            9,
+            9
+          ],
+          "phase_relative_to_payload_start_mod_9": 8,
+          "all_skips_at_stride_9": true
+        }
+      ],
+      "periodic_arm_runtime_signal_token_hits": [
+        {
+          "token": "SIGPVFN",
+          "raw_file_offset": "0x09765C",
+          "matching_phases": [
+            8
+          ]
+        }
+      ],
+      "periodic_arm_runtime_diagnostic_hits": [
+        {
+          "normalized_ascii": "SIGPVFN: Pure virtual fn called",
+          "start": "0x09765C",
+          "end_exclusive": "0x09767F",
+          "phase_relative_to_payload_start_mod_9": 8,
+          "raw_hex": "53 49 47 50 ff 56 46 4e 3a 20 50 75 72 ff 65 20 76 69 72 74 75 61 ff 6c 20 66 6e 20 63 61 6c f7 6c 65 64",
+          "raw_sha256": "c7a0531b2b23936c09c72ba551e70b69bfdf744bf5cbc6f87cb48cd4642cc337",
+          "skipped_nonprintable_bytes": [
+            "0xFF",
+            "0xFF",
+            "0xFF",
+            "0xF7"
+          ],
+          "skipped_positions_relative": [
+            4,
+            13,
+            22,
+            31
+          ]
+        }
+      ]
+    },
+    "107": {
+      "image_sha256": "6a3110cd42c4b129494a93bc88d4f218e2e0b9377868ca051018b28696d6c22f",
+      "image_size": 4194304,
+      "candidate_app_payload_range": [
+        "0x40040",
+        "0x15E7A5"
+      ],
+      "raw_SIGPVFN_hits": [],
+      "raw_Pure_virtual_fn_called_hits": [],
+      "bounded_deinterleave_hits": [],
+      "periodic_nonprintable_skip_hits": [
+        {
+          "start": "0x09784F",
+          "end_exclusive": "0x097872",
+          "raw_hex": "53 49 47 50 56 46 ff 4e 3a 20 50 75 72 65 20 ff 76 69 72 74 75 61 6c 20 ff 66 6e 20 63 61 6c 6c 65 fd 64",
+          "raw_sha256": "282b452010f3b325233c765259a9c6c4662e0d4d930fd3b19898238cbb97203f",
+          "normalized_ascii": "SIGPVFN: Pure virtual fn called",
+          "skipped_nonprintable_bytes": [
+            "0xFF",
+            "0xFF",
+            "0xFF",
+            "0xFD"
+          ],
+          "skipped_positions_relative": [
+            6,
+            15,
+            24,
+            33
+          ],
+          "skip_stride_bytes": [
+            9,
+            9,
+            9
+          ],
+          "phase_relative_to_payload_start_mod_9": 5,
+          "all_skips_at_stride_9": true
+        }
+      ],
+      "periodic_arm_runtime_signal_token_hits": [
+        {
+          "token": "SIGPVFN",
+          "raw_file_offset": "0x09784F",
+          "matching_phases": [
+            5
+          ]
+        }
+      ],
+      "periodic_arm_runtime_diagnostic_hits": [
+        {
+          "normalized_ascii": "SIGPVFN: Pure virtual fn called",
+          "start": "0x09784F",
+          "end_exclusive": "0x097872",
+          "phase_relative_to_payload_start_mod_9": 5,
+          "raw_hex": "53 49 47 50 56 46 ff 4e 3a 20 50 75 72 65 20 ff 76 69 72 74 75 61 6c 20 ff 66 6e 20 63 61 6c 6c 65 fd 64",
+          "raw_sha256": "282b452010f3b325233c765259a9c6c4662e0d4d930fd3b19898238cbb97203f",
+          "skipped_nonprintable_bytes": [
+            "0xFF",
+            "0xFF",
+            "0xFF",
+            "0xFD"
+          ],
+          "skipped_positions_relative": [
+            6,
+            15,
+            24,
+            33
+          ]
+        }
+      ]
+    },
+    "108": {
+      "image_sha256": "7219679a87e985316264544423c9940ccbcbadeb2df0b2f13711ae57194cb612",
+      "image_size": 4194304,
+      "candidate_app_payload_range": [
+        "0x40040",
+        "0x15E805"
+      ],
+      "raw_SIGPVFN_hits": [
+        "0x09786C"
+      ],
+      "raw_Pure_virtual_fn_called_hits": [],
+      "bounded_deinterleave_hits": [
+        {
+          "start": "0x09786C",
+          "end_exclusive": "0x09788E",
+          "raw_hex": "53 49 47 50 56 46 4e ff 3a 20 50 75 72 65 20 76 ff 69 72 74 75 61 6c 20 66 ff 6e 20 63 61 6c 6c 65 64",
+          "raw_sha256": "502f38bf7ffcb718d3c2b4e2944ab60f02c3a970f6aea195da15abfb807d817c",
+          "normalized_ascii": "SIGPVFN: Pure virtual fn called",
+          "removed_bytes": [
+            "0xFF"
+          ],
+          "marker_positions_relative": [
+            7,
+            16,
+            25
+          ],
+          "marker_stride_bytes": [
+            9,
+            9
+          ],
+          "all_marker_strides_are_9": true,
+          "marker_phase_mod_9": [
+            7
+          ]
+        }
+      ],
+      "periodic_nonprintable_skip_hits": [
+        {
+          "start": "0x09786C",
+          "end_exclusive": "0x09788E",
+          "raw_hex": "53 49 47 50 56 46 4e ff 3a 20 50 75 72 65 20 76 ff 69 72 74 75 61 6c 20 66 ff 6e 20 63 61 6c 6c 65 64",
+          "raw_sha256": "502f38bf7ffcb718d3c2b4e2944ab60f02c3a970f6aea195da15abfb807d817c",
+          "normalized_ascii": "SIGPVFN: Pure virtual fn called",
+          "skipped_nonprintable_bytes": [
+            "0xFF",
+            "0xFF",
+            "0xFF"
+          ],
+          "skipped_positions_relative": [
+            7,
+            16,
+            25
+          ],
+          "skip_stride_bytes": [
+            9,
+            9
+          ],
+          "phase_relative_to_payload_start_mod_9": 8,
+          "all_skips_at_stride_9": true
+        }
+      ],
+      "periodic_arm_runtime_signal_token_hits": [
+        {
+          "token": "SIGPVFN",
+          "raw_file_offset": "0x09786C",
+          "matching_phases": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        }
+      ],
+      "periodic_arm_runtime_diagnostic_hits": [
+        {
+          "normalized_ascii": "SIGPVFN: Pure virtual fn called",
+          "start": "0x09786C",
+          "end_exclusive": "0x09788E",
+          "phase_relative_to_payload_start_mod_9": 8,
+          "raw_hex": "53 49 47 50 56 46 4e ff 3a 20 50 75 72 65 20 76 ff 69 72 74 75 61 6c 20 66 ff 6e 20 63 61 6c 6c 65 64",
+          "raw_sha256": "502f38bf7ffcb718d3c2b4e2944ab60f02c3a970f6aea195da15abfb807d817c",
+          "skipped_nonprintable_bytes": [
+            "0xFF",
+            "0xFF",
+            "0xFF"
+          ],
+          "skipped_positions_relative": [
+            7,
+            16,
+            25
+          ]
+        }
+      ]
+    },
+    "109": {
+      "image_sha256": "412ebf5ffdc48554454c27df47f61428f046ea0a7d93f5c77b7f0302861abdbf",
+      "image_size": 4194304,
+      "candidate_app_payload_range": [
+        "0x40040",
+        "0x15FB3A"
+      ],
+      "raw_SIGPVFN_hits": [],
+      "raw_Pure_virtual_fn_called_hits": [],
+      "bounded_deinterleave_hits": [
+        {
+          "start": "0x098899",
+          "end_exclusive": "0x0988BC",
+          "raw_hex": "53 49 ff 47 50 56 46 4e 3a 20 50 ff 75 72 65 20 76 69 72 74 ff 75 61 6c 20 66 6e 20 63 df 61 6c 6c 65 64",
+          "raw_sha256": "62c9ce80d7721de98ac1e05bbf8013d842da03eac7924c709f3de0f3452d7601",
+          "normalized_ascii": "SIGPVFN: Pure virtual fn called",
+          "removed_bytes": [
+            "0xDF",
+            "0xFF"
+          ],
+          "marker_positions_relative": [
+            2,
+            11,
+            20,
+            29
+          ],
+          "marker_stride_bytes": [
+            9,
+            9,
+            9
+          ],
+          "all_marker_strides_are_9": true,
+          "marker_phase_mod_9": [
+            2
+          ]
+        }
+      ],
+      "periodic_nonprintable_skip_hits": [
+        {
+          "start": "0x098899",
+          "end_exclusive": "0x0988BC",
+          "raw_hex": "53 49 ff 47 50 56 46 4e 3a 20 50 ff 75 72 65 20 76 69 72 74 ff 75 61 6c 20 66 6e 20 63 df 61 6c 6c 65 64",
+          "raw_sha256": "62c9ce80d7721de98ac1e05bbf8013d842da03eac7924c709f3de0f3452d7601",
+          "normalized_ascii": "SIGPVFN: Pure virtual fn called",
+          "skipped_nonprintable_bytes": [
+            "0xFF",
+            "0xFF",
+            "0xFF",
+            "0xDF"
+          ],
+          "skipped_positions_relative": [
+            2,
+            11,
+            20,
+            29
+          ],
+          "skip_stride_bytes": [
+            9,
+            9,
+            9
+          ],
+          "phase_relative_to_payload_start_mod_9": 4,
+          "all_skips_at_stride_9": true
+        }
+      ],
+      "periodic_arm_runtime_signal_token_hits": [
+        {
+          "token": "SIGPVFN",
+          "raw_file_offset": "0x098899",
+          "matching_phases": [
+            4
+          ]
+        }
+      ],
+      "periodic_arm_runtime_diagnostic_hits": [
+        {
+          "normalized_ascii": "SIGPVFN: Pure virtual fn called",
+          "start": "0x098899",
+          "end_exclusive": "0x0988BC",
+          "phase_relative_to_payload_start_mod_9": 4,
+          "raw_hex": "53 49 ff 47 50 56 46 4e 3a 20 50 ff 75 72 65 20 76 69 72 74 ff 75 61 6c 20 66 6e 20 63 df 61 6c 6c 65 64",
+          "raw_sha256": "62c9ce80d7721de98ac1e05bbf8013d842da03eac7924c709f3de0f3452d7601",
+          "skipped_nonprintable_bytes": [
+            "0xFF",
+            "0xFF",
+            "0xFF",
+            "0xDF"
+          ],
+          "skipped_positions_relative": [
+            2,
+            11,
+            20,
+            29
+          ]
+        }
+      ]
+    }
+  },
+  "related_ESC2_product_images": {
+    "GT1B_v104": {
+      "path": "firmware/work/reference/gt1b-comparator/gt1b_sys_v104/GT1BROM.BIN",
+      "image_sha256": "9b6d47a2c43b12856760d135a8582acb9424e17faa66474ce3272d021a5d8646",
+      "image_size": 4194304,
+      "candidate_app_payload_range": [
+        "0x40040",
+        "0x16DBC2"
+      ],
+      "raw_SIGPVFN_hits": [],
+      "raw_Pure_virtual_fn_called_hits": [],
+      "bounded_deinterleave_hits": [],
+      "periodic_nonprintable_skip_hits": [
+        {
+          "start": "0x0997DE",
+          "end_exclusive": "0x099801",
+          "raw_hex": "53 ff 49 47 50 56 46 4e 3a 20 ff 50 75 72 65 20 76 69 72 ff 74 75 61 6c 20 66 6e 20 bf 63 61 6c 6c 65 64",
+          "raw_sha256": "95721903cc1acd4fdca4ee43159dc84599310655ed832d8681ca72ced9fda217",
+          "normalized_ascii": "SIGPVFN: Pure virtual fn called",
+          "skipped_nonprintable_bytes": [
+            "0xFF",
+            "0xFF",
+            "0xFF",
+            "0xBF"
+          ],
+          "skipped_positions_relative": [
+            1,
+            10,
+            19,
+            28
+          ],
+          "skip_stride_bytes": [
+            9,
+            9,
+            9
+          ],
+          "phase_relative_to_payload_start_mod_9": 6,
+          "all_skips_at_stride_9": true
+        }
+      ],
+      "periodic_arm_runtime_signal_token_hits": [
+        {
+          "token": "SIGPVFN",
+          "raw_file_offset": "0x0997DE",
+          "matching_phases": [
+            6
+          ]
+        }
+      ],
+      "periodic_arm_runtime_diagnostic_hits": [
+        {
+          "normalized_ascii": "SIGPVFN: Pure virtual fn called",
+          "start": "0x0997DE",
+          "end_exclusive": "0x099801",
+          "phase_relative_to_payload_start_mod_9": 6,
+          "raw_hex": "53 ff 49 47 50 56 46 4e 3a 20 ff 50 75 72 65 20 76 69 72 ff 74 75 61 6c 20 66 6e 20 bf 63 61 6c 6c 65 64",
+          "raw_sha256": "95721903cc1acd4fdca4ee43159dc84599310655ed832d8681ca72ced9fda217",
+          "skipped_nonprintable_bytes": [
+            "0xFF",
+            "0xFF",
+            "0xFF",
+            "0xBF"
+          ],
+          "skipped_positions_relative": [
+            1,
+            10,
+            19,
+            28
+          ]
+        }
+      ]
+    },
+    "GT100_v212": {
+      "path": "firmware/work/reference/esc2-comparators/gt100_v212/extracted/gt100_sys_v212/GT100ROM.BIN",
+      "image_sha256": "0c44ab01ac310927bf8dcc95f4ab5fcc487ed106dfcc6fc067832a35a4e32d34",
+      "image_size": 4194304,
+      "candidate_app_payload_range": [
+        "0x40040",
+        "0x17689C"
+      ],
+      "raw_SIGPVFN_hits": [],
+      "raw_Pure_virtual_fn_called_hits": [],
+      "bounded_deinterleave_hits": [
+        {
+          "start": "0x0A1371",
+          "end_exclusive": "0x0A1394",
+          "raw_hex": "53 49 47 50 56 46 ff 4e 3a 20 50 75 72 65 20 ff 76 69 72 74 75 61 6c 20 ff 66 6e 20 63 61 6c 6c 65 ff 64",
+          "raw_sha256": "9f32d07d49f41367be74459989d98474289dcf7662027c69029db4857e472a5a",
+          "normalized_ascii": "SIGPVFN: Pure virtual fn called",
+          "removed_bytes": [
+            "0xFF"
+          ],
+          "marker_positions_relative": [
+            6,
+            15,
+            24,
+            33
+          ],
+          "marker_stride_bytes": [
+            9,
+            9,
+            9
+          ],
+          "all_marker_strides_are_9": true,
+          "marker_phase_mod_9": [
+            6
+          ]
+        }
+      ],
+      "periodic_nonprintable_skip_hits": [
+        {
+          "start": "0x0A1371",
+          "end_exclusive": "0x0A1394",
+          "raw_hex": "53 49 47 50 56 46 ff 4e 3a 20 50 75 72 65 20 ff 76 69 72 74 75 61 6c 20 ff 66 6e 20 63 61 6c 6c 65 ff 64",
+          "raw_sha256": "9f32d07d49f41367be74459989d98474289dcf7662027c69029db4857e472a5a",
+          "normalized_ascii": "SIGPVFN: Pure virtual fn called",
+          "skipped_nonprintable_bytes": [
+            "0xFF",
+            "0xFF",
+            "0xFF",
+            "0xFF"
+          ],
+          "skipped_positions_relative": [
+            6,
+            15,
+            24,
+            33
+          ],
+          "skip_stride_bytes": [
+            9,
+            9,
+            9
+          ],
+          "phase_relative_to_payload_start_mod_9": 2,
+          "all_skips_at_stride_9": true
+        }
+      ],
+      "periodic_arm_runtime_signal_token_hits": [
+        {
+          "token": "SIGABRT",
+          "raw_file_offset": "0x097944",
+          "matching_phases": [
+            5
+          ]
+        },
+        {
+          "token": "SIGPVFN",
+          "raw_file_offset": "0x0A1371",
+          "matching_phases": [
+            2
+          ]
+        }
+      ],
+      "periodic_arm_runtime_diagnostic_hits": [
+        {
+          "normalized_ascii": "SIGPVFN: Pure virtual fn called",
+          "start": "0x0A1371",
+          "end_exclusive": "0x0A1394",
+          "phase_relative_to_payload_start_mod_9": 2,
+          "raw_hex": "53 49 47 50 56 46 ff 4e 3a 20 50 75 72 65 20 ff 76 69 72 74 75 61 6c 20 ff 66 6e 20 63 61 6c 6c 65 ff 64",
+          "raw_sha256": "9f32d07d49f41367be74459989d98474289dcf7662027c69029db4857e472a5a",
+          "skipped_nonprintable_bytes": [
+            "0xFF",
+            "0xFF",
+            "0xFF",
+            "0xFF"
+          ],
+          "skipped_positions_relative": [
+            6,
+            15,
+            24,
+            33
+          ]
+        },
+        {
+          "normalized_ascii": "SIGABRT: Abnormal termination",
+          "start": "0x097944",
+          "end_exclusive": "0x097965",
+          "phase_relative_to_payload_start_mod_9": 5,
+          "raw_hex": "53 49 47 41 ff 42 52 54 3a 20 41 62 6e ff 6f 72 6d 61 6c 20 74 65 ff 72 6d 69 6e 61 74 69 6f ff 6e",
+          "raw_sha256": "4fab785a8ad005e9b26353d6b0a53c65882f24f3e2f0a5dfc741a584ba42ad7e",
+          "skipped_nonprintable_bytes": [
+            "0xFF",
+            "0xFF",
+            "0xFF",
+            "0xFF"
+          ],
+          "skipped_positions_relative": [
+            4,
+            13,
+            22,
+            31
+          ]
+        }
+      ]
+    },
+    "Katana_v201": {
+      "path": "firmware/work/reference/esc2-comparators/katana_v201/extracted/katana_sys_v201/KATANARM.BIN",
+      "image_sha256": "73b63f48050818e6e1cc0738d741e50ce8dcc6f644109cf8ec346a44dff1bdac",
+      "image_size": 4194304,
+      "candidate_app_payload_range": [
+        "0x40040",
+        "0x161FDC"
+      ],
+      "raw_SIGPVFN_hits": [],
+      "raw_Pure_virtual_fn_called_hits": [],
+      "bounded_deinterleave_hits": [
+        {
+          "start": "0x09F808",
+          "end_exclusive": "0x09F82B",
+          "raw_hex": "53 49 47 ff 50 56 46 4e 3a 20 50 75 ff 72 65 20 76 69 72 74 75 ff 61 6c 20 66 6e 20 63 61 ff 6c 6c 65 64",
+          "raw_sha256": "6e729336248fde44ae6ce7559a0cf38bddcafd21d7939a624838b31201c2b785",
+          "normalized_ascii": "SIGPVFN: Pure virtual fn called",
+          "removed_bytes": [
+            "0xFF"
+          ],
+          "marker_positions_relative": [
+            3,
+            12,
+            21,
+            30
+          ],
+          "marker_stride_bytes": [
+            9,
+            9,
+            9
+          ],
+          "all_marker_strides_are_9": true,
+          "marker_phase_mod_9": [
+            3
+          ]
+        }
+      ],
+      "periodic_nonprintable_skip_hits": [
+        {
+          "start": "0x09F808",
+          "end_exclusive": "0x09F82B",
+          "raw_hex": "53 49 47 ff 50 56 46 4e 3a 20 50 75 ff 72 65 20 76 69 72 74 75 ff 61 6c 20 66 6e 20 63 61 ff 6c 6c 65 64",
+          "raw_sha256": "6e729336248fde44ae6ce7559a0cf38bddcafd21d7939a624838b31201c2b785",
+          "normalized_ascii": "SIGPVFN: Pure virtual fn called",
+          "skipped_nonprintable_bytes": [
+            "0xFF",
+            "0xFF",
+            "0xFF",
+            "0xFF"
+          ],
+          "skipped_positions_relative": [
+            3,
+            12,
+            21,
+            30
+          ],
+          "skip_stride_bytes": [
+            9,
+            9,
+            9
+          ],
+          "phase_relative_to_payload_start_mod_9": 2,
+          "all_skips_at_stride_9": true
+        }
+      ],
+      "periodic_arm_runtime_signal_token_hits": [
+        {
+          "token": "SIGABRT",
+          "raw_file_offset": "0x098586",
+          "matching_phases": [
+            3
+          ]
+        },
+        {
+          "token": "SIGPVFN",
+          "raw_file_offset": "0x09F808",
+          "matching_phases": [
+            2
+          ]
+        }
+      ],
+      "periodic_arm_runtime_diagnostic_hits": [
+        {
+          "normalized_ascii": "SIGPVFN: Pure virtual fn called",
+          "start": "0x09F808",
+          "end_exclusive": "0x09F82B",
+          "phase_relative_to_payload_start_mod_9": 2,
+          "raw_hex": "53 49 47 ff 50 56 46 4e 3a 20 50 75 ff 72 65 20 76 69 72 74 75 ff 61 6c 20 66 6e 20 63 61 ff 6c 6c 65 64",
+          "raw_sha256": "6e729336248fde44ae6ce7559a0cf38bddcafd21d7939a624838b31201c2b785",
+          "skipped_nonprintable_bytes": [
+            "0xFF",
+            "0xFF",
+            "0xFF",
+            "0xFF"
+          ],
+          "skipped_positions_relative": [
+            3,
+            12,
+            21,
+            30
+          ]
+        },
+        {
+          "normalized_ascii": "SIGABRT: Abnormal termination",
+          "start": "0x098586",
+          "end_exclusive": "0x0985A6",
+          "phase_relative_to_payload_start_mod_9": 3,
+          "raw_hex": "53 49 47 41 42 ff 52 54 3a 20 41 62 6e 6f ff 72 6d 61 6c 20 74 65 72 ff 6d 69 6e 61 74 69 6f 6e",
+          "raw_sha256": "90f49ce9c0a3e2c00d5ffcab4cb0204315d1e0d467fc6726eafe710266c33d21",
+          "skipped_nonprintable_bytes": [
+            "0xFF",
+            "0xFF",
+            "0xFF"
+          ],
+          "skipped_positions_relative": [
+            5,
+            14,
+            23
+          ]
+        }
+      ]
+    },
+    "Katana_v400": {
+      "path": "firmware/work/reference/esc2-comparators/katana_v400/extracted/katana_sys_v400/KATANARM.BIN",
+      "image_sha256": "3e17ba95e21ed10a3cb5c60af8da0a375db613cc8409eb33b6d80e4248c9b493",
+      "image_size": 4194304,
+      "candidate_app_payload_range": [
+        "0x40040",
+        "0x161657"
+      ],
+      "raw_SIGPVFN_hits": [
+        "0x09B36C"
+      ],
+      "raw_Pure_virtual_fn_called_hits": [],
+      "bounded_deinterleave_hits": [
+        {
+          "start": "0x09B36C",
+          "end_exclusive": "0x09B38E",
+          "raw_hex": "53 49 47 50 56 46 4e ff 3a 20 50 75 72 65 20 76 ff 69 72 74 75 61 6c 20 66 ff 6e 20 63 61 6c 6c 65 64",
+          "raw_sha256": "502f38bf7ffcb718d3c2b4e2944ab60f02c3a970f6aea195da15abfb807d817c",
+          "normalized_ascii": "SIGPVFN: Pure virtual fn called",
+          "removed_bytes": [
+            "0xFF"
+          ],
+          "marker_positions_relative": [
+            7,
+            16,
+            25
+          ],
+          "marker_stride_bytes": [
+            9,
+            9
+          ],
+          "all_marker_strides_are_9": true,
+          "marker_phase_mod_9": [
+            7
+          ]
+        }
+      ],
+      "periodic_nonprintable_skip_hits": [
+        {
+          "start": "0x09B36C",
+          "end_exclusive": "0x09B38E",
+          "raw_hex": "53 49 47 50 56 46 4e ff 3a 20 50 75 72 65 20 76 ff 69 72 74 75 61 6c 20 66 ff 6e 20 63 61 6c 6c 65 64",
+          "raw_sha256": "502f38bf7ffcb718d3c2b4e2944ab60f02c3a970f6aea195da15abfb807d817c",
+          "normalized_ascii": "SIGPVFN: Pure virtual fn called",
+          "skipped_nonprintable_bytes": [
+            "0xFF",
+            "0xFF",
+            "0xFF"
+          ],
+          "skipped_positions_relative": [
+            7,
+            16,
+            25
+          ],
+          "skip_stride_bytes": [
+            9,
+            9
+          ],
+          "phase_relative_to_payload_start_mod_9": 1,
+          "all_skips_at_stride_9": true
+        }
+      ],
+      "periodic_arm_runtime_signal_token_hits": [
+        {
+          "token": "SIGPVFN",
+          "raw_file_offset": "0x09B36C",
+          "matching_phases": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        }
+      ],
+      "periodic_arm_runtime_diagnostic_hits": [
+        {
+          "normalized_ascii": "SIGPVFN: Pure virtual fn called",
+          "start": "0x09B36C",
+          "end_exclusive": "0x09B38E",
+          "phase_relative_to_payload_start_mod_9": 1,
+          "raw_hex": "53 49 47 50 56 46 4e ff 3a 20 50 75 72 65 20 76 ff 69 72 74 75 61 6c 20 66 ff 6e 20 63 61 6c 6c 65 64",
+          "raw_sha256": "502f38bf7ffcb718d3c2b4e2944ab60f02c3a970f6aea195da15abfb807d817c",
+          "skipped_nonprintable_bytes": [
+            "0xFF",
+            "0xFF",
+            "0xFF"
+          ],
+          "skipped_positions_relative": [
+            7,
+            16,
+            25
+          ]
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "The diagnostic text is not proof the GT-1 or comparator application executes on ARM or on ESC2.",
+    "The legacy bounded search removes only 0xFF and 0xDF. The separate periodic scan skips a nonprintable byte only when it falls at one selected modulo-9 phase; this tests a narrow record hypothesis and is not a generic decoder.",
+    "The 9-byte marker cadence may reflect a record layout rather than a decoded string section; the phrase hit is not code evidence.",
+    "The exact phrase is recovered in v1.05/v1.07 and GT-1B v1.04 only by the periodic nonprintable-byte scan; their legacy FF/DF-only bounded search has no hit. This method difference does not establish a firmware architecture change.",
+    "Related-model image labels are based on preserved package paths and companion structural comparison evidence; this phrase search does not prove every app block is executed by the MB8AA4181."
+  ]
+}

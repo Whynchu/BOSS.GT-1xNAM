@@ -1,0 +1,140 @@
+{
+  "analysis": "Direct Cortex-M-style vector-head scan of bounded GT-1 payloads",
+  "read_only": true,
+  "method": {
+    "alignment": "Scan 4-byte-aligned file offsets inside each stored payload span.",
+    "head_candidate": "A 16-word window must have zero words at vector indices 7-10 and 13 and odd (Thumb-bit-set) values at every other handler index 1-15. Word 0 is retained but not range-filtered because the RAM map is unknown.",
+    "full_candidate": "A 176-word window must have zero words at indices 7-10 and 13 and at least 90% of all other handler entries at indices 1-175 odd. This is a broad signature probe, not a required table length."
+  },
+  "reserved_zero_indexes": [
+    7,
+    8,
+    9,
+    10,
+    13
+  ],
+  "images": {
+    "v1.05": {
+      "path": "firmware/extracted/v105/gt1_sys_v105/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "b1bde0410795230b4a89ee3dfbbd357700bba7020624c0ff832ae3d8539d8bb4",
+      "blocks": {
+        "GT1Upd": {
+          "payload_range": [
+            "0x2040",
+            "0x235A7"
+          ],
+          "payload_size": 136551,
+          "head_candidate_count": 0,
+          "head_candidates": [],
+          "full_candidate_count": 0,
+          "full_candidates": []
+        },
+        "GT1Appli": {
+          "payload_range": [
+            "0x40040",
+            "0x15E098"
+          ],
+          "payload_size": 1171544,
+          "head_candidate_count": 0,
+          "head_candidates": [],
+          "full_candidate_count": 0,
+          "full_candidates": []
+        }
+      }
+    },
+    "v1.07": {
+      "path": "firmware/extracted/v107/gt1_sys_v107/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "6a3110cd42c4b129494a93bc88d4f218e2e0b9377868ca051018b28696d6c22f",
+      "blocks": {
+        "GT1Upd": {
+          "payload_range": [
+            "0x2040",
+            "0x235A7"
+          ],
+          "payload_size": 136551,
+          "head_candidate_count": 0,
+          "head_candidates": [],
+          "full_candidate_count": 0,
+          "full_candidates": []
+        },
+        "GT1Appli": {
+          "payload_range": [
+            "0x40040",
+            "0x15E7A5"
+          ],
+          "payload_size": 1173349,
+          "head_candidate_count": 0,
+          "head_candidates": [],
+          "full_candidate_count": 0,
+          "full_candidates": []
+        }
+      }
+    },
+    "v1.08": {
+      "path": "firmware/extracted/v108/gt1_sys_v108/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "7219679a87e985316264544423c9940ccbcbadeb2df0b2f13711ae57194cb612",
+      "blocks": {
+        "GT1Upd": {
+          "payload_range": [
+            "0x2040",
+            "0x235A7"
+          ],
+          "payload_size": 136551,
+          "head_candidate_count": 0,
+          "head_candidates": [],
+          "full_candidate_count": 0,
+          "full_candidates": []
+        },
+        "GT1Appli": {
+          "payload_range": [
+            "0x40040",
+            "0x15E805"
+          ],
+          "payload_size": 1173445,
+          "head_candidate_count": 0,
+          "head_candidates": [],
+          "full_candidate_count": 0,
+          "full_candidates": []
+        }
+      }
+    },
+    "v1.09": {
+      "path": "firmware/extracted/v109/gt1_sys_v109/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "412ebf5ffdc48554454c27df47f61428f046ea0a7d93f5c77b7f0302861abdbf",
+      "blocks": {
+        "GT1Upd": {
+          "payload_range": [
+            "0x2040",
+            "0x235A7"
+          ],
+          "payload_size": 136551,
+          "head_candidate_count": 0,
+          "head_candidates": [],
+          "full_candidate_count": 0,
+          "full_candidates": []
+        },
+        "GT1Appli": {
+          "payload_range": [
+            "0x40040",
+            "0x15FB3A"
+          ],
+          "payload_size": 1178362,
+          "head_candidate_count": 0,
+          "head_candidates": [],
+          "full_candidate_count": 0,
+          "full_candidates": []
+        }
+      }
+    }
+  },
+  "limits": [
+    "No hit only argues against a directly stored, 4-byte-aligned vector table matching these Cortex-M slot conventions in the tested payload spans.",
+    "A failed search does not rule out ARM code, another vector-table shape, a differently aligned/relocated table, or content hidden by compression, encryption, interleaving, or another transform.",
+    "The full-table probe uses 176 words as a comparison length from the ESC91.000 bootstrap; it is not an assertion about GT-1 hardware interrupt count.",
+    "No device was accessed and no firmware was modified."
+  ]
+}

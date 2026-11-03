@@ -1,0 +1,50 @@
+program=GT1ROM.BIN
+language=ARM:LE:32:Cortex
+scope=file offsets 0x000000-0x001FFF only
+mapping=runtime 0x00FFFFD0 + file_offset
+TMode=1 across bounded first block
+early_entry=file 0x2F0 runtime 010002c0
+reset_entry=file 0xB14 runtime 01000ae4
+disassembled_instructions_in_block=755
+instructions_from_010002c0:
+010002c0  ldr.w  sp, [0x010002d0]
+010002c4  bl  0x01000bb0
+010002c8  ldr  r0, [0x010002cc]
+010002ca  bx  r0
+010002d4  orr  r0, r0
+010002d8  bx  r0
+010002dc  push  {r0,lr}
+010002de  ldrh.w  r2, [sp,#0x0]
+010002e2  ubfx  r1, r2
+010002e6  asrs  r2, r1
+010002e8  add.w  r2, r1
+010002ec  asrs  r2, r2
+010002ee  ldrh.w  r3, [sp,#0x0]
+010002f2  and  r3, r3
+010002f6  add.w  r2, r2
+010002fa  ldr  r3, [0x01000388]
+instructions_from_01000ae4:
+01000ae4  ldr  r0, [0x01000afc]
+01000ae6  bx  r0
+01000b00  push  {r4,lr}
+01000b02  movs  r0, #0x3
+01000b04  mov  r2, r0
+01000b06  ldr  r3, [0x01000b74]
+01000b08  ldr  r1, [r3,#0x0]
+01000b0a  movw  r3, #0xf8ff
+01000b0e  ands  r1, r3
+01000b10  ldr  r3, [0x01000b78]
+01000b12  orrs  r3, r1
+01000b14  orr.w  r1, r3
+01000b18  ldr  r3, [0x01000b74]
+01000b1a  str  r1, [r3,#0x0]
+01000b1c  nop  <UNSUPPORTED>
+01000b1e  subs  r0, r0
+01000b20  movs  r1, #0x1f
+01000b22  cmp  r0, #0x0
+01000b24  bge  0x01000b38
+01000b26  lsls  r2, r1
+01000b28  lsrs  r4, r2
+01000b2a  ldr  r2, [0x01000b74]
+01000b2c  adds  r2, #0xc
+01000b2e  and  r3, r0

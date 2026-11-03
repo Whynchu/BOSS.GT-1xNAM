@@ -1,0 +1,122 @@
+{
+  "read_only": true,
+  "scope": "Static package and binary comparison; no device access or firmware modification.",
+  "sources": {
+    "GT-1_v1.09": {
+      "path": "firmware/extracted/v109/gt1_sys_v109/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "412ebf5ffdc48554454c27df47f61428f046ea0a7d93f5c77b7f0302861abdbf"
+    },
+    "KATANA_v4.00_archive": {
+      "path": "firmware/work/reference/esc2-comparators/katana_v400/original/katana_sys_v400.zip",
+      "size": 1202280,
+      "sha256": "f24b9c5276e1ed77c6396a61ba031293a11cccfdf7b516cca8f775ee7b55a4a2",
+      "members": [
+        {
+          "name": "katana_sys_v400/KATANARM.BIN",
+          "size": 4194304,
+          "crc32": "0x8554DF58"
+        },
+        {
+          "name": "katana_sys_v400/ROMINFO.TXT",
+          "size": 16,
+          "crc32": "0x910B3EFC"
+        }
+      ]
+    },
+    "KATANA_v4.00_image": {
+      "path": "firmware/work/reference/esc2-comparators/katana_v400/extracted/katana_sys_v400/KATANARM.BIN",
+      "size": 4194304,
+      "sha256": "3e17ba95e21ed10a3cb5c60af8da0a375db613cc8409eb33b6d80e4248c9b493",
+      "rominfo_exact_bytes_hex": "30 30 36 34 2c 30 35 30 37 2c 34 30 39 36 0d 0a",
+      "rominfo_ascii": "0064,0507,4096\r\n"
+    }
+  },
+  "esc91_initial_block": {
+    "range": "0x000000\u20130x001FFF",
+    "GT-1_label": "ESC91.000",
+    "KATANA_label": "ESC91.000",
+    "GT-1_sha256": "70e91d0d1e6159007930eb5af0a90dc97038528ecb56af55943350a49e77573d",
+    "KATANA_sha256": "e554969f3128d4cff6d2ca15023af634130251e4d5f907ce6884574705a946b4",
+    "byte_identical": false,
+    "different_byte_positions_count": 2449,
+    "common_prefix_bytes": 12
+  },
+  "sections": {
+    "updater": {
+      "GT-1_v1.09": {
+        "header_offset": "0x002000",
+        "header_label": "BSSESC2:GT1Upd",
+        "stored_length_offset": "0x002030",
+        "stored_length": "0x21567",
+        "payload_start": "0x002040",
+        "payload_end_exclusive": "0x0235A7",
+        "stored_payload_sha256": "864cebee6e15be9da8e9dca9c756bf720f35d4454f91b8fc466eaf4c23f9966a",
+        "checksum_offset": "0x002034",
+        "checksum_field": "0x01000EBA",
+        "modulo_2_32_byte_sum": "0x01000EBA",
+        "checksum_equals_direct_sum": true,
+        "expanded_length_candidate_offset": "0x00203C",
+        "expanded_length_candidate": "0x2A478",
+        "first_64_payload_bytes": "ff 4f f0 08 00 80 f3 11 88 ff 36 48 37 49 37 4a 00 f0 77 37 f8 37 f7 f0 00 f0 42 ff f2 55 38 fb f0 2e ff f0 38 03 00 39 11 02 ae 0c 01 25 f8 38 13 02 30 23 02 39 2a fb f0 1c 23 00 39 03 00 27"
+      },
+      "KATANA_v4.00": {
+        "header_offset": "0x002000",
+        "header_label": "AP068 Updater",
+        "stored_length_offset": "0x002030",
+        "stored_length": "0x1EEFD",
+        "payload_start": "0x002040",
+        "payload_end_exclusive": "0x020F3D",
+        "stored_payload_sha256": "7be6bfaaa96f5357bf84dc53675d92828cd151d109505ad2255e681e74ad42ff",
+        "checksum_offset": "0x002034",
+        "checksum_field": "0x00EE30F5",
+        "modulo_2_32_byte_sum": "0x00EE30F5",
+        "checksum_equals_direct_sum": true,
+        "expanded_length_candidate_offset": "0x00203C",
+        "expanded_length_candidate": "0x2680C",
+        "first_64_payload_bytes": "ff 4f f0 08 00 80 f3 11 88 ff 36 48 37 49 37 4a 00 f0 77 37 f8 37 f7 f0 00 f0 42 ff f2 55 38 fb f0 2e ff f0 38 03 00 39 11 02 ae 0c 01 25 f8 38 13 02 30 23 02 39 2a fb f0 1c 23 00 39 03 00 27"
+      },
+      "common_prefix_bytes": 194,
+      "common_prefix_sha256": "9a86daad33fe1795cdf8da940372481d19f52942ddf785109c17d3b5163c5d48",
+      "common_prefix_exact_match": true
+    },
+    "application": {
+      "GT-1_v1.09": {
+        "header_offset": "0x040000",
+        "header_label": "BSSESC2:GT1Appli",
+        "stored_length_offset": "0x040030",
+        "stored_length": "0x11FAFA",
+        "payload_start": "0x040040",
+        "payload_end_exclusive": "0x15FB3A",
+        "stored_payload_sha256": "2945b15fe45aede58d10fb78e7475d72373fd1d202f5e07839566d80663c1f34",
+        "checksum_offset": "0x040034",
+        "checksum_field": "0x0886AB09",
+        "modulo_2_32_byte_sum": "0x0886AB09",
+        "checksum_equals_direct_sum": true,
+        "expanded_length_candidate_offset": "0x04003C",
+        "expanded_length_candidate": "0x2CD2B4",
+        "first_64_payload_bytes": "ff 4f f0 08 00 80 f3 11 88 ff 36 48 37 49 37 4a 00 f0 77 37 f8 37 f7 f0 00 f0 42 ff f2 55 38 fb f0 2e ff f0 38 03 00 39 11 02 ae 0c 01 25 f8 38 13 02 30 23 02 39 2a fb f0 1c 23 00 39 03 00 27"
+      },
+      "KATANA_v4.00": {
+        "header_offset": "0x040000",
+        "header_label": "AP068 Appli",
+        "stored_length_offset": "0x040030",
+        "stored_length": "0x121617",
+        "payload_start": "0x040040",
+        "payload_end_exclusive": "0x161657",
+        "stored_payload_sha256": "2eb17526312d3b35579d17b35bc7cba489fd165d167dcd3a9044f160931ce640",
+        "checksum_offset": "0x040034",
+        "checksum_field": "0x08A07F9D",
+        "modulo_2_32_byte_sum": "0x08A07F9D",
+        "checksum_equals_direct_sum": true,
+        "expanded_length_candidate_offset": "0x04003C",
+        "expanded_length_candidate": "0x29C49C",
+        "first_64_payload_bytes": "ff 4f f0 08 00 80 f3 11 88 ff 36 48 37 49 37 4a 00 f0 77 37 f8 37 f7 f0 00 f0 42 ff f2 55 38 fb f0 2e ff f0 38 03 00 39 11 02 ae 0c 01 25 f8 38 13 02 30 23 02 39 2a fb f0 1c 23 00 39 03 00 27"
+      },
+      "common_prefix_bytes": 194,
+      "common_prefix_sha256": "9a86daad33fe1795cdf8da940372481d19f52942ddf785109c17d3b5163c5d48",
+      "common_prefix_exact_match": true
+    }
+  },
+  "interpretation": "GT-1 and original KATANA v4.00 use an ESC91.000 first block and structurally similar 0x40-byte updater/application headers. Both bounded payloads share the first 194 bytes with GT-1. This is cross-product format/content evidence only; it does not identify the payload transform, prove that the common bytes are executable, establish application ISA, or show that KATANA firmware is compatible with GT-1."
+}

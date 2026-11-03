@@ -1,0 +1,259 @@
+{
+  "read_only": true,
+  "method": "resolve startup LDR-literal values in hash-verified copied segment; follow [r6+8] to a zero-terminated callback array",
+  "segment_runtime_base": "0x01000300",
+  "versions": {
+    "v108": {
+      "startup_entry": "0x010010ae",
+      "segment": "firmware/work/reconstructed/v108-GT1Appli-seg0.bin",
+      "segment_sha256": "5691f04c08e52373973725ede20ff9de0bc3fc0e77a160e856a11342701168a0",
+      "decoded_app": "firmware/work/decoded/v108-GT1Appli.bin",
+      "decoded_app_sha256": "c41319e5f5a1facd5e55fe2c8e56d37069e31b98e5034d6d54d932fa7713e8c1",
+      "r4_literal_address": "0x01001108",
+      "r4_literal_value": "0x01011800",
+      "r6_literal_address": "0x0100110c",
+      "r6_literal_value": "0x010108c4",
+      "callback_array_pointer_address": "0x010108cc",
+      "callback_array_address": "0x01010888",
+      "array_terminator_address": "0x010108c0",
+      "callback_count": 14,
+      "callbacks": [
+        {
+          "index": 0,
+          "entry_address": "0x01010888",
+          "pointer": "0x01002269",
+          "thumb_entry": "0x01002268",
+          "segment_offset": "0x1f68"
+        },
+        {
+          "index": 1,
+          "entry_address": "0x0101088c",
+          "pointer": "0x01001d49",
+          "thumb_entry": "0x01001d48",
+          "segment_offset": "0x1a48"
+        },
+        {
+          "index": 2,
+          "entry_address": "0x01010890",
+          "pointer": "0x0100155d",
+          "thumb_entry": "0x0100155c",
+          "segment_offset": "0x125c"
+        },
+        {
+          "index": 3,
+          "entry_address": "0x01010894",
+          "pointer": "0x01002bd9",
+          "thumb_entry": "0x01002bd8",
+          "segment_offset": "0x28d8"
+        },
+        {
+          "index": 4,
+          "entry_address": "0x01010898",
+          "pointer": "0x01002f91",
+          "thumb_entry": "0x01002f90",
+          "segment_offset": "0x2c90"
+        },
+        {
+          "index": 5,
+          "entry_address": "0x0101089c",
+          "pointer": "0x010031b5",
+          "thumb_entry": "0x010031b4",
+          "segment_offset": "0x2eb4"
+        },
+        {
+          "index": 6,
+          "entry_address": "0x010108a0",
+          "pointer": "0x01002f15",
+          "thumb_entry": "0x01002f14",
+          "segment_offset": "0x2c14"
+        },
+        {
+          "index": 7,
+          "entry_address": "0x010108a4",
+          "pointer": "0x0100322d",
+          "thumb_entry": "0x0100322c",
+          "segment_offset": "0x2f2c"
+        },
+        {
+          "index": 8,
+          "entry_address": "0x010108a8",
+          "pointer": "0x0100300d",
+          "thumb_entry": "0x0100300c",
+          "segment_offset": "0x2d0c"
+        },
+        {
+          "index": 9,
+          "entry_address": "0x010108ac",
+          "pointer": "0x01001c49",
+          "thumb_entry": "0x01001c48",
+          "segment_offset": "0x1948"
+        },
+        {
+          "index": 10,
+          "entry_address": "0x010108b0",
+          "pointer": "0x01001405",
+          "thumb_entry": "0x01001404",
+          "segment_offset": "0x1104"
+        },
+        {
+          "index": 11,
+          "entry_address": "0x010108b4",
+          "pointer": "0x0100130f",
+          "thumb_entry": "0x0100130e",
+          "segment_offset": "0x100e"
+        },
+        {
+          "index": 12,
+          "entry_address": "0x010108b8",
+          "pointer": "0x01002ec1",
+          "thumb_entry": "0x01002ec0",
+          "segment_offset": "0x2bc0"
+        },
+        {
+          "index": 13,
+          "entry_address": "0x010108bc",
+          "pointer": "0x01002c51",
+          "thumb_entry": "0x01002c50",
+          "segment_offset": "0x2950"
+        }
+      ]
+    },
+    "v109": {
+      "startup_entry": "0x0100114e",
+      "segment": "firmware/work/reconstructed/v109-GT1Appli-seg0.bin",
+      "segment_sha256": "019adcf28e4a12444d48699b0b2a386a1a5feb2e43b59d465c696ee42540b9f9",
+      "decoded_app": "firmware/work/decoded/v109-GT1Appli.bin",
+      "decoded_app_sha256": "2028d7e1f8a72e54b23a80427f53ba27629a7039a72712504a612c877556aa29",
+      "r4_literal_address": "0x010011a8",
+      "r4_literal_value": "0x01011800",
+      "r6_literal_address": "0x010011ac",
+      "r6_literal_value": "0x01010960",
+      "callback_array_pointer_address": "0x01010968",
+      "callback_array_address": "0x01010924",
+      "array_terminator_address": "0x0101095c",
+      "callback_count": 14,
+      "callbacks": [
+        {
+          "index": 0,
+          "entry_address": "0x01010924",
+          "pointer": "0x01002309",
+          "thumb_entry": "0x01002308",
+          "segment_offset": "0x2008"
+        },
+        {
+          "index": 1,
+          "entry_address": "0x01010928",
+          "pointer": "0x01001de9",
+          "thumb_entry": "0x01001de8",
+          "segment_offset": "0x1ae8"
+        },
+        {
+          "index": 2,
+          "entry_address": "0x0101092c",
+          "pointer": "0x010015fd",
+          "thumb_entry": "0x010015fc",
+          "segment_offset": "0x12fc"
+        },
+        {
+          "index": 3,
+          "entry_address": "0x01010930",
+          "pointer": "0x01002c79",
+          "thumb_entry": "0x01002c78",
+          "segment_offset": "0x2978"
+        },
+        {
+          "index": 4,
+          "entry_address": "0x01010934",
+          "pointer": "0x0100302d",
+          "thumb_entry": "0x0100302c",
+          "segment_offset": "0x2d2c"
+        },
+        {
+          "index": 5,
+          "entry_address": "0x01010938",
+          "pointer": "0x01003251",
+          "thumb_entry": "0x01003250",
+          "segment_offset": "0x2f50"
+        },
+        {
+          "index": 6,
+          "entry_address": "0x0101093c",
+          "pointer": "0x01002fb1",
+          "thumb_entry": "0x01002fb0",
+          "segment_offset": "0x2cb0"
+        },
+        {
+          "index": 7,
+          "entry_address": "0x01010940",
+          "pointer": "0x010032c9",
+          "thumb_entry": "0x010032c8",
+          "segment_offset": "0x2fc8"
+        },
+        {
+          "index": 8,
+          "entry_address": "0x01010944",
+          "pointer": "0x010030a9",
+          "thumb_entry": "0x010030a8",
+          "segment_offset": "0x2da8"
+        },
+        {
+          "index": 9,
+          "entry_address": "0x01010948",
+          "pointer": "0x01001ce9",
+          "thumb_entry": "0x01001ce8",
+          "segment_offset": "0x19e8"
+        },
+        {
+          "index": 10,
+          "entry_address": "0x0101094c",
+          "pointer": "0x010014a5",
+          "thumb_entry": "0x010014a4",
+          "segment_offset": "0x11a4"
+        },
+        {
+          "index": 11,
+          "entry_address": "0x01010950",
+          "pointer": "0x010013af",
+          "thumb_entry": "0x010013ae",
+          "segment_offset": "0x10ae"
+        },
+        {
+          "index": 12,
+          "entry_address": "0x01010954",
+          "pointer": "0x01002f61",
+          "thumb_entry": "0x01002f60",
+          "segment_offset": "0x2c60"
+        },
+        {
+          "index": 13,
+          "entry_address": "0x01010958",
+          "pointer": "0x01002cf1",
+          "thumb_entry": "0x01002cf0",
+          "segment_offset": "0x29f0"
+        }
+      ]
+    }
+  },
+  "ghidra_followups": {
+    "v108": {
+      "report": "firmware/work/ghidra-combined-v108-app-02003-entry-dispatch.txt",
+      "report_sha256": "509c4203898846b81f91c969f9b69352588de8a3e2f29b09b3a55670235ba252",
+      "method": "Ghidra 12.2 ARM:LE:32:v7, Thumb context; combined image/copy mapping and explicit 0x600004A8 seed",
+      "finding": "Same 0x600004A8 dispatch body and four callback slots as v1.09; startup loop uses the v1.08 callback array located at 0x01010888",
+      "all_callbacks_report": "firmware/work/ghidra-combined-v108-app-init-callbacks.txt",
+      "all_callbacks_report_sha256": "d2853b9cf7b7670e67b77000dd9d25c12b3cc75af497ed50fa0a9cecba2eb646"
+    },
+    "v109": {
+      "report": "firmware/work/ghidra-combined-v109-app-init-callbacks.txt",
+      "report_sha256": "1aefc2a76e433be5dd1d319aec2414c84e32a1d28b481e0b11fa787114728e50",
+      "method": "Ghidra 12.2 ARM:LE:32:v7, Thumb context; combined image/copy mapping, startup entries, 0x600004A8, and all 14 callback entries seeded",
+      "finding": "All 14 entries begin with coherent Thumb prologues in the bounded report; no aligned 0x02003xxx words occur in either reconstructed first-copy source interval"
+    }
+  },
+  "interpretation_limits": [
+    "The startup code calls each nonzero pointer in its array; this establishes callback reachability from the startup loop, not semantic roles.",
+    "The app's first call through the 0x020030B4 table occurs before either version's callback loop, so these later arrays cannot alone explain how those slots were callable at first use.",
+    "A missing static 0x02003xxx word in the copied segment does not exclude indirect initialization or writes through other pointers.",
+    "Callback addresses and contents differ between v1.08 and v1.09; do not assume the versioned lists are interchangeable."
+  ]
+}

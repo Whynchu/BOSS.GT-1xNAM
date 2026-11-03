@@ -1,0 +1,411 @@
+{
+  "read_only": true,
+  "inputs": {
+    "A2-Lite sample": {
+      "path": "firmware/work/reference/tone-3000-embedded/weights/a2lite.namb",
+      "size": 7980,
+      "sha256": "0fa82c41815f7553b6f02820b12827a3a09ac22101e090ba82cc55aa191baa1d"
+    },
+    "pinned upstream reader": {
+      "path": "firmware/work/reference/tone-3000-embedded/namb/namb_reader.c",
+      "sha256": "c93a4575a636fbffcb05baa803858ab4cdc6117a39a6ed669382b74d30a25de0"
+    },
+    "GT-1 v1.09": {
+      "path": "firmware/extracted/v109/gt1_sys_v109/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "412ebf5ffdc48554454c27df47f61428f046ea0a7d93f5c77b7f0302861abdbf"
+    },
+    "GT-100 v2.12": {
+      "path": "firmware/work/reference/esc2-comparators/gt100_v212/extracted/gt100_sys_v212/GT100ROM.BIN",
+      "size": 4194304,
+      "sha256": "0c44ab01ac310927bf8dcc95f4ab5fcc487ed106dfcc6fc067832a35a4e32d34"
+    }
+  },
+  "nam_file_structure": {
+    "magic_bytes": "BMAN",
+    "version": 1,
+    "total_size": 7980,
+    "header_bytes": 32,
+    "metadata_bytes": 48,
+    "model_block_offset": 80,
+    "model_architecture_id": 3,
+    "model_block_size": 413,
+    "weights_offset": 496,
+    "weight_count": 1871,
+    "weight_element": "little-endian IEEE-754 binary32",
+    "weights_alignment_bytes": 0,
+    "weights_size_bytes": 7484,
+    "weights_end_exclusive": 7980,
+    "sample_rate_hz": 48000.0,
+    "stored_crc32": "0x7891AC48",
+    "computed_crc32_skip_bytes_24_to_27": "0x7891AC48",
+    "crc_valid": true,
+    "all_weights_finite": true,
+    "weight_min": -2.1389217376708984,
+    "weight_max": 2.338521957397461,
+    "weight_mean": -0.01807343168916229,
+    "weights_sha256": "2fcf8fc070987830f978de7501d85d9e2055dcf9269ba1823a53bd9a43ffc4aa"
+  },
+  "candidate_firmware_numeric_islands": [
+    {
+      "GT1_file_offset": "0x0D2929",
+      "GT100_file_offset": "0x0DB8F0",
+      "byte_length": 311,
+      "sha256": "506dde0db28073744b769893b06295ee17248ce10fe6b799f00deebf74ef9c50",
+      "identical_in_both_images": true,
+      "observed_marker_byte": "0xFF",
+      "marker_stride_bytes": 9,
+      "parsed_complete_pairs": 32,
+      "pairs": [
+        [
+          0.309808969,
+          1.19772983
+        ],
+        [
+          1.00481558,
+          0.898851156
+        ],
+        [
+          0.82826978,
+          0.774210691
+        ],
+        [
+          0.724305332,
+          0.677630544
+        ],
+        [
+          0.633970976,
+          0.593111336
+        ],
+        [
+          0.554897666,
+          0.519145489
+        ],
+        [
+          0.48567006,
+          0.45416382
+        ],
+        [
+          0.41933465,
+          0.376505852
+        ],
+        [
+          0.318723857,
+          1.23170626
+        ],
+        [
+          1.03331947,
+          0.924349248
+        ],
+        [
+          0.851765633,
+          0.796173036
+        ],
+        [
+          0.744851947,
+          0.696853101
+        ],
+        [
+          0.651955068,
+          0.609936357
+        ],
+        [
+          0.570638657,
+          0.533872247
+        ],
+        [
+          0.499447256,
+          0.467047274
+        ],
+        [
+          0.431230068,
+          0.387186319
+        ],
+        [
+          0.327765226,
+          1.26615787
+        ],
+        [
+          1.06222212,
+          0.950203896
+        ],
+        [
+          0.875590086,
+          0.818442523
+        ],
+        [
+          0.765685976,
+          0.716344595
+        ],
+        [
+          0.670190692,
+          0.626996636
+        ],
+        [
+          0.586599827,
+          0.548805058
+        ],
+        [
+          0.513417125,
+          0.480110884
+        ],
+        [
+          0.443291873,
+          0.398016185
+        ],
+        [
+          0.336933047,
+          1.30108476
+        ],
+        [
+          1.09152353,
+          0.976415157
+        ],
+        [
+          0.89974314,
+          0.841019213
+        ],
+        [
+          0.786807358,
+          0.736104906
+        ],
+        [
+          0.688677847,
+          0.644292295
+        ],
+        [
+          0.602781117,
+          0.563943803
+        ],
+        [
+          0.527579725,
+          0.493354708
+        ],
+        [
+          0.455520034,
+          0.40899542
+        ]
+      ],
+      "all_parsed_values_finite": true,
+      "values_min": 0.30980896949768066,
+      "values_max": 1.3010847568511963
+    },
+    {
+      "GT1_file_offset": "0x0D2A8B",
+      "GT100_file_offset": "0x0DBA52",
+      "byte_length": 229,
+      "sha256": "78f2da3d34129864383b3ff8b49fde90c1024194e4404fa030d26bd5057402aa",
+      "identical_in_both_images": true,
+      "observed_marker_byte": "0xFF",
+      "marker_stride_bytes": 9,
+      "parsed_complete_pairs": 23,
+      "pairs": [
+        [
+          0.420124054,
+          0.355648041
+        ],
+        [
+          1.37236404,
+          1.15132213
+        ],
+        [
+          1.02990758,
+          0.949035168
+        ],
+        [
+          0.887094021,
+          0.829912186
+        ],
+        [
+          0.776432037,
+          0.726406753
+        ],
+        [
+          0.67958957,
+          0.635804176
+        ],
+        [
+          0.594839156,
+          0.556482911
+        ],
+        [
+          0.520382881,
+          0.480475485
+        ],
+        [
+          0.431402057,
+          0.365195215
+        ],
+        [
+          1.40871656,
+          1.18181932
+        ],
+        [
+          1.05718875,
+          0.974174082
+        ],
+        [
+          0.910592198,
+          0.85189569
+        ],
+        [
+          0.796998858,
+          0.745648444
+        ],
+        [
+          0.697591126,
+          0.652645946
+        ],
+        [
+          0.610595822,
+          0.571223557
+        ],
+        [
+          0.53416729,
+          0.493202776
+        ],
+        [
+          0.44282943,
+          0.37486884
+        ],
+        [
+          1.44554412,
+          1.21271527
+        ],
+        [
+          1.08482647,
+          0.999641597
+        ],
+        [
+          0.934397519,
+          0.874166548
+        ],
+        [
+          0.817834556,
+          0.765141726
+        ],
+        [
+          0.715828061,
+          0.669707894
+        ],
+        [
+          0.626558423,
+          0.586156845
+        ]
+      ],
+      "all_parsed_values_finite": true,
+      "values_min": 0.3556480407714844,
+      "values_max": 1.4455441236495972
+    },
+    {
+      "GT1_file_offset": "0x0D2400",
+      "GT100_file_offset": "0x0DB3D1",
+      "byte_length": 201,
+      "sha256": "92054dd3c4e41a4f71f946411acbcf50e51f80e619c7766758d4b5c1afb0bd85",
+      "identical_in_both_images": true,
+      "observed_marker_byte": "0xFF",
+      "marker_stride_bytes": 9,
+      "parsed_complete_pairs": 21,
+      "pairs": [
+        [
+          0.318145812,
+          0.297647953
+        ],
+        [
+          0.278470397,
+          0.26051417
+        ],
+        [
+          0.243614167,
+          0.224931732
+        ],
+        [
+          0.201958299,
+          0.170963958
+        ],
+        [
+          0.667411804,
+          0.559914052
+        ],
+        [
+          0.500867486,
+          0.461537361
+        ],
+        [
+          0.431413978,
+          0.403605163
+        ],
+        [
+          0.377596527,
+          0.353268087
+        ],
+        [
+          0.330499828,
+          0.309206039
+        ],
+        [
+          0.289283782,
+          0.27063027
+        ],
+        [
+          0.25307402,
+          0.233666137
+        ],
+        [
+          0.209800616,
+          0.177602723
+        ],
+        [
+          0.692834795,
+          0.581242263
+        ],
+        [
+          0.519946456,
+          0.479118168
+        ],
+        [
+          0.447847337,
+          0.418979228
+        ],
+        [
+          0.391979873,
+          0.36672473
+        ],
+        [
+          0.343089193,
+          0.320984244
+        ],
+        [
+          0.300303161,
+          0.280939072
+        ],
+        [
+          0.262714088,
+          0.242566913
+        ],
+        [
+          0.217792302,
+          0.18436794
+        ],
+        [
+          0.718732893,
+          0.60296905
+        ]
+      ],
+      "all_parsed_values_finite": true,
+      "values_min": 0.17096395790576935,
+      "values_max": 0.7187328934669495
+    }
+  ],
+  "comparison": {
+    "A2Lite_weights_layout": "1,871 contiguous 4-byte float32 values at an aligned offset; no 1-byte delimiter between adjacent values.",
+    "candidate_firmware_islands_layout": "observed 8 bytes interpreted as two float32 values plus a recurring 0xFF byte at 9-byte spacing in the listed spans.",
+    "conclusion": "The observed GT-1 spans are not laid out as a direct contiguous A2-Lite .namb weight array. This format difference does not rule out a different internal model/table encoding or establish what the firmware data represents.",
+    "semantic_limit": "No amp-model or NAM semantics are assigned to the candidate spans; plausible float decoding is not proof of use as float values by firmware."
+  },
+  "validation": {
+    "namb_crc_algorithm": "CRC-32/IEEE, initial 0xFFFFFFFF, reflected polynomial 0xEDB88320, final XOR 0xFFFFFFFF, bytes 24..27 excluded; reproduced from pinned namb_reader.c.",
+    "hardware_accessed": false,
+    "firmware_modified": false
+  }
+}

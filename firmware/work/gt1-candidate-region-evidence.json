@@ -1,0 +1,1628 @@
+{
+  "read_only": true,
+  "interpretation_limit": "Byte patterns and version stability do not establish semantic role, address mapping, or runtime use.",
+  "images": {
+    "v108": {
+      "path": "firmware/extracted/v108/gt1_sys_v108/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "7219679a87e985316264544423c9940ccbcbadeb2df0b2f13711ae57194cb612"
+    },
+    "v109": {
+      "path": "firmware/extracted/v109/gt1_sys_v109/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "412ebf5ffdc48554454c27df47f61428f046ea0a7d93f5c77b7f0302861abdbf"
+    }
+  },
+  "regions": {
+    "looper_big_endian_candidate": {
+      "start": "0x0B8900",
+      "end_exclusive": "0x0B8940",
+      "versions": {
+        "v108": {
+          "sha256": "37c05a872c88a5a7f225e0fc51ccb837a9191423933fa3c9011317f6c8efe8bb",
+          "bytes_hex": "25 b0 75 3d 00 bf 50 8f 3d 00 d0 a3 01 d0 b8 f6 f9 b3 40 e1 25 b0 f5 3d 00 18 55 05 85 c0 0f 15 70 19 41 b0 23 29 c0 95 2e 3d b0 38 61 c0 42 5d c0 fc 60 08 5f 57 3e 00 40 61 1d c0 6b 0d c0 dd",
+          "unique_byte_values": 46,
+          "zero_count": 4,
+          "ff_count": 0,
+          "little_endian_u32": [
+            {
+              "offset": "0x0B8900",
+              "value": "0x3D75B025"
+            },
+            {
+              "offset": "0x0B8904",
+              "value": "0x8F50BF00"
+            },
+            {
+              "offset": "0x0B8908",
+              "value": "0xA3D0003D"
+            },
+            {
+              "offset": "0x0B890C",
+              "value": "0xF6B8D001"
+            },
+            {
+              "offset": "0x0B8910",
+              "value": "0xE140B3F9"
+            },
+            {
+              "offset": "0x0B8914",
+              "value": "0x3DF5B025"
+            },
+            {
+              "offset": "0x0B8918",
+              "value": "0x05551800"
+            },
+            {
+              "offset": "0x0B891C",
+              "value": "0x150FC085"
+            },
+            {
+              "offset": "0x0B8920",
+              "value": "0xB0411970"
+            },
+            {
+              "offset": "0x0B8924",
+              "value": "0x95C02923"
+            },
+            {
+              "offset": "0x0B8928",
+              "value": "0x38B03D2E"
+            },
+            {
+              "offset": "0x0B892C",
+              "value": "0x5D42C061"
+            },
+            {
+              "offset": "0x0B8930",
+              "value": "0x0860FCC0"
+            },
+            {
+              "offset": "0x0B8934",
+              "value": "0x003E575F"
+            },
+            {
+              "offset": "0x0B8938",
+              "value": "0xC01D6140"
+            },
+            {
+              "offset": "0x0B893C",
+              "value": "0xDDC00D6B"
+            }
+          ]
+        },
+        "v109": {
+          "sha256": "1f3c33168aed9a18d8eb91237afd06c160c2638afb628cecffeab7230ff03f02",
+          "bytes_hex": "d1 2a 2d a4 a8 52 25 b4 30 f9 a1 25 b4 38 99 80 c8 25 b4 25 40 99 80 d8 25 b4 60 a1 e8 25 b4 6c a1 89 f8 25 b4 78 a1 08 65 60 28 b1 84 a1 10 24 79 b4 90 a1 1c 79 b4 9c ad 30 7d a4 24 d1 40 28",
+          "unique_byte_values": 36,
+          "zero_count": 0,
+          "ff_count": 0,
+          "little_endian_u32": [
+            {
+              "offset": "0x0B8900",
+              "value": "0xA42D2AD1"
+            },
+            {
+              "offset": "0x0B8904",
+              "value": "0xB42552A8"
+            },
+            {
+              "offset": "0x0B8908",
+              "value": "0x25A1F930"
+            },
+            {
+              "offset": "0x0B890C",
+              "value": "0x809938B4"
+            },
+            {
+              "offset": "0x0B8910",
+              "value": "0x25B425C8"
+            },
+            {
+              "offset": "0x0B8914",
+              "value": "0xD8809940"
+            },
+            {
+              "offset": "0x0B8918",
+              "value": "0xA160B425"
+            },
+            {
+              "offset": "0x0B891C",
+              "value": "0x6CB425E8"
+            },
+            {
+              "offset": "0x0B8920",
+              "value": "0x25F889A1"
+            },
+            {
+              "offset": "0x0B8924",
+              "value": "0x08A178B4"
+            },
+            {
+              "offset": "0x0B8928",
+              "value": "0xB1286065"
+            },
+            {
+              "offset": "0x0B892C",
+              "value": "0x2410A184"
+            },
+            {
+              "offset": "0x0B8930",
+              "value": "0xA190B479"
+            },
+            {
+              "offset": "0x0B8934",
+              "value": "0x9CB4791C"
+            },
+            {
+              "offset": "0x0B8938",
+              "value": "0xA47D30AD"
+            },
+            {
+              "offset": "0x0B893C",
+              "value": "0x2840D124"
+            }
+          ]
+        }
+      },
+      "same_bytes_across_versions": false,
+      "differing_byte_count": 64
+    },
+    "looper_table_candidate": {
+      "start": "0x0BEBD0",
+      "end_exclusive": "0x0BEC10",
+      "versions": {
+        "v108": {
+          "sha256": "81d335ba8f47fa37963992759e57e4a04e30626baad38274bd870c4625933194",
+          "bytes_hex": "47 0f 59 0f 6b 0f 7d 0f 8f 0f a1 0f b3 0f 00 c5 0f d7 0f e9 0f fb 0f 0d 1f 1f 1f 31 1f 43 1f 00 55 1f 67 1f 79 1f 8b 1f 9d 1f af 1f c1 1f d3 1f 00 e5 1f f7 1f 09 2f 1b 2f 2d 2f 3f 2f 51 2f 63",
+          "unique_byte_values": 34,
+          "zero_count": 3,
+          "ff_count": 0,
+          "little_endian_u32": [
+            {
+              "offset": "0x0BEBD0",
+              "value": "0x0F590F47"
+            },
+            {
+              "offset": "0x0BEBD4",
+              "value": "0x0F7D0F6B"
+            },
+            {
+              "offset": "0x0BEBD8",
+              "value": "0x0FA10F8F"
+            },
+            {
+              "offset": "0x0BEBDC",
+              "value": "0xC5000FB3"
+            },
+            {
+              "offset": "0x0BEBE0",
+              "value": "0xE90FD70F"
+            },
+            {
+              "offset": "0x0BEBE4",
+              "value": "0x0D0FFB0F"
+            },
+            {
+              "offset": "0x0BEBE8",
+              "value": "0x311F1F1F"
+            },
+            {
+              "offset": "0x0BEBEC",
+              "value": "0x001F431F"
+            },
+            {
+              "offset": "0x0BEBF0",
+              "value": "0x1F671F55"
+            },
+            {
+              "offset": "0x0BEBF4",
+              "value": "0x1F8B1F79"
+            },
+            {
+              "offset": "0x0BEBF8",
+              "value": "0x1FAF1F9D"
+            },
+            {
+              "offset": "0x0BEBFC",
+              "value": "0x1FD31FC1"
+            },
+            {
+              "offset": "0x0BEC00",
+              "value": "0xF71FE500"
+            },
+            {
+              "offset": "0x0BEC04",
+              "value": "0x1B2F091F"
+            },
+            {
+              "offset": "0x0BEC08",
+              "value": "0x3F2F2D2F"
+            },
+            {
+              "offset": "0x0BEC0C",
+              "value": "0x632F512F"
+            }
+          ]
+        },
+        "v109": {
+          "sha256": "0f8bb0a95139ff613c3c5a5020e8ef76100773b0cefd4938785be09ed038f179",
+          "bytes_hex": "41 f8 41 55 58 99 40 60 99 40 68 99 40 70 71 04 95 78 99 40 80 99 40 84 99 40 40 51 8c aa 99 40 90 99 40 94 99 40 98 99 40 9c aa 99 40 a0 99 40 a4 99 40 a8 99 40 b0 ac 99 40 0c 70 00 b8 99 40",
+          "unique_byte_values": 30,
+          "zero_count": 1,
+          "ff_count": 0,
+          "little_endian_u32": [
+            {
+              "offset": "0x0BEBD0",
+              "value": "0x5541F841"
+            },
+            {
+              "offset": "0x0BEBD4",
+              "value": "0x60409958"
+            },
+            {
+              "offset": "0x0BEBD8",
+              "value": "0x99684099"
+            },
+            {
+              "offset": "0x0BEBDC",
+              "value": "0x04717040"
+            },
+            {
+              "offset": "0x0BEBE0",
+              "value": "0x40997895"
+            },
+            {
+              "offset": "0x0BEBE4",
+              "value": "0x84409980"
+            },
+            {
+              "offset": "0x0BEBE8",
+              "value": "0x51404099"
+            },
+            {
+              "offset": "0x0BEBEC",
+              "value": "0x4099AA8C"
+            },
+            {
+              "offset": "0x0BEBF0",
+              "value": "0x94409990"
+            },
+            {
+              "offset": "0x0BEBF4",
+              "value": "0x99984099"
+            },
+            {
+              "offset": "0x0BEBF8",
+              "value": "0x99AA9C40"
+            },
+            {
+              "offset": "0x0BEBFC",
+              "value": "0x4099A040"
+            },
+            {
+              "offset": "0x0BEC00",
+              "value": "0xA84099A4"
+            },
+            {
+              "offset": "0x0BEC04",
+              "value": "0xACB04099"
+            },
+            {
+              "offset": "0x0BEC08",
+              "value": "0x700C4099"
+            },
+            {
+              "offset": "0x0BEC0C",
+              "value": "0x4099B800"
+            }
+          ]
+        }
+      },
+      "same_bytes_across_versions": false,
+      "differing_byte_count": 64
+    },
+    "app_data_start": {
+      "start": "0x1FC000",
+      "end_exclusive": "0x1FC100",
+      "versions": {
+        "v108": {
+          "sha256": "c40ce17fd11b0210abe0c1f1af62762a60a3cd389811acff04fbc53215e28eee",
+          "bytes_hex": "ef 02 0d 00 e0 03 07 00 00 00 3c 3c 00 00 08 08 00 01 00 00 00 00 30 00 01 05 00 00 78 00 13 32 01 00 00 00 00 00 00 00 00 14 32 19 01 01 00 00 32 00 00 00 14 14 14 10 01 14 14 32 00 01 00 00 00 00 00 00 00 00 00 00 00 01 00 00 64 01 00 32 0a 32 32 32 00 32 00 01 00 32 01 01 01 05 64 00 00 32 32 05 05 32 32 32 07 0a 0a 02 00 01 00 32 0a 32 32 32 00 32 00 01 00 32 01 01 01 05 64 00 00 32 32 05 05 32 32 32 07 0a 0a 02 00 01 00 32 0a 32 32 32 00 32 00 01 00 32 01 01 01 05 64 00 00 32 32 05 05 32 32 32 07 0a 0a 02 00 01 00 32 0a 32 32 32 00 32 00 01 00 32 01 01 01 05 64 00 00 32 32 05 05 32 32 32 07 0a 0a 02 00 01 00 32 0a 32 32 32 00 32 00 01 00 32 01 01 01 05 64 00 00 32 32 05 05 32 32 32 07 0a 0a 02 00 01 00 32 0a 32 32 32 00 32 00 01 00 32 01 01 01 05 64 00",
+          "unique_byte_values": 20,
+          "zero_count": 82,
+          "ff_count": 0,
+          "little_endian_u32": [
+            {
+              "offset": "0x1FC000",
+              "value": "0x000D02EF"
+            },
+            {
+              "offset": "0x1FC004",
+              "value": "0x000703E0"
+            },
+            {
+              "offset": "0x1FC008",
+              "value": "0x3C3C0000"
+            },
+            {
+              "offset": "0x1FC00C",
+              "value": "0x08080000"
+            },
+            {
+              "offset": "0x1FC010",
+              "value": "0x00000100"
+            },
+            {
+              "offset": "0x1FC014",
+              "value": "0x00300000"
+            },
+            {
+              "offset": "0x1FC018",
+              "value": "0x00000501"
+            },
+            {
+              "offset": "0x1FC01C",
+              "value": "0x32130078"
+            },
+            {
+              "offset": "0x1FC020",
+              "value": "0x00000001"
+            },
+            {
+              "offset": "0x1FC024",
+              "value": "0x00000000"
+            },
+            {
+              "offset": "0x1FC028",
+              "value": "0x19321400"
+            },
+            {
+              "offset": "0x1FC02C",
+              "value": "0x00000101"
+            },
+            {
+              "offset": "0x1FC030",
+              "value": "0x00000032"
+            },
+            {
+              "offset": "0x1FC034",
+              "value": "0x10141414"
+            },
+            {
+              "offset": "0x1FC038",
+              "value": "0x32141401"
+            },
+            {
+              "offset": "0x1FC03C",
+              "value": "0x00000100"
+            },
+            {
+              "offset": "0x1FC040",
+              "value": "0x00000000"
+            },
+            {
+              "offset": "0x1FC044",
+              "value": "0x00000000"
+            },
+            {
+              "offset": "0x1FC048",
+              "value": "0x00000100"
+            },
+            {
+              "offset": "0x1FC04C",
+              "value": "0x32000164"
+            },
+            {
+              "offset": "0x1FC050",
+              "value": "0x3232320A"
+            },
+            {
+              "offset": "0x1FC054",
+              "value": "0x01003200"
+            },
+            {
+              "offset": "0x1FC058",
+              "value": "0x01013200"
+            },
+            {
+              "offset": "0x1FC05C",
+              "value": "0x00640501"
+            },
+            {
+              "offset": "0x1FC060",
+              "value": "0x05323200"
+            },
+            {
+              "offset": "0x1FC064",
+              "value": "0x32323205"
+            },
+            {
+              "offset": "0x1FC068",
+              "value": "0x020A0A07"
+            },
+            {
+              "offset": "0x1FC06C",
+              "value": "0x32000100"
+            },
+            {
+              "offset": "0x1FC070",
+              "value": "0x3232320A"
+            },
+            {
+              "offset": "0x1FC074",
+              "value": "0x01003200"
+            },
+            {
+              "offset": "0x1FC078",
+              "value": "0x01013200"
+            },
+            {
+              "offset": "0x1FC07C",
+              "value": "0x00640501"
+            },
+            {
+              "offset": "0x1FC080",
+              "value": "0x05323200"
+            },
+            {
+              "offset": "0x1FC084",
+              "value": "0x32323205"
+            },
+            {
+              "offset": "0x1FC088",
+              "value": "0x020A0A07"
+            },
+            {
+              "offset": "0x1FC08C",
+              "value": "0x32000100"
+            },
+            {
+              "offset": "0x1FC090",
+              "value": "0x3232320A"
+            },
+            {
+              "offset": "0x1FC094",
+              "value": "0x01003200"
+            },
+            {
+              "offset": "0x1FC098",
+              "value": "0x01013200"
+            },
+            {
+              "offset": "0x1FC09C",
+              "value": "0x00640501"
+            },
+            {
+              "offset": "0x1FC0A0",
+              "value": "0x05323200"
+            },
+            {
+              "offset": "0x1FC0A4",
+              "value": "0x32323205"
+            },
+            {
+              "offset": "0x1FC0A8",
+              "value": "0x020A0A07"
+            },
+            {
+              "offset": "0x1FC0AC",
+              "value": "0x32000100"
+            },
+            {
+              "offset": "0x1FC0B0",
+              "value": "0x3232320A"
+            },
+            {
+              "offset": "0x1FC0B4",
+              "value": "0x01003200"
+            },
+            {
+              "offset": "0x1FC0B8",
+              "value": "0x01013200"
+            },
+            {
+              "offset": "0x1FC0BC",
+              "value": "0x00640501"
+            },
+            {
+              "offset": "0x1FC0C0",
+              "value": "0x05323200"
+            },
+            {
+              "offset": "0x1FC0C4",
+              "value": "0x32323205"
+            },
+            {
+              "offset": "0x1FC0C8",
+              "value": "0x020A0A07"
+            },
+            {
+              "offset": "0x1FC0CC",
+              "value": "0x32000100"
+            },
+            {
+              "offset": "0x1FC0D0",
+              "value": "0x3232320A"
+            },
+            {
+              "offset": "0x1FC0D4",
+              "value": "0x01003200"
+            },
+            {
+              "offset": "0x1FC0D8",
+              "value": "0x01013200"
+            },
+            {
+              "offset": "0x1FC0DC",
+              "value": "0x00640501"
+            },
+            {
+              "offset": "0x1FC0E0",
+              "value": "0x05323200"
+            },
+            {
+              "offset": "0x1FC0E4",
+              "value": "0x32323205"
+            },
+            {
+              "offset": "0x1FC0E8",
+              "value": "0x020A0A07"
+            },
+            {
+              "offset": "0x1FC0EC",
+              "value": "0x32000100"
+            },
+            {
+              "offset": "0x1FC0F0",
+              "value": "0x3232320A"
+            },
+            {
+              "offset": "0x1FC0F4",
+              "value": "0x01003200"
+            },
+            {
+              "offset": "0x1FC0F8",
+              "value": "0x01013200"
+            },
+            {
+              "offset": "0x1FC0FC",
+              "value": "0x00640501"
+            }
+          ]
+        },
+        "v109": {
+          "sha256": "c40ce17fd11b0210abe0c1f1af62762a60a3cd389811acff04fbc53215e28eee",
+          "bytes_hex": "ef 02 0d 00 e0 03 07 00 00 00 3c 3c 00 00 08 08 00 01 00 00 00 00 30 00 01 05 00 00 78 00 13 32 01 00 00 00 00 00 00 00 00 14 32 19 01 01 00 00 32 00 00 00 14 14 14 10 01 14 14 32 00 01 00 00 00 00 00 00 00 00 00 00 00 01 00 00 64 01 00 32 0a 32 32 32 00 32 00 01 00 32 01 01 01 05 64 00 00 32 32 05 05 32 32 32 07 0a 0a 02 00 01 00 32 0a 32 32 32 00 32 00 01 00 32 01 01 01 05 64 00 00 32 32 05 05 32 32 32 07 0a 0a 02 00 01 00 32 0a 32 32 32 00 32 00 01 00 32 01 01 01 05 64 00 00 32 32 05 05 32 32 32 07 0a 0a 02 00 01 00 32 0a 32 32 32 00 32 00 01 00 32 01 01 01 05 64 00 00 32 32 05 05 32 32 32 07 0a 0a 02 00 01 00 32 0a 32 32 32 00 32 00 01 00 32 01 01 01 05 64 00 00 32 32 05 05 32 32 32 07 0a 0a 02 00 01 00 32 0a 32 32 32 00 32 00 01 00 32 01 01 01 05 64 00",
+          "unique_byte_values": 20,
+          "zero_count": 82,
+          "ff_count": 0,
+          "little_endian_u32": [
+            {
+              "offset": "0x1FC000",
+              "value": "0x000D02EF"
+            },
+            {
+              "offset": "0x1FC004",
+              "value": "0x000703E0"
+            },
+            {
+              "offset": "0x1FC008",
+              "value": "0x3C3C0000"
+            },
+            {
+              "offset": "0x1FC00C",
+              "value": "0x08080000"
+            },
+            {
+              "offset": "0x1FC010",
+              "value": "0x00000100"
+            },
+            {
+              "offset": "0x1FC014",
+              "value": "0x00300000"
+            },
+            {
+              "offset": "0x1FC018",
+              "value": "0x00000501"
+            },
+            {
+              "offset": "0x1FC01C",
+              "value": "0x32130078"
+            },
+            {
+              "offset": "0x1FC020",
+              "value": "0x00000001"
+            },
+            {
+              "offset": "0x1FC024",
+              "value": "0x00000000"
+            },
+            {
+              "offset": "0x1FC028",
+              "value": "0x19321400"
+            },
+            {
+              "offset": "0x1FC02C",
+              "value": "0x00000101"
+            },
+            {
+              "offset": "0x1FC030",
+              "value": "0x00000032"
+            },
+            {
+              "offset": "0x1FC034",
+              "value": "0x10141414"
+            },
+            {
+              "offset": "0x1FC038",
+              "value": "0x32141401"
+            },
+            {
+              "offset": "0x1FC03C",
+              "value": "0x00000100"
+            },
+            {
+              "offset": "0x1FC040",
+              "value": "0x00000000"
+            },
+            {
+              "offset": "0x1FC044",
+              "value": "0x00000000"
+            },
+            {
+              "offset": "0x1FC048",
+              "value": "0x00000100"
+            },
+            {
+              "offset": "0x1FC04C",
+              "value": "0x32000164"
+            },
+            {
+              "offset": "0x1FC050",
+              "value": "0x3232320A"
+            },
+            {
+              "offset": "0x1FC054",
+              "value": "0x01003200"
+            },
+            {
+              "offset": "0x1FC058",
+              "value": "0x01013200"
+            },
+            {
+              "offset": "0x1FC05C",
+              "value": "0x00640501"
+            },
+            {
+              "offset": "0x1FC060",
+              "value": "0x05323200"
+            },
+            {
+              "offset": "0x1FC064",
+              "value": "0x32323205"
+            },
+            {
+              "offset": "0x1FC068",
+              "value": "0x020A0A07"
+            },
+            {
+              "offset": "0x1FC06C",
+              "value": "0x32000100"
+            },
+            {
+              "offset": "0x1FC070",
+              "value": "0x3232320A"
+            },
+            {
+              "offset": "0x1FC074",
+              "value": "0x01003200"
+            },
+            {
+              "offset": "0x1FC078",
+              "value": "0x01013200"
+            },
+            {
+              "offset": "0x1FC07C",
+              "value": "0x00640501"
+            },
+            {
+              "offset": "0x1FC080",
+              "value": "0x05323200"
+            },
+            {
+              "offset": "0x1FC084",
+              "value": "0x32323205"
+            },
+            {
+              "offset": "0x1FC088",
+              "value": "0x020A0A07"
+            },
+            {
+              "offset": "0x1FC08C",
+              "value": "0x32000100"
+            },
+            {
+              "offset": "0x1FC090",
+              "value": "0x3232320A"
+            },
+            {
+              "offset": "0x1FC094",
+              "value": "0x01003200"
+            },
+            {
+              "offset": "0x1FC098",
+              "value": "0x01013200"
+            },
+            {
+              "offset": "0x1FC09C",
+              "value": "0x00640501"
+            },
+            {
+              "offset": "0x1FC0A0",
+              "value": "0x05323200"
+            },
+            {
+              "offset": "0x1FC0A4",
+              "value": "0x32323205"
+            },
+            {
+              "offset": "0x1FC0A8",
+              "value": "0x020A0A07"
+            },
+            {
+              "offset": "0x1FC0AC",
+              "value": "0x32000100"
+            },
+            {
+              "offset": "0x1FC0B0",
+              "value": "0x3232320A"
+            },
+            {
+              "offset": "0x1FC0B4",
+              "value": "0x01003200"
+            },
+            {
+              "offset": "0x1FC0B8",
+              "value": "0x01013200"
+            },
+            {
+              "offset": "0x1FC0BC",
+              "value": "0x00640501"
+            },
+            {
+              "offset": "0x1FC0C0",
+              "value": "0x05323200"
+            },
+            {
+              "offset": "0x1FC0C4",
+              "value": "0x32323205"
+            },
+            {
+              "offset": "0x1FC0C8",
+              "value": "0x020A0A07"
+            },
+            {
+              "offset": "0x1FC0CC",
+              "value": "0x32000100"
+            },
+            {
+              "offset": "0x1FC0D0",
+              "value": "0x3232320A"
+            },
+            {
+              "offset": "0x1FC0D4",
+              "value": "0x01003200"
+            },
+            {
+              "offset": "0x1FC0D8",
+              "value": "0x01013200"
+            },
+            {
+              "offset": "0x1FC0DC",
+              "value": "0x00640501"
+            },
+            {
+              "offset": "0x1FC0E0",
+              "value": "0x05323200"
+            },
+            {
+              "offset": "0x1FC0E4",
+              "value": "0x32323205"
+            },
+            {
+              "offset": "0x1FC0E8",
+              "value": "0x020A0A07"
+            },
+            {
+              "offset": "0x1FC0EC",
+              "value": "0x32000100"
+            },
+            {
+              "offset": "0x1FC0F0",
+              "value": "0x3232320A"
+            },
+            {
+              "offset": "0x1FC0F4",
+              "value": "0x01003200"
+            },
+            {
+              "offset": "0x1FC0F8",
+              "value": "0x01013200"
+            },
+            {
+              "offset": "0x1FC0FC",
+              "value": "0x00640501"
+            }
+          ]
+        }
+      },
+      "same_bytes_across_versions": true,
+      "differing_byte_count": 0
+    },
+    "reported_effect_parameter_table": {
+      "start": "0x1FE000",
+      "end_exclusive": "0x1FE100",
+      "versions": {
+        "v108": {
+          "sha256": "073249860cc64a5cb99ccd8a381dd980fea61afb467273ed45db7c648156c7c1",
+          "bytes_hex": "11 04 00 01 10 00 00 00 01 30 31 07 32 00 00 00 00 00 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09 00 0a 00 0b 00 0c 00 0d 00 0e 00 0f 00 10 00 11 00 12 00 13 00 14 00 15 00 16 00 17 00 18 00 19 00 1a 00 1b 00 1c 00 1d 00 1e 00 1f 00 20 00 21 00 22 00 23 00 24 00 25 00 26 00 27 00 28 00 29 00 2a 00 2b 00 2c 00 2d 00 2e 00 2f 00 30 00 31 00 32 00 33 00 34 00 35 00 36 00 37 00 38 00 39 00 3a 00 3b 00 3c 00 3d 00 3e 00 3f 00 40 00 41 00 42 00 43 00 44 00 45 00 46 00 47 00 48 00 49 00 4a 00 4b 00 4c 00 4d 00 4e 00 4f 00 50 00 51 00 52 00 53 00 54 00 55 00 56 00 57 00 58 00 59 00 5a 00 5b 00 5c 00 5d 00 5e 00 5f 00 60 00 61 00 62 00 63 00 63 00 63 00 63 00 63 00 63 00 63 00 63 00 63 00 63 00 63 00 63 00 63 00 63 00 63 00 63 00 63 00 63 00 63 00 63 00 63",
+          "unique_byte_values": 100,
+          "zero_count": 128,
+          "ff_count": 0,
+          "little_endian_u32": [
+            {
+              "offset": "0x1FE000",
+              "value": "0x01000411"
+            },
+            {
+              "offset": "0x1FE004",
+              "value": "0x00000010"
+            },
+            {
+              "offset": "0x1FE008",
+              "value": "0x07313001"
+            },
+            {
+              "offset": "0x1FE00C",
+              "value": "0x00000032"
+            },
+            {
+              "offset": "0x1FE010",
+              "value": "0x01000000"
+            },
+            {
+              "offset": "0x1FE014",
+              "value": "0x03000200"
+            },
+            {
+              "offset": "0x1FE018",
+              "value": "0x05000400"
+            },
+            {
+              "offset": "0x1FE01C",
+              "value": "0x07000600"
+            },
+            {
+              "offset": "0x1FE020",
+              "value": "0x09000800"
+            },
+            {
+              "offset": "0x1FE024",
+              "value": "0x0B000A00"
+            },
+            {
+              "offset": "0x1FE028",
+              "value": "0x0D000C00"
+            },
+            {
+              "offset": "0x1FE02C",
+              "value": "0x0F000E00"
+            },
+            {
+              "offset": "0x1FE030",
+              "value": "0x11001000"
+            },
+            {
+              "offset": "0x1FE034",
+              "value": "0x13001200"
+            },
+            {
+              "offset": "0x1FE038",
+              "value": "0x15001400"
+            },
+            {
+              "offset": "0x1FE03C",
+              "value": "0x17001600"
+            },
+            {
+              "offset": "0x1FE040",
+              "value": "0x19001800"
+            },
+            {
+              "offset": "0x1FE044",
+              "value": "0x1B001A00"
+            },
+            {
+              "offset": "0x1FE048",
+              "value": "0x1D001C00"
+            },
+            {
+              "offset": "0x1FE04C",
+              "value": "0x1F001E00"
+            },
+            {
+              "offset": "0x1FE050",
+              "value": "0x21002000"
+            },
+            {
+              "offset": "0x1FE054",
+              "value": "0x23002200"
+            },
+            {
+              "offset": "0x1FE058",
+              "value": "0x25002400"
+            },
+            {
+              "offset": "0x1FE05C",
+              "value": "0x27002600"
+            },
+            {
+              "offset": "0x1FE060",
+              "value": "0x29002800"
+            },
+            {
+              "offset": "0x1FE064",
+              "value": "0x2B002A00"
+            },
+            {
+              "offset": "0x1FE068",
+              "value": "0x2D002C00"
+            },
+            {
+              "offset": "0x1FE06C",
+              "value": "0x2F002E00"
+            },
+            {
+              "offset": "0x1FE070",
+              "value": "0x31003000"
+            },
+            {
+              "offset": "0x1FE074",
+              "value": "0x33003200"
+            },
+            {
+              "offset": "0x1FE078",
+              "value": "0x35003400"
+            },
+            {
+              "offset": "0x1FE07C",
+              "value": "0x37003600"
+            },
+            {
+              "offset": "0x1FE080",
+              "value": "0x39003800"
+            },
+            {
+              "offset": "0x1FE084",
+              "value": "0x3B003A00"
+            },
+            {
+              "offset": "0x1FE088",
+              "value": "0x3D003C00"
+            },
+            {
+              "offset": "0x1FE08C",
+              "value": "0x3F003E00"
+            },
+            {
+              "offset": "0x1FE090",
+              "value": "0x41004000"
+            },
+            {
+              "offset": "0x1FE094",
+              "value": "0x43004200"
+            },
+            {
+              "offset": "0x1FE098",
+              "value": "0x45004400"
+            },
+            {
+              "offset": "0x1FE09C",
+              "value": "0x47004600"
+            },
+            {
+              "offset": "0x1FE0A0",
+              "value": "0x49004800"
+            },
+            {
+              "offset": "0x1FE0A4",
+              "value": "0x4B004A00"
+            },
+            {
+              "offset": "0x1FE0A8",
+              "value": "0x4D004C00"
+            },
+            {
+              "offset": "0x1FE0AC",
+              "value": "0x4F004E00"
+            },
+            {
+              "offset": "0x1FE0B0",
+              "value": "0x51005000"
+            },
+            {
+              "offset": "0x1FE0B4",
+              "value": "0x53005200"
+            },
+            {
+              "offset": "0x1FE0B8",
+              "value": "0x55005400"
+            },
+            {
+              "offset": "0x1FE0BC",
+              "value": "0x57005600"
+            },
+            {
+              "offset": "0x1FE0C0",
+              "value": "0x59005800"
+            },
+            {
+              "offset": "0x1FE0C4",
+              "value": "0x5B005A00"
+            },
+            {
+              "offset": "0x1FE0C8",
+              "value": "0x5D005C00"
+            },
+            {
+              "offset": "0x1FE0CC",
+              "value": "0x5F005E00"
+            },
+            {
+              "offset": "0x1FE0D0",
+              "value": "0x61006000"
+            },
+            {
+              "offset": "0x1FE0D4",
+              "value": "0x63006200"
+            },
+            {
+              "offset": "0x1FE0D8",
+              "value": "0x63006300"
+            },
+            {
+              "offset": "0x1FE0DC",
+              "value": "0x63006300"
+            },
+            {
+              "offset": "0x1FE0E0",
+              "value": "0x63006300"
+            },
+            {
+              "offset": "0x1FE0E4",
+              "value": "0x63006300"
+            },
+            {
+              "offset": "0x1FE0E8",
+              "value": "0x63006300"
+            },
+            {
+              "offset": "0x1FE0EC",
+              "value": "0x63006300"
+            },
+            {
+              "offset": "0x1FE0F0",
+              "value": "0x63006300"
+            },
+            {
+              "offset": "0x1FE0F4",
+              "value": "0x63006300"
+            },
+            {
+              "offset": "0x1FE0F8",
+              "value": "0x63006300"
+            },
+            {
+              "offset": "0x1FE0FC",
+              "value": "0x63006300"
+            }
+          ]
+        },
+        "v109": {
+          "sha256": "073249860cc64a5cb99ccd8a381dd980fea61afb467273ed45db7c648156c7c1",
+          "bytes_hex": "11 04 00 01 10 00 00 00 01 30 31 07 32 00 00 00 00 00 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09 00 0a 00 0b 00 0c 00 0d 00 0e 00 0f 00 10 00 11 00 12 00 13 00 14 00 15 00 16 00 17 00 18 00 19 00 1a 00 1b 00 1c 00 1d 00 1e 00 1f 00 20 00 21 00 22 00 23 00 24 00 25 00 26 00 27 00 28 00 29 00 2a 00 2b 00 2c 00 2d 00 2e 00 2f 00 30 00 31 00 32 00 33 00 34 00 35 00 36 00 37 00 38 00 39 00 3a 00 3b 00 3c 00 3d 00 3e 00 3f 00 40 00 41 00 42 00 43 00 44 00 45 00 46 00 47 00 48 00 49 00 4a 00 4b 00 4c 00 4d 00 4e 00 4f 00 50 00 51 00 52 00 53 00 54 00 55 00 56 00 57 00 58 00 59 00 5a 00 5b 00 5c 00 5d 00 5e 00 5f 00 60 00 61 00 62 00 63 00 63 00 63 00 63 00 63 00 63 00 63 00 63 00 63 00 63 00 63 00 63 00 63 00 63 00 63 00 63 00 63 00 63 00 63 00 63 00 63",
+          "unique_byte_values": 100,
+          "zero_count": 128,
+          "ff_count": 0,
+          "little_endian_u32": [
+            {
+              "offset": "0x1FE000",
+              "value": "0x01000411"
+            },
+            {
+              "offset": "0x1FE004",
+              "value": "0x00000010"
+            },
+            {
+              "offset": "0x1FE008",
+              "value": "0x07313001"
+            },
+            {
+              "offset": "0x1FE00C",
+              "value": "0x00000032"
+            },
+            {
+              "offset": "0x1FE010",
+              "value": "0x01000000"
+            },
+            {
+              "offset": "0x1FE014",
+              "value": "0x03000200"
+            },
+            {
+              "offset": "0x1FE018",
+              "value": "0x05000400"
+            },
+            {
+              "offset": "0x1FE01C",
+              "value": "0x07000600"
+            },
+            {
+              "offset": "0x1FE020",
+              "value": "0x09000800"
+            },
+            {
+              "offset": "0x1FE024",
+              "value": "0x0B000A00"
+            },
+            {
+              "offset": "0x1FE028",
+              "value": "0x0D000C00"
+            },
+            {
+              "offset": "0x1FE02C",
+              "value": "0x0F000E00"
+            },
+            {
+              "offset": "0x1FE030",
+              "value": "0x11001000"
+            },
+            {
+              "offset": "0x1FE034",
+              "value": "0x13001200"
+            },
+            {
+              "offset": "0x1FE038",
+              "value": "0x15001400"
+            },
+            {
+              "offset": "0x1FE03C",
+              "value": "0x17001600"
+            },
+            {
+              "offset": "0x1FE040",
+              "value": "0x19001800"
+            },
+            {
+              "offset": "0x1FE044",
+              "value": "0x1B001A00"
+            },
+            {
+              "offset": "0x1FE048",
+              "value": "0x1D001C00"
+            },
+            {
+              "offset": "0x1FE04C",
+              "value": "0x1F001E00"
+            },
+            {
+              "offset": "0x1FE050",
+              "value": "0x21002000"
+            },
+            {
+              "offset": "0x1FE054",
+              "value": "0x23002200"
+            },
+            {
+              "offset": "0x1FE058",
+              "value": "0x25002400"
+            },
+            {
+              "offset": "0x1FE05C",
+              "value": "0x27002600"
+            },
+            {
+              "offset": "0x1FE060",
+              "value": "0x29002800"
+            },
+            {
+              "offset": "0x1FE064",
+              "value": "0x2B002A00"
+            },
+            {
+              "offset": "0x1FE068",
+              "value": "0x2D002C00"
+            },
+            {
+              "offset": "0x1FE06C",
+              "value": "0x2F002E00"
+            },
+            {
+              "offset": "0x1FE070",
+              "value": "0x31003000"
+            },
+            {
+              "offset": "0x1FE074",
+              "value": "0x33003200"
+            },
+            {
+              "offset": "0x1FE078",
+              "value": "0x35003400"
+            },
+            {
+              "offset": "0x1FE07C",
+              "value": "0x37003600"
+            },
+            {
+              "offset": "0x1FE080",
+              "value": "0x39003800"
+            },
+            {
+              "offset": "0x1FE084",
+              "value": "0x3B003A00"
+            },
+            {
+              "offset": "0x1FE088",
+              "value": "0x3D003C00"
+            },
+            {
+              "offset": "0x1FE08C",
+              "value": "0x3F003E00"
+            },
+            {
+              "offset": "0x1FE090",
+              "value": "0x41004000"
+            },
+            {
+              "offset": "0x1FE094",
+              "value": "0x43004200"
+            },
+            {
+              "offset": "0x1FE098",
+              "value": "0x45004400"
+            },
+            {
+              "offset": "0x1FE09C",
+              "value": "0x47004600"
+            },
+            {
+              "offset": "0x1FE0A0",
+              "value": "0x49004800"
+            },
+            {
+              "offset": "0x1FE0A4",
+              "value": "0x4B004A00"
+            },
+            {
+              "offset": "0x1FE0A8",
+              "value": "0x4D004C00"
+            },
+            {
+              "offset": "0x1FE0AC",
+              "value": "0x4F004E00"
+            },
+            {
+              "offset": "0x1FE0B0",
+              "value": "0x51005000"
+            },
+            {
+              "offset": "0x1FE0B4",
+              "value": "0x53005200"
+            },
+            {
+              "offset": "0x1FE0B8",
+              "value": "0x55005400"
+            },
+            {
+              "offset": "0x1FE0BC",
+              "value": "0x57005600"
+            },
+            {
+              "offset": "0x1FE0C0",
+              "value": "0x59005800"
+            },
+            {
+              "offset": "0x1FE0C4",
+              "value": "0x5B005A00"
+            },
+            {
+              "offset": "0x1FE0C8",
+              "value": "0x5D005C00"
+            },
+            {
+              "offset": "0x1FE0CC",
+              "value": "0x5F005E00"
+            },
+            {
+              "offset": "0x1FE0D0",
+              "value": "0x61006000"
+            },
+            {
+              "offset": "0x1FE0D4",
+              "value": "0x63006200"
+            },
+            {
+              "offset": "0x1FE0D8",
+              "value": "0x63006300"
+            },
+            {
+              "offset": "0x1FE0DC",
+              "value": "0x63006300"
+            },
+            {
+              "offset": "0x1FE0E0",
+              "value": "0x63006300"
+            },
+            {
+              "offset": "0x1FE0E4",
+              "value": "0x63006300"
+            },
+            {
+              "offset": "0x1FE0E8",
+              "value": "0x63006300"
+            },
+            {
+              "offset": "0x1FE0EC",
+              "value": "0x63006300"
+            },
+            {
+              "offset": "0x1FE0F0",
+              "value": "0x63006300"
+            },
+            {
+              "offset": "0x1FE0F4",
+              "value": "0x63006300"
+            },
+            {
+              "offset": "0x1FE0F8",
+              "value": "0x63006300"
+            },
+            {
+              "offset": "0x1FE0FC",
+              "value": "0x63006300"
+            }
+          ]
+        }
+      },
+      "same_bytes_across_versions": true,
+      "differing_byte_count": 0
+    },
+    "reported_sparse_tail": {
+      "start": "0x331758",
+      "end_exclusive": "0x3317A0",
+      "versions": {
+        "v108": {
+          "sha256": "51cfa32fece0135f38198da2529e7c6a0c1f53747984d55705077b7f6920cc76",
+          "bytes_hex": "ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff",
+          "unique_byte_values": 1,
+          "zero_count": 0,
+          "ff_count": 72,
+          "little_endian_u32": [
+            {
+              "offset": "0x331758",
+              "value": "0xFFFFFFFF"
+            },
+            {
+              "offset": "0x33175C",
+              "value": "0xFFFFFFFF"
+            },
+            {
+              "offset": "0x331760",
+              "value": "0xFFFFFFFF"
+            },
+            {
+              "offset": "0x331764",
+              "value": "0xFFFFFFFF"
+            },
+            {
+              "offset": "0x331768",
+              "value": "0xFFFFFFFF"
+            },
+            {
+              "offset": "0x33176C",
+              "value": "0xFFFFFFFF"
+            },
+            {
+              "offset": "0x331770",
+              "value": "0xFFFFFFFF"
+            },
+            {
+              "offset": "0x331774",
+              "value": "0xFFFFFFFF"
+            },
+            {
+              "offset": "0x331778",
+              "value": "0xFFFFFFFF"
+            },
+            {
+              "offset": "0x33177C",
+              "value": "0xFFFFFFFF"
+            },
+            {
+              "offset": "0x331780",
+              "value": "0xFFFFFFFF"
+            },
+            {
+              "offset": "0x331784",
+              "value": "0xFFFFFFFF"
+            },
+            {
+              "offset": "0x331788",
+              "value": "0xFFFFFFFF"
+            },
+            {
+              "offset": "0x33178C",
+              "value": "0xFFFFFFFF"
+            },
+            {
+              "offset": "0x331790",
+              "value": "0xFFFFFFFF"
+            },
+            {
+              "offset": "0x331794",
+              "value": "0xFFFFFFFF"
+            },
+            {
+              "offset": "0x331798",
+              "value": "0xFFFFFFFF"
+            },
+            {
+              "offset": "0x33179C",
+              "value": "0xFFFFFFFF"
+            }
+          ]
+        },
+        "v109": {
+          "sha256": "51cfa32fece0135f38198da2529e7c6a0c1f53747984d55705077b7f6920cc76",
+          "bytes_hex": "ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff",
+          "unique_byte_values": 1,
+          "zero_count": 0,
+          "ff_count": 72,
+          "little_endian_u32": [
+            {
+              "offset": "0x331758",
+              "value": "0xFFFFFFFF"
+            },
+            {
+              "offset": "0x33175C",
+              "value": "0xFFFFFFFF"
+            },
+            {
+              "offset": "0x331760",
+              "value": "0xFFFFFFFF"
+            },
+            {
+              "offset": "0x331764",
+              "value": "0xFFFFFFFF"
+            },
+            {
+              "offset": "0x331768",
+              "value": "0xFFFFFFFF"
+            },
+            {
+              "offset": "0x33176C",
+              "value": "0xFFFFFFFF"
+            },
+            {
+              "offset": "0x331770",
+              "value": "0xFFFFFFFF"
+            },
+            {
+              "offset": "0x331774",
+              "value": "0xFFFFFFFF"
+            },
+            {
+              "offset": "0x331778",
+              "value": "0xFFFFFFFF"
+            },
+            {
+              "offset": "0x33177C",
+              "value": "0xFFFFFFFF"
+            },
+            {
+              "offset": "0x331780",
+              "value": "0xFFFFFFFF"
+            },
+            {
+              "offset": "0x331784",
+              "value": "0xFFFFFFFF"
+            },
+            {
+              "offset": "0x331788",
+              "value": "0xFFFFFFFF"
+            },
+            {
+              "offset": "0x33178C",
+              "value": "0xFFFFFFFF"
+            },
+            {
+              "offset": "0x331790",
+              "value": "0xFFFFFFFF"
+            },
+            {
+              "offset": "0x331794",
+              "value": "0xFFFFFFFF"
+            },
+            {
+              "offset": "0x331798",
+              "value": "0xFFFFFFFF"
+            },
+            {
+              "offset": "0x33179C",
+              "value": "0xFFFFFFFF"
+            }
+          ]
+        }
+      },
+      "same_bytes_across_versions": true,
+      "differing_byte_count": 0
+    }
+  },
+  "windows": {
+    "around_0x0B8914": {
+      "start": "0x0B8800",
+      "end_exclusive": "0x0B8A00",
+      "size": 512,
+      "differing_bytes": 507,
+      "first_difference": "0x0B8800",
+      "last_difference": "0x0B89FF"
+    },
+    "around_0x0BEBE4": {
+      "start": "0x0BEB00",
+      "end_exclusive": "0x0BEC80",
+      "size": 384,
+      "differing_bytes": 383,
+      "first_difference": "0x0BEB00",
+      "last_difference": "0x0BEC7F"
+    },
+    "app_tail_0x1FC000_to_0x200000": {
+      "start": "0x1FC000",
+      "end_exclusive": "0x200000",
+      "size": 16384,
+      "differing_bytes": 0,
+      "first_difference": null,
+      "last_difference": null
+    }
+  },
+  "app_anchor_search": {
+    "ESC91.000": {
+      "needle_hex": "45 53 43 39 31 2e 30 30 30",
+      "hits": {
+        "v108": [],
+        "v109": []
+      }
+    },
+    "reset_sp_0x01011240": {
+      "needle_hex": "40 12 01 01",
+      "hits": {
+        "v108": [],
+        "v109": []
+      }
+    },
+    "reset_pc_0x01000AE5": {
+      "needle_hex": "e5 0a 00 01",
+      "hits": {
+        "v108": [],
+        "v109": []
+      }
+    },
+    "GT1Upd_marker": {
+      "needle_hex": "42 53 53 45 53 43 32 3a 47 54 31 55 70 64",
+      "hits": {
+        "v108": [],
+        "v109": []
+      }
+    }
+  }
+}

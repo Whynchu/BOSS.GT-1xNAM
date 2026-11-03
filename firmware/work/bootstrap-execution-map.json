@@ -1,0 +1,115 @@
+{
+  "read_only": true,
+  "image": "firmware/extracted/v109/gt1_sys_v109/GT1ROM.BIN",
+  "size": 4194304,
+  "sha256": "412ebf5ffdc48554454c27df47f61428f046ea0a7d93f5c77b7f0302861abdbf",
+  "mapping": "runtime_address = 0x00FFFFD0 + file_offset is supported for bootstrap code; section bases separately map as runtime_address = 0x03000000 + file_offset at the two headers",
+  "reset_vector": {
+    "sp": "0x1011240",
+    "pc": "0x1000ae5"
+  },
+  "trampoline": {
+    "file_offset": "0x2f0",
+    "sequence": "load SP from file 0x300; BL runtime 0x01000BB0 (file 0xBE0); load entry from 0x2FC; BX entry",
+    "stack_value": "0x1028000",
+    "entry_value": "0x10009f1"
+  },
+  "loader_entry": {
+    "file_offset": "0xA20",
+    "runtime": "0x10009f0",
+    "selected_by_literal": "0x10009f1",
+    "validator_call_runtime": "0x010009BC",
+    "decoder_call_runtime": "0x010008DA",
+    "decoder_entry_file_offset": "0x90A",
+    "reader_entry_runtime": "0x010008C0",
+    "reader_entry_file_offset": "0x8F0",
+    "section_base_candidates": [
+      "0x03002000",
+      "0x03040000"
+    ],
+    "section_base_file_offsets": [
+      "0x2000",
+      "0x40000"
+    ],
+    "header_arguments": {
+      "+0x2c": "source offset from header; added to section base",
+      "+0x30": "stored byte count on zero-expanded-size copy path",
+      "+0x34": "additive byte-sum checksum candidate",
+      "+0x38": "destination address",
+      "+0x3c": "expanded output length / decoder bound"
+    },
+    "section_base_to_file_relation": "runtime_address = 0x03000000 + header_file_offset"
+  },
+  "transform_record_table": {
+    "derived_from": "routine at file 0xBE0 loads two literal bounds and walks two 16-byte records; only separate reachability should be claimed where caller evidence exists",
+    "start_literal_file_offset": "0xbfc",
+    "end_literal_file_offset": "0xc00",
+    "start_runtime": "0x1000c64",
+    "end_runtime_exclusive": "0x1000c84",
+    "first_record_runtime": "0x1000c64",
+    "first_record_file_offset": "0xc94",
+    "stride": 16,
+    "count": 2,
+    "records": [
+      {
+        "file_offset": "0xc94",
+        "words_le": [
+          "0x1000c84",
+          "0x1010000",
+          "0x28",
+          "0x1000bd4"
+        ]
+      },
+      {
+        "file_offset": "0xca4",
+        "words_le": [
+          "0x1000cac",
+          "0x1010028",
+          "0x1218",
+          "0x1000be4"
+        ]
+      }
+    ],
+    "all_ff": false,
+    "sha256": "9cc8c2d4d1d977071386dba22aa6f3f07b6d25f1d87a6fdd9c2ec66500d85431"
+  },
+  "validation_callback_table": {
+    "derived_from": "LDR literal at 0x9C4; validator indexes four entries with stride 8",
+    "literal_file_offset": "0x9e8",
+    "table_runtime": "0x1010028",
+    "table_file_offset": "0x10058",
+    "stride": 8,
+    "count": 4,
+    "entries": [],
+    "inside_full_image_candidate_map": true,
+    "candidate_full_image_file_offset": "0x10058",
+    "bytes_at_candidate_offset": "1ea864d9f12734ce35befa1a23d4faea443224ea700a9e8316d0fedb48810f80"
+  },
+  "containers": [
+    {
+      "name": "GT1Upd",
+      "header": "0x2000",
+      "payload_start": "0x2040",
+      "stored_length": "0x21567",
+      "payload_end_exclusive": "0x235a7",
+      "checksum_field": "0x1000eba",
+      "byte_sum_mod32": "0x1000eba"
+    },
+    {
+      "name": "GT1Appli",
+      "header": "0x40000",
+      "payload_start": "0x40040",
+      "stored_length": "0x11fafa",
+      "payload_end_exclusive": "0x15fb3a",
+      "checksum_field": "0x886ab09",
+      "byte_sum_mod32": "0x886ab09"
+    }
+  ],
+  "interpretation_limits": [
+    "Routine at 0xBE0 walks two records and is called from its local startup sequence; exact record semantics are inferred from register use.",
+    "If the records are interpreted as source/destination/length/callback tuples, callback runtime values 0x01000BD4 and 0x01000BE4 map to file offsets 0xC04 and 0xC14.",
+    "Loader at file 0xA20 calls decoder entry at runtime 0x010008DA (file 0x90A). Its section-base constants exactly equal 0x03000000 plus the respective header file offsets; an instruction-derived bounded decoder probe is separately recorded.",
+    "Decoder entry at file 0x90A uses reader runtime 0x010008C0 (file 0x8F0) and initializes a ring at runtime 0x01010028; the ring address falls in the full image candidate mapping at file 0x10058, but runtime placement is still an interpretation.",
+    "Byte recurrence across versions does not prove a shared runtime role."
+  ]
+}

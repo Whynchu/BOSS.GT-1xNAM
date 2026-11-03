@@ -1,0 +1,68 @@
+{
+  "method": "SHA-256 over downloaded source image bytes; visual observations are qualitative and limited to legible markings.",
+  "images": [
+    {
+      "file": "IMG_3185.JPEG",
+      "size_bytes": 410351,
+      "sha256": "a29a054bcb31f6fe9ac7787ffb8bf7afe894583352d3b13a77853b4fd3cea792",
+      "source_page": "https://dhvan-assistenciatecnica.blogspot.com/2025/03/pedaleira-boss-gt-1.html",
+      "observation": "Dhvan teardown front product view."
+    },
+    {
+      "file": "IMG_3186.JPEG",
+      "size_bytes": 486791,
+      "sha256": "be01568125d2893a19c20de3a2636167f48b848b6c6f5c8d1f12ce7fdffc6d73",
+      "source_page": "https://dhvan-assistenciatecnica.blogspot.com/2025/03/pedaleira-boss-gt-1.html",
+      "observation": "Dhvan teardown top/control board; IC2 marking visually reads ESMT M12L128168A-6T."
+    },
+    {
+      "file": "IMG_3188.JPEG",
+      "size_bytes": 467396,
+      "sha256": "500485c791d28e016f5e3b0645270855c4737598f6e1896aced28c6009086f2d",
+      "source_page": "https://dhvan-assistenciatecnica.blogspot.com/2025/03/pedaleira-boss-gt-1.html",
+      "observation": "Dhvan teardown assembly view; no chip marking used."
+    },
+    {
+      "file": "IMG_3210.JPEG",
+      "size_bytes": 427288,
+      "sha256": "3d8adaf338143488c62d19761c34862aec34d20affd09d9698b9493f95f08c02",
+      "source_page": "https://dhvan-assistenciatecnica.blogspot.com/2025/03/pedaleira-boss-gt-1.html",
+      "observation": "Dhvan teardown lower/main board; PCB marking reads GT-1 PNB MAIN BOARD ASSY 5100051442; central IC1 marking is not legible."
+    },
+    {
+      "file": "IMG_3211.JPEG",
+      "size_bytes": 411924,
+      "sha256": "649e956b33060ccaaf982eb7f0b96841e3b2ca4deae44ad31c5f3ae272104aa1",
+      "source_page": "https://dhvan-assistenciatecnica.blogspot.com/2025/03/pedaleira-boss-gt-1.html",
+      "observation": "Dhvan teardown front product view."
+    },
+    {
+      "file": "IMG_3212.JPEG",
+      "size_bytes": 495436,
+      "sha256": "0a7b779d59e0f207b9a006301d6dab1fe70bb8c9064cb2ed1e120d5ee4195f47",
+      "source_page": "https://dhvan-assistenciatecnica.blogspot.com/2025/03/pedaleira-boss-gt-1.html",
+      "observation": "Dhvan teardown bottom enclosure view."
+    },
+    {
+      "file": "IMG_3213.JPEG",
+      "size_bytes": 228726,
+      "sha256": "09b053a13c915f3bccc6152fd7e962a21eca4fe873741da9252176171608d2d0",
+      "source_page": "https://dhvan-assistenciatecnica.blogspot.com/2025/03/pedaleira-boss-gt-1.html",
+      "observation": "Dhvan teardown rear connector view."
+    },
+    {
+      "file": "xintrea-image1.png",
+      "size_bytes": 124437,
+      "sha256": "68ea37ac07640c71e10ab0c672331a39bb0f96ad57508453d86df93cc2c17992",
+      "source_page": "https://webhamster.ru/mytetrashare/index/mtb0/17186974979qcubc1ew5",
+      "observation": "Screenshot image in the 2024 Xintrea firmware article; shows a firmware hex comparison, not a board photo."
+    },
+    {
+      "file": "xintrea-image2.png",
+      "size_bytes": 165967,
+      "sha256": "b9999e5906e81333a6b299a3e2a679b0ec6154329275e50b683172ec2cfcc483",
+      "source_page": "https://webhamster.ru/mytetrashare/index/mtb0/17186974979qcubc1ew5",
+      "observation": "Screenshot image in the 2024 Xintrea firmware article; shows a firmware hex comparison, not a board photo."
+    }
+  ]
+}

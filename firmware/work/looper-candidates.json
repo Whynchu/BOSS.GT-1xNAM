@@ -1,0 +1,39 @@
+{
+  "source": "xintrea 2024 GT-1 firmware study; local exact-byte replication",
+  "images": {
+    "v108": {
+      "path": "firmware/extracted/v108/gt1_sys_v108/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "7219679a87e985316264544423c9940ccbcbadeb2df0b2f13711ae57194cb612",
+      "candidates": {
+        "triplet_409980": [],
+        "triplet_809940": [],
+        "word_le_00409980": [],
+        "word_be_00409980": []
+      }
+    },
+    "v109": {
+      "path": "firmware/extracted/v109/gt1_sys_v109/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "412ebf5ffdc48554454c27df47f61428f046ea0a7d93f5c77b7f0302861abdbf",
+      "candidates": {
+        "triplet_409980": [
+          {
+            "offset": "0x0B8914",
+            "context_start": "0x0B8904",
+            "context_hex": "a8 52 25 b4 30 f9 a1 25 b4 38 99 80 c8 25 b4 25 40 99 80 d8 25 b4 60 a1 e8 25 b4 6c a1 89 f8 25 b4 78 a1 08 65 60 28 b1 84 a1 10 24 79 b4 90 a1"
+          }
+        ],
+        "triplet_809940": [
+          {
+            "offset": "0x0BEBE4",
+            "context_start": "0x0BEBD4",
+            "context_hex": "58 99 40 60 99 40 68 99 40 70 71 04 95 78 99 40 80 99 40 84 99 40 40 51 8c aa 99 40 90 99 40 94 99 40 98 99 40 9c aa 99 40 a0 99 40 a4 99 40 a8"
+          }
+        ],
+        "word_le_00409980": [],
+        "word_be_00409980": []
+      }
+    }
+  }
+}

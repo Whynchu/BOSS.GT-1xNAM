@@ -1,0 +1,707 @@
+{
+  "read_only": true,
+  "interpretation": "The FA ESC2 member has a 0x44-byte pre-payload header. Field at header+0x34 is a stored payload length and field at +0x38 equals the additive byte sum of that payload in all three versions. +0x40 is an expanded-length candidate; tested standard codecs do not validate it. The header layout is similar in function, but not byte-offset-identical, to the GT-1 container. Cross-product identical bytes do not identify executable status or ISA.",
+  "versions": {
+    "201": {
+      "package": {
+        "path": "firmware/work/reference/esc2-comparators/fa08_v201/fa060708_sys_v201.zip",
+        "size": 11459714,
+        "sha256": "e6c184526903fc6f96c8f8af9009110a0051b7616be236aaac3a982d181e9175"
+      },
+      "tar": {
+        "path": "firmware/work/reference/esc2-comparators/fa08_v201/extracted/fa060708_sys_v201/FA_UPA.BIN",
+        "size": 12953600,
+        "sha256": "2b13d943af307525f52d2fdae3cc3446b7933adf1afa9530b1d3ba11c4f6d358"
+      },
+      "members": [
+        {
+          "name": "./_tmp/fantom_c_up.bin",
+          "size": 6602464,
+          "sha256": "7a53d3ee315c2170727003987722f8dc819f20ed2f525832c07f7b593b96445f"
+        },
+        {
+          "name": "./_tmp/fantom_s_up.bin",
+          "size": 5529040,
+          "sha256": "f1998dafbe101f04ea2907925b7f585d02265d499dcd5d9402955440a0b87b23"
+        },
+        {
+          "name": "./_tmp/fantom_e_up.bin",
+          "size": 814304,
+          "sha256": "ec708bea775ebe58f51bd4aadf524edec236ec8b9cf8a547612a7a9805c99c75"
+        }
+      ],
+      "esc2_member": {
+        "path": "firmware/work/reference/esc2-comparators/fa08_v201/extracted/_tmp/fantom_e_up.bin",
+        "size": 814304,
+        "sha256": "ec708bea775ebe58f51bd4aadf524edec236ec8b9cf8a547612a7a9805c99c75",
+        "header_offset": "0x002000",
+        "header_marker": "ESC2 Firmware",
+        "build_text": " Pr17-0807 15:21:210.123456",
+        "field_0x30_le": "0x00000040",
+        "payload_length_offset": "0x002034",
+        "payload_length": 805994,
+        "checksum_offset": "0x002038",
+        "checksum_field": "0x05C69C3C",
+        "payload_start": "0x002044",
+        "payload_end_exclusive": "0x0C6CAE",
+        "payload_sha256": "eb4b148edb6ef2fc199f8d0cd9dfb96597b742401284ecba30b0024e138d0f11",
+        "payload_byte_sum_mod32": "0x05C69C3C",
+        "checksum_matches_additive_sum": true,
+        "field_0x3c_le": "0x60000000",
+        "expanded_length_candidate_offset": "0x002040",
+        "expanded_length_candidate": "0x001D6184",
+        "trailing_bytes_after_declared_payload": 50,
+        "trailing_bytes_hex": "87 00 52 6f 6c 61 6e 64 20 4d 49 30 37 33 45 53 43 32 56 45 52 2e 32 2e 30 31 2d 42 4c 44 2e 30 38 39 31 37 20 30 38 30 37 20 31 35 20 32 31 20 32 32",
+        "trailing_version_marker_offset": "0x0C6CB0",
+        "trailing_version_marker": "Roland MI073ESC2VER.2.01-BLD.08917 0807 15 21 22",
+        "codec_attempts": {
+          "zlib": {
+            "valid": false,
+            "error": "Error -3 while decompressing data: incorrect header check"
+          },
+          "gzip": {
+            "valid": false,
+            "error": "Not a gzipped file (b'\\xffO')"
+          },
+          "bzip2": {
+            "valid": false,
+            "error": "Invalid data stream"
+          },
+          "lzma_auto": {
+            "valid": false,
+            "error": "Input format not supported by decoder"
+          },
+          "raw_deflate": {
+            "valid": false,
+            "error": "Error -3 while decompressing data: invalid block type"
+          },
+          "lz4_frame": {
+            "valid": false,
+            "error": "LZ4F_getFrameInfo failed with code: ERROR_frameType_unknown"
+          },
+          "zstd_frame": {
+            "valid": false,
+            "error": "error determining content size from frame header"
+          }
+        }
+      }
+    },
+    "202": {
+      "package": {
+        "path": "firmware/work/reference/esc2-comparators/fa08_v202/fa060708_sys_v202.zip",
+        "size": 11460909,
+        "sha256": "79dec069e3b9b646393f358eee45e920801e838a39bb6653d0d31c4e55fef871"
+      },
+      "tar": {
+        "path": "firmware/work/reference/esc2-comparators/fa08_v202/extracted/fa060708_sys_v202/FA_UPA.BIN",
+        "size": 12953600,
+        "sha256": "c618d0c533f8c3705e1f181512c4eb8039e5a5a862d3f0902fe5bf33feaa5181"
+      },
+      "members": [
+        {
+          "name": "./_tmp/fantom_c_up.bin",
+          "size": 6602352,
+          "sha256": "64517a2a07822253df789dbba67c45280d84ce208af8490b79cc0ed97cce7942"
+        },
+        {
+          "name": "./_tmp/fantom_s_up.bin",
+          "size": 5528976,
+          "sha256": "faa36e8ba2416e2206277197104797afdb55fbae29c725404d295219447332ca"
+        },
+        {
+          "name": "./_tmp/fantom_e_up.bin",
+          "size": 814304,
+          "sha256": "dbbcb86c03483e8892cec4eefc77f6cfd7b00d87f26bb7162af5fbab5dcf932e"
+        }
+      ],
+      "esc2_member": {
+        "path": "firmware/work/reference/esc2-comparators/fa08_v202/extracted/_tmp/fantom_e_up.bin",
+        "size": 814304,
+        "sha256": "dbbcb86c03483e8892cec4eefc77f6cfd7b00d87f26bb7162af5fbab5dcf932e",
+        "header_offset": "0x002000",
+        "header_marker": "ESC2 Firmware",
+        "build_text": " Pr18-0502 17:22:050.123456",
+        "field_0x30_le": "0x00000040",
+        "payload_length_offset": "0x002034",
+        "payload_length": 805994,
+        "checksum_offset": "0x002038",
+        "checksum_field": "0x05C69C3E",
+        "payload_start": "0x002044",
+        "payload_end_exclusive": "0x0C6CAE",
+        "payload_sha256": "5407169ff833a969699cfbf34a7a955e01afef47872c83bb94f552fe7d81aec6",
+        "payload_byte_sum_mod32": "0x05C69C3E",
+        "checksum_matches_additive_sum": true,
+        "field_0x3c_le": "0x60000000",
+        "expanded_length_candidate_offset": "0x002040",
+        "expanded_length_candidate": "0x001D6184",
+        "trailing_bytes_after_declared_payload": 50,
+        "trailing_bytes_hex": "87 02 52 6f 6c 61 6e 64 20 4d 49 30 37 33 45 53 43 32 56 45 52 2e 32 2e 30 32 2d 42 4c 44 2e 30 39 30 31 38 20 30 35 30 32 20 31 37 20 32 32 20 30 35",
+        "trailing_version_marker_offset": "0x0C6CB0",
+        "trailing_version_marker": "Roland MI073ESC2VER.2.02-BLD.09018 0502 17 22 05",
+        "codec_attempts": {
+          "zlib": {
+            "valid": false,
+            "error": "Error -3 while decompressing data: incorrect header check"
+          },
+          "gzip": {
+            "valid": false,
+            "error": "Not a gzipped file (b'\\xffO')"
+          },
+          "bzip2": {
+            "valid": false,
+            "error": "Invalid data stream"
+          },
+          "lzma_auto": {
+            "valid": false,
+            "error": "Input format not supported by decoder"
+          },
+          "raw_deflate": {
+            "valid": false,
+            "error": "Error -3 while decompressing data: invalid block type"
+          },
+          "lz4_frame": {
+            "valid": false,
+            "error": "LZ4F_getFrameInfo failed with code: ERROR_frameType_unknown"
+          },
+          "zstd_frame": {
+            "valid": false,
+            "error": "error determining content size from frame header"
+          }
+        }
+      }
+    },
+    "203": {
+      "package": {
+        "path": "firmware/work/reference/esc2-comparators/fa08_v203/fa060708_sys_v203.zip",
+        "size": 11464942,
+        "sha256": "69e26d7f54cd397d45a37d3dbe2c168ec77fd30427b7d7d718e0d25f2147e330"
+      },
+      "tar": {
+        "path": "firmware/work/reference/esc2-comparators/fa08_v203/extracted/fa060708_sys_v203/FA_UPA.BIN",
+        "size": 12953600,
+        "sha256": "4e4182a334455b02f7935b0f6cca00b2a16b9b53f533b4d650b17939694bec96"
+      },
+      "members": [
+        {
+          "name": "./_tmp/fantom_c_up.bin",
+          "size": 6603120,
+          "sha256": "025e8b89028947ab85a4a193e6a1bcac5c36b94582ac90c0a2d797b93e93e784"
+        },
+        {
+          "name": "./_tmp/fantom_s_up.bin",
+          "size": 5529568,
+          "sha256": "4b0e839a4646d77e4720590c1bef181ef756e7645dbab91bd43b5599a0016a3f"
+        },
+        {
+          "name": "./_tmp/fantom_e_up.bin",
+          "size": 814304,
+          "sha256": "900028695b7ec1b63631737d1bd0eaf4707514264a7b325914d951cb59731d23"
+        }
+      ],
+      "esc2_member": {
+        "path": "firmware/work/reference/esc2-comparators/fa08_v203/extracted/_tmp/fantom_e_up.bin",
+        "size": 814304,
+        "sha256": "900028695b7ec1b63631737d1bd0eaf4707514264a7b325914d951cb59731d23",
+        "header_offset": "0x002000",
+        "header_marker": "ESC2 Firmware",
+        "build_text": " Pr19-0118 13:58:030.123456",
+        "field_0x30_le": "0x00000040",
+        "payload_length_offset": "0x002034",
+        "payload_length": 805994,
+        "checksum_offset": "0x002038",
+        "checksum_field": "0x05C69C40",
+        "payload_start": "0x002044",
+        "payload_end_exclusive": "0x0C6CAE",
+        "payload_sha256": "23d431df232fe02a7846e43e44176daa8d8fd9e958b6ad578d6963de604b671f",
+        "payload_byte_sum_mod32": "0x05C69C40",
+        "checksum_matches_additive_sum": true,
+        "field_0x3c_le": "0x60000000",
+        "expanded_length_candidate_offset": "0x002040",
+        "expanded_length_candidate": "0x001D6184",
+        "trailing_bytes_after_declared_payload": 50,
+        "trailing_bytes_hex": "87 0d 52 6f 6c 61 6e 64 20 4d 49 30 37 33 45 53 43 32 56 45 52 2e 32 2e 30 33 2d 42 4c 44 2e 30 39 31 31 39 20 30 31 31 38 20 31 33 20 35 38 20 30 34",
+        "trailing_version_marker_offset": "0x0C6CB0",
+        "trailing_version_marker": "Roland MI073ESC2VER.2.03-BLD.09119 0118 13 58 04",
+        "codec_attempts": {
+          "zlib": {
+            "valid": false,
+            "error": "Error -3 while decompressing data: incorrect header check"
+          },
+          "gzip": {
+            "valid": false,
+            "error": "Not a gzipped file (b'\\xffO')"
+          },
+          "bzip2": {
+            "valid": false,
+            "error": "Invalid data stream"
+          },
+          "lzma_auto": {
+            "valid": false,
+            "error": "Input format not supported by decoder"
+          },
+          "raw_deflate": {
+            "valid": false,
+            "error": "Error -3 while decompressing data: invalid block type"
+          },
+          "lz4_frame": {
+            "valid": false,
+            "error": "LZ4F_getFrameInfo failed with code: ERROR_frameType_unknown"
+          },
+          "zstd_frame": {
+            "valid": false,
+            "error": "error determining content size from frame header"
+          }
+        }
+      }
+    }
+  },
+  "version_differences": {
+    "201_to_202": {
+      "changed_byte_count": 21,
+      "ranges": [
+        {
+          "start": "0x002015",
+          "end_exclusive": "0x002016",
+          "bytes": 1,
+          "from_hex": "37",
+          "to_hex": "38"
+        },
+        {
+          "start": "0x002018",
+          "end_exclusive": "0x002019",
+          "bytes": 1,
+          "from_hex": "38",
+          "to_hex": "35"
+        },
+        {
+          "start": "0x00201A",
+          "end_exclusive": "0x00201B",
+          "bytes": 1,
+          "from_hex": "37",
+          "to_hex": "32"
+        },
+        {
+          "start": "0x00201D",
+          "end_exclusive": "0x00201E",
+          "bytes": 1,
+          "from_hex": "35",
+          "to_hex": "37"
+        },
+        {
+          "start": "0x002020",
+          "end_exclusive": "0x002021",
+          "bytes": 1,
+          "from_hex": "31",
+          "to_hex": "32"
+        },
+        {
+          "start": "0x002022",
+          "end_exclusive": "0x002024",
+          "bytes": 2,
+          "from_hex": "32 31",
+          "to_hex": "30 35"
+        },
+        {
+          "start": "0x002038",
+          "end_exclusive": "0x002039",
+          "bytes": 1,
+          "from_hex": "3c",
+          "to_hex": "3e"
+        },
+        {
+          "start": "0x04431E",
+          "end_exclusive": "0x04431F",
+          "bytes": 1,
+          "from_hex": "01",
+          "to_hex": "02"
+        },
+        {
+          "start": "0x044320",
+          "end_exclusive": "0x044321",
+          "bytes": 1,
+          "from_hex": "59",
+          "to_hex": "5a"
+        },
+        {
+          "start": "0x0C6CAF",
+          "end_exclusive": "0x0C6CB0",
+          "bytes": 1,
+          "from_hex": "00",
+          "to_hex": "02"
+        },
+        {
+          "start": "0x0C6CC7",
+          "end_exclusive": "0x0C6CC8",
+          "bytes": 1,
+          "from_hex": "31",
+          "to_hex": "32"
+        },
+        {
+          "start": "0x0C6CCE",
+          "end_exclusive": "0x0C6CD0",
+          "bytes": 2,
+          "from_hex": "38 39",
+          "to_hex": "39 30"
+        },
+        {
+          "start": "0x0C6CD1",
+          "end_exclusive": "0x0C6CD2",
+          "bytes": 1,
+          "from_hex": "37",
+          "to_hex": "38"
+        },
+        {
+          "start": "0x0C6CD4",
+          "end_exclusive": "0x0C6CD5",
+          "bytes": 1,
+          "from_hex": "38",
+          "to_hex": "35"
+        },
+        {
+          "start": "0x0C6CD6",
+          "end_exclusive": "0x0C6CD7",
+          "bytes": 1,
+          "from_hex": "37",
+          "to_hex": "32"
+        },
+        {
+          "start": "0x0C6CD9",
+          "end_exclusive": "0x0C6CDA",
+          "bytes": 1,
+          "from_hex": "35",
+          "to_hex": "37"
+        },
+        {
+          "start": "0x0C6CDC",
+          "end_exclusive": "0x0C6CDD",
+          "bytes": 1,
+          "from_hex": "31",
+          "to_hex": "32"
+        },
+        {
+          "start": "0x0C6CDE",
+          "end_exclusive": "0x0C6CE0",
+          "bytes": 2,
+          "from_hex": "32 32",
+          "to_hex": "30 35"
+        }
+      ]
+    },
+    "202_to_203": {
+      "changed_byte_count": 22,
+      "ranges": [
+        {
+          "start": "0x002015",
+          "end_exclusive": "0x002016",
+          "bytes": 1,
+          "from_hex": "38",
+          "to_hex": "39"
+        },
+        {
+          "start": "0x002018",
+          "end_exclusive": "0x00201B",
+          "bytes": 3,
+          "from_hex": "35 30 32",
+          "to_hex": "31 31 38"
+        },
+        {
+          "start": "0x00201D",
+          "end_exclusive": "0x00201E",
+          "bytes": 1,
+          "from_hex": "37",
+          "to_hex": "33"
+        },
+        {
+          "start": "0x00201F",
+          "end_exclusive": "0x002021",
+          "bytes": 2,
+          "from_hex": "32 32",
+          "to_hex": "35 38"
+        },
+        {
+          "start": "0x002023",
+          "end_exclusive": "0x002024",
+          "bytes": 1,
+          "from_hex": "35",
+          "to_hex": "33"
+        },
+        {
+          "start": "0x002038",
+          "end_exclusive": "0x002039",
+          "bytes": 1,
+          "from_hex": "3e",
+          "to_hex": "40"
+        },
+        {
+          "start": "0x04431E",
+          "end_exclusive": "0x04431F",
+          "bytes": 1,
+          "from_hex": "02",
+          "to_hex": "03"
+        },
+        {
+          "start": "0x044320",
+          "end_exclusive": "0x044321",
+          "bytes": 1,
+          "from_hex": "5a",
+          "to_hex": "5b"
+        },
+        {
+          "start": "0x0C6CAF",
+          "end_exclusive": "0x0C6CB0",
+          "bytes": 1,
+          "from_hex": "02",
+          "to_hex": "0d"
+        },
+        {
+          "start": "0x0C6CC7",
+          "end_exclusive": "0x0C6CC8",
+          "bytes": 1,
+          "from_hex": "32",
+          "to_hex": "33"
+        },
+        {
+          "start": "0x0C6CCF",
+          "end_exclusive": "0x0C6CD0",
+          "bytes": 1,
+          "from_hex": "30",
+          "to_hex": "31"
+        },
+        {
+          "start": "0x0C6CD1",
+          "end_exclusive": "0x0C6CD2",
+          "bytes": 1,
+          "from_hex": "38",
+          "to_hex": "39"
+        },
+        {
+          "start": "0x0C6CD4",
+          "end_exclusive": "0x0C6CD7",
+          "bytes": 3,
+          "from_hex": "35 30 32",
+          "to_hex": "31 31 38"
+        },
+        {
+          "start": "0x0C6CD9",
+          "end_exclusive": "0x0C6CDA",
+          "bytes": 1,
+          "from_hex": "37",
+          "to_hex": "33"
+        },
+        {
+          "start": "0x0C6CDB",
+          "end_exclusive": "0x0C6CDD",
+          "bytes": 2,
+          "from_hex": "32 32",
+          "to_hex": "35 38"
+        },
+        {
+          "start": "0x0C6CDF",
+          "end_exclusive": "0x0C6CE0",
+          "bytes": 1,
+          "from_hex": "35",
+          "to_hex": "34"
+        }
+      ]
+    },
+    "201_to_203": {
+      "changed_byte_count": 25,
+      "ranges": [
+        {
+          "start": "0x002015",
+          "end_exclusive": "0x002016",
+          "bytes": 1,
+          "from_hex": "37",
+          "to_hex": "39"
+        },
+        {
+          "start": "0x002018",
+          "end_exclusive": "0x00201B",
+          "bytes": 3,
+          "from_hex": "38 30 37",
+          "to_hex": "31 31 38"
+        },
+        {
+          "start": "0x00201D",
+          "end_exclusive": "0x00201E",
+          "bytes": 1,
+          "from_hex": "35",
+          "to_hex": "33"
+        },
+        {
+          "start": "0x00201F",
+          "end_exclusive": "0x002021",
+          "bytes": 2,
+          "from_hex": "32 31",
+          "to_hex": "35 38"
+        },
+        {
+          "start": "0x002022",
+          "end_exclusive": "0x002024",
+          "bytes": 2,
+          "from_hex": "32 31",
+          "to_hex": "30 33"
+        },
+        {
+          "start": "0x002038",
+          "end_exclusive": "0x002039",
+          "bytes": 1,
+          "from_hex": "3c",
+          "to_hex": "40"
+        },
+        {
+          "start": "0x04431E",
+          "end_exclusive": "0x04431F",
+          "bytes": 1,
+          "from_hex": "01",
+          "to_hex": "03"
+        },
+        {
+          "start": "0x044320",
+          "end_exclusive": "0x044321",
+          "bytes": 1,
+          "from_hex": "59",
+          "to_hex": "5b"
+        },
+        {
+          "start": "0x0C6CAF",
+          "end_exclusive": "0x0C6CB0",
+          "bytes": 1,
+          "from_hex": "00",
+          "to_hex": "0d"
+        },
+        {
+          "start": "0x0C6CC7",
+          "end_exclusive": "0x0C6CC8",
+          "bytes": 1,
+          "from_hex": "31",
+          "to_hex": "33"
+        },
+        {
+          "start": "0x0C6CCE",
+          "end_exclusive": "0x0C6CD0",
+          "bytes": 2,
+          "from_hex": "38 39",
+          "to_hex": "39 31"
+        },
+        {
+          "start": "0x0C6CD1",
+          "end_exclusive": "0x0C6CD2",
+          "bytes": 1,
+          "from_hex": "37",
+          "to_hex": "39"
+        },
+        {
+          "start": "0x0C6CD4",
+          "end_exclusive": "0x0C6CD7",
+          "bytes": 3,
+          "from_hex": "38 30 37",
+          "to_hex": "31 31 38"
+        },
+        {
+          "start": "0x0C6CD9",
+          "end_exclusive": "0x0C6CDA",
+          "bytes": 1,
+          "from_hex": "35",
+          "to_hex": "33"
+        },
+        {
+          "start": "0x0C6CDB",
+          "end_exclusive": "0x0C6CDD",
+          "bytes": 2,
+          "from_hex": "32 31",
+          "to_hex": "35 38"
+        },
+        {
+          "start": "0x0C6CDE",
+          "end_exclusive": "0x0C6CE0",
+          "bytes": 2,
+          "from_hex": "32 32",
+          "to_hex": "30 34"
+        }
+      ]
+    }
+  },
+  "fa_version_common_prefixes": {
+    "201_vs_202": {
+      "whole_member_common_prefix_bytes": 8213,
+      "whole_member_first_difference_offset": "0x002015",
+      "whole_member_prefix_sha256": "c06160235c297f1da6b039e329d80b6bbab39a31c35e43a3878d71fe986f70bf",
+      "payload_start_offset": "0x002044",
+      "payload_common_prefix_bytes": 271066,
+      "payload_first_difference_offset": "0x04431E",
+      "payload_changed_byte_count": 2,
+      "payload_prefix_sha256": "b9d23670b58b8d0cadbb938be67831b4035f6cb838b4dde192f5fafb978d29a0"
+    },
+    "202_vs_203": {
+      "whole_member_common_prefix_bytes": 8213,
+      "whole_member_first_difference_offset": "0x002015",
+      "whole_member_prefix_sha256": "c06160235c297f1da6b039e329d80b6bbab39a31c35e43a3878d71fe986f70bf",
+      "payload_start_offset": "0x002044",
+      "payload_common_prefix_bytes": 271066,
+      "payload_first_difference_offset": "0x04431E",
+      "payload_changed_byte_count": 2,
+      "payload_prefix_sha256": "b9d23670b58b8d0cadbb938be67831b4035f6cb838b4dde192f5fafb978d29a0"
+    },
+    "201_vs_203": {
+      "whole_member_common_prefix_bytes": 8213,
+      "whole_member_first_difference_offset": "0x002015",
+      "whole_member_prefix_sha256": "c06160235c297f1da6b039e329d80b6bbab39a31c35e43a3878d71fe986f70bf",
+      "payload_start_offset": "0x002044",
+      "payload_common_prefix_bytes": 271066,
+      "payload_first_difference_offset": "0x04431E",
+      "payload_changed_byte_count": 2,
+      "payload_prefix_sha256": "b9d23670b58b8d0cadbb938be67831b4035f6cb838b4dde192f5fafb978d29a0"
+    }
+  },
+  "gt1_prefix_comparisons": {
+    "FA_v201_vs_GT1Upd payload": {
+      "fa_offset": "0x002044",
+      "gt1_offset": "0x002040",
+      "common_prefix_bytes": 194,
+      "fa_prefix_sha256": "9a86daad33fe1795cdf8da940372481d19f52942ddf785109c17d3b5163c5d48",
+      "gt1_prefix_sha256": "9a86daad33fe1795cdf8da940372481d19f52942ddf785109c17d3b5163c5d48",
+      "equal": true
+    },
+    "FA_v201_vs_GT1Appli payload": {
+      "fa_offset": "0x002044",
+      "gt1_offset": "0x040040",
+      "common_prefix_bytes": 194,
+      "fa_prefix_sha256": "9a86daad33fe1795cdf8da940372481d19f52942ddf785109c17d3b5163c5d48",
+      "gt1_prefix_sha256": "9a86daad33fe1795cdf8da940372481d19f52942ddf785109c17d3b5163c5d48",
+      "equal": true
+    },
+    "FA_v202_vs_GT1Upd payload": {
+      "fa_offset": "0x002044",
+      "gt1_offset": "0x002040",
+      "common_prefix_bytes": 194,
+      "fa_prefix_sha256": "9a86daad33fe1795cdf8da940372481d19f52942ddf785109c17d3b5163c5d48",
+      "gt1_prefix_sha256": "9a86daad33fe1795cdf8da940372481d19f52942ddf785109c17d3b5163c5d48",
+      "equal": true
+    },
+    "FA_v202_vs_GT1Appli payload": {
+      "fa_offset": "0x002044",
+      "gt1_offset": "0x040040",
+      "common_prefix_bytes": 194,
+      "fa_prefix_sha256": "9a86daad33fe1795cdf8da940372481d19f52942ddf785109c17d3b5163c5d48",
+      "gt1_prefix_sha256": "9a86daad33fe1795cdf8da940372481d19f52942ddf785109c17d3b5163c5d48",
+      "equal": true
+    },
+    "FA_v203_vs_GT1Upd payload": {
+      "fa_offset": "0x002044",
+      "gt1_offset": "0x002040",
+      "common_prefix_bytes": 194,
+      "fa_prefix_sha256": "9a86daad33fe1795cdf8da940372481d19f52942ddf785109c17d3b5163c5d48",
+      "gt1_prefix_sha256": "9a86daad33fe1795cdf8da940372481d19f52942ddf785109c17d3b5163c5d48",
+      "equal": true
+    },
+    "FA_v203_vs_GT1Appli payload": {
+      "fa_offset": "0x002044",
+      "gt1_offset": "0x040040",
+      "common_prefix_bytes": 194,
+      "fa_prefix_sha256": "9a86daad33fe1795cdf8da940372481d19f52942ddf785109c17d3b5163c5d48",
+      "gt1_prefix_sha256": "9a86daad33fe1795cdf8da940372481d19f52942ddf785109c17d3b5163c5d48",
+      "equal": true
+    }
+  }
+}

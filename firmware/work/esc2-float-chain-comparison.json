@@ -1,0 +1,481 @@
+{
+  "read_only": true,
+  "inputs": {
+    "GT-1 v1.09": {
+      "path": "firmware/extracted/v109/gt1_sys_v109/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "412ebf5ffdc48554454c27df47f61428f046ea0a7d93f5c77b7f0302861abdbf",
+      "candidate_app_payload_range": [
+        "0x40040",
+        "0x15FB3A"
+      ]
+    },
+    "GT-100 v2.12": {
+      "path": "firmware/work/reference/esc2-comparators/gt100_v212/extracted/gt100_sys_v212/GT100ROM.BIN",
+      "size": 4194304,
+      "sha256": "0c44ab01ac310927bf8dcc95f4ab5fcc487ed106dfcc6fc067832a35a4e32d34",
+      "candidate_app_payload_range": [
+        "0x40040",
+        "0x17689C"
+      ]
+    },
+    "KATANA v2.01": {
+      "path": "firmware/work/reference/esc2-comparators/katana_v201/extracted/katana_sys_v201/KATANARM.BIN",
+      "size": 4194304,
+      "sha256": "73b63f48050818e6e1cc0738d741e50ce8dcc6f644109cf8ec346a44dff1bdac",
+      "candidate_app_payload_range": [
+        "0x40040",
+        "0x161FDC"
+      ]
+    },
+    "KATANA v4.00": {
+      "path": "firmware/work/reference/esc2-comparators/katana_v400/extracted/katana_sys_v400/KATANARM.BIN",
+      "size": 4194304,
+      "sha256": "3e17ba95e21ed10a3cb5c60af8da0a375db613cc8409eb33b6d80e4248c9b493",
+      "candidate_app_payload_range": [
+        "0x40040",
+        "0x161657"
+      ]
+    }
+  },
+  "method": "Within the bounded GT-1 v1.09 app payload, identify chains of 0xFF markers every 9 bytes, interpret the following 8 bytes per record as two little-endian float32 values, retain chains with at least 12 records, at least 95% finite values of absolute magnitude <=100 and at least 25% non-near-zero values, then search each complete chain byte-for-byte in bounded comparator app payloads.",
+  "candidate_chain_count_GT1": 21,
+  "exact_comparator_match_count": 12,
+  "matches": [
+    {
+      "source": "GT-1 v1.09",
+      "GT-1_file_offset": "0xC12EB",
+      "target": "KATANA v4.00",
+      "target_file_offset": "0xCD8D5",
+      "delta_target_minus_GT1": 50666,
+      "records": 13,
+      "byte_length": 117,
+      "sha256": "d957a4303541d43748e58390bd2bed94740e6cd82c39290787986a06fddff94c",
+      "exact_bytes_equal": true,
+      "context_flanks": {
+        "identical_bytes_left": 5,
+        "identical_bytes_right": 15,
+        "maximal_identical_run_length": 137
+      }
+    },
+    {
+      "source": "GT-1 v1.09",
+      "GT-1_file_offset": "0xD2A92",
+      "target": "GT-100 v2.12",
+      "target_file_offset": "0xDBA59",
+      "delta_target_minus_GT1": 36807,
+      "records": 23,
+      "byte_length": 207,
+      "sha256": "b371a71537b42a4c3444b3ef7e8ed16fc68612f1be9efe08fb45042e197d8f8a",
+      "exact_bytes_equal": true,
+      "context_flanks": {
+        "identical_bytes_left": 7,
+        "identical_bytes_right": 15,
+        "maximal_identical_run_length": 229
+      }
+    },
+    {
+      "source": "GT-1 v1.09",
+      "GT-1_file_offset": "0xD305E",
+      "target": "KATANA v2.01",
+      "target_file_offset": "0xE340B",
+      "delta_target_minus_GT1": 66477,
+      "records": 14,
+      "byte_length": 126,
+      "sha256": "1614e27c2206ebb637aa13087d5acde35a018515be06bf93021e285dc585bd82",
+      "exact_bytes_equal": true,
+      "context_flanks": {
+        "identical_bytes_left": 8,
+        "identical_bytes_right": 14,
+        "maximal_identical_run_length": 148
+      }
+    },
+    {
+      "source": "GT-1 v1.09",
+      "GT-1_file_offset": "0xD31CF",
+      "target": "KATANA v2.01",
+      "target_file_offset": "0xE357C",
+      "delta_target_minus_GT1": 66477,
+      "records": 73,
+      "byte_length": 657,
+      "sha256": "daaa3e39badfb995b39945c46d6f1ac29c1a60df302ef99b0fa93bafcc58fa2e",
+      "exact_bytes_equal": true,
+      "context_flanks": {
+        "identical_bytes_left": 8,
+        "identical_bytes_right": 16,
+        "maximal_identical_run_length": 681
+      }
+    },
+    {
+      "source": "GT-1 v1.09",
+      "GT-1_file_offset": "0xD3486",
+      "target": "KATANA v2.01",
+      "target_file_offset": "0xE3833",
+      "delta_target_minus_GT1": 66477,
+      "records": 50,
+      "byte_length": 450,
+      "sha256": "dfef09b19aae9b8cc7cadb7bd64533c71efe20b741849c0bce6ccee369bb8b82",
+      "exact_bytes_equal": true,
+      "context_flanks": {
+        "identical_bytes_left": 7,
+        "identical_bytes_right": 14,
+        "maximal_identical_run_length": 471
+      }
+    },
+    {
+      "source": "GT-1 v1.09",
+      "GT-1_file_offset": "0xD37B2",
+      "target": "KATANA v2.01",
+      "target_file_offset": "0xE3B5F",
+      "delta_target_minus_GT1": 66477,
+      "records": 16,
+      "byte_length": 144,
+      "sha256": "7dc57d5b6682a77fbd071bb2910241616eef4efc658c8dda674c83c72137ddaf",
+      "exact_bytes_equal": true,
+      "context_flanks": {
+        "identical_bytes_left": 3,
+        "identical_bytes_right": 16,
+        "maximal_identical_run_length": 163
+      }
+    },
+    {
+      "source": "GT-1 v1.09",
+      "GT-1_file_offset": "0xD3B31",
+      "target": "KATANA v2.01",
+      "target_file_offset": "0xE3EDE",
+      "delta_target_minus_GT1": 66477,
+      "records": 21,
+      "byte_length": 189,
+      "sha256": "a2f1877565ad2a3009d6aedae11abb8a3a21c396c8db0bbdc335bc657aa4df26",
+      "exact_bytes_equal": true,
+      "context_flanks": {
+        "identical_bytes_left": 7,
+        "identical_bytes_right": 14,
+        "maximal_identical_run_length": 210
+      }
+    },
+    {
+      "source": "GT-1 v1.09",
+      "GT-1_file_offset": "0xD3C14",
+      "target": "KATANA v2.01",
+      "target_file_offset": "0xE3FC1",
+      "delta_target_minus_GT1": 66477,
+      "records": 28,
+      "byte_length": 252,
+      "sha256": "2abdbea7ecf23da9545a7413af613695395e4b5abcadb0d88d318d5d37c7b8d3",
+      "exact_bytes_equal": true,
+      "context_flanks": {
+        "identical_bytes_left": 7,
+        "identical_bytes_right": 16,
+        "maximal_identical_run_length": 275
+      }
+    },
+    {
+      "source": "GT-1 v1.09",
+      "GT-1_file_offset": "0xD3E3F",
+      "target": "KATANA v2.01",
+      "target_file_offset": "0xE41EC",
+      "delta_target_minus_GT1": 66477,
+      "records": 31,
+      "byte_length": 279,
+      "sha256": "17a108638e9177dff70a3ea794177052d5c0a5f5fb72069cbdf2a3450c940e09",
+      "exact_bytes_equal": true,
+      "context_flanks": {
+        "identical_bytes_left": 3,
+        "identical_bytes_right": 11,
+        "maximal_identical_run_length": 293
+      }
+    },
+    {
+      "source": "GT-1 v1.09",
+      "GT-1_file_offset": "0xD529F",
+      "target": "KATANA v2.01",
+      "target_file_offset": "0xE564C",
+      "delta_target_minus_GT1": 66477,
+      "records": 40,
+      "byte_length": 360,
+      "sha256": "b4e7386e4f2f809c6817e0af9f329bacb205dea2f5a389d55200f1937662711f",
+      "exact_bytes_equal": true,
+      "context_flanks": {
+        "identical_bytes_left": 3,
+        "identical_bytes_right": 15,
+        "maximal_identical_run_length": 378
+      }
+    },
+    {
+      "source": "GT-1 v1.09",
+      "GT-1_file_offset": "0xD7A73",
+      "target": "KATANA v2.01",
+      "target_file_offset": "0xDD50F",
+      "delta_target_minus_GT1": 23196,
+      "records": 17,
+      "byte_length": 153,
+      "sha256": "4ec3ef0dacb2166dc62ee5e66f437dc778c6866672e0654ffdc2877adc7c7f96",
+      "exact_bytes_equal": true,
+      "context_flanks": {
+        "identical_bytes_left": 8,
+        "identical_bytes_right": 15,
+        "maximal_identical_run_length": 176
+      }
+    },
+    {
+      "source": "GT-1 v1.09",
+      "GT-1_file_offset": "0xD7A73",
+      "target": "KATANA v4.00",
+      "target_file_offset": "0xDC5CB",
+      "delta_target_minus_GT1": 19288,
+      "records": 17,
+      "byte_length": 153,
+      "sha256": "4ec3ef0dacb2166dc62ee5e66f437dc778c6866672e0654ffdc2877adc7c7f96",
+      "exact_bytes_equal": true,
+      "context_flanks": {
+        "identical_bytes_left": 8,
+        "identical_bytes_right": 15,
+        "maximal_identical_run_length": 176
+      }
+    }
+  ],
+  "aligned_windows_from_repeated_deltas": [
+    {
+      "target": "KATANA v2.01",
+      "delta_target_minus_GT1": "+0x103ad",
+      "GT-1_interval": [
+        "0xD305E",
+        "0xD5407"
+      ],
+      "target_interval": [
+        "0xE340B",
+        "0xE57B4"
+      ],
+      "byte_count": 9129,
+      "equal_bytes": 8993,
+      "equal_fraction": 0.985102,
+      "mismatch_count": 136,
+      "mismatch_positions_mod_9_from_window_start": {
+        "0": 16,
+        "1": 8,
+        "2": 17,
+        "3": 15,
+        "4": 12,
+        "5": 16,
+        "6": 17,
+        "7": 16,
+        "8": 19
+      },
+      "first_mismatch_GT1_offsets": [
+        "0xD30EA",
+        "0xD30EB",
+        "0xD314F",
+        "0xD3150",
+        "0xD3153",
+        "0xD3154",
+        "0xD3156",
+        "0xD3157",
+        "0xD3159",
+        "0xD315A",
+        "0xD315C",
+        "0xD315D",
+        "0xD3160",
+        "0xD3161",
+        "0xD3162",
+        "0xD3163",
+        "0xD3166",
+        "0xD3167",
+        "0xD3168",
+        "0xD3169"
+      ],
+      "exact_runs_at_least_16_bytes": [
+        {
+          "GT-1_start": "0xD305E",
+          "length": 140
+        },
+        {
+          "GT-1_start": "0xD30EC",
+          "length": 99
+        },
+        {
+          "GT-1_start": "0xD3182",
+          "length": 67
+        },
+        {
+          "GT-1_start": "0xD31C7",
+          "length": 681
+        },
+        {
+          "GT-1_start": "0xD347F",
+          "length": 471
+        },
+        {
+          "GT-1_start": "0xD3658",
+          "length": 341
+        },
+        {
+          "GT-1_start": "0xD37AF",
+          "length": 163
+        },
+        {
+          "GT-1_start": "0xD3854",
+          "length": 181
+        },
+        {
+          "GT-1_start": "0xD3911",
+          "length": 535
+        },
+        {
+          "GT-1_start": "0xD3B2A",
+          "length": 210
+        },
+        {
+          "GT-1_start": "0xD3C0D",
+          "length": 275
+        },
+        {
+          "GT-1_start": "0xD3D22",
+          "length": 23
+        },
+        {
+          "GT-1_start": "0xD3D3B",
+          "length": 104
+        },
+        {
+          "GT-1_start": "0xD3DA5",
+          "length": 34
+        },
+        {
+          "GT-1_start": "0xD3DC9",
+          "length": 73
+        },
+        {
+          "GT-1_start": "0xD3E14",
+          "length": 38
+        },
+        {
+          "GT-1_start": "0xD3E3C",
+          "length": 293
+        },
+        {
+          "GT-1_start": "0xD3F63",
+          "length": 27
+        },
+        {
+          "GT-1_start": "0xD3F86",
+          "length": 1232
+        },
+        {
+          "GT-1_start": "0xD4458",
+          "length": 260
+        },
+        {
+          "GT-1_start": "0xD455E",
+          "length": 542
+        },
+        {
+          "GT-1_start": "0xD477E",
+          "length": 179
+        },
+        {
+          "GT-1_start": "0xD4833",
+          "length": 84
+        },
+        {
+          "GT-1_start": "0xD4889",
+          "length": 286
+        },
+        {
+          "GT-1_start": "0xD49A9",
+          "length": 289
+        },
+        {
+          "GT-1_start": "0xD4ACC",
+          "length": 59
+        },
+        {
+          "GT-1_start": "0xD4B09",
+          "length": 154
+        },
+        {
+          "GT-1_start": "0xD4BA5",
+          "length": 43
+        },
+        {
+          "GT-1_start": "0xD4BD2",
+          "length": 162
+        },
+        {
+          "GT-1_start": "0xD4C76",
+          "length": 28
+        },
+        {
+          "GT-1_start": "0xD4C94",
+          "length": 38
+        },
+        {
+          "GT-1_start": "0xD4CBC",
+          "length": 65
+        },
+        {
+          "GT-1_start": "0xD4CFF",
+          "length": 208
+        },
+        {
+          "GT-1_start": "0xD4DD1",
+          "length": 78
+        },
+        {
+          "GT-1_start": "0xD4E21",
+          "length": 73
+        },
+        {
+          "GT-1_start": "0xD4E6C",
+          "length": 69
+        },
+        {
+          "GT-1_start": "0xD4EB3",
+          "length": 28
+        },
+        {
+          "GT-1_start": "0xD4ED1",
+          "length": 169
+        },
+        {
+          "GT-1_start": "0xD4F7C",
+          "length": 293
+        },
+        {
+          "GT-1_start": "0xD50A3",
+          "length": 32
+        },
+        {
+          "GT-1_start": "0xD50C5",
+          "length": 56
+        },
+        {
+          "GT-1_start": "0xD50FF",
+          "length": 117
+        },
+        {
+          "GT-1_start": "0xD5176",
+          "length": 208
+        },
+        {
+          "GT-1_start": "0xD5248",
+          "length": 73
+        },
+        {
+          "GT-1_start": "0xD529C",
+          "length": 363
+        }
+      ],
+      "exact_run_count": 45,
+      "exact_run_bytes": 8943,
+      "longest_exact_run": 1232,
+      "scope_note": "Window is bounded by first and last matched candidate chain in this delta group; it is not a claim that the entire interval is one section."
+    }
+  ],
+  "limits": [
+    "A float32 interpretation is heuristic; finite, small values and regular marker cadence do not establish intended type or semantic role.",
+    "Exact byte recurrence supports shared structured data or common firmware components, not execution, relocation, amp-model meaning, or processor ISA.",
+    "Only complete candidate chains meeting the stated filter were searched; no match does not show that other related data is absent.",
+    "All inputs are preserved firmware images; no device access or firmware modification occurred."
+  ]
+}

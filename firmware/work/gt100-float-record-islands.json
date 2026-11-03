@@ -1,0 +1,550 @@
+{
+  "read_only": true,
+  "inputs": {
+    "GT-1 v1.09": {
+      "path": "firmware/extracted/v109/gt1_sys_v109/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "412ebf5ffdc48554454c27df47f61428f046ea0a7d93f5c77b7f0302861abdbf"
+    },
+    "GT-100 v2.12": {
+      "path": "firmware/work/reference/esc2-comparators/gt100_v212/extracted/gt100_sys_v212/GT100ROM.BIN",
+      "size": 4194304,
+      "sha256": "0c44ab01ac310927bf8dcc95f4ab5fcc487ed106dfcc6fc067832a35a4e32d34"
+    },
+    "match_manifest": {
+      "path": "firmware/work/gt100-gt1-comparator-evidence.json",
+      "sha256": "c9cc618524c2688069c1bb8005098626bed6ca7811ef5b8cc21d9371a8c49bfd"
+    }
+  },
+  "method": "For the longest shared app runs (up to 100, as retained in the comparator manifest), locate chains of 0xFF marker bytes spaced exactly 9 bytes apart; interpret the 8 intervening bytes as two little-endian float32 values; validate run bytes and hashes against both source images.",
+  "limits": [
+    "Float interpretation is a structural hypothesis, not proof that firmware loads or uses these values as floats.",
+    "A shared data island does not establish the complete payload transform, record boundaries beyond the observed marker chains, or amp-model semantics.",
+    "No firmware was modified and no hardware was accessed."
+  ],
+  "results": [
+    {
+      "GT-1_file_offset": "0x0D2929",
+      "GT-100_file_offset": "0x0DB8F0",
+      "shared_run_length": 311,
+      "shared_run_sha256": "506dde0db28073744b769893b06295ee17248ce10fe6b799f00deebf74ef9c50",
+      "marker_byte": "0xFF",
+      "marker_offsets_relative_to_run": [
+        7,
+        16,
+        25,
+        34,
+        43,
+        52,
+        61,
+        70,
+        79,
+        88,
+        97,
+        106,
+        115,
+        124,
+        133,
+        142,
+        151,
+        160,
+        169,
+        178,
+        187,
+        196,
+        205,
+        214,
+        223,
+        232,
+        241,
+        250,
+        259,
+        268,
+        277,
+        286,
+        295
+      ],
+      "marker_stride": 9,
+      "record_layout_candidate": "8 bytes interpreted as two little-endian IEEE-754 binary32 values, then one 0xFF marker",
+      "record_count": 32,
+      "pair_values_first_8": [
+        [
+          0.309808969,
+          1.19772983
+        ],
+        [
+          1.00481558,
+          0.898851156
+        ],
+        [
+          0.82826978,
+          0.774210691
+        ],
+        [
+          0.724305332,
+          0.677630544
+        ],
+        [
+          0.633970976,
+          0.593111336
+        ],
+        [
+          0.554897666,
+          0.519145489
+        ],
+        [
+          0.48567006,
+          0.45416382
+        ],
+        [
+          0.41933465,
+          0.376505852
+        ]
+      ],
+      "float_value_count": 64,
+      "finite_count": 64,
+      "finite_abs_le_100_count": 64,
+      "finite_abs_le_100_fraction": 1.0,
+      "plausible_min": 0.30980896949768066,
+      "plausible_max": 1.3010847568511963,
+      "GT1_GT100_record_bytes_identical": true,
+      "interpretation": "Regular marker spacing and plausible binary32 values support a table/record-layout hypothesis; semantic role and intended CPU representation remain unidentified."
+    },
+    {
+      "GT-1_file_offset": "0x05460C",
+      "GT-100_file_offset": "0x05D75A",
+      "shared_run_length": 284,
+      "shared_run_sha256": "3e58b0e7c6e41d40bf521774e002ade2729ff6d6f93cc570a5ec61a5bf7aea56",
+      "marker_byte": "0xFF",
+      "marker_offsets_relative_to_run": [
+        2,
+        11,
+        20,
+        29,
+        38,
+        47,
+        56,
+        65,
+        74,
+        83,
+        92,
+        101,
+        110,
+        119,
+        128,
+        137,
+        146,
+        155,
+        164,
+        173,
+        182,
+        191,
+        200,
+        209,
+        218,
+        227,
+        236,
+        245,
+        254,
+        263,
+        272,
+        281
+      ],
+      "marker_stride": 9,
+      "record_layout_candidate": "8 bytes interpreted as two little-endian IEEE-754 binary32 values, then one 0xFF marker",
+      "record_count": 31,
+      "pair_values_first_8": [
+        [
+          117375952.0,
+          470408160.0
+        ],
+        [
+          117900208.0,
+          472505344.0
+        ],
+        [
+          118424464.0,
+          474602528.0
+        ],
+        [
+          118948720.0,
+          476699712.0
+        ],
+        [
+          119472976.0,
+          478796896.0
+        ],
+        [
+          119997232.0,
+          480894080.0
+        ],
+        [
+          120521488.0,
+          482991264.0
+        ],
+        [
+          121045744.0,
+          485088448.0
+        ]
+      ],
+      "float_value_count": 62,
+      "finite_count": 62,
+      "finite_abs_le_100_count": 0,
+      "finite_abs_le_100_fraction": 0.0,
+      "plausible_min": null,
+      "plausible_max": null,
+      "GT1_GT100_record_bytes_identical": true,
+      "interpretation": "Regular marker spacing and plausible binary32 values support a table/record-layout hypothesis; semantic role and intended CPU representation remain unidentified."
+    },
+    {
+      "GT-1_file_offset": "0x0D2A8B",
+      "GT-100_file_offset": "0x0DBA52",
+      "shared_run_length": 229,
+      "shared_run_sha256": "78f2da3d34129864383b3ff8b49fde90c1024194e4404fa030d26bd5057402aa",
+      "marker_byte": "0xFF",
+      "marker_offsets_relative_to_run": [
+        6,
+        15,
+        24,
+        33,
+        42,
+        51,
+        60,
+        69,
+        78,
+        87,
+        96,
+        105,
+        114,
+        123,
+        132,
+        141,
+        150,
+        159,
+        168,
+        177,
+        186,
+        195,
+        204,
+        213
+      ],
+      "marker_stride": 9,
+      "record_layout_candidate": "8 bytes interpreted as two little-endian IEEE-754 binary32 values, then one 0xFF marker",
+      "record_count": 23,
+      "pair_values_first_8": [
+        [
+          0.420124054,
+          0.355648041
+        ],
+        [
+          1.37236404,
+          1.15132213
+        ],
+        [
+          1.02990758,
+          0.949035168
+        ],
+        [
+          0.887094021,
+          0.829912186
+        ],
+        [
+          0.776432037,
+          0.726406753
+        ],
+        [
+          0.67958957,
+          0.635804176
+        ],
+        [
+          0.594839156,
+          0.556482911
+        ],
+        [
+          0.520382881,
+          0.480475485
+        ]
+      ],
+      "float_value_count": 46,
+      "finite_count": 46,
+      "finite_abs_le_100_count": 46,
+      "finite_abs_le_100_fraction": 1.0,
+      "plausible_min": 0.3556480407714844,
+      "plausible_max": 1.4455441236495972,
+      "GT1_GT100_record_bytes_identical": true,
+      "interpretation": "Regular marker spacing and plausible binary32 values support a table/record-layout hypothesis; semantic role and intended CPU representation remain unidentified."
+    },
+    {
+      "GT-1_file_offset": "0x0D2400",
+      "GT-100_file_offset": "0x0DB3D1",
+      "shared_run_length": 201,
+      "shared_run_sha256": "92054dd3c4e41a4f71f946411acbcf50e51f80e619c7766758d4b5c1afb0bd85",
+      "marker_byte": "0xFF",
+      "marker_offsets_relative_to_run": [
+        3,
+        12,
+        21,
+        30,
+        39,
+        48,
+        57,
+        66,
+        75,
+        84,
+        93,
+        102,
+        111,
+        120,
+        129,
+        138,
+        147,
+        156,
+        165,
+        174,
+        183,
+        192
+      ],
+      "marker_stride": 9,
+      "record_layout_candidate": "8 bytes interpreted as two little-endian IEEE-754 binary32 values, then one 0xFF marker",
+      "record_count": 21,
+      "pair_values_first_8": [
+        [
+          0.318145812,
+          0.297647953
+        ],
+        [
+          0.278470397,
+          0.26051417
+        ],
+        [
+          0.243614167,
+          0.224931732
+        ],
+        [
+          0.201958299,
+          0.170963958
+        ],
+        [
+          0.667411804,
+          0.559914052
+        ],
+        [
+          0.500867486,
+          0.461537361
+        ],
+        [
+          0.431413978,
+          0.403605163
+        ],
+        [
+          0.377596527,
+          0.353268087
+        ]
+      ],
+      "float_value_count": 42,
+      "finite_count": 42,
+      "finite_abs_le_100_count": 42,
+      "finite_abs_le_100_fraction": 1.0,
+      "plausible_min": 0.17096395790576935,
+      "plausible_max": 0.7187328934669495,
+      "GT1_GT100_record_bytes_identical": true,
+      "interpretation": "Regular marker spacing and plausible binary32 values support a table/record-layout hypothesis; semantic role and intended CPU representation remain unidentified."
+    },
+    {
+      "GT-1_file_offset": "0x101745",
+      "GT-100_file_offset": "0x11480F",
+      "shared_run_length": 127,
+      "shared_run_sha256": "aaad5d43603a1c9f54f5267dd00a2672cbe39a646a4ea4ce21efe3fc56e2e683",
+      "marker_byte": "0xFF",
+      "marker_offsets_relative_to_run": [
+        5,
+        14,
+        23,
+        32,
+        41,
+        50,
+        59,
+        68,
+        77,
+        86,
+        95,
+        104,
+        113
+      ],
+      "marker_stride": 9,
+      "record_layout_candidate": "8 bytes interpreted as two little-endian IEEE-754 binary32 values, then one 0xFF marker",
+      "record_count": 12,
+      "pair_values_first_8": [
+        [
+          -1.72623667e+35,
+          -1.07880285e+34
+        ],
+        [
+          -6.74212165e+32,
+          -4.21357845e+31
+        ],
+        [
+          -2.63333179e+30,
+          -4.11433913e+28
+        ],
+        [
+          -2.57123528e+27,
+          -1.6069276e+26
+        ],
+        [
+          -1.00427072e+25,
+          -6.27632309e+23
+        ],
+        [
+          -3.92247134e+22,
+          -6.12832104e+20
+        ],
+        [
+          -3.82997547e+19,
+          -2.39359393e+18
+        ],
+        [
+          -1.49590825e+17,
+          -9348876790000000.0
+        ]
+      ],
+      "float_value_count": 24,
+      "finite_count": 24,
+      "finite_abs_le_100_count": 0,
+      "finite_abs_le_100_fraction": 0.0,
+      "plausible_min": null,
+      "plausible_max": null,
+      "GT1_GT100_record_bytes_identical": true,
+      "interpretation": "Regular marker spacing and plausible binary32 values support a table/record-layout hypothesis; semantic role and intended CPU representation remain unidentified."
+    },
+    {
+      "GT-1_file_offset": "0x0D2B72",
+      "GT-100_file_offset": "0x0DBB39",
+      "shared_run_length": 106,
+      "shared_run_sha256": "334bc42b9c87e4e5aed488b2ff32d86c1c5769306bcaf5885e19f2ae9ea8ece0",
+      "marker_byte": "0xFF",
+      "marker_offsets_relative_to_run": [
+        1,
+        10,
+        19,
+        28,
+        37,
+        46,
+        55,
+        64,
+        73,
+        82,
+        91
+      ],
+      "marker_stride": 9,
+      "record_layout_candidate": "8 bytes interpreted as two little-endian IEEE-754 binary32 values, then one 0xFF marker",
+      "record_count": 10,
+      "pair_values_first_8": [
+        [
+          0.00559231499,
+          5.79971244e+29
+        ],
+        [
+          17.4060326,
+          1.35034832e+20
+        ],
+        [
+          -1.90557121e-29,
+          -1465.98108
+        ],
+        [
+          -1.62671051e+28,
+          -8.00897212e+35
+        ],
+        [
+          -5.30513206e+18,
+          -4.67632187e-33
+        ],
+        [
+          -6.70215488e+27,
+          -1.09060772e+30
+        ],
+        [
+          -1.13453118e+24,
+          -2.54514359e-14
+        ],
+        [
+          7.04907871e-34,
+          -2.33369389e-17
+        ]
+      ],
+      "float_value_count": 20,
+      "finite_count": 20,
+      "finite_abs_le_100_count": 10,
+      "finite_abs_le_100_fraction": 0.5,
+      "plausible_min": -2.5451435934926298e-14,
+      "plausible_max": 17.40603256225586,
+      "GT1_GT100_record_bytes_identical": true,
+      "interpretation": "Regular marker spacing and plausible binary32 values support a table/record-layout hypothesis; semantic role and intended CPU representation remain unidentified."
+    },
+    {
+      "GT-1_file_offset": "0x098ADB",
+      "GT-100_file_offset": "0x093B8E",
+      "shared_run_length": 101,
+      "shared_run_sha256": "e5c5422827a88b4aaaf06d790f799da335035fb6748a553b21834b5327d8f986",
+      "marker_byte": "0xFF",
+      "marker_offsets_relative_to_run": [
+        7,
+        16,
+        25,
+        34,
+        43,
+        52,
+        61,
+        70,
+        79,
+        88
+      ],
+      "marker_stride": 9,
+      "record_layout_candidate": "8 bytes interpreted as two little-endian IEEE-754 binary32 values, then one 0xFF marker",
+      "record_count": 9,
+      "pair_values_first_8": [
+        [
+          NaN,
+          3.54601256e-34
+        ],
+        [
+          1.01773905e+37,
+          2.20406354e-38
+        ],
+        [
+          NaN,
+          -2.14138178e-38
+        ],
+        [
+          9.46369373e-26,
+          6041015810.0
+        ],
+        [
+          1.69206399e-16,
+          4.46792211e-17
+        ],
+        [
+          9.86151514e-30,
+          3.12247632e-35
+        ],
+        [
+          684350.688,
+          1.78877436e+19
+        ],
+        [
+          3.82620129e-37,
+          -59142.9805
+        ]
+      ],
+      "float_value_count": 18,
+      "finite_count": 16,
+      "finite_abs_le_100_count": 10,
+      "finite_abs_le_100_fraction": 0.555556,
+      "plausible_min": -2.1413817767016367e-38,
+      "plausible_max": 1.6920639850773243e-16,
+      "GT1_GT100_record_bytes_identical": true,
+      "interpretation": "Regular marker spacing and plausible binary32 values support a table/record-layout hypothesis; semantic role and intended CPU representation remain unidentified."
+    }
+  ]
+}

@@ -1,0 +1,7342 @@
+{
+  "file": "firmware/extracted/v109/gt1_sys_v109/GT1ROM.BIN",
+  "size": 4194304,
+  "sha256": "412ebf5ffdc48554454c27df47f61428f046ea0a7d93f5c77b7f0302861abdbf",
+  "entropy_window": 4096,
+  "windows": [
+    {
+      "offset": 0,
+      "entropy": 5.3315,
+      "unique_bytes": 210
+    },
+    {
+      "offset": 4096,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 8192,
+      "entropy": 7.3885,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 12288,
+      "entropy": 7.4444,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 16384,
+      "entropy": 7.3604,
+      "unique_bytes": 254
+    },
+    {
+      "offset": 20480,
+      "entropy": 7.4136,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 24576,
+      "entropy": 7.3192,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 28672,
+      "entropy": 7.3904,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 32768,
+      "entropy": 7.339,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 36864,
+      "entropy": 7.4119,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 40960,
+      "entropy": 7.3827,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 45056,
+      "entropy": 7.5692,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 49152,
+      "entropy": 7.3175,
+      "unique_bytes": 254
+    },
+    {
+      "offset": 53248,
+      "entropy": 7.447,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 57344,
+      "entropy": 7.5904,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 61440,
+      "entropy": 7.4489,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 65536,
+      "entropy": 7.4347,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 69632,
+      "entropy": 7.3386,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 73728,
+      "entropy": 7.4213,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 77824,
+      "entropy": 7.3966,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 81920,
+      "entropy": 7.3317,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 86016,
+      "entropy": 7.3628,
+      "unique_bytes": 254
+    },
+    {
+      "offset": 90112,
+      "entropy": 7.4157,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 94208,
+      "entropy": 7.4222,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 98304,
+      "entropy": 7.3442,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 102400,
+      "entropy": 7.4107,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 106496,
+      "entropy": 7.4343,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 110592,
+      "entropy": 7.2693,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 114688,
+      "entropy": 7.2014,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 118784,
+      "entropy": 7.2182,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 122880,
+      "entropy": 7.0617,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 126976,
+      "entropy": 7.0287,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 131072,
+      "entropy": 7.3787,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 135168,
+      "entropy": 7.4914,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 139264,
+      "entropy": 7.4051,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 143360,
+      "entropy": 3.4176,
+      "unique_bytes": 235
+    },
+    {
+      "offset": 147456,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 151552,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 155648,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 159744,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 163840,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 167936,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 172032,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 176128,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 180224,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 184320,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 188416,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 192512,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 196608,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 200704,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 204800,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 208896,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 212992,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 217088,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 221184,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 225280,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 229376,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 233472,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 237568,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 241664,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 245760,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 249856,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 253952,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 258048,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 262144,
+      "entropy": 7.3627,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 266240,
+      "entropy": 7.3674,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 270336,
+      "entropy": 7.4549,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 274432,
+      "entropy": 7.4458,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 278528,
+      "entropy": 7.3372,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 282624,
+      "entropy": 7.3833,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 286720,
+      "entropy": 7.3718,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 290816,
+      "entropy": 7.3164,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 294912,
+      "entropy": 7.413,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 299008,
+      "entropy": 7.4974,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 303104,
+      "entropy": 7.5316,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 307200,
+      "entropy": 7.4987,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 311296,
+      "entropy": 7.684,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 315392,
+      "entropy": 7.4527,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 319488,
+      "entropy": 7.4331,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 323584,
+      "entropy": 7.6621,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 327680,
+      "entropy": 7.5607,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 331776,
+      "entropy": 7.4988,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 335872,
+      "entropy": 7.3886,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 339968,
+      "entropy": 7.4221,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 344064,
+      "entropy": 7.4966,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 348160,
+      "entropy": 7.6111,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 352256,
+      "entropy": 7.6377,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 356352,
+      "entropy": 7.5726,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 360448,
+      "entropy": 7.648,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 364544,
+      "entropy": 7.6524,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 368640,
+      "entropy": 7.5727,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 372736,
+      "entropy": 7.2815,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 376832,
+      "entropy": 7.6432,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 380928,
+      "entropy": 7.6295,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 385024,
+      "entropy": 7.5131,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 389120,
+      "entropy": 7.5084,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 393216,
+      "entropy": 7.3957,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 397312,
+      "entropy": 7.4683,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 401408,
+      "entropy": 7.4545,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 405504,
+      "entropy": 7.5513,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 409600,
+      "entropy": 7.4207,
+      "unique_bytes": 254
+    },
+    {
+      "offset": 413696,
+      "entropy": 7.4471,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 417792,
+      "entropy": 7.476,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 421888,
+      "entropy": 7.4705,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 425984,
+      "entropy": 7.472,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 430080,
+      "entropy": 7.6313,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 434176,
+      "entropy": 7.4545,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 438272,
+      "entropy": 7.4772,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 442368,
+      "entropy": 7.3899,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 446464,
+      "entropy": 7.4826,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 450560,
+      "entropy": 7.362,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 454656,
+      "entropy": 7.4914,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 458752,
+      "entropy": 7.4284,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 462848,
+      "entropy": 7.4534,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 466944,
+      "entropy": 7.4312,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 471040,
+      "entropy": 7.5035,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 475136,
+      "entropy": 7.5925,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 479232,
+      "entropy": 7.4333,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 483328,
+      "entropy": 7.4688,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 487424,
+      "entropy": 7.559,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 491520,
+      "entropy": 7.4651,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 495616,
+      "entropy": 7.4086,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 499712,
+      "entropy": 7.4436,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 503808,
+      "entropy": 7.5373,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 507904,
+      "entropy": 7.4845,
+      "unique_bytes": 254
+    },
+    {
+      "offset": 512000,
+      "entropy": 7.5325,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 516096,
+      "entropy": 7.4184,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 520192,
+      "entropy": 7.4207,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 524288,
+      "entropy": 7.4831,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 528384,
+      "entropy": 7.4431,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 532480,
+      "entropy": 7.5366,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 536576,
+      "entropy": 7.49,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 540672,
+      "entropy": 7.4218,
+      "unique_bytes": 253
+    },
+    {
+      "offset": 544768,
+      "entropy": 7.41,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 548864,
+      "entropy": 7.4686,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 552960,
+      "entropy": 7.5666,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 557056,
+      "entropy": 7.6205,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 561152,
+      "entropy": 7.3778,
+      "unique_bytes": 254
+    },
+    {
+      "offset": 565248,
+      "entropy": 7.4351,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 569344,
+      "entropy": 7.4607,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 573440,
+      "entropy": 7.4326,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 577536,
+      "entropy": 7.4846,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 581632,
+      "entropy": 7.4821,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 585728,
+      "entropy": 7.4552,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 589824,
+      "entropy": 7.3872,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 593920,
+      "entropy": 7.4502,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 598016,
+      "entropy": 7.4225,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 602112,
+      "entropy": 7.3871,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 606208,
+      "entropy": 7.4551,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 610304,
+      "entropy": 7.3572,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 614400,
+      "entropy": 7.3422,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 618496,
+      "entropy": 7.4502,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 622592,
+      "entropy": 7.3034,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 626688,
+      "entropy": 7.3805,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 630784,
+      "entropy": 7.4668,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 634880,
+      "entropy": 7.4623,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 638976,
+      "entropy": 7.4391,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 643072,
+      "entropy": 7.3953,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 647168,
+      "entropy": 7.4877,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 651264,
+      "entropy": 7.4647,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 655360,
+      "entropy": 7.5091,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 659456,
+      "entropy": 7.3784,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 663552,
+      "entropy": 7.4543,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 667648,
+      "entropy": 7.45,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 671744,
+      "entropy": 7.5379,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 675840,
+      "entropy": 7.4392,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 679936,
+      "entropy": 7.5134,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 684032,
+      "entropy": 7.6316,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 688128,
+      "entropy": 7.6584,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 692224,
+      "entropy": 7.4459,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 696320,
+      "entropy": 7.3393,
+      "unique_bytes": 254
+    },
+    {
+      "offset": 700416,
+      "entropy": 7.5552,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 704512,
+      "entropy": 7.5015,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 708608,
+      "entropy": 7.4822,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 712704,
+      "entropy": 7.3978,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 716800,
+      "entropy": 7.3923,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 720896,
+      "entropy": 7.2234,
+      "unique_bytes": 252
+    },
+    {
+      "offset": 724992,
+      "entropy": 7.2556,
+      "unique_bytes": 253
+    },
+    {
+      "offset": 729088,
+      "entropy": 7.3581,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 733184,
+      "entropy": 7.1672,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 737280,
+      "entropy": 7.1382,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 741376,
+      "entropy": 7.2584,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 745472,
+      "entropy": 7.1185,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 749568,
+      "entropy": 7.2953,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 753664,
+      "entropy": 7.2075,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 757760,
+      "entropy": 7.3261,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 761856,
+      "entropy": 7.1479,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 765952,
+      "entropy": 7.0649,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 770048,
+      "entropy": 7.131,
+      "unique_bytes": 253
+    },
+    {
+      "offset": 774144,
+      "entropy": 7.6231,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 778240,
+      "entropy": 7.4673,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 782336,
+      "entropy": 7.5235,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 786432,
+      "entropy": 7.4417,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 790528,
+      "entropy": 7.5119,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 794624,
+      "entropy": 6.7921,
+      "unique_bytes": 239
+    },
+    {
+      "offset": 798720,
+      "entropy": 6.606,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 802816,
+      "entropy": 7.0436,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 806912,
+      "entropy": 7.0057,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 811008,
+      "entropy": 7.313,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 815104,
+      "entropy": 7.4179,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 819200,
+      "entropy": 7.32,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 823296,
+      "entropy": 7.3747,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 827392,
+      "entropy": 6.5129,
+      "unique_bytes": 217
+    },
+    {
+      "offset": 831488,
+      "entropy": 6.6315,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 835584,
+      "entropy": 7.0044,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 839680,
+      "entropy": 6.947,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 843776,
+      "entropy": 7.2742,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 847872,
+      "entropy": 7.3982,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 851968,
+      "entropy": 7.037,
+      "unique_bytes": 253
+    },
+    {
+      "offset": 856064,
+      "entropy": 7.036,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 860160,
+      "entropy": 6.9805,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 864256,
+      "entropy": 6.736,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 868352,
+      "entropy": 6.7349,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 872448,
+      "entropy": 6.7148,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 876544,
+      "entropy": 6.7777,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 880640,
+      "entropy": 6.8723,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 884736,
+      "entropy": 6.6775,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 888832,
+      "entropy": 6.8663,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 892928,
+      "entropy": 6.5435,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 897024,
+      "entropy": 6.8678,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 901120,
+      "entropy": 7.1118,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 905216,
+      "entropy": 7.3845,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 909312,
+      "entropy": 7.3847,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 913408,
+      "entropy": 7.4037,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 917504,
+      "entropy": 7.4457,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 921600,
+      "entropy": 6.9865,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 925696,
+      "entropy": 6.8912,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 929792,
+      "entropy": 6.9806,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 933888,
+      "entropy": 7.4706,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 937984,
+      "entropy": 6.5605,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 942080,
+      "entropy": 6.5577,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 946176,
+      "entropy": 6.5336,
+      "unique_bytes": 250
+    },
+    {
+      "offset": 950272,
+      "entropy": 6.5601,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 954368,
+      "entropy": 6.5549,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 958464,
+      "entropy": 6.6234,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 962560,
+      "entropy": 6.7668,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 966656,
+      "entropy": 7.0869,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 970752,
+      "entropy": 6.7675,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 974848,
+      "entropy": 6.5651,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 978944,
+      "entropy": 6.8875,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 983040,
+      "entropy": 7.1194,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 987136,
+      "entropy": 7.3549,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 991232,
+      "entropy": 7.4444,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 995328,
+      "entropy": 7.5249,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 999424,
+      "entropy": 7.4201,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1003520,
+      "entropy": 7.2829,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1007616,
+      "entropy": 7.3426,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1011712,
+      "entropy": 7.4844,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1015808,
+      "entropy": 7.2798,
+      "unique_bytes": 254
+    },
+    {
+      "offset": 1019904,
+      "entropy": 7.4217,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1024000,
+      "entropy": 7.5669,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1028096,
+      "entropy": 7.5092,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 1032192,
+      "entropy": 7.5062,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1036288,
+      "entropy": 7.607,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1040384,
+      "entropy": 7.4437,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1044480,
+      "entropy": 7.6063,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1048576,
+      "entropy": 6.6918,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1052672,
+      "entropy": 6.4012,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1056768,
+      "entropy": 6.4093,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1060864,
+      "entropy": 6.6251,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1064960,
+      "entropy": 7.2002,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1069056,
+      "entropy": 7.1055,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1073152,
+      "entropy": 7.1204,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1077248,
+      "entropy": 7.1196,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1081344,
+      "entropy": 7.1021,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1085440,
+      "entropy": 7.1153,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 1089536,
+      "entropy": 7.1001,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1093632,
+      "entropy": 7.1276,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1097728,
+      "entropy": 7.0938,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1101824,
+      "entropy": 7.2086,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1105920,
+      "entropy": 7.2996,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 1110016,
+      "entropy": 7.1031,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1114112,
+      "entropy": 6.9739,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1118208,
+      "entropy": 6.8892,
+      "unique_bytes": 254
+    },
+    {
+      "offset": 1122304,
+      "entropy": 7.2936,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1126400,
+      "entropy": 7.2298,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1130496,
+      "entropy": 6.3881,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 1134592,
+      "entropy": 6.5186,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1138688,
+      "entropy": 7.0189,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 1142784,
+      "entropy": 7.2174,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1146880,
+      "entropy": 7.0762,
+      "unique_bytes": 254
+    },
+    {
+      "offset": 1150976,
+      "entropy": 7.1858,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1155072,
+      "entropy": 7.1788,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1159168,
+      "entropy": 7.1606,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1163264,
+      "entropy": 7.1675,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1167360,
+      "entropy": 7.2018,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1171456,
+      "entropy": 7.14,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 1175552,
+      "entropy": 7.0631,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1179648,
+      "entropy": 6.9653,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1183744,
+      "entropy": 6.8563,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1187840,
+      "entropy": 6.9869,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1191936,
+      "entropy": 7.4403,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1196032,
+      "entropy": 7.5172,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 1200128,
+      "entropy": 7.5578,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1204224,
+      "entropy": 7.558,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1208320,
+      "entropy": 7.3935,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1212416,
+      "entropy": 7.63,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 1216512,
+      "entropy": 7.5193,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1220608,
+      "entropy": 6.4874,
+      "unique_bytes": 197
+    },
+    {
+      "offset": 1224704,
+      "entropy": 7.2777,
+      "unique_bytes": 254
+    },
+    {
+      "offset": 1228800,
+      "entropy": 7.48,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1232896,
+      "entropy": 7.2408,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 1236992,
+      "entropy": 7.2465,
+      "unique_bytes": 254
+    },
+    {
+      "offset": 1241088,
+      "entropy": 7.4174,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1245184,
+      "entropy": 7.3614,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1249280,
+      "entropy": 7.4008,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1253376,
+      "entropy": 7.4117,
+      "unique_bytes": 252
+    },
+    {
+      "offset": 1257472,
+      "entropy": 7.3385,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 1261568,
+      "entropy": 7.4037,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1265664,
+      "entropy": 7.4234,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 1269760,
+      "entropy": 7.5653,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1273856,
+      "entropy": 7.4109,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 1277952,
+      "entropy": 7.2352,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1282048,
+      "entropy": 7.4436,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1286144,
+      "entropy": 7.5305,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1290240,
+      "entropy": 7.563,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1294336,
+      "entropy": 7.3489,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1298432,
+      "entropy": 7.4646,
+      "unique_bytes": 254
+    },
+    {
+      "offset": 1302528,
+      "entropy": 7.4155,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1306624,
+      "entropy": 7.3812,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 1310720,
+      "entropy": 7.4495,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1314816,
+      "entropy": 7.3268,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 1318912,
+      "entropy": 7.3967,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 1323008,
+      "entropy": 7.4372,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1327104,
+      "entropy": 7.2761,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 1331200,
+      "entropy": 7.4713,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1335296,
+      "entropy": 7.4586,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1339392,
+      "entropy": 7.3735,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 1343488,
+      "entropy": 7.3911,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1347584,
+      "entropy": 7.2922,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1351680,
+      "entropy": 7.3229,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 1355776,
+      "entropy": 7.4225,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1359872,
+      "entropy": 7.2403,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1363968,
+      "entropy": 7.4598,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1368064,
+      "entropy": 7.2714,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1372160,
+      "entropy": 7.5223,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1376256,
+      "entropy": 6.9373,
+      "unique_bytes": 254
+    },
+    {
+      "offset": 1380352,
+      "entropy": 7.0759,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 1384448,
+      "entropy": 7.1713,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1388544,
+      "entropy": 7.3802,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1392640,
+      "entropy": 7.4739,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 1396736,
+      "entropy": 7.4005,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 1400832,
+      "entropy": 7.4532,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 1404928,
+      "entropy": 7.6163,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1409024,
+      "entropy": 7.4055,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1413120,
+      "entropy": 7.4405,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 1417216,
+      "entropy": 7.4103,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 1421312,
+      "entropy": 7.4002,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 1425408,
+      "entropy": 7.5548,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 1429504,
+      "entropy": 7.3449,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 1433600,
+      "entropy": 7.2909,
+      "unique_bytes": 255
+    },
+    {
+      "offset": 1437696,
+      "entropy": 5.7188,
+      "unique_bytes": 252
+    },
+    {
+      "offset": 1441792,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1445888,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1449984,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1454080,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1458176,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1462272,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1466368,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1470464,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1474560,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1478656,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1482752,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1486848,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1490944,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1495040,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1499136,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1503232,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1507328,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1511424,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1515520,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1519616,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1523712,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1527808,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1531904,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1536000,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1540096,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1544192,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1548288,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1552384,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1556480,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1560576,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1564672,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1568768,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1572864,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1576960,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1581056,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1585152,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1589248,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1593344,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1597440,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1601536,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1605632,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1609728,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1613824,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1617920,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1622016,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1626112,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1630208,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1634304,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1638400,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1642496,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1646592,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1650688,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1654784,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1658880,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1662976,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1667072,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1671168,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1675264,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1679360,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1683456,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1687552,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1691648,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1695744,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1699840,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1703936,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1708032,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1712128,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1716224,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1720320,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1724416,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1728512,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1732608,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1736704,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1740800,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1744896,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1748992,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1753088,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1757184,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1761280,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1765376,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1769472,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1773568,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1777664,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1781760,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1785856,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1789952,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1794048,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1798144,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1802240,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1806336,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1810432,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1814528,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1818624,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1822720,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1826816,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1830912,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1835008,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1839104,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1843200,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1847296,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1851392,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1855488,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1859584,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1863680,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1867776,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1871872,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1875968,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1880064,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1884160,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1888256,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1892352,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1896448,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1900544,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1904640,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1908736,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1912832,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1916928,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1921024,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1925120,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1929216,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1933312,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1937408,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1941504,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1945600,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1949696,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1953792,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1957888,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1961984,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1966080,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1970176,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1974272,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1978368,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1982464,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1986560,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1990656,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1994752,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 1998848,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2002944,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2007040,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2011136,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2015232,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2019328,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2023424,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2027520,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2031616,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2035712,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2039808,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2043904,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2048000,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2052096,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2056192,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2060288,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2064384,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2068480,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2072576,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2076672,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2080768,
+      "entropy": 2.5809,
+      "unique_bytes": 204
+    },
+    {
+      "offset": 2084864,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2088960,
+      "entropy": 3.5948,
+      "unique_bytes": 256
+    },
+    {
+      "offset": 2093056,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2097152,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2101248,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2105344,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2109440,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2113536,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2117632,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2121728,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2125824,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2129920,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2134016,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2138112,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2142208,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2146304,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2150400,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2154496,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2158592,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2162688,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2166784,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2170880,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2174976,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2179072,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2183168,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2187264,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2191360,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2195456,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2199552,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2203648,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2207744,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2211840,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2215936,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2220032,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2224128,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2228224,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2232320,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2236416,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2240512,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2244608,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2248704,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2252800,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2256896,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2260992,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2265088,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2269184,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2273280,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2277376,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2281472,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2285568,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2289664,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2293760,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2297856,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 2301952,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2306048,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2310144,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2314240,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2318336,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2322432,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2326528,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2330624,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2334720,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2338816,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2342912,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2347008,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2351104,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2355200,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2359296,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2363392,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2367488,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2371584,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2375680,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2379776,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2383872,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2387968,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2392064,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2396160,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2400256,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2404352,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2408448,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2412544,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2416640,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2420736,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2424832,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2428928,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2433024,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2437120,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2441216,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2445312,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2449408,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2453504,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2457600,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2461696,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2465792,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2469888,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2473984,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2478080,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2482176,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2486272,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2490368,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2494464,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2498560,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2502656,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2506752,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2510848,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2514944,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2519040,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2523136,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2527232,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2531328,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2535424,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2539520,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2543616,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2547712,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2551808,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2555904,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2560000,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2564096,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2568192,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2572288,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2576384,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2580480,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2584576,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2588672,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2592768,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2596864,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2600960,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2605056,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2609152,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2613248,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2617344,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2621440,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2625536,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2629632,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2633728,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2637824,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2641920,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2646016,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2650112,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2654208,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2658304,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2662400,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2666496,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2670592,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2674688,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2678784,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2682880,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2686976,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2691072,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2695168,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2699264,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2703360,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2707456,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2711552,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2715648,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2719744,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2723840,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2727936,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2732032,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2736128,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2740224,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2744320,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2748416,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2752512,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2756608,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2760704,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2764800,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2768896,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2772992,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2777088,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2781184,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2785280,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2789376,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2793472,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2797568,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2801664,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2805760,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2809856,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2813952,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2818048,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2822144,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2826240,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2830336,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2834432,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2838528,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2842624,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2846720,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2850816,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2854912,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2859008,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2863104,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2867200,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2871296,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2875392,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2879488,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2883584,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2887680,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2891776,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2895872,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2899968,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2904064,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2908160,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2912256,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2916352,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2920448,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2924544,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2928640,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2932736,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2936832,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2940928,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2945024,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2949120,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2953216,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2957312,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2961408,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2965504,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2969600,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2973696,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2977792,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2981888,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2985984,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2990080,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2994176,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 2998272,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 3002368,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 3006464,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 3010560,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 3014656,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 3018752,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 3022848,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 3026944,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 3031040,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 3035136,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 3039232,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 3043328,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 3047424,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 3051520,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 3055616,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 3059712,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 3063808,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 3067904,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 3072000,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 3076096,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 3080192,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 3084288,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 3088384,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 3092480,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 3096576,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 3100672,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 3104768,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 3108864,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 3112960,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 3117056,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 3121152,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 3125248,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 3129344,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 3133440,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 3137536,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 3141632,
+      "entropy": 0.0187,
+      "unique_bytes": 5
+    },
+    {
+      "offset": 3145728,
+      "entropy": 3.3208,
+      "unique_bytes": 67
+    },
+    {
+      "offset": 3149824,
+      "entropy": 3.3063,
+      "unique_bytes": 62
+    },
+    {
+      "offset": 3153920,
+      "entropy": 3.3132,
+      "unique_bytes": 67
+    },
+    {
+      "offset": 3158016,
+      "entropy": 3.3263,
+      "unique_bytes": 72
+    },
+    {
+      "offset": 3162112,
+      "entropy": 3.3117,
+      "unique_bytes": 62
+    },
+    {
+      "offset": 3166208,
+      "entropy": 3.3084,
+      "unique_bytes": 69
+    },
+    {
+      "offset": 3170304,
+      "entropy": 3.3296,
+      "unique_bytes": 67
+    },
+    {
+      "offset": 3174400,
+      "entropy": 3.3276,
+      "unique_bytes": 66
+    },
+    {
+      "offset": 3178496,
+      "entropy": 3.3263,
+      "unique_bytes": 67
+    },
+    {
+      "offset": 3182592,
+      "entropy": 3.304,
+      "unique_bytes": 65
+    },
+    {
+      "offset": 3186688,
+      "entropy": 3.3143,
+      "unique_bytes": 69
+    },
+    {
+      "offset": 3190784,
+      "entropy": 3.3001,
+      "unique_bytes": 64
+    },
+    {
+      "offset": 3194880,
+      "entropy": 3.3204,
+      "unique_bytes": 71
+    },
+    {
+      "offset": 3198976,
+      "entropy": 3.3205,
+      "unique_bytes": 70
+    },
+    {
+      "offset": 3203072,
+      "entropy": 3.3014,
+      "unique_bytes": 68
+    },
+    {
+      "offset": 3207168,
+      "entropy": 3.3243,
+      "unique_bytes": 72
+    },
+    {
+      "offset": 3211264,
+      "entropy": 3.2965,
+      "unique_bytes": 67
+    },
+    {
+      "offset": 3215360,
+      "entropy": 3.3198,
+      "unique_bytes": 69
+    },
+    {
+      "offset": 3219456,
+      "entropy": 3.313,
+      "unique_bytes": 63
+    },
+    {
+      "offset": 3223552,
+      "entropy": 3.3063,
+      "unique_bytes": 65
+    },
+    {
+      "offset": 3227648,
+      "entropy": 3.3089,
+      "unique_bytes": 70
+    },
+    {
+      "offset": 3231744,
+      "entropy": 3.3024,
+      "unique_bytes": 69
+    },
+    {
+      "offset": 3235840,
+      "entropy": 3.3123,
+      "unique_bytes": 68
+    },
+    {
+      "offset": 3239936,
+      "entropy": 3.3085,
+      "unique_bytes": 66
+    },
+    {
+      "offset": 3244032,
+      "entropy": 3.3136,
+      "unique_bytes": 69
+    },
+    {
+      "offset": 3248128,
+      "entropy": 3.3183,
+      "unique_bytes": 69
+    },
+    {
+      "offset": 3252224,
+      "entropy": 3.3273,
+      "unique_bytes": 69
+    },
+    {
+      "offset": 3256320,
+      "entropy": 3.3019,
+      "unique_bytes": 67
+    },
+    {
+      "offset": 3260416,
+      "entropy": 3.2931,
+      "unique_bytes": 63
+    },
+    {
+      "offset": 3264512,
+      "entropy": 3.3114,
+      "unique_bytes": 69
+    },
+    {
+      "offset": 3268608,
+      "entropy": 3.3408,
+      "unique_bytes": 76
+    },
+    {
+      "offset": 3272704,
+      "entropy": 3.3305,
+      "unique_bytes": 69
+    },
+    {
+      "offset": 3276800,
+      "entropy": 3.3253,
+      "unique_bytes": 73
+    },
+    {
+      "offset": 3280896,
+      "entropy": 3.3345,
+      "unique_bytes": 75
+    },
+    {
+      "offset": 3284992,
+      "entropy": 3.3122,
+      "unique_bytes": 67
+    },
+    {
+      "offset": 3289088,
+      "entropy": 3.308,
+      "unique_bytes": 67
+    },
+    {
+      "offset": 3293184,
+      "entropy": 3.3199,
+      "unique_bytes": 71
+    },
+    {
+      "offset": 3297280,
+      "entropy": 3.3263,
+      "unique_bytes": 72
+    },
+    {
+      "offset": 3301376,
+      "entropy": 3.3143,
+      "unique_bytes": 73
+    },
+    {
+      "offset": 3305472,
+      "entropy": 3.311,
+      "unique_bytes": 70
+    },
+    {
+      "offset": 3309568,
+      "entropy": 3.3165,
+      "unique_bytes": 73
+    },
+    {
+      "offset": 3313664,
+      "entropy": 3.3055,
+      "unique_bytes": 67
+    },
+    {
+      "offset": 3317760,
+      "entropy": 3.3086,
+      "unique_bytes": 67
+    },
+    {
+      "offset": 3321856,
+      "entropy": 3.2858,
+      "unique_bytes": 62
+    },
+    {
+      "offset": 3325952,
+      "entropy": 3.3053,
+      "unique_bytes": 65
+    },
+    {
+      "offset": 3330048,
+      "entropy": 3.3357,
+      "unique_bytes": 71
+    },
+    {
+      "offset": 3334144,
+      "entropy": 3.3604,
+      "unique_bytes": 77
+    },
+    {
+      "offset": 3338240,
+      "entropy": 3.3115,
+      "unique_bytes": 69
+    },
+    {
+      "offset": 3342336,
+      "entropy": 3.3114,
+      "unique_bytes": 68
+    },
+    {
+      "offset": 3346432,
+      "entropy": 2.4392,
+      "unique_bytes": 55
+    },
+    {
+      "offset": 3350528,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3354624,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3358720,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3362816,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3366912,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3371008,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3375104,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3379200,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3383296,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3387392,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3391488,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3395584,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3399680,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3403776,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3407872,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3411968,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3416064,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3420160,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3424256,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3428352,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3432448,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3436544,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3440640,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3444736,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3448832,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3452928,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3457024,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3461120,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3465216,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3469312,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3473408,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3477504,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3481600,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3485696,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3489792,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3493888,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3497984,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3502080,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3506176,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3510272,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3514368,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3518464,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3522560,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3526656,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3530752,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3534848,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3538944,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3543040,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3547136,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3551232,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3555328,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3559424,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3563520,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3567616,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3571712,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3575808,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3579904,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3584000,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3588096,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3592192,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3596288,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3600384,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3604480,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3608576,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3612672,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3616768,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3620864,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3624960,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3629056,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3633152,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3637248,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3641344,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3645440,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3649536,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3653632,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3657728,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3661824,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3665920,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3670016,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3674112,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3678208,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3682304,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3686400,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3690496,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3694592,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3698688,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3702784,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3706880,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3710976,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3715072,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3719168,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3723264,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3727360,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3731456,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3735552,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3739648,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3743744,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3747840,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3751936,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3756032,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3760128,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3764224,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3768320,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3772416,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3776512,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3780608,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3784704,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3788800,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3792896,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3796992,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3801088,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3805184,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3809280,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3813376,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3817472,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3821568,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3825664,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3829760,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3833856,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3837952,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3842048,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3846144,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3850240,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3854336,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3858432,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3862528,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3866624,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3870720,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3874816,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3878912,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3883008,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3887104,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3891200,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3895296,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3899392,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3903488,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3907584,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3911680,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3915776,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3919872,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3923968,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3928064,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3932160,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3936256,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3940352,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3944448,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3948544,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3952640,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3956736,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3960832,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3964928,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3969024,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3973120,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3977216,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3981312,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3985408,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3989504,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3993600,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 3997696,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4001792,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4005888,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4009984,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4014080,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4018176,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4022272,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4026368,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4030464,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4034560,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4038656,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4042752,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4046848,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4050944,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4055040,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4059136,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4063232,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4067328,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4071424,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4075520,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4079616,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4083712,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4087808,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4091904,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4096000,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4100096,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4104192,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4108288,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4112384,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4116480,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4120576,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4124672,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4128768,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4132864,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4136960,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4141056,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4145152,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4149248,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4153344,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4157440,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4161536,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4165632,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4169728,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4173824,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4177920,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4182016,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4186112,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    },
+    {
+      "offset": 4190208,
+      "entropy": -0.0,
+      "unique_bytes": 1
+    }
+  ],
+  "fill_runs_ge_256": [
+    {
+      "start": 3292,
+      "end": 8192,
+      "length": 4900,
+      "byte": "ff"
+    },
+    {
+      "start": 144807,
+      "end": 262144,
+      "length": 117337,
+      "byte": "ff"
+    },
+    {
+      "start": 1440570,
+      "end": 2080768,
+      "length": 640198,
+      "byte": "ff"
+    },
+    {
+      "start": 2082280,
+      "end": 2088960,
+      "length": 6680,
+      "byte": "ff"
+    },
+    {
+      "start": 2091056,
+      "end": 2301952,
+      "length": 210896,
+      "byte": "ff"
+    },
+    {
+      "start": 2301954,
+      "end": 2306044,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2306050,
+      "end": 2310140,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2310146,
+      "end": 2314236,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2314242,
+      "end": 2318332,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2318338,
+      "end": 2322428,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2322434,
+      "end": 2326524,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2326530,
+      "end": 2330620,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2330626,
+      "end": 2334716,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2334722,
+      "end": 2338812,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2338818,
+      "end": 2342908,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2342914,
+      "end": 2347004,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2347010,
+      "end": 2351100,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2351106,
+      "end": 2355196,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2355202,
+      "end": 2359292,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2359298,
+      "end": 2363388,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2363394,
+      "end": 2367484,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2367490,
+      "end": 2371580,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2371586,
+      "end": 2375676,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2375682,
+      "end": 2379772,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2379778,
+      "end": 2383868,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2383874,
+      "end": 2387964,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2387970,
+      "end": 2392060,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2392066,
+      "end": 2396156,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2396162,
+      "end": 2400252,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2400258,
+      "end": 2404348,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2404354,
+      "end": 2408444,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2408450,
+      "end": 2412540,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2412546,
+      "end": 2416636,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2416642,
+      "end": 2420732,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2420738,
+      "end": 2424828,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2424834,
+      "end": 2428924,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2428930,
+      "end": 2433020,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2433026,
+      "end": 2437116,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2437122,
+      "end": 2441212,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2441218,
+      "end": 2445308,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2445314,
+      "end": 2449404,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2449410,
+      "end": 2453500,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2453506,
+      "end": 2457596,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2457602,
+      "end": 2461692,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2461698,
+      "end": 2465788,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2465794,
+      "end": 2469884,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2469890,
+      "end": 2473980,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2473986,
+      "end": 2478076,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2478082,
+      "end": 2482172,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2482178,
+      "end": 2486268,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2486274,
+      "end": 2490364,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2490370,
+      "end": 2494460,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2494466,
+      "end": 2498556,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2498562,
+      "end": 2502652,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2502658,
+      "end": 2506748,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2506754,
+      "end": 2510844,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2510850,
+      "end": 2514940,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2514946,
+      "end": 2519036,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2519042,
+      "end": 2523132,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2523138,
+      "end": 2527228,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2527234,
+      "end": 2531324,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2531330,
+      "end": 2535420,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2535426,
+      "end": 2539516,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2539522,
+      "end": 2543612,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2543618,
+      "end": 2547708,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2547714,
+      "end": 2551804,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2551810,
+      "end": 2555900,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2555906,
+      "end": 2559996,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2560002,
+      "end": 2564092,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2564098,
+      "end": 2568188,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2568194,
+      "end": 2572284,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2572290,
+      "end": 2576380,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2576386,
+      "end": 2580476,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2580482,
+      "end": 2584572,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2584578,
+      "end": 2588668,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2588674,
+      "end": 2592764,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2592770,
+      "end": 2596860,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2596866,
+      "end": 2600956,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2600962,
+      "end": 2605052,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2605058,
+      "end": 2609148,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2609154,
+      "end": 2613244,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2613250,
+      "end": 2617340,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2617346,
+      "end": 2621436,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2621442,
+      "end": 2625532,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2625538,
+      "end": 2629628,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2629634,
+      "end": 2633724,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2633730,
+      "end": 2637820,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2637826,
+      "end": 2641916,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2641922,
+      "end": 2646012,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2646018,
+      "end": 2650108,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2650114,
+      "end": 2654204,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2654210,
+      "end": 2658300,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2658306,
+      "end": 2662396,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2662402,
+      "end": 2666492,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2666498,
+      "end": 2670588,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2670594,
+      "end": 2674684,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2674690,
+      "end": 2678780,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2678786,
+      "end": 2682876,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2682882,
+      "end": 2686972,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2686978,
+      "end": 2691068,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2691074,
+      "end": 2695164,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2695170,
+      "end": 2699260,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2699266,
+      "end": 2703356,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2703362,
+      "end": 2707452,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2707458,
+      "end": 2711548,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2711554,
+      "end": 2715644,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2715650,
+      "end": 2719740,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2719746,
+      "end": 2723836,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2723842,
+      "end": 2727932,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2727938,
+      "end": 2732028,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2732034,
+      "end": 2736124,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2736130,
+      "end": 2740220,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2740226,
+      "end": 2744316,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2744322,
+      "end": 2748412,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2748418,
+      "end": 2752508,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2752514,
+      "end": 2756604,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2756610,
+      "end": 2760700,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2760706,
+      "end": 2764796,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2764802,
+      "end": 2768892,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2768898,
+      "end": 2772988,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2772994,
+      "end": 2777084,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2777090,
+      "end": 2781180,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2781186,
+      "end": 2785276,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2785282,
+      "end": 2789372,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2789378,
+      "end": 2793468,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2793474,
+      "end": 2797564,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2797570,
+      "end": 2801660,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2801666,
+      "end": 2805756,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2805762,
+      "end": 2809852,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2809858,
+      "end": 2813948,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2813954,
+      "end": 2818044,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2818050,
+      "end": 2822140,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2822146,
+      "end": 2826236,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2826242,
+      "end": 2830332,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2830338,
+      "end": 2834428,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2834434,
+      "end": 2838524,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2838530,
+      "end": 2842620,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2842626,
+      "end": 2846716,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2846722,
+      "end": 2850812,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2850818,
+      "end": 2854908,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2854914,
+      "end": 2859004,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2859010,
+      "end": 2863100,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2863106,
+      "end": 2867196,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2867202,
+      "end": 2871292,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2871298,
+      "end": 2875388,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2875394,
+      "end": 2879484,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2879490,
+      "end": 2883580,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2883586,
+      "end": 2887676,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2887682,
+      "end": 2891772,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2891778,
+      "end": 2895868,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2895874,
+      "end": 2899964,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2899970,
+      "end": 2904060,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2904066,
+      "end": 2908156,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2908162,
+      "end": 2912252,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2912258,
+      "end": 2916348,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2916354,
+      "end": 2920444,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2920450,
+      "end": 2924540,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2924546,
+      "end": 2928636,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2928642,
+      "end": 2932732,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2932738,
+      "end": 2936828,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2936834,
+      "end": 2940924,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2940930,
+      "end": 2945020,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2945026,
+      "end": 2949116,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2949122,
+      "end": 2953212,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2953218,
+      "end": 2957308,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2957314,
+      "end": 2961404,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2961410,
+      "end": 2965500,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2965506,
+      "end": 2969596,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2969602,
+      "end": 2973692,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2973698,
+      "end": 2977788,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2977794,
+      "end": 2981884,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2981890,
+      "end": 2985980,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2985986,
+      "end": 2990076,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2990082,
+      "end": 2994172,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2994178,
+      "end": 2998268,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 2998274,
+      "end": 3002364,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 3002370,
+      "end": 3006460,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 3006466,
+      "end": 3010556,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 3010562,
+      "end": 3014652,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 3014658,
+      "end": 3018748,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 3018754,
+      "end": 3022844,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 3022850,
+      "end": 3026940,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 3026946,
+      "end": 3031036,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 3031042,
+      "end": 3035132,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 3035138,
+      "end": 3039228,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 3039234,
+      "end": 3043324,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 3043330,
+      "end": 3047420,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 3047426,
+      "end": 3051516,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 3051522,
+      "end": 3055612,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 3055618,
+      "end": 3059708,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 3059714,
+      "end": 3063804,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 3063810,
+      "end": 3067900,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 3067906,
+      "end": 3071996,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 3072002,
+      "end": 3076092,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 3076098,
+      "end": 3080188,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 3080194,
+      "end": 3084284,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 3084290,
+      "end": 3088380,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 3088386,
+      "end": 3092476,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 3092482,
+      "end": 3096572,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 3096578,
+      "end": 3100668,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 3100674,
+      "end": 3104764,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 3104770,
+      "end": 3108860,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 3108866,
+      "end": 3112956,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 3112962,
+      "end": 3117052,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 3117058,
+      "end": 3121148,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 3121154,
+      "end": 3125244,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 3125250,
+      "end": 3129340,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 3129346,
+      "end": 3133436,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 3133442,
+      "end": 3137532,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 3137538,
+      "end": 3141628,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 3141634,
+      "end": 3145724,
+      "length": 4090,
+      "byte": "ff"
+    },
+    {
+      "start": 3146773,
+      "end": 3147446,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3148648,
+      "end": 3149321,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3149480,
+      "end": 3149820,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3150869,
+      "end": 3151542,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3152744,
+      "end": 3153417,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3153576,
+      "end": 3153916,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3154965,
+      "end": 3155638,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3156840,
+      "end": 3157513,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3157672,
+      "end": 3158012,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3159061,
+      "end": 3159734,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3160936,
+      "end": 3161609,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3161768,
+      "end": 3162108,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3163157,
+      "end": 3163830,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3165032,
+      "end": 3165705,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3165864,
+      "end": 3166204,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3167253,
+      "end": 3167926,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3169128,
+      "end": 3169801,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3169960,
+      "end": 3170300,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3171349,
+      "end": 3172022,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3173224,
+      "end": 3173897,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3174056,
+      "end": 3174396,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3175445,
+      "end": 3176118,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3177320,
+      "end": 3177993,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3178152,
+      "end": 3178492,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3179541,
+      "end": 3180214,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3181416,
+      "end": 3182089,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3182248,
+      "end": 3182588,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3183637,
+      "end": 3184310,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3185512,
+      "end": 3186185,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3186344,
+      "end": 3186684,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3187733,
+      "end": 3188406,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3189608,
+      "end": 3190281,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3190440,
+      "end": 3190780,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3191829,
+      "end": 3192502,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3193704,
+      "end": 3194377,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3194536,
+      "end": 3194876,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3195925,
+      "end": 3196598,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3197800,
+      "end": 3198473,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3198632,
+      "end": 3198972,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3200021,
+      "end": 3200694,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3201896,
+      "end": 3202569,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3202728,
+      "end": 3203068,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3204117,
+      "end": 3204790,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3205992,
+      "end": 3206665,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3206824,
+      "end": 3207164,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3208213,
+      "end": 3208886,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3210088,
+      "end": 3210761,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3210920,
+      "end": 3211260,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3212309,
+      "end": 3212982,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3214184,
+      "end": 3214857,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3215016,
+      "end": 3215356,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3216405,
+      "end": 3217078,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3218280,
+      "end": 3218953,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3219112,
+      "end": 3219452,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3220501,
+      "end": 3221174,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3222376,
+      "end": 3223049,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3223208,
+      "end": 3223548,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3224597,
+      "end": 3225270,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3226472,
+      "end": 3227145,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3227304,
+      "end": 3227644,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3228693,
+      "end": 3229366,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3230568,
+      "end": 3231241,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3231400,
+      "end": 3231740,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3232789,
+      "end": 3233462,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3234664,
+      "end": 3235337,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3235496,
+      "end": 3235836,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3236885,
+      "end": 3237558,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3238760,
+      "end": 3239433,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3239592,
+      "end": 3239932,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3240981,
+      "end": 3241654,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3242856,
+      "end": 3243529,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3243688,
+      "end": 3244028,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3245077,
+      "end": 3245750,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3246952,
+      "end": 3247625,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3247784,
+      "end": 3248124,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3249173,
+      "end": 3249846,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3251048,
+      "end": 3251721,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3251880,
+      "end": 3252220,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3253269,
+      "end": 3253942,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3255144,
+      "end": 3255817,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3255976,
+      "end": 3256316,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3257365,
+      "end": 3258038,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3259240,
+      "end": 3259913,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3260072,
+      "end": 3260412,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3261461,
+      "end": 3262134,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3263336,
+      "end": 3264009,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3264168,
+      "end": 3264508,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3265557,
+      "end": 3266230,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3267432,
+      "end": 3268105,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3268264,
+      "end": 3268604,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3269653,
+      "end": 3270326,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3271528,
+      "end": 3272201,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3272360,
+      "end": 3272700,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3273749,
+      "end": 3274422,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3275624,
+      "end": 3276297,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3276456,
+      "end": 3276796,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3277845,
+      "end": 3278518,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3279720,
+      "end": 3280393,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3280552,
+      "end": 3280892,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3281941,
+      "end": 3282614,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3283816,
+      "end": 3284489,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3284648,
+      "end": 3284988,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3286037,
+      "end": 3286710,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3287912,
+      "end": 3288585,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3288744,
+      "end": 3289084,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3290133,
+      "end": 3290806,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3292008,
+      "end": 3292681,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3292840,
+      "end": 3293180,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3294229,
+      "end": 3294902,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3296104,
+      "end": 3296777,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3296936,
+      "end": 3297276,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3298325,
+      "end": 3298998,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3300200,
+      "end": 3300873,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3301032,
+      "end": 3301372,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3302421,
+      "end": 3303094,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3304296,
+      "end": 3304969,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3305128,
+      "end": 3305468,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3306517,
+      "end": 3307190,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3308392,
+      "end": 3309065,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3309224,
+      "end": 3309564,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3310613,
+      "end": 3311286,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3312488,
+      "end": 3313161,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3313320,
+      "end": 3313660,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3314709,
+      "end": 3315382,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3316584,
+      "end": 3317257,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3317416,
+      "end": 3317756,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3318805,
+      "end": 3319478,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3320680,
+      "end": 3321353,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3321512,
+      "end": 3321852,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3322901,
+      "end": 3323574,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3324776,
+      "end": 3325449,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3325608,
+      "end": 3325948,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3326997,
+      "end": 3327670,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3328872,
+      "end": 3329545,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3329704,
+      "end": 3330044,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3331093,
+      "end": 3331766,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3332968,
+      "end": 3333641,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3333800,
+      "end": 3334140,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3335189,
+      "end": 3335862,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3337064,
+      "end": 3337737,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3337896,
+      "end": 3338236,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3339285,
+      "end": 3339958,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3341160,
+      "end": 3341833,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3341992,
+      "end": 3342332,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3343381,
+      "end": 3344054,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3345256,
+      "end": 3345929,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3346088,
+      "end": 3346428,
+      "length": 340,
+      "byte": "ff"
+    },
+    {
+      "start": 3347477,
+      "end": 3348150,
+      "length": 673,
+      "byte": "20"
+    },
+    {
+      "start": 3348309,
+      "end": 3350524,
+      "length": 2215,
+      "byte": "ff"
+    },
+    {
+      "start": 3350528,
+      "end": 4194304,
+      "length": 843776,
+      "byte": "ff"
+    }
+  ],
+  "markers": [
+    {
+      "offset": 0,
+      "text": "ESC91.000"
+    },
+    {
+      "offset": 8192,
+      "text": "BSSESC2:GT1Upd  210610153839"
+    },
+    {
+      "offset": 20834,
+      "text": "1ROM.BIN"
+    },
+    {
+      "offset": 20867,
+      "text": "Update"
+    },
+    {
+      "offset": 65204,
+      "text": "NO? NAME q"
+    },
+    {
+      "offset": 88319,
+      "text": "NO NAME="
+    },
+    {
+      "offset": 262144,
+      "text": "BSSESC2:GT1Appli210610153839"
+    },
+    {
+      "offset": 560708,
+      "text": "NAME_STR"
+    },
+    {
+      "offset": 614890,
+      "text": "ESC2DT1"
+    },
+    {
+      "offset": 935047,
+      "text": "_TO_NAME"
+    },
+    {
+      "offset": 1213612,
+      "text": "29ROMNI"
+    }
+  ]
+}

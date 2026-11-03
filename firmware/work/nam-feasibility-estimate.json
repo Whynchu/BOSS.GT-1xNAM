@@ -1,0 +1,211 @@
+{
+  "classification": "arithmetic estimate from pinned upstream benchmarks; not measured on GT-1 or ESC2",
+  "read_only": true,
+  "source_files": {
+    "README.md": {
+      "sha256": "97ded90b676838dea23bc013016a271b1c9244f564c5bb9595f53ffce55db7b3",
+      "path": "firmware/work/reference/tone-3000-embedded/README.md"
+    },
+    "nam_a2lite.h": {
+      "sha256": "c781f3996fc9640c9b71cdda61622dc971b65c3a00d0fa22c3bbb2b2781a2079",
+      "path": "firmware/work/reference/tone-3000-embedded/engines/cortex-m7/a2lite/nam_a2lite.h"
+    },
+    "nam_a2lite.c": {
+      "sha256": "a7cff6debbcb3c18d4658831367ecea723a61f3ebe28318afbe2c350fc911a35",
+      "path": "firmware/work/reference/tone-3000-embedded/engines/cortex-m7/a2lite/nam_a2lite.c"
+    },
+    "a2lite.namb": {
+      "sha256": "0fa82c41815f7553b6f02820b12827a3a09ac22101e090ba82cc55aa191baa1d",
+      "size": 7980,
+      "path": "firmware/work/reference/tone-3000-embedded/weights/a2lite.namb"
+    },
+    "boss_parameter_guide_pdf": {
+      "sha256": "02dd63985b9cfc9db0761c4438ef1471193616f5cb053381824c5445891e4565",
+      "path": "firmware/work/reference/boss-docs/GT-1_parameter_eng02_W.pdf"
+    }
+  },
+  "upstream_facts": {
+    "M7_A2Lite_cycles_per_sample_block_48": 4059,
+    "M7_A2Lite_16_frame_tuned_cycles_per_sample": 4403,
+    "M7_benchmark_clock_MHz": 480,
+    "NAM_model_rate_Hz": 48000,
+    "GT1_rate_Hz": 44100,
+    "namb_file_bytes": 7980,
+    "weight_float_values": 1871,
+    "weights_bytes": 7484,
+    "hot_instance_plus_weights_at_48_block_KiB": 9.2,
+    "state_at_48_block_KiB": 100,
+    "state_at_64_block_KiB": 109,
+    "engine_code_KiB": 12.4,
+    "NAM_A2LITE_SAMPLE_RATE_header": "48000.0f",
+    "engine_process_API": "caller supplies input/output buffers and num_frames; no resampling API documented",
+    "header_derived_state_float_count_at_block48": 25617,
+    "header_derived_state_bytes_at_block48": 102468,
+    "header_derived_state_KiB_at_block48": 100.06640625,
+    "prewarm_samples_after_init_or_reset": 6347,
+    "prewarm_duration_ms_at_engine_rate": 132.22916666666666,
+    "prewarm_calls_at_block48": 133,
+    "prewarm_work_cycles_at_M7_block48_reference": 25762473,
+    "prewarm_work_cycles_is_measured_on_ESC2": false
+  },
+  "memory_scenarios": {
+    "gt1_documented_external_sdram_nominal_bytes": 25165824,
+    "gt1_documented_external_sdram_mib": 24.0,
+    "gt1_free_or_realtime_usable_ram_known": false,
+    "single_a2lite_instance_at_block48": {
+      "state_ring_buffers_bytes_header_derived": 102468,
+      "weights_plus_instance_kib_upstream_rounded": 9.2,
+      "estimated_dynamic_working_bytes": 111889,
+      "estimated_dynamic_working_kib": 109.2666015625,
+      "engine_code_kib_separate": 12.4,
+      "capture_file_bytes_separate": 7980,
+      "working_ram_fraction_of_gt1_nominal_external_sdram": 0.004446069399515788
+    },
+    "two_distinct_a2lite_instances_for_overlap_or_crossfade_at_block48": {
+      "state_ring_buffers_bytes_header_derived": 204936,
+      "two_weights_plus_instances_kib_upstream_rounded": 18.4,
+      "estimated_dynamic_working_bytes": 223778,
+      "estimated_dynamic_working_kib": 218.533203125,
+      "engine_code_kib_shared_not_doubled": 12.4,
+      "two_capture_files_bytes_if_both_retained_separately": 15960,
+      "working_ram_fraction_of_gt1_nominal_external_sdram": 0.008892138799031576
+    },
+    "interpretation_limit": "Capacity ratios compare estimated NAM working data with nominal external SDRAM only; they do not establish free space, memory mapping, bus contention, bandwidth, latency, or acceptable audio-deadline performance."
+  },
+  "cost_estimates": {
+    "prewarm_after_init_or_reset": {
+      "samples_of_silence": 6347,
+      "engine_sample_rate_Hz": 48000,
+      "audio_equivalent_duration_ms": 132.22916666666666,
+      "calls_at_48_frame_block": 133,
+      "last_call_frames_if_block48": 11,
+      "M7_reference_cycles_per_sample": 4059,
+      "M7_reference_total_cycles": 25762473,
+      "M7_reference_core_time_ms_at_480MHz": 53.67181875,
+      "interpretation": "State initialization requirement; separate from steady-state NAM cycles/sample. Must be scheduled or crossfaded during model load/switch if a transient is unacceptable.",
+      "esc2_timing_known": false
+    },
+    "supported_engine_rate_block48": {
+      "samples_per_second": 48000,
+      "cycles_per_sample_upstream_M7": 4059,
+      "cycles_per_second_if_same_cost": 194832000,
+      "callback_frames": 48,
+      "cycles_per_callback_if_same_cost": 194832,
+      "callback_duration_ms": 1.0,
+      "minimum_clock_MHz_at_100_percent_if_same_cost": 194.832,
+      "minimum_clock_MHz_at_50_percent_if_same_cost": 389.664,
+      "rate_is_supported_by_engine": true,
+      "resampling_cost_included": false
+    },
+    "supported_engine_rate_block16_tuned": {
+      "samples_per_second": 48000,
+      "cycles_per_sample_upstream_M7": 4403,
+      "cycles_per_second_if_same_cost": 211344000,
+      "callback_frames": 16,
+      "cycles_per_callback_if_same_cost": 70448,
+      "callback_duration_ms": 0.3333333333333333,
+      "minimum_clock_MHz_at_100_percent_if_same_cost": 211.344,
+      "minimum_clock_MHz_at_50_percent_if_same_cost": 422.688,
+      "rate_is_supported_by_engine": true,
+      "resampling_cost_included": false
+    },
+    "44k1_to_48k_conversion_requirement": {
+      "GT1_input_rate_Hz": 44100,
+      "NAM_engine_rate_Hz": 48000,
+      "rational_conversion_ratio_output_over_input": "160/147",
+      "input_samples_per_common_interval": 147,
+      "output_samples_per_common_interval": 160,
+      "common_interval_ms": 3.3333333333333335,
+      "A2Lite_cycles_for_160_output_samples_at_M7_rate": 649440,
+      "cycles_per_second_for_NAM_stage_at_M7_rate": 194832000,
+      "conversion_filter_cost_included": false,
+      "interpretation": "A real pipeline must resample or adapt the model; the embedded API documents 48 kHz only."
+    },
+    "counterfactual_direct_call_at_44100_not_supported": {
+      "samples_per_second": 44100,
+      "cycles_per_sample_upstream_M7": 4059,
+      "cycles_per_second_if_same_cost": 179001900,
+      "callback_frames": 48,
+      "cycles_per_callback_if_same_cost": 194832,
+      "callback_duration_ms": 1.08843537414966,
+      "minimum_clock_MHz_at_100_percent_if_same_cost": 179.0019,
+      "minimum_clock_MHz_at_50_percent_if_same_cost": 358.0038,
+      "rate_is_supported_by_engine": false,
+      "status": "arithmetic only; not a valid use of this engine unless adapted and revalidated"
+    },
+    "GT1_nominal_clock_condition_48MHz_if_same_M7_cost": {
+      "utilization_at_44100_counterfactual_not_supported": 3.72920625,
+      "utilization_at_48000": 4.059,
+      "utilization_percent_at_48000": 405.90000000000003,
+      "note": "48 MHz is a conditional example only; GT-1 service diagram clock net is not proof of core clock.",
+      "sample_budget_at_48k_block48_cycles": 48000.0,
+      "M7_reference_work_at_48k_block48_cycles": 194832,
+      "M7_reference_work_over_budget_factor": 4.059,
+      "throughput_sensitivity_scenarios": [
+        {
+          "relative_ESC2_cycles_per_sample_vs_M7_reference": 0.25,
+          "hypothetical_ESC2_cycles_per_sample": 1014.75,
+          "required_cycles_per_second": 48708000.0,
+          "single_core_utilization_at_clock": 1.01475,
+          "single_core_utilization_percent": 101.47500000000001,
+          "fits_one_core_for_NAM_alone": false,
+          "interpretation": "Sensitivity scenario only; not a measured or predicted ESC2 performance factor."
+        },
+        {
+          "relative_ESC2_cycles_per_sample_vs_M7_reference": 0.5,
+          "hypothetical_ESC2_cycles_per_sample": 2029.5,
+          "required_cycles_per_second": 97416000.0,
+          "single_core_utilization_at_clock": 2.0295,
+          "single_core_utilization_percent": 202.95000000000002,
+          "fits_one_core_for_NAM_alone": false,
+          "interpretation": "Sensitivity scenario only; not a measured or predicted ESC2 performance factor."
+        },
+        {
+          "relative_ESC2_cycles_per_sample_vs_M7_reference": 1,
+          "hypothetical_ESC2_cycles_per_sample": 4059,
+          "required_cycles_per_second": 194832000,
+          "single_core_utilization_at_clock": 4.059,
+          "single_core_utilization_percent": 405.90000000000003,
+          "fits_one_core_for_NAM_alone": false,
+          "interpretation": "Sensitivity scenario only; not a measured or predicted ESC2 performance factor."
+        },
+        {
+          "relative_ESC2_cycles_per_sample_vs_M7_reference": 2,
+          "hypothetical_ESC2_cycles_per_sample": 8118,
+          "required_cycles_per_second": 389664000,
+          "single_core_utilization_at_clock": 8.118,
+          "single_core_utilization_percent": 811.8000000000001,
+          "fits_one_core_for_NAM_alone": false,
+          "interpretation": "Sensitivity scenario only; not a measured or predicted ESC2 performance factor."
+        },
+        {
+          "relative_ESC2_cycles_per_sample_vs_M7_reference": 4,
+          "hypothetical_ESC2_cycles_per_sample": 16236,
+          "required_cycles_per_second": 779328000,
+          "single_core_utilization_at_clock": 16.236,
+          "single_core_utilization_percent": 1623.6000000000001,
+          "fits_one_core_for_NAM_alone": false,
+          "interpretation": "Sensitivity scenario only; not a measured or predicted ESC2 performance factor."
+        },
+        {
+          "relative_ESC2_cycles_per_sample_vs_M7_reference": 8,
+          "hypothetical_ESC2_cycles_per_sample": 32472,
+          "required_cycles_per_second": 1558656000,
+          "single_core_utilization_at_clock": 32.472,
+          "single_core_utilization_percent": 3247.2000000000003,
+          "fits_one_core_for_NAM_alone": false,
+          "interpretation": "Sensitivity scenario only; not a measured or predicted ESC2 performance factor."
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "Upstream M7 cycle counts were measured on an STM32H750 Cortex-M7 at 480 MHz; they are not ESC2 timings.",
+    "The relative throughput factors in the 48 MHz scenario table are sensitivity illustrations only; they do not predict ESC2 performance.",
+    "ESC2 ISA, clock, compiler support, FPU, memory latency/bandwidth, and available audio budget are unknown.",
+    "Direct 44.1 kHz processing is not documented by this engine. A 44.1-to-48 kHz resampler or model adaptation is required; resampler cost and latency are excluded.",
+    "External RAM capacity does not prove accessible free memory or suitable real-time bandwidth.",
+    "The M7 timing configuration places hot state in DTCM and ring buffers in cached AXI SRAM; equivalent low-latency memory placement has not been established for ESC2.",
+    "A2-Full values are deliberately excluded; this assessment is for A2-Lite only."
+  ]
+}

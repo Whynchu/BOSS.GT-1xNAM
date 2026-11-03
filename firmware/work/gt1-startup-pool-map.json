@@ -1,0 +1,105 @@
+{
+  "read_only": true,
+  "method": "resolve callback-9 copied literals, two 16-byte pool records, names, and compare pool regions with startup zero descriptors",
+  "interpretation_limits": [
+    "The names and address/size fields are directly observed; exact allocator semantics and downstream users are not identified.",
+    "The recovered zero descriptors establish these ranges are zero-filled at startup, not that they are free for NAM use.",
+    "The nominal sizes are only the two named pool regions and are not the total free/available RAM budget."
+  ],
+  "versions": {
+    "v108": {
+      "segment": "firmware/work/reconstructed/v108-GT1Appli-seg0.bin",
+      "segment_sha256": "5691f04c08e52373973725ede20ff9de0bc3fc0e77a160e856a11342701168a0",
+      "callback_entry": "0x01001c48",
+      "metadata": {
+        "record_count": 2,
+        "object_count_field": 5,
+        "records_pointer": "0x0101095c",
+        "object_workspace": "0x010176a4",
+        "name_indices": [
+          1,
+          2
+        ],
+        "names": [
+          "stack pool",
+          "general pool"
+        ]
+      },
+      "pool_records": [
+        {
+          "record_address": "0x0101095c",
+          "id": 1,
+          "flags": "0x00000000",
+          "start": "0x01020000",
+          "size_bytes": 32768,
+          "end_exclusive": "0x01028000",
+          "fully_inside_startup_zero_range": "0x01020000-0x01028000",
+          "name": "stack pool"
+        },
+        {
+          "record_address": "0x0101096c",
+          "id": 2,
+          "flags": "0x00000000",
+          "start": "0x010166a4",
+          "size_bytes": 4096,
+          "end_exclusive": "0x010176a4",
+          "fully_inside_startup_zero_range": "0x01011fb8-0x01017ee2",
+          "name": "general pool"
+        }
+      ],
+      "zero_ranges": [
+        "0x01011fb8-0x01017ee2",
+        "0x01020000-0x01028000",
+        "0x20000d5c-0x20002570",
+        "0x602b96f0-0x6047fd58"
+      ]
+    },
+    "v109": {
+      "segment": "firmware/work/reconstructed/v109-GT1Appli-seg0.bin",
+      "segment_sha256": "019adcf28e4a12444d48699b0b2a386a1a5feb2e43b59d465c696ee42540b9f9",
+      "callback_entry": "0x01001ce8",
+      "metadata": {
+        "record_count": 2,
+        "object_count_field": 5,
+        "records_pointer": "0x010109f8",
+        "object_workspace": "0x010176a4",
+        "name_indices": [
+          1,
+          2
+        ],
+        "names": [
+          "stack pool",
+          "general pool"
+        ]
+      },
+      "pool_records": [
+        {
+          "record_address": "0x010109f8",
+          "id": 1,
+          "flags": "0x00000000",
+          "start": "0x01020000",
+          "size_bytes": 32768,
+          "end_exclusive": "0x01028000",
+          "fully_inside_startup_zero_range": "0x01020000-0x01028000",
+          "name": "stack pool"
+        },
+        {
+          "record_address": "0x01010a08",
+          "id": 2,
+          "flags": "0x00000000",
+          "start": "0x010166a4",
+          "size_bytes": 4096,
+          "end_exclusive": "0x010176a4",
+          "fully_inside_startup_zero_range": "0x01011fb8-0x01017ee2",
+          "name": "general pool"
+        }
+      ],
+      "zero_ranges": [
+        "0x01011fb8-0x01017ee2",
+        "0x01020000-0x01028000",
+        "0x20000d5c-0x20002570",
+        "0x602badf0-0x604816b8"
+      ]
+    }
+  }
+}

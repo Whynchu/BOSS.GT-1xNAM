@@ -1,0 +1,529 @@
+{
+  "classification": "community-editor source evidence; not independently validated against live hardware",
+  "read_only": true,
+  "source_file_sha256": {
+    "sysxWriter.cpp": "010fd113a05a94249303e9175985a29e035072d5a49c04e316c9a2193c80ad60",
+    "bulkSaveDialog.cpp": "2013adc63821ec988aecb34d4ced92e3e8a8832b4808a31c9de91614e4764482",
+    "default.tsl": "940c22ccf14e259b0297fee6d9d3d3e67fb8f2863149327ff32ba5ef1b44c451",
+    "midi.xml": "c802b38b73d88ff92f6c8bf3863afe01c9faa6eac6fe5e26be28ca4f70033547"
+  },
+  "preamp_fields_in_default_tsl": {
+    "preamp_a": {
+      "preamp_a_bass": 50,
+      "preamp_a_bright": 0,
+      "preamp_a_custom_bottom": 50,
+      "preamp_a_custom_char": 50,
+      "preamp_a_custom_edge": 50,
+      "preamp_a_custom_preamp_high": 50,
+      "preamp_a_custom_preamp_low": 50,
+      "preamp_a_custom_sp_cabinet": 0,
+      "preamp_a_custom_sp_color_high": 10,
+      "preamp_a_custom_sp_color_low": 10,
+      "preamp_a_custom_sp_num": 2,
+      "preamp_a_custom_sp_size": 7,
+      "preamp_a_custom_type": 0,
+      "preamp_a_direct_mix": 0,
+      "preamp_a_gain": 80,
+      "preamp_a_gain_sw": 1,
+      "preamp_a_level": 42,
+      "preamp_a_mic_dis": 1,
+      "preamp_a_mic_level": 100,
+      "preamp_a_mic_pos": 5,
+      "preamp_a_mic_type": 1,
+      "preamp_a_middle": 50,
+      "preamp_a_on_off": 1,
+      "preamp_a_presence": 30,
+      "preamp_a_solo_level": 50,
+      "preamp_a_solo_sw": 0,
+      "preamp_a_sp_type": 1,
+      "preamp_a_t_comp": 10,
+      "preamp_a_treble": 60,
+      "preamp_a_type": 4
+    },
+    "preamp_b": {
+      "preamp_b_bass": 50,
+      "preamp_b_bright": 0,
+      "preamp_b_custom_bottom": 50,
+      "preamp_b_custom_char": 50,
+      "preamp_b_custom_edge": 50,
+      "preamp_b_custom_preamp_high": 50,
+      "preamp_b_custom_preamp_low": 50,
+      "preamp_b_custom_sp_cabinet": 0,
+      "preamp_b_custom_sp_color_high": 10,
+      "preamp_b_custom_sp_color_low": 10,
+      "preamp_b_custom_sp_num": 2,
+      "preamp_b_custom_sp_size": 7,
+      "preamp_b_custom_type": 0,
+      "preamp_b_direct_mix": 0,
+      "preamp_b_gain": 50,
+      "preamp_b_gain_sw": 1,
+      "preamp_b_level": 50,
+      "preamp_b_mic_dis": 1,
+      "preamp_b_mic_level": 100,
+      "preamp_b_mic_pos": 5,
+      "preamp_b_mic_type": 1,
+      "preamp_b_middle": 50,
+      "preamp_b_on_off": 1,
+      "preamp_b_presence": 0,
+      "preamp_b_solo_level": 50,
+      "preamp_b_solo_sw": 0,
+      "preamp_b_sp_type": 1,
+      "preamp_b_t_comp": 10,
+      "preamp_b_treble": 50,
+      "preamp_b_type": 0
+    }
+  },
+  "source_mapping": {
+    "preamp_a": [
+      {
+        "patch_field": "preamp_a_on_off",
+        "template_byte_index_decimal": 91,
+        "line": 799
+      },
+      {
+        "patch_field": "preamp_a_type",
+        "template_byte_index_decimal": 92,
+        "line": 800
+      },
+      {
+        "patch_field": "preamp_a_gain",
+        "template_byte_index_decimal": 93,
+        "line": 801
+      },
+      {
+        "patch_field": "preamp_a_t_comp",
+        "template_byte_index_decimal": 94,
+        "line": 802
+      },
+      {
+        "patch_field": "preamp_a_bass",
+        "template_byte_index_decimal": 95,
+        "line": 803
+      },
+      {
+        "patch_field": "preamp_a_middle",
+        "template_byte_index_decimal": 96,
+        "line": 804
+      },
+      {
+        "patch_field": "preamp_a_treble",
+        "template_byte_index_decimal": 97,
+        "line": 805
+      },
+      {
+        "patch_field": "preamp_a_presence",
+        "template_byte_index_decimal": 98,
+        "line": 806
+      },
+      {
+        "patch_field": "preamp_a_level",
+        "template_byte_index_decimal": 99,
+        "line": 807
+      },
+      {
+        "patch_field": "preamp_a_bright",
+        "template_byte_index_decimal": 100,
+        "line": 808
+      },
+      {
+        "patch_field": "preamp_a_gain_sw",
+        "template_byte_index_decimal": 101,
+        "line": 809
+      },
+      {
+        "patch_field": "preamp_a_solo_sw",
+        "template_byte_index_decimal": 102,
+        "line": 810
+      },
+      {
+        "patch_field": "preamp_a_solo_level",
+        "template_byte_index_decimal": 103,
+        "line": 811
+      },
+      {
+        "patch_field": "preamp_a_sp_type",
+        "template_byte_index_decimal": 104,
+        "line": 812
+      },
+      {
+        "patch_field": "preamp_a_mic_type",
+        "template_byte_index_decimal": 105,
+        "line": 813
+      },
+      {
+        "patch_field": "preamp_a_mic_dis",
+        "template_byte_index_decimal": 106,
+        "line": 814
+      },
+      {
+        "patch_field": "preamp_a_mic_pos",
+        "template_byte_index_decimal": 107,
+        "line": 815
+      },
+      {
+        "patch_field": "preamp_a_mic_level",
+        "template_byte_index_decimal": 108,
+        "line": 816
+      },
+      {
+        "patch_field": "preamp_a_direct_mix",
+        "template_byte_index_decimal": 109,
+        "line": 817
+      },
+      {
+        "patch_field": "preamp_a_custom_type",
+        "template_byte_index_decimal": 110,
+        "line": 818
+      },
+      {
+        "patch_field": "preamp_a_custom_bottom",
+        "template_byte_index_decimal": 111,
+        "line": 819
+      },
+      {
+        "patch_field": "preamp_a_custom_edge",
+        "template_byte_index_decimal": 112,
+        "line": 820
+      },
+      {
+        "patch_field": "preamp_a_custom_preamp_low",
+        "template_byte_index_decimal": 115,
+        "line": 821
+      },
+      {
+        "patch_field": "preamp_a_custom_preamp_high",
+        "template_byte_index_decimal": 116,
+        "line": 822
+      },
+      {
+        "patch_field": "preamp_a_custom_char",
+        "template_byte_index_decimal": 117,
+        "line": 823
+      },
+      {
+        "patch_field": "preamp_a_custom_sp_size",
+        "template_byte_index_decimal": 118,
+        "line": 824
+      },
+      {
+        "patch_field": "preamp_a_custom_sp_color_low",
+        "template_byte_index_decimal": 119,
+        "line": 825
+      },
+      {
+        "patch_field": "preamp_a_custom_sp_color_high",
+        "template_byte_index_decimal": 120,
+        "line": 826
+      },
+      {
+        "patch_field": "preamp_a_custom_sp_num",
+        "template_byte_index_decimal": 121,
+        "line": 827
+      },
+      {
+        "patch_field": "preamp_a_custom_sp_cabinet",
+        "template_byte_index_decimal": 122,
+        "line": 828
+      }
+    ],
+    "preamp_b": [
+      {
+        "patch_field": "preamp_b_on_off",
+        "template_byte_index_decimal": 152,
+        "line": 829
+      },
+      {
+        "patch_field": "preamp_b_type",
+        "template_byte_index_decimal": 153,
+        "line": 830
+      },
+      {
+        "patch_field": "preamp_b_gain",
+        "template_byte_index_decimal": 154,
+        "line": 831
+      },
+      {
+        "patch_field": "preamp_b_t_comp",
+        "template_byte_index_decimal": 155,
+        "line": 832
+      },
+      {
+        "patch_field": "preamp_b_bass",
+        "template_byte_index_decimal": 156,
+        "line": 833
+      },
+      {
+        "patch_field": "preamp_b_middle",
+        "template_byte_index_decimal": 157,
+        "line": 834
+      },
+      {
+        "patch_field": "preamp_b_treble",
+        "template_byte_index_decimal": 158,
+        "line": 835
+      },
+      {
+        "patch_field": "preamp_b_presence",
+        "template_byte_index_decimal": 159,
+        "line": 836
+      },
+      {
+        "patch_field": "preamp_b_level",
+        "template_byte_index_decimal": 160,
+        "line": 837
+      },
+      {
+        "patch_field": "preamp_b_bright",
+        "template_byte_index_decimal": 161,
+        "line": 838
+      },
+      {
+        "patch_field": "preamp_b_gain_sw",
+        "template_byte_index_decimal": 162,
+        "line": 839
+      },
+      {
+        "patch_field": "preamp_b_solo_sw",
+        "template_byte_index_decimal": 163,
+        "line": 840
+      },
+      {
+        "patch_field": "preamp_b_solo_level",
+        "template_byte_index_decimal": 164,
+        "line": 841
+      },
+      {
+        "patch_field": "preamp_b_sp_type",
+        "template_byte_index_decimal": 165,
+        "line": 842
+      },
+      {
+        "patch_field": "preamp_b_mic_type",
+        "template_byte_index_decimal": 166,
+        "line": 843
+      },
+      {
+        "patch_field": "preamp_b_mic_dis",
+        "template_byte_index_decimal": 167,
+        "line": 844
+      },
+      {
+        "patch_field": "preamp_b_mic_pos",
+        "template_byte_index_decimal": 168,
+        "line": 845
+      },
+      {
+        "patch_field": "preamp_b_mic_level",
+        "template_byte_index_decimal": 169,
+        "line": 846
+      },
+      {
+        "patch_field": "preamp_b_direct_mix",
+        "template_byte_index_decimal": 170,
+        "line": 847
+      },
+      {
+        "patch_field": "preamp_b_custom_type",
+        "template_byte_index_decimal": 171,
+        "line": 848
+      },
+      {
+        "patch_field": "preamp_b_custom_bottom",
+        "template_byte_index_decimal": 172,
+        "line": 849
+      },
+      {
+        "patch_field": "preamp_b_custom_edge",
+        "template_byte_index_decimal": 173,
+        "line": 850
+      },
+      {
+        "patch_field": "preamp_b_custom_preamp_low",
+        "template_byte_index_decimal": 176,
+        "line": 851
+      },
+      {
+        "patch_field": "preamp_b_custom_preamp_high",
+        "template_byte_index_decimal": 177,
+        "line": 852
+      },
+      {
+        "patch_field": "preamp_b_custom_char",
+        "template_byte_index_decimal": 178,
+        "line": 853
+      },
+      {
+        "patch_field": "preamp_b_custom_sp_size",
+        "template_byte_index_decimal": 179,
+        "line": 854
+      },
+      {
+        "patch_field": "preamp_b_custom_sp_color_low",
+        "template_byte_index_decimal": 180,
+        "line": 855
+      },
+      {
+        "patch_field": "preamp_b_custom_sp_color_high",
+        "template_byte_index_decimal": 181,
+        "line": 856
+      },
+      {
+        "patch_field": "preamp_b_custom_sp_num",
+        "template_byte_index_decimal": 182,
+        "line": 857
+      },
+      {
+        "patch_field": "preamp_b_custom_sp_cabinet",
+        "template_byte_index_decimal": 183,
+        "line": 858
+      }
+    ]
+  },
+  "effect_chain_example": {
+    "position3": 4,
+    "position14": 6,
+    "position4": 8,
+    "position15": 7,
+    "position5": 10,
+    "position16": 9,
+    "position6": 14,
+    "position17": 18,
+    "position7": 17,
+    "position18": 3,
+    "position8": 5,
+    "position19": 19,
+    "position9": 11,
+    "position20": 16,
+    "position10": 15,
+    "position11": 2,
+    "position1": 0,
+    "position12": 13,
+    "position2": 1,
+    "position13": 12,
+    "positionList": [
+      0,
+      1,
+      4,
+      8,
+      10,
+      14,
+      17,
+      5,
+      11,
+      15,
+      2,
+      13,
+      12,
+      6,
+      7,
+      9,
+      18,
+      3,
+      19,
+      16
+    ]
+  },
+  "conversion_template_assignments": [
+    {
+      "line": 3643,
+      "text": "GT100_default_replace(91, 1, GetJsonHex(\"preamp_a_on_off\", a));                 //copy pre A"
+    },
+    {
+      "line": 3644,
+      "text": "GT100_default_replace(92, 1, GetJsonHex(\"preamp_a_type\", a));                   //copy pre A"
+    },
+    {
+      "line": 3645,
+      "text": "GT100_default_replace(93, 1, GetJsonHex(\"preamp_a_gain\", a));                   //copy pre A"
+    },
+    {
+      "line": 3646,
+      "text": "GT100_default_replace(94, 1, GetJsonHex(\"preamp_a_t_comp\", a));                 //copy pre A"
+    },
+    {
+      "line": 3647,
+      "text": "GT100_default_replace(95, 1, GetJsonHex(\"preamp_a_bass\", a));                   //copy pre A"
+    },
+    {
+      "line": 3648,
+      "text": "GT100_default_replace(96, 1, GetJsonHex(\"preamp_a_middle\", a));                 //copy pre A"
+    },
+    {
+      "line": 3649,
+      "text": "GT100_default_replace(97, 1, GetJsonHex(\"preamp_a_treble\", a));                 //copy pre A"
+    },
+    {
+      "line": 3650,
+      "text": "GT100_default_replace(98, 1, GetJsonHex(\"preamp_a_presence\", a));               //copy pre A"
+    },
+    {
+      "line": 3651,
+      "text": "GT100_default_replace(99, 1, GetJsonHex(\"preamp_a_level\", a));                  //copy pre A"
+    },
+    {
+      "line": 3652,
+      "text": "GT100_default_replace(100, 1, GetJsonHex(\"preamp_a_bright\", a));                //copy pre A"
+    },
+    {
+      "line": 3653,
+      "text": "GT100_default_replace(101, 1, GetJsonHex(\"preamp_a_gain_sw\", a));               //copy pre A"
+    },
+    {
+      "line": 3654,
+      "text": "GT100_default_replace(110, 1, GetJsonHex(\"preamp_a_custom_type\", a));           //copy pre A"
+    },
+    {
+      "line": 3655,
+      "text": "GT100_default_replace(111, 1, GetJsonHex(\"preamp_a_custom_bottom\", a));         //copy pre A"
+    },
+    {
+      "line": 3656,
+      "text": "GT100_default_replace(112, 1, GetJsonHex(\"preamp_a_custom_edge\", a));           //copy pre A"
+    },
+    {
+      "line": 3657,
+      "text": "GT100_default_replace(115, 1, GetJsonHex(\"preamp_a_custom_preamp_low\", a));     //copy pre A"
+    },
+    {
+      "line": 3658,
+      "text": "GT100_default_replace(116, 1, GetJsonHex(\"preamp_a_custom_preamp_high\", a));    //copy pre A"
+    },
+    {
+      "line": 3659,
+      "text": "GT100_default_replace(117, 1, GetJsonHex(\"preamp_a_custom_char\", a));           //copy pre A"
+    },
+    {
+      "line": 4526,
+      "text": "GT100_default_replace(91, 1, GetJsonHex(\"amp_sw\", a));                 //copy pre A"
+    },
+    {
+      "line": 4527,
+      "text": "GT100_default_replace(92, 1, GetJsonHex(\"amp_type\", a));                   //copy pre A"
+    },
+    {
+      "line": 4528,
+      "text": "GT100_default_replace(93, 1, GetJsonHex(\"amp1\", a));                   //copy pre A"
+    },
+    {
+      "line": 4529,
+      "text": "GT100_default_replace(95, 1, GetJsonHex(\"amp2\", a));                   //copy pre A"
+    },
+    {
+      "line": 4530,
+      "text": "GT100_default_replace(96, 1, GetJsonHex(\"amp3\", a));                 //copy pre A"
+    },
+    {
+      "line": 4531,
+      "text": "GT100_default_replace(97, 1, GetJsonHex(\"amp4\", a));                 //copy pre A"
+    },
+    {
+      "line": 4532,
+      "text": "GT100_default_replace(99, 1, GetJsonHex(\"amp5\", a));                  //copy pre A"
+    }
+  ],
+  "limitations": [
+    "temp.mid() indices are patch-template byte positions, not proven GT-1 SysEx memory addresses.",
+    "The GT-1 editor contains a GT-100-derived template/conversion path; those indices must not be treated as confirmed GT-1 firmware or hardware addresses.",
+    "The editor patch schema does not reveal the runtime audio graph, scheduling, or amp-model implementation."
+  ]
+}

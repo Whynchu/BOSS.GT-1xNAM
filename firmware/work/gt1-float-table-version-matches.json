@@ -1,0 +1,2745 @@
+{
+  "read_only": true,
+  "inputs": {
+    "v1.05": {
+      "path": "firmware/extracted/v105/gt1_sys_v105/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "b1bde0410795230b4a89ee3dfbbd357700bba7020624c0ff832ae3d8539d8bb4",
+      "app_payload_range": [
+        "0x40040",
+        "0x15E098"
+      ]
+    },
+    "v1.07": {
+      "path": "firmware/extracted/v107/gt1_sys_v107/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "6a3110cd42c4b129494a93bc88d4f218e2e0b9377868ca051018b28696d6c22f",
+      "app_payload_range": [
+        "0x40040",
+        "0x15E7A5"
+      ]
+    },
+    "v1.08": {
+      "path": "firmware/extracted/v108/gt1_sys_v108/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "7219679a87e985316264544423c9940ccbcbadeb2df0b2f13711ae57194cb612",
+      "app_payload_range": [
+        "0x40040",
+        "0x15E805"
+      ]
+    },
+    "v1.09": {
+      "path": "firmware/extracted/v109/gt1_sys_v109/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "412ebf5ffdc48554454c27df47f61428f046ea0a7d93f5c77b7f0302861abdbf",
+      "app_payload_range": [
+        "0x40040",
+        "0x15FB3A"
+      ]
+    }
+  },
+  "method": "Within each bounded app payload, identify chains of 0xFF bytes at 9-byte intervals; parse the 8 bytes after each marker as two little-endian float32 values. Retain chains >=12 records with >=95% finite abs(value)<=100 and >=25% non-near-zero values. Search each full byte chain exactly in every other release app span.",
+  "candidate_chain_counts_by_version": {
+    "v1.05": 30,
+    "v1.07": 35,
+    "v1.08": 14,
+    "v1.09": 21
+  },
+  "matched_full_chain_count": 64,
+  "matches": [
+    {
+      "source_version": "v1.08",
+      "source_file_offset": 858887,
+      "records": 107,
+      "byte_length": 963,
+      "sha256": "6e6fc98fa9a6bb2408291bc07e3b0fbdda45cccc0cd2a83e4ec62148a533b825",
+      "float_value_count": 214,
+      "finite_abs_le_100_count": 214,
+      "first_pairs": [
+        [
+          0.425133765,
+          1.6368103
+        ],
+        [
+          1.37317479,
+          1.22836459
+        ],
+        [
+          1.13190842,
+          1.05803168
+        ],
+        [
+          0.989831209,
+          0.926045775
+        ],
+        [
+          0.86638087,
+          0.810542345
+        ],
+        [
+          0.758319795,
+          0.709461033
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.05",
+          "file_offset": 857133,
+          "delta_target_minus_source": -1754
+        }
+      ]
+    },
+    {
+      "source_version": "v1.05",
+      "source_file_offset": 857133,
+      "records": 107,
+      "byte_length": 963,
+      "sha256": "6e6fc98fa9a6bb2408291bc07e3b0fbdda45cccc0cd2a83e4ec62148a533b825",
+      "float_value_count": 214,
+      "finite_abs_le_100_count": 214,
+      "first_pairs": [
+        [
+          0.425133765,
+          1.6368103
+        ],
+        [
+          1.37317479,
+          1.22836459
+        ],
+        [
+          1.13190842,
+          1.05803168
+        ],
+        [
+          0.989831209,
+          0.926045775
+        ],
+        [
+          0.86638087,
+          0.810542345
+        ],
+        [
+          0.758319795,
+          0.709461033
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.08",
+          "file_offset": 858887,
+          "delta_target_minus_source": 1754
+        }
+      ]
+    },
+    {
+      "source_version": "v1.09",
+      "source_file_offset": 885106,
+      "records": 95,
+      "byte_length": 855,
+      "sha256": "4ba803bd1d188e41162f597c3536776405016374fcdfd7edec59e9744c043a24",
+      "float_value_count": 190,
+      "finite_abs_le_100_count": 190,
+      "first_pairs": [
+        [
+          0.948494554,
+          0.887383282
+        ],
+        [
+          0.830191135,
+          0.776702642
+        ],
+        [
+          0.726659477,
+          0.679803252
+        ],
+        [
+          0.635703206,
+          0.586952031
+        ],
+        [
+          0.527003586,
+          0.446124911
+        ],
+        [
+          1.7166431,
+          1.44014919
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.08",
+          "file_offset": 880626,
+          "delta_target_minus_source": -4480
+        }
+      ]
+    },
+    {
+      "source_version": "v1.08",
+      "source_file_offset": 880626,
+      "records": 95,
+      "byte_length": 855,
+      "sha256": "4ba803bd1d188e41162f597c3536776405016374fcdfd7edec59e9744c043a24",
+      "float_value_count": 190,
+      "finite_abs_le_100_count": 190,
+      "first_pairs": [
+        [
+          0.948494554,
+          0.887383282
+        ],
+        [
+          0.830191135,
+          0.776702642
+        ],
+        [
+          0.726659477,
+          0.679803252
+        ],
+        [
+          0.635703206,
+          0.586952031
+        ],
+        [
+          0.527003586,
+          0.446124911
+        ],
+        [
+          1.7166431,
+          1.44014919
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.09",
+          "file_offset": 885106,
+          "delta_target_minus_source": 4480
+        }
+      ]
+    },
+    {
+      "source_version": "v1.08",
+      "source_file_offset": 857365,
+      "records": 70,
+      "byte_length": 630,
+      "sha256": "0fc2e364481ca79404ae7b92a736e06c5640d3c51a5be63792ae58cc39879188",
+      "float_value_count": 140,
+      "finite_abs_le_100_count": 140,
+      "first_pairs": [
+        [
+          0.383205771,
+          0.35849601
+        ],
+        [
+          0.335239738,
+          0.309530705
+        ],
+        [
+          0.277916729,
+          0.235265136
+        ],
+        [
+          0.913325369,
+          0.766219199
+        ],
+        [
+          0.685416341,
+          0.631594718
+        ],
+        [
+          0.590372145,
+          0.552316904
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.05",
+          "file_offset": 855611,
+          "delta_target_minus_source": -1754
+        }
+      ]
+    },
+    {
+      "source_version": "v1.05",
+      "source_file_offset": 855611,
+      "records": 70,
+      "byte_length": 630,
+      "sha256": "0fc2e364481ca79404ae7b92a736e06c5640d3c51a5be63792ae58cc39879188",
+      "float_value_count": 140,
+      "finite_abs_le_100_count": 140,
+      "first_pairs": [
+        [
+          0.383205771,
+          0.35849601
+        ],
+        [
+          0.335239738,
+          0.309530705
+        ],
+        [
+          0.277916729,
+          0.235265136
+        ],
+        [
+          0.913325369,
+          0.766219199
+        ],
+        [
+          0.685416341,
+          0.631594718
+        ],
+        [
+          0.590372145,
+          0.552316904
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.08",
+          "file_offset": 857365,
+          "delta_target_minus_source": 1754
+        }
+      ]
+    },
+    {
+      "source_version": "v1.07",
+      "source_file_offset": 870776,
+      "records": 61,
+      "byte_length": 549,
+      "sha256": "0bfa7abcc36c0dfdfeb580c4345bb75908a63c4da46f88e8a29c273cd287d408",
+      "float_value_count": 122,
+      "finite_abs_le_100_count": 122,
+      "first_pairs": [
+        [
+          0.828753948,
+          0.830753446
+        ],
+        [
+          0.832728922,
+          0.834681869
+        ],
+        [
+          0.836617708,
+          0.838529706
+        ],
+        [
+          0.840421736,
+          0.842301667
+        ],
+        [
+          0.844168365,
+          0.84635973
+        ],
+        [
+          0.849274516,
+          0.853690922
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.05",
+          "file_offset": 890724,
+          "delta_target_minus_source": 19948
+        }
+      ]
+    },
+    {
+      "source_version": "v1.05",
+      "source_file_offset": 890724,
+      "records": 61,
+      "byte_length": 549,
+      "sha256": "0bfa7abcc36c0dfdfeb580c4345bb75908a63c4da46f88e8a29c273cd287d408",
+      "float_value_count": 122,
+      "finite_abs_le_100_count": 122,
+      "first_pairs": [
+        [
+          0.828753948,
+          0.830753446
+        ],
+        [
+          0.832728922,
+          0.834681869
+        ],
+        [
+          0.836617708,
+          0.838529706
+        ],
+        [
+          0.840421736,
+          0.842301667
+        ],
+        [
+          0.844168365,
+          0.84635973
+        ],
+        [
+          0.849274516,
+          0.853690922
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.07",
+          "file_offset": 870776,
+          "delta_target_minus_source": -19948
+        }
+      ]
+    },
+    {
+      "source_version": "v1.08",
+      "source_file_offset": 862099,
+      "records": 58,
+      "byte_length": 522,
+      "sha256": "1a0c57dff790541553192a6d8d1d4243491d3a8217b934bf77241d1a08ffd870",
+      "float_value_count": 116,
+      "finite_abs_le_100_count": 116,
+      "first_pairs": [
+        [
+          3.13587952,
+          2.59818268
+        ],
+        [
+          2.2950151,
+          2.08791971
+        ],
+        [
+          1.92651951,
+          1.77882922
+        ],
+        [
+          1.64220762,
+          1.51582503
+        ],
+        [
+          1.39888012,
+          1.29074228
+        ],
+        [
+          1.19073057,
+          1.09818769
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.05",
+          "file_offset": 860345,
+          "delta_target_minus_source": -1754
+        }
+      ]
+    },
+    {
+      "source_version": "v1.05",
+      "source_file_offset": 860345,
+      "records": 58,
+      "byte_length": 522,
+      "sha256": "1a0c57dff790541553192a6d8d1d4243491d3a8217b934bf77241d1a08ffd870",
+      "float_value_count": 116,
+      "finite_abs_le_100_count": 116,
+      "first_pairs": [
+        [
+          3.13587952,
+          2.59818268
+        ],
+        [
+          2.2950151,
+          2.08791971
+        ],
+        [
+          1.92651951,
+          1.77882922
+        ],
+        [
+          1.64220762,
+          1.51582503
+        ],
+        [
+          1.39888012,
+          1.29074228
+        ],
+        [
+          1.19073057,
+          1.09818769
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.08",
+          "file_offset": 862099,
+          "delta_target_minus_source": 1754
+        }
+      ]
+    },
+    {
+      "source_version": "v1.09",
+      "source_file_offset": 888219,
+      "records": 57,
+      "byte_length": 513,
+      "sha256": "35c287afbccc2472a2543a04ef35c84f6d268bee2f5a5909b55e94702624eb44",
+      "float_value_count": 114,
+      "finite_abs_le_100_count": 114,
+      "first_pairs": [
+        [
+          2.59818268,
+          2.2950151
+        ],
+        [
+          2.08791971,
+          1.92651951
+        ],
+        [
+          1.77882922,
+          1.64220762
+        ],
+        [
+          1.51582503,
+          1.39888012
+        ],
+        [
+          1.29074228,
+          1.19073057
+        ],
+        [
+          1.09818769,
+          1.01220644
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.08",
+          "file_offset": 883739,
+          "delta_target_minus_source": -4480
+        }
+      ]
+    },
+    {
+      "source_version": "v1.08",
+      "source_file_offset": 883739,
+      "records": 57,
+      "byte_length": 513,
+      "sha256": "35c287afbccc2472a2543a04ef35c84f6d268bee2f5a5909b55e94702624eb44",
+      "float_value_count": 114,
+      "finite_abs_le_100_count": 114,
+      "first_pairs": [
+        [
+          2.59818268,
+          2.2950151
+        ],
+        [
+          2.08791971,
+          1.92651951
+        ],
+        [
+          1.77882922,
+          1.64220762
+        ],
+        [
+          1.51582503,
+          1.39888012
+        ],
+        [
+          1.29074228,
+          1.19073057
+        ],
+        [
+          1.09818769,
+          1.01220644
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.09",
+          "file_offset": 888219,
+          "delta_target_minus_source": 4480
+        }
+      ]
+    },
+    {
+      "source_version": "v1.07",
+      "source_file_offset": 734655,
+      "records": 52,
+      "byte_length": 468,
+      "sha256": "34bd0eae9f30a7be2d26e457794fe7d9daf000026ef468f7d9b4f4e149044a72",
+      "float_value_count": 104,
+      "finite_abs_le_100_count": 104,
+      "first_pairs": [
+        [
+          -0.0646671057,
+          0.0289939363
+        ],
+        [
+          -0.00105249591,
+          0.13714163
+        ],
+        [
+          0.00094724627,
+          1.2692486
+        ],
+        [
+          0.832225502,
+          0.0520267747
+        ],
+        [
+          -0.103907637,
+          -0.0610491931
+        ],
+        [
+          0.0273472015,
+          -0.000991270761
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.05",
+          "file_offset": 732987,
+          "delta_target_minus_source": -1668
+        }
+      ]
+    },
+    {
+      "source_version": "v1.05",
+      "source_file_offset": 732987,
+      "records": 52,
+      "byte_length": 468,
+      "sha256": "34bd0eae9f30a7be2d26e457794fe7d9daf000026ef468f7d9b4f4e149044a72",
+      "float_value_count": 104,
+      "finite_abs_le_100_count": 104,
+      "first_pairs": [
+        [
+          -0.0646671057,
+          0.0289939363
+        ],
+        [
+          -0.00105249591,
+          0.13714163
+        ],
+        [
+          0.00094724627,
+          1.2692486
+        ],
+        [
+          0.832225502,
+          0.0520267747
+        ],
+        [
+          -0.103907637,
+          -0.0610491931
+        ],
+        [
+          0.0273472015,
+          -0.000991270761
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.07",
+          "file_offset": 734655,
+          "delta_target_minus_source": 1668
+        }
+      ]
+    },
+    {
+      "source_version": "v1.07",
+      "source_file_offset": 733370,
+      "records": 44,
+      "byte_length": 396,
+      "sha256": "85e17ec10a1b5e6783f37c1a897992cd0e1d28870499fcaa6a2d6c570a971036",
+      "float_value_count": 88,
+      "finite_abs_le_100_count": 88,
+      "first_pairs": [
+        [
+          -0.19859308,
+          0.092287086
+        ],
+        [
+          -0.00355405803,
+          0.39307189
+        ],
+        [
+          0.00319865206,
+          1.00188601
+        ],
+        [
+          0.779466867,
+          0.053597264
+        ],
+        [
+          -0.322182536,
+          -0.193713367
+        ],
+        [
+          0.0898935273,
+          -0.00345375226
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.05",
+          "file_offset": 731702,
+          "delta_target_minus_source": -1668
+        }
+      ]
+    },
+    {
+      "source_version": "v1.05",
+      "source_file_offset": 731702,
+      "records": 44,
+      "byte_length": 396,
+      "sha256": "85e17ec10a1b5e6783f37c1a897992cd0e1d28870499fcaa6a2d6c570a971036",
+      "float_value_count": 88,
+      "finite_abs_le_100_count": 88,
+      "first_pairs": [
+        [
+          -0.19859308,
+          0.092287086
+        ],
+        [
+          -0.00355405803,
+          0.39307189
+        ],
+        [
+          0.00319865206,
+          1.00188601
+        ],
+        [
+          0.779466867,
+          0.053597264
+        ],
+        [
+          -0.322182536,
+          -0.193713367
+        ],
+        [
+          0.0898935273,
+          -0.00345375226
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.07",
+          "file_offset": 733370,
+          "delta_target_minus_source": 1668
+        }
+      ]
+    },
+    {
+      "source_version": "v1.07",
+      "source_file_offset": 868578,
+      "records": 40,
+      "byte_length": 360,
+      "sha256": "55075b3c035079740568d6ad75955982023ce0b52d84ff49ca2ee3fbe9198c92",
+      "float_value_count": 80,
+      "finite_abs_le_100_count": 80,
+      "first_pairs": [
+        [
+          0.682654619,
+          0.685998023
+        ],
+        [
+          0.689320326,
+          0.692610085
+        ],
+        [
+          0.69587338,
+          0.6991238
+        ],
+        [
+          0.70235914,
+          0.706167102
+        ],
+        [
+          0.711248755,
+          0.718984485
+        ],
+        [
+          0.660796523,
+          0.670008421
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.05",
+          "file_offset": 888526,
+          "delta_target_minus_source": 19948
+        }
+      ]
+    },
+    {
+      "source_version": "v1.05",
+      "source_file_offset": 888526,
+      "records": 40,
+      "byte_length": 360,
+      "sha256": "55075b3c035079740568d6ad75955982023ce0b52d84ff49ca2ee3fbe9198c92",
+      "float_value_count": 80,
+      "finite_abs_le_100_count": 80,
+      "first_pairs": [
+        [
+          0.682654619,
+          0.685998023
+        ],
+        [
+          0.689320326,
+          0.692610085
+        ],
+        [
+          0.69587338,
+          0.6991238
+        ],
+        [
+          0.70235914,
+          0.706167102
+        ],
+        [
+          0.711248755,
+          0.718984485
+        ],
+        [
+          0.660796523,
+          0.670008421
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.07",
+          "file_offset": 868578,
+          "delta_target_minus_source": -19948
+        }
+      ]
+    },
+    {
+      "source_version": "v1.09",
+      "source_file_offset": 887522,
+      "records": 36,
+      "byte_length": 324,
+      "sha256": "d31ce69ca3dfc5535205d0ef733bb6b0317ad6edddafff96e5b42bce58c67008",
+      "float_value_count": 72,
+      "finite_abs_le_100_count": 72,
+      "first_pairs": [
+        [
+          1.65181434,
+          1.53168786
+        ],
+        [
+          1.42020094,
+          1.31669271
+        ],
+        [
+          1.22065532,
+          1.13152587
+        ],
+        [
+          1.04875684,
+          0.971552014
+        ],
+        [
+          0.888578117,
+          0.790220916
+        ],
+        [
+          0.662511051,
+          2.88014483
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.08",
+          "file_offset": 883042,
+          "delta_target_minus_source": -4480
+        }
+      ]
+    },
+    {
+      "source_version": "v1.08",
+      "source_file_offset": 861402,
+      "records": 36,
+      "byte_length": 324,
+      "sha256": "2f8797d0e290c5767a6ee7aa50c31be0423f60b20e51a6cadaeb97da985596ea",
+      "float_value_count": 72,
+      "finite_abs_le_100_count": 72,
+      "first_pairs": [
+        [
+          1.78125846,
+          1.65181434
+        ],
+        [
+          1.53168786,
+          1.42020094
+        ],
+        [
+          1.31669271,
+          1.22065532
+        ],
+        [
+          1.13152587,
+          1.04875684
+        ],
+        [
+          0.971552014,
+          0.888578117
+        ],
+        [
+          0.790220916,
+          0.662511051
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.05",
+          "file_offset": 859648,
+          "delta_target_minus_source": -1754
+        }
+      ]
+    },
+    {
+      "source_version": "v1.08",
+      "source_file_offset": 883042,
+      "records": 36,
+      "byte_length": 324,
+      "sha256": "d31ce69ca3dfc5535205d0ef733bb6b0317ad6edddafff96e5b42bce58c67008",
+      "float_value_count": 72,
+      "finite_abs_le_100_count": 72,
+      "first_pairs": [
+        [
+          1.65181434,
+          1.53168786
+        ],
+        [
+          1.42020094,
+          1.31669271
+        ],
+        [
+          1.22065532,
+          1.13152587
+        ],
+        [
+          1.04875684,
+          0.971552014
+        ],
+        [
+          0.888578117,
+          0.790220916
+        ],
+        [
+          0.662511051,
+          2.88014483
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.09",
+          "file_offset": 887522,
+          "delta_target_minus_source": 4480
+        }
+      ]
+    },
+    {
+      "source_version": "v1.05",
+      "source_file_offset": 859648,
+      "records": 36,
+      "byte_length": 324,
+      "sha256": "2f8797d0e290c5767a6ee7aa50c31be0423f60b20e51a6cadaeb97da985596ea",
+      "float_value_count": 72,
+      "finite_abs_le_100_count": 72,
+      "first_pairs": [
+        [
+          1.78125846,
+          1.65181434
+        ],
+        [
+          1.53168786,
+          1.42020094
+        ],
+        [
+          1.31669271,
+          1.22065532
+        ],
+        [
+          1.13152587,
+          1.04875684
+        ],
+        [
+          0.971552014,
+          0.888578117
+        ],
+        [
+          0.790220916,
+          0.662511051
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.08",
+          "file_offset": 861402,
+          "delta_target_minus_source": 1754
+        }
+      ]
+    },
+    {
+      "source_version": "v1.07",
+      "source_file_offset": 732846,
+      "records": 33,
+      "byte_length": 297,
+      "sha256": "debb12586aa20c20175294a4c2a796127c841089020a187f5f7be5819c1bf877",
+      "float_value_count": 66,
+      "finite_abs_le_100_count": 66,
+      "first_pairs": [
+        [
+          -0.268368155,
+          0.127352878
+        ],
+        [
+          -0.00508225057,
+          0.510884106
+        ],
+        [
+          0.00457402552,
+          0.884002149
+        ],
+        [
+          0.756204844,
+          0.0542897172
+        ],
+        [
+          -0.430896133,
+          -0.262509644
+        ],
+        [
+          0.124344818,
+          -0.00494662952
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.05",
+          "file_offset": 731178,
+          "delta_target_minus_source": -1668
+        }
+      ]
+    },
+    {
+      "source_version": "v1.05",
+      "source_file_offset": 731178,
+      "records": 33,
+      "byte_length": 297,
+      "sha256": "debb12586aa20c20175294a4c2a796127c841089020a187f5f7be5819c1bf877",
+      "float_value_count": 66,
+      "finite_abs_le_100_count": 66,
+      "first_pairs": [
+        [
+          -0.268368155,
+          0.127352878
+        ],
+        [
+          -0.00508225057,
+          0.510884106
+        ],
+        [
+          0.00457402552,
+          0.884002149
+        ],
+        [
+          0.756204844,
+          0.0542897172
+        ],
+        [
+          -0.430896133,
+          -0.262509644
+        ],
+        [
+          0.124344818,
+          -0.00494662952
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.07",
+          "file_offset": 732846,
+          "delta_target_minus_source": 1668
+        }
+      ]
+    },
+    {
+      "source_version": "v1.07",
+      "source_file_offset": 866000,
+      "records": 30,
+      "byte_length": 270,
+      "sha256": "08697f73c008a4655b12e7d63d226e3a3c2ac54aeec6929b8a893c1c34b8811a",
+      "float_value_count": 60,
+      "finite_abs_le_100_count": 60,
+      "first_pairs": [
+        [
+          0.471461087,
+          0.476085633
+        ],
+        [
+          0.480640203,
+          0.485171974
+        ],
+        [
+          0.489683479,
+          0.494186103
+        ],
+        [
+          0.498663723,
+          0.503124237
+        ],
+        [
+          0.507585764,
+          0.512045085
+        ],
+        [
+          0.517317176,
+          0.524392366
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.05",
+          "file_offset": 885948,
+          "delta_target_minus_source": 19948
+        }
+      ]
+    },
+    {
+      "source_version": "v1.05",
+      "source_file_offset": 885948,
+      "records": 30,
+      "byte_length": 270,
+      "sha256": "08697f73c008a4655b12e7d63d226e3a3c2ac54aeec6929b8a893c1c34b8811a",
+      "float_value_count": 60,
+      "finite_abs_le_100_count": 60,
+      "first_pairs": [
+        [
+          0.471461087,
+          0.476085633
+        ],
+        [
+          0.480640203,
+          0.485171974
+        ],
+        [
+          0.489683479,
+          0.494186103
+        ],
+        [
+          0.498663723,
+          0.503124237
+        ],
+        [
+          0.507585764,
+          0.512045085
+        ],
+        [
+          0.517317176,
+          0.524392366
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.07",
+          "file_offset": 866000,
+          "delta_target_minus_source": -19948
+        }
+      ]
+    },
+    {
+      "source_version": "v1.07",
+      "source_file_offset": 864925,
+      "records": 27,
+      "byte_length": 243,
+      "sha256": "887387ad8630105940467bec3b39938579f9d464a2d6f3559751e347ae16ea5b",
+      "float_value_count": 54,
+      "finite_abs_le_100_count": 54,
+      "first_pairs": [
+        [
+          0.345756263,
+          0.350556135
+        ],
+        [
+          0.355302244,
+          0.360043019
+        ],
+        [
+          0.364780784,
+          0.369527191
+        ],
+        [
+          0.374264956,
+          0.379002154
+        ],
+        [
+          0.38375771,
+          0.388528198
+        ],
+        [
+          0.394190311,
+          0.401826382
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.05",
+          "file_offset": 884873,
+          "delta_target_minus_source": 19948
+        }
+      ]
+    },
+    {
+      "source_version": "v1.07",
+      "source_file_offset": 869039,
+      "records": 27,
+      "byte_length": 243,
+      "sha256": "699c073824344863883f7c34a114de861e9ba4dd05a5ebec8a3eb60c6fc6b584",
+      "float_value_count": 54,
+      "finite_abs_le_100_count": 54,
+      "first_pairs": [
+        [
+          0.744530201,
+          0.749070704
+        ],
+        [
+          0.755973279,
+          0.703211665
+        ],
+        [
+          0.711534202,
+          0.716723561
+        ],
+        [
+          0.720479369,
+          0.723552167
+        ],
+        [
+          0.726562083,
+          0.729541004
+        ],
+        [
+          0.732491076,
+          0.735420048
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.05",
+          "file_offset": 888987,
+          "delta_target_minus_source": 19948
+        }
+      ]
+    },
+    {
+      "source_version": "v1.05",
+      "source_file_offset": 884873,
+      "records": 27,
+      "byte_length": 243,
+      "sha256": "887387ad8630105940467bec3b39938579f9d464a2d6f3559751e347ae16ea5b",
+      "float_value_count": 54,
+      "finite_abs_le_100_count": 54,
+      "first_pairs": [
+        [
+          0.345756263,
+          0.350556135
+        ],
+        [
+          0.355302244,
+          0.360043019
+        ],
+        [
+          0.364780784,
+          0.369527191
+        ],
+        [
+          0.374264956,
+          0.379002154
+        ],
+        [
+          0.38375771,
+          0.388528198
+        ],
+        [
+          0.394190311,
+          0.401826382
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.07",
+          "file_offset": 864925,
+          "delta_target_minus_source": -19948
+        }
+      ]
+    },
+    {
+      "source_version": "v1.05",
+      "source_file_offset": 888987,
+      "records": 27,
+      "byte_length": 243,
+      "sha256": "699c073824344863883f7c34a114de861e9ba4dd05a5ebec8a3eb60c6fc6b584",
+      "float_value_count": 54,
+      "finite_abs_le_100_count": 54,
+      "first_pairs": [
+        [
+          0.744530201,
+          0.749070704
+        ],
+        [
+          0.755973279,
+          0.703211665
+        ],
+        [
+          0.711534202,
+          0.716723561
+        ],
+        [
+          0.720479369,
+          0.723552167
+        ],
+        [
+          0.726562083,
+          0.729541004
+        ],
+        [
+          0.732491076,
+          0.735420048
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.07",
+          "file_offset": 869039,
+          "delta_target_minus_source": -19948
+        }
+      ]
+    },
+    {
+      "source_version": "v1.09",
+      "source_file_offset": 883052,
+      "records": 25,
+      "byte_length": 225,
+      "sha256": "7b1dc44f6985415cdceced7c83812dd62b87e83c564df1ccb2134f635244a3ea",
+      "float_value_count": 50,
+      "finite_abs_le_100_count": 50,
+      "first_pairs": [
+        [
+          0.355913848,
+          0.33298263
+        ],
+        [
+          0.311528474,
+          0.291440576
+        ],
+        [
+          0.272534341,
+          0.251634061
+        ],
+        [
+          0.225933373,
+          0.191259608
+        ],
+        [
+          0.74510622,
+          0.625094533
+        ],
+        [
+          0.55917424,
+          0.515265644
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.08",
+          "file_offset": 878572,
+          "delta_target_minus_source": -4480
+        }
+      ]
+    },
+    {
+      "source_version": "v1.08",
+      "source_file_offset": 878572,
+      "records": 25,
+      "byte_length": 225,
+      "sha256": "7b1dc44f6985415cdceced7c83812dd62b87e83c564df1ccb2134f635244a3ea",
+      "float_value_count": 50,
+      "finite_abs_le_100_count": 50,
+      "first_pairs": [
+        [
+          0.355913848,
+          0.33298263
+        ],
+        [
+          0.311528474,
+          0.291440576
+        ],
+        [
+          0.272534341,
+          0.251634061
+        ],
+        [
+          0.225933373,
+          0.191259608
+        ],
+        [
+          0.74510622,
+          0.625094533
+        ],
+        [
+          0.55917424,
+          0.515265644
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.09",
+          "file_offset": 861404,
+          "delta_target_minus_source": -17168
+        },
+        {
+          "version": "v1.09",
+          "file_offset": 883052,
+          "delta_target_minus_source": 4480
+        }
+      ]
+    },
+    {
+      "source_version": "v1.07",
+      "source_file_offset": 731598,
+      "records": 23,
+      "byte_length": 207,
+      "sha256": "7489bea913b146777f55ae7f8f59bc9e10efbe8d6aac930445eb69686aa302e0",
+      "float_value_count": 46,
+      "finite_abs_le_100_count": 46,
+      "first_pairs": [
+        [
+          -0.55863297,
+          0.297827989
+        ],
+        [
+          -0.0147565249,
+          0.877177179
+        ],
+        [
+          0.0132808723,
+          0.552183151
+        ],
+        [
+          0.690726995,
+          0.0562388226
+        ],
+        [
+          -0.830556154,
+          -0.54037261
+        ],
+        [
+          0.285368383,
+          -0.0138710141
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.05",
+          "file_offset": 729930,
+          "delta_target_minus_source": -1668
+        }
+      ]
+    },
+    {
+      "source_version": "v1.07",
+      "source_file_offset": 875380,
+      "records": 23,
+      "byte_length": 207,
+      "sha256": "51b0bcf3eb6bf73021bfef8c3ef3c25967727ee78b98f449f3bea175247e4f9c",
+      "float_value_count": 46,
+      "finite_abs_le_100_count": 46,
+      "first_pairs": [
+        [
+          0.219038203,
+          0.22946471
+        ],
+        [
+          0.238440812,
+          0.247644186
+        ],
+        [
+          0.257202774,
+          0.267130315
+        ],
+        [
+          0.277441055,
+          0.288149744
+        ],
+        [
+          0.299271762,
+          0.310823113
+        ],
+        [
+          0.322904348,
+          0.337894797
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.05",
+          "file_offset": 895328,
+          "delta_target_minus_source": 19948
+        }
+      ]
+    },
+    {
+      "source_version": "v1.05",
+      "source_file_offset": 729930,
+      "records": 23,
+      "byte_length": 207,
+      "sha256": "7489bea913b146777f55ae7f8f59bc9e10efbe8d6aac930445eb69686aa302e0",
+      "float_value_count": 46,
+      "finite_abs_le_100_count": 46,
+      "first_pairs": [
+        [
+          -0.55863297,
+          0.297827989
+        ],
+        [
+          -0.0147565249,
+          0.877177179
+        ],
+        [
+          0.0132808723,
+          0.552183151
+        ],
+        [
+          0.690726995,
+          0.0562388226
+        ],
+        [
+          -0.830556154,
+          -0.54037261
+        ],
+        [
+          0.285368383,
+          -0.0138710141
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.07",
+          "file_offset": 731598,
+          "delta_target_minus_source": 1668
+        }
+      ]
+    },
+    {
+      "source_version": "v1.05",
+      "source_file_offset": 895328,
+      "records": 23,
+      "byte_length": 207,
+      "sha256": "51b0bcf3eb6bf73021bfef8c3ef3c25967727ee78b98f449f3bea175247e4f9c",
+      "float_value_count": 46,
+      "finite_abs_le_100_count": 46,
+      "first_pairs": [
+        [
+          0.219038203,
+          0.22946471
+        ],
+        [
+          0.238440812,
+          0.247644186
+        ],
+        [
+          0.257202774,
+          0.267130315
+        ],
+        [
+          0.277441055,
+          0.288149744
+        ],
+        [
+          0.299271762,
+          0.310823113
+        ],
+        [
+          0.322904348,
+          0.337894797
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.07",
+          "file_offset": 875380,
+          "delta_target_minus_source": -19948
+        }
+      ]
+    },
+    {
+      "source_version": "v1.07",
+      "source_file_offset": 869787,
+      "records": 20,
+      "byte_length": 180,
+      "sha256": "a4acd5ad38179dbe57e5e28253f2d6909233132834213c0435feb68474998d35",
+      "float_value_count": 40,
+      "finite_abs_le_100_count": 40,
+      "first_pairs": [
+        [
+          0.781248868,
+          0.783720911
+        ],
+        [
+          0.786173165,
+          0.788597226
+        ],
+        [
+          0.790997863,
+          0.793385029
+        ],
+        [
+          0.795757234,
+          0.798544347
+        ],
+        [
+          0.802255392,
+          0.807886839
+        ],
+        [
+          0.763842642,
+          0.770749748
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.05",
+          "file_offset": 889735,
+          "delta_target_minus_source": 19948
+        }
+      ]
+    },
+    {
+      "source_version": "v1.05",
+      "source_file_offset": 889735,
+      "records": 20,
+      "byte_length": 180,
+      "sha256": "a4acd5ad38179dbe57e5e28253f2d6909233132834213c0435feb68474998d35",
+      "float_value_count": 40,
+      "finite_abs_le_100_count": 40,
+      "first_pairs": [
+        [
+          0.781248868,
+          0.783720911
+        ],
+        [
+          0.786173165,
+          0.788597226
+        ],
+        [
+          0.790997863,
+          0.793385029
+        ],
+        [
+          0.795757234,
+          0.798544347
+        ],
+        [
+          0.802255392,
+          0.807886839
+        ],
+        [
+          0.763842642,
+          0.770749748
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.07",
+          "file_offset": 869787,
+          "delta_target_minus_source": -19948
+        }
+      ]
+    },
+    {
+      "source_version": "v1.09",
+      "source_file_offset": 888028,
+      "records": 18,
+      "byte_length": 162,
+      "sha256": "60a7e20e64ce6f45ead6118ba040526cc63987e4f4ccc54ef0529cc580eb3bf8",
+      "float_value_count": 36,
+      "finite_abs_le_100_count": 36,
+      "first_pairs": [
+        [
+          1.60857308,
+          1.48673987
+        ],
+        [
+          1.37389815,
+          1.26945496
+        ],
+        [
+          1.17276537,
+          1.08320606
+        ],
+        [
+          0.999903202,
+          0.911188245
+        ],
+        [
+          0.807319105,
+          0.674274087
+        ],
+        [
+          3.07810974,
+          2.55224228
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.08",
+          "file_offset": 883548,
+          "delta_target_minus_source": -4480
+        }
+      ]
+    },
+    {
+      "source_version": "v1.08",
+      "source_file_offset": 861917,
+      "records": 18,
+      "byte_length": 162,
+      "sha256": "2c477bdc7443cd748180bfe739aac044b89592a21c120dd507e34c3a97d1376c",
+      "float_value_count": 36,
+      "finite_abs_le_100_count": 36,
+      "first_pairs": [
+        [
+          1.48673987,
+          1.37389815
+        ],
+        [
+          1.26945496,
+          1.17276537
+        ],
+        [
+          1.08320606,
+          0.999903202
+        ],
+        [
+          0.911188245,
+          0.807319105
+        ],
+        [
+          0.674274087,
+          3.07810974
+        ],
+        [
+          2.55224228,
+          2.2561779
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.05",
+          "file_offset": 860163,
+          "delta_target_minus_source": -1754
+        }
+      ]
+    },
+    {
+      "source_version": "v1.08",
+      "source_file_offset": 883548,
+      "records": 18,
+      "byte_length": 162,
+      "sha256": "60a7e20e64ce6f45ead6118ba040526cc63987e4f4ccc54ef0529cc580eb3bf8",
+      "float_value_count": 36,
+      "finite_abs_le_100_count": 36,
+      "first_pairs": [
+        [
+          1.60857308,
+          1.48673987
+        ],
+        [
+          1.37389815,
+          1.26945496
+        ],
+        [
+          1.17276537,
+          1.08320606
+        ],
+        [
+          0.999903202,
+          0.911188245
+        ],
+        [
+          0.807319105,
+          0.674274087
+        ],
+        [
+          3.07810974,
+          2.55224228
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.09",
+          "file_offset": 888028,
+          "delta_target_minus_source": 4480
+        }
+      ]
+    },
+    {
+      "source_version": "v1.07",
+      "source_file_offset": 865728,
+      "records": 18,
+      "byte_length": 162,
+      "sha256": "5be17ee896af39933a3d81fe98b29db961e8f44d1597eb6e97ad7403fc76757a",
+      "float_value_count": 36,
+      "finite_abs_le_100_count": 36,
+      "first_pairs": [
+        [
+          0.466535598,
+          0.471109897
+        ],
+        [
+          0.47567746,
+          0.480221897
+        ],
+        [
+          0.484751195,
+          0.489283681
+        ],
+        [
+          0.493816048,
+          0.499177307
+        ],
+        [
+          0.506376803,
+          0.517435372
+        ],
+        [
+          0.432425201,
+          0.444710344
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.05",
+          "file_offset": 885676,
+          "delta_target_minus_source": 19948
+        }
+      ]
+    },
+    {
+      "source_version": "v1.05",
+      "source_file_offset": 860163,
+      "records": 18,
+      "byte_length": 162,
+      "sha256": "2c477bdc7443cd748180bfe739aac044b89592a21c120dd507e34c3a97d1376c",
+      "float_value_count": 36,
+      "finite_abs_le_100_count": 36,
+      "first_pairs": [
+        [
+          1.48673987,
+          1.37389815
+        ],
+        [
+          1.26945496,
+          1.17276537
+        ],
+        [
+          1.08320606,
+          0.999903202
+        ],
+        [
+          0.911188245,
+          0.807319105
+        ],
+        [
+          0.674274087,
+          3.07810974
+        ],
+        [
+          2.55224228,
+          2.2561779
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.08",
+          "file_offset": 861917,
+          "delta_target_minus_source": 1754
+        }
+      ]
+    },
+    {
+      "source_version": "v1.05",
+      "source_file_offset": 885676,
+      "records": 18,
+      "byte_length": 162,
+      "sha256": "5be17ee896af39933a3d81fe98b29db961e8f44d1597eb6e97ad7403fc76757a",
+      "float_value_count": 36,
+      "finite_abs_le_100_count": 36,
+      "first_pairs": [
+        [
+          0.466535598,
+          0.471109897
+        ],
+        [
+          0.47567746,
+          0.480221897
+        ],
+        [
+          0.484751195,
+          0.489283681
+        ],
+        [
+          0.493816048,
+          0.499177307
+        ],
+        [
+          0.506376803,
+          0.517435372
+        ],
+        [
+          0.432425201,
+          0.444710344
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.07",
+          "file_offset": 865728,
+          "delta_target_minus_source": -19948
+        }
+      ]
+    },
+    {
+      "source_version": "v1.09",
+      "source_file_offset": 883315,
+      "records": 17,
+      "byte_length": 153,
+      "sha256": "4ec3ef0dacb2166dc62ee5e66f437dc778c6866672e0654ffdc2877adc7c7f96",
+      "float_value_count": 34,
+      "finite_abs_le_100_count": 34,
+      "first_pairs": [
+        [
+          0.571951389,
+          0.534621596
+        ],
+        [
+          0.500160038,
+          0.467929333
+        ],
+        [
+          0.437780797,
+          0.409565657
+        ],
+        [
+          0.383177698,
+          0.358489454
+        ],
+        [
+          0.335373431,
+          0.3136172
+        ],
+        [
+          0.289566338,
+          0.259991437
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.08",
+          "file_offset": 878835,
+          "delta_target_minus_source": -4480
+        }
+      ]
+    },
+    {
+      "source_version": "v1.08",
+      "source_file_offset": 878835,
+      "records": 17,
+      "byte_length": 153,
+      "sha256": "4ec3ef0dacb2166dc62ee5e66f437dc778c6866672e0654ffdc2877adc7c7f96",
+      "float_value_count": 34,
+      "finite_abs_le_100_count": 34,
+      "first_pairs": [
+        [
+          0.571951389,
+          0.534621596
+        ],
+        [
+          0.500160038,
+          0.467929333
+        ],
+        [
+          0.437780797,
+          0.409565657
+        ],
+        [
+          0.383177698,
+          0.358489454
+        ],
+        [
+          0.335373431,
+          0.3136172
+        ],
+        [
+          0.289566338,
+          0.259991437
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.09",
+          "file_offset": 883315,
+          "delta_target_minus_source": 4480
+        }
+      ]
+    },
+    {
+      "source_version": "v1.07",
+      "source_file_offset": 867607,
+      "records": 17,
+      "byte_length": 153,
+      "sha256": "665c2a566b22513965dcf9b219c49cd4714e00cc71e6901dfa7e89a239318df4",
+      "float_value_count": 34,
+      "finite_abs_le_100_count": 34,
+      "first_pairs": [
+        [
+          0.575299501,
+          0.580187738
+        ],
+        [
+          0.586734235,
+          0.596750677
+        ],
+        [
+          0.525321484,
+          0.536744118
+        ],
+        [
+          0.543922782,
+          0.549145341
+        ],
+        [
+          0.553434968,
+          0.55765146
+        ],
+        [
+          0.561838746,
+          0.565999508
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.05",
+          "file_offset": 887555,
+          "delta_target_minus_source": 19948
+        }
+      ]
+    },
+    {
+      "source_version": "v1.05",
+      "source_file_offset": 887555,
+      "records": 17,
+      "byte_length": 153,
+      "sha256": "665c2a566b22513965dcf9b219c49cd4714e00cc71e6901dfa7e89a239318df4",
+      "float_value_count": 34,
+      "finite_abs_le_100_count": 34,
+      "first_pairs": [
+        [
+          0.575299501,
+          0.580187738
+        ],
+        [
+          0.586734235,
+          0.596750677
+        ],
+        [
+          0.525321484,
+          0.536744118
+        ],
+        [
+          0.543922782,
+          0.549145341
+        ],
+        [
+          0.553434968,
+          0.55765146
+        ],
+        [
+          0.561838746,
+          0.565999508
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.07",
+          "file_offset": 867607,
+          "delta_target_minus_source": -19948
+        }
+      ]
+    },
+    {
+      "source_version": "v1.07",
+      "source_file_offset": 733813,
+      "records": 16,
+      "byte_length": 144,
+      "sha256": "fd9695dd3d1e60a994f263d1746dd74052068c21db8b943e7d9b506d8ca355dc",
+      "float_value_count": 32,
+      "finite_abs_le_100_count": 32,
+      "first_pairs": [
+        [
+          -0.147845507,
+          0.0677368715
+        ],
+        [
+          -0.00254761567,
+          0.300631821
+        ],
+        [
+          0.00229285401,
+          1.09684217
+        ],
+        [
+          0.798204541,
+          0.0530394912
+        ],
+        [
+          -0.240872532,
+          -0.143519357
+        ],
+        [
+          0.065677762,
+          -0.00246538338
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.05",
+          "file_offset": 732145,
+          "delta_target_minus_source": -1668
+        }
+      ]
+    },
+    {
+      "source_version": "v1.07",
+      "source_file_offset": 735260,
+      "records": 16,
+      "byte_length": 144,
+      "sha256": "e2232b02eaa73f850cd9689cc4a126f58724c68216f2a825826b2e4ac5989638",
+      "float_value_count": 32,
+      "finite_abs_le_100_count": 32,
+      "first_pairs": [
+        [
+          -0.0129569648,
+          0.00573678361
+        ],
+        [
+          -0.000204068318,
+          0.0281709805
+        ],
+        [
+          0.000183661483,
+          1.3869189
+        ],
+        [
+          0.855445385,
+          0.0513355769
+        ],
+        [
+          -0.0166256409,
+          -0.0096878102
+        ],
+        [
+          0.00428602379,
+          -0.000152272842
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.05",
+          "file_offset": 733592,
+          "delta_target_minus_source": -1668
+        }
+      ]
+    },
+    {
+      "source_version": "v1.07",
+      "source_file_offset": 874269,
+      "records": 16,
+      "byte_length": 144,
+      "sha256": "ae198591ba56390cd88ef2555de0391da404831bd84087f4d08b2499bb0c83fb",
+      "float_value_count": 32,
+      "finite_abs_le_100_count": 32,
+      "first_pairs": [
+        [
+          0.251262218,
+          0.246251285
+        ],
+        [
+          0.24134028,
+          0.236527219
+        ],
+        [
+          0.231810153,
+          0.227187142
+        ],
+        [
+          0.222656339,
+          0.218185678
+        ],
+        [
+          0.212982282,
+          0.206152797
+        ],
+        [
+          0.196024165,
+          0.284380764
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.05",
+          "file_offset": 894217,
+          "delta_target_minus_source": 19948
+        }
+      ]
+    },
+    {
+      "source_version": "v1.05",
+      "source_file_offset": 732145,
+      "records": 16,
+      "byte_length": 144,
+      "sha256": "fd9695dd3d1e60a994f263d1746dd74052068c21db8b943e7d9b506d8ca355dc",
+      "float_value_count": 32,
+      "finite_abs_le_100_count": 32,
+      "first_pairs": [
+        [
+          -0.147845507,
+          0.0677368715
+        ],
+        [
+          -0.00254761567,
+          0.300631821
+        ],
+        [
+          0.00229285401,
+          1.09684217
+        ],
+        [
+          0.798204541,
+          0.0530394912
+        ],
+        [
+          -0.240872532,
+          -0.143519357
+        ],
+        [
+          0.065677762,
+          -0.00246538338
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.07",
+          "file_offset": 733813,
+          "delta_target_minus_source": 1668
+        }
+      ]
+    },
+    {
+      "source_version": "v1.05",
+      "source_file_offset": 733592,
+      "records": 16,
+      "byte_length": 144,
+      "sha256": "e2232b02eaa73f850cd9689cc4a126f58724c68216f2a825826b2e4ac5989638",
+      "float_value_count": 32,
+      "finite_abs_le_100_count": 32,
+      "first_pairs": [
+        [
+          -0.0129569648,
+          0.00573678361
+        ],
+        [
+          -0.000204068318,
+          0.0281709805
+        ],
+        [
+          0.000183661483,
+          1.3869189
+        ],
+        [
+          0.855445385,
+          0.0513355769
+        ],
+        [
+          -0.0166256409,
+          -0.0096878102
+        ],
+        [
+          0.00428602379,
+          -0.000152272842
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.07",
+          "file_offset": 735260,
+          "delta_target_minus_source": 1668
+        }
+      ]
+    },
+    {
+      "source_version": "v1.05",
+      "source_file_offset": 894217,
+      "records": 16,
+      "byte_length": 144,
+      "sha256": "ae198591ba56390cd88ef2555de0391da404831bd84087f4d08b2499bb0c83fb",
+      "float_value_count": 32,
+      "finite_abs_le_100_count": 32,
+      "first_pairs": [
+        [
+          0.251262218,
+          0.246251285
+        ],
+        [
+          0.24134028,
+          0.236527219
+        ],
+        [
+          0.231810153,
+          0.227187142
+        ],
+        [
+          0.222656339,
+          0.218185678
+        ],
+        [
+          0.212982282,
+          0.206152797
+        ],
+        [
+          0.196024165,
+          0.284380764
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.07",
+          "file_offset": 874269,
+          "delta_target_minus_source": -19948
+        }
+      ]
+    },
+    {
+      "source_version": "v1.07",
+      "source_file_offset": 727502,
+      "records": 15,
+      "byte_length": 135,
+      "sha256": "eda452f28f0c24b743b0f013fc1f898e0fdb5302d3ff984e5d73ec089235e04a",
+      "float_value_count": 30,
+      "finite_abs_le_100_count": 30,
+      "first_pairs": [
+        [
+          0.99000001,
+          0.000121428573
+        ],
+        [
+          0.750835001,
+          0.988532484
+        ],
+        [
+          0.000162210708,
+          0.751680017
+        ],
+        [
+          0.986959994,
+          0.000213257139
+        ],
+        [
+          0.752544999,
+          0.985277474
+        ],
+        [
+          0.000275832135,
+          0.753440022
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.05",
+          "file_offset": 725834,
+          "delta_target_minus_source": -1668
+        }
+      ]
+    },
+    {
+      "source_version": "v1.07",
+      "source_file_offset": 737539,
+      "records": 15,
+      "byte_length": 135,
+      "sha256": "19b7969dba3bb9ead3910563091fc85423427dc6576543c7579af3f183262d64",
+      "float_value_count": 30,
+      "finite_abs_le_100_count": 30,
+      "first_pairs": [
+        [
+          0.00356039614,
+          0.767651796
+        ],
+        [
+          1.10043585,
+          1.07887292
+        ],
+        [
+          0.157385021,
+          0.0820593834
+        ],
+        [
+          0.289999992,
+          0.00341904489
+        ],
+        [
+          0.775119364,
+          1.09726489
+        ],
+        [
+          1.07600868,
+          0.151471868
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.05",
+          "file_offset": 735871,
+          "delta_target_minus_source": -1668
+        }
+      ]
+    },
+    {
+      "source_version": "v1.05",
+      "source_file_offset": 725834,
+      "records": 15,
+      "byte_length": 135,
+      "sha256": "eda452f28f0c24b743b0f013fc1f898e0fdb5302d3ff984e5d73ec089235e04a",
+      "float_value_count": 30,
+      "finite_abs_le_100_count": 30,
+      "first_pairs": [
+        [
+          0.99000001,
+          0.000121428573
+        ],
+        [
+          0.750835001,
+          0.988532484
+        ],
+        [
+          0.000162210708,
+          0.751680017
+        ],
+        [
+          0.986959994,
+          0.000213257139
+        ],
+        [
+          0.752544999,
+          0.985277474
+        ],
+        [
+          0.000275832135,
+          0.753440022
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.07",
+          "file_offset": 727502,
+          "delta_target_minus_source": 1668
+        }
+      ]
+    },
+    {
+      "source_version": "v1.05",
+      "source_file_offset": 735871,
+      "records": 15,
+      "byte_length": 135,
+      "sha256": "19b7969dba3bb9ead3910563091fc85423427dc6576543c7579af3f183262d64",
+      "float_value_count": 30,
+      "finite_abs_le_100_count": 30,
+      "first_pairs": [
+        [
+          0.00356039614,
+          0.767651796
+        ],
+        [
+          1.10043585,
+          1.07887292
+        ],
+        [
+          0.157385021,
+          0.0820593834
+        ],
+        [
+          0.289999992,
+          0.00341904489
+        ],
+        [
+          0.775119364,
+          1.09726489
+        ],
+        [
+          1.07600868,
+          0.151471868
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.07",
+          "file_offset": 737539,
+          "delta_target_minus_source": 1668
+        }
+      ]
+    },
+    {
+      "source_version": "v1.07",
+      "source_file_offset": 736198,
+      "records": 14,
+      "byte_length": 126,
+      "sha256": "5c4452acd0025620155860688c0feadd342dc941b0b7b4823c01e89e5136caa1",
+      "float_value_count": 28,
+      "finite_abs_le_100_count": 28,
+      "first_pairs": [
+        [
+          0.482532114,
+          1.21685636
+        ],
+        [
+          1.22589362,
+          0.490098059
+        ],
+        [
+          0.285925806,
+          0.74000001
+        ],
+        [
+          0.013380412,
+          0.487552643
+        ],
+        [
+          1.214926,
+          1.22203588
+        ],
+        [
+          0.480384767,
+          0.279156566
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.05",
+          "file_offset": 734530,
+          "delta_target_minus_source": -1668
+        }
+      ]
+    },
+    {
+      "source_version": "v1.07",
+      "source_file_offset": 871981,
+      "records": 14,
+      "byte_length": 126,
+      "sha256": "ecd1af0b3fc148cf397080d59cae1eb69b2d3cd015eac8e91ecdf9acd17fb18e",
+      "float_value_count": 28,
+      "finite_abs_le_100_count": 28,
+      "first_pairs": [
+        [
+          0.268004984,
+          0.26107502
+        ],
+        [
+          0.25500837,
+          0.248132303
+        ],
+        [
+          0.239184514,
+          0.225874171
+        ],
+        [
+          0.204746306,
+          0.173254892
+        ],
+        [
+          0.134189293,
+          0.0957421958
+        ],
+        [
+          0.0644119233,
+          0.0386699103
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.05",
+          "file_offset": 891929,
+          "delta_target_minus_source": 19948
+        }
+      ]
+    },
+    {
+      "source_version": "v1.05",
+      "source_file_offset": 734530,
+      "records": 14,
+      "byte_length": 126,
+      "sha256": "5c4452acd0025620155860688c0feadd342dc941b0b7b4823c01e89e5136caa1",
+      "float_value_count": 28,
+      "finite_abs_le_100_count": 28,
+      "first_pairs": [
+        [
+          0.482532114,
+          1.21685636
+        ],
+        [
+          1.22589362,
+          0.490098059
+        ],
+        [
+          0.285925806,
+          0.74000001
+        ],
+        [
+          0.013380412,
+          0.487552643
+        ],
+        [
+          1.214926,
+          1.22203588
+        ],
+        [
+          0.480384767,
+          0.279156566
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.07",
+          "file_offset": 736198,
+          "delta_target_minus_source": 1668
+        }
+      ]
+    },
+    {
+      "source_version": "v1.05",
+      "source_file_offset": 891929,
+      "records": 14,
+      "byte_length": 126,
+      "sha256": "ecd1af0b3fc148cf397080d59cae1eb69b2d3cd015eac8e91ecdf9acd17fb18e",
+      "float_value_count": 28,
+      "finite_abs_le_100_count": 28,
+      "first_pairs": [
+        [
+          0.268004984,
+          0.26107502
+        ],
+        [
+          0.25500837,
+          0.248132303
+        ],
+        [
+          0.239184514,
+          0.225874171
+        ],
+        [
+          0.204746306,
+          0.173254892
+        ],
+        [
+          0.134189293,
+          0.0957421958
+        ],
+        [
+          0.0644119233,
+          0.0386699103
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.07",
+          "file_offset": 871981,
+          "delta_target_minus_source": -19948
+        }
+      ]
+    },
+    {
+      "source_version": "v1.07",
+      "source_file_offset": 875081,
+      "records": 12,
+      "byte_length": 108,
+      "sha256": "a44b35162767e8bdef643a30b38b0789f2dc370a78e044847eb4ed235e1589df",
+      "float_value_count": 24,
+      "finite_abs_le_100_count": 24,
+      "first_pairs": [
+        [
+          0.317291021,
+          0.208341971
+        ],
+        [
+          0.22158207,
+          0.230414897
+        ],
+        [
+          0.237122044,
+          0.242803201
+        ],
+        [
+          0.248543769,
+          0.254420072
+        ],
+        [
+          0.260435283,
+          0.266592741
+        ],
+        [
+          0.272895753,
+          0.279347807
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.05",
+          "file_offset": 895029,
+          "delta_target_minus_source": 19948
+        }
+      ]
+    },
+    {
+      "source_version": "v1.05",
+      "source_file_offset": 895029,
+      "records": 12,
+      "byte_length": 108,
+      "sha256": "a44b35162767e8bdef643a30b38b0789f2dc370a78e044847eb4ed235e1589df",
+      "float_value_count": 24,
+      "finite_abs_le_100_count": 24,
+      "first_pairs": [
+        [
+          0.317291021,
+          0.208341971
+        ],
+        [
+          0.22158207,
+          0.230414897
+        ],
+        [
+          0.237122044,
+          0.242803201
+        ],
+        [
+          0.248543769,
+          0.254420072
+        ],
+        [
+          0.260435283,
+          0.266592741
+        ],
+        [
+          0.272895753,
+          0.279347807
+        ]
+      ],
+      "exact_matches": [
+        {
+          "version": "v1.07",
+          "file_offset": 875081,
+          "delta_target_minus_source": -19948
+        }
+      ]
+    }
+  ],
+  "interpretation": "Exact matching chains demonstrate repeated structured numeric-looking byte regions across releases. They do not prove runtime float use, table semantics, or a specific relocation mechanism. Absence of a full-chain match does not imply the values are absent or transformed beyond recognition."
+}

@@ -1,0 +1,254 @@
+{
+  "source": "GT-1 Fx FloorBoard community source; static inspection only",
+  "archive": {
+    "path": "firmware/work/reference/gt-1_fxfb_source_code_20260405.zip",
+    "sha256": "bacc2c0f4c37bfa19e3a85004f2b60021d76cec520618fdf90edba22eb2e6d55"
+  },
+  "files": {
+    "midi.xml": {
+      "path": "firmware/work/reference/gt-1/midi.xml",
+      "sha256": "c802b38b73d88ff92f6c8bf3863afe01c9faa6eac6fe5e26be28ca4f70033547"
+    },
+    "MidiTable.cpp": {
+      "path": "firmware/work/reference/gt-1/MidiTable.cpp",
+      "sha256": "ebb939be926d3fedca09fa9044273dad8c318a105036ed938ca0ce58765e95cb"
+    },
+    "SysxIO.cpp": {
+      "path": "firmware/work/reference/gt-1/SysxIO.cpp",
+      "sha256": "a034d02133037437412d336d6c3c408130a43ec71c755cb0964b09d38e384e9b"
+    },
+    "globalVariables.h": {
+      "path": "firmware/work/reference/gt-1/globalVariables.h",
+      "sha256": "d056e7b202ccb0a6938f84974333d96b19900c5e0bb4d80171c3e773d40a668f"
+    },
+    "new_default.syx": {
+      "path": "firmware/work/reference/gt-1/new_default.syx",
+      "sha256": "292dd0100ec4832d388cc5646bd8c1d0177879f338b62ecacba7a0f1034c1d43"
+    },
+    "default.tsl": {
+      "path": "firmware/work/reference/gt-1/default.tsl",
+      "sha256": "940c22ccf14e259b0297fee6d9d3d3e67fb8f2863149327ff32ba5ef1b44c451"
+    }
+  },
+  "findings": {
+    "sys_ex_header_bytes_0_to_6": [
+      "F0",
+      "41",
+      "00",
+      "00",
+      "00",
+      "60",
+      "11"
+    ],
+    "command_byte_0x11_label": true,
+    "command_byte_0x12_label": true,
+    "address_offset_zero_based": 7,
+    "data_offset_zero_based": 11,
+    "checksum_offset_zero_based": 7,
+    "checksum_implementation_modulus": 128,
+    "checksum_implementation_present": true,
+    "system_read_request": "F0410000000030110000000000087F0079F7",
+    "temporary_bulk_address_msb": "60",
+    "writeToBuffer_sets_address_bytes_to_60_00": true,
+    "writeToBuffer_rewrites_SysEx_address_offsets": true,
+    "writeToBuffer_sends_patch_messages_via_SysEx": true,
+    "writeToBuffer_waits_for_reset_reply": true,
+    "user_patches": 50,
+    "patches_per_bank": 4,
+    "writes_present_in_source": true,
+    "saved_example_patch_set_device": "GT-1",
+    "saved_example_patch_count": 1,
+    "saved_example_amp_parameter_values": {
+      "preamp_a_type": 4,
+      "preamp_a_gain": 80,
+      "preamp_b_type": 0,
+      "preamp_a_custom_type": 0,
+      "fx1_sub_od_ds_type": 12
+    },
+    "saved_example_syx_message_count": 19,
+    "saved_example_syx_message_lengths": [
+      141
+    ],
+    "saved_example_syx_all_checksums_valid": true,
+    "saved_example_syx_message_addresses": [
+      "60000000",
+      "60000100",
+      "60000200",
+      "60000300",
+      "60000400",
+      "60000500",
+      "60000600",
+      "60000700",
+      "60000800",
+      "60000900",
+      "60000a00",
+      "60000b00",
+      "60000c00",
+      "60000d00",
+      "60000e00",
+      "60000f00",
+      "60001000",
+      "60000d00",
+      "60000e00"
+    ]
+  },
+  "saved_example_syx_messages": [
+    {
+      "offset": 0,
+      "length": 141,
+      "address": "60000000",
+      "checksum": 20,
+      "calculated_checksum": 20,
+      "checksum_valid_under_editor_algorithm": true
+    },
+    {
+      "offset": 141,
+      "length": 141,
+      "address": "60000100",
+      "checksum": 37,
+      "calculated_checksum": 37,
+      "checksum_valid_under_editor_algorithm": true
+    },
+    {
+      "offset": 282,
+      "length": 141,
+      "address": "60000200",
+      "checksum": 31,
+      "calculated_checksum": 31,
+      "checksum_valid_under_editor_algorithm": true
+    },
+    {
+      "offset": 423,
+      "length": 141,
+      "address": "60000300",
+      "checksum": 70,
+      "calculated_checksum": 70,
+      "checksum_valid_under_editor_algorithm": true
+    },
+    {
+      "offset": 564,
+      "length": 141,
+      "address": "60000400",
+      "checksum": 76,
+      "calculated_checksum": 76,
+      "checksum_valid_under_editor_algorithm": true
+    },
+    {
+      "offset": 705,
+      "length": 141,
+      "address": "60000500",
+      "checksum": 94,
+      "calculated_checksum": 94,
+      "checksum_valid_under_editor_algorithm": true
+    },
+    {
+      "offset": 846,
+      "length": 141,
+      "address": "60000600",
+      "checksum": 8,
+      "calculated_checksum": 8,
+      "checksum_valid_under_editor_algorithm": true
+    },
+    {
+      "offset": 987,
+      "length": 141,
+      "address": "60000700",
+      "checksum": 74,
+      "calculated_checksum": 74,
+      "checksum_valid_under_editor_algorithm": true
+    },
+    {
+      "offset": 1128,
+      "length": 141,
+      "address": "60000800",
+      "checksum": 100,
+      "calculated_checksum": 100,
+      "checksum_valid_under_editor_algorithm": true
+    },
+    {
+      "offset": 1269,
+      "length": 141,
+      "address": "60000900",
+      "checksum": 11,
+      "calculated_checksum": 11,
+      "checksum_valid_under_editor_algorithm": true
+    },
+    {
+      "offset": 1410,
+      "length": 141,
+      "address": "60000a00",
+      "checksum": 33,
+      "calculated_checksum": 33,
+      "checksum_valid_under_editor_algorithm": true
+    },
+    {
+      "offset": 1551,
+      "length": 141,
+      "address": "60000b00",
+      "checksum": 21,
+      "calculated_checksum": 21,
+      "checksum_valid_under_editor_algorithm": true
+    },
+    {
+      "offset": 1692,
+      "length": 141,
+      "address": "60000c00",
+      "checksum": 20,
+      "calculated_checksum": 20,
+      "checksum_valid_under_editor_algorithm": true
+    },
+    {
+      "offset": 1833,
+      "length": 141,
+      "address": "60000d00",
+      "checksum": 19,
+      "calculated_checksum": 19,
+      "checksum_valid_under_editor_algorithm": true
+    },
+    {
+      "offset": 1974,
+      "length": 141,
+      "address": "60000e00",
+      "checksum": 18,
+      "calculated_checksum": 18,
+      "checksum_valid_under_editor_algorithm": true
+    },
+    {
+      "offset": 2115,
+      "length": 141,
+      "address": "60000f00",
+      "checksum": 17,
+      "calculated_checksum": 17,
+      "checksum_valid_under_editor_algorithm": true
+    },
+    {
+      "offset": 2256,
+      "length": 141,
+      "address": "60001000",
+      "checksum": 16,
+      "calculated_checksum": 16,
+      "checksum_valid_under_editor_algorithm": true
+    },
+    {
+      "offset": 2397,
+      "length": 141,
+      "address": "60000d00",
+      "checksum": 58,
+      "calculated_checksum": 58,
+      "checksum_valid_under_editor_algorithm": true
+    },
+    {
+      "offset": 2538,
+      "length": 141,
+      "address": "60000e00",
+      "checksum": 91,
+      "calculated_checksum": 91,
+      "checksum_valid_under_editor_algorithm": true
+    }
+  ],
+  "limitations": [
+    "Community-maintained table, not an official Roland protocol specification.",
+    "Static source inspection does not establish executable upload or firmware access.",
+    "No hardware was connected and no SysEx was transmitted."
+  ]
+}

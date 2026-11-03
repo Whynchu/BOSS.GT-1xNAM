@@ -1,0 +1,497 @@
+{
+  "read_only": true,
+  "scope": "Bounded bootstrap code candidates only; does not classify the later FA/GT-1 application payloads.",
+  "interpretation": "The ARM Thumb decoder finds the same startup instruction shape in ESC90 and ESC91. The 24-byte init-table loop at FA file 0xA18 is byte-identical to GT-1 file 0xBE0 across all three FA releases. FA Ghidra headless output independently decodes the ESC90 entry and loop in ARM:LE:32:Cortex with Thumb context. This is strong evidence that these bounded bootstrap regions contain ARM Thumb code, but not proof that the MB8AA4181 application core runs ARM, that the rest of the section uses this ISA, or that the candidate mapping is the complete runtime map.",
+  "images": {
+    "FA ESC90 v2.01": {
+      "path": "firmware/work/reference/esc2-comparators/fa08_v201/extracted/_tmp/fantom_e_up.bin",
+      "image_size": 814304,
+      "image_sha256": "ec708bea775ebe58f51bd4aadf524edec236ec8b9cf8a547612a7a9805c99c75",
+      "candidate_runtime_mapping": "0x00FFFFD0 + file_offset",
+      "entry_file_offset": "0x0002F4",
+      "entry_window_hex": "df f8 0c d0 00 f0 8e fb 00 48 00 47",
+      "entry_instructions": [
+        {
+          "runtime_address": "0x010002C4",
+          "file_offset": "0x0002F4",
+          "bytes": "df f8 0c d0",
+          "mnemonic": "ldr.w",
+          "operands": "sp, [pc, #0xc]"
+        },
+        {
+          "runtime_address": "0x010002C8",
+          "file_offset": "0x0002F8",
+          "bytes": "00 f0 8e fb",
+          "mnemonic": "bl",
+          "operands": "#0x10009e8"
+        },
+        {
+          "runtime_address": "0x010002CC",
+          "file_offset": "0x0002FC",
+          "bytes": "00 48",
+          "mnemonic": "ldr",
+          "operands": "r0, [pc, #0]"
+        },
+        {
+          "runtime_address": "0x010002CE",
+          "file_offset": "0x0002FE",
+          "bytes": "00 47",
+          "mnemonic": "bx",
+          "operands": "r0"
+        }
+      ],
+      "table_loop_file_offset": "0x000A18",
+      "table_loop_window_size": 24,
+      "table_loop_window_hex": "06 4c 07 4d 06 e0 e0 68 40 f0 01 03 94 e8 07 00 98 47 10 34 ac 42 f6 d3",
+      "table_loop_sha256": "6b23cfce926b0928ef367a8c74442c5c7be6fab939563d7365dc1efc0fd5ca77",
+      "table_loop_instructions": [
+        {
+          "runtime_address": "0x010009E8",
+          "file_offset": "0x000A18",
+          "bytes": "06 4c",
+          "mnemonic": "ldr",
+          "operands": "r4, [pc, #0x18]"
+        },
+        {
+          "runtime_address": "0x010009EA",
+          "file_offset": "0x000A1A",
+          "bytes": "07 4d",
+          "mnemonic": "ldr",
+          "operands": "r5, [pc, #0x1c]"
+        },
+        {
+          "runtime_address": "0x010009EC",
+          "file_offset": "0x000A1C",
+          "bytes": "06 e0",
+          "mnemonic": "b",
+          "operands": "#0x10009fc"
+        },
+        {
+          "runtime_address": "0x010009EE",
+          "file_offset": "0x000A1E",
+          "bytes": "e0 68",
+          "mnemonic": "ldr",
+          "operands": "r0, [r4, #0xc]"
+        },
+        {
+          "runtime_address": "0x010009F0",
+          "file_offset": "0x000A20",
+          "bytes": "40 f0 01 03",
+          "mnemonic": "orr",
+          "operands": "r3, r0, #1"
+        },
+        {
+          "runtime_address": "0x010009F4",
+          "file_offset": "0x000A24",
+          "bytes": "94 e8 07 00",
+          "mnemonic": "ldm.w",
+          "operands": "r4, {r0, r1, r2}"
+        },
+        {
+          "runtime_address": "0x010009F8",
+          "file_offset": "0x000A28",
+          "bytes": "98 47",
+          "mnemonic": "blx",
+          "operands": "r3"
+        },
+        {
+          "runtime_address": "0x010009FA",
+          "file_offset": "0x000A2A",
+          "bytes": "10 34",
+          "mnemonic": "adds",
+          "operands": "r4, #0x10"
+        },
+        {
+          "runtime_address": "0x010009FC",
+          "file_offset": "0x000A2C",
+          "bytes": "ac 42",
+          "mnemonic": "cmp",
+          "operands": "r4, r5"
+        },
+        {
+          "runtime_address": "0x010009FE",
+          "file_offset": "0x000A2E",
+          "bytes": "f6 d3",
+          "mnemonic": "blo",
+          "operands": "#0x10009ee"
+        }
+      ]
+    },
+    "FA ESC90 v2.02": {
+      "path": "firmware/work/reference/esc2-comparators/fa08_v202/extracted/_tmp/fantom_e_up.bin",
+      "image_size": 814304,
+      "image_sha256": "dbbcb86c03483e8892cec4eefc77f6cfd7b00d87f26bb7162af5fbab5dcf932e",
+      "candidate_runtime_mapping": "0x00FFFFD0 + file_offset",
+      "entry_file_offset": "0x0002F4",
+      "entry_window_hex": "df f8 0c d0 00 f0 8e fb 00 48 00 47",
+      "entry_instructions": [
+        {
+          "runtime_address": "0x010002C4",
+          "file_offset": "0x0002F4",
+          "bytes": "df f8 0c d0",
+          "mnemonic": "ldr.w",
+          "operands": "sp, [pc, #0xc]"
+        },
+        {
+          "runtime_address": "0x010002C8",
+          "file_offset": "0x0002F8",
+          "bytes": "00 f0 8e fb",
+          "mnemonic": "bl",
+          "operands": "#0x10009e8"
+        },
+        {
+          "runtime_address": "0x010002CC",
+          "file_offset": "0x0002FC",
+          "bytes": "00 48",
+          "mnemonic": "ldr",
+          "operands": "r0, [pc, #0]"
+        },
+        {
+          "runtime_address": "0x010002CE",
+          "file_offset": "0x0002FE",
+          "bytes": "00 47",
+          "mnemonic": "bx",
+          "operands": "r0"
+        }
+      ],
+      "table_loop_file_offset": "0x000A18",
+      "table_loop_window_size": 24,
+      "table_loop_window_hex": "06 4c 07 4d 06 e0 e0 68 40 f0 01 03 94 e8 07 00 98 47 10 34 ac 42 f6 d3",
+      "table_loop_sha256": "6b23cfce926b0928ef367a8c74442c5c7be6fab939563d7365dc1efc0fd5ca77",
+      "table_loop_instructions": [
+        {
+          "runtime_address": "0x010009E8",
+          "file_offset": "0x000A18",
+          "bytes": "06 4c",
+          "mnemonic": "ldr",
+          "operands": "r4, [pc, #0x18]"
+        },
+        {
+          "runtime_address": "0x010009EA",
+          "file_offset": "0x000A1A",
+          "bytes": "07 4d",
+          "mnemonic": "ldr",
+          "operands": "r5, [pc, #0x1c]"
+        },
+        {
+          "runtime_address": "0x010009EC",
+          "file_offset": "0x000A1C",
+          "bytes": "06 e0",
+          "mnemonic": "b",
+          "operands": "#0x10009fc"
+        },
+        {
+          "runtime_address": "0x010009EE",
+          "file_offset": "0x000A1E",
+          "bytes": "e0 68",
+          "mnemonic": "ldr",
+          "operands": "r0, [r4, #0xc]"
+        },
+        {
+          "runtime_address": "0x010009F0",
+          "file_offset": "0x000A20",
+          "bytes": "40 f0 01 03",
+          "mnemonic": "orr",
+          "operands": "r3, r0, #1"
+        },
+        {
+          "runtime_address": "0x010009F4",
+          "file_offset": "0x000A24",
+          "bytes": "94 e8 07 00",
+          "mnemonic": "ldm.w",
+          "operands": "r4, {r0, r1, r2}"
+        },
+        {
+          "runtime_address": "0x010009F8",
+          "file_offset": "0x000A28",
+          "bytes": "98 47",
+          "mnemonic": "blx",
+          "operands": "r3"
+        },
+        {
+          "runtime_address": "0x010009FA",
+          "file_offset": "0x000A2A",
+          "bytes": "10 34",
+          "mnemonic": "adds",
+          "operands": "r4, #0x10"
+        },
+        {
+          "runtime_address": "0x010009FC",
+          "file_offset": "0x000A2C",
+          "bytes": "ac 42",
+          "mnemonic": "cmp",
+          "operands": "r4, r5"
+        },
+        {
+          "runtime_address": "0x010009FE",
+          "file_offset": "0x000A2E",
+          "bytes": "f6 d3",
+          "mnemonic": "blo",
+          "operands": "#0x10009ee"
+        }
+      ]
+    },
+    "FA ESC90 v2.03": {
+      "path": "firmware/work/reference/esc2-comparators/fa08_v203/extracted/_tmp/fantom_e_up.bin",
+      "image_size": 814304,
+      "image_sha256": "900028695b7ec1b63631737d1bd0eaf4707514264a7b325914d951cb59731d23",
+      "candidate_runtime_mapping": "0x00FFFFD0 + file_offset",
+      "entry_file_offset": "0x0002F4",
+      "entry_window_hex": "df f8 0c d0 00 f0 8e fb 00 48 00 47",
+      "entry_instructions": [
+        {
+          "runtime_address": "0x010002C4",
+          "file_offset": "0x0002F4",
+          "bytes": "df f8 0c d0",
+          "mnemonic": "ldr.w",
+          "operands": "sp, [pc, #0xc]"
+        },
+        {
+          "runtime_address": "0x010002C8",
+          "file_offset": "0x0002F8",
+          "bytes": "00 f0 8e fb",
+          "mnemonic": "bl",
+          "operands": "#0x10009e8"
+        },
+        {
+          "runtime_address": "0x010002CC",
+          "file_offset": "0x0002FC",
+          "bytes": "00 48",
+          "mnemonic": "ldr",
+          "operands": "r0, [pc, #0]"
+        },
+        {
+          "runtime_address": "0x010002CE",
+          "file_offset": "0x0002FE",
+          "bytes": "00 47",
+          "mnemonic": "bx",
+          "operands": "r0"
+        }
+      ],
+      "table_loop_file_offset": "0x000A18",
+      "table_loop_window_size": 24,
+      "table_loop_window_hex": "06 4c 07 4d 06 e0 e0 68 40 f0 01 03 94 e8 07 00 98 47 10 34 ac 42 f6 d3",
+      "table_loop_sha256": "6b23cfce926b0928ef367a8c74442c5c7be6fab939563d7365dc1efc0fd5ca77",
+      "table_loop_instructions": [
+        {
+          "runtime_address": "0x010009E8",
+          "file_offset": "0x000A18",
+          "bytes": "06 4c",
+          "mnemonic": "ldr",
+          "operands": "r4, [pc, #0x18]"
+        },
+        {
+          "runtime_address": "0x010009EA",
+          "file_offset": "0x000A1A",
+          "bytes": "07 4d",
+          "mnemonic": "ldr",
+          "operands": "r5, [pc, #0x1c]"
+        },
+        {
+          "runtime_address": "0x010009EC",
+          "file_offset": "0x000A1C",
+          "bytes": "06 e0",
+          "mnemonic": "b",
+          "operands": "#0x10009fc"
+        },
+        {
+          "runtime_address": "0x010009EE",
+          "file_offset": "0x000A1E",
+          "bytes": "e0 68",
+          "mnemonic": "ldr",
+          "operands": "r0, [r4, #0xc]"
+        },
+        {
+          "runtime_address": "0x010009F0",
+          "file_offset": "0x000A20",
+          "bytes": "40 f0 01 03",
+          "mnemonic": "orr",
+          "operands": "r3, r0, #1"
+        },
+        {
+          "runtime_address": "0x010009F4",
+          "file_offset": "0x000A24",
+          "bytes": "94 e8 07 00",
+          "mnemonic": "ldm.w",
+          "operands": "r4, {r0, r1, r2}"
+        },
+        {
+          "runtime_address": "0x010009F8",
+          "file_offset": "0x000A28",
+          "bytes": "98 47",
+          "mnemonic": "blx",
+          "operands": "r3"
+        },
+        {
+          "runtime_address": "0x010009FA",
+          "file_offset": "0x000A2A",
+          "bytes": "10 34",
+          "mnemonic": "adds",
+          "operands": "r4, #0x10"
+        },
+        {
+          "runtime_address": "0x010009FC",
+          "file_offset": "0x000A2C",
+          "bytes": "ac 42",
+          "mnemonic": "cmp",
+          "operands": "r4, r5"
+        },
+        {
+          "runtime_address": "0x010009FE",
+          "file_offset": "0x000A2E",
+          "bytes": "f6 d3",
+          "mnemonic": "blo",
+          "operands": "#0x10009ee"
+        }
+      ]
+    },
+    "GT-1 ESC91 v1.09": {
+      "path": "firmware/extracted/v109/gt1_sys_v109/GT1ROM.BIN",
+      "image_size": 4194304,
+      "image_sha256": "412ebf5ffdc48554454c27df47f61428f046ea0a7d93f5c77b7f0302861abdbf",
+      "candidate_runtime_mapping": "0x00FFFFD0 + file_offset",
+      "entry_file_offset": "0x0002F0",
+      "entry_window_hex": "df f8 0c d0 00 f0 74 fc 00 48 00 47",
+      "entry_instructions": [
+        {
+          "runtime_address": "0x010002C0",
+          "file_offset": "0x0002F0",
+          "bytes": "df f8 0c d0",
+          "mnemonic": "ldr.w",
+          "operands": "sp, [pc, #0xc]"
+        },
+        {
+          "runtime_address": "0x010002C4",
+          "file_offset": "0x0002F4",
+          "bytes": "00 f0 74 fc",
+          "mnemonic": "bl",
+          "operands": "#0x1000bb0"
+        },
+        {
+          "runtime_address": "0x010002C8",
+          "file_offset": "0x0002F8",
+          "bytes": "00 48",
+          "mnemonic": "ldr",
+          "operands": "r0, [pc, #0]"
+        },
+        {
+          "runtime_address": "0x010002CA",
+          "file_offset": "0x0002FA",
+          "bytes": "00 47",
+          "mnemonic": "bx",
+          "operands": "r0"
+        }
+      ],
+      "table_loop_file_offset": "0x000BE0",
+      "table_loop_window_size": 24,
+      "table_loop_window_hex": "06 4c 07 4d 06 e0 e0 68 40 f0 01 03 94 e8 07 00 98 47 10 34 ac 42 f6 d3",
+      "table_loop_sha256": "6b23cfce926b0928ef367a8c74442c5c7be6fab939563d7365dc1efc0fd5ca77",
+      "table_loop_instructions": [
+        {
+          "runtime_address": "0x01000BB0",
+          "file_offset": "0x000BE0",
+          "bytes": "06 4c",
+          "mnemonic": "ldr",
+          "operands": "r4, [pc, #0x18]"
+        },
+        {
+          "runtime_address": "0x01000BB2",
+          "file_offset": "0x000BE2",
+          "bytes": "07 4d",
+          "mnemonic": "ldr",
+          "operands": "r5, [pc, #0x1c]"
+        },
+        {
+          "runtime_address": "0x01000BB4",
+          "file_offset": "0x000BE4",
+          "bytes": "06 e0",
+          "mnemonic": "b",
+          "operands": "#0x1000bc4"
+        },
+        {
+          "runtime_address": "0x01000BB6",
+          "file_offset": "0x000BE6",
+          "bytes": "e0 68",
+          "mnemonic": "ldr",
+          "operands": "r0, [r4, #0xc]"
+        },
+        {
+          "runtime_address": "0x01000BB8",
+          "file_offset": "0x000BE8",
+          "bytes": "40 f0 01 03",
+          "mnemonic": "orr",
+          "operands": "r3, r0, #1"
+        },
+        {
+          "runtime_address": "0x01000BBC",
+          "file_offset": "0x000BEC",
+          "bytes": "94 e8 07 00",
+          "mnemonic": "ldm.w",
+          "operands": "r4, {r0, r1, r2}"
+        },
+        {
+          "runtime_address": "0x01000BC0",
+          "file_offset": "0x000BF0",
+          "bytes": "98 47",
+          "mnemonic": "blx",
+          "operands": "r3"
+        },
+        {
+          "runtime_address": "0x01000BC2",
+          "file_offset": "0x000BF2",
+          "bytes": "10 34",
+          "mnemonic": "adds",
+          "operands": "r4, #0x10"
+        },
+        {
+          "runtime_address": "0x01000BC4",
+          "file_offset": "0x000BF4",
+          "bytes": "ac 42",
+          "mnemonic": "cmp",
+          "operands": "r4, r5"
+        },
+        {
+          "runtime_address": "0x01000BC6",
+          "file_offset": "0x000BF6",
+          "bytes": "f6 d3",
+          "mnemonic": "blo",
+          "operands": "#0x1000bb6"
+        }
+      ]
+    }
+  },
+  "cross_image_comparisons": {
+    "FA ESC90 v2.01": {
+      "entry_first_4_bytes_match_gt1": true,
+      "entry_branch_and_literal_bytes_equal_gt1": false,
+      "init_loop_24_bytes_equal_gt1": true,
+      "init_loop_common_sha256": "6b23cfce926b0928ef367a8c74442c5c7be6fab939563d7365dc1efc0fd5ca77"
+    },
+    "FA ESC90 v2.02": {
+      "entry_first_4_bytes_match_gt1": true,
+      "entry_branch_and_literal_bytes_equal_gt1": false,
+      "init_loop_24_bytes_equal_gt1": true,
+      "init_loop_common_sha256": "6b23cfce926b0928ef367a8c74442c5c7be6fab939563d7365dc1efc0fd5ca77"
+    },
+    "FA ESC90 v2.03": {
+      "entry_first_4_bytes_match_gt1": true,
+      "entry_branch_and_literal_bytes_equal_gt1": false,
+      "init_loop_24_bytes_equal_gt1": true,
+      "init_loop_common_sha256": "6b23cfce926b0928ef367a8c74442c5c7be6fab939563d7365dc1efc0fd5ca77"
+    },
+    "GT-1 ESC91 v1.09": {
+      "entry_first_4_bytes_match_gt1": true,
+      "entry_branch_and_literal_bytes_equal_gt1": true,
+      "init_loop_24_bytes_equal_gt1": true,
+      "init_loop_common_sha256": "6b23cfce926b0928ef367a8c74442c5c7be6fab939563d7365dc1efc0fd5ca77"
+    }
+  },
+  "ghidra_cross_check": {
+    "program": "FA ESC90 bootstrap first 8 KiB",
+    "language": "ARM:LE:32:Cortex",
+    "context": "TMode=1",
+    "script": "tools/ghidra_scripts/FAESC90ThumbBlock.java",
+    "runner": "firmware/work/scripts/run_ghidra_fa_esc90.sh",
+    "output_path": "firmware/work/ghidra-fa-esc90-thumb-analysis.txt"
+  }
+}

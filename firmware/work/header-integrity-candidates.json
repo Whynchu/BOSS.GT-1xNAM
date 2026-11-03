@@ -1,0 +1,1153 @@
+{
+  "classification": "the +0x34 fields match the modulo-2^32 additive byte sum of the bounded payload in all eight block/version cases",
+  "read_only": true,
+  "results": {
+    "105": {
+      "image_sha256": "b1bde0410795230b4a89ee3dfbbd357700bba7020624c0ff832ae3d8539d8bb4",
+      "blocks": {
+        "GT1Upd": {
+          "target_field_offset": "0x2034",
+          "target_field_value": "0x01000EBA",
+          "stored_payload_range": [
+            "0x2040",
+            "0x235A7"
+          ],
+          "candidate_spans": {
+            "header_0x00_0x33": {
+              "range": [
+                "0x2000",
+                "0x2034"
+              ],
+              "size": 52,
+              "sha256": "3641ecbfa39b49e5216017eb8cbe656d20ce786548973e16931374e3df0365a5"
+            },
+            "header_0x00_0x3f": {
+              "range": [
+                "0x2000",
+                "0x2040"
+              ],
+              "size": 64,
+              "sha256": "a3c4dba70cd05302ec60d9019716346670165030519b83510f97940200c8c862"
+            },
+            "header_0x04_0x33": {
+              "range": [
+                "0x2004",
+                "0x2034"
+              ],
+              "size": 48,
+              "sha256": "5170b6d5308248af851834f3d6f7fea0ee83731a66bed5cb6722cc837b1486fc"
+            },
+            "payload": {
+              "range": [
+                "0x2040",
+                "0x235A7"
+              ],
+              "size": 136551,
+              "sha256": "864cebee6e15be9da8e9dca9c756bf720f35d4454f91b8fc466eaf4c23f9966a"
+            },
+            "header_plus_payload": {
+              "range": [
+                "0x2000",
+                "0x235A7"
+              ],
+              "size": 136615,
+              "sha256": "f5b12819322cb6a287e3d0aed292ab23ef07c5bf1398df8f7e8814bc68a8cec4"
+            },
+            "block_to_next_boundary": {
+              "range": [
+                "0x2000",
+                "0x40000"
+              ],
+              "size": 253952,
+              "sha256": "f00640200b4236b4bcb83837316be9c5aa5a4a945c0868e938ecfb28ac6d51b4"
+            }
+          },
+          "computed_checksums": {
+            "sum8": {
+              "header_0x00_0x33": "0x0000008E",
+              "header_0x00_0x3f": "0x000000D5",
+              "header_0x04_0x33": "0x00000061",
+              "payload": "0x000000BA",
+              "header_plus_payload": "0x0000008F",
+              "block_to_next_boundary": "0x00000036"
+            },
+            "sum16_byte_sum": {
+              "header_0x00_0x33": "0x00000B8E",
+              "header_0x00_0x3f": "0x00000DD5",
+              "header_0x04_0x33": "0x00000A61",
+              "payload": "0x00000EBA",
+              "header_plus_payload": "0x00001C8F",
+              "block_to_next_boundary": "0x0000AB36"
+            },
+            "sum32_byte_sum": {
+              "header_0x00_0x33": "0x00000B8E",
+              "header_0x00_0x3f": "0x00000DD5",
+              "header_0x04_0x33": "0x00000A61",
+              "payload": "0x01000EBA",
+              "header_plus_payload": "0x01001C8F",
+              "block_to_next_boundary": "0x02C8AB36"
+            },
+            "xor8": {
+              "header_0x00_0x33": "0x00000006",
+              "header_0x00_0x3f": "0x0000000D",
+              "header_0x04_0x33": "0x00000001",
+              "payload": "0x000000E6",
+              "header_plus_payload": "0x000000EB",
+              "block_to_next_boundary": "0x00000014"
+            },
+            "crc16_ccitt_init_ffff": {
+              "header_0x00_0x33": "0x00007EE4",
+              "header_0x00_0x3f": "0x00002D7A",
+              "header_0x04_0x33": "0x0000DF96",
+              "payload": "0x000011E3",
+              "header_plus_payload": "0x00003B43",
+              "block_to_next_boundary": "0x00000D6B"
+            },
+            "crc16_modbus_init_ffff": {
+              "header_0x00_0x33": "0x00002B6F",
+              "header_0x00_0x3f": "0x000005A1",
+              "header_0x04_0x33": "0x0000D5D8",
+              "payload": "0x000091EE",
+              "header_plus_payload": "0x0000CDAE",
+              "block_to_next_boundary": "0x00008BC3"
+            },
+            "crc32_ieee": {
+              "header_0x00_0x33": "0x9FA90559",
+              "header_0x00_0x3f": "0xEB1B4084",
+              "header_0x04_0x33": "0x0D159E01",
+              "payload": "0x8FE3590C",
+              "header_plus_payload": "0x81AFE9C8",
+              "block_to_next_boundary": "0x032FBBA0"
+            },
+            "crc32c_castagnoli": {
+              "header_0x00_0x33": "0x9613E464",
+              "header_0x00_0x3f": "0x4307CB18",
+              "header_0x04_0x33": "0xD2262508",
+              "payload": "0xED334402",
+              "header_plus_payload": "0x08E9DB72",
+              "block_to_next_boundary": "0x87190319"
+            },
+            "adler32": {
+              "header_0x00_0x33": "0x5E350B8F",
+              "header_0x00_0x3f": "0xF7F40DD6",
+              "header_0x04_0x33": "0x22D50A62",
+              "payload": "0x76441DBB",
+              "header_plus_payload": "0x28662B90",
+              "block_to_next_boundary": "0x233DD4EF"
+            }
+          },
+          "matches": [
+            "sum32_byte_sum:payload"
+          ]
+        },
+        "GT1Appli": {
+          "target_field_offset": "0x40034",
+          "target_field_value": "0x08774CDF",
+          "stored_payload_range": [
+            "0x40040",
+            "0x15E098"
+          ],
+          "candidate_spans": {
+            "header_0x00_0x33": {
+              "range": [
+                "0x40000",
+                "0x40034"
+              ],
+              "size": 52,
+              "sha256": "56a0b05cb9089a539a11c07dc4ef3e3c33da3fb1968df37b0dc9b40f98eb6382"
+            },
+            "header_0x00_0x3f": {
+              "range": [
+                "0x40000",
+                "0x40040"
+              ],
+              "size": 64,
+              "sha256": "dcefdc137caab9e9dbde61aba5d0d13c8e6cc38d45bdc38c1d6fd64940b404b9"
+            },
+            "header_0x04_0x33": {
+              "range": [
+                "0x40004",
+                "0x40034"
+              ],
+              "size": 48,
+              "sha256": "2be4a0e71673beabf1cdec21953255af8449d115bbc7c4b819fc07567eb70fe6"
+            },
+            "payload": {
+              "range": [
+                "0x40040",
+                "0x15E098"
+              ],
+              "size": 1171544,
+              "sha256": "4081604fc89c772960a4d9a5582a8a11b2fe8f8b360922dbb94f4df7b27baccf"
+            },
+            "header_plus_payload": {
+              "range": [
+                "0x40000",
+                "0x15E098"
+              ],
+              "size": 1171608,
+              "sha256": "7ab06a57aacf5facdff10eb3e601e4735c92f6bc06f41fd3748cc448a0ae9753"
+            },
+            "block_to_next_boundary": {
+              "range": [
+                "0x40000",
+                "0x1FC000"
+              ],
+              "size": 1818624,
+              "sha256": "2366738082c4e2a509c3513e5d88e6de07dcf94aadac7cc3506f6e13bbd00ede"
+            }
+          },
+          "computed_checksums": {
+            "sum8": {
+              "header_0x00_0x33": "0x000000F7",
+              "header_0x00_0x3f": "0x000000B4",
+              "header_0x04_0x33": "0x000000CA",
+              "payload": "0x000000DF",
+              "header_plus_payload": "0x00000093",
+              "block_to_next_boundary": "0x0000002B"
+            },
+            "sum16_byte_sum": {
+              "header_0x00_0x33": "0x00000CF7",
+              "header_0x00_0x3f": "0x000010B4",
+              "header_0x04_0x33": "0x00000BCA",
+              "payload": "0x00004CDF",
+              "header_plus_payload": "0x00005D93",
+              "block_to_next_boundary": "0x0000E62B"
+            },
+            "sum32_byte_sum": {
+              "header_0x00_0x33": "0x00000CF7",
+              "header_0x00_0x3f": "0x000010B4",
+              "header_0x04_0x33": "0x00000BCA",
+              "payload": "0x08774CDF",
+              "header_plus_payload": "0x08775D93",
+              "block_to_next_boundary": "0x124CE62B"
+            },
+            "xor8": {
+              "header_0x00_0x33": "0x000000DF",
+              "header_0x00_0x3f": "0x00000008",
+              "header_0x04_0x33": "0x000000D8",
+              "payload": "0x000000AF",
+              "header_plus_payload": "0x000000A7",
+              "block_to_next_boundary": "0x000000A7"
+            },
+            "crc16_ccitt_init_ffff": {
+              "header_0x00_0x33": "0x000054E1",
+              "header_0x00_0x3f": "0x0000B078",
+              "header_0x04_0x33": "0x0000F593",
+              "payload": "0x00008DA6",
+              "header_plus_payload": "0x0000EF2E",
+              "block_to_next_boundary": "0x0000D928"
+            },
+            "crc16_modbus_init_ffff": {
+              "header_0x00_0x33": "0x00003029",
+              "header_0x00_0x3f": "0x0000E09C",
+              "header_0x04_0x33": "0x0000CE9E",
+              "payload": "0x00006AFA",
+              "header_plus_payload": "0x000021C2",
+              "block_to_next_boundary": "0x0000B7E5"
+            },
+            "crc32_ieee": {
+              "header_0x00_0x33": "0xBC1EEA94",
+              "header_0x00_0x3f": "0x8A518C79",
+              "header_0x04_0x33": "0x2EA271CC",
+              "payload": "0x955C1795",
+              "header_plus_payload": "0x03007CCE",
+              "block_to_next_boundary": "0x5D505CE8"
+            },
+            "crc32c_castagnoli": {
+              "header_0x00_0x33": "0x129A069D",
+              "header_0x00_0x3f": "0x4E2C5486",
+              "header_0x04_0x33": "0x56AFC7F1",
+              "payload": "0xD0FD4657",
+              "header_plus_payload": "0x596A9D14",
+              "block_to_next_boundary": "0x083E973F"
+            },
+            "adler32": {
+              "header_0x00_0x33": "0x75E20CF8",
+              "header_0x00_0x3f": "0x2BDC10B5",
+              "header_0x04_0x33": "0x3A820BCB",
+              "payload": "0x68ABCBD9",
+              "header_plus_payload": "0x524EDC8D",
+              "block_to_next_boundary": "0x130AF8AF"
+            }
+          },
+          "matches": [
+            "sum32_byte_sum:payload"
+          ]
+        }
+      }
+    },
+    "107": {
+      "image_sha256": "6a3110cd42c4b129494a93bc88d4f218e2e0b9377868ca051018b28696d6c22f",
+      "blocks": {
+        "GT1Upd": {
+          "target_field_offset": "0x2034",
+          "target_field_value": "0x01000EBA",
+          "stored_payload_range": [
+            "0x2040",
+            "0x235A7"
+          ],
+          "candidate_spans": {
+            "header_0x00_0x33": {
+              "range": [
+                "0x2000",
+                "0x2034"
+              ],
+              "size": 52,
+              "sha256": "3aec2e47a708360fd7fa6caf0382b42e88d82c04f65d681bdcc1167bf6a3e562"
+            },
+            "header_0x00_0x3f": {
+              "range": [
+                "0x2000",
+                "0x2040"
+              ],
+              "size": 64,
+              "sha256": "8ab7bfef723c0b9510be1c42da6e6f890233aea15e5291041a40ce5564286564"
+            },
+            "header_0x04_0x33": {
+              "range": [
+                "0x2004",
+                "0x2034"
+              ],
+              "size": 48,
+              "sha256": "8f7ffa9d235780ac97c1ced27369b69e5a8f3d11c9717ea2419a20178ae0a4f1"
+            },
+            "payload": {
+              "range": [
+                "0x2040",
+                "0x235A7"
+              ],
+              "size": 136551,
+              "sha256": "864cebee6e15be9da8e9dca9c756bf720f35d4454f91b8fc466eaf4c23f9966a"
+            },
+            "header_plus_payload": {
+              "range": [
+                "0x2000",
+                "0x235A7"
+              ],
+              "size": 136615,
+              "sha256": "8929742482ba6abcd1efadd590ab8a079676f9d4f6ed800facfa04e32400ae5c"
+            },
+            "block_to_next_boundary": {
+              "range": [
+                "0x2000",
+                "0x40000"
+              ],
+              "size": 253952,
+              "sha256": "c63b09436f2ff9bf7867a6f2eb490b8840c81f4fecbede711222a0d9fefb5440"
+            }
+          },
+          "computed_checksums": {
+            "sum8": {
+              "header_0x00_0x33": "0x000000D4",
+              "header_0x00_0x3f": "0x0000001B",
+              "header_0x04_0x33": "0x000000A7",
+              "payload": "0x000000BA",
+              "header_plus_payload": "0x000000D5",
+              "block_to_next_boundary": "0x0000007C"
+            },
+            "sum16_byte_sum": {
+              "header_0x00_0x33": "0x00000AD4",
+              "header_0x00_0x3f": "0x00000D1B",
+              "header_0x04_0x33": "0x000009A7",
+              "payload": "0x00000EBA",
+              "header_plus_payload": "0x00001BD5",
+              "block_to_next_boundary": "0x0000AA7C"
+            },
+            "sum32_byte_sum": {
+              "header_0x00_0x33": "0x00000AD4",
+              "header_0x00_0x3f": "0x00000D1B",
+              "header_0x04_0x33": "0x000009A7",
+              "payload": "0x01000EBA",
+              "header_plus_payload": "0x01001BD5",
+              "block_to_next_boundary": "0x02C8AA7C"
+            },
+            "xor8": {
+              "header_0x00_0x33": "0x0000009C",
+              "header_0x00_0x3f": "0x00000097",
+              "header_0x04_0x33": "0x0000009B",
+              "payload": "0x000000E6",
+              "header_plus_payload": "0x00000071",
+              "block_to_next_boundary": "0x0000008E"
+            },
+            "crc16_ccitt_init_ffff": {
+              "header_0x00_0x33": "0x0000F1C4",
+              "header_0x00_0x3f": "0x00003E42",
+              "header_0x04_0x33": "0x000050B6",
+              "payload": "0x000011E3",
+              "header_plus_payload": "0x00000F3A",
+              "block_to_next_boundary": "0x000025BF"
+            },
+            "crc16_modbus_init_ffff": {
+              "header_0x00_0x33": "0x00005E2F",
+              "header_0x00_0x3f": "0x0000371B",
+              "header_0x04_0x33": "0x0000A098",
+              "payload": "0x000091EE",
+              "header_plus_payload": "0x0000C350",
+              "block_to_next_boundary": "0x0000DD09"
+            },
+            "crc32_ieee": {
+              "header_0x00_0x33": "0xACE11C56",
+              "header_0x00_0x3f": "0xD6E59EF8",
+              "header_0x04_0x33": "0x3E5D870E",
+              "payload": "0x8FE3590C",
+              "header_plus_payload": "0x11C1624E",
+              "block_to_next_boundary": "0x35F56A59"
+            },
+            "crc32c_castagnoli": {
+              "header_0x00_0x33": "0xB8B28184",
+              "header_0x00_0x3f": "0x1BA8E079",
+              "header_0x04_0x33": "0xFC8740E8",
+              "payload": "0xED334402",
+              "header_plus_payload": "0x37E733C7",
+              "block_to_next_boundary": "0x86C3767D"
+            },
+            "adler32": {
+              "header_0x00_0x33": "0x4D7E0AD5",
+              "header_0x00_0x3f": "0xDE850D1C",
+              "header_0x04_0x33": "0x121E09A8",
+              "payload": "0x76441DBB",
+              "header_plus_payload": "0x6B652AD6",
+              "block_to_next_boundary": "0x4E0FD435"
+            }
+          },
+          "matches": [
+            "sum32_byte_sum:payload"
+          ]
+        },
+        "GT1Appli": {
+          "target_field_offset": "0x40034",
+          "target_field_value": "0x0874473C",
+          "stored_payload_range": [
+            "0x40040",
+            "0x15E7A5"
+          ],
+          "candidate_spans": {
+            "header_0x00_0x33": {
+              "range": [
+                "0x40000",
+                "0x40034"
+              ],
+              "size": 52,
+              "sha256": "ae789eece4a2c15e7f74eb42620dbf9b928185b35c73fdc7929bfe061ad29874"
+            },
+            "header_0x00_0x3f": {
+              "range": [
+                "0x40000",
+                "0x40040"
+              ],
+              "size": 64,
+              "sha256": "bd3d9cd3b673cea30f52d679ee2e75f16db49abb1a9f4bf729e574a4a3510a72"
+            },
+            "header_0x04_0x33": {
+              "range": [
+                "0x40004",
+                "0x40034"
+              ],
+              "size": 48,
+              "sha256": "9c9e7eb69b80a4f18e9fb2f4032d176df64a255f88bb46c8d598b1ae7b5c5660"
+            },
+            "payload": {
+              "range": [
+                "0x40040",
+                "0x15E7A5"
+              ],
+              "size": 1173349,
+              "sha256": "78858382a3b1f3b7055b34e81499b7dd4c3b183c4070e8c7f387948c54b18bb2"
+            },
+            "header_plus_payload": {
+              "range": [
+                "0x40000",
+                "0x15E7A5"
+              ],
+              "size": 1173413,
+              "sha256": "3918fd1e8c05829bc9645617d42c27c3d76c3279a18b65b41ad58fd73609c07e"
+            },
+            "block_to_next_boundary": {
+              "range": [
+                "0x40000",
+                "0x1FC000"
+              ],
+              "size": 1818624,
+              "sha256": "92472ae1c01d09d17c3c88e4a33f2e265a39872d08e8d1756c721cef77ab95b2"
+            }
+          },
+          "computed_checksums": {
+            "sum8": {
+              "header_0x00_0x33": "0x0000004F",
+              "header_0x00_0x3f": "0x00000024",
+              "header_0x04_0x33": "0x00000022",
+              "payload": "0x0000003C",
+              "header_plus_payload": "0x00000060",
+              "block_to_next_boundary": "0x00000005"
+            },
+            "sum16_byte_sum": {
+              "header_0x00_0x33": "0x00000C4F",
+              "header_0x00_0x3f": "0x00000F24",
+              "header_0x04_0x33": "0x00000B22",
+              "payload": "0x0000473C",
+              "header_plus_payload": "0x00005660",
+              "block_to_next_boundary": "0x0000D905"
+            },
+            "sum32_byte_sum": {
+              "header_0x00_0x33": "0x00000C4F",
+              "header_0x00_0x3f": "0x00000F24",
+              "header_0x04_0x33": "0x00000B22",
+              "payload": "0x0874473C",
+              "header_plus_payload": "0x08745660",
+              "block_to_next_boundary": "0x1242D905"
+            },
+            "xor8": {
+              "header_0x00_0x33": "0x00000075",
+              "header_0x00_0x3f": "0x00000014",
+              "header_0x04_0x33": "0x00000072",
+              "payload": "0x000000E8",
+              "header_plus_payload": "0x000000FC",
+              "block_to_next_boundary": "0x00000003"
+            },
+            "crc16_ccitt_init_ffff": {
+              "header_0x00_0x33": "0x00003B9F",
+              "header_0x00_0x3f": "0x0000CC3A",
+              "header_0x04_0x33": "0x00009AED",
+              "payload": "0x00004901",
+              "header_plus_payload": "0x000038CB",
+              "block_to_next_boundary": "0x00009072"
+            },
+            "crc16_modbus_init_ffff": {
+              "header_0x00_0x33": "0x00000070",
+              "header_0x00_0x3f": "0x000089EA",
+              "header_0x04_0x33": "0x0000FEC7",
+              "payload": "0x0000F2CB",
+              "header_plus_payload": "0x00003E19",
+              "block_to_next_boundary": "0x000090DB"
+            },
+            "crc32_ieee": {
+              "header_0x00_0x33": "0x7783E70B",
+              "header_0x00_0x3f": "0xE219BEC9",
+              "header_0x04_0x33": "0xE53F7C53",
+              "payload": "0x4E371BF5",
+              "header_plus_payload": "0x850C3C59",
+              "block_to_next_boundary": "0xA4270D4E"
+            },
+            "crc32c_castagnoli": {
+              "header_0x00_0x33": "0x0944D07B",
+              "header_0x00_0x3f": "0xB8E5BF03",
+              "header_0x04_0x33": "0x4D711117",
+              "payload": "0x7489040C",
+              "header_plus_payload": "0xE7E85DC1",
+              "block_to_next_boundary": "0x5B4ED066"
+            },
+            "adler32": {
+              "header_0x00_0x33": "0x65630C50",
+              "header_0x00_0x3f": "0x0A850F25",
+              "header_0x04_0x33": "0x2A030B23",
+              "payload": "0xB77AC609",
+              "header_plus_payload": "0x1A4FD52D",
+              "block_to_next_boundary": "0x9354EAF3"
+            }
+          },
+          "matches": [
+            "sum32_byte_sum:payload"
+          ]
+        }
+      }
+    },
+    "108": {
+      "image_sha256": "7219679a87e985316264544423c9940ccbcbadeb2df0b2f13711ae57194cb612",
+      "blocks": {
+        "GT1Upd": {
+          "target_field_offset": "0x2034",
+          "target_field_value": "0x01000EBA",
+          "stored_payload_range": [
+            "0x2040",
+            "0x235A7"
+          ],
+          "candidate_spans": {
+            "header_0x00_0x33": {
+              "range": [
+                "0x2000",
+                "0x2034"
+              ],
+              "size": 52,
+              "sha256": "fc64933c542e024600689f4870a812e2e6ef997d975b6e40c2c9f32aefc6473a"
+            },
+            "header_0x00_0x3f": {
+              "range": [
+                "0x2000",
+                "0x2040"
+              ],
+              "size": 64,
+              "sha256": "c89da23e2c659b6b6e9da3f89314aac111f7be4a9b955658c97f7dbead50415c"
+            },
+            "header_0x04_0x33": {
+              "range": [
+                "0x2004",
+                "0x2034"
+              ],
+              "size": 48,
+              "sha256": "3c65760cb44e68c11a3c94f17df1e7551c6f728eb8b0466be40db89d2869aeff"
+            },
+            "payload": {
+              "range": [
+                "0x2040",
+                "0x235A7"
+              ],
+              "size": 136551,
+              "sha256": "864cebee6e15be9da8e9dca9c756bf720f35d4454f91b8fc466eaf4c23f9966a"
+            },
+            "header_plus_payload": {
+              "range": [
+                "0x2000",
+                "0x235A7"
+              ],
+              "size": 136615,
+              "sha256": "586a179db28561f5e9a504df69d8cae212366a5a6127a9146e5079b6ee25778a"
+            },
+            "block_to_next_boundary": {
+              "range": [
+                "0x2000",
+                "0x40000"
+              ],
+              "size": 253952,
+              "sha256": "49e5651ce3dce9477ae0c122d490a95ee0e3770a47d2f47340b836a525dd7340"
+            }
+          },
+          "computed_checksums": {
+            "sum8": {
+              "header_0x00_0x33": "0x00000086",
+              "header_0x00_0x3f": "0x000000CD",
+              "header_0x04_0x33": "0x00000059",
+              "payload": "0x000000BA",
+              "header_plus_payload": "0x00000087",
+              "block_to_next_boundary": "0x0000002E"
+            },
+            "sum16_byte_sum": {
+              "header_0x00_0x33": "0x00000B86",
+              "header_0x00_0x3f": "0x00000DCD",
+              "header_0x04_0x33": "0x00000A59",
+              "payload": "0x00000EBA",
+              "header_plus_payload": "0x00001C87",
+              "block_to_next_boundary": "0x0000AB2E"
+            },
+            "sum32_byte_sum": {
+              "header_0x00_0x33": "0x00000B86",
+              "header_0x00_0x3f": "0x00000DCD",
+              "header_0x04_0x33": "0x00000A59",
+              "payload": "0x01000EBA",
+              "header_plus_payload": "0x01001C87",
+              "block_to_next_boundary": "0x02C8AB2E"
+            },
+            "xor8": {
+              "header_0x00_0x33": "0x000000F4",
+              "header_0x00_0x3f": "0x000000FF",
+              "header_0x04_0x33": "0x000000F3",
+              "payload": "0x000000E6",
+              "header_plus_payload": "0x00000019",
+              "block_to_next_boundary": "0x000000E6"
+            },
+            "crc16_ccitt_init_ffff": {
+              "header_0x00_0x33": "0x00008F3A",
+              "header_0x00_0x3f": "0x0000CB26",
+              "header_0x04_0x33": "0x00002E48",
+              "payload": "0x000011E3",
+              "header_plus_payload": "0x00007DB3",
+              "block_to_next_boundary": "0x00003428"
+            },
+            "crc16_modbus_init_ffff": {
+              "header_0x00_0x33": "0x0000ED0D",
+              "header_0x00_0x3f": "0x0000C93A",
+              "header_0x04_0x33": "0x000013BA",
+              "payload": "0x000091EE",
+              "header_plus_payload": "0x000056B5",
+              "block_to_next_boundary": "0x000056E5"
+            },
+            "crc32_ieee": {
+              "header_0x00_0x33": "0xD48602A4",
+              "header_0x00_0x3f": "0xFA937F7A",
+              "header_0x04_0x33": "0x463A99FC",
+              "payload": "0x8FE3590C",
+              "header_plus_payload": "0x334D0F52",
+              "block_to_next_boundary": "0xF7101C96"
+            },
+            "crc32c_castagnoli": {
+              "header_0x00_0x33": "0xBD89B847",
+              "header_0x00_0x3f": "0x9F2260F5",
+              "header_0x04_0x33": "0xF9BC792B",
+              "payload": "0xED334402",
+              "header_plus_payload": "0x4A4F8C35",
+              "block_to_next_boundary": "0x1013972D"
+            },
+            "adler32": {
+              "header_0x00_0x33": "0x5CCD0B87",
+              "header_0x00_0x3f": "0xF62C0DCE",
+              "header_0x04_0x33": "0x216D0A5A",
+              "payload": "0x76441DBB",
+              "header_plus_payload": "0x7A672B88",
+              "block_to_next_boundary": "0x21A4D4E7"
+            }
+          },
+          "matches": [
+            "sum32_byte_sum:payload"
+          ]
+        },
+        "GT1Appli": {
+          "target_field_offset": "0x40034",
+          "target_field_value": "0x0878B479",
+          "stored_payload_range": [
+            "0x40040",
+            "0x15E805"
+          ],
+          "candidate_spans": {
+            "header_0x00_0x33": {
+              "range": [
+                "0x40000",
+                "0x40034"
+              ],
+              "size": 52,
+              "sha256": "3b6ed4346d93f2a2ab051f9eebb465e72245db042306597496eb03612bfb5e2e"
+            },
+            "header_0x00_0x3f": {
+              "range": [
+                "0x40000",
+                "0x40040"
+              ],
+              "size": 64,
+              "sha256": "08de7a59da6dfd0560a996b5030e4b6bc2ffd4b24e6ced5a6ed9de7379941535"
+            },
+            "header_0x04_0x33": {
+              "range": [
+                "0x40004",
+                "0x40034"
+              ],
+              "size": 48,
+              "sha256": "eb8d127493f5ff423a579d43222c45c971faa161eecc0c79bd9f60f9c6edd93d"
+            },
+            "payload": {
+              "range": [
+                "0x40040",
+                "0x15E805"
+              ],
+              "size": 1173445,
+              "sha256": "ef236d8bb3ce79cb5f6a836e4ddbaa325f4ad04cde546e7cb70d6d7ecba8f2b0"
+            },
+            "header_plus_payload": {
+              "range": [
+                "0x40000",
+                "0x15E805"
+              ],
+              "size": 1173509,
+              "sha256": "d6d37f5257253b457313043d5c136b6210f9f0ddba468893e1d2938e5d3bbe1a"
+            },
+            "block_to_next_boundary": {
+              "range": [
+                "0x40000",
+                "0x1FC000"
+              ],
+              "size": 1818624,
+              "sha256": "18ef0e97bc826aceff7b51272a637402dab27efce58b907ede11b64135aad757"
+            }
+          },
+          "computed_checksums": {
+            "sum8": {
+              "header_0x00_0x33": "0x00000063",
+              "header_0x00_0x3f": "0x0000006F",
+              "header_0x04_0x33": "0x00000036",
+              "payload": "0x00000079",
+              "header_plus_payload": "0x000000E8",
+              "block_to_next_boundary": "0x000000ED"
+            },
+            "sum16_byte_sum": {
+              "header_0x00_0x33": "0x00000D63",
+              "header_0x00_0x3f": "0x0000106F",
+              "header_0x04_0x33": "0x00000C36",
+              "payload": "0x0000B479",
+              "header_plus_payload": "0x0000C4E8",
+              "block_to_next_boundary": "0x0000E7ED"
+            },
+            "sum32_byte_sum": {
+              "header_0x00_0x33": "0x00000D63",
+              "header_0x00_0x3f": "0x0000106F",
+              "header_0x04_0x33": "0x00000C36",
+              "payload": "0x0878B479",
+              "header_plus_payload": "0x0878C4E8",
+              "block_to_next_boundary": "0x1246E7ED"
+            },
+            "xor8": {
+              "header_0x00_0x33": "0x000000B1",
+              "header_0x00_0x3f": "0x000000E3",
+              "header_0x04_0x33": "0x000000B6",
+              "payload": "0x000000A5",
+              "header_plus_payload": "0x00000046",
+              "block_to_next_boundary": "0x000000B9"
+            },
+            "crc16_ccitt_init_ffff": {
+              "header_0x00_0x33": "0x0000950C",
+              "header_0x00_0x3f": "0x0000AD56",
+              "header_0x04_0x33": "0x0000347E",
+              "payload": "0x000086EF",
+              "header_plus_payload": "0x000035FE",
+              "block_to_next_boundary": "0x000052B7"
+            },
+            "crc16_modbus_init_ffff": {
+              "header_0x00_0x33": "0x00008340",
+              "header_0x00_0x3f": "0x000064B7",
+              "header_0x04_0x33": "0x00007DF7",
+              "payload": "0x000084B1",
+              "header_plus_payload": "0x0000F0AE",
+              "block_to_next_boundary": "0x0000F019"
+            },
+            "crc32_ieee": {
+              "header_0x00_0x33": "0x39C7BFE7",
+              "header_0x00_0x3f": "0x6708666E",
+              "header_0x04_0x33": "0xAB7B24BF",
+              "payload": "0xA86F3EDA",
+              "header_plus_payload": "0x73B7C3BF",
+              "block_to_next_boundary": "0xA21D8BFC"
+            },
+            "crc32c_castagnoli": {
+              "header_0x00_0x33": "0xB62010D5",
+              "header_0x00_0x3f": "0x82F09C2C",
+              "header_0x04_0x33": "0xF215D1B9",
+              "payload": "0x4FFE65F3",
+              "header_plus_payload": "0xEE1E63FE",
+              "block_to_next_boundary": "0x4BB1C097"
+            },
+            "adler32": {
+              "header_0x00_0x33": "0x76500D64",
+              "header_0x00_0x3f": "0x2E381070",
+              "header_0x04_0x33": "0x3AF00C37",
+              "payload": "0x37653391",
+              "header_plus_payload": "0x72C74400",
+              "block_to_next_boundary": "0xA7C7FA17"
+            }
+          },
+          "matches": [
+            "sum32_byte_sum:payload"
+          ]
+        }
+      }
+    },
+    "109": {
+      "image_sha256": "412ebf5ffdc48554454c27df47f61428f046ea0a7d93f5c77b7f0302861abdbf",
+      "blocks": {
+        "GT1Upd": {
+          "target_field_offset": "0x2034",
+          "target_field_value": "0x01000EBA",
+          "stored_payload_range": [
+            "0x2040",
+            "0x235A7"
+          ],
+          "candidate_spans": {
+            "header_0x00_0x33": {
+              "range": [
+                "0x2000",
+                "0x2034"
+              ],
+              "size": 52,
+              "sha256": "01c3f33d01df7b05e2762c15fe1f7f4aaeac0fbbeeebedcd05f5e3919892438e"
+            },
+            "header_0x00_0x3f": {
+              "range": [
+                "0x2000",
+                "0x2040"
+              ],
+              "size": 64,
+              "sha256": "4fc1d4c94f415c5411723049156fae2ea693166c47bf46aee6fe4198a20ef63c"
+            },
+            "header_0x04_0x33": {
+              "range": [
+                "0x2004",
+                "0x2034"
+              ],
+              "size": 48,
+              "sha256": "629a184791e067d6fdf490318adf3deab6c0c8865e2238e86daed20f957c2a68"
+            },
+            "payload": {
+              "range": [
+                "0x2040",
+                "0x235A7"
+              ],
+              "size": 136551,
+              "sha256": "864cebee6e15be9da8e9dca9c756bf720f35d4454f91b8fc466eaf4c23f9966a"
+            },
+            "header_plus_payload": {
+              "range": [
+                "0x2000",
+                "0x235A7"
+              ],
+              "size": 136615,
+              "sha256": "0a3e2afc6d72696a06f09857fc818936d8b3f2e3ff8ba87ac4c24df6433a7a5c"
+            },
+            "block_to_next_boundary": {
+              "range": [
+                "0x2000",
+                "0x40000"
+              ],
+              "size": 253952,
+              "sha256": "33ebda83f120ef65c236b05f9f6b4308444150aaa2e5ef537735232a923949b1"
+            }
+          },
+          "computed_checksums": {
+            "sum8": {
+              "header_0x00_0x33": "0x00000079",
+              "header_0x00_0x3f": "0x000000C0",
+              "header_0x04_0x33": "0x0000004C",
+              "payload": "0x000000BA",
+              "header_plus_payload": "0x0000007A",
+              "block_to_next_boundary": "0x00000021"
+            },
+            "sum16_byte_sum": {
+              "header_0x00_0x33": "0x00000B79",
+              "header_0x00_0x3f": "0x00000DC0",
+              "header_0x04_0x33": "0x00000A4C",
+              "payload": "0x00000EBA",
+              "header_plus_payload": "0x00001C7A",
+              "block_to_next_boundary": "0x0000AB21"
+            },
+            "sum32_byte_sum": {
+              "header_0x00_0x33": "0x00000B79",
+              "header_0x00_0x3f": "0x00000DC0",
+              "header_0x04_0x33": "0x00000A4C",
+              "payload": "0x01000EBA",
+              "header_plus_payload": "0x01001C7A",
+              "block_to_next_boundary": "0x02C8AB21"
+            },
+            "xor8": {
+              "header_0x00_0x33": "0x00000007",
+              "header_0x00_0x3f": "0x0000000C",
+              "header_0x04_0x33": "0x00000000",
+              "payload": "0x000000E6",
+              "header_plus_payload": "0x000000EA",
+              "block_to_next_boundary": "0x00000015"
+            },
+            "crc16_ccitt_init_ffff": {
+              "header_0x00_0x33": "0x0000474A",
+              "header_0x00_0x3f": "0x00001CFD",
+              "header_0x04_0x33": "0x0000E638",
+              "payload": "0x000011E3",
+              "header_plus_payload": "0x0000A844",
+              "block_to_next_boundary": "0x000084A2"
+            },
+            "crc16_modbus_init_ffff": {
+              "header_0x00_0x33": "0x0000B97E",
+              "header_0x00_0x3f": "0x0000836B",
+              "header_0x04_0x33": "0x000047C9",
+              "payload": "0x000091EE",
+              "header_plus_payload": "0x0000BC53",
+              "block_to_next_boundary": "0x0000A0C8"
+            },
+            "crc32_ieee": {
+              "header_0x00_0x33": "0x06223FD5",
+              "header_0x00_0x3f": "0x3CC077EE",
+              "header_0x04_0x33": "0x949EA48D",
+              "payload": "0x8FE3590C",
+              "header_plus_payload": "0xFE9369ED",
+              "block_to_next_boundary": "0x732A968B"
+            },
+            "crc32c_castagnoli": {
+              "header_0x00_0x33": "0x3677BE5B",
+              "header_0x00_0x3f": "0x95DFA2C6",
+              "header_0x04_0x33": "0x72427F37",
+              "payload": "0xED334402",
+              "header_plus_payload": "0x3DDD6D97",
+              "block_to_next_boundary": "0x60684634"
+            },
+            "adler32": {
+              "header_0x00_0x33": "0x5D130B7A",
+              "header_0x00_0x3f": "0xF5D60DC1",
+              "header_0x04_0x33": "0x21B30A4D",
+              "payload": "0x76441DBB",
+              "header_plus_payload": "0x62412B7B",
+              "block_to_next_boundary": "0xC191D4DA"
+            }
+          },
+          "matches": [
+            "sum32_byte_sum:payload"
+          ]
+        },
+        "GT1Appli": {
+          "target_field_offset": "0x40034",
+          "target_field_value": "0x0886AB09",
+          "stored_payload_range": [
+            "0x40040",
+            "0x15FB3A"
+          ],
+          "candidate_spans": {
+            "header_0x00_0x33": {
+              "range": [
+                "0x40000",
+                "0x40034"
+              ],
+              "size": 52,
+              "sha256": "49230b94d632b6d207ebdb075e75111da87907078fe1496fbcbd0051c0ab6269"
+            },
+            "header_0x00_0x3f": {
+              "range": [
+                "0x40000",
+                "0x40040"
+              ],
+              "size": 64,
+              "sha256": "bf65ebcf3ff6e6aa2c3039fa0a001b87c70864cea82c755a3f0e0b68dc6ed70b"
+            },
+            "header_0x04_0x33": {
+              "range": [
+                "0x40004",
+                "0x40034"
+              ],
+              "size": 48,
+              "sha256": "19cb82950e3024da3586cb68f2989217bc2d28187613407a1780f5d0cce5f513"
+            },
+            "payload": {
+              "range": [
+                "0x40040",
+                "0x15FB3A"
+              ],
+              "size": 1178362,
+              "sha256": "2945b15fe45aede58d10fb78e7475d72373fd1d202f5e07839566d80663c1f34"
+            },
+            "header_plus_payload": {
+              "range": [
+                "0x40000",
+                "0x15FB3A"
+              ],
+              "size": 1178426,
+              "sha256": "c172539ca8496ecef176543b8cd9de1dfbb724fc68984a941f3e8eddf3871d17"
+            },
+            "block_to_next_boundary": {
+              "range": [
+                "0x40000",
+                "0x1FC000"
+              ],
+              "size": 1818624,
+              "sha256": "da9c0ac9ae95b4a6ea3619bebcfabaf5846994235504ceb6eb4f8297cbc58e04"
+            }
+          },
+          "computed_checksums": {
+            "sum8": {
+              "header_0x00_0x33": "0x00000095",
+              "header_0x00_0x3f": "0x000000E9",
+              "header_0x04_0x33": "0x00000068",
+              "payload": "0x00000009",
+              "header_plus_payload": "0x000000F2",
+              "block_to_next_boundary": "0x0000002C"
+            },
+            "sum16_byte_sum": {
+              "header_0x00_0x33": "0x00000D95",
+              "header_0x00_0x3f": "0x000010E9",
+              "header_0x04_0x33": "0x00000C68",
+              "payload": "0x0000AB09",
+              "header_plus_payload": "0x0000BBF2",
+              "block_to_next_boundary": "0x0000BD2C"
+            },
+            "sum32_byte_sum": {
+              "header_0x00_0x33": "0x00000D95",
+              "header_0x00_0x3f": "0x000010E9",
+              "header_0x04_0x33": "0x00000C68",
+              "payload": "0x0886AB09",
+              "header_plus_payload": "0x0886BBF2",
+              "block_to_next_boundary": "0x1241BD2C"
+            },
+            "xor8": {
+              "header_0x00_0x33": "0x0000006B",
+              "header_0x00_0x3f": "0x0000006D",
+              "header_0x04_0x33": "0x0000006C",
+              "payload": "0x000000F3",
+              "header_plus_payload": "0x0000009E",
+              "block_to_next_boundary": "0x0000009E"
+            },
+            "crc16_ccitt_init_ffff": {
+              "header_0x00_0x33": "0x0000D506",
+              "header_0x00_0x3f": "0x00008A6A",
+              "header_0x04_0x33": "0x00007474",
+              "payload": "0x00000EFB",
+              "header_plus_payload": "0x00002A9C",
+              "block_to_next_boundary": "0x00000B17"
+            },
+            "crc16_modbus_init_ffff": {
+              "header_0x00_0x33": "0x0000DFF0",
+              "header_0x00_0x3f": "0x0000DA7B",
+              "header_0x04_0x33": "0x00002147",
+              "payload": "0x00003BB9",
+              "header_plus_payload": "0x0000BD2C",
+              "block_to_next_boundary": "0x0000CFDC"
+            },
+            "crc32_ieee": {
+              "header_0x00_0x33": "0x83763A7C",
+              "header_0x00_0x3f": "0x97F72864",
+              "header_0x04_0x33": "0x11CAA124",
+              "payload": "0xDE9E9DAE",
+              "header_plus_payload": "0x2AC77ABA",
+              "block_to_next_boundary": "0xA1E7A498"
+            },
+            "crc32c_castagnoli": {
+              "header_0x00_0x33": "0x0A15F63F",
+              "header_0x00_0x3f": "0x42DD3DA0",
+              "header_0x04_0x33": "0x4E203753",
+              "payload": "0x8A907E91",
+              "header_plus_payload": "0x0021D4C4",
+              "block_to_next_boundary": "0xA3707BE8"
+            },
+            "adler32": {
+              "header_0x00_0x33": "0x772A0D96",
+              "header_0x00_0x3f": "0x2F0810EA",
+              "header_0x04_0x33": "0x3BCA0C69",
+              "payload": "0xBAAB2AF3",
+              "header_plus_payload": "0xC90E3BDC",
+              "block_to_next_boundary": "0x1F12CF0B"
+            }
+          },
+          "matches": [
+            "sum32_byte_sum:payload"
+          ]
+        }
+      }
+    }
+  },
+  "same_family_comparator": {
+    "product": "BOSS GT-100",
+    "firmware": "v2.12",
+    "image_path": "firmware/work/reference/esc2-comparators/gt100_v212/extracted/gt100_sys_v212/GT100ROM.BIN",
+    "image_sha256": "0c44ab01ac310927bf8dcc95f4ab5fcc487ed106dfcc6fc067832a35a4e32d34",
+    "blocks": {
+      "GT1Upd": {
+        "header_offset": "0x2000",
+        "checksum_field_offset": "0x2034",
+        "checksum_field_value": "0x01035B7B",
+        "payload_range": [
+          "0x2040",
+          "0x2379D"
+        ],
+        "payload_size": 137053,
+        "payload_sha256": "9c6c518ee8825aef56a51b1583005627981f02bc49bf6f1746c77251931c3403",
+        "sum32_byte_sum": "0x01035B7B",
+        "matches": true
+      },
+      "GT1Appli": {
+        "header_offset": "0x40000",
+        "checksum_field_offset": "0x40034",
+        "checksum_field_value": "0x0938DC1E",
+        "payload_range": [
+          "0x40040",
+          "0x17689C"
+        ],
+        "payload_size": 1271900,
+        "payload_sha256": "adfbf71a09ff0dece90f77047a95f489e26952c2c1ee2a3a482bfe4a2952722e",
+        "sum32_byte_sum": "0x0938DC1E",
+        "matches": true
+      }
+    }
+  },
+  "integrity_field_observation": {
+    "field_offset_relative_to_block": "+0x34",
+    "matching_algorithm": "sum of each stored-payload byte, modulo 2^32, no initial/final xor",
+    "matching_scope": "candidate payload from block +0x40 for the +0x30 stored-length candidate",
+    "matches": 8,
+    "cases": 8,
+    "interpretation": "strong evidence that +0x34 stores an additive payload integrity checksum; the same relation also holds for both GT-100 v2.12 blocks; updater enforcement has not been observed"
+  },
+  "limitations": [
+    "The additive checksum match establishes a likely payload integrity field, not a cryptographic signature or secure-boot guarantee.",
+    "This does not rule out additional integrity or authentication elsewhere, or prove that the updater checks this field before applying an image.",
+    "Span boundaries use observed marker/header offsets and candidate +0x30 length fields; field semantics are not proven."
+  ]
+}

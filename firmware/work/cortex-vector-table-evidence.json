@@ -1,0 +1,2924 @@
+{
+  "analysis": "Cortex-M-style vector-table structural comparison",
+  "read_only": true,
+  "method": "Parse 176 little-endian words beginning at file offset 0x30 in the bounded ESC91.000 block. Treat word 0 as initial stack pointer and words 1 onward as handler entries; test nonzero entries for Thumb bit and target within the candidate 0x00FFFFD0 + file_offset first-block map.",
+  "images": {
+    "GT-1 v1.08": {
+      "path": "firmware/extracted/v108/gt1_sys_v108/GT1ROM.BIN",
+      "image_size": 4194304,
+      "image_sha256": "7219679a87e985316264544423c9940ccbcbadeb2df0b2f13711ae57194cb612",
+      "first_8k_sha256": "70e91d0d1e6159007930eb5af0a90dc97038528ecb56af55943350a49e77573d",
+      "candidate_runtime_base": "0x00FFFFD0",
+      "vector_table_file_offset": "0x0030",
+      "vector_table_runtime_address": "0x01000000",
+      "vector_word_count": 176,
+      "vector_table_sha256": "1c9594dd6a55cf17301290dd28004fb11bd526b4088bc4eac928e4f82122070b",
+      "initial_stack_pointer": "0x01011240",
+      "reserved_zero_handler_indices": [
+        7,
+        8,
+        9,
+        10,
+        13
+      ],
+      "nonzero_handler_count": 170,
+      "thumb_handler_count_mapped_inside_first_8k": 170,
+      "invalid_nonzero_handler_entries": [],
+      "unique_mapped_handler_count": 11,
+      "most_common_mapped_handlers": [
+        {
+          "address": "0x01000AFB",
+          "occurrences": 160,
+          "target_file_offset": "0x000B2A"
+        },
+        {
+          "address": "0x01000AE5",
+          "occurrences": 1,
+          "target_file_offset": "0x000B14"
+        },
+        {
+          "address": "0x01000AE9",
+          "occurrences": 1,
+          "target_file_offset": "0x000B18"
+        },
+        {
+          "address": "0x01000AEB",
+          "occurrences": 1,
+          "target_file_offset": "0x000B1A"
+        },
+        {
+          "address": "0x01000AED",
+          "occurrences": 1,
+          "target_file_offset": "0x000B1C"
+        },
+        {
+          "address": "0x01000AEF",
+          "occurrences": 1,
+          "target_file_offset": "0x000B1E"
+        },
+        {
+          "address": "0x01000AF1",
+          "occurrences": 1,
+          "target_file_offset": "0x000B20"
+        },
+        {
+          "address": "0x01000AF3",
+          "occurrences": 1,
+          "target_file_offset": "0x000B22"
+        },
+        {
+          "address": "0x01000AF5",
+          "occurrences": 1,
+          "target_file_offset": "0x000B24"
+        },
+        {
+          "address": "0x01000AF7",
+          "occurrences": 1,
+          "target_file_offset": "0x000B26"
+        },
+        {
+          "address": "0x010005D5",
+          "occurrences": 1,
+          "target_file_offset": "0x000604"
+        }
+      ],
+      "unique_handler_target_samples": [
+        {
+          "address": "0x01000AE5",
+          "vector_occurrences": 1,
+          "target_file_offset": "0x000B14",
+          "first_16_bytes": "05 48 00 47 fe e7 fe e7 fe e7 fe e7 fe e7 fe e7",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x01000AE4",
+              "bytes": "05 48",
+              "mnemonic": "ldr",
+              "operands": "r0, [pc, #0x14]"
+            },
+            {
+              "address": "0x01000AE6",
+              "bytes": "00 47",
+              "mnemonic": "bx",
+              "operands": "r0"
+            },
+            {
+              "address": "0x01000AE8",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000ae8"
+            },
+            {
+              "address": "0x01000AEA",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000aea"
+            },
+            {
+              "address": "0x01000AEC",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000aec"
+            },
+            {
+              "address": "0x01000AEE",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000aee"
+            },
+            {
+              "address": "0x01000AF0",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af0"
+            },
+            {
+              "address": "0x01000AF2",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af2"
+            }
+          ]
+        },
+        {
+          "address": "0x01000AE9",
+          "vector_occurrences": 1,
+          "target_file_offset": "0x000B18",
+          "first_16_bytes": "fe e7 fe e7 fe e7 fe e7 fe e7 fe e7 fe e7 fe e7",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x01000AE8",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000ae8"
+            },
+            {
+              "address": "0x01000AEA",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000aea"
+            },
+            {
+              "address": "0x01000AEC",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000aec"
+            },
+            {
+              "address": "0x01000AEE",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000aee"
+            },
+            {
+              "address": "0x01000AF0",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af0"
+            },
+            {
+              "address": "0x01000AF2",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af2"
+            },
+            {
+              "address": "0x01000AF4",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af4"
+            },
+            {
+              "address": "0x01000AF6",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af6"
+            }
+          ]
+        },
+        {
+          "address": "0x01000AEB",
+          "vector_occurrences": 1,
+          "target_file_offset": "0x000B1A",
+          "first_16_bytes": "fe e7 fe e7 fe e7 fe e7 fe e7 fe e7 fe e7 fe e7",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x01000AEA",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000aea"
+            },
+            {
+              "address": "0x01000AEC",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000aec"
+            },
+            {
+              "address": "0x01000AEE",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000aee"
+            },
+            {
+              "address": "0x01000AF0",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af0"
+            },
+            {
+              "address": "0x01000AF2",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af2"
+            },
+            {
+              "address": "0x01000AF4",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af4"
+            },
+            {
+              "address": "0x01000AF6",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af6"
+            },
+            {
+              "address": "0x01000AF8",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af8"
+            }
+          ]
+        },
+        {
+          "address": "0x01000AED",
+          "vector_occurrences": 1,
+          "target_file_offset": "0x000B1C",
+          "first_16_bytes": "fe e7 fe e7 fe e7 fe e7 fe e7 fe e7 fe e7 fe e7",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x01000AEC",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000aec"
+            },
+            {
+              "address": "0x01000AEE",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000aee"
+            },
+            {
+              "address": "0x01000AF0",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af0"
+            },
+            {
+              "address": "0x01000AF2",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af2"
+            },
+            {
+              "address": "0x01000AF4",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af4"
+            },
+            {
+              "address": "0x01000AF6",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af6"
+            },
+            {
+              "address": "0x01000AF8",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af8"
+            },
+            {
+              "address": "0x01000AFA",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000afa"
+            }
+          ]
+        },
+        {
+          "address": "0x01000AEF",
+          "vector_occurrences": 1,
+          "target_file_offset": "0x000B1E",
+          "first_16_bytes": "fe e7 fe e7 fe e7 fe e7 fe e7 fe e7 fe e7 c1 02",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x01000AEE",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000aee"
+            },
+            {
+              "address": "0x01000AF0",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af0"
+            },
+            {
+              "address": "0x01000AF2",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af2"
+            },
+            {
+              "address": "0x01000AF4",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af4"
+            },
+            {
+              "address": "0x01000AF6",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af6"
+            },
+            {
+              "address": "0x01000AF8",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af8"
+            },
+            {
+              "address": "0x01000AFA",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000afa"
+            },
+            {
+              "address": "0x01000AFC",
+              "bytes": "c1 02",
+              "mnemonic": "lsls",
+              "operands": "r1, r0, #0xb"
+            }
+          ]
+        },
+        {
+          "address": "0x01000AF1",
+          "vector_occurrences": 1,
+          "target_file_offset": "0x000B20",
+          "first_16_bytes": "fe e7 fe e7 fe e7 fe e7 fe e7 fe e7 c1 02 00 01",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x01000AF0",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af0"
+            },
+            {
+              "address": "0x01000AF2",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af2"
+            },
+            {
+              "address": "0x01000AF4",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af4"
+            },
+            {
+              "address": "0x01000AF6",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af6"
+            },
+            {
+              "address": "0x01000AF8",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af8"
+            },
+            {
+              "address": "0x01000AFA",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000afa"
+            },
+            {
+              "address": "0x01000AFC",
+              "bytes": "c1 02",
+              "mnemonic": "lsls",
+              "operands": "r1, r0, #0xb"
+            },
+            {
+              "address": "0x01000AFE",
+              "bytes": "00 01",
+              "mnemonic": "lsls",
+              "operands": "r0, r0, #4"
+            }
+          ]
+        },
+        {
+          "address": "0x01000AF3",
+          "vector_occurrences": 1,
+          "target_file_offset": "0x000B22",
+          "first_16_bytes": "fe e7 fe e7 fe e7 fe e7 fe e7 c1 02 00 01 10 b5",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x01000AF2",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af2"
+            },
+            {
+              "address": "0x01000AF4",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af4"
+            },
+            {
+              "address": "0x01000AF6",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af6"
+            },
+            {
+              "address": "0x01000AF8",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af8"
+            },
+            {
+              "address": "0x01000AFA",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000afa"
+            },
+            {
+              "address": "0x01000AFC",
+              "bytes": "c1 02",
+              "mnemonic": "lsls",
+              "operands": "r1, r0, #0xb"
+            },
+            {
+              "address": "0x01000AFE",
+              "bytes": "00 01",
+              "mnemonic": "lsls",
+              "operands": "r0, r0, #4"
+            },
+            {
+              "address": "0x01000B00",
+              "bytes": "10 b5",
+              "mnemonic": "push",
+              "operands": "{r4, lr}"
+            }
+          ]
+        },
+        {
+          "address": "0x01000AF5",
+          "vector_occurrences": 1,
+          "target_file_offset": "0x000B24",
+          "first_16_bytes": "fe e7 fe e7 fe e7 fe e7 c1 02 00 01 10 b5 03 20",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x01000AF4",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af4"
+            },
+            {
+              "address": "0x01000AF6",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af6"
+            },
+            {
+              "address": "0x01000AF8",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af8"
+            },
+            {
+              "address": "0x01000AFA",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000afa"
+            },
+            {
+              "address": "0x01000AFC",
+              "bytes": "c1 02",
+              "mnemonic": "lsls",
+              "operands": "r1, r0, #0xb"
+            },
+            {
+              "address": "0x01000AFE",
+              "bytes": "00 01",
+              "mnemonic": "lsls",
+              "operands": "r0, r0, #4"
+            },
+            {
+              "address": "0x01000B00",
+              "bytes": "10 b5",
+              "mnemonic": "push",
+              "operands": "{r4, lr}"
+            },
+            {
+              "address": "0x01000B02",
+              "bytes": "03 20",
+              "mnemonic": "movs",
+              "operands": "r0, #3"
+            }
+          ]
+        },
+        {
+          "address": "0x01000AF7",
+          "vector_occurrences": 1,
+          "target_file_offset": "0x000B26",
+          "first_16_bytes": "fe e7 fe e7 fe e7 c1 02 00 01 10 b5 03 20 02 46",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x01000AF6",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af6"
+            },
+            {
+              "address": "0x01000AF8",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af8"
+            },
+            {
+              "address": "0x01000AFA",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000afa"
+            },
+            {
+              "address": "0x01000AFC",
+              "bytes": "c1 02",
+              "mnemonic": "lsls",
+              "operands": "r1, r0, #0xb"
+            },
+            {
+              "address": "0x01000AFE",
+              "bytes": "00 01",
+              "mnemonic": "lsls",
+              "operands": "r0, r0, #4"
+            },
+            {
+              "address": "0x01000B00",
+              "bytes": "10 b5",
+              "mnemonic": "push",
+              "operands": "{r4, lr}"
+            },
+            {
+              "address": "0x01000B02",
+              "bytes": "03 20",
+              "mnemonic": "movs",
+              "operands": "r0, #3"
+            },
+            {
+              "address": "0x01000B04",
+              "bytes": "02 46",
+              "mnemonic": "mov",
+              "operands": "r2, r0"
+            }
+          ]
+        },
+        {
+          "address": "0x010005D5",
+          "vector_occurrences": 1,
+          "target_file_offset": "0x000604",
+          "first_16_bytes": "45 48 00 68 40 1c 44 49 08 60 70 47 00 20 42 49",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x010005D4",
+              "bytes": "45 48",
+              "mnemonic": "ldr",
+              "operands": "r0, [pc, #0x114]"
+            },
+            {
+              "address": "0x010005D6",
+              "bytes": "00 68",
+              "mnemonic": "ldr",
+              "operands": "r0, [r0]"
+            },
+            {
+              "address": "0x010005D8",
+              "bytes": "40 1c",
+              "mnemonic": "adds",
+              "operands": "r0, r0, #1"
+            },
+            {
+              "address": "0x010005DA",
+              "bytes": "44 49",
+              "mnemonic": "ldr",
+              "operands": "r1, [pc, #0x110]"
+            },
+            {
+              "address": "0x010005DC",
+              "bytes": "08 60",
+              "mnemonic": "str",
+              "operands": "r0, [r1]"
+            },
+            {
+              "address": "0x010005DE",
+              "bytes": "70 47",
+              "mnemonic": "bx",
+              "operands": "lr"
+            },
+            {
+              "address": "0x010005E0",
+              "bytes": "00 20",
+              "mnemonic": "movs",
+              "operands": "r0, #0"
+            },
+            {
+              "address": "0x010005E2",
+              "bytes": "42 49",
+              "mnemonic": "ldr",
+              "operands": "r1, [pc, #0x108]"
+            }
+          ]
+        },
+        {
+          "address": "0x01000AFB",
+          "vector_occurrences": 160,
+          "target_file_offset": "0x000B2A",
+          "first_16_bytes": "fe e7 c1 02 00 01 10 b5 03 20 02 46 1b 4b 19 68",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x01000AFA",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000afa"
+            },
+            {
+              "address": "0x01000AFC",
+              "bytes": "c1 02",
+              "mnemonic": "lsls",
+              "operands": "r1, r0, #0xb"
+            },
+            {
+              "address": "0x01000AFE",
+              "bytes": "00 01",
+              "mnemonic": "lsls",
+              "operands": "r0, r0, #4"
+            },
+            {
+              "address": "0x01000B00",
+              "bytes": "10 b5",
+              "mnemonic": "push",
+              "operands": "{r4, lr}"
+            },
+            {
+              "address": "0x01000B02",
+              "bytes": "03 20",
+              "mnemonic": "movs",
+              "operands": "r0, #3"
+            },
+            {
+              "address": "0x01000B04",
+              "bytes": "02 46",
+              "mnemonic": "mov",
+              "operands": "r2, r0"
+            },
+            {
+              "address": "0x01000B06",
+              "bytes": "1b 4b",
+              "mnemonic": "ldr",
+              "operands": "r3, [pc, #0x6c]"
+            },
+            {
+              "address": "0x01000B08",
+              "bytes": "19 68",
+              "mnemonic": "ldr",
+              "operands": "r1, [r3]"
+            }
+          ]
+        }
+      ],
+      "first_16_handler_words": [
+        "0x01000AE5",
+        "0x01000AE9",
+        "0x01000AEB",
+        "0x01000AED",
+        "0x01000AEF",
+        "0x01000AF1",
+        "0x00000000",
+        "0x00000000",
+        "0x00000000",
+        "0x00000000",
+        "0x01000AF3",
+        "0x01000AF5",
+        "0x00000000",
+        "0x01000AF7",
+        "0x010005D5"
+      ],
+      "vector_15_handler_probe": {
+        "vector_index": 15,
+        "vector_word": "0x010005D5",
+        "target_file_offset": "0x000604",
+        "target_bytes_16": "45 48 00 68 40 1c 44 49 08 60 70 47 00 20 42 49",
+        "GT1_literal_words_file_0x71c_0x720": [
+          "0x01010000",
+          "0x40005000"
+        ],
+        "behavior_note": "GT-1 vector 15 targets code at 0x604 that reads a word through literal 0x01010000, increments it, and writes it through literal 0x40005000; this is a code-flow observation, not a known memory-map definition. KATANA's vector 15 points to its default self-branch stub."
+      },
+      "external_interrupt_slot_count": 160,
+      "external_interrupt_slots_all_same_default_handler": true,
+      "external_interrupt_default_handler": "0x01000AFB"
+    },
+    "GT-1 v1.09": {
+      "path": "firmware/extracted/v109/gt1_sys_v109/GT1ROM.BIN",
+      "image_size": 4194304,
+      "image_sha256": "412ebf5ffdc48554454c27df47f61428f046ea0a7d93f5c77b7f0302861abdbf",
+      "first_8k_sha256": "70e91d0d1e6159007930eb5af0a90dc97038528ecb56af55943350a49e77573d",
+      "candidate_runtime_base": "0x00FFFFD0",
+      "vector_table_file_offset": "0x0030",
+      "vector_table_runtime_address": "0x01000000",
+      "vector_word_count": 176,
+      "vector_table_sha256": "1c9594dd6a55cf17301290dd28004fb11bd526b4088bc4eac928e4f82122070b",
+      "initial_stack_pointer": "0x01011240",
+      "reserved_zero_handler_indices": [
+        7,
+        8,
+        9,
+        10,
+        13
+      ],
+      "nonzero_handler_count": 170,
+      "thumb_handler_count_mapped_inside_first_8k": 170,
+      "invalid_nonzero_handler_entries": [],
+      "unique_mapped_handler_count": 11,
+      "most_common_mapped_handlers": [
+        {
+          "address": "0x01000AFB",
+          "occurrences": 160,
+          "target_file_offset": "0x000B2A"
+        },
+        {
+          "address": "0x01000AE5",
+          "occurrences": 1,
+          "target_file_offset": "0x000B14"
+        },
+        {
+          "address": "0x01000AE9",
+          "occurrences": 1,
+          "target_file_offset": "0x000B18"
+        },
+        {
+          "address": "0x01000AEB",
+          "occurrences": 1,
+          "target_file_offset": "0x000B1A"
+        },
+        {
+          "address": "0x01000AED",
+          "occurrences": 1,
+          "target_file_offset": "0x000B1C"
+        },
+        {
+          "address": "0x01000AEF",
+          "occurrences": 1,
+          "target_file_offset": "0x000B1E"
+        },
+        {
+          "address": "0x01000AF1",
+          "occurrences": 1,
+          "target_file_offset": "0x000B20"
+        },
+        {
+          "address": "0x01000AF3",
+          "occurrences": 1,
+          "target_file_offset": "0x000B22"
+        },
+        {
+          "address": "0x01000AF5",
+          "occurrences": 1,
+          "target_file_offset": "0x000B24"
+        },
+        {
+          "address": "0x01000AF7",
+          "occurrences": 1,
+          "target_file_offset": "0x000B26"
+        },
+        {
+          "address": "0x010005D5",
+          "occurrences": 1,
+          "target_file_offset": "0x000604"
+        }
+      ],
+      "unique_handler_target_samples": [
+        {
+          "address": "0x01000AE5",
+          "vector_occurrences": 1,
+          "target_file_offset": "0x000B14",
+          "first_16_bytes": "05 48 00 47 fe e7 fe e7 fe e7 fe e7 fe e7 fe e7",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x01000AE4",
+              "bytes": "05 48",
+              "mnemonic": "ldr",
+              "operands": "r0, [pc, #0x14]"
+            },
+            {
+              "address": "0x01000AE6",
+              "bytes": "00 47",
+              "mnemonic": "bx",
+              "operands": "r0"
+            },
+            {
+              "address": "0x01000AE8",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000ae8"
+            },
+            {
+              "address": "0x01000AEA",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000aea"
+            },
+            {
+              "address": "0x01000AEC",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000aec"
+            },
+            {
+              "address": "0x01000AEE",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000aee"
+            },
+            {
+              "address": "0x01000AF0",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af0"
+            },
+            {
+              "address": "0x01000AF2",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af2"
+            }
+          ]
+        },
+        {
+          "address": "0x01000AE9",
+          "vector_occurrences": 1,
+          "target_file_offset": "0x000B18",
+          "first_16_bytes": "fe e7 fe e7 fe e7 fe e7 fe e7 fe e7 fe e7 fe e7",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x01000AE8",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000ae8"
+            },
+            {
+              "address": "0x01000AEA",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000aea"
+            },
+            {
+              "address": "0x01000AEC",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000aec"
+            },
+            {
+              "address": "0x01000AEE",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000aee"
+            },
+            {
+              "address": "0x01000AF0",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af0"
+            },
+            {
+              "address": "0x01000AF2",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af2"
+            },
+            {
+              "address": "0x01000AF4",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af4"
+            },
+            {
+              "address": "0x01000AF6",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af6"
+            }
+          ]
+        },
+        {
+          "address": "0x01000AEB",
+          "vector_occurrences": 1,
+          "target_file_offset": "0x000B1A",
+          "first_16_bytes": "fe e7 fe e7 fe e7 fe e7 fe e7 fe e7 fe e7 fe e7",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x01000AEA",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000aea"
+            },
+            {
+              "address": "0x01000AEC",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000aec"
+            },
+            {
+              "address": "0x01000AEE",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000aee"
+            },
+            {
+              "address": "0x01000AF0",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af0"
+            },
+            {
+              "address": "0x01000AF2",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af2"
+            },
+            {
+              "address": "0x01000AF4",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af4"
+            },
+            {
+              "address": "0x01000AF6",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af6"
+            },
+            {
+              "address": "0x01000AF8",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af8"
+            }
+          ]
+        },
+        {
+          "address": "0x01000AED",
+          "vector_occurrences": 1,
+          "target_file_offset": "0x000B1C",
+          "first_16_bytes": "fe e7 fe e7 fe e7 fe e7 fe e7 fe e7 fe e7 fe e7",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x01000AEC",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000aec"
+            },
+            {
+              "address": "0x01000AEE",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000aee"
+            },
+            {
+              "address": "0x01000AF0",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af0"
+            },
+            {
+              "address": "0x01000AF2",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af2"
+            },
+            {
+              "address": "0x01000AF4",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af4"
+            },
+            {
+              "address": "0x01000AF6",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af6"
+            },
+            {
+              "address": "0x01000AF8",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af8"
+            },
+            {
+              "address": "0x01000AFA",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000afa"
+            }
+          ]
+        },
+        {
+          "address": "0x01000AEF",
+          "vector_occurrences": 1,
+          "target_file_offset": "0x000B1E",
+          "first_16_bytes": "fe e7 fe e7 fe e7 fe e7 fe e7 fe e7 fe e7 c1 02",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x01000AEE",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000aee"
+            },
+            {
+              "address": "0x01000AF0",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af0"
+            },
+            {
+              "address": "0x01000AF2",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af2"
+            },
+            {
+              "address": "0x01000AF4",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af4"
+            },
+            {
+              "address": "0x01000AF6",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af6"
+            },
+            {
+              "address": "0x01000AF8",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af8"
+            },
+            {
+              "address": "0x01000AFA",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000afa"
+            },
+            {
+              "address": "0x01000AFC",
+              "bytes": "c1 02",
+              "mnemonic": "lsls",
+              "operands": "r1, r0, #0xb"
+            }
+          ]
+        },
+        {
+          "address": "0x01000AF1",
+          "vector_occurrences": 1,
+          "target_file_offset": "0x000B20",
+          "first_16_bytes": "fe e7 fe e7 fe e7 fe e7 fe e7 fe e7 c1 02 00 01",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x01000AF0",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af0"
+            },
+            {
+              "address": "0x01000AF2",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af2"
+            },
+            {
+              "address": "0x01000AF4",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af4"
+            },
+            {
+              "address": "0x01000AF6",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af6"
+            },
+            {
+              "address": "0x01000AF8",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af8"
+            },
+            {
+              "address": "0x01000AFA",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000afa"
+            },
+            {
+              "address": "0x01000AFC",
+              "bytes": "c1 02",
+              "mnemonic": "lsls",
+              "operands": "r1, r0, #0xb"
+            },
+            {
+              "address": "0x01000AFE",
+              "bytes": "00 01",
+              "mnemonic": "lsls",
+              "operands": "r0, r0, #4"
+            }
+          ]
+        },
+        {
+          "address": "0x01000AF3",
+          "vector_occurrences": 1,
+          "target_file_offset": "0x000B22",
+          "first_16_bytes": "fe e7 fe e7 fe e7 fe e7 fe e7 c1 02 00 01 10 b5",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x01000AF2",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af2"
+            },
+            {
+              "address": "0x01000AF4",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af4"
+            },
+            {
+              "address": "0x01000AF6",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af6"
+            },
+            {
+              "address": "0x01000AF8",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af8"
+            },
+            {
+              "address": "0x01000AFA",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000afa"
+            },
+            {
+              "address": "0x01000AFC",
+              "bytes": "c1 02",
+              "mnemonic": "lsls",
+              "operands": "r1, r0, #0xb"
+            },
+            {
+              "address": "0x01000AFE",
+              "bytes": "00 01",
+              "mnemonic": "lsls",
+              "operands": "r0, r0, #4"
+            },
+            {
+              "address": "0x01000B00",
+              "bytes": "10 b5",
+              "mnemonic": "push",
+              "operands": "{r4, lr}"
+            }
+          ]
+        },
+        {
+          "address": "0x01000AF5",
+          "vector_occurrences": 1,
+          "target_file_offset": "0x000B24",
+          "first_16_bytes": "fe e7 fe e7 fe e7 fe e7 c1 02 00 01 10 b5 03 20",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x01000AF4",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af4"
+            },
+            {
+              "address": "0x01000AF6",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af6"
+            },
+            {
+              "address": "0x01000AF8",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af8"
+            },
+            {
+              "address": "0x01000AFA",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000afa"
+            },
+            {
+              "address": "0x01000AFC",
+              "bytes": "c1 02",
+              "mnemonic": "lsls",
+              "operands": "r1, r0, #0xb"
+            },
+            {
+              "address": "0x01000AFE",
+              "bytes": "00 01",
+              "mnemonic": "lsls",
+              "operands": "r0, r0, #4"
+            },
+            {
+              "address": "0x01000B00",
+              "bytes": "10 b5",
+              "mnemonic": "push",
+              "operands": "{r4, lr}"
+            },
+            {
+              "address": "0x01000B02",
+              "bytes": "03 20",
+              "mnemonic": "movs",
+              "operands": "r0, #3"
+            }
+          ]
+        },
+        {
+          "address": "0x01000AF7",
+          "vector_occurrences": 1,
+          "target_file_offset": "0x000B26",
+          "first_16_bytes": "fe e7 fe e7 fe e7 c1 02 00 01 10 b5 03 20 02 46",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x01000AF6",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af6"
+            },
+            {
+              "address": "0x01000AF8",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000af8"
+            },
+            {
+              "address": "0x01000AFA",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000afa"
+            },
+            {
+              "address": "0x01000AFC",
+              "bytes": "c1 02",
+              "mnemonic": "lsls",
+              "operands": "r1, r0, #0xb"
+            },
+            {
+              "address": "0x01000AFE",
+              "bytes": "00 01",
+              "mnemonic": "lsls",
+              "operands": "r0, r0, #4"
+            },
+            {
+              "address": "0x01000B00",
+              "bytes": "10 b5",
+              "mnemonic": "push",
+              "operands": "{r4, lr}"
+            },
+            {
+              "address": "0x01000B02",
+              "bytes": "03 20",
+              "mnemonic": "movs",
+              "operands": "r0, #3"
+            },
+            {
+              "address": "0x01000B04",
+              "bytes": "02 46",
+              "mnemonic": "mov",
+              "operands": "r2, r0"
+            }
+          ]
+        },
+        {
+          "address": "0x010005D5",
+          "vector_occurrences": 1,
+          "target_file_offset": "0x000604",
+          "first_16_bytes": "45 48 00 68 40 1c 44 49 08 60 70 47 00 20 42 49",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x010005D4",
+              "bytes": "45 48",
+              "mnemonic": "ldr",
+              "operands": "r0, [pc, #0x114]"
+            },
+            {
+              "address": "0x010005D6",
+              "bytes": "00 68",
+              "mnemonic": "ldr",
+              "operands": "r0, [r0]"
+            },
+            {
+              "address": "0x010005D8",
+              "bytes": "40 1c",
+              "mnemonic": "adds",
+              "operands": "r0, r0, #1"
+            },
+            {
+              "address": "0x010005DA",
+              "bytes": "44 49",
+              "mnemonic": "ldr",
+              "operands": "r1, [pc, #0x110]"
+            },
+            {
+              "address": "0x010005DC",
+              "bytes": "08 60",
+              "mnemonic": "str",
+              "operands": "r0, [r1]"
+            },
+            {
+              "address": "0x010005DE",
+              "bytes": "70 47",
+              "mnemonic": "bx",
+              "operands": "lr"
+            },
+            {
+              "address": "0x010005E0",
+              "bytes": "00 20",
+              "mnemonic": "movs",
+              "operands": "r0, #0"
+            },
+            {
+              "address": "0x010005E2",
+              "bytes": "42 49",
+              "mnemonic": "ldr",
+              "operands": "r1, [pc, #0x108]"
+            }
+          ]
+        },
+        {
+          "address": "0x01000AFB",
+          "vector_occurrences": 160,
+          "target_file_offset": "0x000B2A",
+          "first_16_bytes": "fe e7 c1 02 00 01 10 b5 03 20 02 46 1b 4b 19 68",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x01000AFA",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000afa"
+            },
+            {
+              "address": "0x01000AFC",
+              "bytes": "c1 02",
+              "mnemonic": "lsls",
+              "operands": "r1, r0, #0xb"
+            },
+            {
+              "address": "0x01000AFE",
+              "bytes": "00 01",
+              "mnemonic": "lsls",
+              "operands": "r0, r0, #4"
+            },
+            {
+              "address": "0x01000B00",
+              "bytes": "10 b5",
+              "mnemonic": "push",
+              "operands": "{r4, lr}"
+            },
+            {
+              "address": "0x01000B02",
+              "bytes": "03 20",
+              "mnemonic": "movs",
+              "operands": "r0, #3"
+            },
+            {
+              "address": "0x01000B04",
+              "bytes": "02 46",
+              "mnemonic": "mov",
+              "operands": "r2, r0"
+            },
+            {
+              "address": "0x01000B06",
+              "bytes": "1b 4b",
+              "mnemonic": "ldr",
+              "operands": "r3, [pc, #0x6c]"
+            },
+            {
+              "address": "0x01000B08",
+              "bytes": "19 68",
+              "mnemonic": "ldr",
+              "operands": "r1, [r3]"
+            }
+          ]
+        }
+      ],
+      "first_16_handler_words": [
+        "0x01000AE5",
+        "0x01000AE9",
+        "0x01000AEB",
+        "0x01000AED",
+        "0x01000AEF",
+        "0x01000AF1",
+        "0x00000000",
+        "0x00000000",
+        "0x00000000",
+        "0x00000000",
+        "0x01000AF3",
+        "0x01000AF5",
+        "0x00000000",
+        "0x01000AF7",
+        "0x010005D5"
+      ],
+      "vector_15_handler_probe": {
+        "vector_index": 15,
+        "vector_word": "0x010005D5",
+        "target_file_offset": "0x000604",
+        "target_bytes_16": "45 48 00 68 40 1c 44 49 08 60 70 47 00 20 42 49",
+        "GT1_literal_words_file_0x71c_0x720": [
+          "0x01010000",
+          "0x40005000"
+        ],
+        "behavior_note": "GT-1 vector 15 targets code at 0x604 that reads a word through literal 0x01010000, increments it, and writes it through literal 0x40005000; this is a code-flow observation, not a known memory-map definition. KATANA's vector 15 points to its default self-branch stub."
+      },
+      "external_interrupt_slot_count": 160,
+      "external_interrupt_slots_all_same_default_handler": true,
+      "external_interrupt_default_handler": "0x01000AFB"
+    },
+    "KATANA v2.01": {
+      "path": "firmware/work/reference/esc2-comparators/katana_v201/extracted/katana_sys_v201/KATANARM.BIN",
+      "image_size": 4194304,
+      "image_sha256": "73b63f48050818e6e1cc0738d741e50ce8dcc6f644109cf8ec346a44dff1bdac",
+      "first_8k_sha256": "1f3a16c850ae5d907543272e0d2a6584db1ffcb27f74d59a966f105fa8add0b5",
+      "candidate_runtime_base": "0x00FFFFD0",
+      "vector_table_file_offset": "0x0030",
+      "vector_table_runtime_address": "0x01000000",
+      "vector_word_count": 176,
+      "vector_table_sha256": "a9e0e37ac025730fe9adce2455acc28b02148499e229f80c559316d757f55b85",
+      "initial_stack_pointer": "0x01011238",
+      "reserved_zero_handler_indices": [
+        7,
+        8,
+        9,
+        10,
+        13
+      ],
+      "nonzero_handler_count": 170,
+      "thumb_handler_count_mapped_inside_first_8k": 170,
+      "invalid_nonzero_handler_entries": [],
+      "unique_mapped_handler_count": 11,
+      "most_common_mapped_handlers": [
+        {
+          "address": "0x01000A33",
+          "occurrences": 160,
+          "target_file_offset": "0x000A62"
+        },
+        {
+          "address": "0x01000A1D",
+          "occurrences": 1,
+          "target_file_offset": "0x000A4C"
+        },
+        {
+          "address": "0x01000A21",
+          "occurrences": 1,
+          "target_file_offset": "0x000A50"
+        },
+        {
+          "address": "0x01000A23",
+          "occurrences": 1,
+          "target_file_offset": "0x000A52"
+        },
+        {
+          "address": "0x01000A25",
+          "occurrences": 1,
+          "target_file_offset": "0x000A54"
+        },
+        {
+          "address": "0x01000A27",
+          "occurrences": 1,
+          "target_file_offset": "0x000A56"
+        },
+        {
+          "address": "0x01000A29",
+          "occurrences": 1,
+          "target_file_offset": "0x000A58"
+        },
+        {
+          "address": "0x01000A2B",
+          "occurrences": 1,
+          "target_file_offset": "0x000A5A"
+        },
+        {
+          "address": "0x01000A2D",
+          "occurrences": 1,
+          "target_file_offset": "0x000A5C"
+        },
+        {
+          "address": "0x01000A2F",
+          "occurrences": 1,
+          "target_file_offset": "0x000A5E"
+        },
+        {
+          "address": "0x01000A31",
+          "occurrences": 1,
+          "target_file_offset": "0x000A60"
+        }
+      ],
+      "unique_handler_target_samples": [
+        {
+          "address": "0x01000A1D",
+          "vector_occurrences": 1,
+          "target_file_offset": "0x000A4C",
+          "first_16_bytes": "05 48 00 47 fe e7 fe e7 fe e7 fe e7 fe e7 fe e7",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x01000A1C",
+              "bytes": "05 48",
+              "mnemonic": "ldr",
+              "operands": "r0, [pc, #0x14]"
+            },
+            {
+              "address": "0x01000A1E",
+              "bytes": "00 47",
+              "mnemonic": "bx",
+              "operands": "r0"
+            },
+            {
+              "address": "0x01000A20",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a20"
+            },
+            {
+              "address": "0x01000A22",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a22"
+            },
+            {
+              "address": "0x01000A24",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a24"
+            },
+            {
+              "address": "0x01000A26",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a26"
+            },
+            {
+              "address": "0x01000A28",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a28"
+            },
+            {
+              "address": "0x01000A2A",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2a"
+            }
+          ]
+        },
+        {
+          "address": "0x01000A21",
+          "vector_occurrences": 1,
+          "target_file_offset": "0x000A50",
+          "first_16_bytes": "fe e7 fe e7 fe e7 fe e7 fe e7 fe e7 fe e7 fe e7",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x01000A20",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a20"
+            },
+            {
+              "address": "0x01000A22",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a22"
+            },
+            {
+              "address": "0x01000A24",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a24"
+            },
+            {
+              "address": "0x01000A26",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a26"
+            },
+            {
+              "address": "0x01000A28",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a28"
+            },
+            {
+              "address": "0x01000A2A",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2a"
+            },
+            {
+              "address": "0x01000A2C",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2c"
+            },
+            {
+              "address": "0x01000A2E",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2e"
+            }
+          ]
+        },
+        {
+          "address": "0x01000A23",
+          "vector_occurrences": 1,
+          "target_file_offset": "0x000A52",
+          "first_16_bytes": "fe e7 fe e7 fe e7 fe e7 fe e7 fe e7 fe e7 fe e7",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x01000A22",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a22"
+            },
+            {
+              "address": "0x01000A24",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a24"
+            },
+            {
+              "address": "0x01000A26",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a26"
+            },
+            {
+              "address": "0x01000A28",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a28"
+            },
+            {
+              "address": "0x01000A2A",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2a"
+            },
+            {
+              "address": "0x01000A2C",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2c"
+            },
+            {
+              "address": "0x01000A2E",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2e"
+            },
+            {
+              "address": "0x01000A30",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a30"
+            }
+          ]
+        },
+        {
+          "address": "0x01000A25",
+          "vector_occurrences": 1,
+          "target_file_offset": "0x000A54",
+          "first_16_bytes": "fe e7 fe e7 fe e7 fe e7 fe e7 fe e7 fe e7 fe e7",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x01000A24",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a24"
+            },
+            {
+              "address": "0x01000A26",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a26"
+            },
+            {
+              "address": "0x01000A28",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a28"
+            },
+            {
+              "address": "0x01000A2A",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2a"
+            },
+            {
+              "address": "0x01000A2C",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2c"
+            },
+            {
+              "address": "0x01000A2E",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2e"
+            },
+            {
+              "address": "0x01000A30",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a30"
+            },
+            {
+              "address": "0x01000A32",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a32"
+            }
+          ]
+        },
+        {
+          "address": "0x01000A27",
+          "vector_occurrences": 1,
+          "target_file_offset": "0x000A56",
+          "first_16_bytes": "fe e7 fe e7 fe e7 fe e7 fe e7 fe e7 fe e7 c1 02",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x01000A26",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a26"
+            },
+            {
+              "address": "0x01000A28",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a28"
+            },
+            {
+              "address": "0x01000A2A",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2a"
+            },
+            {
+              "address": "0x01000A2C",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2c"
+            },
+            {
+              "address": "0x01000A2E",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2e"
+            },
+            {
+              "address": "0x01000A30",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a30"
+            },
+            {
+              "address": "0x01000A32",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a32"
+            },
+            {
+              "address": "0x01000A34",
+              "bytes": "c1 02",
+              "mnemonic": "lsls",
+              "operands": "r1, r0, #0xb"
+            }
+          ]
+        },
+        {
+          "address": "0x01000A29",
+          "vector_occurrences": 1,
+          "target_file_offset": "0x000A58",
+          "first_16_bytes": "fe e7 fe e7 fe e7 fe e7 fe e7 fe e7 c1 02 00 01",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x01000A28",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a28"
+            },
+            {
+              "address": "0x01000A2A",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2a"
+            },
+            {
+              "address": "0x01000A2C",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2c"
+            },
+            {
+              "address": "0x01000A2E",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2e"
+            },
+            {
+              "address": "0x01000A30",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a30"
+            },
+            {
+              "address": "0x01000A32",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a32"
+            },
+            {
+              "address": "0x01000A34",
+              "bytes": "c1 02",
+              "mnemonic": "lsls",
+              "operands": "r1, r0, #0xb"
+            },
+            {
+              "address": "0x01000A36",
+              "bytes": "00 01",
+              "mnemonic": "lsls",
+              "operands": "r0, r0, #4"
+            }
+          ]
+        },
+        {
+          "address": "0x01000A2B",
+          "vector_occurrences": 1,
+          "target_file_offset": "0x000A5A",
+          "first_16_bytes": "fe e7 fe e7 fe e7 fe e7 fe e7 c1 02 00 01 10 b5",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x01000A2A",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2a"
+            },
+            {
+              "address": "0x01000A2C",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2c"
+            },
+            {
+              "address": "0x01000A2E",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2e"
+            },
+            {
+              "address": "0x01000A30",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a30"
+            },
+            {
+              "address": "0x01000A32",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a32"
+            },
+            {
+              "address": "0x01000A34",
+              "bytes": "c1 02",
+              "mnemonic": "lsls",
+              "operands": "r1, r0, #0xb"
+            },
+            {
+              "address": "0x01000A36",
+              "bytes": "00 01",
+              "mnemonic": "lsls",
+              "operands": "r0, r0, #4"
+            },
+            {
+              "address": "0x01000A38",
+              "bytes": "10 b5",
+              "mnemonic": "push",
+              "operands": "{r4, lr}"
+            }
+          ]
+        },
+        {
+          "address": "0x01000A2D",
+          "vector_occurrences": 1,
+          "target_file_offset": "0x000A5C",
+          "first_16_bytes": "fe e7 fe e7 fe e7 fe e7 c1 02 00 01 10 b5 03 20",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x01000A2C",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2c"
+            },
+            {
+              "address": "0x01000A2E",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2e"
+            },
+            {
+              "address": "0x01000A30",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a30"
+            },
+            {
+              "address": "0x01000A32",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a32"
+            },
+            {
+              "address": "0x01000A34",
+              "bytes": "c1 02",
+              "mnemonic": "lsls",
+              "operands": "r1, r0, #0xb"
+            },
+            {
+              "address": "0x01000A36",
+              "bytes": "00 01",
+              "mnemonic": "lsls",
+              "operands": "r0, r0, #4"
+            },
+            {
+              "address": "0x01000A38",
+              "bytes": "10 b5",
+              "mnemonic": "push",
+              "operands": "{r4, lr}"
+            },
+            {
+              "address": "0x01000A3A",
+              "bytes": "03 20",
+              "mnemonic": "movs",
+              "operands": "r0, #3"
+            }
+          ]
+        },
+        {
+          "address": "0x01000A2F",
+          "vector_occurrences": 1,
+          "target_file_offset": "0x000A5E",
+          "first_16_bytes": "fe e7 fe e7 fe e7 c1 02 00 01 10 b5 03 20 02 46",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x01000A2E",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2e"
+            },
+            {
+              "address": "0x01000A30",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a30"
+            },
+            {
+              "address": "0x01000A32",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a32"
+            },
+            {
+              "address": "0x01000A34",
+              "bytes": "c1 02",
+              "mnemonic": "lsls",
+              "operands": "r1, r0, #0xb"
+            },
+            {
+              "address": "0x01000A36",
+              "bytes": "00 01",
+              "mnemonic": "lsls",
+              "operands": "r0, r0, #4"
+            },
+            {
+              "address": "0x01000A38",
+              "bytes": "10 b5",
+              "mnemonic": "push",
+              "operands": "{r4, lr}"
+            },
+            {
+              "address": "0x01000A3A",
+              "bytes": "03 20",
+              "mnemonic": "movs",
+              "operands": "r0, #3"
+            },
+            {
+              "address": "0x01000A3C",
+              "bytes": "02 46",
+              "mnemonic": "mov",
+              "operands": "r2, r0"
+            }
+          ]
+        },
+        {
+          "address": "0x01000A31",
+          "vector_occurrences": 1,
+          "target_file_offset": "0x000A60",
+          "first_16_bytes": "fe e7 fe e7 c1 02 00 01 10 b5 03 20 02 46 27 4b",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x01000A30",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a30"
+            },
+            {
+              "address": "0x01000A32",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a32"
+            },
+            {
+              "address": "0x01000A34",
+              "bytes": "c1 02",
+              "mnemonic": "lsls",
+              "operands": "r1, r0, #0xb"
+            },
+            {
+              "address": "0x01000A36",
+              "bytes": "00 01",
+              "mnemonic": "lsls",
+              "operands": "r0, r0, #4"
+            },
+            {
+              "address": "0x01000A38",
+              "bytes": "10 b5",
+              "mnemonic": "push",
+              "operands": "{r4, lr}"
+            },
+            {
+              "address": "0x01000A3A",
+              "bytes": "03 20",
+              "mnemonic": "movs",
+              "operands": "r0, #3"
+            },
+            {
+              "address": "0x01000A3C",
+              "bytes": "02 46",
+              "mnemonic": "mov",
+              "operands": "r2, r0"
+            },
+            {
+              "address": "0x01000A3E",
+              "bytes": "27 4b",
+              "mnemonic": "ldr",
+              "operands": "r3, [pc, #0x9c]"
+            }
+          ]
+        },
+        {
+          "address": "0x01000A33",
+          "vector_occurrences": 160,
+          "target_file_offset": "0x000A62",
+          "first_16_bytes": "fe e7 c1 02 00 01 10 b5 03 20 02 46 27 4b 19 68",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x01000A32",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a32"
+            },
+            {
+              "address": "0x01000A34",
+              "bytes": "c1 02",
+              "mnemonic": "lsls",
+              "operands": "r1, r0, #0xb"
+            },
+            {
+              "address": "0x01000A36",
+              "bytes": "00 01",
+              "mnemonic": "lsls",
+              "operands": "r0, r0, #4"
+            },
+            {
+              "address": "0x01000A38",
+              "bytes": "10 b5",
+              "mnemonic": "push",
+              "operands": "{r4, lr}"
+            },
+            {
+              "address": "0x01000A3A",
+              "bytes": "03 20",
+              "mnemonic": "movs",
+              "operands": "r0, #3"
+            },
+            {
+              "address": "0x01000A3C",
+              "bytes": "02 46",
+              "mnemonic": "mov",
+              "operands": "r2, r0"
+            },
+            {
+              "address": "0x01000A3E",
+              "bytes": "27 4b",
+              "mnemonic": "ldr",
+              "operands": "r3, [pc, #0x9c]"
+            },
+            {
+              "address": "0x01000A40",
+              "bytes": "19 68",
+              "mnemonic": "ldr",
+              "operands": "r1, [r3]"
+            }
+          ]
+        }
+      ],
+      "first_16_handler_words": [
+        "0x01000A1D",
+        "0x01000A21",
+        "0x01000A23",
+        "0x01000A25",
+        "0x01000A27",
+        "0x01000A29",
+        "0x00000000",
+        "0x00000000",
+        "0x00000000",
+        "0x00000000",
+        "0x01000A2B",
+        "0x01000A2D",
+        "0x00000000",
+        "0x01000A2F",
+        "0x01000A31"
+      ],
+      "vector_15_handler_probe": {
+        "vector_index": 15,
+        "vector_word": "0x01000A31",
+        "target_file_offset": "0x000A60",
+        "target_bytes_16": "fe e7 fe e7 c1 02 00 01 10 b5 03 20 02 46 27 4b",
+        "GT1_literal_words_file_0x71c_0x720": null,
+        "behavior_note": "GT-1 vector 15 targets code at 0x604 that reads a word through literal 0x01010000, increments it, and writes it through literal 0x40005000; this is a code-flow observation, not a known memory-map definition. KATANA's vector 15 points to its default self-branch stub."
+      },
+      "external_interrupt_slot_count": 160,
+      "external_interrupt_slots_all_same_default_handler": true,
+      "external_interrupt_default_handler": "0x01000A33"
+    },
+    "KATANA v4.00": {
+      "path": "firmware/work/reference/esc2-comparators/katana_v400/extracted/katana_sys_v400/KATANARM.BIN",
+      "image_size": 4194304,
+      "image_sha256": "3e17ba95e21ed10a3cb5c60af8da0a375db613cc8409eb33b6d80e4248c9b493",
+      "first_8k_sha256": "e554969f3128d4cff6d2ca15023af634130251e4d5f907ce6884574705a946b4",
+      "candidate_runtime_base": "0x00FFFFD0",
+      "vector_table_file_offset": "0x0030",
+      "vector_table_runtime_address": "0x01000000",
+      "vector_word_count": 176,
+      "vector_table_sha256": "a9e0e37ac025730fe9adce2455acc28b02148499e229f80c559316d757f55b85",
+      "initial_stack_pointer": "0x01011238",
+      "reserved_zero_handler_indices": [
+        7,
+        8,
+        9,
+        10,
+        13
+      ],
+      "nonzero_handler_count": 170,
+      "thumb_handler_count_mapped_inside_first_8k": 170,
+      "invalid_nonzero_handler_entries": [],
+      "unique_mapped_handler_count": 11,
+      "most_common_mapped_handlers": [
+        {
+          "address": "0x01000A33",
+          "occurrences": 160,
+          "target_file_offset": "0x000A62"
+        },
+        {
+          "address": "0x01000A1D",
+          "occurrences": 1,
+          "target_file_offset": "0x000A4C"
+        },
+        {
+          "address": "0x01000A21",
+          "occurrences": 1,
+          "target_file_offset": "0x000A50"
+        },
+        {
+          "address": "0x01000A23",
+          "occurrences": 1,
+          "target_file_offset": "0x000A52"
+        },
+        {
+          "address": "0x01000A25",
+          "occurrences": 1,
+          "target_file_offset": "0x000A54"
+        },
+        {
+          "address": "0x01000A27",
+          "occurrences": 1,
+          "target_file_offset": "0x000A56"
+        },
+        {
+          "address": "0x01000A29",
+          "occurrences": 1,
+          "target_file_offset": "0x000A58"
+        },
+        {
+          "address": "0x01000A2B",
+          "occurrences": 1,
+          "target_file_offset": "0x000A5A"
+        },
+        {
+          "address": "0x01000A2D",
+          "occurrences": 1,
+          "target_file_offset": "0x000A5C"
+        },
+        {
+          "address": "0x01000A2F",
+          "occurrences": 1,
+          "target_file_offset": "0x000A5E"
+        },
+        {
+          "address": "0x01000A31",
+          "occurrences": 1,
+          "target_file_offset": "0x000A60"
+        }
+      ],
+      "unique_handler_target_samples": [
+        {
+          "address": "0x01000A1D",
+          "vector_occurrences": 1,
+          "target_file_offset": "0x000A4C",
+          "first_16_bytes": "05 48 00 47 fe e7 fe e7 fe e7 fe e7 fe e7 fe e7",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x01000A1C",
+              "bytes": "05 48",
+              "mnemonic": "ldr",
+              "operands": "r0, [pc, #0x14]"
+            },
+            {
+              "address": "0x01000A1E",
+              "bytes": "00 47",
+              "mnemonic": "bx",
+              "operands": "r0"
+            },
+            {
+              "address": "0x01000A20",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a20"
+            },
+            {
+              "address": "0x01000A22",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a22"
+            },
+            {
+              "address": "0x01000A24",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a24"
+            },
+            {
+              "address": "0x01000A26",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a26"
+            },
+            {
+              "address": "0x01000A28",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a28"
+            },
+            {
+              "address": "0x01000A2A",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2a"
+            }
+          ]
+        },
+        {
+          "address": "0x01000A21",
+          "vector_occurrences": 1,
+          "target_file_offset": "0x000A50",
+          "first_16_bytes": "fe e7 fe e7 fe e7 fe e7 fe e7 fe e7 fe e7 fe e7",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x01000A20",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a20"
+            },
+            {
+              "address": "0x01000A22",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a22"
+            },
+            {
+              "address": "0x01000A24",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a24"
+            },
+            {
+              "address": "0x01000A26",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a26"
+            },
+            {
+              "address": "0x01000A28",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a28"
+            },
+            {
+              "address": "0x01000A2A",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2a"
+            },
+            {
+              "address": "0x01000A2C",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2c"
+            },
+            {
+              "address": "0x01000A2E",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2e"
+            }
+          ]
+        },
+        {
+          "address": "0x01000A23",
+          "vector_occurrences": 1,
+          "target_file_offset": "0x000A52",
+          "first_16_bytes": "fe e7 fe e7 fe e7 fe e7 fe e7 fe e7 fe e7 fe e7",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x01000A22",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a22"
+            },
+            {
+              "address": "0x01000A24",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a24"
+            },
+            {
+              "address": "0x01000A26",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a26"
+            },
+            {
+              "address": "0x01000A28",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a28"
+            },
+            {
+              "address": "0x01000A2A",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2a"
+            },
+            {
+              "address": "0x01000A2C",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2c"
+            },
+            {
+              "address": "0x01000A2E",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2e"
+            },
+            {
+              "address": "0x01000A30",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a30"
+            }
+          ]
+        },
+        {
+          "address": "0x01000A25",
+          "vector_occurrences": 1,
+          "target_file_offset": "0x000A54",
+          "first_16_bytes": "fe e7 fe e7 fe e7 fe e7 fe e7 fe e7 fe e7 fe e7",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x01000A24",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a24"
+            },
+            {
+              "address": "0x01000A26",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a26"
+            },
+            {
+              "address": "0x01000A28",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a28"
+            },
+            {
+              "address": "0x01000A2A",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2a"
+            },
+            {
+              "address": "0x01000A2C",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2c"
+            },
+            {
+              "address": "0x01000A2E",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2e"
+            },
+            {
+              "address": "0x01000A30",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a30"
+            },
+            {
+              "address": "0x01000A32",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a32"
+            }
+          ]
+        },
+        {
+          "address": "0x01000A27",
+          "vector_occurrences": 1,
+          "target_file_offset": "0x000A56",
+          "first_16_bytes": "fe e7 fe e7 fe e7 fe e7 fe e7 fe e7 fe e7 c1 02",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x01000A26",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a26"
+            },
+            {
+              "address": "0x01000A28",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a28"
+            },
+            {
+              "address": "0x01000A2A",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2a"
+            },
+            {
+              "address": "0x01000A2C",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2c"
+            },
+            {
+              "address": "0x01000A2E",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2e"
+            },
+            {
+              "address": "0x01000A30",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a30"
+            },
+            {
+              "address": "0x01000A32",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a32"
+            },
+            {
+              "address": "0x01000A34",
+              "bytes": "c1 02",
+              "mnemonic": "lsls",
+              "operands": "r1, r0, #0xb"
+            }
+          ]
+        },
+        {
+          "address": "0x01000A29",
+          "vector_occurrences": 1,
+          "target_file_offset": "0x000A58",
+          "first_16_bytes": "fe e7 fe e7 fe e7 fe e7 fe e7 fe e7 c1 02 00 01",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x01000A28",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a28"
+            },
+            {
+              "address": "0x01000A2A",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2a"
+            },
+            {
+              "address": "0x01000A2C",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2c"
+            },
+            {
+              "address": "0x01000A2E",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2e"
+            },
+            {
+              "address": "0x01000A30",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a30"
+            },
+            {
+              "address": "0x01000A32",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a32"
+            },
+            {
+              "address": "0x01000A34",
+              "bytes": "c1 02",
+              "mnemonic": "lsls",
+              "operands": "r1, r0, #0xb"
+            },
+            {
+              "address": "0x01000A36",
+              "bytes": "00 01",
+              "mnemonic": "lsls",
+              "operands": "r0, r0, #4"
+            }
+          ]
+        },
+        {
+          "address": "0x01000A2B",
+          "vector_occurrences": 1,
+          "target_file_offset": "0x000A5A",
+          "first_16_bytes": "fe e7 fe e7 fe e7 fe e7 fe e7 c1 02 00 01 10 b5",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x01000A2A",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2a"
+            },
+            {
+              "address": "0x01000A2C",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2c"
+            },
+            {
+              "address": "0x01000A2E",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2e"
+            },
+            {
+              "address": "0x01000A30",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a30"
+            },
+            {
+              "address": "0x01000A32",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a32"
+            },
+            {
+              "address": "0x01000A34",
+              "bytes": "c1 02",
+              "mnemonic": "lsls",
+              "operands": "r1, r0, #0xb"
+            },
+            {
+              "address": "0x01000A36",
+              "bytes": "00 01",
+              "mnemonic": "lsls",
+              "operands": "r0, r0, #4"
+            },
+            {
+              "address": "0x01000A38",
+              "bytes": "10 b5",
+              "mnemonic": "push",
+              "operands": "{r4, lr}"
+            }
+          ]
+        },
+        {
+          "address": "0x01000A2D",
+          "vector_occurrences": 1,
+          "target_file_offset": "0x000A5C",
+          "first_16_bytes": "fe e7 fe e7 fe e7 fe e7 c1 02 00 01 10 b5 03 20",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x01000A2C",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2c"
+            },
+            {
+              "address": "0x01000A2E",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2e"
+            },
+            {
+              "address": "0x01000A30",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a30"
+            },
+            {
+              "address": "0x01000A32",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a32"
+            },
+            {
+              "address": "0x01000A34",
+              "bytes": "c1 02",
+              "mnemonic": "lsls",
+              "operands": "r1, r0, #0xb"
+            },
+            {
+              "address": "0x01000A36",
+              "bytes": "00 01",
+              "mnemonic": "lsls",
+              "operands": "r0, r0, #4"
+            },
+            {
+              "address": "0x01000A38",
+              "bytes": "10 b5",
+              "mnemonic": "push",
+              "operands": "{r4, lr}"
+            },
+            {
+              "address": "0x01000A3A",
+              "bytes": "03 20",
+              "mnemonic": "movs",
+              "operands": "r0, #3"
+            }
+          ]
+        },
+        {
+          "address": "0x01000A2F",
+          "vector_occurrences": 1,
+          "target_file_offset": "0x000A5E",
+          "first_16_bytes": "fe e7 fe e7 fe e7 c1 02 00 01 10 b5 03 20 02 46",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x01000A2E",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a2e"
+            },
+            {
+              "address": "0x01000A30",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a30"
+            },
+            {
+              "address": "0x01000A32",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a32"
+            },
+            {
+              "address": "0x01000A34",
+              "bytes": "c1 02",
+              "mnemonic": "lsls",
+              "operands": "r1, r0, #0xb"
+            },
+            {
+              "address": "0x01000A36",
+              "bytes": "00 01",
+              "mnemonic": "lsls",
+              "operands": "r0, r0, #4"
+            },
+            {
+              "address": "0x01000A38",
+              "bytes": "10 b5",
+              "mnemonic": "push",
+              "operands": "{r4, lr}"
+            },
+            {
+              "address": "0x01000A3A",
+              "bytes": "03 20",
+              "mnemonic": "movs",
+              "operands": "r0, #3"
+            },
+            {
+              "address": "0x01000A3C",
+              "bytes": "02 46",
+              "mnemonic": "mov",
+              "operands": "r2, r0"
+            }
+          ]
+        },
+        {
+          "address": "0x01000A31",
+          "vector_occurrences": 1,
+          "target_file_offset": "0x000A60",
+          "first_16_bytes": "fe e7 fe e7 c1 02 00 01 10 b5 03 20 02 46 27 4b",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x01000A30",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a30"
+            },
+            {
+              "address": "0x01000A32",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a32"
+            },
+            {
+              "address": "0x01000A34",
+              "bytes": "c1 02",
+              "mnemonic": "lsls",
+              "operands": "r1, r0, #0xb"
+            },
+            {
+              "address": "0x01000A36",
+              "bytes": "00 01",
+              "mnemonic": "lsls",
+              "operands": "r0, r0, #4"
+            },
+            {
+              "address": "0x01000A38",
+              "bytes": "10 b5",
+              "mnemonic": "push",
+              "operands": "{r4, lr}"
+            },
+            {
+              "address": "0x01000A3A",
+              "bytes": "03 20",
+              "mnemonic": "movs",
+              "operands": "r0, #3"
+            },
+            {
+              "address": "0x01000A3C",
+              "bytes": "02 46",
+              "mnemonic": "mov",
+              "operands": "r2, r0"
+            },
+            {
+              "address": "0x01000A3E",
+              "bytes": "27 4b",
+              "mnemonic": "ldr",
+              "operands": "r3, [pc, #0x9c]"
+            }
+          ]
+        },
+        {
+          "address": "0x01000A33",
+          "vector_occurrences": 160,
+          "target_file_offset": "0x000A62",
+          "first_16_bytes": "fe e7 c1 02 00 01 10 b5 03 20 02 46 27 4b 19 68",
+          "thumb_disassembly_bounded_16_bytes": [
+            {
+              "address": "0x01000A32",
+              "bytes": "fe e7",
+              "mnemonic": "b",
+              "operands": "#0x1000a32"
+            },
+            {
+              "address": "0x01000A34",
+              "bytes": "c1 02",
+              "mnemonic": "lsls",
+              "operands": "r1, r0, #0xb"
+            },
+            {
+              "address": "0x01000A36",
+              "bytes": "00 01",
+              "mnemonic": "lsls",
+              "operands": "r0, r0, #4"
+            },
+            {
+              "address": "0x01000A38",
+              "bytes": "10 b5",
+              "mnemonic": "push",
+              "operands": "{r4, lr}"
+            },
+            {
+              "address": "0x01000A3A",
+              "bytes": "03 20",
+              "mnemonic": "movs",
+              "operands": "r0, #3"
+            },
+            {
+              "address": "0x01000A3C",
+              "bytes": "02 46",
+              "mnemonic": "mov",
+              "operands": "r2, r0"
+            },
+            {
+              "address": "0x01000A3E",
+              "bytes": "27 4b",
+              "mnemonic": "ldr",
+              "operands": "r3, [pc, #0x9c]"
+            },
+            {
+              "address": "0x01000A40",
+              "bytes": "19 68",
+              "mnemonic": "ldr",
+              "operands": "r1, [r3]"
+            }
+          ]
+        }
+      ],
+      "first_16_handler_words": [
+        "0x01000A1D",
+        "0x01000A21",
+        "0x01000A23",
+        "0x01000A25",
+        "0x01000A27",
+        "0x01000A29",
+        "0x00000000",
+        "0x00000000",
+        "0x00000000",
+        "0x00000000",
+        "0x01000A2B",
+        "0x01000A2D",
+        "0x00000000",
+        "0x01000A2F",
+        "0x01000A31"
+      ],
+      "vector_15_handler_probe": {
+        "vector_index": 15,
+        "vector_word": "0x01000A31",
+        "target_file_offset": "0x000A60",
+        "target_bytes_16": "fe e7 fe e7 c1 02 00 01 10 b5 03 20 02 46 27 4b",
+        "GT1_literal_words_file_0x71c_0x720": null,
+        "behavior_note": "GT-1 vector 15 targets code at 0x604 that reads a word through literal 0x01010000, increments it, and writes it through literal 0x40005000; this is a code-flow observation, not a known memory-map definition. KATANA's vector 15 points to its default self-branch stub."
+      },
+      "external_interrupt_slot_count": 160,
+      "external_interrupt_slots_all_same_default_handler": true,
+      "external_interrupt_default_handler": "0x01000A33"
+    }
+  },
+  "interpretation": "The vector slot layout (initial stack pointer, core exception/reserved slots, and external interrupt slots), odd Thumb handler pointers, and repeated default interrupt handler strongly support Cortex-M-style bootstrap code. This does not identify the ESC2 silicon, prove the bootstrap executes on MB8AA4181, or classify the later updater/application payload ISA.",
+  "limits": [
+    "The 176-word extent is a bounded structural probe, not a claim that the hardware implements exactly 160 external IRQ lines.",
+    "A vector-table pattern identifies a Cortex-M-like code format in this bootstrap region; it does not establish the identity of the executing processor.",
+    "No inference about GT1Upd or GT1Appli ISA/load map follows from this table.",
+    "No device was accessed and no firmware was modified."
+  ]
+}

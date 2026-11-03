@@ -1,0 +1,225 @@
+{
+  "read_only": true,
+  "mapping": "bootstrap candidate runtime = 0x00FFFFD0 + file offset; Ghidra imports only file offsets 0x0\u20130x1FFF",
+  "target_region_candidate": "0x02003000",
+  "images": {
+    "v105": {
+      "path": "firmware/extracted/v105/gt1_sys_v105/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "b1bde0410795230b4a89ee3dfbbd357700bba7020624c0ff832ae3d8539d8bb4",
+      "references": [
+        {
+          "file_offset": "0x74c",
+          "runtime_literal_address": "0x0100071c",
+          "word": "0x02003000",
+          "following_accessed_slot_offset": "0x14",
+          "surrounding_16_bytes_sha256": "57356a5c5fdfd49eb3be12e43e2ab6bbb2e31cf57a6263b9d6649e4409d81ca0"
+        },
+        {
+          "file_offset": "0x8ec",
+          "runtime_literal_address": "0x010008bc",
+          "word": "0x02003000",
+          "following_accessed_slot_offset": "0xc",
+          "surrounding_16_bytes_sha256": "83acc915b312cc6c6480f7e161361e724905fda5eab307942be7ffd2ab3c5b0c"
+        },
+        {
+          "file_offset": "0xb04",
+          "runtime_literal_address": "0x01000ad4",
+          "word": "0x02003000",
+          "following_accessed_slot_offset": "0x18",
+          "surrounding_16_bytes_sha256": "5be5ed41d449b583db768afff5fe9455bf75db97be999bc5e468e6e5e5ee2c9f"
+        },
+        {
+          "file_offset": "0xbb8",
+          "runtime_literal_address": "0x01000b88",
+          "word": "0x02003000",
+          "following_accessed_slot_offset": "0x58",
+          "surrounding_16_bytes_sha256": "a9aeca8a206975b9de912f50be42d590a79d53be0027f33057a7ca1d34b53f3c"
+        }
+      ]
+    },
+    "v107": {
+      "path": "firmware/extracted/v107/gt1_sys_v107/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "6a3110cd42c4b129494a93bc88d4f218e2e0b9377868ca051018b28696d6c22f",
+      "references": [
+        {
+          "file_offset": "0x74c",
+          "runtime_literal_address": "0x0100071c",
+          "word": "0x02003000",
+          "following_accessed_slot_offset": "0x14",
+          "surrounding_16_bytes_sha256": "57356a5c5fdfd49eb3be12e43e2ab6bbb2e31cf57a6263b9d6649e4409d81ca0"
+        },
+        {
+          "file_offset": "0x8ec",
+          "runtime_literal_address": "0x010008bc",
+          "word": "0x02003000",
+          "following_accessed_slot_offset": "0xc",
+          "surrounding_16_bytes_sha256": "83acc915b312cc6c6480f7e161361e724905fda5eab307942be7ffd2ab3c5b0c"
+        },
+        {
+          "file_offset": "0xb04",
+          "runtime_literal_address": "0x01000ad4",
+          "word": "0x02003000",
+          "following_accessed_slot_offset": "0x18",
+          "surrounding_16_bytes_sha256": "5be5ed41d449b583db768afff5fe9455bf75db97be999bc5e468e6e5e5ee2c9f"
+        },
+        {
+          "file_offset": "0xbb8",
+          "runtime_literal_address": "0x01000b88",
+          "word": "0x02003000",
+          "following_accessed_slot_offset": "0x58",
+          "surrounding_16_bytes_sha256": "a9aeca8a206975b9de912f50be42d590a79d53be0027f33057a7ca1d34b53f3c"
+        }
+      ]
+    },
+    "v108": {
+      "path": "firmware/extracted/v108/gt1_sys_v108/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "7219679a87e985316264544423c9940ccbcbadeb2df0b2f13711ae57194cb612",
+      "references": [
+        {
+          "file_offset": "0x74c",
+          "runtime_literal_address": "0x0100071c",
+          "word": "0x02003000",
+          "following_accessed_slot_offset": "0x14",
+          "surrounding_16_bytes_sha256": "57356a5c5fdfd49eb3be12e43e2ab6bbb2e31cf57a6263b9d6649e4409d81ca0"
+        },
+        {
+          "file_offset": "0x8ec",
+          "runtime_literal_address": "0x010008bc",
+          "word": "0x02003000",
+          "following_accessed_slot_offset": "0xc",
+          "surrounding_16_bytes_sha256": "83acc915b312cc6c6480f7e161361e724905fda5eab307942be7ffd2ab3c5b0c"
+        },
+        {
+          "file_offset": "0xb04",
+          "runtime_literal_address": "0x01000ad4",
+          "word": "0x02003000",
+          "following_accessed_slot_offset": "0x18",
+          "surrounding_16_bytes_sha256": "5be5ed41d449b583db768afff5fe9455bf75db97be999bc5e468e6e5e5ee2c9f"
+        },
+        {
+          "file_offset": "0xbb8",
+          "runtime_literal_address": "0x01000b88",
+          "word": "0x02003000",
+          "following_accessed_slot_offset": "0x58",
+          "surrounding_16_bytes_sha256": "a9aeca8a206975b9de912f50be42d590a79d53be0027f33057a7ca1d34b53f3c"
+        }
+      ]
+    },
+    "v109": {
+      "path": "firmware/extracted/v109/gt1_sys_v109/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "412ebf5ffdc48554454c27df47f61428f046ea0a7d93f5c77b7f0302861abdbf",
+      "references": [
+        {
+          "file_offset": "0x74c",
+          "runtime_literal_address": "0x0100071c",
+          "word": "0x02003000",
+          "following_accessed_slot_offset": "0x14",
+          "surrounding_16_bytes_sha256": "57356a5c5fdfd49eb3be12e43e2ab6bbb2e31cf57a6263b9d6649e4409d81ca0"
+        },
+        {
+          "file_offset": "0x8ec",
+          "runtime_literal_address": "0x010008bc",
+          "word": "0x02003000",
+          "following_accessed_slot_offset": "0xc",
+          "surrounding_16_bytes_sha256": "83acc915b312cc6c6480f7e161361e724905fda5eab307942be7ffd2ab3c5b0c"
+        },
+        {
+          "file_offset": "0xb04",
+          "runtime_literal_address": "0x01000ad4",
+          "word": "0x02003000",
+          "following_accessed_slot_offset": "0x18",
+          "surrounding_16_bytes_sha256": "5be5ed41d449b583db768afff5fe9455bf75db97be999bc5e468e6e5e5ee2c9f"
+        },
+        {
+          "file_offset": "0xbb8",
+          "runtime_literal_address": "0x01000b88",
+          "word": "0x02003000",
+          "following_accessed_slot_offset": "0x58",
+          "surrounding_16_bytes_sha256": "a9aeca8a206975b9de912f50be42d590a79d53be0027f33057a7ca1d34b53f3c"
+        }
+      ]
+    }
+  },
+  "ghidra": {
+    "tool": "Ghidra 12.2, ARM:LE:32:Cortex, Thumb context",
+    "report": "firmware/work/ghidra-esc91-02003-refs.txt",
+    "report_sha256": "04af7ea2707c88530f0f6fcd4e191eb4fbc39f14a63058ce5282c1942d9bc0b8",
+    "reference_probe": {
+      "0x74c": {
+        "literal_runtime_address": "0x0100071c",
+        "instruction_runtime_address": "0x010006e2",
+        "instruction": "LDR r0, [0x0100071c]",
+        "following_indirect_call_slot_offset": "0x14"
+      },
+      "0x8ec": {
+        "literal_runtime_address": "0x010008bc",
+        "instruction_runtime_address": "0x0100086c",
+        "instruction": "LDR r1, [0x010008bc]",
+        "following_indirect_call_slot_offset": "0xc"
+      },
+      "0xb04": {
+        "literal_runtime_address": "0x01000ad4",
+        "instruction_runtime_address": "0x01000a64",
+        "instruction": "LDR r1, [0x01000ad4]",
+        "following_indirect_call_slot_offset": "0x18"
+      },
+      "0xbb8": {
+        "literal_runtime_address": "0x01000b88",
+        "instruction_runtime_address": "0x01000b60",
+        "instruction": "LDR r1, [0x01000b88]",
+        "following_indirect_call_slot_offset": "0x58"
+      }
+    },
+    "loader_call_edges": [
+      {
+        "from": "0x010009F8",
+        "to": "0x010006D0",
+        "evidence": "Ghidra call xref"
+      },
+      {
+        "from": "0x010009F4",
+        "to": "0x01000B5E",
+        "evidence": "Ghidra call xref"
+      },
+      {
+        "from": "0x01000B66",
+        "to": "0x01000888",
+        "evidence": "decoded BL in Ghidra instruction context"
+      },
+      {
+        "from": "0x0100088A",
+        "to": "0x01000862",
+        "evidence": "Ghidra call xref"
+      }
+    ],
+    "loader_entry_transfer": {
+      "from": "0x010002CA",
+      "to": "0x010009F0",
+      "evidence": "bootstrap handoff analysis resolves the current literal transfer to the loader entry",
+      "source": "firmware/work/bootstrap-handoff-evidence.json and firmware/work/bootstrap-execution-map.md"
+    },
+    "reproduce_command": "GT1_ESC91_REF_REPORT=$PWD/firmware/work/ghidra-esc91-02003-refs.txt tools/ghidra/ghidra_12.2_PUBLIC/support/analyzeHeadless firmware/work/ghidra-projects GT1_ESC91_02003_Refs -import firmware/extracted/v109/gt1_sys_v109/GT1ROM.BIN -overwrite -loader BinaryLoader -loader-baseAddr FFFFD0 -loader-fileOffset 0 -loader-length 8192 -processor ARM:LE:32:Cortex -noanalysis -scriptPath tools/ghidra_scripts -postScript GT1Esc91ReferenceProbe.java"
+  },
+  "same_family_comparator": {
+    "model": "BOSS GT-1B v1.04",
+    "image": "firmware/work/reference/gt1b-comparator/gt1b_sys_v104/GT1BROM.BIN",
+    "image_sha256": "9b6d47a2c43b12856760d135a8582acb9424e17faa66474ce3272d021a5d8646",
+    "identical_boot_code_span": [
+      "0x700",
+      "0xC00"
+    ],
+    "ghidra_report": "firmware/work/ghidra-gt1b-esc91-02003-refs.txt",
+    "ghidra_report_sha256": "7a09a1bf82a0d2747e7f40f9b189bf25244fc440e18303f34cb13f300bc25169",
+    "finding": "The four 0x02003000 literal pools, instruction xrefs, accessed slot offsets, and loader call references match the GT-1 v1.09 bounded probe."
+  },
+  "interpretation": "The loader call path reaches bootstrap code that reads function pointers at offsets +0x0C, +0x14, +0x18, and +0x58 from base 0x02003000, then calls them indirectly. The same +0x58 slot is the address reached by the app's 0x020030B4-0x5C access.",
+  "limits": [
+    "Instruction references and indirect call shapes are verified; the contents and physical memory type of 0x02003000 remain unknown.",
+    "The loader call edges are verified under the candidate bootstrap mapping; the physical path that supplies the table values before loader execution is unknown.",
+    "The apparent shared service-table/API role is a hypothesis, not a documented processor ABI."
+  ]
+}

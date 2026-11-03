@@ -1,0 +1,222 @@
+program=v108-GT1Appli-seg0.bin
+language=ARM:LE:32:v7
+candidate_mapping=derived copy segment at 0x01000300; physical backing unverified
+context=Thumb from traced entry; exact MB8AA4181 ISA unverified
+seeds=01000300 0100465c 010010ae 
+instructions_from_01000300:
+01000300  push  {r4,lr}
+01000302  bl  0x0100299e
+01000306  movs  r1, #0x1
+01000308  cbz  r0, 0x01000310
+0100030a  mvn  r0, #0x18
+0100030e  pop  {r4,pc}
+01000310  ldr  r0, [0x01000318]
+01000312  strb  r1, [r0,#0x1]
+01000314  movs  r0, #0x0
+01000316  pop  {r4,pc}
+010010ae  push  {r4,r5,r6,r7,r8,lr}
+010010b2  bl  0x010083de
+010010b6  bl  0x010083d4
+010010ba  cbz  r0, 0x010010c0
+010010bc  bl  0x010029d8
+010010c0  ldr  r4, [0x01001108]
+010010c2  mov.w  r8, #0x0
+010010c6  movs  r7, #0x1
+010010c8  strb.w  r8, [r4,#0x0]
+010010cc  strb  r7, [r4,#0x1]
+010010ce  strb.w  r8, [r4,#0x2]
+010010d2  bl  0x010020a4
+010010d6  movs  r5, #0x0
+010010d8  ldr  r6, [0x0100110c]
+010010da  b  0x010010e0
+010010dc  blx  r0
+010010de  adds  r5, r5, #0x1
+010010e0  ldr  r0, [r6,#0x8]
+010010e2  ldr.w  r0, [r0,r5,lsl #0x2]
+010010e6  cmp  r0, #0x0
+010010e8  bne  0x010010dc
+010010ea  strb  r7, [r4,#0x0]
+010010ec  bl  0x010083e8
+010010f0  strb.w  r8, [r4,#0x1]
+010010f4  bl  0x0100468c
+010010f8  bl  0x010029d8
+010010fc  movs  r0, #0x0
+010010fe  pop.w  {r4,r5,r6,r7,r8,pc}
+010020a4  ldr  r0, [0x010020d4]
+010020a6  push  {r4,lr}
+010020a8  movs  r1, #0x0
+010020aa  str  r1, [r0,#0x4]
+010020ac  ldr  r2, [0x010020d8]
+010020ae  str  r1, [r0,#0x0]
+010020b0  str  r1, [r0,#0x8]
+010020b2  ldrd  r3, r4, [r2,#0x0]
+010020b6  udiv  r3, r3, r4
+010020ba  str  r3, [r0,#0xc]
+010020bc  ldrd  r4, r2, [r2,#0x0]
+010020c0  mls  r2, r2, r3, r4
+010020c4  str  r2, [r0,#0x10]
+010020c6  adds  r0, #0x14
+010020c8  str  r0, [r0,#0x0]
+010020ca  str  r0, [r0,#0x4]
+010020cc  strb  r1, [r0,#0x8]
+010020ce  strb  r1, [r0,#0x9]
+010020d0  strh  r1, [r0,#0xa]
+010020d2  pop  {r4,pc}
+0100299e  b.w  0x01003a70
+010029d8  bl  0x010045d2
+010029dc  bl  0x0100841a
+010029e0  b  0x010029e0
+01003a70  ldr  r0, [0x01003b88]
+01003a72  subs  r0, #0x8
+01003a74  ldr  r0, [r0,#0x0]
+01003a76  uxtb  r0, r0
+01003a78  bx  lr
+010045d2  mov.w  r0, #0x80
+010045d6  msr  basepri, r0
+010045da  bx  lr
+0100465c  mov.w  r0, #0x1000000
+01004660  ldr  r1, [0x01004670]
+01004662  str  r0, [r1,#0x0]
+01004664  ldr  r0, [0x01004674]
+01004666  ldr.w  sp, [r0,#0x4]
+0100466a  ldr  r0, [0x01004678]
+0100466c  bx  r0
+0100468c  ldr  r0, [0x010047ec]
+0100468e  ldr  r1, [0x010047f0]
+01004690  str  r1, [r0,#0x0]
+01004692  push  {r0,lr}
+01004694  ldr  r2, [0x010047f4]
+01004696  blx  r2
+01004698  pop.w  {r0,lr}
+0100469c  svc  0x0
+0100469e  bx  lr
+010083d4  movw  r12, #0x205
+010083d8  movt  r12, #0x6000
+010083dc  bx  r12
+010083de  movw  r12, #0x28d
+010083e2  movt  r12, #0x6000
+010083e6  bx  r12
+010083e8  movw  r12, #0x291
+010083ec  movt  r12, #0x6000
+010083f0  bx  r12
+0100841a  movw  r12, #0x2ad
+0100841e  movt  r12, #0x6000
+01008422  bx  r12
+instructions_from_0100465c:
+0100465c  mov.w  r0, #0x1000000
+01004660  ldr  r1, [0x01004670]
+01004662  str  r0, [r1,#0x0]
+01004664  ldr  r0, [0x01004674]
+01004666  ldr.w  sp, [r0,#0x4]
+0100466a  ldr  r0, [0x01004678]
+0100466c  bx  r0
+0100468c  ldr  r0, [0x010047ec]
+0100468e  ldr  r1, [0x010047f0]
+01004690  str  r1, [r0,#0x0]
+01004692  push  {r0,lr}
+01004694  ldr  r2, [0x010047f4]
+01004696  blx  r2
+01004698  pop.w  {r0,lr}
+0100469c  svc  0x0
+0100469e  bx  lr
+010083d4  movw  r12, #0x205
+010083d8  movt  r12, #0x6000
+010083dc  bx  r12
+010083de  movw  r12, #0x28d
+010083e2  movt  r12, #0x6000
+010083e6  bx  r12
+010083e8  movw  r12, #0x291
+010083ec  movt  r12, #0x6000
+010083f0  bx  r12
+0100841a  movw  r12, #0x2ad
+0100841e  movt  r12, #0x6000
+01008422  bx  r12
+instructions_from_010010ae:
+010010ae  push  {r4,r5,r6,r7,r8,lr}
+010010b2  bl  0x010083de
+010010b6  bl  0x010083d4
+010010ba  cbz  r0, 0x010010c0
+010010bc  bl  0x010029d8
+010010c0  ldr  r4, [0x01001108]
+010010c2  mov.w  r8, #0x0
+010010c6  movs  r7, #0x1
+010010c8  strb.w  r8, [r4,#0x0]
+010010cc  strb  r7, [r4,#0x1]
+010010ce  strb.w  r8, [r4,#0x2]
+010010d2  bl  0x010020a4
+010010d6  movs  r5, #0x0
+010010d8  ldr  r6, [0x0100110c]
+010010da  b  0x010010e0
+010010dc  blx  r0
+010010de  adds  r5, r5, #0x1
+010010e0  ldr  r0, [r6,#0x8]
+010010e2  ldr.w  r0, [r0,r5,lsl #0x2]
+010010e6  cmp  r0, #0x0
+010010e8  bne  0x010010dc
+010010ea  strb  r7, [r4,#0x0]
+010010ec  bl  0x010083e8
+010010f0  strb.w  r8, [r4,#0x1]
+010010f4  bl  0x0100468c
+010010f8  bl  0x010029d8
+010010fc  movs  r0, #0x0
+010010fe  pop.w  {r4,r5,r6,r7,r8,pc}
+010020a4  ldr  r0, [0x010020d4]
+010020a6  push  {r4,lr}
+010020a8  movs  r1, #0x0
+010020aa  str  r1, [r0,#0x4]
+010020ac  ldr  r2, [0x010020d8]
+010020ae  str  r1, [r0,#0x0]
+010020b0  str  r1, [r0,#0x8]
+010020b2  ldrd  r3, r4, [r2,#0x0]
+010020b6  udiv  r3, r3, r4
+010020ba  str  r3, [r0,#0xc]
+010020bc  ldrd  r4, r2, [r2,#0x0]
+010020c0  mls  r2, r2, r3, r4
+010020c4  str  r2, [r0,#0x10]
+010020c6  adds  r0, #0x14
+010020c8  str  r0, [r0,#0x0]
+010020ca  str  r0, [r0,#0x4]
+010020cc  strb  r1, [r0,#0x8]
+010020ce  strb  r1, [r0,#0x9]
+010020d0  strh  r1, [r0,#0xa]
+010020d2  pop  {r4,pc}
+0100299e  b.w  0x01003a70
+010029d8  bl  0x010045d2
+010029dc  bl  0x0100841a
+010029e0  b  0x010029e0
+01003a70  ldr  r0, [0x01003b88]
+01003a72  subs  r0, #0x8
+01003a74  ldr  r0, [r0,#0x0]
+01003a76  uxtb  r0, r0
+01003a78  bx  lr
+010045d2  mov.w  r0, #0x80
+010045d6  msr  basepri, r0
+010045da  bx  lr
+0100465c  mov.w  r0, #0x1000000
+01004660  ldr  r1, [0x01004670]
+01004662  str  r0, [r1,#0x0]
+01004664  ldr  r0, [0x01004674]
+01004666  ldr.w  sp, [r0,#0x4]
+0100466a  ldr  r0, [0x01004678]
+0100466c  bx  r0
+0100468c  ldr  r0, [0x010047ec]
+0100468e  ldr  r1, [0x010047f0]
+01004690  str  r1, [r0,#0x0]
+01004692  push  {r0,lr}
+01004694  ldr  r2, [0x010047f4]
+01004696  blx  r2
+01004698  pop.w  {r0,lr}
+0100469c  svc  0x0
+0100469e  bx  lr
+010083d4  movw  r12, #0x205
+010083d8  movt  r12, #0x6000
+010083dc  bx  r12
+010083de  movw  r12, #0x28d
+010083e2  movt  r12, #0x6000
+010083e6  bx  r12
+010083e8  movw  r12, #0x291
+010083ec  movt  r12, #0x6000
+010083f0  bx  r12
+0100841a  movw  r12, #0x2ad
+0100841e  movt  r12, #0x6000
+01008422  bx  r12

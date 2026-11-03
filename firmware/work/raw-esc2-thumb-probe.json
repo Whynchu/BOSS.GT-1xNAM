@@ -1,0 +1,441 @@
+{
+  "read_only": true,
+  "question": "Does direct ARM Thumb decoding of the section payload prefix produce a coherent instruction stream?",
+  "image": "firmware/extracted/v109/gt1_sys_v109/GT1ROM.BIN",
+  "image_sha256": "412ebf5ffdc48554454c27df47f61428f046ea0a7d93f5c77b7f0302861abdbf",
+  "capstone_version": "5.0.7",
+  "window_size": 256,
+  "section_starts": {
+    "updater": {
+      "file_offset": "0x002040",
+      "prefix_hex": "ff 4f f0 08 00 80 f3 11 88 ff 36 48 37 49 37 4a 00 f0 77 37 f8 37 f7 f0 00 f0 42 ff f2 55 38 fb f0 2e ff f0 38 03 00 39 11 02 ae 0c 01 25 f8 38 13 02 30 23 02 39 2a fb f0 1c 23 00 39 03 00 27",
+      "probes": [
+        {
+          "alignment_shift": 0,
+          "decoder_mode": "thumb",
+          "bytes_offered": 256,
+          "decoded_bytes_before_stop": 26,
+          "instruction_count": 10,
+          "coverage_fraction": 0.101562,
+          "instructions": [
+            {
+              "file_offset": "0x002040",
+              "bytes": "ff 4f",
+              "mnemonic": "ldr",
+              "operands": "r7, [pc, #0x3fc]"
+            },
+            {
+              "file_offset": "0x002042",
+              "bytes": "f0 08",
+              "mnemonic": "lsrs",
+              "operands": "r0, r6, #3"
+            },
+            {
+              "file_offset": "0x002044",
+              "bytes": "00 80",
+              "mnemonic": "strh",
+              "operands": "r0, [r0]"
+            },
+            {
+              "file_offset": "0x002046",
+              "bytes": "f3 11",
+              "mnemonic": "asrs",
+              "operands": "r3, r6, #7"
+            },
+            {
+              "file_offset": "0x002048",
+              "bytes": "88 ff 36 48",
+              "mnemonic": "vqshrun.s16",
+              "operands": "d4, q11, #8"
+            },
+            {
+              "file_offset": "0x00204C",
+              "bytes": "37 49",
+              "mnemonic": "ldr",
+              "operands": "r1, [pc, #0xdc]"
+            },
+            {
+              "file_offset": "0x00204E",
+              "bytes": "37 4a",
+              "mnemonic": "ldr",
+              "operands": "r2, [pc, #0xdc]"
+            },
+            {
+              "file_offset": "0x002050",
+              "bytes": "00 f0 77 37",
+              "mnemonic": "and",
+              "operands": "r7, r0, #0x77777777"
+            },
+            {
+              "file_offset": "0x002054",
+              "bytes": "f8 37",
+              "mnemonic": "adds",
+              "operands": "r7, #0xf8"
+            },
+            {
+              "file_offset": "0x002056",
+              "bytes": "f7 f0 00 f0",
+              "mnemonic": "bl",
+              "operands": "#0x4f905a"
+            }
+          ]
+        },
+        {
+          "alignment_shift": 0,
+          "decoder_mode": "thumb_mclass",
+          "bytes_offered": 256,
+          "decoded_bytes_before_stop": 26,
+          "instruction_count": 10,
+          "coverage_fraction": 0.101562,
+          "instructions": [
+            {
+              "file_offset": "0x002040",
+              "bytes": "ff 4f",
+              "mnemonic": "ldr",
+              "operands": "r7, [pc, #0x3fc]"
+            },
+            {
+              "file_offset": "0x002042",
+              "bytes": "f0 08",
+              "mnemonic": "lsrs",
+              "operands": "r0, r6, #3"
+            },
+            {
+              "file_offset": "0x002044",
+              "bytes": "00 80",
+              "mnemonic": "strh",
+              "operands": "r0, [r0]"
+            },
+            {
+              "file_offset": "0x002046",
+              "bytes": "f3 11",
+              "mnemonic": "asrs",
+              "operands": "r3, r6, #7"
+            },
+            {
+              "file_offset": "0x002048",
+              "bytes": "88 ff 36 48",
+              "mnemonic": "vqshrun.s16",
+              "operands": "d4, q11, #8"
+            },
+            {
+              "file_offset": "0x00204C",
+              "bytes": "37 49",
+              "mnemonic": "ldr",
+              "operands": "r1, [pc, #0xdc]"
+            },
+            {
+              "file_offset": "0x00204E",
+              "bytes": "37 4a",
+              "mnemonic": "ldr",
+              "operands": "r2, [pc, #0xdc]"
+            },
+            {
+              "file_offset": "0x002050",
+              "bytes": "00 f0 77 37",
+              "mnemonic": "and",
+              "operands": "r7, r0, #0x77777777"
+            },
+            {
+              "file_offset": "0x002054",
+              "bytes": "f8 37",
+              "mnemonic": "adds",
+              "operands": "r7, #0xf8"
+            },
+            {
+              "file_offset": "0x002056",
+              "bytes": "f7 f0 00 f0",
+              "mnemonic": "bl",
+              "operands": "#0x4f905a"
+            }
+          ]
+        },
+        {
+          "alignment_shift": 1,
+          "decoder_mode": "thumb",
+          "bytes_offered": 255,
+          "decoded_bytes_before_stop": 4,
+          "instruction_count": 1,
+          "coverage_fraction": 0.015686,
+          "instructions": [
+            {
+              "file_offset": "0x002041",
+              "bytes": "4f f0 08 00",
+              "mnemonic": "mov.w",
+              "operands": "r0, #8"
+            }
+          ]
+        },
+        {
+          "alignment_shift": 1,
+          "decoder_mode": "thumb_mclass",
+          "bytes_offered": 255,
+          "decoded_bytes_before_stop": 18,
+          "instruction_count": 7,
+          "coverage_fraction": 0.070588,
+          "instructions": [
+            {
+              "file_offset": "0x002041",
+              "bytes": "4f f0 08 00",
+              "mnemonic": "mov.w",
+              "operands": "r0, #8"
+            },
+            {
+              "file_offset": "0x002045",
+              "bytes": "80 f3 11 88",
+              "mnemonic": "msr",
+              "operands": "basepri, r0"
+            },
+            {
+              "file_offset": "0x002049",
+              "bytes": "ff 36",
+              "mnemonic": "adds",
+              "operands": "r6, #0xff"
+            },
+            {
+              "file_offset": "0x00204B",
+              "bytes": "48 37",
+              "mnemonic": "adds",
+              "operands": "r7, #0x48"
+            },
+            {
+              "file_offset": "0x00204D",
+              "bytes": "49 37",
+              "mnemonic": "adds",
+              "operands": "r7, #0x49"
+            },
+            {
+              "file_offset": "0x00204F",
+              "bytes": "4a 00",
+              "mnemonic": "lsls",
+              "operands": "r2, r1, #1"
+            },
+            {
+              "file_offset": "0x002051",
+              "bytes": "f0 77",
+              "mnemonic": "strb",
+              "operands": "r0, [r6, #0x1f]"
+            }
+          ]
+        }
+      ]
+    },
+    "application": {
+      "file_offset": "0x040040",
+      "prefix_hex": "ff 4f f0 08 00 80 f3 11 88 ff 36 48 37 49 37 4a 00 f0 77 37 f8 37 f7 f0 00 f0 42 ff f2 55 38 fb f0 2e ff f0 38 03 00 39 11 02 ae 0c 01 25 f8 38 13 02 30 23 02 39 2a fb f0 1c 23 00 39 03 00 27",
+      "probes": [
+        {
+          "alignment_shift": 0,
+          "decoder_mode": "thumb",
+          "bytes_offered": 256,
+          "decoded_bytes_before_stop": 26,
+          "instruction_count": 10,
+          "coverage_fraction": 0.101562,
+          "instructions": [
+            {
+              "file_offset": "0x040040",
+              "bytes": "ff 4f",
+              "mnemonic": "ldr",
+              "operands": "r7, [pc, #0x3fc]"
+            },
+            {
+              "file_offset": "0x040042",
+              "bytes": "f0 08",
+              "mnemonic": "lsrs",
+              "operands": "r0, r6, #3"
+            },
+            {
+              "file_offset": "0x040044",
+              "bytes": "00 80",
+              "mnemonic": "strh",
+              "operands": "r0, [r0]"
+            },
+            {
+              "file_offset": "0x040046",
+              "bytes": "f3 11",
+              "mnemonic": "asrs",
+              "operands": "r3, r6, #7"
+            },
+            {
+              "file_offset": "0x040048",
+              "bytes": "88 ff 36 48",
+              "mnemonic": "vqshrun.s16",
+              "operands": "d4, q11, #8"
+            },
+            {
+              "file_offset": "0x04004C",
+              "bytes": "37 49",
+              "mnemonic": "ldr",
+              "operands": "r1, [pc, #0xdc]"
+            },
+            {
+              "file_offset": "0x04004E",
+              "bytes": "37 4a",
+              "mnemonic": "ldr",
+              "operands": "r2, [pc, #0xdc]"
+            },
+            {
+              "file_offset": "0x040050",
+              "bytes": "00 f0 77 37",
+              "mnemonic": "and",
+              "operands": "r7, r0, #0x77777777"
+            },
+            {
+              "file_offset": "0x040054",
+              "bytes": "f8 37",
+              "mnemonic": "adds",
+              "operands": "r7, #0xf8"
+            },
+            {
+              "file_offset": "0x040056",
+              "bytes": "f7 f0 00 f0",
+              "mnemonic": "bl",
+              "operands": "#0x53705a"
+            }
+          ]
+        },
+        {
+          "alignment_shift": 0,
+          "decoder_mode": "thumb_mclass",
+          "bytes_offered": 256,
+          "decoded_bytes_before_stop": 26,
+          "instruction_count": 10,
+          "coverage_fraction": 0.101562,
+          "instructions": [
+            {
+              "file_offset": "0x040040",
+              "bytes": "ff 4f",
+              "mnemonic": "ldr",
+              "operands": "r7, [pc, #0x3fc]"
+            },
+            {
+              "file_offset": "0x040042",
+              "bytes": "f0 08",
+              "mnemonic": "lsrs",
+              "operands": "r0, r6, #3"
+            },
+            {
+              "file_offset": "0x040044",
+              "bytes": "00 80",
+              "mnemonic": "strh",
+              "operands": "r0, [r0]"
+            },
+            {
+              "file_offset": "0x040046",
+              "bytes": "f3 11",
+              "mnemonic": "asrs",
+              "operands": "r3, r6, #7"
+            },
+            {
+              "file_offset": "0x040048",
+              "bytes": "88 ff 36 48",
+              "mnemonic": "vqshrun.s16",
+              "operands": "d4, q11, #8"
+            },
+            {
+              "file_offset": "0x04004C",
+              "bytes": "37 49",
+              "mnemonic": "ldr",
+              "operands": "r1, [pc, #0xdc]"
+            },
+            {
+              "file_offset": "0x04004E",
+              "bytes": "37 4a",
+              "mnemonic": "ldr",
+              "operands": "r2, [pc, #0xdc]"
+            },
+            {
+              "file_offset": "0x040050",
+              "bytes": "00 f0 77 37",
+              "mnemonic": "and",
+              "operands": "r7, r0, #0x77777777"
+            },
+            {
+              "file_offset": "0x040054",
+              "bytes": "f8 37",
+              "mnemonic": "adds",
+              "operands": "r7, #0xf8"
+            },
+            {
+              "file_offset": "0x040056",
+              "bytes": "f7 f0 00 f0",
+              "mnemonic": "bl",
+              "operands": "#0x53705a"
+            }
+          ]
+        },
+        {
+          "alignment_shift": 1,
+          "decoder_mode": "thumb",
+          "bytes_offered": 255,
+          "decoded_bytes_before_stop": 4,
+          "instruction_count": 1,
+          "coverage_fraction": 0.015686,
+          "instructions": [
+            {
+              "file_offset": "0x040041",
+              "bytes": "4f f0 08 00",
+              "mnemonic": "mov.w",
+              "operands": "r0, #8"
+            }
+          ]
+        },
+        {
+          "alignment_shift": 1,
+          "decoder_mode": "thumb_mclass",
+          "bytes_offered": 255,
+          "decoded_bytes_before_stop": 18,
+          "instruction_count": 7,
+          "coverage_fraction": 0.070588,
+          "instructions": [
+            {
+              "file_offset": "0x040041",
+              "bytes": "4f f0 08 00",
+              "mnemonic": "mov.w",
+              "operands": "r0, #8"
+            },
+            {
+              "file_offset": "0x040045",
+              "bytes": "80 f3 11 88",
+              "mnemonic": "msr",
+              "operands": "basepri, r0"
+            },
+            {
+              "file_offset": "0x040049",
+              "bytes": "ff 36",
+              "mnemonic": "adds",
+              "operands": "r6, #0xff"
+            },
+            {
+              "file_offset": "0x04004B",
+              "bytes": "48 37",
+              "mnemonic": "adds",
+              "operands": "r7, #0x48"
+            },
+            {
+              "file_offset": "0x04004D",
+              "bytes": "49 37",
+              "mnemonic": "adds",
+              "operands": "r7, #0x49"
+            },
+            {
+              "file_offset": "0x04004F",
+              "bytes": "4a 00",
+              "mnemonic": "lsls",
+              "operands": "r2, r1, #1"
+            },
+            {
+              "file_offset": "0x040051",
+              "bytes": "f0 77",
+              "mnemonic": "strb",
+              "operands": "r0, [r6, #0x1f]"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "interpretation_limit": "A few valid-looking Thumb instructions do not establish the ISA. These starts are identical section data, the payload transform and runtime mapping are unknown, and Capstone stops at the first undecodable bytes.",
+  "common_prefix_length": 194,
+  "common_prefix_sha256": "9a86daad33fe1795cdf8da940372481d19f52942ddf785109c17d3b5163c5d48"
+}

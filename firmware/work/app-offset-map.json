@@ -1,0 +1,17 @@
+{
+  "common_prefix_start": 262144,
+  "common_prefix_end": 262160,
+  "common_prefix_length": 16,
+  "same_offset_runs_ge_64": [
+    {
+      "start": 262206,
+      "end_exclusive": 262402,
+      "length": 196
+    },
+    {
+      "start": 1440570,
+      "end_exclusive": 1441792,
+      "length": 1222
+    }
+  ]
+}

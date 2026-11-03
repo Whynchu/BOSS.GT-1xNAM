@@ -1,0 +1,55 @@
+{
+  "classification": "same-file-offset byte comparison; release-note context only",
+  "source": {
+    "boss_release_history": "https://www.boss.info/us/support/by_product/gt-1/updates_drivers/076a30a8-a319-4891-94e4-ef0bb08451e5/",
+    "v1.09_statement": "version number updated for management-related circumstances; product specifications unaffected"
+  },
+  "images": {
+    "1.08": {
+      "path": "firmware/extracted/v108/gt1_sys_v108/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "7219679a87e985316264544423c9940ccbcbadeb2df0b2f13711ae57194cb612"
+    },
+    "1.09": {
+      "path": "firmware/extracted/v109/gt1_sys_v109/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "412ebf5ffdc48554454c27df47f61428f046ea0a7d93f5c77b7f0302861abdbf"
+    }
+  },
+  "comparison": {
+    "total_changed_bytes": 1167307,
+    "broad_application_partition": {
+      "start": "0x40000",
+      "end_exclusive": "0x1FC000",
+      "changed_bytes": 1167295
+    },
+    "outside_broad_application_partition": {
+      "changed_bytes": 12,
+      "offsets": [
+        "0x2010",
+        "0x2011",
+        "0x2013",
+        "0x2015",
+        "0x2016",
+        "0x2017",
+        "0x201A",
+        "0x201B",
+        "0x201C",
+        "0x201D",
+        "0x201E",
+        "0x201F"
+      ]
+    },
+    "v108_length_bounded_app_payload": {
+      "start": "0x40040",
+      "end_exclusive": "0x15E805",
+      "length": 1173445,
+      "same_file_offset_changed_bytes": 1162613,
+      "same_file_offset_changed_fraction": 0.99076906,
+      "v109_declared_payload_length": 1178362,
+      "v109_end_exclusive": "0x15FB3A",
+      "changes_outside_v108_bounded_payload": 4694
+    },
+    "interpretation_limit": "A broad byte rewrite despite the management-only release note does not establish functional change, compression, encryption, or any particular transform."
+  }
+}

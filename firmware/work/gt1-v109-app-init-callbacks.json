@@ -1,0 +1,131 @@
+{
+  "read_only": true,
+  "method": "resolve startup LDR-literal values in hash-verified copied segment; follow [r6+8] to a zero-terminated array",
+  "segment": "firmware/work/reconstructed/v109-GT1Appli-seg0.bin",
+  "segment_sha256": "019adcf28e4a12444d48699b0b2a386a1a5feb2e43b59d465c696ee42540b9f9",
+  "decoded_app": "firmware/work/decoded/v109-GT1Appli.bin",
+  "decoded_app_sha256": "2028d7e1f8a72e54b23a80427f53ba27629a7039a72712504a612c877556aa29",
+  "segment_runtime_base": "0x01000300",
+  "startup_entry": "0x0100114E",
+  "startup_literal_values": {
+    "LDR at 0x01001160 reads literal at 0x010011A8": "0x01011800",
+    "LDR at 0x01001178 reads literal at 0x010011AC": "0x01010960",
+    "[r6+8] address": "0x01010968",
+    "[r6+8] value, callback array": "0x01010924"
+  },
+  "array_terminator_address": "0x0101095c",
+  "callback_count": 14,
+  "callbacks": [
+    {
+      "index": 0,
+      "entry_address": "0x01010924",
+      "pointer": "0x01002309",
+      "thumb_entry": "0x01002308",
+      "segment_offset": "0x2008"
+    },
+    {
+      "index": 1,
+      "entry_address": "0x01010928",
+      "pointer": "0x01001de9",
+      "thumb_entry": "0x01001de8",
+      "segment_offset": "0x1ae8"
+    },
+    {
+      "index": 2,
+      "entry_address": "0x0101092c",
+      "pointer": "0x010015fd",
+      "thumb_entry": "0x010015fc",
+      "segment_offset": "0x12fc"
+    },
+    {
+      "index": 3,
+      "entry_address": "0x01010930",
+      "pointer": "0x01002c79",
+      "thumb_entry": "0x01002c78",
+      "segment_offset": "0x2978"
+    },
+    {
+      "index": 4,
+      "entry_address": "0x01010934",
+      "pointer": "0x0100302d",
+      "thumb_entry": "0x0100302c",
+      "segment_offset": "0x2d2c"
+    },
+    {
+      "index": 5,
+      "entry_address": "0x01010938",
+      "pointer": "0x01003251",
+      "thumb_entry": "0x01003250",
+      "segment_offset": "0x2f50"
+    },
+    {
+      "index": 6,
+      "entry_address": "0x0101093c",
+      "pointer": "0x01002fb1",
+      "thumb_entry": "0x01002fb0",
+      "segment_offset": "0x2cb0"
+    },
+    {
+      "index": 7,
+      "entry_address": "0x01010940",
+      "pointer": "0x010032c9",
+      "thumb_entry": "0x010032c8",
+      "segment_offset": "0x2fc8"
+    },
+    {
+      "index": 8,
+      "entry_address": "0x01010944",
+      "pointer": "0x010030a9",
+      "thumb_entry": "0x010030a8",
+      "segment_offset": "0x2da8"
+    },
+    {
+      "index": 9,
+      "entry_address": "0x01010948",
+      "pointer": "0x01001ce9",
+      "thumb_entry": "0x01001ce8",
+      "segment_offset": "0x19e8"
+    },
+    {
+      "index": 10,
+      "entry_address": "0x0101094c",
+      "pointer": "0x010014a5",
+      "thumb_entry": "0x010014a4",
+      "segment_offset": "0x11a4"
+    },
+    {
+      "index": 11,
+      "entry_address": "0x01010950",
+      "pointer": "0x010013af",
+      "thumb_entry": "0x010013ae",
+      "segment_offset": "0x10ae"
+    },
+    {
+      "index": 12,
+      "entry_address": "0x01010954",
+      "pointer": "0x01002f61",
+      "thumb_entry": "0x01002f60",
+      "segment_offset": "0x2c60"
+    },
+    {
+      "index": 13,
+      "entry_address": "0x01010958",
+      "pointer": "0x01002cf1",
+      "thumb_entry": "0x01002cf0",
+      "segment_offset": "0x29f0"
+    }
+  ],
+  "ghidra_followup": {
+    "report": "firmware/work/ghidra-combined-v109-app-init-callbacks.txt",
+    "report_sha256": "1aefc2a76e433be5dd1d319aec2414c84e32a1d28b481e0b11fa787114728e50",
+    "method": "Ghidra 12.2 ARM:LE:32:v7, Thumb context, combined decoded-image/copy mapping, startup entries plus all 14 callback addresses seeded",
+    "observation": "All 14 listed entries begin with coherent Thumb prologues in the bounded report; no aligned 0x02003xxx words occur in the reconstructed first-copy source interval",
+    "limits": "The report is bounded and does not prove callback semantics or complete indirect call graphs."
+  },
+  "interpretation_limits": [
+    "The startup code calls each nonzero pointer in this array; this establishes callback reachability from the startup loop, not the semantic role of each callback.",
+    "The app's first call through the 0x020030B4 table occurs before this callback loop, so this later array is not sufficient to explain how that table was populated before its first use.",
+    "A missing static reference to 0x02003xxx in these callbacks would not exclude indirect initialization or writes through other pointers.",
+    "The v1.08 startup literals differ; this recovered list applies to v1.09 only."
+  ]
+}

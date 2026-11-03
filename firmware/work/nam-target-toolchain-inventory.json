@@ -1,0 +1,50 @@
+{
+  "classification": "PATH-based inventory in this workspace environment; not a global search for proprietary tools",
+  "host_gcc_target": "x86_64-linux-gnu",
+  "tools": {
+    "host_gcc": {
+      "path": "/usr/bin/gcc",
+      "version_line": "gcc (Ubuntu 15.2.0-16ubuntu1) 15.2.0",
+      "exit_code": 0
+    },
+    "arm_none_eabi_gcc": {
+      "path": null
+    },
+    "arm_linux_gnueabi_gcc": {
+      "path": null
+    },
+    "arm_linux_gnueabihf_gcc": {
+      "path": null
+    },
+    "aarch64_linux_gnu_gcc": {
+      "path": null
+    },
+    "clang": {
+      "path": null
+    },
+    "llvm_mc": {
+      "path": null
+    },
+    "llvm_objdump": {
+      "path": null
+    },
+    "qemu_system_arm": {
+      "path": null
+    },
+    "qemu_arm_user": {
+      "path": null
+    },
+    "mips_linux_gnu_gcc": {
+      "path": null
+    },
+    "mipsel_linux_gnu_gcc": {
+      "path": null
+    }
+  },
+  "target_benchmark_status": "No confirmed ESC2 ISA or compatible compiler is identified, and no listed cross compiler or emulator is available in PATH. Host GCC is not a meaningful proxy for ESC2 cycle cost.",
+  "limitations": [
+    "A PATH miss does not prove a compiler or ICE is unavailable elsewhere on the machine or from Roland/Fujitsu.",
+    "An ARM cross compiler alone would not establish that MB8AA4181 implements ARM or that GT-1 application code runs on it.",
+    "No target benchmark was built or run; the existing NAM cycles/sample values remain Cortex-M7 references only."
+  ]
+}

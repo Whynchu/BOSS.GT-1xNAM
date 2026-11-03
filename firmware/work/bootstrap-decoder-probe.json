@@ -1,0 +1,524 @@
+{
+  "read_only": true,
+  "versions": {
+    "v105": {
+      "image": "firmware/extracted/v105/gt1_sys_v105/GT1ROM.BIN",
+      "image_size": 4194304,
+      "image_sha256": "b1bde0410795230b4a89ee3dfbbd357700bba7020624c0ff832ae3d8539d8bb4",
+      "sections": [
+        {
+          "name": "GT1Upd",
+          "header_file_offset": "0x2000",
+          "header_runtime_address": "0x3002000",
+          "runtime_to_file_relation": "file_offset = runtime - 0x03000000",
+          "header_hex": "425353455343323a47543155706420203136313031313038333834317bee3091312e303031303030000000604000000067150200ba0e00010000006078a40200",
+          "source_offset_field_plus_2c": "0x40",
+          "stored_length_field_plus_30": "0x21567",
+          "checksum_field_plus_34": "0x1000eba",
+          "computed_additive_byte_sum": "0x1000eba",
+          "destination_field_plus_38": "0x60000000",
+          "post_decode_header_field_plus_28": "0x60000000",
+          "expanded_length_field_plus_3c": "0x2a478",
+          "payload_file_range": [
+            "0x2040",
+            "0x235a7"
+          ],
+          "payload_sha256": "864cebee6e15be9da8e9dca9c756bf720f35d4454f91b8fc466eaf4c23f9966a",
+          "decoder_result": {
+            "input_consumed": 136551,
+            "input_remaining": 0,
+            "output_produced": 173176,
+            "output_sha256": "0f247f1b94c0c9ca8e4eef1ec980e2f060f95ef494ed7fa6bd9fbaf52d93a6a4",
+            "output_prefix_hex": "4ff0080080f3118836483749374a00f037f83748374900f042f837483749384a00f02ef83748384900f039f837483849384a00f025f83848384900f030f83848",
+            "output_suffix_hex": "6b00000000000100ababababcdcdcdcd00000000000000000000000000000000",
+            "control_bytes": 13272,
+            "control_bits_consumed": 106173,
+            "literal_bytes": 89067,
+            "backreference_pairs": 17106,
+            "backreference_output_bytes": 84109,
+            "overshoot_before_output_bound": false,
+            "terminated_at_declared_output_length": true,
+            "source_exhausted": false,
+            "mode": "firmware_output_bound"
+          },
+          "continue_to_source_end_diagnostic": {
+            "input_consumed": 136551,
+            "input_remaining": 0,
+            "output_produced": 173176,
+            "output_sha256": "0f247f1b94c0c9ca8e4eef1ec980e2f060f95ef494ed7fa6bd9fbaf52d93a6a4",
+            "output_prefix_hex": "4ff0080080f3118836483749374a00f037f83748374900f042f837483749384a00f02ef83748384900f039f837483849384a00f025f83848384900f030f83848",
+            "output_suffix_hex": "6b00000000000100ababababcdcdcdcd00000000000000000000000000000000",
+            "control_bytes": 13272,
+            "control_bits_consumed": 106174,
+            "literal_bytes": 89067,
+            "backreference_pairs": 17106,
+            "backreference_output_bytes": 84109,
+            "overshoot_before_output_bound": false,
+            "terminated_at_declared_output_length": true,
+            "source_exhausted": false,
+            "mode": "continue_until_source_exhaustion"
+          },
+          "decoded_artifact": {
+            "path": "firmware/work/decoded/v105-GT1Upd.bin",
+            "size": 173176,
+            "sha256": "0f247f1b94c0c9ca8e4eef1ec980e2f060f95ef494ed7fa6bd9fbaf52d93a6a4"
+          }
+        },
+        {
+          "name": "GT1Appli",
+          "header_file_offset": "0x40000",
+          "header_runtime_address": "0x3040000",
+          "runtime_to_file_relation": "file_offset = runtime - 0x03000000",
+          "header_hex": "425353455343323a4754314170706c693136313031313038333834317bee3091312e303530303736000000604000000058e01100df4c770800000060d8af2c00",
+          "source_offset_field_plus_2c": "0x40",
+          "stored_length_field_plus_30": "0x11e058",
+          "checksum_field_plus_34": "0x8774cdf",
+          "computed_additive_byte_sum": "0x8774cdf",
+          "destination_field_plus_38": "0x60000000",
+          "post_decode_header_field_plus_28": "0x60000000",
+          "expanded_length_field_plus_3c": "0x2cafd8",
+          "payload_file_range": [
+            "0x40040",
+            "0x15e098"
+          ],
+          "payload_sha256": "4081604fc89c772960a4d9a5582a8a11b2fe8f8b360922dbb94f4df7b27baccf",
+          "decoder_result": {
+            "input_consumed": 1171544,
+            "input_remaining": 0,
+            "output_produced": 2928600,
+            "output_sha256": "8297887084af48b04189955bbd8bdb4e0e6ff6a0e0fbcac7f85a175792775e29",
+            "output_prefix_hex": "4ff0080080f3118836483749374a00f037f83748374900f042f837483749384a00f02ef83748384900f039f837483849384a00f025f83848384900f030f83848",
+            "output_suffix_hex": "0000000000000000000000000000000000000000000000000000000000000000",
+            "control_bytes": 100087,
+            "control_bits_consumed": 800692,
+            "literal_bytes": 529927,
+            "backreference_pairs": 270765,
+            "backreference_output_bytes": 2398673,
+            "overshoot_before_output_bound": false,
+            "terminated_at_declared_output_length": true,
+            "source_exhausted": false,
+            "mode": "firmware_output_bound"
+          },
+          "continue_to_source_end_diagnostic": {
+            "input_consumed": 1171544,
+            "input_remaining": 0,
+            "output_produced": 2928600,
+            "output_sha256": "8297887084af48b04189955bbd8bdb4e0e6ff6a0e0fbcac7f85a175792775e29",
+            "output_prefix_hex": "4ff0080080f3118836483749374a00f037f83748374900f042f837483749384a00f02ef83748384900f039f837483849384a00f025f83848384900f030f83848",
+            "output_suffix_hex": "0000000000000000000000000000000000000000000000000000000000000000",
+            "control_bytes": 100087,
+            "control_bits_consumed": 800693,
+            "literal_bytes": 529927,
+            "backreference_pairs": 270765,
+            "backreference_output_bytes": 2398673,
+            "overshoot_before_output_bound": false,
+            "terminated_at_declared_output_length": true,
+            "source_exhausted": false,
+            "mode": "continue_until_source_exhaustion"
+          },
+          "decoded_artifact": {
+            "path": "firmware/work/decoded/v105-GT1Appli.bin",
+            "size": 2928600,
+            "sha256": "8297887084af48b04189955bbd8bdb4e0e6ff6a0e0fbcac7f85a175792775e29"
+          }
+        }
+      ]
+    },
+    "v107": {
+      "image": "firmware/extracted/v107/gt1_sys_v107/GT1ROM.BIN",
+      "image_size": 4194304,
+      "image_sha256": "6a3110cd42c4b129494a93bc88d4f218e2e0b9377868ca051018b28696d6c22f",
+      "sections": [
+        {
+          "name": "GT1Upd",
+          "header_file_offset": "0x2000",
+          "header_runtime_address": "0x3002000",
+          "runtime_to_file_relation": "file_offset = runtime - 0x03000000",
+          "header_hex": "425353455343323a475431557064202031373035313831363436343723595e86312e303031303030000000604000000067150200ba0e00010000006078a40200",
+          "source_offset_field_plus_2c": "0x40",
+          "stored_length_field_plus_30": "0x21567",
+          "checksum_field_plus_34": "0x1000eba",
+          "computed_additive_byte_sum": "0x1000eba",
+          "destination_field_plus_38": "0x60000000",
+          "post_decode_header_field_plus_28": "0x60000000",
+          "expanded_length_field_plus_3c": "0x2a478",
+          "payload_file_range": [
+            "0x2040",
+            "0x235a7"
+          ],
+          "payload_sha256": "864cebee6e15be9da8e9dca9c756bf720f35d4454f91b8fc466eaf4c23f9966a",
+          "decoder_result": {
+            "input_consumed": 136551,
+            "input_remaining": 0,
+            "output_produced": 173176,
+            "output_sha256": "0f247f1b94c0c9ca8e4eef1ec980e2f060f95ef494ed7fa6bd9fbaf52d93a6a4",
+            "output_prefix_hex": "4ff0080080f3118836483749374a00f037f83748374900f042f837483749384a00f02ef83748384900f039f837483849384a00f025f83848384900f030f83848",
+            "output_suffix_hex": "6b00000000000100ababababcdcdcdcd00000000000000000000000000000000",
+            "control_bytes": 13272,
+            "control_bits_consumed": 106173,
+            "literal_bytes": 89067,
+            "backreference_pairs": 17106,
+            "backreference_output_bytes": 84109,
+            "overshoot_before_output_bound": false,
+            "terminated_at_declared_output_length": true,
+            "source_exhausted": false,
+            "mode": "firmware_output_bound"
+          },
+          "continue_to_source_end_diagnostic": {
+            "input_consumed": 136551,
+            "input_remaining": 0,
+            "output_produced": 173176,
+            "output_sha256": "0f247f1b94c0c9ca8e4eef1ec980e2f060f95ef494ed7fa6bd9fbaf52d93a6a4",
+            "output_prefix_hex": "4ff0080080f3118836483749374a00f037f83748374900f042f837483749384a00f02ef83748384900f039f837483849384a00f025f83848384900f030f83848",
+            "output_suffix_hex": "6b00000000000100ababababcdcdcdcd00000000000000000000000000000000",
+            "control_bytes": 13272,
+            "control_bits_consumed": 106174,
+            "literal_bytes": 89067,
+            "backreference_pairs": 17106,
+            "backreference_output_bytes": 84109,
+            "overshoot_before_output_bound": false,
+            "terminated_at_declared_output_length": true,
+            "source_exhausted": false,
+            "mode": "continue_until_source_exhaustion"
+          },
+          "decoded_artifact": {
+            "path": "firmware/work/decoded/v107-GT1Upd.bin",
+            "size": 173176,
+            "sha256": "0f247f1b94c0c9ca8e4eef1ec980e2f060f95ef494ed7fa6bd9fbaf52d93a6a4"
+          }
+        },
+        {
+          "name": "GT1Appli",
+          "header_file_offset": "0x40000",
+          "header_runtime_address": "0x3040000",
+          "runtime_to_file_relation": "file_offset = runtime - 0x03000000",
+          "header_hex": "425353455343323a4754314170706c6931373035313831363436343723595e86312e303730303831000000604000000065e711003c4774080000006090ba2c00",
+          "source_offset_field_plus_2c": "0x40",
+          "stored_length_field_plus_30": "0x11e765",
+          "checksum_field_plus_34": "0x874473c",
+          "computed_additive_byte_sum": "0x874473c",
+          "destination_field_plus_38": "0x60000000",
+          "post_decode_header_field_plus_28": "0x60000000",
+          "expanded_length_field_plus_3c": "0x2cba90",
+          "payload_file_range": [
+            "0x40040",
+            "0x15e7a5"
+          ],
+          "payload_sha256": "78858382a3b1f3b7055b34e81499b7dd4c3b183c4070e8c7f387948c54b18bb2",
+          "decoder_result": {
+            "input_consumed": 1173349,
+            "input_remaining": 0,
+            "output_produced": 2931344,
+            "output_sha256": "304b88a2c628cf47bb5091ecbc6da4fab4924f88cdea8897b44e5f474b9fb001",
+            "output_prefix_hex": "4ff0080080f3118836483749374a00f037f83748374900f042f837483749384a00f02ef83748384900f039f837483849384a00f025f83848384900f030f83848",
+            "output_suffix_hex": "0000000000000000000000000000000000000000000000000000000000000000",
+            "control_bytes": 100265,
+            "control_bits_consumed": 802115,
+            "literal_bytes": 531146,
+            "backreference_pairs": 270969,
+            "backreference_output_bytes": 2400198,
+            "overshoot_before_output_bound": false,
+            "terminated_at_declared_output_length": true,
+            "source_exhausted": false,
+            "mode": "firmware_output_bound"
+          },
+          "continue_to_source_end_diagnostic": {
+            "input_consumed": 1173349,
+            "input_remaining": 0,
+            "output_produced": 2931344,
+            "output_sha256": "304b88a2c628cf47bb5091ecbc6da4fab4924f88cdea8897b44e5f474b9fb001",
+            "output_prefix_hex": "4ff0080080f3118836483749374a00f037f83748374900f042f837483749384a00f02ef83748384900f039f837483849384a00f025f83848384900f030f83848",
+            "output_suffix_hex": "0000000000000000000000000000000000000000000000000000000000000000",
+            "control_bytes": 100265,
+            "control_bits_consumed": 802116,
+            "literal_bytes": 531146,
+            "backreference_pairs": 270969,
+            "backreference_output_bytes": 2400198,
+            "overshoot_before_output_bound": false,
+            "terminated_at_declared_output_length": true,
+            "source_exhausted": false,
+            "mode": "continue_until_source_exhaustion"
+          },
+          "decoded_artifact": {
+            "path": "firmware/work/decoded/v107-GT1Appli.bin",
+            "size": 2931344,
+            "sha256": "304b88a2c628cf47bb5091ecbc6da4fab4924f88cdea8897b44e5f474b9fb001"
+          }
+        }
+      ]
+    },
+    "v108": {
+      "image": "firmware/extracted/v108/gt1_sys_v108/GT1ROM.BIN",
+      "image_size": 4194304,
+      "image_sha256": "7219679a87e985316264544423c9940ccbcbadeb2df0b2f13711ae57194cb612",
+      "sections": [
+        {
+          "name": "GT1Upd",
+          "header_file_offset": "0x2000",
+          "header_runtime_address": "0x3002000",
+          "runtime_to_file_relation": "file_offset = runtime - 0x03000000",
+          "header_hex": "425353455343323a475431557064202031383033313330373338353210d59b9b312e303031303030000000604000000067150200ba0e00010000006078a40200",
+          "source_offset_field_plus_2c": "0x40",
+          "stored_length_field_plus_30": "0x21567",
+          "checksum_field_plus_34": "0x1000eba",
+          "computed_additive_byte_sum": "0x1000eba",
+          "destination_field_plus_38": "0x60000000",
+          "post_decode_header_field_plus_28": "0x60000000",
+          "expanded_length_field_plus_3c": "0x2a478",
+          "payload_file_range": [
+            "0x2040",
+            "0x235a7"
+          ],
+          "payload_sha256": "864cebee6e15be9da8e9dca9c756bf720f35d4454f91b8fc466eaf4c23f9966a",
+          "decoder_result": {
+            "input_consumed": 136551,
+            "input_remaining": 0,
+            "output_produced": 173176,
+            "output_sha256": "0f247f1b94c0c9ca8e4eef1ec980e2f060f95ef494ed7fa6bd9fbaf52d93a6a4",
+            "output_prefix_hex": "4ff0080080f3118836483749374a00f037f83748374900f042f837483749384a00f02ef83748384900f039f837483849384a00f025f83848384900f030f83848",
+            "output_suffix_hex": "6b00000000000100ababababcdcdcdcd00000000000000000000000000000000",
+            "control_bytes": 13272,
+            "control_bits_consumed": 106173,
+            "literal_bytes": 89067,
+            "backreference_pairs": 17106,
+            "backreference_output_bytes": 84109,
+            "overshoot_before_output_bound": false,
+            "terminated_at_declared_output_length": true,
+            "source_exhausted": false,
+            "mode": "firmware_output_bound"
+          },
+          "continue_to_source_end_diagnostic": {
+            "input_consumed": 136551,
+            "input_remaining": 0,
+            "output_produced": 173176,
+            "output_sha256": "0f247f1b94c0c9ca8e4eef1ec980e2f060f95ef494ed7fa6bd9fbaf52d93a6a4",
+            "output_prefix_hex": "4ff0080080f3118836483749374a00f037f83748374900f042f837483749384a00f02ef83748384900f039f837483849384a00f025f83848384900f030f83848",
+            "output_suffix_hex": "6b00000000000100ababababcdcdcdcd00000000000000000000000000000000",
+            "control_bytes": 13272,
+            "control_bits_consumed": 106174,
+            "literal_bytes": 89067,
+            "backreference_pairs": 17106,
+            "backreference_output_bytes": 84109,
+            "overshoot_before_output_bound": false,
+            "terminated_at_declared_output_length": true,
+            "source_exhausted": false,
+            "mode": "continue_until_source_exhaustion"
+          },
+          "decoded_artifact": {
+            "path": "firmware/work/decoded/v108-GT1Upd.bin",
+            "size": 173176,
+            "sha256": "0f247f1b94c0c9ca8e4eef1ec980e2f060f95ef494ed7fa6bd9fbaf52d93a6a4"
+          }
+        },
+        {
+          "name": "GT1Appli",
+          "header_file_offset": "0x40000",
+          "header_runtime_address": "0x3040000",
+          "runtime_to_file_relation": "file_offset = runtime - 0x03000000",
+          "header_hex": "425353455343323a4754314170706c6931383033313330373338353210d59b9b312e3038303038320000006040000000c5e7110079b478080000006018bb2c00",
+          "source_offset_field_plus_2c": "0x40",
+          "stored_length_field_plus_30": "0x11e7c5",
+          "checksum_field_plus_34": "0x878b479",
+          "computed_additive_byte_sum": "0x878b479",
+          "destination_field_plus_38": "0x60000000",
+          "post_decode_header_field_plus_28": "0x60000000",
+          "expanded_length_field_plus_3c": "0x2cbb18",
+          "payload_file_range": [
+            "0x40040",
+            "0x15e805"
+          ],
+          "payload_sha256": "ef236d8bb3ce79cb5f6a836e4ddbaa325f4ad04cde546e7cb70d6d7ecba8f2b0",
+          "decoder_result": {
+            "input_consumed": 1173445,
+            "input_remaining": 0,
+            "output_produced": 2931480,
+            "output_sha256": "c41319e5f5a1facd5e55fe2c8e56d37069e31b98e5034d6d54d932fa7713e8c1",
+            "output_prefix_hex": "4ff0080080f3118836483749374a00f037f83748374900f042f837483749384a00f02ef83748384900f039f837483849384a00f025f83848384900f030f83848",
+            "output_suffix_hex": "0000000000000000000000000000000000000000000000000000000000000000",
+            "control_bytes": 100277,
+            "control_bits_consumed": 802216,
+            "literal_bytes": 531264,
+            "backreference_pairs": 270952,
+            "backreference_output_bytes": 2400216,
+            "overshoot_before_output_bound": false,
+            "terminated_at_declared_output_length": true,
+            "source_exhausted": false,
+            "mode": "firmware_output_bound"
+          },
+          "continue_to_source_end_diagnostic": {
+            "input_consumed": 1173445,
+            "input_remaining": 0,
+            "output_produced": 2931480,
+            "output_sha256": "c41319e5f5a1facd5e55fe2c8e56d37069e31b98e5034d6d54d932fa7713e8c1",
+            "output_prefix_hex": "4ff0080080f3118836483749374a00f037f83748374900f042f837483749384a00f02ef83748384900f039f837483849384a00f025f83848384900f030f83848",
+            "output_suffix_hex": "0000000000000000000000000000000000000000000000000000000000000000",
+            "control_bytes": 100277,
+            "control_bits_consumed": 802216,
+            "literal_bytes": 531264,
+            "backreference_pairs": 270952,
+            "backreference_output_bytes": 2400216,
+            "overshoot_before_output_bound": false,
+            "terminated_at_declared_output_length": true,
+            "source_exhausted": false,
+            "mode": "continue_until_source_exhaustion"
+          },
+          "decoded_artifact": {
+            "path": "firmware/work/decoded/v108-GT1Appli.bin",
+            "size": 2931480,
+            "sha256": "c41319e5f5a1facd5e55fe2c8e56d37069e31b98e5034d6d54d932fa7713e8c1"
+          }
+        }
+      ]
+    },
+    "v109": {
+      "image": "firmware/extracted/v109/gt1_sys_v109/GT1ROM.BIN",
+      "image_size": 4194304,
+      "image_sha256": "412ebf5ffdc48554454c27df47f61428f046ea0a7d93f5c77b7f0302861abdbf",
+      "sections": [
+        {
+          "name": "GT1Upd",
+          "header_file_offset": "0x2000",
+          "header_runtime_address": "0x3002000",
+          "runtime_to_file_relation": "file_offset = runtime - 0x03000000",
+          "header_hex": "425353455343323a4754315570642020323130363130313533383339cba3673b312e303031303030000000604000000067150200ba0e00010000006078a40200",
+          "source_offset_field_plus_2c": "0x40",
+          "stored_length_field_plus_30": "0x21567",
+          "checksum_field_plus_34": "0x1000eba",
+          "computed_additive_byte_sum": "0x1000eba",
+          "destination_field_plus_38": "0x60000000",
+          "post_decode_header_field_plus_28": "0x60000000",
+          "expanded_length_field_plus_3c": "0x2a478",
+          "payload_file_range": [
+            "0x2040",
+            "0x235a7"
+          ],
+          "payload_sha256": "864cebee6e15be9da8e9dca9c756bf720f35d4454f91b8fc466eaf4c23f9966a",
+          "decoder_result": {
+            "input_consumed": 136551,
+            "input_remaining": 0,
+            "output_produced": 173176,
+            "output_sha256": "0f247f1b94c0c9ca8e4eef1ec980e2f060f95ef494ed7fa6bd9fbaf52d93a6a4",
+            "output_prefix_hex": "4ff0080080f3118836483749374a00f037f83748374900f042f837483749384a00f02ef83748384900f039f837483849384a00f025f83848384900f030f83848",
+            "output_suffix_hex": "6b00000000000100ababababcdcdcdcd00000000000000000000000000000000",
+            "control_bytes": 13272,
+            "control_bits_consumed": 106173,
+            "literal_bytes": 89067,
+            "backreference_pairs": 17106,
+            "backreference_output_bytes": 84109,
+            "overshoot_before_output_bound": false,
+            "terminated_at_declared_output_length": true,
+            "source_exhausted": false,
+            "mode": "firmware_output_bound"
+          },
+          "continue_to_source_end_diagnostic": {
+            "input_consumed": 136551,
+            "input_remaining": 0,
+            "output_produced": 173176,
+            "output_sha256": "0f247f1b94c0c9ca8e4eef1ec980e2f060f95ef494ed7fa6bd9fbaf52d93a6a4",
+            "output_prefix_hex": "4ff0080080f3118836483749374a00f037f83748374900f042f837483749384a00f02ef83748384900f039f837483849384a00f025f83848384900f030f83848",
+            "output_suffix_hex": "6b00000000000100ababababcdcdcdcd00000000000000000000000000000000",
+            "control_bytes": 13272,
+            "control_bits_consumed": 106174,
+            "literal_bytes": 89067,
+            "backreference_pairs": 17106,
+            "backreference_output_bytes": 84109,
+            "overshoot_before_output_bound": false,
+            "terminated_at_declared_output_length": true,
+            "source_exhausted": false,
+            "mode": "continue_until_source_exhaustion"
+          },
+          "decoded_artifact": {
+            "path": "firmware/work/decoded/v109-GT1Upd.bin",
+            "size": 173176,
+            "sha256": "0f247f1b94c0c9ca8e4eef1ec980e2f060f95ef494ed7fa6bd9fbaf52d93a6a4"
+          }
+        },
+        {
+          "name": "GT1Appli",
+          "header_file_offset": "0x40000",
+          "header_runtime_address": "0x3040000",
+          "runtime_to_file_relation": "file_offset = runtime - 0x03000000",
+          "header_hex": "425353455343323a4754314170706c69323130363130313533383339cba3673b312e3039303030300000006040000000fafa110009ab860800000060b4d22c00",
+          "source_offset_field_plus_2c": "0x40",
+          "stored_length_field_plus_30": "0x11fafa",
+          "checksum_field_plus_34": "0x886ab09",
+          "computed_additive_byte_sum": "0x886ab09",
+          "destination_field_plus_38": "0x60000000",
+          "post_decode_header_field_plus_28": "0x60000000",
+          "expanded_length_field_plus_3c": "0x2cd2b4",
+          "payload_file_range": [
+            "0x40040",
+            "0x15fb3a"
+          ],
+          "payload_sha256": "2945b15fe45aede58d10fb78e7475d72373fd1d202f5e07839566d80663c1f34",
+          "decoder_result": {
+            "input_consumed": 1178362,
+            "input_remaining": 0,
+            "output_produced": 2937524,
+            "output_sha256": "2028d7e1f8a72e54b23a80427f53ba27629a7039a72712504a612c877556aa29",
+            "output_prefix_hex": "4ff0080080f3118836483749374a00f037f83748374900f042f837483749384a00f02ef83748384900f039f837483849384a00f025f83848384900f030f83848",
+            "output_suffix_hex": "0000000000000000000000000000000000000000000000000000000000000000",
+            "control_bytes": 100759,
+            "control_bits_consumed": 806072,
+            "literal_bytes": 534541,
+            "backreference_pairs": 271531,
+            "backreference_output_bytes": 2402983,
+            "overshoot_before_output_bound": false,
+            "terminated_at_declared_output_length": true,
+            "source_exhausted": false,
+            "mode": "firmware_output_bound"
+          },
+          "continue_to_source_end_diagnostic": {
+            "input_consumed": 1178362,
+            "input_remaining": 0,
+            "output_produced": 2937524,
+            "output_sha256": "2028d7e1f8a72e54b23a80427f53ba27629a7039a72712504a612c877556aa29",
+            "output_prefix_hex": "4ff0080080f3118836483749374a00f037f83748374900f042f837483749384a00f02ef83748384900f039f837483849384a00f025f83848384900f030f83848",
+            "output_suffix_hex": "0000000000000000000000000000000000000000000000000000000000000000",
+            "control_bytes": 100759,
+            "control_bits_consumed": 806072,
+            "literal_bytes": 534541,
+            "backreference_pairs": 271531,
+            "backreference_output_bytes": 2402983,
+            "overshoot_before_output_bound": false,
+            "terminated_at_declared_output_length": true,
+            "source_exhausted": false,
+            "mode": "continue_until_source_exhaustion"
+          },
+          "decoded_artifact": {
+            "path": "firmware/work/decoded/v109-GT1Appli.bin",
+            "size": 2937524,
+            "sha256": "2028d7e1f8a72e54b23a80427f53ba27629a7039a72712504a612c877556aa29"
+          }
+        }
+      ]
+    }
+  },
+  "loader": {
+    "file_offset": "0xA20",
+    "runtime_address": "0x10009f0",
+    "decoder_entry_runtime": "0x010008DA",
+    "decoder_entry_file_offset": "0x90A",
+    "call_args": "r0=section base+[0x2C]; r1=[0x38]; r2=[0x3C]",
+    "copy_path_when_plus_3c_zero": "copy [0x2C] source to [0x38] destination for [0x30] bytes, in 4-byte units",
+    "section_base_constants": [
+      "0x03002000",
+      "0x03040000"
+    ],
+    "section_base_to_file_mapping": "file_offset = runtime_address - 0x03000000; verified for both headers by exact signature and field match"
+  },
+  "decoder": {
+    "reader_runtime": "0x010008C0",
+    "reader_file_offset": "0x8F0",
+    "algorithm_observation": "Control-bit stream: 1 means literal; 0 means two-byte backreference; 12-bit ring; the disassembly computes low nibble + 2 and then uses an inclusive counter, producing low nibble + 3 bytes. Both output-bounded and source-exhaustion modes consume all stored bytes and produce exactly +0x3C across all eight sections; this is strong multi-version format validation, pending independent output mapping/entry validation.",
+    "ring_runtime": "0x1010028",
+    "ring_file_offset_under_candidate_image_map": "0x10058",
+    "ring_initialized_bytes": "0xFEE",
+    "model_limits": [
+      "Exact bounded source span from header stored length.",
+      "Firmware-bound mode starts tokens while output is below +0x3C and can complete a back-reference beyond that boundary; output is safely captured to the declared length in that mode.",
+      "Diagnostic mode ignores the output bound and continues only within the stored payload to report consumed input and excess output.",
+      "No firmware or device state is modified."
+    ]
+  }
+}

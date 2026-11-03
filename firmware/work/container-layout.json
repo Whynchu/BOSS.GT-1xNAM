@@ -1,0 +1,269 @@
+{
+  "analysis": "GT-1 update block header and stored payload layout",
+  "read_only": true,
+  "interpretation_limit": "Offsets and byte counts are observed. 0x30 behaves as a stored byte count; 0x3c is an expanded-size candidate. No tested standard decoder validates the payload, so compression/encoding is not identified.",
+  "versions": {
+    "v108": {
+      "path": "firmware/extracted/v108/gt1_sys_v108/GT1ROM.BIN",
+      "image_size": 4194304,
+      "image_sha256": "7219679a87e985316264544423c9940ccbcbadeb2df0b2f13711ae57194cb612",
+      "blocks": {
+        "GT1Upd": {
+          "header_offset": "0x002000",
+          "header_marker": "BSSESC2:GT1Upd  ",
+          "header_version": "1.001000",
+          "field_0x28_le": "0x60000000",
+          "field_0x2c_le": "0x00000040",
+          "stored_length_field_0x30": "0x21567",
+          "field_0x34_le_unclassified": "0x01000EBA",
+          "field_0x38_le": "0x60000000",
+          "expanded_length_candidate_0x3c": "0x2A478",
+          "payload_start": "0x002040",
+          "payload_end_exclusive": "0x0235A7",
+          "payload_size": 136551,
+          "payload_sha256": "864cebee6e15be9da8e9dca9c756bf720f35d4454f91b8fc466eaf4c23f9966a",
+          "first_16_payload_bytes": "ff 4f f0 08 00 80 f3 11 88 ff 36 48 37 49 37 4a",
+          "first_byte_after_payload": "0xFF",
+          "padding_to_next_boundary_all_ff": true,
+          "codec_attempts": {
+            "zlib": {
+              "valid": false,
+              "error_type": "error",
+              "error": "Error -3 while decompressing data: incorrect header check"
+            },
+            "raw_deflate": {
+              "valid": false,
+              "error_type": "error",
+              "error": "Error -3 while decompressing data: invalid block type"
+            },
+            "gzip": {
+              "valid": false,
+              "error_type": "BadGzipFile",
+              "error": "Not a gzipped file (b'\\xffO')"
+            },
+            "bzip2": {
+              "valid": false,
+              "error_type": "OSError",
+              "error": "Invalid data stream"
+            },
+            "lzma_auto": {
+              "valid": false,
+              "error_type": "LZMAError",
+              "error": "Input format not supported by decoder"
+            },
+            "lz4_frame": {
+              "valid": false,
+              "error_type": "RuntimeError",
+              "error": "LZ4F_getFrameInfo failed with code: ERROR_frameType_unknown"
+            },
+            "zstd_frame": {
+              "valid": false,
+              "error_type": "ZstdError",
+              "error": "error determining content size from frame header"
+            }
+          },
+          "7zip_archive_probe": {
+            "executable": "/usr/bin/7z",
+            "exit_code": 2,
+            "recognized_as_archive": false,
+            "stdout_tail": "\n7-Zip 26.00 (x64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-02-12\n 64-bit locale=C.UTF-8 Threads:8 OPEN_MAX:4096, ASM\n\nScanning the drive for archives:\n1 file, 136551 bytes (134 KiB)\n\nListing archive: /tmp/gt1-payload-ynv33sxu.bin\n\n\nErrors: 1\n",
+            "stderr_tail": "\nERROR: /tmp/gt1-payload-ynv33sxu.bin : Cannot open the file as archive\n\n\n"
+          }
+        },
+        "GT1Appli": {
+          "header_offset": "0x040000",
+          "header_marker": "BSSESC2:GT1Appli",
+          "header_version": "1.080082",
+          "field_0x28_le": "0x60000000",
+          "field_0x2c_le": "0x00000040",
+          "stored_length_field_0x30": "0x11E7C5",
+          "field_0x34_le_unclassified": "0x0878B479",
+          "field_0x38_le": "0x60000000",
+          "expanded_length_candidate_0x3c": "0x2CBB18",
+          "payload_start": "0x040040",
+          "payload_end_exclusive": "0x15E805",
+          "payload_size": 1173445,
+          "payload_sha256": "ef236d8bb3ce79cb5f6a836e4ddbaa325f4ad04cde546e7cb70d6d7ecba8f2b0",
+          "first_16_payload_bytes": "ff 4f f0 08 00 80 f3 11 88 ff 36 48 37 49 37 4a",
+          "first_byte_after_payload": "0xFF",
+          "padding_to_next_boundary_all_ff": true,
+          "codec_attempts": {
+            "zlib": {
+              "valid": false,
+              "error_type": "error",
+              "error": "Error -3 while decompressing data: incorrect header check"
+            },
+            "raw_deflate": {
+              "valid": false,
+              "error_type": "error",
+              "error": "Error -3 while decompressing data: invalid block type"
+            },
+            "gzip": {
+              "valid": false,
+              "error_type": "BadGzipFile",
+              "error": "Not a gzipped file (b'\\xffO')"
+            },
+            "bzip2": {
+              "valid": false,
+              "error_type": "OSError",
+              "error": "Invalid data stream"
+            },
+            "lzma_auto": {
+              "valid": false,
+              "error_type": "LZMAError",
+              "error": "Input format not supported by decoder"
+            },
+            "lz4_frame": {
+              "valid": false,
+              "error_type": "RuntimeError",
+              "error": "LZ4F_getFrameInfo failed with code: ERROR_frameType_unknown"
+            },
+            "zstd_frame": {
+              "valid": false,
+              "error_type": "ZstdError",
+              "error": "error determining content size from frame header"
+            }
+          },
+          "7zip_archive_probe": {
+            "executable": "/usr/bin/7z",
+            "exit_code": 2,
+            "recognized_as_archive": false,
+            "stdout_tail": "\n7-Zip 26.00 (x64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-02-12\n 64-bit locale=C.UTF-8 Threads:8 OPEN_MAX:4096, ASM\n\nScanning the drive for archives:\n1 file, 1173445 bytes (1146 KiB)\n\nListing archive: /tmp/gt1-payload-ub6yulcq.bin\n\n\nErrors: 1\n",
+            "stderr_tail": "\nERROR: /tmp/gt1-payload-ub6yulcq.bin : Cannot open the file as archive\n\n\n"
+          }
+        }
+      }
+    },
+    "v109": {
+      "path": "firmware/extracted/v109/gt1_sys_v109/GT1ROM.BIN",
+      "image_size": 4194304,
+      "image_sha256": "412ebf5ffdc48554454c27df47f61428f046ea0a7d93f5c77b7f0302861abdbf",
+      "blocks": {
+        "GT1Upd": {
+          "header_offset": "0x002000",
+          "header_marker": "BSSESC2:GT1Upd  ",
+          "header_version": "1.001000",
+          "field_0x28_le": "0x60000000",
+          "field_0x2c_le": "0x00000040",
+          "stored_length_field_0x30": "0x21567",
+          "field_0x34_le_unclassified": "0x01000EBA",
+          "field_0x38_le": "0x60000000",
+          "expanded_length_candidate_0x3c": "0x2A478",
+          "payload_start": "0x002040",
+          "payload_end_exclusive": "0x0235A7",
+          "payload_size": 136551,
+          "payload_sha256": "864cebee6e15be9da8e9dca9c756bf720f35d4454f91b8fc466eaf4c23f9966a",
+          "first_16_payload_bytes": "ff 4f f0 08 00 80 f3 11 88 ff 36 48 37 49 37 4a",
+          "first_byte_after_payload": "0xFF",
+          "padding_to_next_boundary_all_ff": true,
+          "codec_attempts": {
+            "zlib": {
+              "valid": false,
+              "error_type": "error",
+              "error": "Error -3 while decompressing data: incorrect header check"
+            },
+            "raw_deflate": {
+              "valid": false,
+              "error_type": "error",
+              "error": "Error -3 while decompressing data: invalid block type"
+            },
+            "gzip": {
+              "valid": false,
+              "error_type": "BadGzipFile",
+              "error": "Not a gzipped file (b'\\xffO')"
+            },
+            "bzip2": {
+              "valid": false,
+              "error_type": "OSError",
+              "error": "Invalid data stream"
+            },
+            "lzma_auto": {
+              "valid": false,
+              "error_type": "LZMAError",
+              "error": "Input format not supported by decoder"
+            },
+            "lz4_frame": {
+              "valid": false,
+              "error_type": "RuntimeError",
+              "error": "LZ4F_getFrameInfo failed with code: ERROR_frameType_unknown"
+            },
+            "zstd_frame": {
+              "valid": false,
+              "error_type": "ZstdError",
+              "error": "error determining content size from frame header"
+            }
+          },
+          "7zip_archive_probe": {
+            "executable": "/usr/bin/7z",
+            "exit_code": 2,
+            "recognized_as_archive": false,
+            "stdout_tail": "\n7-Zip 26.00 (x64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-02-12\n 64-bit locale=C.UTF-8 Threads:8 OPEN_MAX:4096, ASM\n\nScanning the drive for archives:\n1 file, 136551 bytes (134 KiB)\n\nListing archive: /tmp/gt1-payload-p9t54l_4.bin\n\n\nErrors: 1\n",
+            "stderr_tail": "\nERROR: /tmp/gt1-payload-p9t54l_4.bin : Cannot open the file as archive\n\n\n"
+          }
+        },
+        "GT1Appli": {
+          "header_offset": "0x040000",
+          "header_marker": "BSSESC2:GT1Appli",
+          "header_version": "1.090000",
+          "field_0x28_le": "0x60000000",
+          "field_0x2c_le": "0x00000040",
+          "stored_length_field_0x30": "0x11FAFA",
+          "field_0x34_le_unclassified": "0x0886AB09",
+          "field_0x38_le": "0x60000000",
+          "expanded_length_candidate_0x3c": "0x2CD2B4",
+          "payload_start": "0x040040",
+          "payload_end_exclusive": "0x15FB3A",
+          "payload_size": 1178362,
+          "payload_sha256": "2945b15fe45aede58d10fb78e7475d72373fd1d202f5e07839566d80663c1f34",
+          "first_16_payload_bytes": "ff 4f f0 08 00 80 f3 11 88 ff 36 48 37 49 37 4a",
+          "first_byte_after_payload": "0xFF",
+          "padding_to_next_boundary_all_ff": true,
+          "codec_attempts": {
+            "zlib": {
+              "valid": false,
+              "error_type": "error",
+              "error": "Error -3 while decompressing data: incorrect header check"
+            },
+            "raw_deflate": {
+              "valid": false,
+              "error_type": "error",
+              "error": "Error -3 while decompressing data: invalid block type"
+            },
+            "gzip": {
+              "valid": false,
+              "error_type": "BadGzipFile",
+              "error": "Not a gzipped file (b'\\xffO')"
+            },
+            "bzip2": {
+              "valid": false,
+              "error_type": "OSError",
+              "error": "Invalid data stream"
+            },
+            "lzma_auto": {
+              "valid": false,
+              "error_type": "LZMAError",
+              "error": "Input format not supported by decoder"
+            },
+            "lz4_frame": {
+              "valid": false,
+              "error_type": "RuntimeError",
+              "error": "LZ4F_getFrameInfo failed with code: ERROR_frameType_unknown"
+            },
+            "zstd_frame": {
+              "valid": false,
+              "error_type": "ZstdError",
+              "error": "error determining content size from frame header"
+            }
+          },
+          "7zip_archive_probe": {
+            "executable": "/usr/bin/7z",
+            "exit_code": 2,
+            "recognized_as_archive": false,
+            "stdout_tail": "\n7-Zip 26.00 (x64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-02-12\n 64-bit locale=C.UTF-8 Threads:8 OPEN_MAX:4096, ASM\n\nScanning the drive for archives:\n1 file, 1178362 bytes (1151 KiB)\n\nListing archive: /tmp/gt1-payload-2raopspx.bin\n\n\nErrors: 1\n",
+            "stderr_tail": "\nERROR: /tmp/gt1-payload-2raopspx.bin : Cannot open the file as archive\n\n\n"
+          }
+        }
+      }
+    }
+  }
+}

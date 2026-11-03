@@ -1,0 +1,1629 @@
+{
+  "read_only": true,
+  "question": "Do the top GT-1/GT-100 byte-exact app runs also recur in GT-1 v1.05-v1.08?",
+  "method": "For each of the top 100 maximal GT-1/GT-100 exact runs, verify source bytes and SHA-256, then search the full exact sequence inside each GT-1 release's bounded stored app payload.",
+  "interpretation_limit": "Exact recurrence establishes byte identity only; it does not prove executable code, semantic equivalence, or a relocation relationship. Sequences may be repeated table/data content.",
+  "inputs": {
+    "v105": {
+      "path": "firmware/extracted/v105/gt1_sys_v105/GT1ROM.BIN",
+      "sha256": "b1bde0410795230b4a89ee3dfbbd357700bba7020624c0ff832ae3d8539d8bb4",
+      "app_range": [
+        "0x40040",
+        "0x15e098"
+      ]
+    },
+    "v107": {
+      "path": "firmware/extracted/v107/gt1_sys_v107/GT1ROM.BIN",
+      "sha256": "6a3110cd42c4b129494a93bc88d4f218e2e0b9377868ca051018b28696d6c22f",
+      "app_range": [
+        "0x40040",
+        "0x15e7a5"
+      ]
+    },
+    "v108": {
+      "path": "firmware/extracted/v108/gt1_sys_v108/GT1ROM.BIN",
+      "sha256": "7219679a87e985316264544423c9940ccbcbadeb2df0b2f13711ae57194cb612",
+      "app_range": [
+        "0x40040",
+        "0x15e805"
+      ]
+    },
+    "v109": {
+      "path": "firmware/extracted/v109/gt1_sys_v109/GT1ROM.BIN",
+      "sha256": "412ebf5ffdc48554454c27df47f61428f046ea0a7d93f5c77b7f0302861abdbf",
+      "app_range": [
+        "0x40040",
+        "0x15fb3a"
+      ]
+    },
+    "GT-100 v2.12": {
+      "path": "firmware/work/reference/esc2-comparators/gt100_v212/extracted/gt100_sys_v212/GT100ROM.BIN",
+      "sha256": "0c44ab01ac310927bf8dcc95f4ab5fcc487ed106dfcc6fc067832a35a4e32d34",
+      "app_range": [
+        "0x40040",
+        "0x17689c"
+      ]
+    }
+  },
+  "source_run_count_examined": 100,
+  "runs": [
+    {
+      "GT1_v109_offset": "0xf98d0",
+      "GT100_v212_offset": "0x12ab06",
+      "length": 622,
+      "GT100_minus_GT1_delta": "+0x31236",
+      "sha256": "f302a6eb13606b4a64cba986006c3e0fcfabef26e6c1aee7dc60972ddf353457",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0xf98d0"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x117cb9",
+      "GT100_v212_offset": "0xb1ad8",
+      "length": 580,
+      "GT100_minus_GT1_delta": "-0x661e1",
+      "sha256": "746060dcfa6436fcfa265488d47c6ac4fe24ad9b9467a72693c71457a1f3cf5a",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x117cb9"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0xd2929",
+      "GT100_v212_offset": "0xdb8f0",
+      "length": 311,
+      "GT100_minus_GT1_delta": "+0x8fc7",
+      "sha256": "506dde0db28073744b769893b06295ee17248ce10fe6b799f00deebf74ef9c50",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0xd2929"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x5460c",
+      "GT100_v212_offset": "0x5d75a",
+      "length": 284,
+      "GT100_minus_GT1_delta": "+0x914e",
+      "sha256": "3e58b0e7c6e41d40bf521774e002ade2729ff6d6f93cc570a5ec61a5bf7aea56",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x5460c"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0xd2a8b",
+      "GT100_v212_offset": "0xdba52",
+      "length": 229,
+      "GT100_minus_GT1_delta": "+0x8fc7",
+      "sha256": "78f2da3d34129864383b3ff8b49fde90c1024194e4404fa030d26bd5057402aa",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0xd2a8b"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0xd2400",
+      "GT100_v212_offset": "0xdb3d1",
+      "length": 201,
+      "GT100_minus_GT1_delta": "+0x8fd1",
+      "sha256": "92054dd3c4e41a4f71f946411acbcf50e51f80e619c7766758d4b5c1afb0bd85",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0xd2400"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x40040",
+      "GT100_v212_offset": "0x40040",
+      "length": 194,
+      "GT100_minus_GT1_delta": "+0x0",
+      "sha256": "9a86daad33fe1795cdf8da940372481d19f52942ddf785109c17d3b5163c5d48",
+      "GT1_release_occurrences": {
+        "v105": [
+          "0x40040"
+        ],
+        "v107": [
+          "0x40040"
+        ],
+        "v108": [
+          "0x40040"
+        ],
+        "v109": [
+          "0x40040"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0xe2bc1",
+      "GT100_v212_offset": "0x12a7f6",
+      "length": 180,
+      "GT100_minus_GT1_delta": "+0x47c35",
+      "sha256": "4ddc37e31cca053ee33702dbbe713743d1c515b71fc3eb7dfdc7f1b48247ee42",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0xe2bc1"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x101745",
+      "GT100_v212_offset": "0x11480f",
+      "length": 127,
+      "GT100_minus_GT1_delta": "+0x130ca",
+      "sha256": "aaad5d43603a1c9f54f5267dd00a2672cbe39a646a4ea4ce21efe3fc56e2e683",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x101745"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x10fb00",
+      "GT100_v212_offset": "0x17678f",
+      "length": 116,
+      "GT100_minus_GT1_delta": "+0x66c8f",
+      "sha256": "47e625388924378cc78a071467db2bd3a532562143d0057da9a6364620e2bc81",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x10fb00"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x10fb86",
+      "GT100_v212_offset": "0x176815",
+      "length": 114,
+      "GT100_minus_GT1_delta": "+0x66c8f",
+      "sha256": "441893d5f0e50b7d0b60649775dda22244a8b2244e7d11833994079ae77bfc69",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x10fb86"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0xd2b72",
+      "GT100_v212_offset": "0xdbb39",
+      "length": 106,
+      "GT100_minus_GT1_delta": "+0x8fc7",
+      "sha256": "334bc42b9c87e4e5aed488b2ff32d86c1c5769306bcaf5885e19f2ae9ea8ece0",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0xd2b72"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x98adb",
+      "GT100_v212_offset": "0x93b8e",
+      "length": 101,
+      "GT100_minus_GT1_delta": "-0x4f4d",
+      "sha256": "e5c5422827a88b4aaaf06d790f799da335035fb6748a553b21834b5327d8f986",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x98adb"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0xf578f",
+      "GT100_v212_offset": "0x12281e",
+      "length": 91,
+      "GT100_minus_GT1_delta": "+0x2d08f",
+      "sha256": "ea612af55f6b0dcf93c229793512636745371032d7655cf91ca39ea25f5f995b",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0xf578f"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0xe67f5",
+      "GT100_v212_offset": "0xfb74d",
+      "length": 88,
+      "GT100_minus_GT1_delta": "+0x14f58",
+      "sha256": "e7249c3c6ff67686c9ddc7e5ac28700413a03d41efbe2223b22c4fd04a698294",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0xe67f5"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x11c607",
+      "GT100_v212_offset": "0x12aefe",
+      "length": 87,
+      "GT100_minus_GT1_delta": "+0xe8f7",
+      "sha256": "b98b5ad3fb3c40f04f5ec5f8a3ba333ddd5698b59dae36ce80e934142e959018",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x11c607"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x107aba",
+      "GT100_v212_offset": "0x123148",
+      "length": 87,
+      "GT100_minus_GT1_delta": "+0x1b68e",
+      "sha256": "7383da7cd4477f8ebe6a2618a1d1935cb8447c937eab34b6670d8ced1b255c2c",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x107aba"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x10a766",
+      "GT100_v212_offset": "0x12a893",
+      "length": 87,
+      "GT100_minus_GT1_delta": "+0x2012d",
+      "sha256": "3c3ba9c7f80809566886c3b2bfdb9419e1fc6a9d6bd1e1fd5ef5e734e1d9632f",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x10a766"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x11b2b9",
+      "GT100_v212_offset": "0x12aca6",
+      "length": 87,
+      "GT100_minus_GT1_delta": "+0xf9ed",
+      "sha256": "cb06a8ed69f9086ff1080e3b8c7419d2f95a712334367c59420ed612a7b147a2",
+      "GT1_release_occurrences": {
+        "v105": [
+          "0x10e179"
+        ],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0xf9a70",
+          "0x11b2b9"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x106f3e",
+      "GT100_v212_offset": "0x12ace2",
+      "length": 87,
+      "GT100_minus_GT1_delta": "+0x23da4",
+      "sha256": "f6c1bd30d9a790f527984021b54fd8e6aa26d2d7356031cd00291b07822ae90a",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0xf9aac",
+          "0x106f3e"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x1043de",
+      "GT100_v212_offset": "0x12aa91",
+      "length": 87,
+      "GT100_minus_GT1_delta": "+0x266b3",
+      "sha256": "7ad5d710b14ab101a704be45a6438ce0b66e7d51a6ace569a4f13645941236bd",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [
+          "0xf7f67"
+        ],
+        "v108": [],
+        "v109": [
+          "0x1043de"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x106088",
+      "GT100_v212_offset": "0x12ac1c",
+      "length": 87,
+      "GT100_minus_GT1_delta": "+0x24b94",
+      "sha256": "2c123d76a0c31e2b1158654f8157cd6ec3d0745641e918794f1b846ed0eaf1ce",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0xf99e6",
+          "0x106088"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x11ad50",
+      "GT100_v212_offset": "0x12306f",
+      "length": 87,
+      "GT100_minus_GT1_delta": "+0x831f",
+      "sha256": "76c131c03ba924dd2f845a2776527a33ebbe6a32aeb9ef27fb9609c674ce595e",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x11ad50"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x1213c1",
+      "GT100_v212_offset": "0x1767b6",
+      "length": 85,
+      "GT100_minus_GT1_delta": "+0x553f5",
+      "sha256": "d3c4523ba6ff0d845e503292b4b3f040a1f0fc0a85e1cce5bfeee3d9d6b486ef",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x1213c1"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x105315",
+      "GT100_v212_offset": "0x123088",
+      "length": 85,
+      "GT100_minus_GT1_delta": "+0x1dd73",
+      "sha256": "a3fa40e5da45e6d146e205d5c8809a235b2201ad47eb06ebda442edc7011000b",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x105315"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x109f0a",
+      "GT100_v212_offset": "0x12acfd",
+      "length": 85,
+      "GT100_minus_GT1_delta": "+0x20df3",
+      "sha256": "ebd340c88aefe844f8efbcf05d881632d65cf132f329888ac324c493ad7b86b7",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0xf9ac7",
+          "0x109f0a"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x11be76",
+      "GT100_v212_offset": "0x12a8f0",
+      "length": 85,
+      "GT100_minus_GT1_delta": "+0xea7a",
+      "sha256": "c1f83035220258c02dc8224b2abc5f3bb5f290a606cba5d7bf56574184396048",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x11be76"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x1208bb",
+      "GT100_v212_offset": "0xc3971",
+      "length": 85,
+      "GT100_minus_GT1_delta": "-0x5cf4a",
+      "sha256": "fa3f694d0a32df2d11fa8b34f74a4552158bae3c6528b19f45f7b51f741695ab",
+      "GT1_release_occurrences": {
+        "v105": [
+          "0xbe45c"
+        ],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x1208bb"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x11e8ef",
+      "GT100_v212_offset": "0x12b038",
+      "length": 85,
+      "GT100_minus_GT1_delta": "+0xc749",
+      "sha256": "2a18227452b43835f5a7ef747946f43c480947379a25224377b359d84f58b5e9",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [
+          "0xf7fb1"
+        ],
+        "v109": [
+          "0x11e8ef"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x107dca",
+      "GT100_v212_offset": "0x16a341",
+      "length": 85,
+      "GT100_minus_GT1_delta": "+0x62577",
+      "sha256": "bfbaf6c011b52375719da4ba8637f8dc3817349a82d06bd2f0a7a3bb8f148ff5",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [
+          "0xacdbb"
+        ],
+        "v109": [
+          "0x107dca"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x11ed77",
+      "GT100_v212_offset": "0x12ae03",
+      "length": 85,
+      "GT100_minus_GT1_delta": "+0xc08c",
+      "sha256": "d067a1d09bcdc67cbe0fdddd08814b06392d324daaf0c6d1ab50ec125081b776",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x11ed77"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x10b704",
+      "GT100_v212_offset": "0x122824",
+      "length": 85,
+      "GT100_minus_GT1_delta": "+0x17120",
+      "sha256": "21df582c28764a67d8c0eb0e04b738163c24d06f75c373a8577b283d983edfd1",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0xf5795",
+          "0x10b704"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x11d9ba",
+      "GT100_v212_offset": "0xb1c08",
+      "length": 85,
+      "GT100_minus_GT1_delta": "-0x6bdb2",
+      "sha256": "6c2be6d8f2935fb2522978a833db9d769d44c2ea54311c35d29556f2c35045b7",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x117de9",
+          "0x11d9ba"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x11e183",
+      "GT100_v212_offset": "0x12b1b9",
+      "length": 85,
+      "GT100_minus_GT1_delta": "+0xd036",
+      "sha256": "653f68c7f9f34c7e413b447b310486072d8016bd8ce2d3910335c2592a205e0d",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x11e183"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x10cfeb",
+      "GT100_v212_offset": "0x12b1bf",
+      "length": 85,
+      "GT100_minus_GT1_delta": "+0x1e1d4",
+      "sha256": "c71f003be53ccbd8870beba7d4dadd20c4a3ebb41d8746a5b62ae6a7895ba6b5",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x10cfeb"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x10a966",
+      "GT100_v212_offset": "0xb1c8e",
+      "length": 85,
+      "GT100_minus_GT1_delta": "-0x58cd8",
+      "sha256": "c20ed5c4e7e2d93307e195bf7dff3314ffc9a9d2a947feed52f2268295ad4152",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x10a966",
+          "0x117e6f"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x10ab99",
+      "GT100_v212_offset": "0x12ac09",
+      "length": 85,
+      "GT100_minus_GT1_delta": "+0x20070",
+      "sha256": "43f287aa921fbae997951d45044f207c7669e60b4f4e34ea94a23fa74bfcdbd8",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0xf99d3",
+          "0x10ab99"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x105e8f",
+      "GT100_v212_offset": "0x12ae29",
+      "length": 85,
+      "GT100_minus_GT1_delta": "+0x24f9a",
+      "sha256": "04376aeef97ffbf65d76a975ed8d59d06f480d410192c88087a5bd6c084ab613",
+      "GT1_release_occurrences": {
+        "v105": [
+          "0xe1e7a"
+        ],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x105e8f"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x11d54b",
+      "GT100_v212_offset": "0x1214e7",
+      "length": 85,
+      "GT100_minus_GT1_delta": "+0x3f9c",
+      "sha256": "fde0ab347adaf3d6c76c7ff32060b6e175d6bf33f3bc5096a56422db76febf28",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [
+          "0xacbd7"
+        ],
+        "v108": [],
+        "v109": [
+          "0x11d54b"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x11e07f",
+      "GT100_v212_offset": "0x12a94e",
+      "length": 85,
+      "GT100_minus_GT1_delta": "+0xc8cf",
+      "sha256": "fdc4b8408a63f47601b3a5974793c2269289fb2152aacf24ac92a52f6d347f28",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x11e07f"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x1200d1",
+      "GT100_v212_offset": "0x17676c",
+      "length": 85,
+      "GT100_minus_GT1_delta": "+0x5669b",
+      "sha256": "bc2a98adc0acee4356faacadd65f5a48b842b373e3651c7b6c85fff1e6e32de4",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x1200d1"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x11d432",
+      "GT100_v212_offset": "0x12ad04",
+      "length": 85,
+      "GT100_minus_GT1_delta": "+0xd8d2",
+      "sha256": "12ceb2312c04ce942d0fa1249e6b6f4434a95c1682e6d6c3e4a76856f2d0b135",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0xf9ace",
+          "0x11d432"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x1076a4",
+      "GT100_v212_offset": "0x122fb6",
+      "length": 85,
+      "GT100_minus_GT1_delta": "+0x1b912",
+      "sha256": "224bee13dfece77938514b41cdc570ef0b0a5dfce15af5df6b083d1515b81cee",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x1076a4"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x10d4fc",
+      "GT100_v212_offset": "0xb1b18",
+      "length": 85,
+      "GT100_minus_GT1_delta": "-0x5b9e4",
+      "sha256": "76fe2024fd75332f4bc0c5c0a290a06c08406c8217b8aa05e93becede7ac31be",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x10d4fc",
+          "0x117cf9"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0xe1364",
+      "GT100_v212_offset": "0x112245",
+      "length": 85,
+      "GT100_minus_GT1_delta": "+0x30ee1",
+      "sha256": "9833362769d2a9769c635cd296701050d4116f380471de1ff4f628255209ca16",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0xe1364"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x11bf8e",
+      "GT100_v212_offset": "0x12b15d",
+      "length": 85,
+      "GT100_minus_GT1_delta": "+0xf1cf",
+      "sha256": "cf7b3717fddf9e9ad7f7fbcfc1041e14dcf3ed6c6f3cd2bcf1bd472b9f6e213e",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x11bf8e"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x10bf64",
+      "GT100_v212_offset": "0x135bb0",
+      "length": 84,
+      "GT100_minus_GT1_delta": "+0x29c4c",
+      "sha256": "8aca86d3cddbae52e7436d31c219fe20bc8ca9e5be0919b68c9d17341400c3e1",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x10bf64"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x11af84",
+      "GT100_v212_offset": "0x1356e0",
+      "length": 83,
+      "GT100_minus_GT1_delta": "+0x1a75c",
+      "sha256": "4ecb7e05a71c3fcd562f662e4426336b5339a0251b0f7f0a69a1a395479e998d",
+      "GT1_release_occurrences": {
+        "v105": [
+          "0x116b3d"
+        ],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x11af84"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0xe1397",
+      "GT100_v212_offset": "0x1177d1",
+      "length": 83,
+      "GT100_minus_GT1_delta": "+0x3643a",
+      "sha256": "e3279982e4c6a9b1e81c6b586d5414e1f8979ec257d5e629146549a3882f5db4",
+      "GT1_release_occurrences": {
+        "v105": [
+          "0x108ace"
+        ],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0xe1397"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0xade04",
+      "GT100_v212_offset": "0x11836f",
+      "length": 83,
+      "GT100_minus_GT1_delta": "+0x6a56b",
+      "sha256": "5b1c2b5411ceef46e24f23f4e488ca9475417b98e991cd212a40810f9e493be4",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0xade04"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x10e41e",
+      "GT100_v212_offset": "0x117302",
+      "length": 83,
+      "GT100_minus_GT1_delta": "+0x8ee4",
+      "sha256": "9d0d2ba0e2e11d720b5ddc6ea8f5cc785eb680e9fc941858d23360e5cea7e085",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x10e41e"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x118fd7",
+      "GT100_v212_offset": "0x139159",
+      "length": 83,
+      "GT100_minus_GT1_delta": "+0x20182",
+      "sha256": "304326a4d6dc3d75ad3e3f5b1e7407e76a3cd9e136dd551f83ecdca5e84e751e",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x118fd7"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x11ad52",
+      "GT100_v212_offset": "0x136729",
+      "length": 83,
+      "GT100_minus_GT1_delta": "+0x1b9d7",
+      "sha256": "dffd977ebe8975f829ec783c3fa9ebc476077f6c6682a57577c372b6e4bfc22a",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x11ad52"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0xf057a",
+      "GT100_v212_offset": "0x1354dc",
+      "length": 83,
+      "GT100_minus_GT1_delta": "+0x44f62",
+      "sha256": "9f54497da1722403767975e739e27fbd53f8ab07ecd49c2c3f5eb21443375ad5",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [
+          "0xe1d47"
+        ],
+        "v108": [],
+        "v109": [
+          "0xe324e",
+          "0xf057a"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x11810c",
+      "GT100_v212_offset": "0x119c6c",
+      "length": 83,
+      "GT100_minus_GT1_delta": "+0x1b60",
+      "sha256": "67ad3908648904c478206660ed8b868296bde6c988382e91a8d7aa64fd20299c",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x11810c"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x1063a6",
+      "GT100_v212_offset": "0x11c339",
+      "length": 83,
+      "GT100_minus_GT1_delta": "+0x15f93",
+      "sha256": "3c742082d700add59b23cc3436904e41522df2f353b85a36620bfd5f58b977e0",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x1063a6"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0xe3a24",
+      "GT100_v212_offset": "0x134afb",
+      "length": 83,
+      "GT100_minus_GT1_delta": "+0x510d7",
+      "sha256": "106078ed8b7ec01191fc31008e26480d0a62dd83e8b7669c43a10f5dfcd62fdc",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0xe3a24"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0xf9980",
+      "GT100_v212_offset": "0x135940",
+      "length": 83,
+      "GT100_minus_GT1_delta": "+0x3bfc0",
+      "sha256": "86ad4f37038f8a4519a51f70bbba74465779551db5f4f071ce5f2c305d3b28a9",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0xf9980"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0xe14a6",
+      "GT100_v212_offset": "0x119d77",
+      "length": 83,
+      "GT100_minus_GT1_delta": "+0x388d1",
+      "sha256": "20132e4fee7b260d70c49de06ab85c79126a7afb81e0e2d1f8596c54cd32bf3f",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0xe14a6"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0xf994b",
+      "GT100_v212_offset": "0x12db0b",
+      "length": 83,
+      "GT100_minus_GT1_delta": "+0x341c0",
+      "sha256": "4776ddbc027704a761f071d23242974116c9b482342d6227905ba24087885b1a",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0xf994b"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x10ff2c",
+      "GT100_v212_offset": "0x1325ef",
+      "length": 83,
+      "GT100_minus_GT1_delta": "+0x226c3",
+      "sha256": "a90978d0ebc46930163dff1b568a175513e9667a5a65784d3062da70b6ed3e97",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x10ff2c"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0xe324e",
+      "GT100_v212_offset": "0x1354dc",
+      "length": 83,
+      "GT100_minus_GT1_delta": "+0x5228e",
+      "sha256": "9f54497da1722403767975e739e27fbd53f8ab07ecd49c2c3f5eb21443375ad5",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [
+          "0xe1d47"
+        ],
+        "v108": [],
+        "v109": [
+          "0xe324e",
+          "0xf057a"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x14facd",
+      "GT100_v212_offset": "0x137ec6",
+      "length": 83,
+      "GT100_minus_GT1_delta": "-0x17c07",
+      "sha256": "e381e4201f825863c821d322c54f49839a0a32a2ee3c6fd28aa59df4142e6c05",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [
+          "0xacd7d"
+        ],
+        "v109": [
+          "0x14facd"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0xf992b",
+      "GT100_v212_offset": "0x1353b9",
+      "length": 83,
+      "GT100_minus_GT1_delta": "+0x3ba8e",
+      "sha256": "11cdf2cc3156980b4e51f1df5f2caa8fb366d08ec5d184150114f4297b7538a3",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0xf992b"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x10737c",
+      "GT100_v212_offset": "0x11ae61",
+      "length": 83,
+      "GT100_minus_GT1_delta": "+0x13ae5",
+      "sha256": "3936e2831f4c2b5c6358090d2c1e23ff1e436e177b05609f6cfa68a4496cf89c",
+      "GT1_release_occurrences": {
+        "v105": [
+          "0x116dc1"
+        ],
+        "v107": [],
+        "v108": [
+          "0xe02b8"
+        ],
+        "v109": [
+          "0x10737c"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x10c9ea",
+      "GT100_v212_offset": "0x112245",
+      "length": 83,
+      "GT100_minus_GT1_delta": "+0x585b",
+      "sha256": "461b3e1517f8f8b06471ec6a770e7edb2183d88be61af2b5c083fcdf65ac369e",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0xe1364",
+          "0x10c9ea"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x1181d6",
+      "GT100_v212_offset": "0x11e22e",
+      "length": 83,
+      "GT100_minus_GT1_delta": "+0x6058",
+      "sha256": "968db63d1803a01757a9931997097a2938f9a4e0d3463a22aa4742ab8c219290",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x1181d6"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0xe3325",
+      "GT100_v212_offset": "0x137053",
+      "length": 83,
+      "GT100_minus_GT1_delta": "+0x53d2e",
+      "sha256": "d284bd19d0adc77b371b40efa89479cb24ad1781423517b86ad455400fc4fcfe",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0xe3325"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x117e3c",
+      "GT100_v212_offset": "0x11c23a",
+      "length": 83,
+      "GT100_minus_GT1_delta": "+0x43fe",
+      "sha256": "6420f89e2dac4de59e69982dc1850e62818cbde3b967b92ada767b92f19d3231",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x117e3c"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x117d21",
+      "GT100_v212_offset": "0x13583e",
+      "length": 83,
+      "GT100_minus_GT1_delta": "+0x1db1d",
+      "sha256": "18d2340f0f46698e4249359ca1102ad2fb266be21669150fcedc5398dc6aa7d4",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x117d21"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x11816e",
+      "GT100_v212_offset": "0x11d63c",
+      "length": 83,
+      "GT100_minus_GT1_delta": "+0x54ce",
+      "sha256": "329a3685e1ef50a6b243600cadca85e10d232def639db0298c35a149bc9addb9",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x11816e"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0xe2926",
+      "GT100_v212_offset": "0x130ea3",
+      "length": 83,
+      "GT100_minus_GT1_delta": "+0x4e57d",
+      "sha256": "1c85d9f3a6ac7c5027b163fc236b8b2663786219e58e33094aab28148a7f04fe",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [
+          "0x116cf0"
+        ],
+        "v109": [
+          "0xe2926"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x118328",
+      "GT100_v212_offset": "0x11df35",
+      "length": 83,
+      "GT100_minus_GT1_delta": "+0x5c0d",
+      "sha256": "d09ca1f2374465232d11a7af51e8ccc88ade554890afb1db46f39d2b0eb26c22",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x118328"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x117eec",
+      "GT100_v212_offset": "0x136a71",
+      "length": 83,
+      "GT100_minus_GT1_delta": "+0x1eb85",
+      "sha256": "3aac4c02d24188f12f5d36e0b6ef503e9f55eeeccbc3e61de3bef9fa9510e102",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x117eec"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x117fe5",
+      "GT100_v212_offset": "0x119649",
+      "length": 83,
+      "GT100_minus_GT1_delta": "+0x1664",
+      "sha256": "a91dd1eb3746e2a2fe696e94149ae07ad6bb6ebf28416c6ca9904cd043919008",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x117fe5"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x117cad",
+      "GT100_v212_offset": "0x11c74f",
+      "length": 82,
+      "GT100_minus_GT1_delta": "+0x4aa2",
+      "sha256": "d5bdb39dae5da5072056bc71d2897f2a1ac4eab94f2265eaaf096e84f61848e6",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x117cad"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0xf05a1",
+      "GT100_v212_offset": "0x118284",
+      "length": 82,
+      "GT100_minus_GT1_delta": "+0x27ce3",
+      "sha256": "9e9f34ea51ad9312b2d098f2b0c52556d6fc5a9b6d6629aa36aafca6e9c15e23",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [
+          "0xe1d6e"
+        ],
+        "v108": [],
+        "v109": [
+          "0xf05a1"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x1183d9",
+      "GT100_v212_offset": "0x138ce1",
+      "length": 82,
+      "GT100_minus_GT1_delta": "+0x20908",
+      "sha256": "006272d472fb3e5277510ca2927462f8fff5e8f8718b1c4aed85f3180392dbc8",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x1183d9"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0xbfc72",
+      "GT100_v212_offset": "0x12eb54",
+      "length": 82,
+      "GT100_minus_GT1_delta": "+0x6eee2",
+      "sha256": "b3d5696de8df072bcbea7cdfe9253c38d445f9e45d3055bc914fe795a5eca323",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0xbfc72"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0xe1f0d",
+      "GT100_v212_offset": "0x11cb38",
+      "length": 82,
+      "GT100_minus_GT1_delta": "+0x3ac2b",
+      "sha256": "09e8e335e57ba2f69f2f2eadf55bc8edab0de1dc7bef2d615ce5ed7424afb191",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [
+          "0xe01a5"
+        ],
+        "v108": [],
+        "v109": [
+          "0xade8f",
+          "0xe1f0d"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x11d0c4",
+      "GT100_v212_offset": "0x12ae32",
+      "length": 82,
+      "GT100_minus_GT1_delta": "+0xdd6e",
+      "sha256": "1132556fbe329ec32f870dc061a4de57e31eb9389e0c5cf68c9ef5697c107ccc",
+      "GT1_release_occurrences": {
+        "v105": [
+          "0xe1e83"
+        ],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x11d0c4"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x1184b6",
+      "GT100_v212_offset": "0x130aeb",
+      "length": 82,
+      "GT100_minus_GT1_delta": "+0x18635",
+      "sha256": "f86c4cf81a78e0d079fac8cd0b61301935dd77d1760c088b77d7e307626b80a5",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x1184b6"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0xade8f",
+      "GT100_v212_offset": "0x11cb38",
+      "length": 82,
+      "GT100_minus_GT1_delta": "+0x6eca9",
+      "sha256": "09e8e335e57ba2f69f2f2eadf55bc8edab0de1dc7bef2d615ce5ed7424afb191",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [
+          "0xe01a5"
+        ],
+        "v108": [],
+        "v109": [
+          "0xade8f",
+          "0xe1f0d"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0xe31e1",
+      "GT100_v212_offset": "0x1095bf",
+      "length": 82,
+      "GT100_minus_GT1_delta": "+0x263de",
+      "sha256": "ad1e4a2fb7fd76baea8500a12773d2991dff5ce83f771d9b1fddecda4f814d09",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0xe31e1"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x117ebc",
+      "GT100_v212_offset": "0x11be43",
+      "length": 82,
+      "GT100_minus_GT1_delta": "+0x3f87",
+      "sha256": "c601a7b38b91e31aa7d599edf6dc99af679fca793018143d0a44cd653d8129c2",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x117ebc"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x118b76",
+      "GT100_v212_offset": "0x11f230",
+      "length": 81,
+      "GT100_minus_GT1_delta": "+0x66ba",
+      "sha256": "9c8d15de3b02597c8271e95dc18393f213e7366df762e196ffa6af8b15dc7bb7",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x118b76"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x10b60d",
+      "GT100_v212_offset": "0x12dd1f",
+      "length": 81,
+      "GT100_minus_GT1_delta": "+0x22712",
+      "sha256": "981e2ccae5bb17bafe1dc4e04eaaad6a7b0e360776dd437012cfaa1d90513cf7",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x10b60d"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x11a38f",
+      "GT100_v212_offset": "0x134f5a",
+      "length": 81,
+      "GT100_minus_GT1_delta": "+0x1abcb",
+      "sha256": "ba26a809b62608abfb58ee4e451d39c5d1018a09535155a855e591a47ef8e82d",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x11a38f"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x117e69",
+      "GT100_v212_offset": "0x11b952",
+      "length": 80,
+      "GT100_minus_GT1_delta": "+0x3ae9",
+      "sha256": "282808b029f680a54043567047d1673880bcb692e491399cbc1e76717197d39e",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x117e69"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x117d48",
+      "GT100_v212_offset": "0x138330",
+      "length": 80,
+      "GT100_minus_GT1_delta": "+0x205e8",
+      "sha256": "6aba87038d92f102ad50129d262c6775d2f472d7a9282db99c9784300b652870",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x117d48"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0xe156b",
+      "GT100_v212_offset": "0x12d9fa",
+      "length": 80,
+      "GT100_minus_GT1_delta": "+0x4c48f",
+      "sha256": "123fc8a86446ab1ca1680ad3f7312f639905c3c9d490a45d5bbdd4bce72a3648",
+      "GT1_release_occurrences": {
+        "v105": [
+          "0xac6ec"
+        ],
+        "v107": [
+          "0x117165"
+        ],
+        "v108": [],
+        "v109": [
+          "0xe156b"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0xade4d",
+      "GT100_v212_offset": "0x11e42a",
+      "length": 80,
+      "GT100_minus_GT1_delta": "+0x705dd",
+      "sha256": "27865166c89e0a670fc70098fb48b6310644988495b5db7a496aa88ef33767fc",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [
+          "0xe0163"
+        ],
+        "v108": [],
+        "v109": [
+          "0xade4d"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x10c6bf",
+      "GT100_v212_offset": "0x119d7a",
+      "length": 80,
+      "GT100_minus_GT1_delta": "+0xd6bb",
+      "sha256": "ef8965107dba25fd678d45555dd60eba769ae340a5be46c5287cba021253690e",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0xe14a9",
+          "0x10c6bf"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x1185c8",
+      "GT100_v212_offset": "0x1309cd",
+      "length": 80,
+      "GT100_minus_GT1_delta": "+0x18405",
+      "sha256": "bc66dde565da2c60dc561a8620904195375d3ce7f1ee3c4337ba09ba255bb066",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [
+          "0xe1d4a"
+        ],
+        "v109": [
+          "0x1185c8"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0xe1ae9",
+      "GT100_v212_offset": "0x11cb3a",
+      "length": 80,
+      "GT100_minus_GT1_delta": "+0x3b051",
+      "sha256": "c95126870a5eb02989ac8720c42393681183b0b12306db70581c58d17ca568ba",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [
+          "0xe01a7"
+        ],
+        "v108": [],
+        "v109": [
+          "0xade91",
+          "0xe1ae9",
+          "0xe1f0f"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x117c27",
+      "GT100_v212_offset": "0x13478d",
+      "length": 80,
+      "GT100_minus_GT1_delta": "+0x1cb66",
+      "sha256": "006ac4589ef67b2129b5d1d3d83b744f428ee21f70617a29cfd6beba9f5dd452",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0x117c27"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0xf05a3",
+      "GT100_v212_offset": "0x1364dd",
+      "length": 80,
+      "GT100_minus_GT1_delta": "+0x45f3a",
+      "sha256": "08932e1247c6f55064be026ceecf9a7dfbe942388e74350c02a276a53530a3d3",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [
+          "0xe1d70"
+        ],
+        "v108": [],
+        "v109": [
+          "0xf05a3"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0xe2b2c",
+      "GT100_v212_offset": "0x12317b",
+      "length": 80,
+      "GT100_minus_GT1_delta": "+0x4064f",
+      "sha256": "b9c2414587afa54b22711d15e2b062cabd8a337ecd81f8b39bcb7636f0fed234",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [
+          "0x11a962"
+        ],
+        "v108": [],
+        "v109": [
+          "0xe2b2c"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0x1229bf",
+      "GT100_v212_offset": "0x119d77",
+      "length": 79,
+      "GT100_minus_GT1_delta": "-0x8c48",
+      "sha256": "e7b56839d8c7cd8bb6cb715fd25bbec5bee99b8bc617e2c88a7ae3c3f4658e39",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0xe14a6",
+          "0x1229bf"
+        ]
+      }
+    },
+    {
+      "GT1_v109_offset": "0xe1a76",
+      "GT100_v212_offset": "0x11d640",
+      "length": 79,
+      "GT100_minus_GT1_delta": "+0x3bbca",
+      "sha256": "d86343c88637326e5485dce657941c524cf5222924a7ca12eedfe07f55e14c00",
+      "GT1_release_occurrences": {
+        "v105": [],
+        "v107": [],
+        "v108": [],
+        "v109": [
+          "0xe1a76",
+          "0x118172"
+        ]
+      }
+    }
+  ]
+}

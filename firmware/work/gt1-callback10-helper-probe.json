@@ -1,0 +1,50 @@
+{
+  "read_only": true,
+  "method": "verify reconstructed segment and Ghidra report hashes; decode the candidate handler and resolve its literal words",
+  "interpretation": "The optional callback selected from the v1.09 callback-10 path copies one global byte into an object field at +0x26 and returns. It is initialization bookkeeping; this trace does not identify any audio processing path.",
+  "input": {
+    "path": "firmware/work/reconstructed/v109-GT1Appli-seg0.bin",
+    "sha256": "019adcf28e4a12444d48699b0b2a386a1a5feb2e43b59d465c696ee42540b9f9"
+  },
+  "ghidra_report": {
+    "path": "firmware/work/ghidra-combined-v109-app-init-callbacks.txt",
+    "sha256": "1aefc2a76e433be5dd1d319aec2414c84e32a1d28b481e0b11fa787114728e50"
+  },
+  "callback_context": {
+    "startup_callback": "0x010014A4",
+    "optional_handler_thunk": "0x0100155A",
+    "generic_dispatcher": "0x01002060",
+    "indirect_call_site": "0x010020BC",
+    "handler_pointer_literal_address": "0x1001564",
+    "handler_pointer": "0x1001551"
+  },
+  "handler": {
+    "address": "0x1001550",
+    "instruction_bytes": "0349097880f826107047",
+    "instructions": [
+      {
+        "address": "0x1001550",
+        "bytes": "0349",
+        "instruction": "ldr r1, [pc, #0xc]"
+      },
+      {
+        "address": "0x1001552",
+        "bytes": "0978",
+        "instruction": "ldrb r1, [r1]"
+      },
+      {
+        "address": "0x1001554",
+        "bytes": "80f82610",
+        "instruction": "strb.w r1, [r0, #0x26]"
+      },
+      {
+        "address": "0x1001558",
+        "bytes": "7047",
+        "instruction": "bx lr"
+      }
+    ],
+    "global_byte_pointer_literal_address": "0x1001560",
+    "global_byte_address": "0x1010a89",
+    "destination_object_offset": "+0x26"
+  }
+}

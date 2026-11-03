@@ -1,0 +1,1120 @@
+{
+  "classification": "exploratory periodic-marker projection; numeric-looking exact byte matches only",
+  "inputs": {
+    "v1.05": {
+      "path": "firmware/extracted/v105/gt1_sys_v105/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "b1bde0410795230b4a89ee3dfbbd357700bba7020624c0ff832ae3d8539d8bb4",
+      "app_payload_candidate": [
+        "0x40040",
+        "0x15E098"
+      ]
+    },
+    "v1.07": {
+      "path": "firmware/extracted/v107/gt1_sys_v107/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "6a3110cd42c4b129494a93bc88d4f218e2e0b9377868ca051018b28696d6c22f",
+      "app_payload_candidate": [
+        "0x40040",
+        "0x15E7A5"
+      ]
+    },
+    "v1.08": {
+      "path": "firmware/extracted/v108/gt1_sys_v108/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "7219679a87e985316264544423c9940ccbcbadeb2df0b2f13711ae57194cb612",
+      "app_payload_candidate": [
+        "0x40040",
+        "0x15E805"
+      ]
+    },
+    "v1.09": {
+      "path": "firmware/extracted/v109/gt1_sys_v109/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "412ebf5ffdc48554454c27df47f61428f046ea0a7d93f5c77b7f0302861abdbf",
+      "app_payload_candidate": [
+        "0x40040",
+        "0x15FB3A"
+      ]
+    }
+  },
+  "method": {
+    "candidate_marker_values": [
+      "0xBF",
+      "0xDF",
+      "0xF7",
+      "0xFD",
+      "0xFF"
+    ],
+    "marker_basis": "values observed as periodic skipped bytes in separate runtime-string scans; their role as delimiters is unverified",
+    "record_shape_tested": "one candidate marker byte followed by eight bytes parsed as two little-endian float32 values; next candidate marker exactly nine bytes later",
+    "filters": {
+      "minimum_records": 12,
+      "finite_abs_le_100_fraction": 0.95,
+      "non_near_zero_fraction_of_plausible_values": 0.25
+    },
+    "comparison": "exact equality of concatenated eight-byte record payloads after omitting each candidate marker; separator bytes and phase alignment are recorded separately"
+  },
+  "candidate_counts_by_version": {
+    "v1.05": 32,
+    "v1.07": 38,
+    "v1.08": 16,
+    "v1.09": 22
+  },
+  "adjacent_comparisons": [
+    {
+      "earlier": "v1.05",
+      "later": "v1.07",
+      "candidate_chain_counts": {
+        "v1.05": 32,
+        "v1.07": 38
+      },
+      "exact_projected_data_matches": [
+        {
+          "earlier_data_offset": "0xD9764",
+          "later_data_offset": "0xD4978",
+          "offset_delta": "-0x4dec",
+          "records": 62,
+          "projected_data_bytes": 496,
+          "projected_data_sha256": "1f5549b4fd23a6230a12f930039553653883dbce2fa708ba2e3d6a48a52cd495",
+          "separator_values_earlier": [
+            253,
+            255
+          ],
+          "separator_values_later": [
+            253,
+            255
+          ],
+          "separator_sequences_identical": true,
+          "first_float_pairs": [
+            [
+              0.828753948,
+              0.830753446
+            ],
+            [
+              0.832728922,
+              0.834681869
+            ],
+            [
+              0.836617708,
+              0.838529706
+            ],
+            [
+              0.840421736,
+              0.842301667
+            ]
+          ]
+        },
+        {
+          "earlier_data_offset": "0xB2F3B",
+          "later_data_offset": "0xB35BF",
+          "offset_delta": "+0x684",
+          "records": 52,
+          "projected_data_bytes": 416,
+          "projected_data_sha256": "e4e0f55f405ccf67b7042f1864ba165169c499f70c8bdc777922fb6d33ad4ac6",
+          "separator_values_earlier": [
+            255
+          ],
+          "separator_values_later": [
+            255
+          ],
+          "separator_sequences_identical": true,
+          "first_float_pairs": [
+            [
+              -0.0646671057,
+              0.0289939363
+            ],
+            [
+              -0.00105249591,
+              0.13714163
+            ],
+            [
+              0.00094724627,
+              1.2692486
+            ],
+            [
+              0.832225502,
+              0.0520267747
+            ]
+          ]
+        },
+        {
+          "earlier_data_offset": "0xB2A36",
+          "later_data_offset": "0xB30BA",
+          "offset_delta": "+0x684",
+          "records": 44,
+          "projected_data_bytes": 352,
+          "projected_data_sha256": "02be42a45c70cfefae5da7faefd0c720490da51195931dc9a78e529dc782d1fd",
+          "separator_values_earlier": [
+            255
+          ],
+          "separator_values_later": [
+            255
+          ],
+          "separator_sequences_identical": true,
+          "first_float_pairs": [
+            [
+              -0.19859308,
+              0.092287086
+            ],
+            [
+              -0.00355405803,
+              0.39307189
+            ],
+            [
+              0.00319865206,
+              1.00188601
+            ],
+            [
+              0.779466867,
+              0.053597264
+            ]
+          ]
+        },
+        {
+          "earlier_data_offset": "0xD8ECE",
+          "later_data_offset": "0xD40E2",
+          "offset_delta": "-0x4dec",
+          "records": 41,
+          "projected_data_bytes": 328,
+          "projected_data_sha256": "062baa85850b0cd4537fd2c8057cca787b323a869e76b3cac294be40d3e15e30",
+          "separator_values_earlier": [
+            223,
+            255
+          ],
+          "separator_values_later": [
+            223,
+            255
+          ],
+          "separator_sequences_identical": true,
+          "first_float_pairs": [
+            [
+              0.682654619,
+              0.685998023
+            ],
+            [
+              0.689320326,
+              0.692610085
+            ],
+            [
+              0.69587338,
+              0.6991238
+            ],
+            [
+              0.70235914,
+              0.706167102
+            ]
+          ]
+        },
+        {
+          "earlier_data_offset": "0xB282A",
+          "later_data_offset": "0xB2EAE",
+          "offset_delta": "+0x684",
+          "records": 33,
+          "projected_data_bytes": 264,
+          "projected_data_sha256": "7024c1c54f71a15e85dde4e3c3c5810f3c00f3808bbe749838166c0993f15dbc",
+          "separator_values_earlier": [
+            255
+          ],
+          "separator_values_later": [
+            255
+          ],
+          "separator_sequences_identical": true,
+          "first_float_pairs": [
+            [
+              -0.268368155,
+              0.127352878
+            ],
+            [
+              -0.00508225057,
+              0.510884106
+            ],
+            [
+              0.00457402552,
+              0.884002149
+            ],
+            [
+              0.756204844,
+              0.0542897172
+            ]
+          ]
+        },
+        {
+          "earlier_data_offset": "0xD84BC",
+          "later_data_offset": "0xD36D0",
+          "offset_delta": "-0x4dec",
+          "records": 30,
+          "projected_data_bytes": 240,
+          "projected_data_sha256": "ce6dbb4dfc73ee520f734d01030fba0f6d360ce0f9f62a165a71b78a841c1957",
+          "separator_values_earlier": [
+            255
+          ],
+          "separator_values_later": [
+            255
+          ],
+          "separator_sequences_identical": true,
+          "first_float_pairs": [
+            [
+              0.471461087,
+              0.476085633
+            ],
+            [
+              0.480640203,
+              0.485171974
+            ],
+            [
+              0.489683479,
+              0.494186103
+            ],
+            [
+              0.498663723,
+              0.503124237
+            ]
+          ]
+        },
+        {
+          "earlier_data_offset": "0xD8089",
+          "later_data_offset": "0xD329D",
+          "offset_delta": "-0x4dec",
+          "records": 28,
+          "projected_data_bytes": 224,
+          "projected_data_sha256": "090ccb84e2cc35e5d113d2f55ea56a45626a7d5dcccda8c7c1e0cc0953c3a44e",
+          "separator_values_earlier": [
+            223,
+            255
+          ],
+          "separator_values_later": [
+            223,
+            255
+          ],
+          "separator_sequences_identical": true,
+          "first_float_pairs": [
+            [
+              0.345756263,
+              0.350556135
+            ],
+            [
+              0.355302244,
+              0.360043019
+            ],
+            [
+              0.364780784,
+              0.369527191
+            ],
+            [
+              0.374264956,
+              0.379002154
+            ]
+          ]
+        },
+        {
+          "earlier_data_offset": "0xD909B",
+          "later_data_offset": "0xD42AF",
+          "offset_delta": "-0x4dec",
+          "records": 27,
+          "projected_data_bytes": 216,
+          "projected_data_sha256": "80e32429eb799f2a856faa1722c95b26ba775251b4eadb2a1beea0765265c417",
+          "separator_values_earlier": [
+            255
+          ],
+          "separator_values_later": [
+            255
+          ],
+          "separator_sequences_identical": true,
+          "first_float_pairs": [
+            [
+              0.744530201,
+              0.749070704
+            ],
+            [
+              0.755973279,
+              0.703211665
+            ],
+            [
+              0.711534202,
+              0.716723561
+            ],
+            [
+              0.720479369,
+              0.723552167
+            ]
+          ]
+        },
+        {
+          "earlier_data_offset": "0xDA960",
+          "later_data_offset": "0xD5B74",
+          "offset_delta": "-0x4dec",
+          "records": 24,
+          "projected_data_bytes": 192,
+          "projected_data_sha256": "93227069239417c4cad2ade55f4d5b77f4707fe06714526f7b59e358ebc1e491",
+          "separator_values_earlier": [
+            223,
+            255
+          ],
+          "separator_values_later": [
+            223,
+            255
+          ],
+          "separator_sequences_identical": true,
+          "first_float_pairs": [
+            [
+              0.219038203,
+              0.22946471
+            ],
+            [
+              0.238440812,
+              0.247644186
+            ],
+            [
+              0.257202774,
+              0.267130315
+            ],
+            [
+              0.277441055,
+              0.288149744
+            ]
+          ]
+        },
+        {
+          "earlier_data_offset": "0xB234A",
+          "later_data_offset": "0xB29CE",
+          "offset_delta": "+0x684",
+          "records": 23,
+          "projected_data_bytes": 184,
+          "projected_data_sha256": "a54930ac7d2ec70d4df550c1f1b22c3df3ed9c568f41cda0b297a5acf8beb092",
+          "separator_values_earlier": [
+            255
+          ],
+          "separator_values_later": [
+            255
+          ],
+          "separator_sequences_identical": true,
+          "first_float_pairs": [
+            [
+              -0.55863297,
+              0.297827989
+            ],
+            [
+              -0.0147565249,
+              0.877177179
+            ],
+            [
+              0.0132808723,
+              0.552183151
+            ],
+            [
+              0.690726995,
+              0.0562388226
+            ]
+          ]
+        },
+        {
+          "earlier_data_offset": "0xD9387",
+          "later_data_offset": "0xD459B",
+          "offset_delta": "-0x4dec",
+          "records": 20,
+          "projected_data_bytes": 160,
+          "projected_data_sha256": "42f5e8badb160344a47d4eeb97a47702b49e84a4629d6e501c3bf1300298c99c",
+          "separator_values_earlier": [
+            255
+          ],
+          "separator_values_later": [
+            255
+          ],
+          "separator_sequences_identical": true,
+          "first_float_pairs": [
+            [
+              0.781248868,
+              0.783720911
+            ],
+            [
+              0.786173165,
+              0.788597226
+            ],
+            [
+              0.790997863,
+              0.793385029
+            ],
+            [
+              0.795757234,
+              0.798544347
+            ]
+          ]
+        },
+        {
+          "earlier_data_offset": "0xD83AC",
+          "later_data_offset": "0xD35C0",
+          "offset_delta": "-0x4dec",
+          "records": 18,
+          "projected_data_bytes": 144,
+          "projected_data_sha256": "2b7750b07b4a52e41ac83b93f6fc8104e928b3ce2cf8e23cc5526ae4ac3c7325",
+          "separator_values_earlier": [
+            255
+          ],
+          "separator_values_later": [
+            255
+          ],
+          "separator_sequences_identical": true,
+          "first_float_pairs": [
+            [
+              0.466535598,
+              0.471109897
+            ],
+            [
+              0.47567746,
+              0.480221897
+            ],
+            [
+              0.484751195,
+              0.489283681
+            ],
+            [
+              0.493816048,
+              0.499177307
+            ]
+          ]
+        },
+        {
+          "earlier_data_offset": "0xD8B03",
+          "later_data_offset": "0xD3D17",
+          "offset_delta": "-0x4dec",
+          "records": 18,
+          "projected_data_bytes": 144,
+          "projected_data_sha256": "6eda44885b43ec6143700404d76710f1853254a1e12f69f18cfb31cf743cbac8",
+          "separator_values_earlier": [
+            247,
+            255
+          ],
+          "separator_values_later": [
+            247,
+            255
+          ],
+          "separator_sequences_identical": true,
+          "first_float_pairs": [
+            [
+              0.575299501,
+              0.580187738
+            ],
+            [
+              0.586734235,
+              0.596750677
+            ],
+            [
+              0.525321484,
+              0.536744118
+            ],
+            [
+              0.543922782,
+              0.549145341
+            ]
+          ]
+        },
+        {
+          "earlier_data_offset": "0xB2BF1",
+          "later_data_offset": "0xB3275",
+          "offset_delta": "+0x684",
+          "records": 17,
+          "projected_data_bytes": 136,
+          "projected_data_sha256": "30ab83548628b5a9d82918834a3118c49c3f39da2f49d17f046fbbf6e15d4e21",
+          "separator_values_earlier": [
+            247,
+            255
+          ],
+          "separator_values_later": [
+            247,
+            255
+          ],
+          "separator_sequences_identical": true,
+          "first_float_pairs": [
+            [
+              -0.147845507,
+              0.0677368715
+            ],
+            [
+              -0.00254761567,
+              0.300631821
+            ],
+            [
+              0.00229285401,
+              1.09684217
+            ],
+            [
+              0.798204541,
+              0.0530394912
+            ]
+          ]
+        },
+        {
+          "earlier_data_offset": "0xDA509",
+          "later_data_offset": "0xD571D",
+          "offset_delta": "-0x4dec",
+          "records": 17,
+          "projected_data_bytes": 136,
+          "projected_data_sha256": "85df01cc436e4b91a3a63bd61af4802cab0942872fb766b03aa58c70c1d38de0",
+          "separator_values_earlier": [
+            223,
+            255
+          ],
+          "separator_values_later": [
+            223,
+            255
+          ],
+          "separator_sequences_identical": true,
+          "first_float_pairs": [
+            [
+              0.251262218,
+              0.246251285
+            ],
+            [
+              0.24134028,
+              0.236527219
+            ],
+            [
+              0.231810153,
+              0.227187142
+            ],
+            [
+              0.222656339,
+              0.218185678
+            ]
+          ]
+        },
+        {
+          "earlier_data_offset": "0xB3198",
+          "later_data_offset": "0xB381C",
+          "offset_delta": "+0x684",
+          "records": 16,
+          "projected_data_bytes": 128,
+          "projected_data_sha256": "e5c3cf558d28f86e98d0a8e0767c3bb03c19d0105f64f71aa0d71454c66923ea",
+          "separator_values_earlier": [
+            255
+          ],
+          "separator_values_later": [
+            255
+          ],
+          "separator_sequences_identical": true,
+          "first_float_pairs": [
+            [
+              -0.0129569648,
+              0.00573678361
+            ],
+            [
+              -0.000204068318,
+              0.0281709805
+            ],
+            [
+              0.000183661483,
+              1.3869189
+            ],
+            [
+              0.855445385,
+              0.0513355769
+            ]
+          ]
+        },
+        {
+          "earlier_data_offset": "0xB134A",
+          "later_data_offset": "0xB19CE",
+          "offset_delta": "+0x684",
+          "records": 15,
+          "projected_data_bytes": 120,
+          "projected_data_sha256": "abe783a4319afe6c020f47d7c8c8d643921342d4c56c60cff34e22ff2da20d04",
+          "separator_values_earlier": [
+            255
+          ],
+          "separator_values_later": [
+            255
+          ],
+          "separator_sequences_identical": true,
+          "first_float_pairs": [
+            [
+              0.99000001,
+              0.000121428573
+            ],
+            [
+              0.750835001,
+              0.988532484
+            ],
+            [
+              0.000162210708,
+              0.751680017
+            ],
+            [
+              0.986959994,
+              0.000213257139
+            ]
+          ]
+        },
+        {
+          "earlier_data_offset": "0xB3542",
+          "later_data_offset": "0xB3BC6",
+          "offset_delta": "+0x684",
+          "records": 15,
+          "projected_data_bytes": 120,
+          "projected_data_sha256": "d61592022b481f6e38c08c2b1094cd82914eaae9187d722ba3f77c1f3576dd2a",
+          "separator_values_earlier": [
+            247,
+            255
+          ],
+          "separator_values_later": [
+            247,
+            255
+          ],
+          "separator_sequences_identical": true,
+          "first_float_pairs": [
+            [
+              0.482532114,
+              1.21685636
+            ],
+            [
+              1.22589362,
+              0.490098059
+            ],
+            [
+              0.285925806,
+              0.74000001
+            ],
+            [
+              0.013380412,
+              0.487552643
+            ]
+          ]
+        },
+        {
+          "earlier_data_offset": "0xB3A7F",
+          "later_data_offset": "0xB4103",
+          "offset_delta": "+0x684",
+          "records": 15,
+          "projected_data_bytes": 120,
+          "projected_data_sha256": "7fe940142a191de05a970b811a55931297cbcd3ed3a8758eec49866558d40163",
+          "separator_values_earlier": [
+            255
+          ],
+          "separator_values_later": [
+            255
+          ],
+          "separator_sequences_identical": true,
+          "first_float_pairs": [
+            [
+              0.00356039614,
+              0.767651796
+            ],
+            [
+              1.10043585,
+              1.07887292
+            ],
+            [
+              0.157385021,
+              0.0820593834
+            ],
+            [
+              0.289999992,
+              0.00341904489
+            ]
+          ]
+        },
+        {
+          "earlier_data_offset": "0xD9C19",
+          "later_data_offset": "0xD4E2D",
+          "offset_delta": "-0x4dec",
+          "records": 15,
+          "projected_data_bytes": 120,
+          "projected_data_sha256": "b1d5f35f6ffea943ee788048113545acb7694b0bbd02c55238abe7143dad2a09",
+          "separator_values_earlier": [
+            253,
+            255
+          ],
+          "separator_values_later": [
+            253,
+            255
+          ],
+          "separator_sequences_identical": true,
+          "first_float_pairs": [
+            [
+              0.268004984,
+              0.26107502
+            ],
+            [
+              0.25500837,
+              0.248132303
+            ],
+            [
+              0.239184514,
+              0.225874171
+            ],
+            [
+              0.204746306,
+              0.173254892
+            ]
+          ]
+        },
+        {
+          "earlier_data_offset": "0xDA835",
+          "later_data_offset": "0xD5A49",
+          "offset_delta": "-0x4dec",
+          "records": 13,
+          "projected_data_bytes": 104,
+          "projected_data_sha256": "843ffc2e540cf0f288b17535514b319380f4c781c4f690e2e85f1f4f25ecddd6",
+          "separator_values_earlier": [
+            223,
+            255
+          ],
+          "separator_values_later": [
+            223,
+            255
+          ],
+          "separator_sequences_identical": true,
+          "first_float_pairs": [
+            [
+              0.317291021,
+              0.208341971
+            ],
+            [
+              0.22158207,
+              0.230414897
+            ],
+            [
+              0.237122044,
+              0.242803201
+            ],
+            [
+              0.248543769,
+              0.254420072
+            ]
+          ]
+        },
+        {
+          "earlier_data_offset": "0xD8D35",
+          "later_data_offset": "0xD3F49",
+          "offset_delta": "-0x4dec",
+          "records": 12,
+          "projected_data_bytes": 96,
+          "projected_data_sha256": "8f8b3ab911523542b63e14e06dc42aebd0e0eb7ef29c187adfc5b234b27549f2",
+          "separator_values_earlier": [
+            253,
+            255
+          ],
+          "separator_values_later": [
+            253,
+            255
+          ],
+          "separator_sequences_identical": true,
+          "first_float_pairs": [
+            [
+              0.647912204,
+              0.651536345
+            ],
+            [
+              0.655146956,
+              0.659400761
+            ],
+            [
+              0.665084422,
+              0.67375201
+            ],
+            [
+              0.609818757,
+              0.619980991
+            ]
+          ]
+        },
+        {
+          "earlier_data_offset": "0xDA750",
+          "later_data_offset": "0xD5964",
+          "offset_delta": "-0x4dec",
+          "records": 12,
+          "projected_data_bytes": 96,
+          "projected_data_sha256": "89def3166703ef1e1a0c86eda493be86573b471d946fd1132cbfe8d281189e5c",
+          "separator_values_earlier": [
+            253,
+            255
+          ],
+          "separator_values_later": [
+            253,
+            255
+          ],
+          "separator_sequences_identical": true,
+          "first_float_pairs": [
+            [
+              0.263071716,
+              0.265430033
+            ],
+            [
+              0.268264055,
+              0.272138745
+            ],
+            [
+              0.278238595,
+              0.226792455
+            ],
+            [
+              0.234385222,
+              0.239333555
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "earlier": "v1.07",
+      "later": "v1.08",
+      "candidate_chain_counts": {
+        "v1.07": 38,
+        "v1.08": 16
+      },
+      "exact_projected_data_matches": []
+    },
+    {
+      "earlier": "v1.08",
+      "later": "v1.09",
+      "candidate_chain_counts": {
+        "v1.08": 16,
+        "v1.09": 22
+      },
+      "exact_projected_data_matches": [
+        {
+          "earlier_data_offset": "0xD6FF2",
+          "later_data_offset": "0xD8172",
+          "offset_delta": "+0x1180",
+          "records": 96,
+          "projected_data_bytes": 768,
+          "projected_data_sha256": "835164275ebb11d6d4f933c84d4c8cd3eba73ce8563586a2463eb8b138a59ea7",
+          "separator_values_earlier": [
+            191,
+            255
+          ],
+          "separator_values_later": [
+            191,
+            255
+          ],
+          "separator_sequences_identical": true,
+          "first_float_pairs": [
+            [
+              0.948494554,
+              0.887383282
+            ],
+            [
+              0.830191135,
+              0.776702642
+            ],
+            [
+              0.726659477,
+              0.679803252
+            ],
+            [
+              0.635703206,
+              0.586952031
+            ]
+          ]
+        },
+        {
+          "earlier_data_offset": "0xD7C1B",
+          "later_data_offset": "0xD8D9B",
+          "offset_delta": "+0x1180",
+          "records": 57,
+          "projected_data_bytes": 456,
+          "projected_data_sha256": "ec9c7c34ab9d8af5a7f54f82a2c9c21db95d210d8bcdc503c322c478a735b2ac",
+          "separator_values_earlier": [
+            255
+          ],
+          "separator_values_later": [
+            255
+          ],
+          "separator_sequences_identical": true,
+          "first_float_pairs": [
+            [
+              2.59818268,
+              2.2950151
+            ],
+            [
+              2.08791971,
+              1.92651951
+            ],
+            [
+              1.77882922,
+              1.64220762
+            ],
+            [
+              1.51582503,
+              1.39888012
+            ]
+          ]
+        },
+        {
+          "earlier_data_offset": "0xD7962",
+          "later_data_offset": "0xD8AE2",
+          "offset_delta": "+0x1180",
+          "records": 37,
+          "projected_data_bytes": 296,
+          "projected_data_sha256": "80e1f5b21295dc09639adef1648ee0fb663e69513878e7622c9e45440d4c1f8b",
+          "separator_values_earlier": [
+            247,
+            255
+          ],
+          "separator_values_later": [
+            247,
+            255
+          ],
+          "separator_sequences_identical": true,
+          "first_float_pairs": [
+            [
+              1.65181434,
+              1.53168786
+            ],
+            [
+              1.42020094,
+              1.31669271
+            ],
+            [
+              1.22065532,
+              1.13152587
+            ],
+            [
+              1.04875684,
+              0.971552014
+            ]
+          ]
+        },
+        {
+          "earlier_data_offset": "0xD67EC",
+          "later_data_offset": "0xD796C",
+          "offset_delta": "+0x1180",
+          "records": 25,
+          "projected_data_bytes": 200,
+          "projected_data_sha256": "457c0031ad5d89becf1a150d8df2776960b7ef381a762cf09d1841d91efbe792",
+          "separator_values_earlier": [
+            255
+          ],
+          "separator_values_later": [
+            255
+          ],
+          "separator_sequences_identical": true,
+          "first_float_pairs": [
+            [
+              0.355913848,
+              0.33298263
+            ],
+            [
+              0.311528474,
+              0.291440576
+            ],
+            [
+              0.272534341,
+              0.251634061
+            ],
+            [
+              0.225933373,
+              0.191259608
+            ]
+          ]
+        },
+        {
+          "earlier_data_offset": "0xD7B5C",
+          "later_data_offset": "0xD8CDC",
+          "offset_delta": "+0x1180",
+          "records": 19,
+          "projected_data_bytes": 152,
+          "projected_data_sha256": "56fefc4c06e7e6ebd2eb4b722f6ece0466762430a5278a844879435f633345ee",
+          "separator_values_earlier": [
+            191,
+            255
+          ],
+          "separator_values_later": [
+            191,
+            255
+          ],
+          "separator_sequences_identical": true,
+          "first_float_pairs": [
+            [
+              1.60857308,
+              1.48673987
+            ],
+            [
+              1.37389815,
+              1.26945496
+            ],
+            [
+              1.17276537,
+              1.08320606
+            ],
+            [
+              0.999903202,
+              0.911188245
+            ]
+          ]
+        },
+        {
+          "earlier_data_offset": "0xD68F3",
+          "later_data_offset": "0xD7A73",
+          "offset_delta": "+0x1180",
+          "records": 18,
+          "projected_data_bytes": 144,
+          "projected_data_sha256": "17ef2bdec72b9f0b27b3d364561ee3861b468fc3e5a182715c77fea0c4d5e112",
+          "separator_values_earlier": [
+            191,
+            255
+          ],
+          "separator_values_later": [
+            191,
+            255
+          ],
+          "separator_sequences_identical": true,
+          "first_float_pairs": [
+            [
+              0.571951389,
+              0.534621596
+            ],
+            [
+              0.500160038,
+              0.467929333
+            ],
+            [
+              0.437780797,
+              0.409565657
+            ],
+            [
+              0.383177698,
+              0.358489454
+            ]
+          ]
+        },
+        {
+          "earlier_data_offset": "0xD669D",
+          "later_data_offset": "0xD781D",
+          "offset_delta": "+0x1180",
+          "records": 12,
+          "projected_data_bytes": 96,
+          "projected_data_sha256": "877057c2a2bebd8698ddb2aa9e315f5149600b23682f05c4e40a54c5e199b2e3",
+          "separator_values_earlier": [
+            191,
+            255
+          ],
+          "separator_values_later": [
+            191,
+            255
+          ],
+          "separator_sequences_identical": true,
+          "first_float_pairs": [
+            [
+              0.207962036,
+              0.186721802
+            ],
+            [
+              0.158065796,
+              0.617991507
+            ],
+            [
+              0.518453717,
+              0.46377939
+            ],
+            [
+              0.427361578,
+              0.39946878
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "interpretation_limit": "The projection can find candidate structured numeric data but cannot establish float use, record semantics, executable status, runtime loading, relocation, or an encoding/normalization mechanism. The fixed marker set and plausibility filters can produce false positives."
+}

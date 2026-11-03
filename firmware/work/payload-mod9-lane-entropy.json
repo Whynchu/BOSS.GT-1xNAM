@@ -1,0 +1,1329 @@
+{
+  "question": "Does a stored application payload have one consistently distinctive byte lane modulo 9?",
+  "read_only": true,
+  "method": "Partition each bounded application payload by offset modulo 9 and compare byte-frequency entropy, unique-byte count, and top byte frequencies.",
+  "period_bytes": 9,
+  "interpretation_limit": "Equal lane statistics do not disprove local 9-byte records; they only weaken a simple global 8+1 lane format. High entropy does not prove encryption.",
+  "images": {
+    "GT-1 v1.05": {
+      "path": "firmware/extracted/v105/gt1_sys_v105/GT1ROM.BIN",
+      "image_sha256": "b1bde0410795230b4a89ee3dfbbd357700bba7020624c0ff832ae3d8539d8bb4",
+      "payload_offset": "0x40040",
+      "payload_length": 1171544,
+      "payload_sha256": "4081604fc89c772960a4d9a5582a8a11b2fe8f8b360922dbb94f4df7b27baccf",
+      "lane_entropy_min": 7.684370446,
+      "lane_entropy_max": 7.697187921,
+      "lane_entropy_range": 0.012817475,
+      "lanes": [
+        {
+          "phase": 0,
+          "bytes": 130172,
+          "entropy_bits_per_byte": 7.696574409,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 3990
+            },
+            {
+              "byte": "0xFF",
+              "count": 3423
+            },
+            {
+              "byte": "0x3F",
+              "count": 1702
+            },
+            {
+              "byte": "0x20",
+              "count": 1630
+            },
+            {
+              "byte": "0xF0",
+              "count": 1468
+            }
+          ]
+        },
+        {
+          "phase": 1,
+          "bytes": 130172,
+          "entropy_bits_per_byte": 7.684370446,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4164
+            },
+            {
+              "byte": "0xFF",
+              "count": 3853
+            },
+            {
+              "byte": "0x3F",
+              "count": 1789
+            },
+            {
+              "byte": "0x20",
+              "count": 1500
+            },
+            {
+              "byte": "0x60",
+              "count": 1479
+            }
+          ]
+        },
+        {
+          "phase": 2,
+          "bytes": 130172,
+          "entropy_bits_per_byte": 7.696733037,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4026
+            },
+            {
+              "byte": "0xFF",
+              "count": 3348
+            },
+            {
+              "byte": "0x3F",
+              "count": 1653
+            },
+            {
+              "byte": "0x20",
+              "count": 1591
+            },
+            {
+              "byte": "0xF0",
+              "count": 1472
+            }
+          ]
+        },
+        {
+          "phase": 3,
+          "bytes": 130172,
+          "entropy_bits_per_byte": 7.689766151,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4169
+            },
+            {
+              "byte": "0xFF",
+              "count": 3736
+            },
+            {
+              "byte": "0x3F",
+              "count": 1626
+            },
+            {
+              "byte": "0x20",
+              "count": 1559
+            },
+            {
+              "byte": "0x60",
+              "count": 1454
+            }
+          ]
+        },
+        {
+          "phase": 4,
+          "bytes": 130172,
+          "entropy_bits_per_byte": 7.693318043,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4159
+            },
+            {
+              "byte": "0xFF",
+              "count": 3327
+            },
+            {
+              "byte": "0x3F",
+              "count": 1821
+            },
+            {
+              "byte": "0x20",
+              "count": 1568
+            },
+            {
+              "byte": "0x60",
+              "count": 1488
+            }
+          ]
+        },
+        {
+          "phase": 5,
+          "bytes": 130171,
+          "entropy_bits_per_byte": 7.697187921,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4090
+            },
+            {
+              "byte": "0xFF",
+              "count": 3415
+            },
+            {
+              "byte": "0x3F",
+              "count": 1708
+            },
+            {
+              "byte": "0x20",
+              "count": 1616
+            },
+            {
+              "byte": "0x60",
+              "count": 1459
+            }
+          ]
+        },
+        {
+          "phase": 6,
+          "bytes": 130171,
+          "entropy_bits_per_byte": 7.693321537,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4021
+            },
+            {
+              "byte": "0xFF",
+              "count": 3444
+            },
+            {
+              "byte": "0x3F",
+              "count": 1692
+            },
+            {
+              "byte": "0x20",
+              "count": 1615
+            },
+            {
+              "byte": "0x60",
+              "count": 1445
+            }
+          ]
+        },
+        {
+          "phase": 7,
+          "bytes": 130171,
+          "entropy_bits_per_byte": 7.695120093,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4094
+            },
+            {
+              "byte": "0xFF",
+              "count": 3493
+            },
+            {
+              "byte": "0x3F",
+              "count": 1643
+            },
+            {
+              "byte": "0x20",
+              "count": 1538
+            },
+            {
+              "byte": "0x60",
+              "count": 1481
+            }
+          ]
+        },
+        {
+          "phase": 8,
+          "bytes": 130171,
+          "entropy_bits_per_byte": 7.69274512,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4098
+            },
+            {
+              "byte": "0xFF",
+              "count": 3380
+            },
+            {
+              "byte": "0x3F",
+              "count": 1782
+            },
+            {
+              "byte": "0x20",
+              "count": 1544
+            },
+            {
+              "byte": "0x60",
+              "count": 1506
+            }
+          ]
+        }
+      ]
+    },
+    "GT-1 v1.07": {
+      "path": "firmware/extracted/v107/gt1_sys_v107/GT1ROM.BIN",
+      "image_sha256": "6a3110cd42c4b129494a93bc88d4f218e2e0b9377868ca051018b28696d6c22f",
+      "payload_offset": "0x40040",
+      "payload_length": 1173349,
+      "payload_sha256": "78858382a3b1f3b7055b34e81499b7dd4c3b183c4070e8c7f387948c54b18bb2",
+      "lane_entropy_min": 7.679052126,
+      "lane_entropy_max": 7.693918248,
+      "lane_entropy_range": 0.014866122,
+      "lanes": [
+        {
+          "phase": 0,
+          "bytes": 130373,
+          "entropy_bits_per_byte": 7.69377656,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4143
+            },
+            {
+              "byte": "0xFF",
+              "count": 3476
+            },
+            {
+              "byte": "0x3F",
+              "count": 1791
+            },
+            {
+              "byte": "0x20",
+              "count": 1517
+            },
+            {
+              "byte": "0xBF",
+              "count": 1447
+            }
+          ]
+        },
+        {
+          "phase": 1,
+          "bytes": 130372,
+          "entropy_bits_per_byte": 7.688611016,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4159
+            },
+            {
+              "byte": "0xFF",
+              "count": 3431
+            },
+            {
+              "byte": "0x3F",
+              "count": 1629
+            },
+            {
+              "byte": "0x20",
+              "count": 1604
+            },
+            {
+              "byte": "0x40",
+              "count": 1514
+            }
+          ]
+        },
+        {
+          "phase": 2,
+          "bytes": 130372,
+          "entropy_bits_per_byte": 7.693918248,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4149
+            },
+            {
+              "byte": "0xFF",
+              "count": 3412
+            },
+            {
+              "byte": "0x3F",
+              "count": 1646
+            },
+            {
+              "byte": "0x20",
+              "count": 1473
+            },
+            {
+              "byte": "0xF0",
+              "count": 1459
+            }
+          ]
+        },
+        {
+          "phase": 3,
+          "bytes": 130372,
+          "entropy_bits_per_byte": 7.688461774,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4120
+            },
+            {
+              "byte": "0xFF",
+              "count": 3437
+            },
+            {
+              "byte": "0x3F",
+              "count": 1837
+            },
+            {
+              "byte": "0x20",
+              "count": 1486
+            },
+            {
+              "byte": "0xF0",
+              "count": 1444
+            }
+          ]
+        },
+        {
+          "phase": 4,
+          "bytes": 130372,
+          "entropy_bits_per_byte": 7.691549094,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4156
+            },
+            {
+              "byte": "0xFF",
+              "count": 3353
+            },
+            {
+              "byte": "0x3F",
+              "count": 1772
+            },
+            {
+              "byte": "0x20",
+              "count": 1531
+            },
+            {
+              "byte": "0x60",
+              "count": 1446
+            }
+          ]
+        },
+        {
+          "phase": 5,
+          "bytes": 130372,
+          "entropy_bits_per_byte": 7.689709002,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4144
+            },
+            {
+              "byte": "0xFF",
+              "count": 3604
+            },
+            {
+              "byte": "0x3F",
+              "count": 1683
+            },
+            {
+              "byte": "0x20",
+              "count": 1471
+            },
+            {
+              "byte": "0x60",
+              "count": 1454
+            }
+          ]
+        },
+        {
+          "phase": 6,
+          "bytes": 130372,
+          "entropy_bits_per_byte": 7.693169512,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4198
+            },
+            {
+              "byte": "0xFF",
+              "count": 3492
+            },
+            {
+              "byte": "0x3F",
+              "count": 1597
+            },
+            {
+              "byte": "0x60",
+              "count": 1482
+            },
+            {
+              "byte": "0x20",
+              "count": 1443
+            }
+          ]
+        },
+        {
+          "phase": 7,
+          "bytes": 130372,
+          "entropy_bits_per_byte": 7.688081824,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4269
+            },
+            {
+              "byte": "0xFF",
+              "count": 3439
+            },
+            {
+              "byte": "0x3F",
+              "count": 1761
+            },
+            {
+              "byte": "0x20",
+              "count": 1508
+            },
+            {
+              "byte": "0x60",
+              "count": 1503
+            }
+          ]
+        },
+        {
+          "phase": 8,
+          "bytes": 130372,
+          "entropy_bits_per_byte": 7.679052126,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4123
+            },
+            {
+              "byte": "0xFF",
+              "count": 4039
+            },
+            {
+              "byte": "0x3F",
+              "count": 1703
+            },
+            {
+              "byte": "0x20",
+              "count": 1476
+            },
+            {
+              "byte": "0x40",
+              "count": 1462
+            }
+          ]
+        }
+      ]
+    },
+    "GT-1 v1.08": {
+      "path": "firmware/extracted/v108/gt1_sys_v108/GT1ROM.BIN",
+      "image_sha256": "7219679a87e985316264544423c9940ccbcbadeb2df0b2f13711ae57194cb612",
+      "payload_offset": "0x40040",
+      "payload_length": 1173445,
+      "payload_sha256": "ef236d8bb3ce79cb5f6a836e4ddbaa325f4ad04cde546e7cb70d6d7ecba8f2b0",
+      "lane_entropy_min": 7.680441545,
+      "lane_entropy_max": 7.699546826,
+      "lane_entropy_range": 0.019105281,
+      "lanes": [
+        {
+          "phase": 0,
+          "bytes": 130383,
+          "entropy_bits_per_byte": 7.690824229,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4050
+            },
+            {
+              "byte": "0xFF",
+              "count": 3698
+            },
+            {
+              "byte": "0x3F",
+              "count": 1620
+            },
+            {
+              "byte": "0xF0",
+              "count": 1518
+            },
+            {
+              "byte": "0x20",
+              "count": 1446
+            }
+          ]
+        },
+        {
+          "phase": 1,
+          "bytes": 130383,
+          "entropy_bits_per_byte": 7.680441545,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4257
+            },
+            {
+              "byte": "0xFF",
+              "count": 3837
+            },
+            {
+              "byte": "0x3F",
+              "count": 1556
+            },
+            {
+              "byte": "0x20",
+              "count": 1535
+            },
+            {
+              "byte": "0xF0",
+              "count": 1458
+            }
+          ]
+        },
+        {
+          "phase": 2,
+          "bytes": 130383,
+          "entropy_bits_per_byte": 7.699546826,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4197
+            },
+            {
+              "byte": "0xFF",
+              "count": 3295
+            },
+            {
+              "byte": "0x3F",
+              "count": 1635
+            },
+            {
+              "byte": "0xF0",
+              "count": 1526
+            },
+            {
+              "byte": "0x01",
+              "count": 1459
+            }
+          ]
+        },
+        {
+          "phase": 3,
+          "bytes": 130383,
+          "entropy_bits_per_byte": 7.685412687,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4225
+            },
+            {
+              "byte": "0xFF",
+              "count": 3522
+            },
+            {
+              "byte": "0x3F",
+              "count": 1897
+            },
+            {
+              "byte": "0x20",
+              "count": 1482
+            },
+            {
+              "byte": "0x60",
+              "count": 1467
+            }
+          ]
+        },
+        {
+          "phase": 4,
+          "bytes": 130383,
+          "entropy_bits_per_byte": 7.691388163,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4116
+            },
+            {
+              "byte": "0xFF",
+              "count": 3521
+            },
+            {
+              "byte": "0x3F",
+              "count": 1730
+            },
+            {
+              "byte": "0x20",
+              "count": 1510
+            },
+            {
+              "byte": "0x60",
+              "count": 1466
+            }
+          ]
+        },
+        {
+          "phase": 5,
+          "bytes": 130383,
+          "entropy_bits_per_byte": 7.695866085,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4188
+            },
+            {
+              "byte": "0xFF",
+              "count": 3380
+            },
+            {
+              "byte": "0x3F",
+              "count": 1616
+            },
+            {
+              "byte": "0x20",
+              "count": 1488
+            },
+            {
+              "byte": "0xF0",
+              "count": 1467
+            }
+          ]
+        },
+        {
+          "phase": 6,
+          "bytes": 130383,
+          "entropy_bits_per_byte": 7.691181352,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4138
+            },
+            {
+              "byte": "0xFF",
+              "count": 3620
+            },
+            {
+              "byte": "0x3F",
+              "count": 1622
+            },
+            {
+              "byte": "0x20",
+              "count": 1517
+            },
+            {
+              "byte": "0x60",
+              "count": 1501
+            }
+          ]
+        },
+        {
+          "phase": 7,
+          "bytes": 130382,
+          "entropy_bits_per_byte": 7.694277894,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4086
+            },
+            {
+              "byte": "0xFF",
+              "count": 3357
+            },
+            {
+              "byte": "0x3F",
+              "count": 1767
+            },
+            {
+              "byte": "0x20",
+              "count": 1488
+            },
+            {
+              "byte": "0xF0",
+              "count": 1474
+            }
+          ]
+        },
+        {
+          "phase": 8,
+          "bytes": 130382,
+          "entropy_bits_per_byte": 7.694735649,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4023
+            },
+            {
+              "byte": "0xFF",
+              "count": 3420
+            },
+            {
+              "byte": "0x3F",
+              "count": 1852
+            },
+            {
+              "byte": "0xF0",
+              "count": 1493
+            },
+            {
+              "byte": "0x60",
+              "count": 1470
+            }
+          ]
+        }
+      ]
+    },
+    "GT-1 v1.09": {
+      "path": "firmware/extracted/v109/gt1_sys_v109/GT1ROM.BIN",
+      "image_sha256": "412ebf5ffdc48554454c27df47f61428f046ea0a7d93f5c77b7f0302861abdbf",
+      "payload_offset": "0x40040",
+      "payload_length": 1178362,
+      "payload_sha256": "2945b15fe45aede58d10fb78e7475d72373fd1d202f5e07839566d80663c1f34",
+      "lane_entropy_min": 7.679404032,
+      "lane_entropy_max": 7.697301385,
+      "lane_entropy_range": 0.017897353,
+      "lanes": [
+        {
+          "phase": 0,
+          "bytes": 130930,
+          "entropy_bits_per_byte": 7.697301385,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4003
+            },
+            {
+              "byte": "0xFF",
+              "count": 3369
+            },
+            {
+              "byte": "0x3F",
+              "count": 1844
+            },
+            {
+              "byte": "0x20",
+              "count": 1481
+            },
+            {
+              "byte": "0x60",
+              "count": 1456
+            }
+          ]
+        },
+        {
+          "phase": 1,
+          "bytes": 130929,
+          "entropy_bits_per_byte": 7.686623842,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4078
+            },
+            {
+              "byte": "0xFF",
+              "count": 3682
+            },
+            {
+              "byte": "0x3F",
+              "count": 1793
+            },
+            {
+              "byte": "0x20",
+              "count": 1512
+            },
+            {
+              "byte": "0x60",
+              "count": 1488
+            }
+          ]
+        },
+        {
+          "phase": 2,
+          "bytes": 130929,
+          "entropy_bits_per_byte": 7.695589311,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4039
+            },
+            {
+              "byte": "0xFF",
+              "count": 3388
+            },
+            {
+              "byte": "0x3F",
+              "count": 1660
+            },
+            {
+              "byte": "0x60",
+              "count": 1466
+            },
+            {
+              "byte": "0x01",
+              "count": 1460
+            }
+          ]
+        },
+        {
+          "phase": 3,
+          "bytes": 130929,
+          "entropy_bits_per_byte": 7.691937114,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4085
+            },
+            {
+              "byte": "0xFF",
+              "count": 3552
+            },
+            {
+              "byte": "0x3F",
+              "count": 1630
+            },
+            {
+              "byte": "0x20",
+              "count": 1531
+            },
+            {
+              "byte": "0xF0",
+              "count": 1467
+            }
+          ]
+        },
+        {
+          "phase": 4,
+          "bytes": 130929,
+          "entropy_bits_per_byte": 7.687493443,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4035
+            },
+            {
+              "byte": "0xFF",
+              "count": 3694
+            },
+            {
+              "byte": "0x3F",
+              "count": 1661
+            },
+            {
+              "byte": "0x20",
+              "count": 1507
+            },
+            {
+              "byte": "0x60",
+              "count": 1479
+            }
+          ]
+        },
+        {
+          "phase": 5,
+          "bytes": 130929,
+          "entropy_bits_per_byte": 7.686629256,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4132
+            },
+            {
+              "byte": "0xFF",
+              "count": 3647
+            },
+            {
+              "byte": "0x3F",
+              "count": 1850
+            },
+            {
+              "byte": "0x20",
+              "count": 1483
+            },
+            {
+              "byte": "0x60",
+              "count": 1469
+            }
+          ]
+        },
+        {
+          "phase": 6,
+          "bytes": 130929,
+          "entropy_bits_per_byte": 7.679404032,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4111
+            },
+            {
+              "byte": "0xFF",
+              "count": 3859
+            },
+            {
+              "byte": "0x3F",
+              "count": 1760
+            },
+            {
+              "byte": "0x20",
+              "count": 1512
+            },
+            {
+              "byte": "0x60",
+              "count": 1500
+            }
+          ]
+        },
+        {
+          "phase": 7,
+          "bytes": 130929,
+          "entropy_bits_per_byte": 7.695812355,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4112
+            },
+            {
+              "byte": "0xFF",
+              "count": 3493
+            },
+            {
+              "byte": "0x3F",
+              "count": 1602
+            },
+            {
+              "byte": "0x20",
+              "count": 1511
+            },
+            {
+              "byte": "0xF0",
+              "count": 1470
+            }
+          ]
+        },
+        {
+          "phase": 8,
+          "bytes": 130929,
+          "entropy_bits_per_byte": 7.694442997,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4097
+            },
+            {
+              "byte": "0xFF",
+              "count": 3592
+            },
+            {
+              "byte": "0x3F",
+              "count": 1632
+            },
+            {
+              "byte": "0x60",
+              "count": 1536
+            },
+            {
+              "byte": "0x20",
+              "count": 1490
+            }
+          ]
+        }
+      ]
+    },
+    "GT-100 v2.12": {
+      "path": "firmware/work/reference/esc2-comparators/gt100_v212/extracted/gt100_sys_v212/GT100ROM.BIN",
+      "image_sha256": "0c44ab01ac310927bf8dcc95f4ab5fcc487ed106dfcc6fc067832a35a4e32d34",
+      "payload_offset": "0x40040",
+      "payload_length": 1271900,
+      "payload_sha256": "adfbf71a09ff0dece90f77047a95f489e26952c2c1ee2a3a482bfe4a2952722e",
+      "lane_entropy_min": 7.699587209,
+      "lane_entropy_max": 7.707301962,
+      "lane_entropy_range": 0.007714753,
+      "lanes": [
+        {
+          "phase": 0,
+          "bytes": 141323,
+          "entropy_bits_per_byte": 7.701967246,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4272
+            },
+            {
+              "byte": "0xFF",
+              "count": 4042
+            },
+            {
+              "byte": "0x3F",
+              "count": 1940
+            },
+            {
+              "byte": "0x20",
+              "count": 1666
+            },
+            {
+              "byte": "0xBF",
+              "count": 1634
+            }
+          ]
+        },
+        {
+          "phase": 1,
+          "bytes": 141323,
+          "entropy_bits_per_byte": 7.704554687,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4085
+            },
+            {
+              "byte": "0xFF",
+              "count": 3849
+            },
+            {
+              "byte": "0x3F",
+              "count": 2002
+            },
+            {
+              "byte": "0x20",
+              "count": 1617
+            },
+            {
+              "byte": "0x01",
+              "count": 1542
+            }
+          ]
+        },
+        {
+          "phase": 2,
+          "bytes": 141322,
+          "entropy_bits_per_byte": 7.707301962,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4241
+            },
+            {
+              "byte": "0xFF",
+              "count": 3663
+            },
+            {
+              "byte": "0x3F",
+              "count": 1997
+            },
+            {
+              "byte": "0xBF",
+              "count": 1595
+            },
+            {
+              "byte": "0xF0",
+              "count": 1580
+            }
+          ]
+        },
+        {
+          "phase": 3,
+          "bytes": 141322,
+          "entropy_bits_per_byte": 7.704531938,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4092
+            },
+            {
+              "byte": "0xFF",
+              "count": 3725
+            },
+            {
+              "byte": "0x3F",
+              "count": 2023
+            },
+            {
+              "byte": "0x20",
+              "count": 1670
+            },
+            {
+              "byte": "0xBF",
+              "count": 1610
+            }
+          ]
+        },
+        {
+          "phase": 4,
+          "bytes": 141322,
+          "entropy_bits_per_byte": 7.705914229,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4233
+            },
+            {
+              "byte": "0xFF",
+              "count": 3725
+            },
+            {
+              "byte": "0x3F",
+              "count": 1901
+            },
+            {
+              "byte": "0x60",
+              "count": 1632
+            },
+            {
+              "byte": "0x20",
+              "count": 1615
+            }
+          ]
+        },
+        {
+          "phase": 5,
+          "bytes": 141322,
+          "entropy_bits_per_byte": 7.699587209,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4326
+            },
+            {
+              "byte": "0xFF",
+              "count": 3636
+            },
+            {
+              "byte": "0x3F",
+              "count": 2071
+            },
+            {
+              "byte": "0x20",
+              "count": 1596
+            },
+            {
+              "byte": "0xF0",
+              "count": 1527
+            }
+          ]
+        },
+        {
+          "phase": 6,
+          "bytes": 141322,
+          "entropy_bits_per_byte": 7.707206373,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4231
+            },
+            {
+              "byte": "0xFF",
+              "count": 3607
+            },
+            {
+              "byte": "0x3F",
+              "count": 1934
+            },
+            {
+              "byte": "0x20",
+              "count": 1646
+            },
+            {
+              "byte": "0xBF",
+              "count": 1569
+            }
+          ]
+        },
+        {
+          "phase": 7,
+          "bytes": 141322,
+          "entropy_bits_per_byte": 7.701482015,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4256
+            },
+            {
+              "byte": "0xFF",
+              "count": 3762
+            },
+            {
+              "byte": "0x3F",
+              "count": 1982
+            },
+            {
+              "byte": "0x20",
+              "count": 1604
+            },
+            {
+              "byte": "0xBF",
+              "count": 1558
+            }
+          ]
+        },
+        {
+          "phase": 8,
+          "bytes": 141322,
+          "entropy_bits_per_byte": 7.699951696,
+          "unique_byte_values": 256,
+          "top_5_byte_counts": [
+            {
+              "byte": "0x00",
+              "count": 4171
+            },
+            {
+              "byte": "0xFF",
+              "count": 3782
+            },
+            {
+              "byte": "0x3F",
+              "count": 2073
+            },
+            {
+              "byte": "0xBF",
+              "count": 1659
+            },
+            {
+              "byte": "0x20",
+              "count": 1596
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

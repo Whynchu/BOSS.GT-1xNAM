@@ -1,0 +1,169 @@
+program=v109-GT1Appli.bin
+language=ARM:LE:32:v7
+candidate_mapping=runtime 0x60000000 + decoded_output_offset; unverified
+instruction_scope=Ghidra-decoded code units in first 0x200 bytes plus explicitly seeded offsets
+instruction_count_first_0x200=84
+instructions_from_60000000:
+60000000  mov.w  r0, #0x8
+60000004  msr  basepri, r0
+60000008  ldr  r0, [0x600000e4]
+6000000a  ldr  r1, [0x600000e8]
+6000000c  ldr  r2, [0x600000ec]
+6000000e  bl  0x60000080
+60000012  ldr  r0, [0x600000f0]
+60000014  ldr  r1, [0x600000f4]
+60000016  bl  0x6000009e
+6000001a  ldr  r0, [0x600000f8]
+6000001c  ldr  r1, [0x600000fc]
+6000001e  ldr  r2, [0x60000100]
+60000020  bl  0x60000080
+60000024  ldr  r0, [0x60000104]
+60000026  ldr  r1, [0x60000108]
+60000028  bl  0x6000009e
+6000002c  ldr  r0, [0x6000010c]
+6000002e  ldr  r1, [0x60000110]
+60000030  ldr  r2, [0x60000114]
+60000032  bl  0x60000080
+60000036  ldr  r0, [0x60000118]
+60000038  ldr  r1, [0x6000011c]
+6000003a  bl  0x6000009e
+6000003e  ldr  r0, [0x60000120]
+60000040  ldr  r1, [0x60000124]
+60000042  ldr  r2, [0x60000128]
+60000044  bl  0x60000080
+60000048  ldr  r0, [0x6000012c]
+6000004a  ldr  r1, [0x60000130]
+6000004c  bl  0x6000009e
+60000050  ldr  r0, [0x60000134]
+60000052  ldr  r1, [0x60000138]
+60000054  ldr  r2, [0x6000013c]
+60000056  bl  0x60000080
+6000005a  ldr  r0, [0x60000140]
+6000005c  ldr  r1, [0x60000144]
+6000005e  bl  0x6000009e
+60000062  ldr  r0, [0x60000148]
+60000064  ldr  r1, [0x6000014c]
+60000066  ldr  r2, [0x60000150]
+instructions_from_60000080:
+60000080  cmp  r1, #0x28
+60000082  ittt  cs
+60000084  ldm.cs.w  r2, {r3,r4,r5,r6,r7,r8,r9,r10,r11,r12}
+60000088  stm.cs.w  r0, {r3,r4,r5,r6,r7,r8,r9,r10,r11,r12}
+6000008c  sub.cs  r1, #0x28
+6000008e  bcs  0x60000080
+60000090  cmp  r1, #0x0
+60000092  ittt  gt
+60000094  ldmia.gt  r2!, {r3}
+60000096  stmia.gt  r0!, {r3}
+60000098  sub.gt  r1, r1, #0x4
+6000009a  bgt  0x60000090
+6000009c  bx  lr
+6000009e  mov.w  r2, #0x0
+600000a2  mov.w  r3, #0x0
+600000a6  mov.w  r4, #0x0
+600000aa  mov.w  r5, #0x0
+600000ae  mov.w  r6, #0x0
+600000b2  mov.w  r7, #0x0
+600000b6  mov.w  r8, #0x0
+600000ba  mov.w  r9, #0x0
+600000be  mov.w  r10, #0x0
+600000c2  mov.w  r11, #0x0
+600000c6  mov.w  r12, #0x0
+600000ca  cmp  r1, #0x2c
+600000cc  itt  cs
+600000ce  stm.cs.w  r0, {r2,r3,r4,r5,r6,r7,r8,r9,r10,r11,r12}
+600000d2  sub.cs  r1, #0x2c
+600000d4  bcs  0x600000ca
+600000d6  cmp  r1, #0x0
+600000d8  itt  gt
+600000da  stmia.gt  r0!, {r2}
+600000dc  sub.gt  r1, r1, #0x4
+600000de  bgt  0x600000d6
+600000e0  bx  lr
+60000300  pop  {pc}
+60000400  vmlsl.u32  q10, d9, d8[0x1]
+60000404  bl  0x6000233e
+60000408  add  sp, #0x4c
+6000040a  pop  {pc}
+instructions_from_60000300:
+60000300  pop  {pc}
+60000400  vmlsl.u32  q10, d9, d8[0x1]
+60000404  bl  0x6000233e
+60000408  add  sp, #0x4c
+6000040a  pop  {pc}
+6000233e  push  {r3,r4}
+60002340  ldrh  r1, [r0,#0x0]
+60002342  strh.w  r1, [sp,#0x0]
+60002346  uxth  r1, r1
+60002348  mov.w  r12, #0xf
+6000234c  bics.w  r1, r12, r1
+60002350  itee  ne
+60002352  ldr.ne  r3, [0x600023c4]
+60002354  pop.eq  {r3,r4}
+60002356  bx.eq  lr
+60002358  ldr  r1, [sp,#0x0]
+6000235a  lsls  r2, r1, #0x1c
+6000235c  lsrs  r2, r2, #0x1a
+6000235e  ubfx  r4, r1, #0x4, #0x4
+60002362  add.w  r2, r2, r4, lsr #0x2
+60002366  add.w  r2, r3, r2, lsl #0x2
+6000236a  ubfx  r4, r1, #0x4, #0x2
+6000236e  cbz  r4, 0x6000237e
+60002370  cmp  r4, #0x1
+60002372  beq  0x6000238a
+60002374  cmp  r4, #0x2
+60002376  beq  0x600023aa
+60002378  cmp  r4, #0x3
+6000237a  beq  0x600023b6
+6000237c  b  0x60002396
+6000237e  ubfx  r4, r1, #0x8, #0x8
+60002382  ldr  r1, [r2,#0x0]
+60002384  bfi  r1, r4, #0x0, #0x8
+60002388  b  0x60002394
+6000238a  ubfx  r4, r1, #0x8, #0x8
+6000238e  ldr  r1, [r2,#0x0]
+60002390  bfi  r1, r4, #0x8, #0x8
+60002394  str  r1, [r2,#0x0]
+60002396  ldrh.w  r1, [r0,#0x2]!
+6000239a  strh.w  r1, [sp,#0x0]
+instructions_from_60000400:
+60000400  vmlsl.u32  q10, d9, d8[0x1]
+60000404  bl  0x6000233e
+60000408  add  sp, #0x4c
+6000040a  pop  {pc}
+6000233e  push  {r3,r4}
+60002340  ldrh  r1, [r0,#0x0]
+60002342  strh.w  r1, [sp,#0x0]
+60002346  uxth  r1, r1
+60002348  mov.w  r12, #0xf
+6000234c  bics.w  r1, r12, r1
+60002350  itee  ne
+60002352  ldr.ne  r3, [0x600023c4]
+60002354  pop.eq  {r3,r4}
+60002356  bx.eq  lr
+60002358  ldr  r1, [sp,#0x0]
+6000235a  lsls  r2, r1, #0x1c
+6000235c  lsrs  r2, r2, #0x1a
+6000235e  ubfx  r4, r1, #0x4, #0x4
+60002362  add.w  r2, r2, r4, lsr #0x2
+60002366  add.w  r2, r3, r2, lsl #0x2
+6000236a  ubfx  r4, r1, #0x4, #0x2
+6000236e  cbz  r4, 0x6000237e
+60002370  cmp  r4, #0x1
+60002372  beq  0x6000238a
+60002374  cmp  r4, #0x2
+60002376  beq  0x600023aa
+60002378  cmp  r4, #0x3
+6000237a  beq  0x600023b6
+6000237c  b  0x60002396
+6000237e  ubfx  r4, r1, #0x8, #0x8
+60002382  ldr  r1, [r2,#0x0]
+60002384  bfi  r1, r4, #0x0, #0x8
+60002388  b  0x60002394
+6000238a  ubfx  r4, r1, #0x8, #0x8
+6000238e  ldr  r1, [r2,#0x0]
+60002390  bfi  r1, r4, #0x8, #0x8
+60002394  str  r1, [r2,#0x0]
+60002396  ldrh.w  r1, [r0,#0x2]!
+6000239a  strh.w  r1, [sp,#0x0]
+6000239e  uxth  r1, r1

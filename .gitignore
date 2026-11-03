@@ -1,0 +1,7 @@
+# Proprietary/vendor firmware and bulky local analysis state
+/firmware/original/
+/firmware/extracted/
+/firmware/work/decoded/
+/firmware/work/reconstructed/
+/firmware/work/ghidra-projects/
+/firmware/work/reference/

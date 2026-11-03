@@ -1,0 +1,311 @@
+{
+  "read_only": true,
+  "method": "scan little-endian 32-bit words at 4-byte offsets",
+  "range_inclusive_start_exclusive_end": [
+    "0x02003000",
+    "0x02003140"
+  ],
+  "images": [
+    {
+      "version": "v105",
+      "section": "GT1Appli",
+      "path": "firmware/work/decoded/v105-GT1Appli.bin",
+      "size": 2928600,
+      "sha256": "8297887084af48b04189955bbd8bdb4e0e6ff6a0e0fbcac7f85a175792775e29",
+      "aligned_word_hits": [
+        {
+          "offset": "0x520",
+          "value": "0x02003000"
+        },
+        {
+          "offset": "0x52c",
+          "value": "0x020030b4"
+        },
+        {
+          "offset": "0x87cc",
+          "value": "0x02003134"
+        },
+        {
+          "offset": "0x9454",
+          "value": "0x02003000"
+        },
+        {
+          "offset": "0x7bf64",
+          "value": "0x0200310c"
+        }
+      ]
+    },
+    {
+      "version": "v107",
+      "section": "GT1Appli",
+      "path": "firmware/work/decoded/v107-GT1Appli.bin",
+      "size": 2931344,
+      "sha256": "304b88a2c628cf47bb5091ecbc6da4fab4924f88cdea8897b44e5f474b9fb001",
+      "aligned_word_hits": [
+        {
+          "offset": "0x520",
+          "value": "0x02003000"
+        },
+        {
+          "offset": "0x52c",
+          "value": "0x020030b4"
+        },
+        {
+          "offset": "0x87cc",
+          "value": "0x02003134"
+        },
+        {
+          "offset": "0x9454",
+          "value": "0x02003000"
+        },
+        {
+          "offset": "0x7c198",
+          "value": "0x0200310c"
+        }
+      ]
+    },
+    {
+      "version": "v108",
+      "section": "GT1Appli",
+      "path": "firmware/work/decoded/v108-GT1Appli.bin",
+      "size": 2931480,
+      "sha256": "c41319e5f5a1facd5e55fe2c8e56d37069e31b98e5034d6d54d932fa7713e8c1",
+      "aligned_word_hits": [
+        {
+          "offset": "0x520",
+          "value": "0x02003000"
+        },
+        {
+          "offset": "0x52c",
+          "value": "0x020030b4"
+        },
+        {
+          "offset": "0x87cc",
+          "value": "0x02003134"
+        },
+        {
+          "offset": "0x9454",
+          "value": "0x02003000"
+        },
+        {
+          "offset": "0x7c1ec",
+          "value": "0x0200310c"
+        }
+      ]
+    },
+    {
+      "version": "v109",
+      "section": "GT1Appli",
+      "path": "firmware/work/decoded/v109-GT1Appli.bin",
+      "size": 2937524,
+      "sha256": "2028d7e1f8a72e54b23a80427f53ba27629a7039a72712504a612c877556aa29",
+      "aligned_word_hits": [
+        {
+          "offset": "0x520",
+          "value": "0x02003000"
+        },
+        {
+          "offset": "0x52c",
+          "value": "0x020030b4"
+        },
+        {
+          "offset": "0x8784",
+          "value": "0x02003134"
+        },
+        {
+          "offset": "0x945c",
+          "value": "0x02003000"
+        },
+        {
+          "offset": "0x7d5e8",
+          "value": "0x0200310c"
+        }
+      ]
+    },
+    {
+      "version": "v105",
+      "section": "GT1Upd",
+      "path": "firmware/work/decoded/v105-GT1Upd.bin",
+      "size": 173176,
+      "sha256": "0f247f1b94c0c9ca8e4eef1ec980e2f060f95ef494ed7fa6bd9fbaf52d93a6a4",
+      "aligned_word_hits": [
+        {
+          "offset": "0x3738",
+          "value": "0x020030c8"
+        },
+        {
+          "offset": "0x373c",
+          "value": "0x020030cc"
+        },
+        {
+          "offset": "0x3740",
+          "value": "0x020030f0"
+        },
+        {
+          "offset": "0x3744",
+          "value": "0x020030e0"
+        },
+        {
+          "offset": "0x3fd4",
+          "value": "0x02003000"
+        },
+        {
+          "offset": "0x3fe0",
+          "value": "0x0200310c"
+        },
+        {
+          "offset": "0x3fe4",
+          "value": "0x02003130"
+        }
+      ]
+    },
+    {
+      "version": "v107",
+      "section": "GT1Upd",
+      "path": "firmware/work/decoded/v107-GT1Upd.bin",
+      "size": 173176,
+      "sha256": "0f247f1b94c0c9ca8e4eef1ec980e2f060f95ef494ed7fa6bd9fbaf52d93a6a4",
+      "aligned_word_hits": [
+        {
+          "offset": "0x3738",
+          "value": "0x020030c8"
+        },
+        {
+          "offset": "0x373c",
+          "value": "0x020030cc"
+        },
+        {
+          "offset": "0x3740",
+          "value": "0x020030f0"
+        },
+        {
+          "offset": "0x3744",
+          "value": "0x020030e0"
+        },
+        {
+          "offset": "0x3fd4",
+          "value": "0x02003000"
+        },
+        {
+          "offset": "0x3fe0",
+          "value": "0x0200310c"
+        },
+        {
+          "offset": "0x3fe4",
+          "value": "0x02003130"
+        }
+      ]
+    },
+    {
+      "version": "v108",
+      "section": "GT1Upd",
+      "path": "firmware/work/decoded/v108-GT1Upd.bin",
+      "size": 173176,
+      "sha256": "0f247f1b94c0c9ca8e4eef1ec980e2f060f95ef494ed7fa6bd9fbaf52d93a6a4",
+      "aligned_word_hits": [
+        {
+          "offset": "0x3738",
+          "value": "0x020030c8"
+        },
+        {
+          "offset": "0x373c",
+          "value": "0x020030cc"
+        },
+        {
+          "offset": "0x3740",
+          "value": "0x020030f0"
+        },
+        {
+          "offset": "0x3744",
+          "value": "0x020030e0"
+        },
+        {
+          "offset": "0x3fd4",
+          "value": "0x02003000"
+        },
+        {
+          "offset": "0x3fe0",
+          "value": "0x0200310c"
+        },
+        {
+          "offset": "0x3fe4",
+          "value": "0x02003130"
+        }
+      ]
+    },
+    {
+      "version": "v109",
+      "section": "GT1Upd",
+      "path": "firmware/work/decoded/v109-GT1Upd.bin",
+      "size": 173176,
+      "sha256": "0f247f1b94c0c9ca8e4eef1ec980e2f060f95ef494ed7fa6bd9fbaf52d93a6a4",
+      "aligned_word_hits": [
+        {
+          "offset": "0x3738",
+          "value": "0x020030c8"
+        },
+        {
+          "offset": "0x373c",
+          "value": "0x020030cc"
+        },
+        {
+          "offset": "0x3740",
+          "value": "0x020030f0"
+        },
+        {
+          "offset": "0x3744",
+          "value": "0x020030e0"
+        },
+        {
+          "offset": "0x3fd4",
+          "value": "0x02003000"
+        },
+        {
+          "offset": "0x3fe0",
+          "value": "0x0200310c"
+        },
+        {
+          "offset": "0x3fe4",
+          "value": "0x02003130"
+        }
+      ]
+    }
+  ],
+  "instruction_evidence": {
+    "application": {
+      "report": "firmware/work/ghidra-combined-v109-app-allcopies.txt",
+      "reachable_path": "0x0100114E -> veneer at 0x010082DA -> 0x6000028C -> 0x600004A8",
+      "instruction": "0x600004AA: LDR r4, [0x6000052C]; the word at decoded offset 0x52C is 0x020030B4",
+      "indirect_calls": [
+        "[r4-0x5C]",
+        "[r4+0x58]",
+        "[r4+0x70]",
+        "[r4+0x7C]"
+      ],
+      "confidence": "Ghidra instruction boundary and startup call path observed; callback target identities unresolved"
+    },
+    "application_secondary_candidate": {
+      "report": "firmware/work/ghidra-combined-v109-app-allcopies.txt",
+      "sequence": "At 0x60000446, LDR r0, [0x60000520]; decoded word at offset 0x520 is 0x02003000; following code loads [r0+0xC] and BLXes it",
+      "confidence": "instruction sequence is decoded in the bounded report; its reachability from the application startup path is unproven"
+    },
+    "application_cross_version": {
+      "report": "firmware/work/ghidra-combined-v108-app-02003.txt",
+      "report_sha256": "2fe7118cae75ab84854a4cbfd0cce4df816f60dfeb66de07cb956841648d2b24",
+      "input_sha256": "c41319e5f5a1facd5e55fe2c8e56d37069e31b98e5034d6d54d932fa7713e8c1",
+      "finding": "The same 0x010010AE -> 0x6000028C -> 0x600004A8 path and LDR literal at 0x600004AA are present; decoded words at offsets 0x520 and 0x52C remain 0x02003000 and 0x020030B4",
+      "confidence": "entry path and literal load independently reproduced in v1.08; callback destination identities unresolved"
+    },
+    "updater": {
+      "report": "firmware/work/ghidra-combined-v109-updater-allcopies.txt",
+      "candidate_sequence": "At 0x60003ED2, LDR r1, [0x60003FD4]; decoded word at offset 0x3FD4 is 0x02003000; following code loads [r1+0xC] and BLXes it",
+      "confidence": "instruction sequence appears in bounded report, but this address is not established as reachable from updater startup; it resembles the app's secondary candidate"
+    }
+  },
+  "coverage_limits": [
+    "Aligned-word scans can find data, immediates, or instruction encodings; a hit is not proof of a pointer or reference.",
+    "The application callback structure's apparent extent from base-0x5C through base+0x7C is 0x02003058..0x02003130; no mapped startup copy overlaps this interval.",
+    "This scan does not search unaligned values, reconstruct all MOVW/MOVT expressions, identify stores, or prove absence of an initializer.",
+    "Ghidra imports and reports are bounded static analysis; physical address meaning and runtime table contents remain unknown."
+  ]
+}

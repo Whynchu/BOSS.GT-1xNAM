@@ -1,0 +1,403 @@
+{
+  "classification": "static cross-product comparison of official update packages; no device interaction",
+  "read_only": true,
+  "limitations": [
+    "ROMINFO field meanings are not inferred from repeated values or numeric coincidences.",
+    "Checksum arithmetic shows a repeated relation to the bounded payload bytes; updater enforcement is not demonstrated.",
+    "The GT-1B comparator is a related product, not proof that every GT-1B update behavior applies to GT-1.",
+    "The +0x3c header word remains semantically unclassified; arithmetic does not validate decompression or expanded size."
+  ],
+  "rominfo_normalized_text_unique_across_both_families": [
+    "0064,0507,4096"
+  ],
+  "rominfo_content_same_across_both_families": true,
+  "GT1_v109_vs_GT1B_v104_first_0x2000_equal": true,
+  "GT1_v109_vs_GT1B_v104_first_0x2000_sha256": "70e91d0d1e6159007930eb5af0a90dc97038528ecb56af55943350a49e77573d",
+  "records": [
+    {
+      "family": "GT-1",
+      "version": "v105",
+      "image_path": "firmware/extracted/v105/gt1_sys_v105/GT1ROM.BIN",
+      "image_size": 4194304,
+      "image_sha256": "b1bde0410795230b4a89ee3dfbbd357700bba7020624c0ff832ae3d8539d8bb4",
+      "archive_path": "firmware/original/gt1_sys_v105.zip",
+      "archive_size": 1193779,
+      "archive_sha256": "1674d5f1655d6b4959108d25a9dd127ddaae24879c867f4139362328e41e5be9",
+      "rominfo_path": "firmware/extracted/v105/gt1_sys_v105/ROMINFO.TXT",
+      "rominfo_size": 16,
+      "rominfo_sha256": "9a423aef840fa6d31ac0c9b01d6824a8839dbb491ac9c3e56f24f0ba8db269ff",
+      "rominfo_raw_hex": "30 30 36 34 2c 30 35 30 37 2c 34 30 39 36 0d 0a",
+      "rominfo_text_without_line_ending": "0064,0507,4096",
+      "rominfo_line_ending": "CRLF",
+      "rominfo_decimal_fields": [
+        64,
+        507,
+        4096
+      ],
+      "blocks": {
+        "updater": {
+          "header_offset": "0x002000",
+          "first_16_header_bytes": "42 53 53 45 53 43 32 3a 47 54 31 55 70 64 20 20",
+          "header_version_bytes": "1.001000",
+          "stored_length_field_0x30": "0x21567",
+          "payload_start": "0x002040",
+          "payload_end_exclusive": "0x0235A7",
+          "payload_sha256": "864cebee6e15be9da8e9dca9c756bf720f35d4454f91b8fc466eaf4c23f9966a",
+          "checksum_field_0x34": "0x01000EBA",
+          "payload_byte_sum_mod32": "0x01000EBA",
+          "field_equals_sum": true,
+          "field_equals_ones_complement_of_sum": false,
+          "field_plus_sum_equals_ffffffff": false,
+          "field_0x3c": "0x0002A478",
+          "first_byte_after_payload": "0xFF"
+        },
+        "application": {
+          "header_offset": "0x040000",
+          "first_16_header_bytes": "42 53 53 45 53 43 32 3a 47 54 31 41 70 70 6c 69",
+          "header_version_bytes": "1.050076",
+          "stored_length_field_0x30": "0x11E058",
+          "payload_start": "0x040040",
+          "payload_end_exclusive": "0x15E098",
+          "payload_sha256": "4081604fc89c772960a4d9a5582a8a11b2fe8f8b360922dbb94f4df7b27baccf",
+          "checksum_field_0x34": "0x08774CDF",
+          "payload_byte_sum_mod32": "0x08774CDF",
+          "field_equals_sum": true,
+          "field_equals_ones_complement_of_sum": false,
+          "field_plus_sum_equals_ffffffff": false,
+          "field_0x3c": "0x002CAFD8",
+          "first_byte_after_payload": "0xFF"
+        }
+      }
+    },
+    {
+      "family": "GT-1",
+      "version": "v107",
+      "image_path": "firmware/extracted/v107/gt1_sys_v107/GT1ROM.BIN",
+      "image_size": 4194304,
+      "image_sha256": "6a3110cd42c4b129494a93bc88d4f218e2e0b9377868ca051018b28696d6c22f",
+      "archive_path": "firmware/original/gt1_sys_v107.zip",
+      "archive_size": 1193608,
+      "archive_sha256": "b1ad06e20da1b2f5cc029836d86e5e5ef971df1af04c1170fe44d2370a391a63",
+      "rominfo_path": "firmware/extracted/v107/gt1_sys_v107/ROMINFO.TXT",
+      "rominfo_size": 16,
+      "rominfo_sha256": "9a423aef840fa6d31ac0c9b01d6824a8839dbb491ac9c3e56f24f0ba8db269ff",
+      "rominfo_raw_hex": "30 30 36 34 2c 30 35 30 37 2c 34 30 39 36 0d 0a",
+      "rominfo_text_without_line_ending": "0064,0507,4096",
+      "rominfo_line_ending": "CRLF",
+      "rominfo_decimal_fields": [
+        64,
+        507,
+        4096
+      ],
+      "blocks": {
+        "updater": {
+          "header_offset": "0x002000",
+          "first_16_header_bytes": "42 53 53 45 53 43 32 3a 47 54 31 55 70 64 20 20",
+          "header_version_bytes": "1.001000",
+          "stored_length_field_0x30": "0x21567",
+          "payload_start": "0x002040",
+          "payload_end_exclusive": "0x0235A7",
+          "payload_sha256": "864cebee6e15be9da8e9dca9c756bf720f35d4454f91b8fc466eaf4c23f9966a",
+          "checksum_field_0x34": "0x01000EBA",
+          "payload_byte_sum_mod32": "0x01000EBA",
+          "field_equals_sum": true,
+          "field_equals_ones_complement_of_sum": false,
+          "field_plus_sum_equals_ffffffff": false,
+          "field_0x3c": "0x0002A478",
+          "first_byte_after_payload": "0xFF"
+        },
+        "application": {
+          "header_offset": "0x040000",
+          "first_16_header_bytes": "42 53 53 45 53 43 32 3a 47 54 31 41 70 70 6c 69",
+          "header_version_bytes": "1.070081",
+          "stored_length_field_0x30": "0x11E765",
+          "payload_start": "0x040040",
+          "payload_end_exclusive": "0x15E7A5",
+          "payload_sha256": "78858382a3b1f3b7055b34e81499b7dd4c3b183c4070e8c7f387948c54b18bb2",
+          "checksum_field_0x34": "0x0874473C",
+          "payload_byte_sum_mod32": "0x0874473C",
+          "field_equals_sum": true,
+          "field_equals_ones_complement_of_sum": false,
+          "field_plus_sum_equals_ffffffff": false,
+          "field_0x3c": "0x002CBA90",
+          "first_byte_after_payload": "0xFF"
+        }
+      }
+    },
+    {
+      "family": "GT-1",
+      "version": "v108",
+      "image_path": "firmware/extracted/v108/gt1_sys_v108/GT1ROM.BIN",
+      "image_size": 4194304,
+      "image_sha256": "7219679a87e985316264544423c9940ccbcbadeb2df0b2f13711ae57194cb612",
+      "archive_path": "firmware/original/gt1_sys_v108.zip",
+      "archive_size": 1193850,
+      "archive_sha256": "702cd327209e3a591d053223f4aef4a300f44d04679bf045352c9ca69a6e3465",
+      "rominfo_path": "firmware/extracted/v108/gt1_sys_v108/ROMINFO.TXT",
+      "rominfo_size": 16,
+      "rominfo_sha256": "9a423aef840fa6d31ac0c9b01d6824a8839dbb491ac9c3e56f24f0ba8db269ff",
+      "rominfo_raw_hex": "30 30 36 34 2c 30 35 30 37 2c 34 30 39 36 0d 0a",
+      "rominfo_text_without_line_ending": "0064,0507,4096",
+      "rominfo_line_ending": "CRLF",
+      "rominfo_decimal_fields": [
+        64,
+        507,
+        4096
+      ],
+      "blocks": {
+        "updater": {
+          "header_offset": "0x002000",
+          "first_16_header_bytes": "42 53 53 45 53 43 32 3a 47 54 31 55 70 64 20 20",
+          "header_version_bytes": "1.001000",
+          "stored_length_field_0x30": "0x21567",
+          "payload_start": "0x002040",
+          "payload_end_exclusive": "0x0235A7",
+          "payload_sha256": "864cebee6e15be9da8e9dca9c756bf720f35d4454f91b8fc466eaf4c23f9966a",
+          "checksum_field_0x34": "0x01000EBA",
+          "payload_byte_sum_mod32": "0x01000EBA",
+          "field_equals_sum": true,
+          "field_equals_ones_complement_of_sum": false,
+          "field_plus_sum_equals_ffffffff": false,
+          "field_0x3c": "0x0002A478",
+          "first_byte_after_payload": "0xFF"
+        },
+        "application": {
+          "header_offset": "0x040000",
+          "first_16_header_bytes": "42 53 53 45 53 43 32 3a 47 54 31 41 70 70 6c 69",
+          "header_version_bytes": "1.080082",
+          "stored_length_field_0x30": "0x11E7C5",
+          "payload_start": "0x040040",
+          "payload_end_exclusive": "0x15E805",
+          "payload_sha256": "ef236d8bb3ce79cb5f6a836e4ddbaa325f4ad04cde546e7cb70d6d7ecba8f2b0",
+          "checksum_field_0x34": "0x0878B479",
+          "payload_byte_sum_mod32": "0x0878B479",
+          "field_equals_sum": true,
+          "field_equals_ones_complement_of_sum": false,
+          "field_plus_sum_equals_ffffffff": false,
+          "field_0x3c": "0x002CBB18",
+          "first_byte_after_payload": "0xFF"
+        }
+      }
+    },
+    {
+      "family": "GT-1",
+      "version": "v109",
+      "image_path": "firmware/extracted/v109/gt1_sys_v109/GT1ROM.BIN",
+      "image_size": 4194304,
+      "image_sha256": "412ebf5ffdc48554454c27df47f61428f046ea0a7d93f5c77b7f0302861abdbf",
+      "archive_path": "firmware/original/gt1_sys_v109.zip",
+      "archive_size": 1196160,
+      "archive_sha256": "8d52add7b5df1ae69d581ca485f58e563bf9b226c6e29f50b32ff475b2909ef5",
+      "rominfo_path": "firmware/extracted/v109/gt1_sys_v109/ROMINFO.TXT",
+      "rominfo_size": 14,
+      "rominfo_sha256": "7b00a89e80b2c4a649fedda115b1b4d1d574bd77486c5c558862d7faef40a013",
+      "rominfo_raw_hex": "30 30 36 34 2c 30 35 30 37 2c 34 30 39 36",
+      "rominfo_text_without_line_ending": "0064,0507,4096",
+      "rominfo_line_ending": "none",
+      "rominfo_decimal_fields": [
+        64,
+        507,
+        4096
+      ],
+      "blocks": {
+        "updater": {
+          "header_offset": "0x002000",
+          "first_16_header_bytes": "42 53 53 45 53 43 32 3a 47 54 31 55 70 64 20 20",
+          "header_version_bytes": "1.001000",
+          "stored_length_field_0x30": "0x21567",
+          "payload_start": "0x002040",
+          "payload_end_exclusive": "0x0235A7",
+          "payload_sha256": "864cebee6e15be9da8e9dca9c756bf720f35d4454f91b8fc466eaf4c23f9966a",
+          "checksum_field_0x34": "0x01000EBA",
+          "payload_byte_sum_mod32": "0x01000EBA",
+          "field_equals_sum": true,
+          "field_equals_ones_complement_of_sum": false,
+          "field_plus_sum_equals_ffffffff": false,
+          "field_0x3c": "0x0002A478",
+          "first_byte_after_payload": "0xFF"
+        },
+        "application": {
+          "header_offset": "0x040000",
+          "first_16_header_bytes": "42 53 53 45 53 43 32 3a 47 54 31 41 70 70 6c 69",
+          "header_version_bytes": "1.090000",
+          "stored_length_field_0x30": "0x11FAFA",
+          "payload_start": "0x040040",
+          "payload_end_exclusive": "0x15FB3A",
+          "payload_sha256": "2945b15fe45aede58d10fb78e7475d72373fd1d202f5e07839566d80663c1f34",
+          "checksum_field_0x34": "0x0886AB09",
+          "payload_byte_sum_mod32": "0x0886AB09",
+          "field_equals_sum": true,
+          "field_equals_ones_complement_of_sum": false,
+          "field_plus_sum_equals_ffffffff": false,
+          "field_0x3c": "0x002CD2B4",
+          "first_byte_after_payload": "0xFF"
+        }
+      }
+    },
+    {
+      "family": "GT-1B",
+      "version": "v102",
+      "image_path": "firmware/work/reference/gt1b-comparator/gt1b_sys_v102/GT1BROM.BIN",
+      "image_size": 4194304,
+      "image_sha256": "07630c8c56400b6586ec75b80418867d41caad96d4906ec0c7a2ac31fa57f769",
+      "archive_path": "firmware/work/reference/gt1b-comparator/original/gt1b_sys_v102.zip",
+      "archive_size": 1238101,
+      "archive_sha256": "5cbe049c48f5074502776373602870db2091c396326d89dce98fffbfc5456114",
+      "rominfo_path": "firmware/work/reference/gt1b-comparator/gt1b_sys_v102/ROMINFO.TXT",
+      "rominfo_size": 16,
+      "rominfo_sha256": "9a423aef840fa6d31ac0c9b01d6824a8839dbb491ac9c3e56f24f0ba8db269ff",
+      "rominfo_raw_hex": "30 30 36 34 2c 30 35 30 37 2c 34 30 39 36 0d 0a",
+      "rominfo_text_without_line_ending": "0064,0507,4096",
+      "rominfo_line_ending": "CRLF",
+      "rominfo_decimal_fields": [
+        64,
+        507,
+        4096
+      ],
+      "blocks": {
+        "updater": {
+          "header_offset": "0x002000",
+          "first_16_header_bytes": "42 53 53 45 53 43 32 32 61 36 34 63 39 34 38 66",
+          "header_version_bytes": "1.000000",
+          "stored_length_field_0x30": "0x2174A",
+          "payload_start": "0x002040",
+          "payload_end_exclusive": "0x02378A",
+          "payload_sha256": "5f27232cf7ad9a3ec5ff84353b98b1cf0c12d1da257eba7ad0103f817ad38ded",
+          "checksum_field_0x34": "0xFEFF282A",
+          "payload_byte_sum_mod32": "0x0100D7D5",
+          "field_equals_sum": false,
+          "field_equals_ones_complement_of_sum": true,
+          "field_plus_sum_equals_ffffffff": true,
+          "field_0x3c": "0x0002A65C",
+          "first_byte_after_payload": "0xFF"
+        },
+        "application": {
+          "header_offset": "0x040000",
+          "first_16_header_bytes": "42 53 53 45 53 43 32 66 61 35 35 61 38 34 30 31",
+          "header_version_bytes": "1.020012",
+          "stored_length_field_0x30": "0x12C8A8",
+          "payload_start": "0x040040",
+          "payload_end_exclusive": "0x16C8E8",
+          "payload_sha256": "8f53259f78e1d070c8a6c63fad6bfe87d1d2bf963d548016a0c4252fb9b6835f",
+          "checksum_field_0x34": "0xF713455B",
+          "payload_byte_sum_mod32": "0x08ECBAA4",
+          "field_equals_sum": false,
+          "field_equals_ones_complement_of_sum": true,
+          "field_plus_sum_equals_ffffffff": true,
+          "field_0x3c": "0x002FDBA0",
+          "first_byte_after_payload": "0xFF"
+        }
+      }
+    },
+    {
+      "family": "GT-1B",
+      "version": "v103",
+      "image_path": "firmware/work/reference/gt1b-comparator/gt1b_sys_v103/GT1BROM.BIN",
+      "image_size": 4194304,
+      "image_sha256": "da97981cf7cdd699601c690f367787da52affc3b15c20e2c8bb8205c0aa84a80",
+      "archive_path": "firmware/work/reference/gt1b-comparator/original/gt1b_sys_v103.zip",
+      "archive_size": 1235506,
+      "archive_sha256": "7e66b117562df3bc6ea5469ce90530d3a9fbbe96f34872da6eef59b829832885",
+      "rominfo_path": "firmware/work/reference/gt1b-comparator/gt1b_sys_v103/ROMINFO.TXT",
+      "rominfo_size": 16,
+      "rominfo_sha256": "9a423aef840fa6d31ac0c9b01d6824a8839dbb491ac9c3e56f24f0ba8db269ff",
+      "rominfo_raw_hex": "30 30 36 34 2c 30 35 30 37 2c 34 30 39 36 0d 0a",
+      "rominfo_text_without_line_ending": "0064,0507,4096",
+      "rominfo_line_ending": "CRLF",
+      "rominfo_decimal_fields": [
+        64,
+        507,
+        4096
+      ],
+      "blocks": {
+        "updater": {
+          "header_offset": "0x002000",
+          "first_16_header_bytes": "42 53 53 45 53 43 32 32 61 36 34 63 39 34 38 66",
+          "header_version_bytes": "1.000000",
+          "stored_length_field_0x30": "0x2174A",
+          "payload_start": "0x002040",
+          "payload_end_exclusive": "0x02378A",
+          "payload_sha256": "5f27232cf7ad9a3ec5ff84353b98b1cf0c12d1da257eba7ad0103f817ad38ded",
+          "checksum_field_0x34": "0xFEFF282A",
+          "payload_byte_sum_mod32": "0x0100D7D5",
+          "field_equals_sum": false,
+          "field_equals_ones_complement_of_sum": true,
+          "field_plus_sum_equals_ffffffff": true,
+          "field_0x3c": "0x0002A65C",
+          "first_byte_after_payload": "0xFF"
+        },
+        "application": {
+          "header_offset": "0x040000",
+          "first_16_header_bytes": "42 53 53 45 53 43 32 66 61 35 35 61 38 34 30 31",
+          "header_version_bytes": "1.030014",
+          "stored_length_field_0x30": "0x12C8DE",
+          "payload_start": "0x040040",
+          "payload_end_exclusive": "0x16C91E",
+          "payload_sha256": "ed08127e7d285b7ad79db73ff333839c9c6752111ffe88560d72c4eb9a87f834",
+          "checksum_field_0x34": "0xF71998DB",
+          "payload_byte_sum_mod32": "0x08E66724",
+          "field_equals_sum": false,
+          "field_equals_ones_complement_of_sum": true,
+          "field_plus_sum_equals_ffffffff": true,
+          "field_0x3c": "0x002FDC20",
+          "first_byte_after_payload": "0xFF"
+        }
+      }
+    },
+    {
+      "family": "GT-1B",
+      "version": "v104",
+      "image_path": "firmware/work/reference/gt1b-comparator/gt1b_sys_v104/GT1BROM.BIN",
+      "image_size": 4194304,
+      "image_sha256": "9b6d47a2c43b12856760d135a8582acb9424e17faa66474ce3272d021a5d8646",
+      "archive_path": "firmware/work/reference/gt1b-comparator/original/gt1b_sys_v104.zip",
+      "archive_size": 1240450,
+      "archive_sha256": "9a2b71c185cb110a28d30411263b0316c8fa57e3be7e22dbb2d1583facbc6b47",
+      "rominfo_path": "firmware/work/reference/gt1b-comparator/gt1b_sys_v104/ROMINFO.TXT",
+      "rominfo_size": 14,
+      "rominfo_sha256": "7b00a89e80b2c4a649fedda115b1b4d1d574bd77486c5c558862d7faef40a013",
+      "rominfo_raw_hex": "30 30 36 34 2c 30 35 30 37 2c 34 30 39 36",
+      "rominfo_text_without_line_ending": "0064,0507,4096",
+      "rominfo_line_ending": "none",
+      "rominfo_decimal_fields": [
+        64,
+        507,
+        4096
+      ],
+      "blocks": {
+        "updater": {
+          "header_offset": "0x002000",
+          "first_16_header_bytes": "42 53 53 45 53 43 32 32 61 36 34 63 39 34 38 66",
+          "header_version_bytes": "1.000000",
+          "stored_length_field_0x30": "0x2174A",
+          "payload_start": "0x002040",
+          "payload_end_exclusive": "0x02378A",
+          "payload_sha256": "5f27232cf7ad9a3ec5ff84353b98b1cf0c12d1da257eba7ad0103f817ad38ded",
+          "checksum_field_0x34": "0xFEFF282A",
+          "payload_byte_sum_mod32": "0x0100D7D5",
+          "field_equals_sum": false,
+          "field_equals_ones_complement_of_sum": true,
+          "field_plus_sum_equals_ffffffff": true,
+          "field_0x3c": "0x0002A65C",
+          "first_byte_after_payload": "0xFF"
+        },
+        "application": {
+          "header_offset": "0x040000",
+          "first_16_header_bytes": "42 53 53 45 53 43 32 66 61 35 35 61 38 34 30 31",
+          "header_version_bytes": "1.040000",
+          "stored_length_field_0x30": "0x12DB82",
+          "payload_start": "0x040040",
+          "payload_end_exclusive": "0x16DBC2",
+          "payload_sha256": "f89dd81cbc87edfbc332b6a7be97e4a2498017c6916f97ef0313615e7d6a1f9e",
+          "checksum_field_0x34": "0xF7138B3F",
+          "payload_byte_sum_mod32": "0x08EC74C0",
+          "field_equals_sum": false,
+          "field_equals_ones_complement_of_sum": true,
+          "field_plus_sum_equals_ffffffff": true,
+          "field_0x3c": "0x002FF3BC",
+          "first_byte_after_payload": "0xFF"
+        }
+      }
+    }
+  ]
+}

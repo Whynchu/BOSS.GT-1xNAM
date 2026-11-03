@@ -1,0 +1,381 @@
+{
+  "read_only": true,
+  "probe_size": 512,
+  "inputs": {
+    "GT-1 v1.05": {
+      "path": "firmware/extracted/v105/gt1_sys_v105/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "b1bde0410795230b4a89ee3dfbbd357700bba7020624c0ff832ae3d8539d8bb4"
+    },
+    "GT-1 v1.07": {
+      "path": "firmware/extracted/v107/gt1_sys_v107/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "6a3110cd42c4b129494a93bc88d4f218e2e0b9377868ca051018b28696d6c22f"
+    },
+    "GT-1 v1.08": {
+      "path": "firmware/extracted/v108/gt1_sys_v108/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "7219679a87e985316264544423c9940ccbcbadeb2df0b2f13711ae57194cb612"
+    },
+    "GT-1 v1.09": {
+      "path": "firmware/extracted/v109/gt1_sys_v109/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "412ebf5ffdc48554454c27df47f61428f046ea0a7d93f5c77b7f0302861abdbf"
+    },
+    "GT-100 v2.12": {
+      "path": "firmware/work/reference/esc2-comparators/gt100_v212/extracted/gt100_sys_v212/GT100ROM.BIN",
+      "size": 4194304,
+      "sha256": "0c44ab01ac310927bf8dcc95f4ab5fcc487ed106dfcc6fc067832a35a4e32d34"
+    },
+    "KATANA v4.00": {
+      "path": "firmware/work/reference/esc2-comparators/katana_v400/extracted/katana_sys_v400/KATANARM.BIN",
+      "size": 4194304,
+      "sha256": "3e17ba95e21ed10a3cb5c60af8da0a375db613cc8409eb33b6d80e4248c9b493"
+    }
+  },
+  "payloads": {
+    "GT-1 v1.05 updater": {
+      "header_offset": "0x002000",
+      "payload_start": "0x002040",
+      "payload_end_exclusive": "0x0235A7",
+      "stored_length": 136551,
+      "field_0x28": "0x60000000",
+      "field_0x38": "0x60000000",
+      "field_0x3c": "0x0002A478",
+      "expanded_length_candidate_bytes": 173176,
+      "expanded_length_candidate_MiB": 0.165154,
+      "fits_24MiB_nominal_GT1_external_SDRAM_capacity": true,
+      "payload_sha256": "864cebee6e15be9da8e9dca9c756bf720f35d4454f91b8fc466eaf4c23f9966a",
+      "prefix_probe_sha256": "565ec06cf1948617b8989bafeccd26494b1280efeb480ad32750b87bd6e7dd2f",
+      "prefix_probe_hex": "ff 4f f0 08 00 80 f3 11 88 ff 36 48 37 49 37 4a 00 f0 77 37 f8 37 f7 f0 00 f0 42 ff f2 55 38 fb f0 2e ff f0 38 03 00 39 11 02 ae 0c 01 25 f8 38 13 02 30 23 02 39 2a fb f0 1c 23 00 39 03 00 27",
+      "entropy_bits_per_byte": {
+        "common_prefix_194": 5.647079,
+        "first_512_bytes": 6.347937,
+        "full_payload": 7.554044
+      }
+    },
+    "GT-1 v1.05 application": {
+      "header_offset": "0x040000",
+      "payload_start": "0x040040",
+      "payload_end_exclusive": "0x15E098",
+      "stored_length": 1171544,
+      "field_0x28": "0x60000000",
+      "field_0x38": "0x60000000",
+      "field_0x3c": "0x002CAFD8",
+      "expanded_length_candidate_bytes": 2928600,
+      "expanded_length_candidate_MiB": 2.792931,
+      "fits_24MiB_nominal_GT1_external_SDRAM_capacity": true,
+      "payload_sha256": "4081604fc89c772960a4d9a5582a8a11b2fe8f8b360922dbb94f4df7b27baccf",
+      "prefix_probe_sha256": "fc680e2797a2b75a05f792c16eedf728a901798545be7a6970f1a582271aebc1",
+      "prefix_probe_hex": "ff 4f f0 08 00 80 f3 11 88 ff 36 48 37 49 37 4a 00 f0 77 37 f8 37 f7 f0 00 f0 42 ff f2 55 38 fb f0 2e ff f0 38 03 00 39 11 02 ae 0c 01 25 f8 38 13 02 30 23 02 39 2a fb f0 1c 23 00 39 03 00 27",
+      "entropy_bits_per_byte": {
+        "common_prefix_194": 5.647079,
+        "first_512_bytes": 6.404776,
+        "full_payload": 7.694578
+      }
+    },
+    "GT-1 v1.07 updater": {
+      "header_offset": "0x002000",
+      "payload_start": "0x002040",
+      "payload_end_exclusive": "0x0235A7",
+      "stored_length": 136551,
+      "field_0x28": "0x60000000",
+      "field_0x38": "0x60000000",
+      "field_0x3c": "0x0002A478",
+      "expanded_length_candidate_bytes": 173176,
+      "expanded_length_candidate_MiB": 0.165154,
+      "fits_24MiB_nominal_GT1_external_SDRAM_capacity": true,
+      "payload_sha256": "864cebee6e15be9da8e9dca9c756bf720f35d4454f91b8fc466eaf4c23f9966a",
+      "prefix_probe_sha256": "565ec06cf1948617b8989bafeccd26494b1280efeb480ad32750b87bd6e7dd2f",
+      "prefix_probe_hex": "ff 4f f0 08 00 80 f3 11 88 ff 36 48 37 49 37 4a 00 f0 77 37 f8 37 f7 f0 00 f0 42 ff f2 55 38 fb f0 2e ff f0 38 03 00 39 11 02 ae 0c 01 25 f8 38 13 02 30 23 02 39 2a fb f0 1c 23 00 39 03 00 27",
+      "entropy_bits_per_byte": {
+        "common_prefix_194": 5.647079,
+        "first_512_bytes": 6.347937,
+        "full_payload": 7.554044
+      }
+    },
+    "GT-1 v1.07 application": {
+      "header_offset": "0x040000",
+      "payload_start": "0x040040",
+      "payload_end_exclusive": "0x15E7A5",
+      "stored_length": 1173349,
+      "field_0x28": "0x60000000",
+      "field_0x38": "0x60000000",
+      "field_0x3c": "0x002CBA90",
+      "expanded_length_candidate_bytes": 2931344,
+      "expanded_length_candidate_MiB": 2.795547,
+      "fits_24MiB_nominal_GT1_external_SDRAM_capacity": true,
+      "payload_sha256": "78858382a3b1f3b7055b34e81499b7dd4c3b183c4070e8c7f387948c54b18bb2",
+      "prefix_probe_sha256": "f3899c578121207fa3cb119548f2b4b933dd6876bcdcad75509c9b4f8b421fe4",
+      "prefix_probe_hex": "ff 4f f0 08 00 80 f3 11 88 ff 36 48 37 49 37 4a 00 f0 77 37 f8 37 f7 f0 00 f0 42 ff f2 55 38 fb f0 2e ff f0 38 03 00 39 11 02 ae 0c 01 25 f8 38 13 02 30 23 02 39 2a fb f0 1c 23 00 39 03 00 27",
+      "entropy_bits_per_byte": {
+        "common_prefix_194": 5.647079,
+        "first_512_bytes": 6.380224,
+        "full_payload": 7.690918
+      }
+    },
+    "GT-1 v1.08 updater": {
+      "header_offset": "0x002000",
+      "payload_start": "0x002040",
+      "payload_end_exclusive": "0x0235A7",
+      "stored_length": 136551,
+      "field_0x28": "0x60000000",
+      "field_0x38": "0x60000000",
+      "field_0x3c": "0x0002A478",
+      "expanded_length_candidate_bytes": 173176,
+      "expanded_length_candidate_MiB": 0.165154,
+      "fits_24MiB_nominal_GT1_external_SDRAM_capacity": true,
+      "payload_sha256": "864cebee6e15be9da8e9dca9c756bf720f35d4454f91b8fc466eaf4c23f9966a",
+      "prefix_probe_sha256": "565ec06cf1948617b8989bafeccd26494b1280efeb480ad32750b87bd6e7dd2f",
+      "prefix_probe_hex": "ff 4f f0 08 00 80 f3 11 88 ff 36 48 37 49 37 4a 00 f0 77 37 f8 37 f7 f0 00 f0 42 ff f2 55 38 fb f0 2e ff f0 38 03 00 39 11 02 ae 0c 01 25 f8 38 13 02 30 23 02 39 2a fb f0 1c 23 00 39 03 00 27",
+      "entropy_bits_per_byte": {
+        "common_prefix_194": 5.647079,
+        "first_512_bytes": 6.347937,
+        "full_payload": 7.554044
+      }
+    },
+    "GT-1 v1.08 application": {
+      "header_offset": "0x040000",
+      "payload_start": "0x040040",
+      "payload_end_exclusive": "0x15E805",
+      "stored_length": 1173445,
+      "field_0x28": "0x60000000",
+      "field_0x38": "0x60000000",
+      "field_0x3c": "0x002CBB18",
+      "expanded_length_candidate_bytes": 2931480,
+      "expanded_length_candidate_MiB": 2.795677,
+      "fits_24MiB_nominal_GT1_external_SDRAM_capacity": true,
+      "payload_sha256": "ef236d8bb3ce79cb5f6a836e4ddbaa325f4ad04cde546e7cb70d6d7ecba8f2b0",
+      "prefix_probe_sha256": "da92dd42e0904253400fb4d797de36aa76bfc2ec95c2a1ce1999d13ce32c3381",
+      "prefix_probe_hex": "ff 4f f0 08 00 80 f3 11 88 ff 36 48 37 49 37 4a 00 f0 77 37 f8 37 f7 f0 00 f0 42 ff f2 55 38 fb f0 2e ff f0 38 03 00 39 11 02 ae 0c 01 25 f8 38 13 02 30 23 02 39 2a fb f0 1c 23 00 39 03 00 27",
+      "entropy_bits_per_byte": {
+        "common_prefix_194": 5.647079,
+        "first_512_bytes": 6.367201,
+        "full_payload": 7.692874
+      }
+    },
+    "GT-1 v1.09 updater": {
+      "header_offset": "0x002000",
+      "payload_start": "0x002040",
+      "payload_end_exclusive": "0x0235A7",
+      "stored_length": 136551,
+      "field_0x28": "0x60000000",
+      "field_0x38": "0x60000000",
+      "field_0x3c": "0x0002A478",
+      "expanded_length_candidate_bytes": 173176,
+      "expanded_length_candidate_MiB": 0.165154,
+      "fits_24MiB_nominal_GT1_external_SDRAM_capacity": true,
+      "payload_sha256": "864cebee6e15be9da8e9dca9c756bf720f35d4454f91b8fc466eaf4c23f9966a",
+      "prefix_probe_sha256": "565ec06cf1948617b8989bafeccd26494b1280efeb480ad32750b87bd6e7dd2f",
+      "prefix_probe_hex": "ff 4f f0 08 00 80 f3 11 88 ff 36 48 37 49 37 4a 00 f0 77 37 f8 37 f7 f0 00 f0 42 ff f2 55 38 fb f0 2e ff f0 38 03 00 39 11 02 ae 0c 01 25 f8 38 13 02 30 23 02 39 2a fb f0 1c 23 00 39 03 00 27",
+      "entropy_bits_per_byte": {
+        "common_prefix_194": 5.647079,
+        "first_512_bytes": 6.347937,
+        "full_payload": 7.554044
+      }
+    },
+    "GT-1 v1.09 application": {
+      "header_offset": "0x040000",
+      "payload_start": "0x040040",
+      "payload_end_exclusive": "0x15FB3A",
+      "stored_length": 1178362,
+      "field_0x28": "0x60000000",
+      "field_0x38": "0x60000000",
+      "field_0x3c": "0x002CD2B4",
+      "expanded_length_candidate_bytes": 2937524,
+      "expanded_length_candidate_MiB": 2.801441,
+      "fits_24MiB_nominal_GT1_external_SDRAM_capacity": true,
+      "payload_sha256": "2945b15fe45aede58d10fb78e7475d72373fd1d202f5e07839566d80663c1f34",
+      "prefix_probe_sha256": "a46ca07f37e68152c7277ac3fc49d83fd781c328b5cd12f8e8e56df97e76871d",
+      "prefix_probe_hex": "ff 4f f0 08 00 80 f3 11 88 ff 36 48 37 49 37 4a 00 f0 77 37 f8 37 f7 f0 00 f0 42 ff f2 55 38 fb f0 2e ff f0 38 03 00 39 11 02 ae 0c 01 25 f8 38 13 02 30 23 02 39 2a fb f0 1c 23 00 39 03 00 27",
+      "entropy_bits_per_byte": {
+        "common_prefix_194": 5.647079,
+        "first_512_bytes": 6.370737,
+        "full_payload": 7.691901
+      }
+    },
+    "GT-100 v2.12 updater": {
+      "header_offset": "0x002000",
+      "payload_start": "0x002040",
+      "payload_end_exclusive": "0x02379D",
+      "stored_length": 137053,
+      "field_0x28": "0x60000000",
+      "field_0x38": "0x60000000",
+      "field_0x3c": "0x0002A8C0",
+      "expanded_length_candidate_bytes": 174272,
+      "expanded_length_candidate_MiB": 0.166199,
+      "fits_24MiB_nominal_GT1_external_SDRAM_capacity": true,
+      "payload_sha256": "9c6c518ee8825aef56a51b1583005627981f02bc49bf6f1746c77251931c3403",
+      "prefix_probe_sha256": "59acb6e9db7692e96897d16cbe88df0842e8ff0467d695ef0cfe579f6e4a8666",
+      "prefix_probe_hex": "ff 4f f0 08 00 80 f3 11 88 ff 36 48 37 49 37 4a 00 f0 77 37 f8 37 f7 f0 00 f0 42 ff f2 55 38 fb f0 2e ff f0 38 03 00 39 11 02 ae 0c 01 25 f8 38 13 02 30 23 02 39 2a fb f0 1c 23 00 39 03 00 27",
+      "entropy_bits_per_byte": {
+        "common_prefix_194": 5.647079,
+        "first_512_bytes": 6.36959,
+        "full_payload": 7.557451
+      }
+    },
+    "GT-100 v2.12 application": {
+      "header_offset": "0x040000",
+      "payload_start": "0x040040",
+      "payload_end_exclusive": "0x17689C",
+      "stored_length": 1271900,
+      "field_0x28": "0x60000000",
+      "field_0x38": "0x60000000",
+      "field_0x3c": "0x002F813C",
+      "expanded_length_candidate_bytes": 3113276,
+      "expanded_length_candidate_MiB": 2.969051,
+      "fits_24MiB_nominal_GT1_external_SDRAM_capacity": true,
+      "payload_sha256": "adfbf71a09ff0dece90f77047a95f489e26952c2c1ee2a3a482bfe4a2952722e",
+      "prefix_probe_sha256": "7861cfe64ce39adc4b29e3f7feba2856982e5488446d8bac4710fbefdad149a8",
+      "prefix_probe_hex": "ff 4f f0 08 00 80 f3 11 88 ff 36 48 37 49 37 4a 00 f0 77 37 f8 37 f7 f0 00 f0 42 ff f2 55 38 fb f0 2e ff f0 38 03 00 39 11 02 ae 0c 01 25 f8 38 13 02 30 23 02 39 2a fb f0 1c 23 00 39 03 00 27",
+      "entropy_bits_per_byte": {
+        "common_prefix_194": 5.647079,
+        "first_512_bytes": 6.372789,
+        "full_payload": 7.704842
+      }
+    },
+    "KATANA v4.00 updater": {
+      "header_offset": "0x002000",
+      "payload_start": "0x002040",
+      "payload_end_exclusive": "0x020F3D",
+      "stored_length": 126717,
+      "field_0x28": "0x60000000",
+      "field_0x38": "0x60000000",
+      "field_0x3c": "0x0002680C",
+      "expanded_length_candidate_bytes": 157708,
+      "expanded_length_candidate_MiB": 0.150402,
+      "fits_24MiB_nominal_GT1_external_SDRAM_capacity": null,
+      "payload_sha256": "7be6bfaaa96f5357bf84dc53675d92828cd151d109505ad2255e681e74ad42ff",
+      "prefix_probe_sha256": "5baec525c6affb893499e337b1571230f8f234518cc4af9a672e7a012c977c76",
+      "prefix_probe_hex": "ff 4f f0 08 00 80 f3 11 88 ff 36 48 37 49 37 4a 00 f0 77 37 f8 37 f7 f0 00 f0 42 ff f2 55 38 fb f0 2e ff f0 38 03 00 39 11 02 ae 0c 01 25 f8 38 13 02 30 23 02 39 2a fb f0 1c 23 00 39 03 00 27",
+      "entropy_bits_per_byte": {
+        "common_prefix_194": 5.647079,
+        "first_512_bytes": 6.500179,
+        "full_payload": 7.558035
+      }
+    },
+    "KATANA v4.00 application": {
+      "header_offset": "0x040000",
+      "payload_start": "0x040040",
+      "payload_end_exclusive": "0x161657",
+      "stored_length": 1185303,
+      "field_0x28": "0x60000000",
+      "field_0x38": "0x60000000",
+      "field_0x3c": "0x0029C49C",
+      "expanded_length_candidate_bytes": 2737308,
+      "expanded_length_candidate_MiB": 2.6105,
+      "fits_24MiB_nominal_GT1_external_SDRAM_capacity": null,
+      "payload_sha256": "2eb17526312d3b35579d17b35bc7cba489fd165d167dcd3a9044f160931ce640",
+      "prefix_probe_sha256": "bbb2b6403f54ae74b81cce15ea92906d7bd98a1d481100c5e6ec4b009f88cf6e",
+      "prefix_probe_hex": "ff 4f f0 08 00 80 f3 11 88 ff 36 48 37 49 37 4a 00 f0 77 37 f8 37 f7 f0 00 f0 42 ff f2 55 38 fb f0 2e ff f0 38 03 00 39 11 02 ae 0c 01 25 f8 38 13 02 30 23 02 39 2a fb f0 1c 23 00 39 03 00 27",
+      "entropy_bits_per_byte": {
+        "common_prefix_194": 5.647079,
+        "first_512_bytes": 6.507679,
+        "full_payload": 7.706901
+      }
+    }
+  },
+  "groups": {
+    "all_twelve_payloads": {
+      "members": [
+        "GT-1 v1.05 updater",
+        "GT-1 v1.05 application",
+        "GT-1 v1.07 updater",
+        "GT-1 v1.07 application",
+        "GT-1 v1.08 updater",
+        "GT-1 v1.08 application",
+        "GT-1 v1.09 updater",
+        "GT-1 v1.09 application",
+        "GT-100 v2.12 updater",
+        "GT-100 v2.12 application",
+        "KATANA v4.00 updater",
+        "KATANA v4.00 application"
+      ],
+      "common_prefix_length": 194,
+      "common_prefix_sha256": "9a86daad33fe1795cdf8da940372481d19f52942ddf785109c17d3b5163c5d48",
+      "first_divergence_payload_relative_offset": "0xC2",
+      "bytes_at_divergence": {
+        "GT-1 v1.05 updater": "cc 3f 00 00 ff 9c 64 02 60 cc 42 00 01 de e9 f2",
+        "GT-1 v1.05 application": "16 0f 01 00 ff ac 8b 2b 60 18 12 01 01 fe e9 f2",
+        "GT-1 v1.07 updater": "cc 3f 00 00 ff 9c 64 02 60 cc 42 00 01 de e9 f2",
+        "GT-1 v1.07 application": "16 0f 01 00 ff 64 96 2b 60 18 12 01 01 fe e9 f2",
+        "GT-1 v1.08 updater": "cc 3f 00 00 ff 9c 64 02 60 cc 42 00 01 de e9 f2",
+        "GT-1 v1.08 application": "16 0f 01 00 ff ec 96 2b 60 18 12 01 01 fe e9 f2",
+        "GT-1 v1.09 updater": "cc 3f 00 00 ff 9c 64 02 60 cc 42 00 01 de e9 f2",
+        "GT-1 v1.09 application": "b2 0f 01 00 ff ec ad 2b 60 b4 12 01 01 fe e9 f2",
+        "GT-100 v2.12 updater": "cc 3f 00 00 ff e4 68 02 60 cc 42 00 01 de e9 f2",
+        "GT-100 v2.12 application": "52 03 01 00 ff 08 69 2e 60 54 06 01 01 fe e9 f2",
+        "KATANA v4.00 updater": "a0 3f 00 00 ff 5c 28 02 60 a0 42 00 01 de e9 f2",
+        "KATANA v4.00 application": "7c 11 01 00 ff 1c 9c 28 60 7c 14 01 01 fe e9 f2"
+      }
+    },
+    "all_updaters": {
+      "members": [
+        "GT-1 v1.05 updater",
+        "GT-1 v1.07 updater",
+        "GT-1 v1.08 updater",
+        "GT-1 v1.09 updater",
+        "GT-100 v2.12 updater",
+        "KATANA v4.00 updater"
+      ],
+      "common_prefix_length": 194,
+      "common_prefix_sha256": "9a86daad33fe1795cdf8da940372481d19f52942ddf785109c17d3b5163c5d48",
+      "first_divergence_payload_relative_offset": "0xC2",
+      "bytes_at_divergence": {
+        "GT-1 v1.05 updater": "cc 3f 00 00 ff 9c 64 02 60 cc 42 00 01 de e9 f2",
+        "GT-1 v1.07 updater": "cc 3f 00 00 ff 9c 64 02 60 cc 42 00 01 de e9 f2",
+        "GT-1 v1.08 updater": "cc 3f 00 00 ff 9c 64 02 60 cc 42 00 01 de e9 f2",
+        "GT-1 v1.09 updater": "cc 3f 00 00 ff 9c 64 02 60 cc 42 00 01 de e9 f2",
+        "GT-100 v2.12 updater": "cc 3f 00 00 ff e4 68 02 60 cc 42 00 01 de e9 f2",
+        "KATANA v4.00 updater": "a0 3f 00 00 ff 5c 28 02 60 a0 42 00 01 de e9 f2"
+      }
+    },
+    "all_applications": {
+      "members": [
+        "GT-1 v1.05 application",
+        "GT-1 v1.07 application",
+        "GT-1 v1.08 application",
+        "GT-1 v1.09 application",
+        "GT-100 v2.12 application",
+        "KATANA v4.00 application"
+      ],
+      "common_prefix_length": 194,
+      "common_prefix_sha256": "9a86daad33fe1795cdf8da940372481d19f52942ddf785109c17d3b5163c5d48",
+      "first_divergence_payload_relative_offset": "0xC2",
+      "bytes_at_divergence": {
+        "GT-1 v1.05 application": "16 0f 01 00 ff ac 8b 2b 60 18 12 01 01 fe e9 f2",
+        "GT-1 v1.07 application": "16 0f 01 00 ff 64 96 2b 60 18 12 01 01 fe e9 f2",
+        "GT-1 v1.08 application": "16 0f 01 00 ff ec 96 2b 60 18 12 01 01 fe e9 f2",
+        "GT-1 v1.09 application": "b2 0f 01 00 ff ec ad 2b 60 b4 12 01 01 fe e9 f2",
+        "GT-100 v2.12 application": "52 03 01 00 ff 08 69 2e 60 54 06 01 01 fe e9 f2",
+        "KATANA v4.00 application": "7c 11 01 00 ff 1c 9c 28 60 7c 14 01 01 fe e9 f2"
+      }
+    },
+    "GT-1 v1.05-v1.09 all sections": {
+      "members": [
+        "GT-1 v1.05 updater",
+        "GT-1 v1.05 application",
+        "GT-1 v1.07 updater",
+        "GT-1 v1.07 application",
+        "GT-1 v1.08 updater",
+        "GT-1 v1.08 application",
+        "GT-1 v1.09 updater",
+        "GT-1 v1.09 application"
+      ],
+      "common_prefix_length": 194,
+      "common_prefix_sha256": "9a86daad33fe1795cdf8da940372481d19f52942ddf785109c17d3b5163c5d48",
+      "first_divergence_payload_relative_offset": "0xC2",
+      "bytes_at_divergence": {
+        "GT-1 v1.05 updater": "cc 3f 00 00 ff 9c 64 02 60 cc 42 00 01 de e9 f2",
+        "GT-1 v1.05 application": "16 0f 01 00 ff ac 8b 2b 60 18 12 01 01 fe e9 f2",
+        "GT-1 v1.07 updater": "cc 3f 00 00 ff 9c 64 02 60 cc 42 00 01 de e9 f2",
+        "GT-1 v1.07 application": "16 0f 01 00 ff 64 96 2b 60 18 12 01 01 fe e9 f2",
+        "GT-1 v1.08 updater": "cc 3f 00 00 ff 9c 64 02 60 cc 42 00 01 de e9 f2",
+        "GT-1 v1.08 application": "16 0f 01 00 ff ec 96 2b 60 18 12 01 01 fe e9 f2",
+        "GT-1 v1.09 updater": "cc 3f 00 00 ff 9c 64 02 60 cc 42 00 01 de e9 f2",
+        "GT-1 v1.09 application": "b2 0f 01 00 ff ec ad 2b 60 b4 12 01 01 fe e9 f2"
+      }
+    }
+  },
+  "interpretation_limit": "Shared bytes establish an exact common payload prefix only; they do not prove that it is executable code, a loader, a codec preamble, or shared runtime behavior."
+}

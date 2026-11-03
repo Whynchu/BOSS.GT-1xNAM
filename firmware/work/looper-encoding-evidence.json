@@ -1,0 +1,395 @@
+{
+  "question": "Do the reported byte sequences encode the proposed 0x409980 loop-buffer size?",
+  "value": "0x409980",
+  "arithmetic": "3 * 44100 * 32 = 4233600 = 0x409980",
+  "interpretation_limit": "Matching byte order and value do not establish semantic use; the app payload transform and references are unknown.",
+  "images": {
+    "v105": {
+      "path": "firmware/extracted/v105/gt1_sys_v105/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "b1bde0410795230b4a89ee3dfbbd357700bba7020624c0ff832ae3d8539d8bb4",
+      "candidate_encodings": {
+        "reported_big_endian_triplet": {
+          "bytes_hex": "40 99 80",
+          "decoded_unsigned": 4233600,
+          "reported_offset": "0xb8914",
+          "occurrences": [],
+          "occurrence_contexts": [],
+          "reported_offset_is_hit": false,
+          "context_start": "0xb8904",
+          "context_hex": "a8 34 60 94 cc 40 55 7e d4 40 6a 30 e0 54 e4 40 40 b4 30 ad 2a f4 40 16 2d 75 63 e6 c0 30 cc ef 39 3f 00 b2 14 50 9a 41 3f 6b 00 80 20 50 66 cc"
+        },
+        "reported_little_endian_triplet": {
+          "bytes_hex": "80 99 40",
+          "decoded_unsigned": 4233600,
+          "reported_offset": "0xbebe4",
+          "occurrences": [
+            "0xa7ca6",
+            "0x153a5a"
+          ],
+          "occurrence_contexts": [
+            {
+              "offset": "0xa7ca6",
+              "region": "bounded application payload",
+              "context_start": "0xa7c96",
+              "context_hex": "7f 7a ef 20 40 11 60 bc f1 7f 4f ba 01 9d c3 a3 80 99 40 08 d7 f2 06 a5 a0 bf f1 c0 40 00 f0 57 cf 20 3c"
+            },
+            {
+              "offset": "0x153a5a",
+              "region": "bounded application payload",
+              "context_start": "0x153a4a",
+              "context_hex": "8f 39 82 17 48 c2 71 01 45 80 42 83 04 c5 82 f4 80 99 40 0b 79 a2 25 57 43 b8 0e 8b a4 b8 45 c0 37 b0 ee"
+            }
+          ],
+          "reported_offset_is_hit": false,
+          "context_start": "0xbebd4",
+          "context_hex": "90 d1 dc 31 a4 31 64 89 c1 fd 31 c9 61 44 59 81 99 b0 48 31 71 c5 b1 b9 b0 80 99 b0 55 3e b9 b0 20 b9 b0 98 99 b0 32 15 c1 a2 0d d4 26 b9 b0 08"
+        }
+      }
+    },
+    "v107": {
+      "path": "firmware/extracted/v107/gt1_sys_v107/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "6a3110cd42c4b129494a93bc88d4f218e2e0b9377868ca051018b28696d6c22f",
+      "candidate_encodings": {
+        "reported_big_endian_triplet": {
+          "bytes_hex": "40 99 80",
+          "decoded_unsigned": 4233600,
+          "reported_offset": "0xb8914",
+          "occurrences": [
+            "0x491e1",
+            "0x13082a"
+          ],
+          "occurrence_contexts": [
+            {
+              "offset": "0x491e1",
+              "region": "bounded application payload",
+              "context_start": "0x491d1",
+              "context_hex": "49 bf 65 08 99 80 b0 f1 42 01 c2 8b 82 8a a3 de 40 99 80 a5 42 79 04 b5 99 80 9c 45 af 99 80 3e ea 79 04"
+            },
+            {
+              "offset": "0x13082a",
+              "region": "bounded application payload",
+              "context_start": "0x13081a",
+              "context_hex": "dc cb 40 54 43 d0 74 82 d4 9b 48 94 e3 48 e4 cb 40 99 80 69 50 fb 00 00 4c 53 40 4a 45 24 aa 8f 48 7c e3"
+            }
+          ],
+          "reported_offset_is_hit": false,
+          "context_start": "0xb8904",
+          "context_hex": "b0 3c 8a 3e 00 5c 8f c1 a0 a9 94 91 60 84 60 b8 d8 b0 d4 dc b0 f4 ff a8 3e 00 14 ae 3e 00 30 f5 b3 b9 a0 b8 91 b0 bd 3e 00 8c 32 f0 b0 ac c8 a0"
+        },
+        "reported_little_endian_triplet": {
+          "bytes_hex": "80 99 40",
+          "decoded_unsigned": 4233600,
+          "reported_offset": "0xbebe4",
+          "occurrences": [],
+          "occurrence_contexts": [],
+          "reported_offset_is_hit": false,
+          "context_start": "0xbebd4",
+          "context_hex": "5d 2f 6f 2f 00 81 2f 93 2f a5 2f b7 2f c9 2f db 2f ed 2f ff 2f 00 11 3f 23 3f 35 3f 47 3f 59 3f 6b 3f 7d 3f 8f 3f a0 a1 3f b3 3f c5 3f d7 3f 6c"
+        }
+      }
+    },
+    "v108": {
+      "path": "firmware/extracted/v108/gt1_sys_v108/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "7219679a87e985316264544423c9940ccbcbadeb2df0b2f13711ae57194cb612",
+      "candidate_encodings": {
+        "reported_big_endian_triplet": {
+          "bytes_hex": "40 99 80",
+          "decoded_unsigned": 4233600,
+          "reported_offset": "0xb8914",
+          "occurrences": [],
+          "occurrence_contexts": [],
+          "reported_offset_is_hit": false,
+          "context_start": "0xb8904",
+          "context_hex": "00 bf 50 8f 3d 00 d0 a3 01 d0 b8 f6 f9 b3 40 e1 25 b0 f5 3d 00 18 55 05 85 c0 0f 15 70 19 41 b0 23 29 c0 95 2e 3d b0 38 61 c0 42 5d c0 fc 60 08"
+        },
+        "reported_little_endian_triplet": {
+          "bytes_hex": "80 99 40",
+          "decoded_unsigned": 4233600,
+          "reported_offset": "0xbebe4",
+          "occurrences": [],
+          "occurrence_contexts": [],
+          "reported_offset_is_hit": false,
+          "context_start": "0xbebd4",
+          "context_hex": "6b 0f 7d 0f 8f 0f a1 0f b3 0f 00 c5 0f d7 0f e9 0f fb 0f 0d 1f 1f 1f 31 1f 43 1f 00 55 1f 67 1f 79 1f 8b 1f 9d 1f af 1f c1 1f d3 1f 00 e5 1f f7"
+        }
+      }
+    },
+    "v109": {
+      "path": "firmware/extracted/v109/gt1_sys_v109/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "412ebf5ffdc48554454c27df47f61428f046ea0a7d93f5c77b7f0302861abdbf",
+      "candidate_encodings": {
+        "reported_big_endian_triplet": {
+          "bytes_hex": "40 99 80",
+          "decoded_unsigned": 4233600,
+          "reported_offset": "0xb8914",
+          "occurrences": [
+            "0xb8914"
+          ],
+          "occurrence_contexts": [
+            {
+              "offset": "0xb8914",
+              "region": "bounded application payload",
+              "context_start": "0xb8904",
+              "context_hex": "a8 52 25 b4 30 f9 a1 25 b4 38 99 80 c8 25 b4 25 40 99 80 d8 25 b4 60 a1 e8 25 b4 6c a1 89 f8 25 b4 78 a1"
+            }
+          ],
+          "reported_offset_is_hit": true,
+          "context_start": "0xb8904",
+          "context_hex": "a8 52 25 b4 30 f9 a1 25 b4 38 99 80 c8 25 b4 25 40 99 80 d8 25 b4 60 a1 e8 25 b4 6c a1 89 f8 25 b4 78 a1 08 65 60 28 b1 84 a1 10 24 79 b4 90 a1"
+        },
+        "reported_little_endian_triplet": {
+          "bytes_hex": "80 99 40",
+          "decoded_unsigned": 4233600,
+          "reported_offset": "0xbebe4",
+          "occurrences": [
+            "0xbebe4"
+          ],
+          "occurrence_contexts": [
+            {
+              "offset": "0xbebe4",
+              "region": "bounded application payload",
+              "context_start": "0xbebd4",
+              "context_hex": "58 99 40 60 99 40 68 99 40 70 71 04 95 78 99 40 80 99 40 84 99 40 40 51 8c aa 99 40 90 99 40 94 99 40 98"
+            }
+          ],
+          "reported_offset_is_hit": true,
+          "context_start": "0xbebd4",
+          "context_hex": "58 99 40 60 99 40 68 99 40 70 71 04 95 78 99 40 80 99 40 84 99 40 40 51 8c aa 99 40 90 99 40 94 99 40 98 99 40 9c aa 99 40 a0 99 40 a4 99 40 a8"
+        }
+      },
+      "candidate_triplet_view": [
+        {
+          "relative": "0x0",
+          "bytes_hex": "80 99 40",
+          "little_endian_value": "0x409980"
+        },
+        {
+          "relative": "0x3",
+          "bytes_hex": "84 99 40",
+          "little_endian_value": "0x409984"
+        },
+        {
+          "relative": "0x6",
+          "bytes_hex": "40 51 8c",
+          "little_endian_value": "0x8c5140"
+        },
+        {
+          "relative": "0x9",
+          "bytes_hex": "aa 99 40",
+          "little_endian_value": "0x4099aa"
+        },
+        {
+          "relative": "0xc",
+          "bytes_hex": "90 99 40",
+          "little_endian_value": "0x409990"
+        },
+        {
+          "relative": "0xf",
+          "bytes_hex": "94 99 40",
+          "little_endian_value": "0x409994"
+        },
+        {
+          "relative": "0x12",
+          "bytes_hex": "98 99 40",
+          "little_endian_value": "0x409998"
+        },
+        {
+          "relative": "0x15",
+          "bytes_hex": "9c aa 99",
+          "little_endian_value": "0x99aa9c"
+        },
+        {
+          "relative": "0x18",
+          "bytes_hex": "40 a0 99",
+          "little_endian_value": "0x99a040"
+        },
+        {
+          "relative": "0x1b",
+          "bytes_hex": "40 a4 99",
+          "little_endian_value": "0x99a440"
+        },
+        {
+          "relative": "0x1e",
+          "bytes_hex": "40 a8 99",
+          "little_endian_value": "0x99a840"
+        },
+        {
+          "relative": "0x21",
+          "bytes_hex": "40 b0 ac",
+          "little_endian_value": "0xacb040"
+        },
+        {
+          "relative": "0x24",
+          "bytes_hex": "99 40 0c",
+          "little_endian_value": "0xc4099"
+        },
+        {
+          "relative": "0x27",
+          "bytes_hex": "70 00 b8",
+          "little_endian_value": "0xb80070"
+        },
+        {
+          "relative": "0x2a",
+          "bytes_hex": "99 40 bc",
+          "little_endian_value": "0xbc4099"
+        },
+        {
+          "relative": "0x2d",
+          "bytes_hex": "99 40 c4",
+          "little_endian_value": "0xc44099"
+        }
+      ],
+      "nearby_le_0x4099xx_values": [
+        {
+          "relative": "-0x3a",
+          "bytes_hex": "41 99 40",
+          "value": "0x409941"
+        },
+        {
+          "relative": "-0x1f",
+          "bytes_hex": "38 99 40",
+          "value": "0x409938"
+        },
+        {
+          "relative": "-0x18",
+          "bytes_hex": "48 99 40",
+          "value": "0x409948"
+        },
+        {
+          "relative": "-0x10",
+          "bytes_hex": "58 99 40",
+          "value": "0x409958"
+        },
+        {
+          "relative": "-0xd",
+          "bytes_hex": "60 99 40",
+          "value": "0x409960"
+        },
+        {
+          "relative": "-0xa",
+          "bytes_hex": "68 99 40",
+          "value": "0x409968"
+        },
+        {
+          "relative": "-0x3",
+          "bytes_hex": "78 99 40",
+          "value": "0x409978"
+        },
+        {
+          "relative": "0x0",
+          "bytes_hex": "80 99 40",
+          "value": "0x409980"
+        },
+        {
+          "relative": "0x3",
+          "bytes_hex": "84 99 40",
+          "value": "0x409984"
+        },
+        {
+          "relative": "0x9",
+          "bytes_hex": "aa 99 40",
+          "value": "0x4099aa"
+        },
+        {
+          "relative": "0xc",
+          "bytes_hex": "90 99 40",
+          "value": "0x409990"
+        },
+        {
+          "relative": "0xf",
+          "bytes_hex": "94 99 40",
+          "value": "0x409994"
+        },
+        {
+          "relative": "0x12",
+          "bytes_hex": "98 99 40",
+          "value": "0x409998"
+        },
+        {
+          "relative": "0x16",
+          "bytes_hex": "aa 99 40",
+          "value": "0x4099aa"
+        },
+        {
+          "relative": "0x19",
+          "bytes_hex": "a0 99 40",
+          "value": "0x4099a0"
+        },
+        {
+          "relative": "0x1c",
+          "bytes_hex": "a4 99 40",
+          "value": "0x4099a4"
+        },
+        {
+          "relative": "0x1f",
+          "bytes_hex": "a8 99 40",
+          "value": "0x4099a8"
+        },
+        {
+          "relative": "0x23",
+          "bytes_hex": "ac 99 40",
+          "value": "0x4099ac"
+        },
+        {
+          "relative": "0x29",
+          "bytes_hex": "b8 99 40",
+          "value": "0x4099b8"
+        },
+        {
+          "relative": "0x2c",
+          "bytes_hex": "bc 99 40",
+          "value": "0x4099bc"
+        },
+        {
+          "relative": "0x30",
+          "bytes_hex": "aa 99 40",
+          "value": "0x4099aa"
+        },
+        {
+          "relative": "0x33",
+          "bytes_hex": "c8 99 40",
+          "value": "0x4099c8"
+        },
+        {
+          "relative": "0x36",
+          "bytes_hex": "cc 99 40",
+          "value": "0x4099cc"
+        },
+        {
+          "relative": "0x39",
+          "bytes_hex": "d4 99 40",
+          "value": "0x4099d4"
+        },
+        {
+          "relative": "0x3d",
+          "bytes_hex": "aa 99 40",
+          "value": "0x4099aa"
+        },
+        {
+          "relative": "0x40",
+          "bytes_hex": "e0 99 40",
+          "value": "0x4099e0"
+        },
+        {
+          "relative": "0x43",
+          "bytes_hex": "e4 99 40",
+          "value": "0x4099e4"
+        },
+        {
+          "relative": "0x46",
+          "bytes_hex": "ec 99 40",
+          "value": "0x4099ec"
+        },
+        {
+          "relative": "0x4a",
+          "bytes_hex": "12 99 40",
+          "value": "0x409912"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1556 @@
+program=v108-GT1Appli.bin
+language=ARM:LE:32:v7
+mapping=decoded v1.08 image at candidate 0x60000000; physical mapping unverified
+method=bounded explicit Thumb seeds; create and decompile only listed entries
+decoded_input=firmware/work/decoded/v108-GT1Appli.bin
+
+entry=60058d3c
+function_body=[[60058d3c, 60058d67]]
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_60058d3c(undefined4 param_1,int param_2,int param_3,int param_4,int param_5)
+
+{
+  int iVar1;
+  
+  if (param_2 == 0) {
+    iVar1 = 0x50000;
+  }
+  else {
+    iVar1 = 0x70000;
+  }
+  *_DAT_60058dac = iVar1 + param_3 | param_4 << 0x1c;
+  if (param_4 == 0) {
+    param_5 = param_5 << 0x10;
+  }
+  else if (param_4 == 1) {
+    param_5 = param_5 << 8;
+  }
+  *_DAT_60058db0 = param_5;
+  return;
+}
+
+
+
+entry=60058e1c
+function_body=[[60058e1c, 60058e51]]
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+uint FUN_60058e1c(undefined4 param_1,int param_2,int param_3,int param_4)
+
+{
+  int iVar1;
+  uint uVar2;
+  
+  if (param_2 == 0) {
+    iVar1 = 0x50000;
+  }
+  else {
+    iVar1 = 0x70000;
+  }
+  *_DAT_60059228 = iVar1 + param_3 | param_4 << 0x1c;
+  do {
+  } while ((*(uint *)(_DAT_6005922c + 8) & 0x40000000) != 0);
+  if (param_4 == 0) {
+    return *_DAT_60059230 >> 0x10;
+  }
+  uVar2 = *_DAT_60059230;
+  if (param_4 == 1) {
+    uVar2 = uVar2 >> 8;
+  }
+  return uVar2;
+}
+
+
+
+entry=600593a2
+function_body=[[600593a2, 6005949b]]
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* WARNING: Restarted to delay deadcode elimination for space: stack */
+
+void FUN_600593a2(int param_1,int param_2,int param_3,int param_4,int param_5,int param_6)
+
+{
+  uint *puVar1;
+  uint uVar2;
+  undefined4 uVar3;
+  int iVar4;
+  int iVar5;
+  uint uVar6;
+  code *UNRECOVERED_JUMPTABLE_00;
+  int aiStack_54 [2];
+  uint auStack_4c [6];
+  
+  iVar5 = 0;
+  if (param_4 < 1) {
+                    /* WARNING: Could not recover jumptable at 0x600593c6. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+    (*UNRECOVERED_JUMPTABLE_00)();
+    return;
+  }
+  do {
+    auStack_4c[0] = *(uint *)(param_5 + iVar5 * 0xc);
+    aiStack_54[0] = *(int *)(param_5 + iVar5 * 0xc + 4);
+    if ((aiStack_54[0] != 0) && ((param_2 != 2 || (*(char *)(param_6 + iVar5) == '\x01')))) {
+      func_0x60057e1e(param_1,param_3,auStack_4c,aiStack_54);
+      uVar2 = auStack_4c[0];
+      puVar1 = _DAT_60059640;
+      if (param_3 == 0) {
+        iVar4 = 0x50000;
+      }
+      else {
+        iVar4 = 0x70000;
+      }
+      *_DAT_60059640 = iVar4 + auStack_4c[0] | 0x20000000;
+      puVar1[1] = 0;
+      func_0x6009a9a6(0,(int)(puVar1 + 1) * 0x10000000,0xffffffe8);
+      uVar3 = func_0x600998bc();
+      func_0x6005873a(param_1,0,0,uVar3);
+      func_0x60008bd0(param_1,0x20);
+      uVar6 = *(uint *)(param_1 + 0xc0c);
+      *(undefined4 *)(param_1 + 0xc0c) = 0;
+      auStack_4c[0] = auStack_4c[0] >> 2;
+      func_0x60057ece(param_1,param_3,auStack_4c[0],aiStack_54[0]);
+      puVar1 = _DAT_60059640;
+      if (param_3 == 0) {
+        iVar4 = 0x50000;
+      }
+      else {
+        iVar4 = 0x70000;
+      }
+      *_DAT_60059640 = iVar4 + uVar2 | 0x20000000;
+      puVar1[1] = uVar6;
+    }
+    iVar5 = iVar5 + 1;
+  } while (iVar5 < param_4);
+                    /* WARNING: Could not recover jumptable at 0x60059498. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*UNRECOVERED_JUMPTABLE_00)();
+  return;
+}
+
+
+
+entry=6005949c
+function_body=[[6005949c, 6005953d]]
+
+/* WARNING: Restarted to delay deadcode elimination for space: stack */
+
+void FUN_6005949c(int param_1,int param_2,undefined4 param_3,int param_4,int param_5,int param_6)
+
+{
+  int iVar1;
+  uint uVar2;
+  int iVar3;
+  int iVar4;
+  int iVar5;
+  undefined4 *puVar6;
+  code *UNRECOVERED_JUMPTABLE_00;
+  
+  iVar5 = 0;
+  if (param_4 < 1) {
+                    /* WARNING: Could not recover jumptable at 0x600594c4. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+    (*UNRECOVERED_JUMPTABLE_00)();
+    return;
+  }
+  do {
+    if ((param_2 != 2) || (*(char *)(param_6 + iVar5) == '\x01')) {
+      iVar3 = *(int *)(param_5 + iVar5 * 0xc);
+      iVar4 = *(int *)(param_5 + iVar5 * 0xc + 4);
+      if (iVar4 != 0) {
+        iVar4 = ((int)(iVar4 + ((uint)(iVar4 >> 0x1f) >> 0x1e)) >> 2) + 1;
+        uVar2 = (uint)(iVar4 < 1);
+        puVar6 = *(undefined4 **)(param_5 + iVar5 * 0xc + 8);
+        if (0 < iVar4) {
+          do {
+            iVar1 = uVar2 * 4;
+            uVar2 = uVar2 + 1;
+            *(undefined4 *)(param_1 + iVar1 + 0xc) = *puVar6;
+            iVar4 = iVar4 + -1;
+            puVar6 = puVar6 + 1;
+          } while (iVar4 != 0);
+        }
+        func_0x600582f8(param_1,param_3,(int)(iVar3 + ((uint)(iVar3 >> 0x1f) >> 0x1d)) >> 3);
+      }
+    }
+    iVar5 = iVar5 + 1;
+  } while (iVar5 < param_4);
+                    /* WARNING: Could not recover jumptable at 0x6005953a. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*UNRECOVERED_JUMPTABLE_00)();
+  return;
+}
+
+
+
+entry=60093b14
+function_body=[[60093b14, 60093ba1]]
+
+void FUN_60093b14(int param_1,uint param_2,undefined4 param_3)
+
+{
+  short sVar1;
+  int iVar2;
+  uint uVar3;
+  
+  if (*(short *)(param_1 + 0x8196) == 0) {
+    iVar2 = func_0x6007cc2c(param_2);
+    *(char *)(param_1 + 0x8194) = (char)iVar2;
+    if (iVar2 == 7) {
+      if (param_2 < 0x60001) {
+        iVar2 = 0x4e000;
+      }
+      else {
+        iVar2 = 0x6e000;
+      }
+    }
+    else {
+      if (iVar2 != 8) {
+        return;
+      }
+      if (param_2 < 0x60001) {
+        iVar2 = 0x50000;
+      }
+      else {
+        iVar2 = 0x70000;
+      }
+    }
+    func_0x6004e230(param_1,0x8000);
+    *(bool *)(param_1 + 0x8195) = 0x60000 < param_2;
+    *(uint *)(param_1 + 0x818c) = param_2;
+    *(uint *)(param_1 + 0x8190) = param_2 - iVar2;
+  }
+  sVar1 = (short)param_2 - *(short *)(param_1 + 0x818c);
+  uVar3 = (uint)sVar1;
+  if (0x1fff < uVar3) {
+    return;
+  }
+  if ((int)(uint)*(ushort *)(param_1 + 0x8196) <= (int)uVar3) {
+    *(short *)(param_1 + 0x8196) = sVar1 + 1;
+  }
+  *(undefined4 *)(param_1 + uVar3 * 4) = param_3;
+  return;
+}
+
+
+
+entry=6007cc2c
+function_body=[[6007cc2c, 6007cccf]]
+
+undefined4 FUN_6007cc2c(uint param_1)
+
+{
+  undefined4 uVar1;
+  int iVar2;
+  
+  uVar1 = 0xffffffff;
+  if (param_1 < 0xa00) {
+    return 0;
+  }
+  if (param_1 < 0xa000) {
+    if (0xfff < param_1) {
+      uVar1 = 1;
+    }
+    return uVar1;
+  }
+  if (0x77fff < param_1) {
+    return 0xffffffff;
+  }
+  if (param_1 < 0x60001) {
+    iVar2 = 0x40000;
+  }
+  else {
+    iVar2 = 0x60000;
+  }
+  param_1 = param_1 - iVar2;
+  if (param_1 < 0x1000) {
+    return 2;
+  }
+  if (param_1 < 0x5000) {
+    if (0x3fff < param_1) {
+      uVar1 = 3;
+    }
+    return uVar1;
+  }
+  if (param_1 < 0x8c00) {
+    if (0x7fff < param_1) {
+      uVar1 = 4;
+    }
+    return uVar1;
+  }
+  if (param_1 < 0x9c00) {
+    if (0x8fff < param_1) {
+      uVar1 = 5;
+    }
+    return uVar1;
+  }
+  if (param_1 < 0xd000) {
+    if (0xbfff < param_1) {
+      uVar1 = 6;
+    }
+    return uVar1;
+  }
+  if (param_1 < 0xf800) {
+    if (0xdfff < param_1) {
+      uVar1 = 7;
+    }
+    return uVar1;
+  }
+  if (0x17fff < param_1) {
+    return 0xffffffff;
+  }
+  if (0xffff < param_1) {
+    uVar1 = 8;
+  }
+  return uVar1;
+}
+
+
+
+entry=6007ccd0
+function_body=[[6007ccd0, 6007cde1] [6007f5c0, 6007f5d3]]
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_6007ccd0(undefined4 *param_1)
+
+{
+  int iVar1;
+  uint uVar2;
+  int iVar3;
+  code *UNRECOVERED_JUMPTABLE;
+  bool bVar4;
+  undefined1 auStack_90 [128];
+  
+  if (*(short *)((int)param_1 + 0x8196) == 0) {
+    func_0x6007fdf4(0x6007d09c,_DAT_6007f5d4,auStack_90 + 0x84);
+                    /* WARNING: Could not recover jumptable at 0x6007f5d0. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+    (*UNRECOVERED_JUMPTABLE)();
+    return;
+  }
+  iVar1 = 0;
+  iVar3 = iVar1;
+  do {
+    uVar2 = (uint)*(ushort *)((int)param_1 + 0x8196);
+    if (0x400 < uVar2) {
+      uVar2 = 0x400;
+    }
+    param_1[iVar3 * 3 + 0x2003] = param_1[0x2064] + iVar1;
+    param_1[iVar3 * 3 + 0x2004] = uVar2;
+    param_1[iVar3 * 3 + 0x2005] = param_1 + iVar1 / 4;
+    iVar1 = iVar1 + uVar2;
+    uVar2 = *(ushort *)((int)param_1 + 0x8196) - uVar2;
+    *(short *)((int)param_1 + 0x8196) = (short)uVar2;
+    bVar4 = (uVar2 & 0xffff) != 0;
+    if (bVar4) {
+      iVar3 = iVar3 + 1;
+    }
+  } while (bVar4 && iVar3 < 0x20);
+  param_1[0x2000] = iVar3 + 1;
+  param_1[0x2001] = param_1 + 0x2003;
+  if (*(char *)(param_1 + 0x2065) == '\a') {
+    FUN_6005949c(_DAT_6007d098,0,*(undefined1 *)((int)param_1 + 0x8195));
+    return;
+  }
+  if (*(char *)(param_1 + 0x2065) != '\b') {
+    return;
+  }
+  if (param_1[0x2064] == 0) {
+    *param_1 = 0;
+    param_1[1] = 0;
+  }
+  else {
+    FUN_60058e1c(_DAT_6007d098,*(undefined1 *)((int)param_1 + 0x8195),0);
+  }
+  FUN_60058d3c(_DAT_6007d098,*(undefined1 *)((int)param_1 + 0x8195),0);
+  func_0x6004e21c(1);
+  FUN_600593a2(_DAT_6007d098,0,*(undefined1 *)((int)param_1 + 0x8195),param_1[0x2000]);
+  FUN_60058d3c(_DAT_6007d098,*(undefined1 *)((int)param_1 + 0x8195),0);
+  return;
+}
+
+
+
+entry=6007cde2
+function_body=[[6007cde2, 6007d031] [6007d036, 6007d097] [6007f5c0, 6007f5d3]]
+
+/* WARNING: Possible PIC construction at 0x6007ce3c: Changing call to branch */
+/* WARNING: Possible PIC construction at 0x6007ce48: Changing call to branch */
+/* WARNING: Possible PIC construction at 0x6007ced0: Changing call to branch */
+/* WARNING: Possible PIC construction at 0x6007cf70: Changing call to branch */
+/* WARNING: Removing unreachable block (ram,0x6007ced4) */
+/* WARNING: Removing unreachable block (ram,0x6007ce4c) */
+/* WARNING: Removing unreachable block (ram,0x6007ce40) */
+/* WARNING: Removing unreachable block (ram,0x6007cf74) */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_6007cde2(int *param_1,byte *param_2,byte *param_3,byte *param_4)
+
+{
+  byte bVar1;
+  int iVar2;
+  uint uVar3;
+  undefined4 uVar4;
+  byte *extraout_r1;
+  byte *extraout_r1_00;
+  byte *extraout_r1_01;
+  byte *extraout_r1_02;
+  byte *extraout_r1_03;
+  byte *extraout_r2;
+  byte *extraout_r2_00;
+  byte *extraout_r2_01;
+  byte *extraout_r2_02;
+  byte *extraout_r2_03;
+  byte *extraout_r2_04;
+  byte *extraout_r2_05;
+  byte *extraout_r3;
+  byte *extraout_r3_00;
+  byte *extraout_r3_01;
+  byte *extraout_r3_02;
+  byte *extraout_r3_03;
+  byte *extraout_r3_04;
+  byte *extraout_r3_05;
+  byte *unaff_r4;
+  byte *pbVar5;
+  byte *pbVar6;
+  byte *pbVar7;
+  uint uVar8;
+  byte *pbVar9;
+  byte *pbVar10;
+  byte *pbVar11;
+  undefined4 unaff_lr;
+  bool bVar12;
+  undefined8 uVar13;
+  undefined1 auStack_a8 [128];
+  
+  uVar8 = (uint)param_2 & 0x1ffffff;
+  if ((int)param_4 < 1) {
+    return;
+  }
+  pbVar9 = (byte *)0x0;
+  pbVar5 = param_3;
+  pbVar7 = param_4;
+  do {
+    if (uVar8 < 0x200000) {
+      pbVar10 = (byte *)(uVar8 >> 1);
+      uVar13 = FUN_6007cc2c(pbVar10);
+      pbVar6 = (byte *)((ulonglong)uVar13 >> 0x20);
+      iVar2 = (int)uVar13;
+      param_4 = extraout_r3_03;
+      if (iVar2 == -1) {
+        uVar4 = 0x6007d22c;
+        pbVar7 = extraout_r2_03;
+        goto SUB_6007f5c0;
+      }
+      if (iVar2 == 7) {
+        if ((int)pbVar7 < 8) goto LAB_6007ce90;
+        if ((uVar8 & 7) != 0) {
+LAB_6007d046:
+          uVar4 = 0x6007d1ec;
+          pbVar7 = extraout_r2_03;
+          goto SUB_6007f5c0;
+        }
+        iVar2 = *param_1;
+        if (iVar2 == 0) {
+          uVar4 = 0x6007d1bc;
+          pbVar10 = pbVar6;
+          pbVar7 = extraout_r2_03;
+          goto SUB_6007f5c0;
+        }
+        uVar3 = iVar2 + 0x8000;
+        bVar12 = *(short *)(iVar2 + 0x8196) != 0;
+        if (bVar12) {
+          uVar3 = (uint)*(byte *)(iVar2 + 0x8194);
+        }
+        if (bVar12 && uVar3 != 7) {
+          unaff_lr = 0x6007cf75;
+          uVar4 = _DAT_6007d1b8;
+          pbVar7 = extraout_r2_03;
+          unaff_r4 = pbVar5;
+          register0x00000054 = (BADSPACEBASE *)(auStack_a8 + 0x80);
+          goto SUB_6007f5c0;
+        }
+        pbVar6 = pbVar9;
+        do {
+          pbVar11 = pbVar5 + 1;
+          bVar1 = *pbVar5;
+          pbVar6 = pbVar6 + 2;
+          pbVar5 = pbVar5 + 2;
+        } while ((int)pbVar6 < 2);
+        FUN_60093b14(*param_1,pbVar10,*pbVar11 & 0xf | bVar1 << 4);
+        pbVar6 = pbVar9;
+        do {
+          pbVar11 = pbVar5 + 1;
+          bVar1 = *pbVar5;
+          pbVar6 = pbVar6 + 2;
+          pbVar5 = pbVar5 + 2;
+        } while ((int)pbVar6 < 2);
+        FUN_60093b14(*param_1,pbVar10 + 1,*pbVar11 & 0xf | bVar1 << 4);
+        pbVar6 = pbVar9;
+        do {
+          pbVar11 = pbVar5 + 1;
+          bVar1 = *pbVar5;
+          pbVar6 = pbVar6 + 2;
+          pbVar5 = pbVar5 + 2;
+        } while ((int)pbVar6 < 2);
+        FUN_60093b14(*param_1,pbVar10 + 2,*pbVar11 & 0xf | bVar1 << 4);
+        pbVar6 = pbVar9;
+        do {
+          pbVar11 = pbVar5 + 1;
+          bVar1 = *pbVar5;
+          pbVar6 = pbVar6 + 2;
+          pbVar5 = pbVar5 + 2;
+        } while ((int)pbVar6 < 2);
+        FUN_60093b14(*param_1,pbVar10 + 3,*pbVar11 & 0xf | bVar1 << 4);
+        pbVar7 = pbVar7 + -8;
+        uVar8 = uVar8 + 8;
+        param_2 = extraout_r1_03;
+        param_3 = extraout_r2_05;
+        param_4 = extraout_r3_05;
+      }
+      else if (iVar2 == 8) {
+        if ((int)pbVar7 < 4) goto LAB_6007ce90;
+        if ((uVar8 & 3) != 0) {
+          uVar4 = 0x6007d144;
+          pbVar7 = extraout_r2_03;
+          goto SUB_6007f5c0;
+        }
+        iVar2 = *param_1;
+        if (iVar2 == 0) {
+          uVar4 = 0x6007d188;
+          pbVar10 = pbVar6;
+          pbVar7 = extraout_r2_03;
+          goto SUB_6007f5c0;
+        }
+        uVar3 = iVar2 + 0x8000;
+        bVar12 = *(short *)(iVar2 + 0x8196) != 0;
+        if (bVar12) {
+          uVar3 = (uint)*(byte *)(iVar2 + 0x8194);
+        }
+        if (bVar12 && uVar3 != 8) {
+          unaff_lr = 0x6007ced5;
+          uVar4 = _DAT_6007d184;
+          pbVar7 = extraout_r2_03;
+          unaff_r4 = pbVar5;
+          register0x00000054 = (BADSPACEBASE *)(auStack_a8 + 0x80);
+          goto SUB_6007f5c0;
+        }
+        pbVar6 = pbVar9;
+        do {
+          pbVar11 = pbVar5 + 1;
+          bVar1 = *pbVar5;
+          pbVar6 = pbVar6 + 2;
+          pbVar5 = pbVar5 + 2;
+        } while ((int)pbVar6 < 2);
+        FUN_60093b14(*param_1,pbVar10,*pbVar11 & 0xf | bVar1 << 4);
+        pbVar6 = pbVar9;
+        do {
+          pbVar11 = pbVar5 + 1;
+          bVar1 = *pbVar5;
+          pbVar6 = pbVar6 + 2;
+          pbVar5 = pbVar5 + 2;
+        } while ((int)pbVar6 < 2);
+        FUN_60093b14(*param_1,pbVar10 + 1,*pbVar11 & 0xf | bVar1 << 4);
+        pbVar7 = pbVar7 + -4;
+        uVar8 = uVar8 + 4;
+        param_2 = extraout_r1_02;
+        param_3 = extraout_r2_04;
+        param_4 = extraout_r3_04;
+      }
+      else {
+        if ((int)pbVar7 < 8) {
+LAB_6007ce90:
+          uVar4 = 0x6007d10c;
+          goto SUB_6007f5c0;
+        }
+        if ((uVar8 & 7) != 0) goto LAB_6007d046;
+        param_3 = &SupervisorCall;
+        param_4 = pbVar9;
+        param_2 = pbVar9;
+        do {
+          pbVar6 = pbVar5 + 1;
+          bVar1 = *pbVar5;
+          param_2 = param_2 + 2;
+          pbVar5 = pbVar5 + 2;
+          param_4 = (byte *)(*pbVar6 & 0xf | (bVar1 & 0xf | ((uint)param_4 & 0xffffff) << 4) << 4);
+        } while ((int)param_2 < 8);
+        pbVar7 = pbVar7 + -8;
+        uVar8 = uVar8 + 8;
+        *(byte **)(pbVar10 + 0x40100000) = param_4;
+      }
+    }
+    else {
+      if (uVar8 == 0x200000) {
+        bVar1 = *pbVar5;
+        if (bVar1 == 0) {
+          if (*param_1 != 0) {
+            unaff_lr = 0x6007ce4d;
+            uVar4 = 0x6007d0e4;
+            pbVar10 = param_2;
+            pbVar7 = param_3;
+            unaff_r4 = pbVar5;
+            register0x00000054 = (BADSPACEBASE *)(auStack_a8 + 0x80);
+            goto SUB_6007f5c0;
+          }
+          iVar2 = func_0x60095a04(0x8198);
+          param_2 = (byte *)0x8196;
+          *(undefined2 *)(iVar2 + 0x8196) = 0;
+          *param_1 = iVar2;
+          param_3 = extraout_r2_02;
+          param_4 = extraout_r3_02;
+        }
+        else if (bVar1 == 1) {
+LAB_6007ce26:
+          if (*param_1 == 0) {
+LAB_6007ce3a:
+            unaff_lr = 0x6007ce41;
+            uVar4 = 0x6007d0bc;
+            pbVar10 = param_2;
+            pbVar7 = param_3;
+            unaff_r4 = pbVar5;
+            register0x00000054 = (BADSPACEBASE *)(auStack_a8 + 0x80);
+SUB_6007f5c0:
+            *(byte **)((int)register0x00000054 + -4) = param_4;
+            *(byte **)((int)register0x00000054 + -8) = pbVar7;
+            *(byte **)((int)register0x00000054 + -0xc) = pbVar10;
+            *(undefined4 *)((int)register0x00000054 + -0x10) = uVar4;
+            *(undefined4 *)((int)register0x00000054 + -0x14) = unaff_lr;
+            *(byte **)((int)register0x00000054 + -0x18) = unaff_r4;
+            func_0x6007fdf4(*(undefined4 *)((int)register0x00000054 + -0x10),_DAT_6007f5d4,
+                            (undefined1 *)((int)register0x00000054 + -0xc));
+                    /* WARNING: Could not recover jumptable at 0x6007f5d0. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+            (**(code **)((int)register0x00000054 + -0x14))();
+            return;
+          }
+          FUN_6007ccd0();
+          func_0x600603c2(*param_1);
+          *param_1 = 0;
+          param_2 = extraout_r1_01;
+          param_3 = extraout_r2_01;
+          param_4 = extraout_r3_01;
+        }
+        else if (bVar1 == 2) {
+          if (*param_1 == 0) {
+            func_0x6007f5c0(0x6007d0bc);
+            param_2 = extraout_r1_00;
+            param_3 = extraout_r2_00;
+            param_4 = extraout_r3_00;
+            goto LAB_6007ce26;
+          }
+          func_0x600603c2();
+          *param_1 = 0;
+          param_2 = extraout_r1;
+          param_3 = extraout_r2;
+          param_4 = extraout_r3;
+          goto LAB_6007ce3a;
+        }
+      }
+      pbVar5 = pbVar5 + 1;
+      pbVar7 = pbVar7 + -1;
+    }
+    if ((int)pbVar7 < 1) {
+      return;
+    }
+  } while( true );
+}
+
+
+
+entry=6007d686
+function_body=[[6007d686, 6007d8a3]]
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_6007d686(int param_1,uint *param_2,undefined4 param_3,undefined4 param_4)
+
+{
+  char cVar1;
+  undefined1 uVar2;
+  int *piVar3;
+  uint uVar4;
+  int iVar5;
+  int iVar6;
+  undefined4 uStack_20;
+  
+  cVar1 = *(char *)(param_1 + 0x108);
+  if (cVar1 == '\0') {
+    uVar4 = *param_2;
+    if (((uVar4 >> 8 & 0xff) << 0x10 | (uVar4 >> 0x10 & 0xff) << 8 | uVar4 >> 0x18) + _DAT_6007d8d4
+        != 0) {
+      return;
+    }
+    uVar2 = 1;
+  }
+  else {
+    uStack_20 = param_4;
+    if (cVar1 == '\x01') {
+      iVar6 = param_1 + 8;
+      uVar4 = (*param_2 >> 8 & 0xff) << 0x10 | (*param_2 >> 0x10 & 0xff) << 8;
+      if (uVar4 == 0x3c1100) {
+        *(undefined4 *)(param_1 + 4) = 0;
+        func_0x6004e230(param_1 + 8,0x100);
+        if ((*param_2 & 0xf) == 4) {
+          *(byte *)(*(int *)(param_1 + 4) + iVar6) = *(byte *)((int)param_2 + 3);
+          iVar6 = *(int *)(param_1 + 4) + 1;
+          *(int *)(param_1 + 4) = iVar6;
+          if (0xff < iVar6) goto LAB_6007d710;
+          uVar2 = 3;
+          goto LAB_6007d7bc;
+        }
+      }
+      else if (uVar4 == 0x3c1200) {
+        *(undefined4 *)(param_1 + 4) = 0;
+        func_0x6004e230(iVar6,0x100);
+        if ((*param_2 & 0xf) == 4) {
+          *(byte *)(*(int *)(param_1 + 4) + iVar6) = *(byte *)((int)param_2 + 3);
+          iVar6 = *(int *)(param_1 + 4) + 1;
+          *(int *)(param_1 + 4) = iVar6;
+          if (0xff < iVar6) goto LAB_6007d710;
+          uVar2 = 2;
+          goto LAB_6007d7bc;
+        }
+      }
+    }
+    else if (cVar1 == '\x02') {
+      uVar4 = (byte)*param_2 & 0xf;
+      if (uVar4 == 4) {
+        piVar3 = (int *)(param_1 + 4);
+        iVar6 = 0;
+        while( true ) {
+          param_2 = (uint *)((int)param_2 + 1);
+          *(byte *)(*piVar3 + param_1 + 8) = *(byte *)param_2;
+          iVar5 = *piVar3;
+          *piVar3 = iVar5 + 1;
+          if (0xff < iVar5 + 1) break;
+          iVar6 = iVar6 + 1;
+          if (2 < iVar6) {
+            return;
+          }
+        }
+LAB_6007d710:
+        *(undefined1 *)(param_1 + 0x108) = 0;
+        return;
+      }
+      if ((uVar4 == 5 || uVar4 == 6) || uVar4 == 7) {
+        piVar3 = (int *)(param_1 + 4);
+        iVar6 = 0;
+        if (0 < (int)(uVar4 - 4)) {
+          do {
+            param_2 = (uint *)((int)param_2 + 1);
+            *(byte *)(*piVar3 + param_1 + 8) = *(byte *)param_2;
+            iVar5 = *piVar3;
+            *piVar3 = iVar5 + 1;
+            if (0xff < iVar5 + 1) goto LAB_6007d710;
+            iVar6 = iVar6 + 1;
+          } while (iVar6 < (int)(uVar4 - 4));
+        }
+        FUN_6007cde2(_DAT_6007d8d0,
+                     (int)*(char *)(param_1 + 0xb) |
+                     (int)*(char *)(param_1 + 8) << 0x15 | (int)*(char *)(param_1 + 9) << 0xe |
+                     (int)*(char *)(param_1 + 10) << 7,param_1 + 0xc,*(int *)(param_1 + 4) + -6);
+        uVar2 = 0;
+        goto LAB_6007d7bc;
+      }
+    }
+    else if (cVar1 == '\x03') {
+      uVar4 = (byte)*param_2 & 0xf;
+      if (uVar4 == 4) {
+        piVar3 = (int *)(param_1 + 4);
+        iVar6 = 0;
+        while( true ) {
+          param_2 = (uint *)((int)param_2 + 1);
+          *(byte *)(*piVar3 + param_1 + 8) = *(byte *)param_2;
+          iVar5 = *piVar3;
+          *piVar3 = iVar5 + 1;
+          if (0xff < iVar5 + 1) break;
+          iVar6 = iVar6 + 1;
+          if (2 < iVar6) {
+            return;
+          }
+        }
+        goto LAB_6007d710;
+      }
+      if ((uVar4 == 5 || uVar4 == 6) || uVar4 == 7) {
+        piVar3 = (int *)(param_1 + 4);
+        iVar6 = 0;
+        if (0 < (int)(uVar4 - 4)) {
+          do {
+            param_2 = (uint *)((int)param_2 + 1);
+            *(byte *)(*piVar3 + param_1 + 8) = *(byte *)param_2;
+            iVar5 = *piVar3;
+            *piVar3 = iVar5 + 1;
+            if (0xff < iVar5 + 1) goto LAB_6007d710;
+            iVar6 = iVar6 + 1;
+          } while (iVar6 < (int)(uVar4 - 4));
+        }
+        func_0x6007d322(&uStack_20,
+                        (int)*(char *)(param_1 + 0xb) |
+                        (int)*(char *)(param_1 + 8) << 0x15 | (int)*(char *)(param_1 + 9) << 0xe |
+                        (int)*(char *)(param_1 + 10) << 7,param_1 + 0xc,*(int *)(param_1 + 4) + -6);
+        *(undefined1 *)(param_1 + 0x108) = 0;
+        return;
+      }
+    }
+    uVar2 = 0;
+  }
+LAB_6007d7bc:
+  *(undefined1 *)(param_1 + 0x108) = uVar2;
+  return;
+}
+
+
+
+assembly_listing=[6007cc2c, 6007cd00]
+6007cc2c  mov r1,r0
+6007cc2e  mov.w r0,#0xffffffff
+6007cc32  cmp.w r1,#0xa00
+6007cc36  itt cc
+6007cc38  mov.cc r0,#0x0
+6007cc3a  bx.cc lr
+6007cc3c  cmp.w r1,#0xa000
+6007cc40  bcs 0x6007cc4c
+6007cc42  cmp.w r1,#0x1000
+6007cc46  it cs
+6007cc48  mov.cs r0,#0x1
+6007cc4a  bx lr
+6007cc4c  cmp.w r1,#0x78000
+6007cc50  it cs
+6007cc52  bx.cs lr
+6007cc54  cmp.w r1,#0x60000
+6007cc58  ite hi
+6007cc5a  mov.hi.w r2,#0x60000
+6007cc5e  mov.ls.w r2,#0x40000
+6007cc62  subs r1,r1,r2
+6007cc64  cmp.w r1,#0x1000
+6007cc68  itt cc
+6007cc6a  mov.cc r0,#0x2
+6007cc6c  bx.cc lr
+6007cc6e  cmp.w r1,#0x5000
+6007cc72  bcs 0x6007cc7e
+6007cc74  cmp.w r1,#0x4000
+6007cc78  it cs
+6007cc7a  mov.cs r0,#0x3
+6007cc7c  bx lr
+6007cc7e  cmp.w r1,#0x8c00
+6007cc82  bcs 0x6007cc8e
+6007cc84  cmp.w r1,#0x8000
+6007cc88  it cs
+6007cc8a  mov.cs r0,#0x4
+6007cc8c  bx lr
+6007cc8e  cmp.w r1,#0x9c00
+6007cc92  bcs 0x6007cc9e
+6007cc94  cmp.w r1,#0x9000
+6007cc98  it cs
+6007cc9a  mov.cs r0,#0x5
+6007cc9c  bx lr
+6007cc9e  cmp.w r1,#0xd000
+6007cca2  bcs 0x6007ccae
+6007cca4  cmp.w r1,#0xc000
+6007cca8  it cs
+6007ccaa  mov.cs r0,#0x6
+6007ccac  bx lr
+6007ccae  cmp.w r1,#0xf800
+6007ccb2  bcs 0x6007ccbe
+6007ccb4  cmp.w r1,#0xe000
+6007ccb8  it cs
+6007ccba  mov.cs r0,#0x7
+6007ccbc  bx lr
+6007ccbe  cmp.w r1,#0x18000
+6007ccc2  it cs
+6007ccc4  bx.cs lr
+6007ccc6  cmp.w r1,#0x10000
+6007ccca  it cs
+6007cccc  mov.cs r0,#0x8
+6007ccce  bx lr
+6007ccd0  push {r4,r5,r6,lr}
+6007ccd2  add.w r4,r0,#0x8000
+6007ccd6  sub sp,#0x8
+6007ccd8  ldrh.w r1,[r4,#0x196]
+6007ccdc  cmp r1,#0x0
+6007ccde  itt ne
+6007cce0  mov.ne r1,#0x0
+6007cce2  mov.ne r3,r1
+6007cce4  beq 0x6007cdb2
+6007cce6  nop
+6007cce8  ldrh.w r2,[r4,#0x196]
+6007ccec  cmp.w r2,#0x400
+6007ccf0  it hi
+6007ccf2  mov.hi.w r2,#0x400
+6007ccf6  ldr.w r12,[r4,#0x190]
+6007ccfa  add.w r5,r12,r1
+6007ccfe  add.w r12,r3,r3, lsl #0x1
+
+assembly_listing=[60093b14, 60093c00]
+60093b14  push {r4,r5,r6,r7,r8,lr}
+60093b18  add.w r5,r0,#0x8000
+60093b1c  mov r7,r0
+60093b1e  ldrh.w r0,[r5,#0x196]
+60093b22  mov r8,r2
+60093b24  mov r4,r1
+60093b26  cbnz r0,0x60093b6a
+60093b28  mov r0,r1
+60093b2a  bl 0x6007cc2c
+60093b2e  strb.w r0,[r5,#0x194]
+60093b32  cmp r0,#0x7
+60093b34  beq 0x60093b92
+60093b36  cmp r0,#0x8
+60093b38  it ne
+60093b3a  pop.ne.w {r4,r5,r6,r7,r8,pc}
+60093b3e  cmp.w r4,#0x60000
+60093b42  ite hi
+60093b44  mov.hi.w r6,#0x70000
+60093b48  mov.ls.w r6,#0x50000
+60093b4c  mov.w r1,#0x8000
+60093b50  mov r0,r7
+60093b52  bl 0x6004e230
+60093b56  cmp.w r4,#0x60000
+60093b5a  ite hi
+60093b5c  mov.hi r0,#0x1
+60093b5e  mov.ls r0,#0x0
+60093b60  strb.w r0,[r5,#0x195]
+60093b64  subs r1,r4,r6
+60093b66  strd r4,r1,[r5,#0x18c]
+60093b6a  ldrh.w r0,[r5,#0x18c]
+60093b6e  subs r0,r4,r0
+60093b70  sxth r0,r0
+60093b72  cmp.w r0,#0x2000
+60093b76  it cs
+60093b78  pop.cs.w {r4,r5,r6,r7,r8,pc}
+60093b7c  ldrh.w r1,[r5,#0x196]
+60093b80  cmp r1,r0
+60093b82  itt le
+60093b84  add.le r1,r0,#0x1
+60093b86  strh.le.w r1,[r5,#0x196]
+60093b8a  str.w r8,[r7,r0,lsl #0x2]
+60093b8e  pop.w {r4,r5,r6,r7,r8,pc}
+60093b92  cmp.w r4,#0x60000
+60093b96  ite hi
+60093b98  mov.hi.w r6,#0x6e000
+60093b9c  mov.ls.w r6,#0x4e000
+60093ba0  b 0x60093b4c
+60093ba2  ?? 00h
+60093ba3  ?? 20h     
+60093ba4  ?? 70h    p
+60093ba5  ?? 47h    G
+60093ba6  ?? 70h    p
+60093ba7  ?? 47h    G
+60093ba8  ?? 70h    p
+60093ba9  ?? 47h    G
+60093baa  ?? 00h
+60093bab  ?? 20h     
+60093bac  ?? 70h    p
+60093bad  ?? 47h    G
+60093bae  ?? 70h    p
+60093baf  ?? 47h    G
+60093bb0  ?? 00h
+60093bb1  ?? 20h     
+60093bb2  ?? 70h    p
+60093bb3  ?? 47h    G
+60093bb4  ?? 00h
+60093bb5  ?? 20h     
+60093bb6  ?? 70h    p
+60093bb7  ?? 47h    G
+60093bb8  ?? 00h
+60093bb9  ?? 20h     
+60093bba  ?? 70h    p
+60093bbb  ?? 47h    G
+60093bbc  ?? 00h
+60093bbd  ?? 20h     
+60093bbe  ?? 70h    p
+60093bbf  ?? 47h    G
+60093bc0  ?? 00h
+60093bc1  ?? EBh
+60093bc2  ?? 81h
+60093bc3  ?? 00h
+60093bc4  ?? 40h    @
+60093bc5  ?? 6Ah    j
+60093bc6  ?? 70h    p
+60093bc7  ?? 47h    G
+60093bc8  ?? 00h
+60093bc9  ?? EBh
+60093bca  ?? 81h
+60093bcb  ?? 00h
+60093bcc  ?? 00h
+60093bcd  ?? 69h    i
+60093bce  ?? 70h    p
+60093bcf  ?? 47h    G
+60093bd0  ?? D0h
+60093bd1  ?? F8h
+60093bd2  ?? C8h
+60093bd3  ?? 00h
+60093bd4  ?? 70h    p
+60093bd5  ?? 47h    G
+60093bd6  ?? D0h
+60093bd7  ?? F8h
+60093bd8  ?? CCh
+60093bd9  ?? 00h
+60093bda  ?? 70h    p
+60093bdb  ?? 47h    G
+60093bdc  ?? 40h    @
+60093bdd  ?? 6Bh    k
+60093bde  ?? 70h    p
+60093bdf  ?? 47h    G
+60093be0  ?? 80h
+60093be1  ?? 6Bh    k
+60093be2  ?? 70h    p
+60093be3  ?? 47h    G
+60093be4  ?? C0h
+60093be5  ?? 6Bh    k
+60093be6  ?? 70h    p
+60093be7  ?? 47h    G
+60093be8  ?? 00h
+60093be9  ?? 6Ch    l
+60093bea  ?? 70h    p
+60093beb  ?? 47h    G
+60093bec  ?? 00h
+60093bed  ?? 69h    i
+60093bee  ?? 70h    p
+60093bef  ?? 47h    G
+60093bf0  ?? 40h    @
+60093bf1  ?? 69h    i
+60093bf2  ?? 70h    p
+60093bf3  ?? 47h    G
+60093bf4  ?? 90h
+60093bf5  ?? F8h
+60093bf6  ?? 30h    0
+60093bf7  ?? 00h
+60093bf8  ?? 70h    p
+60093bf9  ?? 47h    G
+60093bfa  ?? 00h
+60093bfb  ?? 6Ah    j
+60093bfc  ?? 70h    p
+60093bfd  ?? 47h    G
+60093bfe  ?? 40h    @
+60093bff  ?? 68h    h
+60093c00  ?? 70h    p
+
+assembly_listing=[60058d3c, 60058e70]
+60058d3c  ldr r0,[sp,#0x0]
+60058d3e  cmp r1,#0x0
+60058d40  ite eq
+60058d42  mov.eq.w r1,#0x50000
+60058d46  mov.ne.w r1,#0x70000
+60058d4a  add r1,r2
+60058d4c  ldr r2,[0x60058dac]
+60058d4e  orr.w r1,r1,r3, lsl #0x1c
+60058d52  str r1,[r2,#0x0]
+60058d54  cmp r3,#0x0
+60058d56  it eq
+60058d58  lsl.eq r0,r0,#0x10
+60058d5a  beq 0x60058d62
+60058d5c  cmp r3,#0x1
+60058d5e  it eq
+60058d60  lsl.eq r0,r0,#0x8
+60058d62  ldr r1,[0x60058db0]
+60058d64  str r0,[r1,#0x0]
+60058d66  bx lr
+60058d68  ?? 2Dh    -
+60058d69  ?? E9h
+60058d6a  ?? F0h
+60058d6b  ?? 0Fh
+60058d6c  ?? 92h
+60058d6d  ?? F9h
+60058d6e  ?? 00h
+60058d6f  ?? 00h
+60058d70  ?? 00h
+60058d71  ?? 24h    $
+60058d72  ?? 00h
+60058d73  ?? 28h    (
+60058d74  ?? DCh
+60058d75  ?? BFh
+60058d76  ?? BDh
+60058d77  ?? E8h
+60058d78  ?? F0h
+60058d79  ?? 0Fh
+60058d7a  ?? 70h    p
+60058d7b  ?? 47h    G
+60058d7c  ?? 4Fh    O
+60058d7d  ?? F0h
+60058d7e  ?? 04h
+60058d7f  ?? 08h
+60058d80  ?? 1Eh
+60058d81  ?? 04h
+60058d82  ?? 1Fh
+60058d83  ?? 02h
+60058d84  ?? DFh
+60058d85  ?? F8h
+60058d86  ?? 24h    $
+60058d87  ?? 90h
+60058d88  ?? 09h
+60058d89  ?? F1h
+60058d8a  ?? 04h
+60058d8b  ?? 0Ah
+60058d8c  ?? 55h    U
+60058d8d  ?? 68h    h
+60058d8e  ?? 04h
+60058d8f  ?? EBh
+60058d90  ?? 44h    D
+60058d91  ?? 00h
+60058d92  ?? 05h
+60058d93  ?? EBh
+60058d94  ?? 80h
+60058d95  ?? 0Ch
+60058d96  ?? 9Ch
+60058d97  ?? F9h
+60058d98  ?? 00h
+60058d99  ?? C0h
+60058d9a  ?? BCh
+60058d9b  ?? F1h
+60058d9c  ?? 02h
+60058d9d  ?? 0Fh
+60058d9e  ?? 09h
+60058d9f  ?? E0h
+60058da0  ?? 00h
+60058da1  ?? 00h
+60058da2  ?? 10h
+60058da3  ?? 40h    @
+60058da4  ?? F4h
+60058da5  ?? 05h
+60058da6  ?? 10h
+60058da7  ?? 40h    @
+60058da8  ?? F0h
+60058da9  ?? 05h
+60058daa  ?? 10h
+60058dab  ?? 40h    @
+60058dac  ?? 00h
+60058dad  ?? 09h
+60058dae  ?? 10h
+60058daf  ?? 40h    @
+60058db0  ?? 04h
+60058db1  ?? 09h
+60058db2  ?? 10h
+60058db3  ?? 40h    @
+60058db4  ?? 08h
+60058db5  ?? BFh
+60058db6  ?? 4Fh    O
+60058db7  ?? F0h
+60058db8  ?? 00h
+60058db9  ?? 0Ch
+60058dba  ?? 0Dh
+60058dbb  ?? D0h
+60058dbc  ?? BCh
+60058dbd  ?? F1h
+60058dbe  ?? 03h
+60058dbf  ?? 0Fh
+60058dc0  ?? 08h
+60058dc1  ?? BFh
+60058dc2  ?? 4Fh    O
+60058dc3  ?? F0h
+60058dc4  ?? 01h
+60058dc5  ?? 0Ch
+60058dc6  ?? 07h
+60058dc7  ?? D0h
+60058dc8  ?? BCh
+60058dc9  ?? F1h
+60058dca  ?? 04h
+60058dcb  ?? 0Fh
+60058dcc  ?? 0Eh
+60058dcd  ?? BFh
+60058dce  ?? 4Fh    O
+60058dcf  ?? F0h
+60058dd0  ?? 02h
+60058dd1  ?? 0Ch
+60058dd2  ?? BDh
+60058dd3  ?? E8h
+60058dd4  ?? F0h
+60058dd5  ?? 0Fh
+60058dd6  ?? 70h    p
+60058dd7  ?? 47h    G
+60058dd8  ?? 08h
+60058dd9  ?? EBh
+60058dda  ?? 80h
+60058ddb  ?? 00h
+60058ddc  ?? 00h
+60058ddd  ?? 29h    )
+60058dde  ?? 2Dh    -
+60058ddf  ?? 58h    X
+60058de0  ?? 18h
+60058de1  ?? 46h    F
+60058de2  ?? 0Ch
+60058de3  ?? BFh
+60058de4  ?? 4Fh    O
+60058de5  ?? F4h
+60058de6  ?? A0h
+60058de7  ?? 2Bh    +
+60058de8  ?? 4Fh    O
+60058de9  ?? F4h
+60058dea  ?? E0h
+60058deb  ?? 2Bh    +
+60058dec  ?? 5Dh    ]
+60058ded  ?? 44h    D
+60058dee  ?? 45h    E
+60058def  ?? EAh
+60058df0  ?? 0Ch
+60058df1  ?? 75h    u
+60058df2  ?? C9h
+60058df3  ?? F8h
+60058df4  ?? 00h
+60058df5  ?? 50h    P
+60058df6  ?? BCh
+60058df7  ?? F1h
+60058df8  ?? 00h
+60058df9  ?? 0Fh
+60058dfa  ?? 08h
+60058dfb  ?? BFh
+60058dfc  ?? 30h    0
+60058dfd  ?? 46h    F
+60058dfe  ?? 03h
+60058dff  ?? D0h
+60058e00  ?? BCh
+60058e01  ?? F1h
+60058e02  ?? 01h
+60058e03  ?? 0Fh
+60058e04  ?? 08h
+60058e05  ?? BFh
+60058e06  ?? 38h    8
+60058e07  ?? 46h    F
+60058e08  ?? CAh
+60058e09  ?? F8h
+60058e0a  ?? 00h
+60058e0b  ?? 00h
+60058e0c  ?? 92h
+60058e0d  ?? F9h
+60058e0e  ?? 00h
+60058e0f  ?? 00h
+60058e10  ?? 64h    d
+60058e11  ?? 1Ch
+60058e12  ?? A0h
+60058e13  ?? 42h    B
+60058e14  ?? BAh
+60058e15  ?? DCh
+60058e16  ?? BDh
+60058e17  ?? E8h
+60058e18  ?? F0h
+60058e19  ?? 0Fh
+60058e1a  ?? 70h    p
+60058e1b  ?? 47h    G
+60058e1c  cmp r1,#0x0
+60058e1e  ite eq
+60058e20  mov.eq.w r0,#0x50000
+60058e24  mov.ne.w r0,#0x70000
+60058e28  add r0,r2
+60058e2a  ldr r1,[0x60059228]
+60058e2c  orr.w r0,r0,r3, lsl #0x1c
+60058e30  str r0,[r1,#0x0]
+60058e32  ldr r0,[0x6005922c]
+60058e34  ldr r1,[r0,#0x8]
+60058e36  tst r1,#0x40000000
+60058e3a  bne 0x60058e34
+60058e3c  ldr r0,[0x60059230]
+60058e3e  cmp r3,#0x0
+60058e40  ittt eq
+60058e42  ldr.eq r0,[r0,#0x0]
+60058e44  lsr.eq r0,r0,#0x10
+60058e46  bx.eq lr
+60058e48  cmp r3,#0x1
+60058e4a  ldr r0,[r0,#0x0]
+60058e4c  it eq
+60058e4e  lsr.eq r0,r0,#0x8
+60058e50  bx lr
+60058e52  ?? 2Dh    -
+60058e53  ?? E9h
+60058e54  ?? F0h
+60058e55  ?? 4Fh    O
+60058e56  ?? 92h
+60058e57  ?? F9h
+60058e58  ?? 00h
+60058e59  ?? 00h
+60058e5a  ?? 4Fh    O
+60058e5b  ?? F0h
+60058e5c  ?? 00h
+60058e5d  ?? 0Ah
+60058e5e  ?? 00h
+60058e5f  ?? 28h    (
+60058e60  ?? 86h
+60058e61  ?? BFh
+60058e62  ?? DFh
+60058e63  ?? F8h
+60058e64  ?? C4h
+60058e65  ?? B3h
+60058e66  ?? 0Bh
+60058e67  ?? F1h
+60058e68  ?? 04h
+60058e69  ?? 0Eh
+60058e6a  ?? BDh
+60058e6b  ?? E8h
+60058e6c  ?? F0h
+60058e6d  ?? 8Fh
+60058e6e  ?? 00h
+60058e6f  ?? BFh
+60058e70  ?? D0h
+
+assembly_listing=[6007cde2, 6007d092]
+6007cde2  push {r4,r5,r6,r7,r8,r9,r10,r11,r12,lr}
+6007cde6  subs r6,r3,#0x0
+6007cde8  mov r4,r2
+6007cdea  mov r5,r0
+6007cdec  bic r7,r1,#0xfe000000
+6007cdf0  ite gt
+6007cdf2  mov.gt.w r8,#0x0
+6007cdf6  pop.le.w {r4,r5,r6,r7,r8,r9,r10,r11,r12,pc}
+6007cdfa  nop
+6007cdfc  cmp.w r7,#0x200000
+6007ce00  bcc 0x6007ce70
+6007ce02  bne 0x6007ce68
+6007ce04  ldrb r0,[r4,#0x0]
+6007ce06  cmp r0,#0x0
+6007ce08  beq 0x6007ce42
+6007ce0a  cmp r0,#0x1
+6007ce0c  beq 0x6007ce26
+6007ce0e  cmp r0,#0x2
+6007ce10  bne 0x6007ce68
+6007ce12  ldr r0,[r5,#0x0]
+6007ce14  cbz r0,0x6007ce20
+6007ce16  bl 0x600603c2
+6007ce1a  str.w r8,[r5,#0x0]
+6007ce1e  b 0x6007ce3a
+6007ce20  adr r0,[0x6007d0bc]
+6007ce22  bl 0x6007f5c0
+6007ce26  ldr r0,[r5,#0x0]
+6007ce28  cbz r0,0x6007ce3a
+6007ce2a  bl 0x6007ccd0
+6007ce2e  ldr r0,[r5,#0x0]
+6007ce30  bl 0x600603c2
+6007ce34  str.w r8,[r5,#0x0]
+6007ce38  b 0x6007ce68
+6007ce3a  adr r0,[0x6007d0bc]
+6007ce3c  bl 0x6007f5c0
+6007ce40  b 0x6007ce68
+6007ce42  ldr r0,[r5,#0x0]
+6007ce44  cbz r0,0x6007ce56
+6007ce46  adr r0,[0x6007d0e4]
+6007ce48  bl 0x6007f5c0
+6007ce4c  ldr r0,[r5,#0x0]
+6007ce4e  bl 0x600603c2
+6007ce52  str.w r8,[r5,#0x0]
+6007ce56  movw r0,#0x8198
+6007ce5a  bl 0x60095a04
+6007ce5e  movw r1,#0x8196
+6007ce62  strh.w r8,[r1,r0]
+6007ce66  str r0,[r5,#0x0]
+6007ce68  adds r4,r4,#0x1
+6007ce6a  subs r6,r6,#0x1
+6007ce6c  b.w 0x6007d082
+6007ce70  lsr.w r9,r7,#0x1
+6007ce74  mov r0,r9
+6007ce76  bl 0x6007cc2c
+6007ce7a  cmp.w r0,#0xffffffff
+6007ce7e  beq.w 0x6007d08c
+6007ce82  cmp r0,#0x7
+6007ce84  beq 0x6007cf48
+6007ce86  cmp r0,#0x8
+6007ce88  beq 0x6007ce9e
+6007ce8a  cmp r6,#0x8
+6007ce8c  bge.w 0x6007d040
+6007ce90  mov r2,r6
+6007ce92  mov r1,r9
+6007ce94  pop.w {r4,r5,r6,r7,r8,r9,r10,r11,r12,lr}
+6007ce98  adr r0,[0x6007d10c]
+6007ce9a  b.w 0x6007f5c0
+6007ce9e  cmp r6,#0x4
+6007cea0  blt 0x6007ce90
+6007cea2  tst r7,#0x3
+6007cea6  beq 0x6007ceb4
+6007cea8  mov r1,r9
+6007ceaa  pop.w {r4,r5,r6,r7,r8,r9,r10,r11,r12,lr}
+6007ceae  adr r0,[0x6007d144]
+6007ceb0  b.w 0x6007f5c0
+6007ceb4  ldr r0,[r5,#0x0]
+6007ceb6  cbz r0,0x6007cf34
+6007ceb8  add.w r0,r0,#0x8000
+6007cebc  ldrh.w r1,[r0,#0x196]
+6007cec0  cmp r1,#0x0
+6007cec2  itt ne
+6007cec4  ldrb.ne.w r0,[r0,#0x194]
+6007cec8  cmp.ne r0,#0x8
+6007ceca  beq 0x6007ceda
+6007cecc  mov r1,r9
+6007cece  ldr r0,[0x6007d184]
+6007ced0  bl 0x6007f5c0
+6007ced4  ldr r0,[r5,#0x0]
+6007ced6  bl 0x6007ccd0
+6007ceda  mov r11,r4
+6007cedc  mov r4,r8
+6007cede  movs r2,#0x2
+6007cee0  mov.w r0,r4
+6007cee4  ldrb.w r1,[r11],#0x1
+6007cee8  adds r0,r0,#0x2
+6007ceea  bfi r1,r4,#0x4,#0x1c
+6007ceee  ldrb.w r4,[r11],#0x1
+6007cef2  cmp r0,r2
+6007cef4  bfi r4,r1,#0x4,#0x1c
+6007cef8  blt 0x6007cee4
+6007cefa  uxtb r2,r4
+6007cefc  mov r1,r9
+6007cefe  ldr r0,[r5,#0x0]
+6007cf00  bl 0x60093b14
+6007cf04  add.w r1,r9,#0x1
+6007cf08  movs r3,#0x2
+6007cf0a  mov r10,r8
+6007cf0c  mov.w r0,r8
+6007cf10  ldrb.w r2,[r11],#0x1
+6007cf14  adds r0,r0,#0x2
+6007cf16  bfi r2,r10,#0x4,#0x1c
+6007cf1a  ldrb.w r10,[r11],#0x1
+6007cf1e  cmp r0,r3
+6007cf20  bfi r10,r2,#0x4,#0x1c
+6007cf24  blt 0x6007cf10
+6007cf26  mov r4,r11
+6007cf28  and r2,r10,#0xff
+6007cf2c  ldr r0,[r5,#0x0]
+6007cf2e  bl 0x60093b14
+6007cf32  b 0x6007cf36
+6007cf34  b 0x6007cf3e
+6007cf36  subs r6,r6,#0x4
+6007cf38  adds r7,r7,#0x4
+6007cf3a  b.w 0x6007d082
+6007cf3e  pop.w {r4,r5,r6,r7,r8,r9,r10,r11,r12,lr}
+6007cf42  adr r0,[0x6007d188]
+6007cf44  b.w 0x6007f5c0
+6007cf48  cmp r6,#0x8
+6007cf4a  blt 0x6007ce90
+6007cf4c  tst r7,#0x7
+6007cf50  bne 0x6007d046
+6007cf52  ldr r0,[r5,#0x0]
+6007cf54  cmp r0,#0x0
+6007cf56  beq 0x6007d036
+6007cf58  add.w r0,r0,#0x8000
+6007cf5c  ldrh.w r1,[r0,#0x196]
+6007cf60  cmp r1,#0x0
+6007cf62  itt ne
+6007cf64  ldrb.ne.w r0,[r0,#0x194]
+6007cf68  cmp.ne r0,#0x7
+6007cf6a  beq 0x6007cf7a
+6007cf6c  mov r1,r9
+6007cf6e  ldr r0,[0x6007d1b8]
+6007cf70  bl 0x6007f5c0
+6007cf74  ldr r0,[r5,#0x0]
+6007cf76  bl 0x6007ccd0
+6007cf7a  mov r0,r8
+6007cf7c  movs r2,#0x2
+6007cf7e  mov r1,r0
+6007cf80  mov r3,r0
+6007cf82  ldrb.w r0,[r4],#0x1
+6007cf86  adds r1,r1,#0x2
+6007cf88  bfi r0,r3,#0x4,#0x1c
+6007cf8c  ldrb.w r3,[r4],#0x1
+6007cf90  cmp r1,r2
+6007cf92  bfi r3,r0,#0x4,#0x1c
+6007cf96  mov r0,r3
+6007cf98  blt 0x6007cf80
+6007cf9a  uxtb r2,r3
+6007cf9c  mov r1,r9
+6007cf9e  ldr r0,[r5,#0x0]
+6007cfa0  bl 0x60093b14
+6007cfa4  add.w r9,r9,#0x1
+6007cfa8  movs r2,#0x2
+6007cfaa  mov r10,r8
+6007cfac  mov r0,r8
+6007cfae  mov r1,r8
+6007cfb0  mov r3,r0
+6007cfb2  ldrb.w r0,[r4],#0x1
+6007cfb6  adds r1,r1,#0x2
+6007cfb8  bfi r0,r3,#0x4,#0x1c
+6007cfbc  ldrb.w r3,[r4],#0x1
+6007cfc0  cmp r1,r2
+6007cfc2  bfi r3,r0,#0x4,#0x1c
+6007cfc6  mov r0,r3
+6007cfc8  blt 0x6007cfb0
+6007cfca  uxtb r2,r3
+6007cfcc  mov r1,r9
+6007cfce  ldr r0,[r5,#0x0]
+6007cfd0  bl 0x60093b14
+6007cfd4  add.w r9,r9,#0x1
+6007cfd8  movs r2,#0x2
+6007cfda  mov r0,r10
+6007cfdc  mov r1,r10
+6007cfde  mov r3,r0
+6007cfe0  ldrb.w r0,[r4],#0x1
+6007cfe4  adds r1,r1,#0x2
+6007cfe6  bfi r0,r3,#0x4,#0x1c
+6007cfea  ldrb.w r3,[r4],#0x1
+6007cfee  cmp r1,r2
+6007cff0  bfi r3,r0,#0x4,#0x1c
+6007cff4  mov r0,r3
+6007cff6  blt 0x6007cfde
+6007cff8  uxtb r2,r3
+6007cffa  mov r1,r9
+6007cffc  ldr r0,[r5,#0x0]
+6007cffe  bl 0x60093b14
+6007d002  add.w r1,r9,#0x1
+6007d006  movs r3,#0x2
+6007d008  mov.w r0,r10
+6007d00c  ldrb.w r2,[r4],#0x1
+6007d010  adds r0,r0,#0x2
+6007d012  bfi r2,r10,#0x4,#0x1c
+6007d016  ldrb.w r10,[r4],#0x1
+6007d01a  cmp r0,r3
+6007d01c  bfi r10,r2,#0x4,#0x1c
+6007d020  blt 0x6007d00c
+6007d022  and r2,r10,#0xff
+6007d026  ldr r0,[r5,#0x0]
+6007d028  bl 0x60093b14
+6007d02c  subs r6,#0x8
+6007d02e  adds r7,#0x8
+6007d030  b 0x6007d082
+6007d032  ?? 08h
+6007d033  ?? E0h
+6007d034  ?? FFh
+6007d035  ?? E7h
+6007d036  pop.w {r4,r5,r6,r7,r8,r9,r10,r11,r12,lr}
+6007d03a  adr r0,[0x6007d1bc]
+6007d03c  b.w 0x6007f5c0
+6007d040  tst r7,#0x7
+6007d044  beq 0x6007d052
+6007d046  mov r1,r9
+6007d048  pop.w {r4,r5,r6,r7,r8,r9,r10,r11,r12,lr}
+6007d04c  adr r0,[0x6007d1ec]
+6007d04e  b.w 0x6007f5c0
+6007d052  movs r2,#0x8
+6007d054  mov r0,r8
+6007d056  mov r1,r8
+6007d058  mov r3,r0
+6007d05a  ldrb.w r0,[r4],#0x1
+6007d05e  adds r1,r1,#0x2
+6007d060  bfi r0,r3,#0x4,#0x1c
+6007d064  ldrb.w r3,[r4],#0x1
+6007d068  cmp r1,r2
+6007d06a  bfi r3,r0,#0x4,#0x1c
+6007d06e  mov r0,r3
+6007d070  blt 0x6007d058
+6007d072  add.w r9,r9,#0x40000000
+6007d076  add.w r9,r9,#0x100000
+6007d07a  subs r6,#0x8
+6007d07c  adds r7,#0x8
+6007d07e  str.w r3,[r9,#0x0]
+6007d082  cmp r6,#0x0
+6007d084  bgt.w 0x6007cdfc
+6007d088  pop.w {r4,r5,r6,r7,r8,r9,r10,r11,r12,pc}
+6007d08c  mov r1,r9
+6007d08e  pop.w {r4,r5,r6,r7,r8,r9,r10,r11,r12,lr}
+6007d092  adr r0,[0x6007d22c]
+
+assembly_listing=[6007d790, 6007d7c0]
+6007d790  ldrsb.w r0,[r4,#0x8]
+6007d794  ldrsb.w r1,[r4,#0x9]
+6007d798  lsls r0,r0,#0x15
+6007d79a  orr.w r0,r0,r1, lsl #0xe
+6007d79e  ldrsb.w r1,[r4,#0xa]
+6007d7a2  b 0x6007d7a6
+6007d7a4  b 0x6007d7f6
+6007d7a6  orr.w r0,r0,r1, lsl #0x7
+6007d7aa  ldrsb.w r1,[r4,#0xb]
+6007d7ae  orrs r1,r0
+6007d7b0  ldr r0,[r4,#0x4]
+6007d7b2  subs r3,r0,#0x6
+6007d7b4  ldr r0,[0x6007d8d0]
+6007d7b6  bl 0x6007cde2
+6007d7ba  movs r0,#0x0
+6007d7bc  strb.w r0,[r4,#0x108]
+6007d7c0  pop.w {r3,r4,r5,r6,r7,r8,r9,pc}
