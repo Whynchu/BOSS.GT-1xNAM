@@ -92,6 +92,33 @@ Evidence artifacts: `firmware/work/amp-control-lead-evidence.json` (field map), 
 5. **What ranges does the application validate before sending?** Factory data already ships `gain 120` and `presence 100`, so any clamp is wider than the editor display. The `Set to UnKnown Memory` and address-fence strings indicate checks elsewhere in the path.
 6. **Does the DSP clamp, ignore, or misbehave on out-of-range values?** Only a device experiment answers this.
 
+## Type-consumer trace (attempted 2026-11-03)
+
+The decisive question — what consumes `preamp_a_type` — was attacked with three cheap heuristics before committing to a full Ghidra import. None found the consumer, but all three narrowed the problem usefully.
+
+**1. Inline field access: ruled out.** A linear Capstone sweep of the whole application finds **zero** `ldrb [rX, #0x2C]` instructions and no dense run of byte loads at immediates `0x2B`–`0x4A` (nor at the editor template offsets `0x5B`–`0x7A`). The runtime patch struct is therefore **not** laid out like the on-flash record, and the DSP push is not a straight-line sequence of per-field reads.
+
+**2. Record addressing: recovered.** At `0x6007A8F0`:
+
+```
+movw r2, #0x249F          ; 9375 = 5 x 1875
+muls r0, r2, r0           ; r0 = bank * 9375
+ldr  r2, = 0x60199D7C     ; record 0 (literal at file 0x7A908)
+add.w r0, r2, r0, lsl #1  ; r0 = base + bank * 18750  (10 records per bank)
+movw r2, #0x753
+mla  r0, r1, r2, r0       ; r0 = base + bank*18750 + index*1875
+```
+
+So the bank holds **10 patches per group**, addressed by `bank * 10 + index`, and the group tags in the names (`B`, `SF`, `J`, `L`, `70`, `80`, `MM`, `WE`, `PR`, `PU`, `ST`, `SU`, `AC`, `FZ`, `CO`, `WE`) are bank labels.
+
+**3. Runtime patch buffer: located.** The accessors at `0x60056D0A`, `0x60056D32`, and `0x60056D5C` load the same base literal `0x20000000`, read a pointer at **`+0x150`**, and copy **`0x753`** bytes through `0x6004E118`. So the live patch object is reached through `[0x20000150]`, and the whole 1875-byte patch is moved as a unit.
+
+That last point is interesting on its own: the descriptor examined earlier, `{0x60216024, 0x9F, 0x63}` at `0x20000134`, sits **0x1C bytes before** the patch pointer slot at `0x20000150`. The `0x20000000` segment is a runtime state block, not a static table.
+
+**What this means.** `0x20000150` is a store target nowhere in the image → it is written indirectly, or initialised by the boot stage before the application runs. Following it to the DSP push requires real cross-references (who writes that slot, and which routine splits a 0x753-byte patch into `(address, value)` writes), which is a Ghidra job rather than a pattern-matching one.
+
+**Next step:** import the decoded v1.08 application at `0x60000000` in Ghidra with the repo's existing scripts (`tools/ghidra_scripts/`), xref `0x20000150` and `0x6004E118`, and walk forward from the patch buffer to the DSP transfer family at `0x60058xxx`.
+
 ## Experiment ladder
 
 Ordered by risk. Each step is reversible and none requires a firmware flash until step 4.
