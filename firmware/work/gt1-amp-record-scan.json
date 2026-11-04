@@ -1,0 +1,2509 @@
+{
+  "read_only": true,
+  "input": "firmware/work/decoded/v108-GT1Appli.bin",
+  "input_sha256": "c41319e5f5a1facd5e55fe2c8e56d37069e31b98e5034d6d54d932fa7713e8c1",
+  "record_shape_under_test": "53 07 | 16-byte name | 00 00 00 | parameter bytes",
+  "candidate_records": 310,
+  "names_with_three_null_terminator": 297,
+  "records_referenced_by_aligned_pointer": 3,
+  "gap_histogram": {
+    "1875": 308,
+    "229209": 1
+  },
+  "editor_custom_default_signature": "3232323232070a0a0200",
+  "editor_custom_default_signature_hits": [],
+  "records": [
+    {
+      "file_offset": "0x199d7c",
+      "runtime": "0x60199d7c",
+      "name": "Tex.Crunch     B",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": [
+        "0x7a908"
+      ]
+    },
+    {
+      "file_offset": "0x19a4cf",
+      "runtime": "0x6019a4cf",
+      "name": "Fat Lead       B",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x19ac22",
+      "runtime": "0x6019ac22",
+      "name": "Blues Wah      B",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x19b375",
+      "runtime": "0x6019b375",
+      "name": "Hard Drive     B",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x19bac8",
+      "runtime": "0x6019bac8",
+      "name": "ComboClean     B",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x19c21b",
+      "runtime": "0x6019c21b",
+      "name": "ComboDrive     B",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x19c96e",
+      "runtime": "0x6019c96e",
+      "name": "CrispClean     B",
+      "name_terminated": false,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x19d0c1",
+      "runtime": "0x6019d0c1",
+      "name": "StackCrunch    B",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x19d814",
+      "runtime": "0x6019d814",
+      "name": "TremCrunch     B",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x19df67",
+      "runtime": "0x6019df67",
+      "name": "Dly&Drive      B",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x19e6ba",
+      "runtime": "0x6019e6ba",
+      "name": "Cln Rhythm    SF",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x19ee0d",
+      "runtime": "0x6019ee0d",
+      "name": "PhaseClean    SF",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x19f560",
+      "runtime": "0x6019f560",
+      "name": "Funky Wah     SF",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x19fcb3",
+      "runtime": "0x6019fcb3",
+      "name": "ComboClean    SF",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1a0406",
+      "runtime": "0x601a0406",
+      "name": "CrispClean    SF",
+      "name_terminated": false,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1a0b59",
+      "runtime": "0x601a0b59",
+      "name": "CrnchRhytm    SF",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1a12ac",
+      "runtime": "0x601a12ac",
+      "name": "Pedal Wah     SF",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1a19ff",
+      "runtime": "0x601a19ff",
+      "name": "ComboDrive    SF",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1a2152",
+      "runtime": "0x601a2152",
+      "name": "Dly&Drive     SF",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1a28a5",
+      "runtime": "0x601a28a5",
+      "name": "CrunchSolo    SF",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1a2ff8",
+      "runtime": "0x601a2ff8",
+      "name": "Mellow Jzz     J",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1a374b",
+      "runtime": "0x601a374b",
+      "name": "Warm Clean     J",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1a3e9e",
+      "runtime": "0x601a3e9e",
+      "name": "Cool Clean     J",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1a45f1",
+      "runtime": "0x601a45f1",
+      "name": "Mild Drive     J",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1a4d44",
+      "runtime": "0x601a4d44",
+      "name": "Smooth Cln     J",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1a5497",
+      "runtime": "0x601a5497",
+      "name": "SmoothLead     J",
+      "name_terminated": false,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1a5bea",
+      "runtime": "0x601a5bea",
+      "name": "Much Revrb     J",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1a633d",
+      "runtime": "0x601a633d",
+      "name": "ComboDrive     J",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1a6a90",
+      "runtime": "0x601a6a90",
+      "name": "StackCrnch     J",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1a71e3",
+      "runtime": "0x601a71e3",
+      "name": "Dly&Drive      J",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1a7936",
+      "runtime": "0x601a7936",
+      "name": "BeatStroke     L",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1a8089",
+      "runtime": "0x601a8089",
+      "name": "ComboClean     L",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1a87dc",
+      "runtime": "0x601a87dc",
+      "name": "Fuzz Riff      L",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1a8f2f",
+      "runtime": "0x601a8f2f",
+      "name": "Mods Drive     L",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1a9682",
+      "runtime": "0x601a9682",
+      "name": "Drivin' VO     L",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1a9dd5",
+      "runtime": "0x601a9dd5",
+      "name": "Trem Clean     L",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1aa528",
+      "runtime": "0x601aa528",
+      "name": "LiteChorus     L",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1aac7b",
+      "runtime": "0x601aac7b",
+      "name": "StackCrnch     L",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1ab3ce",
+      "runtime": "0x601ab3ce",
+      "name": "12-Strings     L",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1abb21",
+      "runtime": "0x601abb21",
+      "name": "Crunch Cho     L",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1ac274",
+      "runtime": "0x601ac274",
+      "name": "WholeStack    70",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1ac9c7",
+      "runtime": "0x601ac9c7",
+      "name": "BurninRiff    70",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1ad11a",
+      "runtime": "0x601ad11a",
+      "name": "Drivin'MS     70",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1ad86d",
+      "runtime": "0x601ad86d",
+      "name": "Solo Delay    70",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1adfc0",
+      "runtime": "0x601adfc0",
+      "name": "Phase Riff    70",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1ae713",
+      "runtime": "0x601ae713",
+      "name": "Rockin' VO    70",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1aee66",
+      "runtime": "0x601aee66",
+      "name": "Long Delay    70",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1af5b9",
+      "runtime": "0x601af5b9",
+      "name": "Mid Boost     70",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1afd0c",
+      "runtime": "0x601afd0c",
+      "name": "StackCrnch    70",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1b045f",
+      "runtime": "0x601b045f",
+      "name": "BackInRiff    70",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1b0bb2",
+      "runtime": "0x601b0bb2",
+      "name": "Heavy Riff    80",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1b1305",
+      "runtime": "0x601b1305",
+      "name": "Stack Lead    80",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1b1a58",
+      "runtime": "0x601b1a58",
+      "name": "Solo Delay    80",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1b21ab",
+      "runtime": "0x601b21ab",
+      "name": "FlangeRiff    80",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1b28fe",
+      "runtime": "0x601b28fe",
+      "name": "Cho&Delay     80",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1b3051",
+      "runtime": "0x601b3051",
+      "name": "Cho Drive     80",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1b37a4",
+      "runtime": "0x601b37a4",
+      "name": "Mid Boost     80",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1b3ef7",
+      "runtime": "0x601b3ef7",
+      "name": "LA Lead       80",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1b464a",
+      "runtime": "0x601b464a",
+      "name": "Detune Drv    80",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1b4d9d",
+      "runtime": "0x601b4d9d",
+      "name": "Fat Solo      80",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1b54f0",
+      "runtime": "0x601b54f0",
+      "name": "RiffMaster    MM",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1b5c43",
+      "runtime": "0x601b5c43",
+      "name": "ThickDrive    MM",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1b6396",
+      "runtime": "0x601b6396",
+      "name": "HeavyClean    MM",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1b6ae9",
+      "runtime": "0x601b6ae9",
+      "name": "Heavy Dist    MM",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1b723c",
+      "runtime": "0x601b723c",
+      "name": "Solo Delay    MM",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1b798f",
+      "runtime": "0x601b798f",
+      "name": "MetalDrive    MM",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1b80e2",
+      "runtime": "0x601b80e2",
+      "name": "Funk Metal    MM",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1b8835",
+      "runtime": "0x601b8835",
+      "name": "ThrashRiff    MM",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1b8f88",
+      "runtime": "0x601b8f88",
+      "name": "MetalShred    MM",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1b96db",
+      "runtime": "0x601b96db",
+      "name": "Stack Solo    MM",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1b9e2e",
+      "runtime": "0x601b9e2e",
+      "name": "Rhythm Cln    WE",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1ba581",
+      "runtime": "0x601ba581",
+      "name": "Mellow Cln    WE",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1bacd4",
+      "runtime": "0x601bacd4",
+      "name": "CrnchRhytm    WE",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1bb427",
+      "runtime": "0x601bb427",
+      "name": "Groove Dly    WE",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1bbb7a",
+      "runtime": "0x601bbb7a",
+      "name": "ComboDrive    WE",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1bc2cd",
+      "runtime": "0x601bc2cd",
+      "name": "LiteChorus    WE",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1bca20",
+      "runtime": "0x601bca20",
+      "name": "Crunch Cho    WE",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1bd173",
+      "runtime": "0x601bd173",
+      "name": "PhaseDrive    WE",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1bd8c6",
+      "runtime": "0x601bd8c6",
+      "name": "Latin Lead    WE",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1be019",
+      "runtime": "0x601be019",
+      "name": "Combo Solo    WE",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1be76c",
+      "runtime": "0x601be76c",
+      "name": "Fuzz Vibe     FZ",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1beebf",
+      "runtime": "0x601beebf",
+      "name": "Voodoo Wah    FZ",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1bf612",
+      "runtime": "0x601bf612",
+      "name": "Foxy Clean    FZ",
+      "name_terminated": false,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1bfd65",
+      "runtime": "0x601bfd65",
+      "name": "StackCrnch    FZ",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1c04b8",
+      "runtime": "0x601c04b8",
+      "name": "Massive FZ    FZ",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1c0c0b",
+      "runtime": "0x601c0c0b",
+      "name": "CreamyLead    FZ",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1c135e",
+      "runtime": "0x601c135e",
+      "name": "Fuzz Riff     FZ",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1c1ab1",
+      "runtime": "0x601c1ab1",
+      "name": "OctaveFuzz    FZ",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1c2204",
+      "runtime": "0x601c2204",
+      "name": "Fuzz Lead     FZ",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1c2957",
+      "runtime": "0x601c2957",
+      "name": "Fuzz Phase    FZ",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1c30aa",
+      "runtime": "0x601c30aa",
+      "name": "ComboDrive    ST",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1c37fd",
+      "runtime": "0x601c37fd",
+      "name": "Cool Clean    ST",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1c3f50",
+      "runtime": "0x601c3f50",
+      "name": "Solo Delay    ST",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1c46a3",
+      "runtime": "0x601c46a3",
+      "name": "PhaseClean    ST",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1c4df6",
+      "runtime": "0x601c4df6",
+      "name": "StackCrnch    ST",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1c5549",
+      "runtime": "0x601c5549",
+      "name": "Warm Clean    ST",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1c5c9c",
+      "runtime": "0x601c5c9c",
+      "name": "CrunchSolo    ST",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1c63ef",
+      "runtime": "0x601c63ef",
+      "name": "Combo Solo    ST",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1c6b42",
+      "runtime": "0x601c6b42",
+      "name": "Detune Drv    ST",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1c7295",
+      "runtime": "0x601c7295",
+      "name": "Fat Solo      ST",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1c79e8",
+      "runtime": "0x601c79e8",
+      "name": "Pink Echo     PR",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1c813b",
+      "runtime": "0x601c813b",
+      "name": "Stack Lead    PR",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1c888e",
+      "runtime": "0x601c888e",
+      "name": "ComboDrive    PR",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1c8fe1",
+      "runtime": "0x601c8fe1",
+      "name": "Cho Drive     PR",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1c9734",
+      "runtime": "0x601c9734",
+      "name": "Cho&Delay     PR",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1c9e87",
+      "runtime": "0x601c9e87",
+      "name": "FlangeRiff    PR",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1ca5da",
+      "runtime": "0x601ca5da",
+      "name": "PsycheStep    PR",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1cad2d",
+      "runtime": "0x601cad2d",
+      "name": "Fuzz Phase    PR",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1cb480",
+      "runtime": "0x601cb480",
+      "name": "Stack Solo    PR",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1cbbd3",
+      "runtime": "0x601cbbd3",
+      "name": "Combo Solo    PR",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1cc326",
+      "runtime": "0x601cc326",
+      "name": "Retro Trem    SU",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1cca79",
+      "runtime": "0x601cca79",
+      "name": "Clean Rev     SU",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1cd1cc",
+      "runtime": "0x601cd1cc",
+      "name": "Dly&Reverb    SU",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1cd91f",
+      "runtime": "0x601cd91f",
+      "name": "DeepSpring    SU",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1ce072",
+      "runtime": "0x601ce072",
+      "name": "ComboDrive    SU",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1ce7c5",
+      "runtime": "0x601ce7c5",
+      "name": "ComboClean    SU",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1cef18",
+      "runtime": "0x601cef18",
+      "name": "CrunchSolo    SU",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1cf66b",
+      "runtime": "0x601cf66b",
+      "name": "Combo Solo    SU",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1cfdbe",
+      "runtime": "0x601cfdbe",
+      "name": "TremCrunch    SU",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1d0511",
+      "runtime": "0x601d0511",
+      "name": "LiteChorus    SU",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1d0c64",
+      "runtime": "0x601d0c64",
+      "name": "ComboClean    CO",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1d13b7",
+      "runtime": "0x601d13b7",
+      "name": "NatrlCrnch    CO",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1d1b0a",
+      "runtime": "0x601d1b0a",
+      "name": "Mellow Cln    CO",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1d225d",
+      "runtime": "0x601d225d",
+      "name": "Rhythm Cln    CO",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1d29b0",
+      "runtime": "0x601d29b0",
+      "name": "Slapback      CO",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1d3103",
+      "runtime": "0x601d3103",
+      "name": "DeepSpring    CO",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1d3856",
+      "runtime": "0x601d3856",
+      "name": "LiteChorus    CO",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1d3fa9",
+      "runtime": "0x601d3fa9",
+      "name": "Trem Clean    CO",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1d46fc",
+      "runtime": "0x601d46fc",
+      "name": "CrunchSolo    CO",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1d4e4f",
+      "runtime": "0x601d4e4f",
+      "name": "Combo Solo    CO",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1d55a2",
+      "runtime": "0x601d55a2",
+      "name": "Short Amb     AC",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1d5cf5",
+      "runtime": "0x601d5cf5",
+      "name": "Bright Cln    AC",
+      "name_terminated": false,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1d6448",
+      "runtime": "0x601d6448",
+      "name": "Dly&Chorus    AC",
+      "name_terminated": false,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1d6b9b",
+      "runtime": "0x601d6b9b",
+      "name": "Deep Revrb    AC",
+      "name_terminated": false,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1d72ee",
+      "runtime": "0x601d72ee",
+      "name": "HiBand Cho    AC",
+      "name_terminated": false,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1d7a41",
+      "runtime": "0x601d7a41",
+      "name": "Mild Aco      AC",
+      "name_terminated": false,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1d8194",
+      "runtime": "0x601d8194",
+      "name": "Comp Aco      AC",
+      "name_terminated": false,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1d88e7",
+      "runtime": "0x601d88e7",
+      "name": "Rhythm Aco    AC",
+      "name_terminated": false,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1d903a",
+      "runtime": "0x601d903a",
+      "name": "Tight Low     AC",
+      "name_terminated": false,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1d978d",
+      "runtime": "0x601d978d",
+      "name": "Mod Delay     AC",
+      "name_terminated": false,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1d9ee0",
+      "runtime": "0x601d9ee0",
+      "name": "Simple Drv    PU",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1da633",
+      "runtime": "0x601da633",
+      "name": "DS Drive      PU",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1dad86",
+      "runtime": "0x601dad86",
+      "name": "HeavyClean    PU",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1db4d9",
+      "runtime": "0x601db4d9",
+      "name": "ScoopDrive    PU",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1dbc2c",
+      "runtime": "0x601dbc2c",
+      "name": "ThickDrive    PU",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1dc37f",
+      "runtime": "0x601dc37f",
+      "name": "Stack Lead    PU",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1dcad2",
+      "runtime": "0x601dcad2",
+      "name": "Post Punk     PU",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1dd225",
+      "runtime": "0x601dd225",
+      "name": "Mods Drive    PU",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1dd978",
+      "runtime": "0x601dd978",
+      "name": "MetalDrive    PU",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x1de0cb",
+      "runtime": "0x601de0cb",
+      "name": "Fat Solo      PU",
+      "name_terminated": true,
+      "gap_to_next": 229209,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x216024",
+      "runtime": "0x60216024",
+      "name": "Hi GAIN STACK",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": [
+        "0x2caefc"
+      ]
+    },
+    {
+      "file_offset": "0x216777",
+      "runtime": "0x60216777",
+      "name": "TERA ECHO LEAD",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x216eca",
+      "runtime": "0x60216eca",
+      "name": "NATURAL CLEAN",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x21761d",
+      "runtime": "0x6021761d",
+      "name": "POWER METAL RIFF",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x217d70",
+      "runtime": "0x60217d70",
+      "name": "HARMONY LD in Am",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x2184c3",
+      "runtime": "0x602184c3",
+      "name": "ROUND & ROUND",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x218c16",
+      "runtime": "0x60218c16",
+      "name": "FDR BLUES CRUNCH",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x219369",
+      "runtime": "0x60219369",
+      "name": "SYNC TREMOLO",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x219abc",
+      "runtime": "0x60219abc",
+      "name": "ADD TRANSPARENCY",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x21a20f",
+      "runtime": "0x6021a20f",
+      "name": "ORNG ROOMY LEAD",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x21a962",
+      "runtime": "0x6021a962",
+      "name": "AC SIM STRAIGHT",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x21b0b5",
+      "runtime": "0x6021b0b5",
+      "name": "ROYAL LEAD",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x21b808",
+      "runtime": "0x6021b808",
+      "name": "SUPER SLOW GEAR",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x21bf5b",
+      "runtime": "0x6021bf5b",
+      "name": "SLAPBACK ECHO",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x21c6ae",
+      "runtime": "0x6021c6ae",
+      "name": "A-DIST &OVERTONE",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x21ce01",
+      "runtime": "0x6021ce01",
+      "name": "FAT BLUESY LEAD",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x21d554",
+      "runtime": "0x6021d554",
+      "name": "DIVID ORGAN TONE",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x21dca7",
+      "runtime": "0x6021dca7",
+      "name": "STACK CRUNCH",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x21e3fa",
+      "runtime": "0x6021e3fa",
+      "name": "VAN FLANGE",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x21eb4d",
+      "runtime": "0x6021eb4d",
+      "name": "SPACY LEAD",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x21f2a0",
+      "runtime": "0x6021f2a0",
+      "name": "1959 CRUNCH",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x21f9f3",
+      "runtime": "0x6021f9f3",
+      "name": "MID BOOST COMBO",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x220146",
+      "runtime": "0x60220146",
+      "name": "CRUNCH 4 RHYTHM",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x220899",
+      "runtime": "0x60220899",
+      "name": "ROTARY",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x220fec",
+      "runtime": "0x60220fec",
+      "name": "1969 XPERIENCE",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x22173f",
+      "runtime": "0x6022173f",
+      "name": "CREAMY SET",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x221e92",
+      "runtime": "0x60221e92",
+      "name": "DEEP DELAY & VIB",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x2225e5",
+      "runtime": "0x602225e5",
+      "name": "ROBINS BRIDGE",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x222d38",
+      "runtime": "0x60222d38",
+      "name": "RIPPIN'",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x22348b",
+      "runtime": "0x6022348b",
+      "name": "OCTAFUZZ LEAD",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x223bde",
+      "runtime": "0x60223bde",
+      "name": "60s FUZZ LEGEND",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x224331",
+      "runtime": "0x60224331",
+      "name": "5th PS & GATE",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x224a84",
+      "runtime": "0x60224a84",
+      "name": "ROADS",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x2251d7",
+      "runtime": "0x602251d7",
+      "name": "SLOW GEAR LEAD",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x22592a",
+      "runtime": "0x6022592a",
+      "name": "POWER DRIVE",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x22607d",
+      "runtime": "0x6022607d",
+      "name": "AMBIENT DIRTY OD",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x2267d0",
+      "runtime": "0x602267d0",
+      "name": "MATCH CRUNCH",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x226f23",
+      "runtime": "0x60226f23",
+      "name": "ORNG CRUNCH",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x227676",
+      "runtime": "0x60227676",
+      "name": "STEREO STACK",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x227dc9",
+      "runtime": "0x60227dc9",
+      "name": "LA TR RIFF",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x22851c",
+      "runtime": "0x6022851c",
+      "name": "COMBO AC",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x228c6f",
+      "runtime": "0x60228c6f",
+      "name": "TWIN CRUNCH",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x2293c2",
+      "runtime": "0x602293c2",
+      "name": "SLIDE FOR LP",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x229b15",
+      "runtime": "0x60229b15",
+      "name": "BASIC BLUES",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x22a268",
+      "runtime": "0x6022a268",
+      "name": "KING OF BLUES",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x22a9bb",
+      "runtime": "0x6022a9bb",
+      "name": "FINGER LEAD",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x22b10e",
+      "runtime": "0x6022b10e",
+      "name": "BLUES BUDDY",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x22b861",
+      "runtime": "0x6022b861",
+      "name": "SQUEEZE BLUES GT",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x22bfb4",
+      "runtime": "0x6022bfb4",
+      "name": "BARK TONE",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x22c707",
+      "runtime": "0x6022c707",
+      "name": "70s US HARD ROCK",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x22ce5a",
+      "runtime": "0x6022ce5a",
+      "name": "BROWN SND For ST",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x22d5ad",
+      "runtime": "0x6022d5ad",
+      "name": "1984 DRIVIN'",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x22dd00",
+      "runtime": "0x6022dd00",
+      "name": "OD-1 + STACK",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x22e453",
+      "runtime": "0x6022e453",
+      "name": "GREAT ROCK",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x22eba6",
+      "runtime": "0x6022eba6",
+      "name": "BGNR LEAD",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x22f2f9",
+      "runtime": "0x6022f2f9",
+      "name": "MODERN METAL",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x22fa4c",
+      "runtime": "0x6022fa4c",
+      "name": "CHORUS LEAD",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x23019f",
+      "runtime": "0x6023019f",
+      "name": "R-FIER LEAD",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x2308f2",
+      "runtime": "0x602308f2",
+      "name": "METAL MONEY",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x231045",
+      "runtime": "0x60231045",
+      "name": "METAL CORN",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x231798",
+      "runtime": "0x60231798",
+      "name": "DRAGON METAL",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x231eeb",
+      "runtime": "0x60231eeb",
+      "name": "BLADE METAL",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x23263e",
+      "runtime": "0x6023263e",
+      "name": "TRIPLE DEEP DLY",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x232d91",
+      "runtime": "0x60232d91",
+      "name": "METAMORPHOSIS GT",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x2334e4",
+      "runtime": "0x602334e4",
+      "name": "DIAMOND ECHO",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x233c37",
+      "runtime": "0x60233c37",
+      "name": "TREMOLO MOD DLY",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x23438a",
+      "runtime": "0x6023438a",
+      "name": "MULTI DIMENSION",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x234add",
+      "runtime": "0x60234add",
+      "name": "YOU TWO",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x235230",
+      "runtime": "0x60235230",
+      "name": "MELLOW FELLOW",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x235983",
+      "runtime": "0x60235983",
+      "name": "80s STUDIO LEAD",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x2360d6",
+      "runtime": "0x602360d6",
+      "name": "SUPER CLEAN",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x236829",
+      "runtime": "0x60236829",
+      "name": "SUPER MODULATE",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x236f7c",
+      "runtime": "0x60236f7c",
+      "name": "SLICED UP",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x2376cf",
+      "runtime": "0x602376cf",
+      "name": "DEEP CS StCHORUS",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x237e22",
+      "runtime": "0x60237e22",
+      "name": "WALL OF FUZZTONE",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x238575",
+      "runtime": "0x60238575",
+      "name": "NY LEAD MODULATE",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x238cc8",
+      "runtime": "0x60238cc8",
+      "name": "LEZLY HEAVEN",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x23941b",
+      "runtime": "0x6023941b",
+      "name": "NOISY DUB",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x239b6e",
+      "runtime": "0x60239b6e",
+      "name": "TIGHT CRUNCH",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x23a2c1",
+      "runtime": "0x6023a2c1",
+      "name": "70s FUNKY CLEAN",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x23aa14",
+      "runtime": "0x6023aa14",
+      "name": "FLAGEOLETTO",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x23b167",
+      "runtime": "0x6023b167",
+      "name": "TERA FUNK",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x23b8ba",
+      "runtime": "0x6023b8ba",
+      "name": "FUNKY GROOVE",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x23c00d",
+      "runtime": "0x6023c00d",
+      "name": "TERA REV & COMP",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x23c760",
+      "runtime": "0x6023c760",
+      "name": "FUSION 335",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x23ceb3",
+      "runtime": "0x6023ceb3",
+      "name": "80s JAZZ FUSION",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x23d606",
+      "runtime": "0x6023d606",
+      "name": "MILD JAZZ",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x23dd59",
+      "runtime": "0x6023dd59",
+      "name": "JAZZ FIELD",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x23e4ac",
+      "runtime": "0x6023e4ac",
+      "name": "JAZZ SIMULATOR",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x23ebff",
+      "runtime": "0x6023ebff",
+      "name": "CLEAN SUSTAIN",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x23f352",
+      "runtime": "0x6023f352",
+      "name": "COMP CRUNCH LEAD",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x23faa5",
+      "runtime": "0x6023faa5",
+      "name": "FULLERTN DRIVE",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x2401f8",
+      "runtime": "0x602401f8",
+      "name": "UNMATCHED COMBO",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x24094b",
+      "runtime": "0x6024094b",
+      "name": "COUNTRY PICKIN'",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x24109e",
+      "runtime": "0x6024109e",
+      "name": "TWEED CLEAN",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x2417f1",
+      "runtime": "0x602417f1",
+      "name": "ClnTWIN SOUTHERN",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x241f44",
+      "runtime": "0x60241f44",
+      "name": "SAFARI USA",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x242697",
+      "runtime": "0x60242697",
+      "name": "MELLOW LEAD",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x242dea",
+      "runtime": "0x60242dea",
+      "name": "RETRO TREMOLO",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x24353d",
+      "runtime": "0x6024353d",
+      "name": "01",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x243c90",
+      "runtime": "0x60243c90",
+      "name": "02",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x2443e3",
+      "runtime": "0x602443e3",
+      "name": "03",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x244b36",
+      "runtime": "0x60244b36",
+      "name": "04",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x245289",
+      "runtime": "0x60245289",
+      "name": "05",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x2459dc",
+      "runtime": "0x602459dc",
+      "name": "06",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x24612f",
+      "runtime": "0x6024612f",
+      "name": "07",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x246882",
+      "runtime": "0x60246882",
+      "name": "08",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x246fd5",
+      "runtime": "0x60246fd5",
+      "name": "09",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x247728",
+      "runtime": "0x60247728",
+      "name": "10",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x247e7b",
+      "runtime": "0x60247e7b",
+      "name": "11",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x2485ce",
+      "runtime": "0x602485ce",
+      "name": "12",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x248d21",
+      "runtime": "0x60248d21",
+      "name": "13",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x249474",
+      "runtime": "0x60249474",
+      "name": "14",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x249bc7",
+      "runtime": "0x60249bc7",
+      "name": "15",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x24a31a",
+      "runtime": "0x6024a31a",
+      "name": "16",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x24aa6d",
+      "runtime": "0x6024aa6d",
+      "name": "17",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x24b1c0",
+      "runtime": "0x6024b1c0",
+      "name": "18",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x24b913",
+      "runtime": "0x6024b913",
+      "name": "19",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x24c066",
+      "runtime": "0x6024c066",
+      "name": "20",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x24c7b9",
+      "runtime": "0x6024c7b9",
+      "name": "01",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x24cf0c",
+      "runtime": "0x6024cf0c",
+      "name": "02",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x24d65f",
+      "runtime": "0x6024d65f",
+      "name": "03",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x24ddb2",
+      "runtime": "0x6024ddb2",
+      "name": "04",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x24e505",
+      "runtime": "0x6024e505",
+      "name": "05",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x24ec58",
+      "runtime": "0x6024ec58",
+      "name": "06",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x24f3ab",
+      "runtime": "0x6024f3ab",
+      "name": "07",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x24fafe",
+      "runtime": "0x6024fafe",
+      "name": "08",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x250251",
+      "runtime": "0x60250251",
+      "name": "09",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x2509a4",
+      "runtime": "0x602509a4",
+      "name": "10",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x2510f7",
+      "runtime": "0x602510f7",
+      "name": "11",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x25184a",
+      "runtime": "0x6025184a",
+      "name": "12",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x251f9d",
+      "runtime": "0x60251f9d",
+      "name": "13",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x2526f0",
+      "runtime": "0x602526f0",
+      "name": "14",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x252e43",
+      "runtime": "0x60252e43",
+      "name": "15",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x253596",
+      "runtime": "0x60253596",
+      "name": "16",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x253ce9",
+      "runtime": "0x60253ce9",
+      "name": "17",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x25443c",
+      "runtime": "0x6025443c",
+      "name": "18",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x254b8f",
+      "runtime": "0x60254b8f",
+      "name": "19",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x2552e2",
+      "runtime": "0x602552e2",
+      "name": "20",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x255a35",
+      "runtime": "0x60255a35",
+      "name": "01",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x256188",
+      "runtime": "0x60256188",
+      "name": "02",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x2568db",
+      "runtime": "0x602568db",
+      "name": "03",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x25702e",
+      "runtime": "0x6025702e",
+      "name": "04",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x257781",
+      "runtime": "0x60257781",
+      "name": "05",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x257ed4",
+      "runtime": "0x60257ed4",
+      "name": "06",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x258627",
+      "runtime": "0x60258627",
+      "name": "07",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x258d7a",
+      "runtime": "0x60258d7a",
+      "name": "08",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x2594cd",
+      "runtime": "0x602594cd",
+      "name": "09",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x259c20",
+      "runtime": "0x60259c20",
+      "name": "10",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x25a373",
+      "runtime": "0x6025a373",
+      "name": "11",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x25aac6",
+      "runtime": "0x6025aac6",
+      "name": "12",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x25b219",
+      "runtime": "0x6025b219",
+      "name": "13",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x25b96c",
+      "runtime": "0x6025b96c",
+      "name": "14",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x25c0bf",
+      "runtime": "0x6025c0bf",
+      "name": "15",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x25c812",
+      "runtime": "0x6025c812",
+      "name": "16",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x25cf65",
+      "runtime": "0x6025cf65",
+      "name": "17",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x25d6b8",
+      "runtime": "0x6025d6b8",
+      "name": "18",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x25de0b",
+      "runtime": "0x6025de0b",
+      "name": "19",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x25e55e",
+      "runtime": "0x6025e55e",
+      "name": "20",
+      "name_terminated": true,
+      "gap_to_next": 1875,
+      "pointer_refs": []
+    },
+    {
+      "file_offset": "0x25ecb1",
+      "runtime": "0x6025ecb1",
+      "name": "",
+      "name_terminated": true,
+      "gap_to_next": null,
+      "pointer_refs": [
+        "0x2caf14"
+      ]
+    }
+  ],
+  "limits": [
+    "The 53 07 prefix meaning is unknown; it may be a tag, a length, or the tail of the preceding record.",
+    "Printable name + parameter-looking bytes is structural inference, not proof of amp or preset semantics.",
+    "Gap regularity in one region does not establish a global record size.",
+    "No runtime consumption of these records has been demonstrated."
+  ]
+}

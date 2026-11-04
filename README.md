@@ -9,6 +9,7 @@ Static, read-only investigation of BOSS GT-1 firmware structure, ESC2 startup be
 - `docs/GT1-EXECUTION-DOMAIN-ASSESSMENT.md` — CPU ISA/DSP-domain census and NAM compute bound.
 - `docs/GT1-FIRMWARE-EDITING-ASSESSMENT.md` — container repack, customization tiers, and preamp/NAM options.
 - `docs/GT1-DSP-NAM-REVERSE-ENGINEERING-PLAN.md` — Route C: DSP ISA, program-load, numeric fit, and NAM port.
+- `docs/GT1-AMP-PARAMETER-TRACK.md` — separate track: new amp sounds on the stock DSP by driving and editing the existing parameter surface.
 - `docs/HANDOFF-DSP-ROUTE-C.md` — self-contained handoff of the Route C evidence, leads, and next moves.
 - `docs/GT1-RESEARCH-PLAN.md` — current investigation sequence and stopping rules.
 - `firmware/work/` — compact generated reports, source scripts, and hash manifests.
