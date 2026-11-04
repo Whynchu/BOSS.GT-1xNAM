@@ -5,6 +5,37 @@
 **Decision:** Route C is the goal. Native NAM on the ESC2 DSP, replacing the PREAMP stage, keeping the rest of the GT-1 chain.  
 **Current state:** offline reverse engineering only. No JTAG, no DSP program dump, no hardware modification. The user has USB/MIDI access only for now.
 
+## Status update — DSP program-load reachability (2026-11-03, evening)
+
+**New evidence, all four shipped versions.** Reproduction: `firmware/work/scripts/reproduce_gt1_dsp_load_reachability.py` → `firmware/work/gt1-dsp-load-reachability.json`. Inputs are the official packages (`static.roland.com/assets/media/zip/gt1_sys_v10{5,7,8,9}.zip`); all four `GT1ROM.BIN` hashes match the pins in this repository, so v1.08 is reproducible from the vendor even though the download page only advertises v1.09.
+
+Two corrections and one result.
+
+**Correction 1 — the helper addresses in earlier notes are not helper entries.** `0x60056BFE` is `mov r5,r0` inside the function that starts at `0x60056BF0`; `0x60056D06` is a `pop.w {…,pc}` at the end of a function. "Trace the callers of 0x60056BFE/0x60056D06" was not answerable as written.
+
+**Correction 2 — the FA-08 loader does exist in GT-1, byte-for-byte in structure.** At v1.08:
+
+| Element | Address | Structure |
+|---|---|---|
+| PRAM0/PRAM1 block transfer | `0x60057D08` | `addeq r0, 0x40150000, off*4` / `addne r0, 0x40170000, off*4`, `0x1000`-byte staging buffer at ctx+`0xC0C` — the `FUN_6000182E` analogue |
+| 12-byte descriptor walkers | `0x600595CE`, `0x6005964C` | `ip = table + 12*index`, `[ip+4]` = length (words = `1 + len/4`), `[ip+8]` = source, copied to ctx+`0xC` — the `FUN_60003230` analogue |
+| Loader entry | `0x600596AA` | calls the block transfer at `0x600596BE`, then writes the `0x50000`/`0x70000`-based command word to `0x40100000` |
+
+**Result — that loader is dead code in the GT-1.** Across all four versions, the PRAM block-transfer function has exactly **one** external caller, and that caller's enclosing function has **zero** external incoming edges. No `bl`, `b`, `bcc`, `cbz`/`cbnz`, aligned pointer literal, or `movw`/`movt` address construction targets it. Verdict per version: `pram_load_path_reachable_only_from_entryless_functions`.
+
+Supporting facts:
+
+- Only **two** occurrences each of `0x40150000` and `0x40170000` exist in the whole decoded application — the `0x47DB0` window table and the transfer helper's own literal pair. There is no second PRAM implementation.
+- The updater (`GT1Upd`, 173,176 bytes, identical in every version) contains **zero** DSP-window literals.
+- The pattern is version-stable: transfer function at v105 `0x60057AAC`, v107 `0x60057CB4`, v108 `0x60057D08`, v109 `0x6005690C`; sole caller at `+0x133` of each.
+
+**What is *not* dead — the parameter path.** The live `0x60058xxx` family builds `0x50000`/`0x70000` bank addresses with `moveq`/`movne`, ORs `0x20000000`, and writes through `0x40100000` — the `FUN_60002E10` command-register analogue — at 26 sites in v1.08. That is the SysEx/control route that carries patch data to DSP memory. The batch stager also selects the bank (`0x60093B44` `movhi r6,#0x70000` / `0x60093B48` `movls r6,#0x50000`). So the application *does* write DSP address space at runtime; it just never loads a program block.
+
+**Interpretation.** The `CPrmESC2DT1` program-set concept survives as halt-gated error text (`0x6007D19B` "PRG Set without DSP Halt!", `0x6007D1CF` "DRP Set without DSP Halt") but those strings have no absolute-pointer reference in the image, consistent with a logging macro whose address is computed. Nothing in the reachable firmware writes a program block. That materially strengthens the mask-ROM hypothesis: the DSP's default program is supplied before or outside `GT1Appli`, and only parameter/data traffic reaches DSP memory from the application.
+
+**Remaining limits.** Dispatch through the runtime-provided `0x02003xxx` service table is unresolved; RAM-resident function pointers are invisible; any boot stage outside `GT1Appli` (first-stage loader, mask ROM) is outside the input. Static absence is evidence of dead code in this image, not proof of runtime unreachability by every mechanism.
+
+
 ## TL;DR
 
 - The GT-1 ARM CPU is an integer-only control core; it cannot host A2-Lite at the audio rate. The DSP is the only native audio-execution target.
