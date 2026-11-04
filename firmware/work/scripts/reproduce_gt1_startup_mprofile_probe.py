@@ -15,7 +15,7 @@ from pathlib import Path
 from capstone import CS_ARCH_ARM, CS_MODE_LITTLE_ENDIAN, CS_MODE_MCLASS, CS_MODE_THUMB, Cs
 from capstone.arm import ARM_OP_MEM, ARM_REG_PC
 
-PROJECT = Path(__file__).resolve().parents[4]
+PROJECT = Path(__file__).resolve().parents[3]
 BASE = 0x01000300
 VERSIONS = {
     "v1.08": {

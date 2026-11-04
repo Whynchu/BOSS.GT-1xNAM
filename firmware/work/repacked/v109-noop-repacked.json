@@ -1,0 +1,41 @@
+{
+  "read_only_device": true,
+  "classification": "offline no-op repack; not flashed or validated on hardware",
+  "input_image": {
+    "path": "firmware/extracted/v109/gt1_sys_v109/GT1ROM.BIN",
+    "sha256": "412ebf5ffdc48554454c27df47f61428f046ea0a7d93f5c77b7f0302861abdbf",
+    "size": 4194304
+  },
+  "app_header": {
+    "file_offset": "0x40000",
+    "source_offset_plus_2c": "0x40",
+    "original_stored_length": 1178362,
+    "original_checksum": "0x886ab09",
+    "expanded_length_plus_3c": 2937524,
+    "destination_plus_38": "0x60000000"
+  },
+  "decoded_app": {
+    "sha256": "2028d7e1f8a72e54b23a80427f53ba27629a7039a72712504a612c877556aa29",
+    "size": 2937524
+  },
+  "reencoded": {
+    "sha256": "c50a33a21aa96a7f76a5d75bc238232fa2ab2e0e2c2959f3037ff3cb1493a7e4",
+    "size": 1181994,
+    "ratio": 0.40237764865921094,
+    "new_checksum": "0x88e0785",
+    "roundtrip_sha256": "2028d7e1f8a72e54b23a80427f53ba27629a7039a72712504a612c877556aa29",
+    "roundtrip_exact": true,
+    "section_capacity_bytes": 1818560,
+    "fits_section": true
+  },
+  "candidate": {
+    "path": "firmware/work/repacked/v109-noop-repacked.bin",
+    "sha256": "c729e561bf8109b2d118a48133c4003e5877fa09e1954396f2f702c702259cd6",
+    "size": 4194304
+  },
+  "limits": [
+    "The candidate image has not been checked by the stock updater or bootloader.",
+    "The updater is known to emit sum/header/verify/compare errors, but its exact validation paths and the bootloader's runtime validator table are not fully traced.",
+    "No recovery procedure has been tested. Do not flash without a serial-flash recovery plan and explicit authorization."
+  ]
+}

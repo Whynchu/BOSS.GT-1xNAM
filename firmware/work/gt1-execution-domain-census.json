@@ -1,0 +1,373 @@
+{
+  "read_only": true,
+  "inputs": {
+    "decoded": {
+      "path": "firmware/work/decoded/v108-GT1Appli.bin",
+      "size": 2931480,
+      "sha256": "c41319e5f5a1facd5e55fe2c8e56d37069e31b98e5034d6d54d932fa7713e8c1"
+    },
+    "image": {
+      "path": "firmware/extracted/v108/gt1_sys_v108/GT1ROM.BIN",
+      "size": 4194304,
+      "sha256": "7219679a87e985316264544423c9940ccbcbadeb2df0b2f13711ae57194cb612"
+    },
+    "callback_manifest": {
+      "path": "firmware/work/gt1-app-init-callbacks.json",
+      "sha256": "d80df86d0ae5355835a9395ec6d9a852b75d75c9fed9d7d9ec881f5358af5f1d"
+    },
+    "startup_copied_segment": {
+      "destination": "0x1000300",
+      "source_output_offset": "0x2b96ec",
+      "size": 69398,
+      "sha256": "5691f04c08e52373973725ede20ff9de0bc3fc0e77a160e856a11342701168a0"
+    }
+  },
+  "isa_census": {
+    "segment_size": 69398,
+    "strict_linear": {
+      "method": "linear M-profile Thumb decode from segment start; stops at the first undecodable byte and deliberately does not resynchronise",
+      "start_address": "0x1000300",
+      "end_exclusive": "0x1003bec",
+      "instructions": 5798,
+      "byte_coverage": 14572,
+      "coverage_percent": 20.997723277327875,
+      "vfp_neon_count": 0,
+      "vfp_neon_examples": [],
+      "armv7e_m_dsp_count": 0,
+      "armv7e_m_dsp_examples": [],
+      "system_instruction_count": 0,
+      "system_instruction_examples": [],
+      "hardware_divide_count": 2,
+      "hardware_divide_examples": [
+        [
+          "0x10020b6",
+          "udiv",
+          "r3, r3, r4"
+        ],
+        [
+          "0x100341a",
+          "udiv",
+          "r0, r1, r0"
+        ]
+      ],
+      "top_mnemonics": [
+        [
+          "ldr",
+          597
+        ],
+        [
+          "bl",
+          579
+        ],
+        [
+          "mov",
+          544
+        ],
+        [
+          "movs",
+          391
+        ],
+        [
+          "lsls",
+          307
+        ],
+        [
+          "cmp",
+          229
+        ],
+        [
+          "b",
+          228
+        ],
+        [
+          "str",
+          217
+        ],
+        [
+          "cbz",
+          207
+        ],
+        [
+          "mvn",
+          170
+        ],
+        [
+          "ldrb",
+          170
+        ],
+        [
+          "add.w",
+          168
+        ],
+        [
+          "strb",
+          164
+        ],
+        [
+          "lsrs",
+          151
+        ],
+        [
+          "beq",
+          146
+        ],
+        [
+          "adds",
+          131
+        ],
+        [
+          "pop",
+          124
+        ],
+        [
+          "pop.w",
+          82
+        ],
+        [
+          "ldrsh.w",
+          80
+        ],
+        [
+          "subs",
+          80
+        ]
+      ]
+    },
+    "recursive": {
+      "method": "narrow recursive M-profile Thumb walk from the v1.08 startup entries and hash-pinned callback targets; follows immediate BL/BLX calls and unconditional B only, not conditional edges or indirect calls/branches",
+      "seeds": [
+        "0x1000300",
+        "0x10010ae",
+        "0x100465c",
+        "0x1002268",
+        "0x1001d48",
+        "0x100155c",
+        "0x1002bd8",
+        "0x1002f90",
+        "0x10031b4",
+        "0x1002f14",
+        "0x100322c",
+        "0x100300c",
+        "0x1001c48",
+        "0x1001404",
+        "0x100130e",
+        "0x1002ec0",
+        "0x1002c50"
+      ],
+      "instructions": 1164,
+      "byte_coverage": 3328,
+      "coverage_percent": 4.79552724862388,
+      "vfp_neon_count": 0,
+      "vfp_neon_examples": [],
+      "armv7e_m_dsp_count": 0,
+      "armv7e_m_dsp_examples": [],
+      "system_instruction_count": 7,
+      "system_instruction_examples": [
+        [
+          "0x10045d6",
+          "msr",
+          "basepri, r0"
+        ],
+        [
+          "0x10045e0",
+          "msr",
+          "basepri, r0"
+        ],
+        [
+          "0x10045e6",
+          "mrs",
+          "r0, basepri"
+        ],
+        [
+          "0x10045ee",
+          "msr",
+          "basepri, r1"
+        ],
+        [
+          "0x10045f4",
+          "msr",
+          "basepri, r0"
+        ],
+        [
+          "0x10045fa",
+          "mrs",
+          "r1, basepri"
+        ],
+        [
+          "0x100469c",
+          "svc",
+          "#0"
+        ]
+      ],
+      "hardware_divide_count": 1,
+      "hardware_divide_examples": [
+        [
+          "0x10020b6",
+          "udiv",
+          "r3, r3, r4"
+        ]
+      ],
+      "top_mnemonics": [
+        [
+          "bx",
+          194
+        ],
+        [
+          "movw",
+          171
+        ],
+        [
+          "movt",
+          171
+        ],
+        [
+          "ldr",
+          94
+        ],
+        [
+          "movs",
+          56
+        ],
+        [
+          "str",
+          44
+        ],
+        [
+          "cmp",
+          41
+        ],
+        [
+          "b",
+          37
+        ],
+        [
+          "strb",
+          33
+        ],
+        [
+          "ldrsh.w",
+          33
+        ],
+        [
+          "mov",
+          29
+        ],
+        [
+          "bgt",
+          28
+        ],
+        [
+          "bl",
+          27
+        ],
+        [
+          "pop.w",
+          16
+        ],
+        [
+          "strh",
+          16
+        ],
+        [
+          "push.w",
+          14
+        ],
+        [
+          "add.w",
+          13
+        ],
+        [
+          "mov.w",
+          11
+        ],
+        [
+          "lsls",
+          11
+        ],
+        [
+          "push",
+          10
+        ]
+      ]
+    }
+  },
+  "whole_image_fpu_evidence": {
+    "description": "exact byte-literal occurrences of the CPACR and CPUID addresses anywhere in the decoded v1.08 application",
+    "literals": {
+      "CPACR": [],
+      "CPUID": []
+    },
+    "interpretation": "No exact CPACR or CPUID address literal is present in the decoded application. This literal search does not exclude computed addresses, helper-mediated access, boot-stage configuration, or paths outside the instruction census."
+  },
+  "esc2_dsp_windows": {
+    "literal_pool_output_offset": "0x47db0",
+    "values": [
+      "0x40100600",
+      "0x40100000",
+      "0x40160000",
+      "0x40164000",
+      "0x40140000",
+      "0x40144000",
+      "0x40150000",
+      "0x40170000",
+      "0x4016E000",
+      "0x4014E000"
+    ],
+    "related_strings": [
+      "CPrmESC2DT1 Error: PRG Set without DSP Halt!",
+      "CPrmESC2DT1 Error: DRP Set without DSP Halt!",
+      "NG (IRAM0)",
+      "NG (PRAM0)",
+      "NG (IRAM1)",
+      "NG (PRAM1)"
+    ],
+    "interpretation": "The v1.08 application contains an address table and register-level transfer facility associated with ESC2 DSP program/data windows, plus IRAM/PRAM diagnostics. This supports a distinct DSP program/data control domain, but does not prove a separate CPU, physical memory map, amp-model ownership, or boot-time DSP load. Current traced callers are SysEx/control and diagnostic tests."
+  },
+  "firmware_nam_signature_scan": {
+    "description": "byte-string scan of the decoded v1.08 application for NAM-specific container or engine signatures",
+    "hits": {
+      "BMAN (.namb magic)": [],
+      ".namb extension": [],
+      "WaveNet": [],
+      "wavenet": [],
+      "conv1d": [],
+      "Neural": [],
+      "neural": [],
+      "TONE3000": [],
+      "tone3000": []
+    },
+    "interpretation": "No NAM-specific byte-string signatures were found. This does not rule out a generic model interpreter, nor does it show that one exists."
+  },
+  "compute_bound": {
+    "classification": "conditional arithmetic from the published M7 benchmark and the board's 48 MHz CKCPU reference; not an ESC2 measurement",
+    "published_M7_cycles_per_sample": 4059,
+    "published_M7_core_MHz": 480,
+    "published_M7_core_load_percent": 40.589999999999996,
+    "nam_cycles_per_second_at_48k": 194832000,
+    "minimum_MHz_at_100_percent_M7_efficiency": 194.832,
+    "minimum_MHz_at_50_percent_M7_efficiency": 389.664,
+    "gt1_ckcpu_reference_MHz": 48.0,
+    "gt1_cycles_per_sample_at_48k": 1000.0,
+    "over_budget_factor_at_100_percent_M7_efficiency": 4.059,
+    "a2lite_weight_macs_per_sample_lower_bound": 1871,
+    "single_mac_per_cycle_minimum_MHz_at_48k": 89.808,
+    "single_mac_per_cycle_utilization_at_48MHz": 1.871,
+    "note": "The 48 MHz CKCPU label is a board clock reference, not a verified post-PLL core clock. The MAC bound is a lower bound on the WaveNet weight work and ignores activations, head, resampling, and the rest of the effect chain."
+  },
+  "conclusions": {
+    "recovered_cpu": "The inspected v1.08 application slices decode as Thumb/Thumb-2 integer code and include UDIV. No VFP/NEON or listed Armv7E-M DSP mnemonic was observed in the strict-linear prefix or narrow direct-edge walk. The prefix and direct-edge coverage are reported below; neither characterizes the full application or silicon.",
+    "audio_domain": "The application exposes a distinct ESC2 DSP program/data control domain through IRAM/PRAM diagnostics and transfer controls. It is not established whether this is a separate core, whether it executes amp algorithms, or whether firmware loads it at boot.",
+    "nam_fit": "This evidence does not establish native NAM fit or impossibility. The published optimized A2-Lite result is an M7 benchmark, not a GT-1 measurement; the board's 48 MHz CKCPU label is not a confirmed core clock. The DSP domain has no demonstrated compatible toolchain or amp-stage contract. No NAM-specific byte-string signature was found, which does not rule out a generic interpreter or a future port.",
+    "practical_route": "Host-side NAM can run over the GT-1 USB audio path as an external post-effect stage; it is not a firmware-level amp-stage replacement and the return is mixed at the final stage."
+  },
+  "limitations": [
+    "The strict-linear scan stops at the first undecodable halfword; its coverage and the direct-edge coverage are reported below. The direct-edge walk omits conditional branch edges, indirect calls/branches, and computed tables.",
+    "The strict-linear prefix contains BASEPRI/system instructions; a known SVC instruction occurs beyond its end. These findings do not characterize all system instructions in the segment.",
+    "This census covers only a prefix and narrow walk in one v1.08 startup-copied segment; the in-place code region at 0x60000000 and other copied segments were not exhaustively censused.",
+    "The in-place code region at 0x60000000 and other copied segments exist and were not exhaustively censused for FPU/DSP instructions.",
+    "Absence of exact CPACR/CPUID byte literals does not prove the silicon has no FPU or that no earlier boot stage configures it.",
+    "The 48 MHz CKCPU label is a board clock reference; the post-PLL core clock is not established.",
+    "The DSP windows are observed constants and strings, not a proven physical memory map, ISA, or audio call path.",
+    "No target benchmark was run; all cycle figures are upstream M7 references or arithmetic bounds."
+  ]
+}

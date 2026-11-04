@@ -5,6 +5,11 @@ Static, read-only investigation of BOSS GT-1 firmware structure, ESC2 startup be
 ## Research documents
 
 - `docs/GT1-FIRMWARE-ANALYSIS.md` — findings, evidence limits, offsets, hashes, and unresolved questions.
+- `docs/GT1-NAM-COMPATIBILITY.md` — evidence table and current native/host-side decision.
+- `docs/GT1-EXECUTION-DOMAIN-ASSESSMENT.md` — CPU ISA/DSP-domain census and NAM compute bound.
+- `docs/GT1-FIRMWARE-EDITING-ASSESSMENT.md` — container repack, customization tiers, and preamp/NAM options.
+- `docs/GT1-DSP-NAM-REVERSE-ENGINEERING-PLAN.md` — Route C: DSP ISA, program-load, numeric fit, and NAM port.
+- `docs/HANDOFF-DSP-ROUTE-C.md` — self-contained handoff of the Route C evidence, leads, and next moves.
 - `docs/GT1-RESEARCH-PLAN.md` — current investigation sequence and stopping rules.
 - `firmware/work/` — compact generated reports, source scripts, and hash manifests.
 - `tools/ghidra_scripts/` — bounded Ghidra analysis scripts.

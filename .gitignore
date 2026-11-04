@@ -3,6 +3,9 @@
 /firmware/extracted/
 /firmware/work/decoded/
 /firmware/work/reconstructed/
+/firmware/work/repacked/*.bin
+/backups/
+/firmware/work/*.wav
 /firmware/work/ghidra-projects/
 /firmware/work/reference/
 # Local tool installs and third-party checkouts (keep project scripts under tools/ghidra_scripts).

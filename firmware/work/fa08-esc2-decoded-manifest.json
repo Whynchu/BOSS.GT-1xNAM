@@ -1,0 +1,25 @@
+{
+  "read_only": true,
+  "source": {
+    "package": "firmware/work/reference/esc2-comparators/fa08_v203/fa060708_sys_v203.zip",
+    "member": "fantom_e_up.bin",
+    "member_sha256": "900028695b7ec1b63631737d1bd0eaf4707514264a7b325914d951cb59731d23",
+    "section_header_offset": "0x2000",
+    "section_marker": "ESC2 Firmware",
+    "stored_payload_offset": "0x2044",
+    "stored_payload_length": 805994,
+    "stored_payload_sha256": "23d431df232fe02a7846e43e44176daa8d8fd9e958b6ad578d6963de604b671f",
+    "expanded_length": 1925508
+  },
+  "decoded": {
+    "path": "firmware/work/decoded/fa08-ESC2-decoded.bin",
+    "size": 1925508,
+    "sha256": "2e6a58ab96302131ab26936477e8d71734a65c2eac9685a1c6ec7b355ee959f1",
+    "format": "same control-bit LZ routine as the GT-1 loader; output-bounded decode consumed the full stored payload"
+  },
+  "notes": [
+    "This is the decoded FA-08 ESC2 application image, not the GT-1 DSP microcode.",
+    "It contains the same ARM startup stub as the GT-1 application and a Cortex-M3-style vector table.",
+    "It exposes the ESC2 DSP interface strings and helpers; the DSP program itself is still unresolved."
+  ]
+}

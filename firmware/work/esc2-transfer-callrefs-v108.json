@@ -1,0 +1,75 @@
+{
+  "classification": "bounded static direct-call and aligned-pointer scan; not a full call graph or reachability proof",
+  "input": "firmware/work/decoded/v108-GT1Appli.bin",
+  "input_sha256": "c41319e5f5a1facd5e55fe2c8e56d37069e31b98e5034d6d54d932fa7713e8c1",
+  "mapping": "candidate decoded-image mapping: address = 0x60000000 + file offset",
+  "method": "scan every halfword for Thumb-2 BL encoding shape, validate/decode with Capstone M-class; separately scan aligned 32-bit words for absolute target pointers (Thumb bit ignored)",
+  "candidate_bl_encodings_decoded": 19731,
+  "targets": {
+    "receive_state_handler": {
+      "address": "0x6007D686",
+      "direct_calls": [],
+      "aligned_absolute_pointer_file_offsets": []
+    },
+    "transfer_parser": {
+      "address": "0x6007CDE2",
+      "direct_calls": [
+        "0x6007D7B6"
+      ],
+      "aligned_absolute_pointer_file_offsets": []
+    },
+    "batch_stager": {
+      "address": "0x60093B14",
+      "direct_calls": [
+        "0x6007CF00",
+        "0x6007CF2E",
+        "0x6007CFA0",
+        "0x6007CFD0",
+        "0x6007CFFE",
+        "0x6007D028"
+      ],
+      "aligned_absolute_pointer_file_offsets": []
+    },
+    "flush_dispatcher": {
+      "address": "0x6007CCD0",
+      "direct_calls": [
+        "0x6007CE2A",
+        "0x6007CED6",
+        "0x6007CF76"
+      ],
+      "aligned_absolute_pointer_file_offsets": []
+    },
+    "read_helper": {
+      "address": "0x60058E1C",
+      "direct_calls": [
+        "0x600592F2",
+        "0x6007CD6C"
+      ],
+      "aligned_absolute_pointer_file_offsets": []
+    },
+    "write_helper": {
+      "address": "0x60058D3C",
+      "direct_calls": [
+        "0x6007CD7E",
+        "0x6007CDAA"
+      ],
+      "aligned_absolute_pointer_file_offsets": []
+    },
+    "class7_helper": {
+      "address": "0x600593A2",
+      "direct_calls": [
+        "0x60008164",
+        "0x6000818C",
+        "0x60047A46",
+        "0x60047D82",
+        "0x6007CD9A"
+      ],
+      "aligned_absolute_pointer_file_offsets": []
+    }
+  },
+  "interpretation_limits": [
+    "A decoded direct-call site is a candidate code reference; its containing code path may not be reachable at runtime.",
+    "No direct BL or aligned absolute pointer to a target does not exclude indirect calls, relative tables, computed addresses, or non-aligned data references.",
+    "The receive-state handler recognizes SysEx commands in its body, but this scan does not identify its registration/caller or prove that the DSP transfer path participates in normal audio processing."
+  ]
+}
