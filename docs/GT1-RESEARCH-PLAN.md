@@ -1,10 +1,10 @@
-# GT-1 NAM feasibility research plan
+# GT-1 firmware research plan: NAM feasibility and custom amp voices
 
 **Updated:** 2026-11-03  
 **Status:** Active; verified backup, read-only host enumeration, and static firmware analysis  
-**Goal:** Determine whether one existing GT-1 amp-modeling stage can be replaced or augmented by NAM A2-Lite while retaining the processor's hardware and effects. Compatibility is unproven.
+**Goal:** Two linked questions. (1) Can one existing GT-1 amp-modeling stage be replaced or augmented by NAM A2-Lite while retaining the processor's hardware and effects? (2) Can the amp engine the pedal already ships be retuned into new voicings without new DSP code? Compatibility is unproven in both cases.
 
-The current evidence-based compatibility assessment is maintained in [GT-1 and NAM A2-Lite compatibility assessment](GT1-NAM-COMPATIBILITY.md).
+The current evidence-based compatibility assessment is maintained in [GT-1 and NAM A2-Lite compatibility assessment](GT1-NAM-COMPATIBILITY.md). The second question is tracked separately in [GT-1 amp parameter track](GT1-AMP-PARAMETER-TRACK.md).
 
 
 ## Current checkpoint — v1.08 device connected (2026-11-03)
