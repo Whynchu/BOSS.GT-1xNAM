@@ -26,6 +26,44 @@ From the community editor mapping in `firmware/work/amp-control-lead-evidence.js
 
 Working interpretation, not established fact: a shared signal path — input trim, gain stage with compression/brightness, voicing network driven by `char`/`edge`/`bottom`/`preamp_low`/`preamp_high`, a four-band tone stack, a speaker/cabinet model driven by `sp_*`, a mic model driven by `mic_*`, then `direct_mix` and `level`. A named TYPE would then be a preset over that surface, and `CUSTOM` the mode that exposes it directly.
 
+## Confirmed field map
+
+`reproduce_gt1_amp_field_map.py` tests the hypothesis that the preamp slot occupies 32 bytes at record+`0x2B`, in the community editor's byte order, including the two bytes that map skips. Result over **246 populated records: 0 invariant violations.** Every editor default that a factory bank would not vary — `mic_level 100`, `custom_bottom/edge/char/preamp_low/preamp_high 50`, `sp_size 7`, `sp_color_low/high 10`, `sp_num 2`, `sp_cabinet 0` — holds byte-for-byte in all 246. The field identity is therefore established structurally, not just by resemblance.
+
+| Record offset | Field | Range across 246 |
+|---|---|---|
+| `+0x2B` | `preamp_a_on_off` | 0–1 |
+| `+0x2C` | **`preamp_a_type`** | **0–26** |
+| `+0x2D` | `gain` | 10–120 |
+| `+0x2E` | `t_comp` | constant 10 |
+| `+0x2F` | `bass` | 13–92 |
+| `+0x30` | `middle` | 7–87 |
+| `+0x31` | `treble` | 0–80 |
+| `+0x32` | `presence` | 0–100 |
+| `+0x33` | `level` | 27–90 |
+| `+0x34` | `bright` | 0–1 |
+| `+0x35` | `gain_sw` | 1–2 |
+| `+0x36` | `solo_sw` | 0–1 |
+| `+0x37` | `solo_level` | 20–80 |
+| `+0x38` | `sp_type` | 1–7 |
+| `+0x39` | `mic_type` | constant 1 |
+| `+0x3A` | `mic_dis` | 0–1 |
+| `+0x3B` | `mic_pos` | 3–7 |
+| `+0x3C` | `mic_level` | constant 100 |
+| `+0x3D` | `direct_mix` | constant 0 |
+| `+0x3E` | `custom_type` | constant 0 |
+| `+0x3F`–`+0x45` | `custom_bottom`, `custom_edge`, **`unmapped_113`**, **`unmapped_114`**, `custom_preamp_low`, `custom_preamp_high`, `custom_char` | all constant: 50, 50, **5, 5**, 50, 50, 50 |
+| `+0x46`–`+0x4A` | `sp_size`, `sp_color_low`, `sp_color_high`, `sp_num`, `sp_cabinet` | constant 7, 10, 10, 2, 0 |
+
+Slot B (`preamp_b_*`) sits at record+`0x4F` with the same 32-byte layout.
+
+Two consequences worth noting:
+
+- **The amp type space is `0..26`, i.e. 27 models**, and the factory presets exercise all of them. Types `25` and `26` carry the orange/Brown-class names (`BGNR LEAD`, `ORNG ROOMY LEAD`, `ORNG CRUNCH`). Whatever the UI exposes, the data model already addresses at least 27.
+- **Factory data exceeds the nominal control ranges.** `gain` reaches 120, `presence` 100, `mic_pos` 7, `sp_type` 6. Values above the editor's apparent 0–100 display range already ship in stock patches, which means the DSP side tolerates them.
+
+The complete per-field statistics, offsets for both slots, and the histogram are in `firmware/work/gt1-amp-field-map.json`.
+
 ## What is established today
 
 1. **The parameter encoding is plain small integers in the patch.** Values such as `0x32` (50) and `0x64` (100) recur throughout; the editor's default `default.tsl` values appear verbatim in the image, including the custom set `sp_size = 7`, `sp_color_low = 10`, `sp_color_high = 10`, `sp_num = 2`, `sp_cabinet = 0` and five `50`s.
@@ -47,11 +85,11 @@ Evidence artifacts: `firmware/work/amp-control-lead-evidence.json` (field map), 
 
 ## Open questions
 
-1. **Does selecting a TYPE send an identifier, or a full parameter block?** If a block, the voicing tables live in `GT1Appli` and are editable. This is the decisive question for the whole track.
-2. **What does the `{0x60216024, 0x9F, 0x63}` descriptor at `0x20000134` actually index?** Counts of 159 and 99 next to record pointers are the best available clue to the table's extent and stride.
-3. **What are the record boundaries inside each `0x753` record?** The `53 07` prefix and the `00 00 00` name terminator are visible, but the name is not at a fixed offset within every record, which means group-dependent prefixes or sub-records.
-4. **What occupies the unmapped bytes 113–114 (slot A) and 174–175 (slot B)?** The editor's 30-field map skips them. Either padding or two undocumented custom parameters.
-5. **What ranges does the application validate before sending?** The strings `Set to UnKnown Memory` and the address-fence errors indicate range checking somewhere in the path.
+1. **Does selecting a TYPE send an identifier, or a full parameter block?** If a block, the voicing tables live in `GT1Appli` and are editable. This is the decisive question for the whole track. The type byte is at record+`0x2C`; what the app does with it is not yet traced.
+2. **What does the `{0x60216024, 0x9F, 0x63}` descriptor at `0x20000134` actually index?** Counts of 159 and 99 next to record pointers are still the best available clue to a table extent.
+3. **What are types 25 and 26?** They exist in the data model and appear in factory patches (`BGNR LEAD`, `ORNG ROOMY LEAD`, `ORNG CRUNCH`). Whether the device UI can select them, and whether the type space extends past 26, is untested.
+4. **What occupies the unmapped bytes 113-114 (slot A) / 174-175 (slot B)?** Confirmed present and constant `5` across all 246 populated records, so they are not padding. Not identified.
+5. **What ranges does the application validate before sending?** Factory data already ships `gain 120` and `presence 100`, so any clamp is wider than the editor display. The `Set to UnKnown Memory` and address-fence strings indicate checks elsewhere in the path.
 6. **Does the DSP clamp, ignore, or misbehave on out-of-range values?** Only a device experiment answers this.
 
 ## Experiment ladder
@@ -70,15 +108,17 @@ Step 4 stays blocked until the no-op repack has actually booted on hardware. `do
 
 ## First tasks
 
-1. Resolve the `{pointer, 0x9F, 0x63}` descriptor at file `0x2CAEF0` and determine what it indexes: amp list, preset bank, or a transfer descriptor.
-2. Map one `0x753` record end to end: locate the preamp slot fields inside it by matching the editor's 30-field order, and confirm against several records of different categories.
-3. Find the code that consumes the `preamp_a_type` byte and determine whether it indexes a record or emits a scalar.
-4. Cross-check the same region in v1.05/v1.07/v1.09 and against GT-100 v2.12 to see whether the table grows with the product's amp list — that distinguishes "per-product voicing table" from "shared DSP-side enum".
+1. ~~Map one `0x753` record end to end.~~ **Done** — see the confirmed field map above; 0 invariant violations over 246 populated records.
+2. Find the code that consumes the `preamp_a_type` byte (record+`0x2C`) and determine whether it indexes a record or emits a scalar. This is the decisive step.
+3. Resolve the `{pointer, 0x9F, 0x63}` descriptor at file `0x2CAEF0` and determine what it indexes: amp list, preset bank, or a transfer descriptor.
+4. Cross-check the same region in v1.05/v1.07/v1.09 and against GT-100 v2.12 to see whether the type space grows with the product's amp list — that distinguishes "per-product voicing table" from "shared DSP-side enum".
+5. Enumerate types `25` and `26` and probe for `27+`: if the data model accepts them, the DSP may already know voicings the GT-1 does not advertise.
 
 ## Reproduction
 
 ```sh
 python -B firmware/work/scripts/reproduce_gt1_amp_record_scan.py
+python -B firmware/work/scripts/reproduce_gt1_amp_field_map.py
 ```
 
 Requires the official packages under `firmware/extracted/` and the decoded application under `firmware/work/decoded/`; see the bootstrap decoder probe.
